@@ -221,7 +221,7 @@ paths:
           type: integer
       - name: includeNullValues
         in: query
-        description: Bepaald of Null waarden opgenomen moeten worden in de response.
+        description: Bepaalt of attributen met waarde null worden opgenomen in de response.
         required: false
         schema:
             type: boolean
