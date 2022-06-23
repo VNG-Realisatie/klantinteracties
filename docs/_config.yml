@@ -30,7 +30,7 @@ nav:
       - title: Specificaties
         path: /api-standaarden/klanten/specificaties
       - title: Klanten API (redoc)
-        path: /redoc-io
+        path: /redoc-io-klanten
       - title: Referentieimplementatie
         path: /api-standaarden/klanten/referentieimplementatie
 
