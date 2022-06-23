@@ -29,6 +29,8 @@ nav:
     subnav:
       - title: Specificaties
         path: /api-standaarden/klanten/specificaties
+      - title: Klanten API (redoc)
+        path: /redoc-io
       - title: Referentieimplementatie
         path: /api-standaarden/klanten/referentieimplementatie
 
