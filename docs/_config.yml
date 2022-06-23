@@ -1,4 +1,4 @@
-baseurl: "/api-standaarden-voor-klantinteracties"
+baseurl: "/klantinteracties"
 apiname: "API-standaarden voor Klantinteracties"
 url: "http://localhost:4000"
 # nav is t.b.v. generatie side-navigation menu.
