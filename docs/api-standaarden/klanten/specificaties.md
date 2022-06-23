@@ -8,7 +8,7 @@ date: 02-06-2022
 
 * [Referentie-implementatie Klanten API](https://klanten-api.vng.cloud)
 * API specificatie (OAS3) in
-  [ReDoc](https://klanten-api.vng.cloud/api/v1/schema/),
+  [ReDoc](../../redoc-io),
   [Swagger](https://petstore.swagger.io/?url=https://klanten-api.vng.cloud/api/v1/schema/openapi.yaml),
   [YAML](https://klanten-api.vng.cloud/api/v1/schema/openapi.yaml) of
   [JSON](https://klanten-api.vng.cloud/api/v1/schema/openapi.json)
