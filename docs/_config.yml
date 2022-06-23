@@ -37,7 +37,7 @@ nav:
     subnav:
 #      - title: Specificaties
 #        path: /api-standaarden/klanten/specificaties
-      - title: Klanten API (redoc)
+      - title: Contactmomenten API (redoc)
         path: /redoc-io-contactmomenten
 #      - title: Referentieimplementatie
 #        path: /api-standaarden/klanten/referentieimplementatie
@@ -45,7 +45,7 @@ nav:
     subnav:
 #      - title: Specificaties
 #        path: /api-standaarden/klanten/specificaties
-      - title: Klanten API (redoc)
+      - title: Verzoeken API (redoc)
         path: /redoc-io-verzoeken
 #      - title: Referentieimplementatie
 #        path: /api-standaarden/klanten/referentieimplementatie
