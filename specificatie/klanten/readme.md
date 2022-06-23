@@ -1,0 +1,1 @@
+Klik [hier](http://redocly.github.io/redoc/?url=https://raw.githubusercontent.com/VNG-Realisatie/klantinteracties/main/specificatie/klanten/openapi.yaml) om de OAS van de Klanten API in de Redoc-viewer te zien.
