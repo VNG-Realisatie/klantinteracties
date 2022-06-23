@@ -1,0 +1,48 @@
+baseurl: "/api-standaarden-voor-klantinteracties"
+apiname: "API-standaarden voor Klantinteracties"
+url: "http://localhost:4000"
+# nav is t.b.v. generatie side-navigation menu.
+# Een 'title' zonder path of url genereert slechts een kopje.
+# 'path' vormt tezamen met de baseurl de url waarmee de 'href' wordt gevuld.
+# Indien een 'url' voorradig dan wordt daarmee de 'href' gevuld en dient het path slechts om te bepalen welke link active is.
+# 'target: blank' zorgt er voor dat de link in een nieuw tabblad wordt geopend.
+nav:
+  - title: Klantinteracties
+    subnav:
+      - title: Main
+        path: /
+      - title: Productvisie
+        path: /productvisie
+      - title: Begrippen
+        path: /begrippen
+      - title: Uitgangspunten
+        path: /uitgangspunten
+      - title: Ontwerpkeuzes
+        path: /ontwerpkeuzes
+      - title: Architectuur
+        path: /architectuur
+      - title: Informatiemodellen
+        path: /informatiemodellen
+      - title: Vraagstukken
+        path: /vraagstukken
+  - title: Specificaties Klanten API (IO)
+    subnav:
+      - title: Specificaties
+        path: /api-standaarden/klanten/specificaties
+      - title: Referentieimplementatie
+        path: /api-standaarden/klanten/referentieimplementatie
+
+plugins:
+  - jekyll-redirect-from
+  - jekyll-remote-theme
+  - jemoji
+
+github: hdksi/API-standaarden-voor-klantinteracties
+
+#theme: jekyll-theme-cayman
+
+remote_theme: hdksi/jekyll-theme-vng-realisatie
+
+project_name: API-standaarden voor Klantinteracties
+
+standard_family: nvt
