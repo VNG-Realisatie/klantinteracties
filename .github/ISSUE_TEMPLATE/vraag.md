@@ -1,6 +1,6 @@
 ---
 name: 'Vraag'
-about: Vragen over de API's voor Zaakgericht werken kunt u hier stellen
+about: Vragen over de API's voor Klantinteracties kunt u hier stellen
 title: "[VRAAG]"
 labels: 'vraag'
 assignees: ''
