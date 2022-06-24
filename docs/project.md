@@ -23,7 +23,7 @@ De video-opname is niet publiek toegankelijk gepubliceerd, maar na inloggen besc
 
 ### Q & A
 
-Onderstaande vragen zijn tijdens de bijeenkomst in de chat gesteld en achteraf (<span style="color:#000081">in donkerblauw</span>) beantwoord
+_Onderstaande vragen zijn tijdens de bijeenkomst in de chat gesteld en achteraf (<span style="color:#000081">in donkerblauw</span>) beantwoord._
 
 Qua definitie van klant: kan het niet ook een vestiging van een organisatie zijn?
 
@@ -73,15 +73,15 @@ De vraag is denk ik of het van belang is om In de klantregistratie vast te kunne
 Is in de tweede situatie [waarbij voor een klant geen identificerende gegevens worden vastgelegd] wel sprake van een klant, of alleen van NAW-gegevens bij het formulier van degene die dat formulier heeft ingediend?
 
 <span style="color:#000081">Interessante vraag. Stel iemand doet een melding en wil op de hoogte gehouden worden van de behandeling daarvan. Die melding wordt geregistreerd als productaanvraag. Je kan in dit geval inderdaad twee routes kiezen:
-1.	Contactgegevens worden vastgelegd bij de klant, de contactgegevens bij de bij de productaanvraag waarin die melding is geregistreerd blijft leeg.
-2.	Er ontstaat geen klant, de contactgegevens worden in de contactgegevens bij de bij de productaanvraag waarin die melding is geregistreerd.
-Het tweede is conceptueel zuiverder: het gaat hier immers om contactgegevens die alleen voor de duur van de interactie (kunnen) worden gebruikt: precies waar de contactgegevens bij de aanvraag voor bedoeld zijn. Aan de andere kant kan ik me ook voorstellen dat deze route vraagt om het kunnen vastleggen van meer contactgegevens bij de productaanvraag.
+<span style="color:#000081">1.	Contactgegevens worden vastgelegd bij de klant, de contactgegevens bij de bij de productaanvraag waarin die melding is geregistreerd blijft leeg.
+2.	Er ontstaat geen klant, de contactgegevens worden in de contactgegevens bij de bij de productaanvraag waarin die melding is geregistreerd.</span>
+<span style="color:#000081">Het tweede is conceptueel zuiverder: het gaat hier immers om contactgegevens die alleen voor de duur van de interactie (kunnen) worden gebruikt: precies waar de contactgegevens bij de aanvraag voor bedoeld zijn. Aan de andere kant kan ik me ook voorstellen dat deze route vraagt om het kunnen vastleggen van meer contactgegevens bij de productaanvraag.</span>
 
-Een andere consequentie van de tweede optie is dat het niet langer logisch lijkt de relatie tussen een zaak en iemand die bij die zaak betrokken is, maar niet aanleiding heeft gegeven tot het starten daarvan als klant te registreren. Diens contactgegevens zou je dan immers eerder op de relatie persoon – zaak verwachten.
+<span style="color:#000081">Een andere consequentie van de tweede optie is dat het niet langer logisch lijkt de relatie tussen een zaak en iemand die bij die zaak betrokken is, maar niet aanleiding heeft gegeven tot het starten daarvan als klant te registreren. Diens contactgegevens zou je dan immers eerder op de relatie persoon – zaak verwachten.</span>
 
-Het lijkt me noodzakelijk om dit in een aantal casussen verder uit te werken.</span>
+<span style="color:#000081">Het lijkt me noodzakelijk om dit in een aantal casussen verder uit te werken.</span>
 
-patroon is dus: Klant ophalen (bsn) -> bestaat niet? aanmaken; bestaat wel aanvullen/gegevens ophalen.
+Patroon is dus: Klant ophalen (bsn) -> bestaat niet? aanmaken; bestaat wel aanvullen/gegevens ophalen.
 
 <span style="color:#000081">Klopt.</span>
 
@@ -117,7 +117,7 @@ Waar blijft het e-mailadres in ZGW API als het e-maildres specifiek is voor de z
 
 <span style="color:#000081">Voorkeurskanaal zou ik contactgegevens noemen :) – maar klopt!</span>
 
-Digi-D is geen must voor identificatie. Er zijn ook andere mogelijkheden van identificatie: denk aan telefoonnummer, social media ids, ...
+DigiD is geen must voor identificatie. Er zijn ook andere mogelijkheden van identificatie: denk aan telefoonnummer, social media ids, ...
 
 <span style="color:#000081">Telefoonnummers en social media-id’s zijn veelal bij meerdere mensen bekend, en op zichzelf geen goede middelen om iemands identiteit vast te stellen en tegen te authentiseren. Tegelijkertijd is vragen in te loggen via DigiD of met een identiteitsbewijs fysiek langs te komen niet altijd haalbaar of gewenst. Waar nu precies de grens ligt tussen bescherming tegen mogelijke ongeoorloofd(e) handelen of gegevensverstrekking en het zo laagdrempelig mogelijk aanbieden van producten en diensten is een heel interessant vraagstuk dat ook buiten de toepassing van de Klanten API relevant is en nader onderzoek verdient.</span>
 
