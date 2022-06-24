@@ -73,8 +73,8 @@ De vraag is denk ik of het van belang is om In de klantregistratie vast te kunne
 Is in de tweede situatie [waarbij voor een klant geen identificerende gegevens worden vastgelegd] wel sprake van een klant, of alleen van NAW-gegevens bij het formulier van degene die dat formulier heeft ingediend?
 
 <span style="color:#000081">Interessante vraag. Stel iemand doet een melding en wil op de hoogte gehouden worden van de behandeling daarvan. Die melding wordt geregistreerd als productaanvraag. Je kan in dit geval inderdaad twee routes kiezen:
-<span style="color:#000081">1.	Contactgegevens worden vastgelegd bij de klant, de contactgegevens bij de bij de productaanvraag waarin die melding is geregistreerd blijft leeg.
-2.	Er ontstaat geen klant, de contactgegevens worden in de contactgegevens bij de bij de productaanvraag waarin die melding is geregistreerd.</span>
+<li style="color:#000081">1.	<span style="color:#000081">Contactgegevens worden vastgelegd bij de klant, de contactgegevens bij de bij de productaanvraag waarin die melding is geregistreerd blijft leeg.</span>
+2.	<span style="color:#000081">Er ontstaat geen klant, de contactgegevens worden in de contactgegevens bij de bij de productaanvraag waarin die melding is geregistreerd.</span></li>
 <span style="color:#000081">Het tweede is conceptueel zuiverder: het gaat hier immers om contactgegevens die alleen voor de duur van de interactie (kunnen) worden gebruikt: precies waar de contactgegevens bij de aanvraag voor bedoeld zijn. Aan de andere kant kan ik me ook voorstellen dat deze route vraagt om het kunnen vastleggen van meer contactgegevens bij de productaanvraag.</span>
 
 <span style="color:#000081">Een andere consequentie van de tweede optie is dat het niet langer logisch lijkt de relatie tussen een zaak en iemand die bij die zaak betrokken is, maar niet aanleiding heeft gegeven tot het starten daarvan als klant te registreren. Diens contactgegevens zou je dan immers eerder op de relatie persoon – zaak verwachten.</span>
