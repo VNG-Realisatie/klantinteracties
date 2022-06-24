@@ -23,6 +23,8 @@ nav:
         path: /architectuur
       - title: Informatiemodellen
         path: /informatiemodellen
+      - title: Project
+        path: /project
       - title: Vraagstukken
         path: /vraagstukken
   - title: Specificaties Klanten API (IO)
