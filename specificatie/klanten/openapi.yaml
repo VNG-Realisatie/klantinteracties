@@ -905,8 +905,9 @@ components:
           title: BIC (Bank Identifier Code)
           description: De unieke code van de bankinstelling waar de klant het bankrekeningnummer heeft. De BIC heeft geen spaties.
           type: string
-          maxLength: 11
           minLength: 8
+          maxLength: 11
+          nullable: true
     Postadres:
       title: Postadres
       description: De gegevens die tezamen een postbusadres of antwoordnummeradres vormen.
@@ -926,7 +927,6 @@ components:
           title: Postcode
           type: string
           pattern: ^[1-9]{1}[0-9]{3}[ ]?[A-Za-z]{2}$
-          nullable: true
         postadrestype:
           title: Postadrestype
           type: string
@@ -941,7 +941,6 @@ components:
           title: Woonplaatsnaam
           type: string
           pattern: ^[a-zA-Z0-9À-ž \(\)\,\.\-\']{1,80}$
-          nullable: true 
     # KlantAdresBinnenland:
     #   title: Adres binnenland
     #   description: Binnenlandse adresgegevens.
