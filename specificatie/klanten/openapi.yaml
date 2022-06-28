@@ -78,7 +78,7 @@ info:
   license:
     name: EUPL 1.2
     url: https://opensource.org/licenses/EUPL-1.2
-  version: 1.0.0
+  version: 1.0.1
 security:
 - JWT-Claims: []
 paths:
@@ -285,14 +285,6 @@ paths:
       summary: Maak een KLANT aan.
       description: Maak een KLANT aan.
       parameters:
-      - name: Content-Type
-        in: header
-        description: Content type van de verzoekinhoud.
-        required: true
-        schema:
-          type: string
-          enum:
-          - application/json
       - name: X-NLX-Logrecord-ID
         in: header
         description: Identifier of the request, traceable throughout the network
@@ -557,14 +549,6 @@ paths:
       summary: Werk een KLANT in zijn geheel bij.
       description: Werk een KLANT in zijn geheel bij.
       parameters:
-      - name: Content-Type
-        in: header
-        description: Content type van de verzoekinhoud.
-        required: true
-        schema:
-          type: string
-          enum:
-          - application/json
       - name: X-NLX-Logrecord-ID
         in: header
         description: Identifier of the request, traceable throughout the network
@@ -622,14 +606,6 @@ paths:
       summary: Werk een KLANT deels bij.
       description: Werk een KLANT deels bij.
       parameters:
-      - name: Content-Type
-        in: header
-        description: Content type van de verzoekinhoud.
-        required: true
-        schema:
-          type: string
-          enum:
-          - application/json
       - name: X-NLX-Logrecord-ID
         in: header
         description: Identifier of the request, traceable throughout the network
@@ -904,51 +880,112 @@ components:
       scheme: bearer
       bearerFormat: JWT
   schemas:
-    KlantAdres:
-      title: Adres
-      description: Adresgegevens zoals opgegeven door de klant (kan ook een buitenlandsadres
-        zijn)
+    
+    Rekeningnummer:
+      title: Rekeningnummer
+      description: Gegevens inzake de bankrekening waarmee de klant financieel communiceert.
       type: object
+      required:
+        - iban
       properties:
-        straatnaam:
-          title: Straatnaam
+        iban:
+          title: IBAN
+          description: 'Het internationaal bankrekeningnummer van de klant. Het IBAN is opgebouwd uit: 
+              
+              - een landcode bestaande uit twee letters volgens ISO 3166-1, 
+              
+              - een controlegetal bestaande uit twee cijfers volgens ISO 7064, 
+              
+              - een bankcode en 
+              
+              - een bankrekeningnummer.'
           type: string
-          maxLength: 100
-          minLength: 1
-          nullable: true
-        huisnummer:
-          title: Huisnummer
-          type: integer
-          maximum: 99999
-          minimum: 1
-          nullable: true
-        huisletter:
-          title: Huisletter
+          maxLength: 34
+        bic:
+          title: BIC (Bank Identifier Code)
+          description: De unieke code van de bankinstelling waar de klant het bankrekeningnummer heeft. De BIC heeft geen spaties.
           type: string
-          pattern: ^[a-zA-Z]{1}$
-          nullable: true
-        huisnummertoevoeging:
-          title: Huisnummertoevoeging
+          maxLength: 11
+          minLength: 8
+    Postadres:
+      title: Postadres
+      description: De gegevens die tezamen een postbusadres of antwoordnummeradres vormen.
+      type: object
+      required:
+        - type
+        - postcode
+        - postadrestype
+        - nummer
+        - woonplaatsnaam
+      properties:
+        type:
           type: string
-          pattern: ^[a-zA-Z0-9 \-]{1,4}$
-          nullable: true
+          enum:
+            - postadres
         postcode:
           title: Postcode
           type: string
-          patern: ^[1-9]{1}[0-9]{3}[ ]?[A-Za-z]{2}$
+          pattern: ^[1-9]{1}[0-9]{3}[ ]?[A-Za-z]{2}$
           nullable: true
+        postadrestype:
+          title: Postadrestype
+          type: string
+          enum:
+            - postbusnummer
+            - antwoordnummer
+        nummer:
+          title: Postbus- of antwoordnummer
+          type: integer
+          maxLength: 5
         woonplaatsnaam:
           title: Woonplaatsnaam
           type: string
           pattern: ^[a-zA-Z0-9À-ž \(\)\,\.\-\']{1,80}$
-          nullable: true
-        landcode:
-          title: Landcode
-          description: De code, behorende bij de landnaam, zoals opgenomen in de Land/Gebied-tabel
-            van de BRP.
-          type: string
-          maxLength: 4
-      nullable: true
+          nullable: true 
+    # KlantAdresBinnenland:
+    #   title: Adres binnenland
+    #   description: Binnenlandse adresgegevens.
+    #   type: object
+    #   properties:
+    #     straatnaam:
+    #       title: Straatnaam
+    #       type: string
+    #       maxLength: 100
+    #       minLength: 1
+    #       nullable: true
+    #     huisnummer:
+    #       title: Huisnummer
+    #       type: integer
+    #       maximum: 99999
+    #       minimum: 1
+    #       nullable: true
+    #     huisletter:
+    #       title: Huisletter
+    #       type: string
+    #       pattern: ^[a-zA-Z]{1}$
+    #       nullable: true
+    #     huisnummertoevoeging:
+    #       title: Huisnummertoevoeging
+    #       type: string
+    #       pattern: ^[a-zA-Z0-9 \-]{1,4}$
+    #       nullable: true
+    #     postcode:
+    #       title: Postcode
+    #       type: string
+    #       pattern: ^[1-9]{1}[0-9]{3}[ ]?[A-Za-z]{2}$
+    #       nullable: true
+    #     woonplaatsnaam:
+    #       title: Woonplaatsnaam
+    #       type: string
+    #       pattern: ^[a-zA-Z0-9À-ž \(\)\,\.\-\']{1,80}$
+    #       nullable: true
+    #     # landcode:
+    #     #   title: Landcode
+    #     #   description: De code, behorende bij de landnaam, zoals opgenomen in de Land/Gebied-tabel
+    #     #     van de BRP.
+    #     #   type: string
+    #     #   maxLength: 4
+    #     #   nullable: true
     Klant:
       required:
       - bronorganisatie
@@ -1034,6 +1071,8 @@ components:
           format: email
           maxLength: 254
           nullable: true
+        rekeningnummer:
+          $ref: '#/components/schemas/Rekeningnummer'
         voorkeurskanaal:
           title: Voorkeurskanaal
           description: Het communicatiekanaal dat de voorkeur heeft van de KLANT. Deze voorkeur is default maar kan overruled worden in een specifieke klantinteractie.
@@ -1046,8 +1085,16 @@ components:
           type: string
           maxLength: 3
           example: "nld"
-        adres:
-          $ref: '#/components/schemas/KlantAdres'
+        correspondentieadres:
+          oneOf:
+            - $ref: '#/components/schemas/Binnenlandsadres'
+            - $ref: '#/components/schemas/Buitenlandsadres'
+            - $ref: '#/components/schemas/Postadres'
+        locatieadres:
+          description: Verblijfsplaats natuurlijk persoon, bezoekadres niet-natuurlijk persoon of locatie van vestiging.
+          oneOf:
+            - $ref: '#/components/schemas/Binnenlandsadres'
+            - $ref: '#/components/schemas/Buitenlandsadres'
         subject:
           title: Subject
           description: URL-referentie naar een subject
@@ -1058,7 +1105,7 @@ components:
           nullable: true
         subjectType:
           title: Subject type
-          description: 'Type van de `subject`.
+          description: 'Type van het `subject`.
 
 
             Uitleg bij mogelijke waarden:
@@ -1077,97 +1124,106 @@ components:
           nullable: true
       discriminator:
         propertyName: subjectType
-    VerblijfsAdres:
-      title: Verblijfsadres
+    Binnenlandsadres:
+      title: Binnenlandsadres
       required:
-      - aoaIdentificatie
-      - woonplaatsNaam
-      - openbareRuimteNaam
-      - huisnummer
+        - type
+        - huisnummer
+        - naamOpenbareRuimte
+        - woonplaatsnaam
       type: object
       properties:
-        aoaIdentificatie:
-          title: Aoa identificatie
-          description: De unieke identificatie van het OBJECT
+        type:
           type: string
-          maxLength: 100
-          minLength: 1
-        woonplaatsNaam:
-          title: Wpl woonplaats naam
-          type: string
-          pattern: ^[a-zA-Z0-9À-ž \(\)\,\.\-\']{1,80}$
-        openbareRuimteNaam:
-          title: Gor openbare ruimte naam
-          description: Een door het bevoegde gemeentelijke orgaan aan een OPENBARE
-            RUIMTE toegekende benaming
-          type: string
-          maxLength: 80
-          minLength: 1
-        postcode:
-          title: Aoa postcode
-          type: string
-          patern: ^[1-9]{1}[0-9]{3}[ ]?[A-Za-z]{2}$
-          nullable: true
+          enum:
+            - binnenlandsadres
         huisnummer:
-          title: Aoa huisnummer
+          title: Huisnummer
           type: integer
           maximum: 99999
           minimum: 1
         huisletter:
-          title: Aoa huisletter
+          title: Huisletter
           type: string
           pattern: ^[a-zA-Z]{1}$
           nullable: true
         huisnummertoevoeging:
-          title: Aoa huisnummertoevoeging
+          title: Huisnummertoevoeging
           type: string
           pattern: ^[a-zA-Z0-9 \-]{1,4}$
           nullable: true
+        naamOpenbareRuimte:
+          title: Naam openbare ruimte
+          description: Een door het bevoegde gemeentelijke orgaan aan een OPENBARE
+            RUIMTE toegekende benaming.
+          type: string
+          maxLength: 80
+          minLength: 1
+        straatnaam:
+          title: Straatnaam
+          description: De officiële straatnaam zoals door het bevoegd gemeentelijk orgaan is vastgesteld, zo nodig ingekort conform de specificaties van de NEN 5825.
+          type: string
+          maxLength: 24
+          minLength: 1
+          nullable: true
+        postcode:
+          title: Postcode
+          type: string
+          pattern: ^[1-9]{1}[0-9]{3}[ ]?[A-Za-z]{2}$
+          nullable: true
+        woonplaatsnaam:
+          title: Woonplaatsnaam
+          type: string
+          pattern: ^[a-zA-Z0-9À-ž \(\)\,\.\-\']{1,80}$
         locatiebeschrijving:
-          title: Inp locatiebeschrijving
+          title: Locatiebeschrijving
           type: string
           maxLength: 1000
           minLength: 1
           nullable: true
-    SubVerblijfBuitenland:
-      title: Sub verblijf buitenland
+    Buitenlandsadres:
+      title: Buitenlandsadres
       required:
       - landcode
       - landnaam
       type: object
       properties:
+        type:
+          type: string
+          enum:
+            - buitenlandsadres
+        adresregel1:
+          title: Adres buitenland 1
+          type: string
+          maxLength: 35
+          minLength: 1
+          nullable: true
+        adresregel2:
+          title: Adres buitenland 2
+          type: string
+          maxLength: 35
+          minLength: 1
+          nullable: true
+        adresregel3:
+          title: Adres buitenland 3
+          type: string
+          maxLength: 35
+          minLength: 1
+          nullable: true
         landcode:
-          title: Lnd landcode
+          title: Landcode
           description: De code, behorende bij de landnaam, zoals opgenomen in de Land/Gebied-tabel
             van de BRP.
           type: string
           maxLength: 4
           minLength: 1
         landnaam:
-          title: Lnd landnaam
+          title: Landnaam
           description: De naam van het land, zoals opgenomen in de Land/Gebied-tabel
             van de BRP.
           type: string
           maxLength: 40
           minLength: 1
-        adresregel1:
-          title: Sub adres buitenland 1
-          type: string
-          maxLength: 35
-          minLength: 1
-          nullable: true
-        adresregel2:
-          title: Sub adres buitenland 2
-          type: string
-          maxLength: 35
-          minLength: 1
-          nullable: true
-        adresregel3:
-          title: Sub adres buitenland 3
-          type: string
-          maxLength: 35
-          minLength: 1
-          nullable: true
     NatuurlijkPersoon:
       title: subject_identificatie
       type: object
@@ -1243,9 +1299,9 @@ components:
           minLength: 1
           nullable: true
         verblijfsadres:
-          $ref: '#/components/schemas/VerblijfsAdres'
+          $ref: '#/components/schemas/Binnenlandsadres'
         verblijfBuitenland:
-          $ref: '#/components/schemas/SubVerblijfBuitenland'
+          $ref: '#/components/schemas/Buitenlandsadres'
     subject_identificatie_NatuurlijkPersoon:
       type: object
       properties:
@@ -1261,7 +1317,7 @@ components:
       type: object
       properties:
         rsin:
-          title: Inn nnp id
+          title: Rsin
           description: Het door een kamer toegekend uniek nummer voor de INGESCHREVEN
             NIET-NATUURLIJK PERSOON
           type: string
@@ -1269,7 +1325,7 @@ components:
           minLength: 1
           nullable: true
         nummerAnderNietNatuurlijkPersoon:
-          title: Ann identificatie
+          title: Nummer ander niet-natuurlijk persoon
           description: Het door de gemeente uitgegeven unieke nummer voor een ANDER
             NIET-NATUURLIJK PERSOON
           type: string
@@ -1286,7 +1342,7 @@ components:
           minLength: 1
           nullable: true
         rechtsvorm:
-          title: Inn rechtsvorm
+          title: Rechtsvorm
           description: De juridische vorm van de NIET-NATUURLIJK PERSOON.
           type: string
           enum:
@@ -1317,7 +1373,7 @@ components:
           minLength: 1
           nullable: true
         verblijfBuitenland:
-          $ref: '#/components/schemas/SubVerblijfBuitenland'
+          $ref: '#/components/schemas/Buitenlandsadres'
     subject_identificatie_NietNatuurlijkPersoon:
       type: object
       properties:
@@ -1349,9 +1405,9 @@ components:
             minLength: 1
             nullable: true
         verblijfsadres:
-          $ref: '#/components/schemas/VerblijfsAdres'
+          $ref: '#/components/schemas/Binnenlandsadres'
         verblijfBuitenland:
-          $ref: '#/components/schemas/SubVerblijfBuitenland'
+          $ref: '#/components/schemas/Buitenlandsadres'
     subject_identificatie_Vestiging:
       type: object
       properties:
