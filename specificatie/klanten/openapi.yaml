@@ -78,7 +78,7 @@ info:
   license:
     name: EUPL 1.2
     url: https://opensource.org/licenses/EUPL-1.2
-  version: 1.0.1
+  version: 1.0.2
 security:
 - JWT-Claims: []
 paths:
@@ -908,83 +908,6 @@ components:
           minLength: 8
           maxLength: 11
           nullable: true
-    Postadres:
-      title: Postadres
-      description: De gegevens die tezamen een postbusadres of antwoordnummeradres vormen.
-      type: object
-      required:
-        - type
-        - postcode
-        - postadrestype
-        - nummer
-        - woonplaatsnaam
-      properties:
-        type:
-          type: string
-          enum:
-            - postadres
-        postcode:
-          title: Postcode
-          type: string
-          pattern: ^[1-9]{1}[0-9]{3}[ ]?[A-Za-z]{2}$
-        postadrestype:
-          title: Postadrestype
-          type: string
-          enum:
-            - postbusnummer
-            - antwoordnummer
-        nummer:
-          title: Postbus- of antwoordnummer
-          type: integer
-          maxLength: 5
-        woonplaatsnaam:
-          title: Woonplaatsnaam
-          type: string
-          pattern: ^[a-zA-Z0-9À-ž \(\)\,\.\-\']{1,80}$
-    # KlantAdresBinnenland:
-    #   title: Adres binnenland
-    #   description: Binnenlandse adresgegevens.
-    #   type: object
-    #   properties:
-    #     straatnaam:
-    #       title: Straatnaam
-    #       type: string
-    #       maxLength: 100
-    #       minLength: 1
-    #       nullable: true
-    #     huisnummer:
-    #       title: Huisnummer
-    #       type: integer
-    #       maximum: 99999
-    #       minimum: 1
-    #       nullable: true
-    #     huisletter:
-    #       title: Huisletter
-    #       type: string
-    #       pattern: ^[a-zA-Z]{1}$
-    #       nullable: true
-    #     huisnummertoevoeging:
-    #       title: Huisnummertoevoeging
-    #       type: string
-    #       pattern: ^[a-zA-Z0-9 \-]{1,4}$
-    #       nullable: true
-    #     postcode:
-    #       title: Postcode
-    #       type: string
-    #       pattern: ^[1-9]{1}[0-9]{3}[ ]?[A-Za-z]{2}$
-    #       nullable: true
-    #     woonplaatsnaam:
-    #       title: Woonplaatsnaam
-    #       type: string
-    #       pattern: ^[a-zA-Z0-9À-ž \(\)\,\.\-\']{1,80}$
-    #       nullable: true
-    #     # landcode:
-    #     #   title: Landcode
-    #     #   description: De code, behorende bij de landnaam, zoals opgenomen in de Land/Gebied-tabel
-    #     #     van de BRP.
-    #     #   type: string
-    #     #   maxLength: 4
-    #     #   nullable: true
     Klant:
       required:
       - bronorganisatie
@@ -1084,16 +1007,10 @@ components:
           type: string
           maxLength: 3
           example: "nld"
+        verblijfsadres:
+          $ref: '#/components/schemas/Verblijfsadres'
         correspondentieadres:
-          oneOf:
-            - $ref: '#/components/schemas/Binnenlandsadres'
-            - $ref: '#/components/schemas/Buitenlandsadres'
-            - $ref: '#/components/schemas/Postadres'
-        locatieadres:
-          description: Verblijfsplaats natuurlijk persoon, bezoekadres niet-natuurlijk persoon of locatie van vestiging.
-          oneOf:
-            - $ref: '#/components/schemas/Binnenlandsadres'
-            - $ref: '#/components/schemas/Buitenlandsadres'
+          $ref: '#/components/schemas/Correspondentieadres'
         subject:
           title: Subject
           description: URL-referentie naar een subject
@@ -1123,106 +1040,159 @@ components:
           nullable: true
       discriminator:
         propertyName: subjectType
-    Binnenlandsadres:
-      title: Binnenlandsadres
+    Verblijfsadres:
+      required:
+        - type
+      description: Verblijfsplaats natuurlijk persoon, bezoekadres niet-natuurlijk persoon of locatie van vestiging.
+      type: object
+      properties:
+        type:
+          type: string
+      discriminator:
+        propertyName: type
+        mapping:
+          binnenlands_adres: '#/components/schemas/BinnenlandsAdres'
+          buitenlands_adres: '#/components/schemas/BuitenlandsAdres'
+    Correspondentieadres:
+      required:
+        - type
+      type: object
+      properties:
+        type:
+          type: string
+      discriminator:
+        propertyName: type
+        mapping:
+          binnenlands_adres: '#/components/schemas/BinnenlandsAdres'
+          postadres: '#/components/schemas/Postadres'
+          buitenlands_adres: '#/components/schemas/BuitenlandsAdres'
+    BinnenlandsAdres:
+      title: Binnenlands adres
       required:
         - type
         - huisnummer
         - naamOpenbareRuimte
         - woonplaatsnaam
-      type: object
-      properties:
-        type:
-          type: string
-          enum:
-            - binnenlandsadres
-        huisnummer:
-          title: Huisnummer
-          type: integer
-          maximum: 99999
-          minimum: 1
-        huisletter:
-          title: Huisletter
-          type: string
-          pattern: ^[a-zA-Z]{1}$
-          nullable: true
-        huisnummertoevoeging:
-          title: Huisnummertoevoeging
-          type: string
-          pattern: ^[a-zA-Z0-9 \-]{1,4}$
-          nullable: true
-        naamOpenbareRuimte:
-          title: Naam openbare ruimte
-          description: Een door het bevoegde gemeentelijke orgaan aan een OPENBARE
-            RUIMTE toegekende benaming.
-          type: string
-          maxLength: 80
-          minLength: 1
-        straatnaam:
-          title: Straatnaam
-          description: De officiële straatnaam zoals door het bevoegd gemeentelijk orgaan is vastgesteld, zo nodig ingekort conform de specificaties van de NEN 5825.
-          type: string
-          maxLength: 24
-          minLength: 1
-          nullable: true
-        postcode:
-          title: Postcode
-          type: string
-          pattern: ^[1-9]{1}[0-9]{3}[ ]?[A-Za-z]{2}$
-          nullable: true
-        woonplaatsnaam:
-          title: Woonplaatsnaam
-          type: string
-          pattern: ^[a-zA-Z0-9À-ž \(\)\,\.\-\']{1,80}$
-        locatiebeschrijving:
-          title: Locatiebeschrijving
-          type: string
-          maxLength: 1000
-          minLength: 1
-          nullable: true
-    Buitenlandsadres:
-      title: Buitenlandsadres
+      allOf:
+        - $ref: '#/components/schemas/Correspondentieadres'
+        - type: object
+          properties:
+            huisnummer:
+              title: Huisnummer
+              type: integer
+              maximum: 99999
+              minimum: 1
+            huisletter:
+              title: Huisletter
+              type: string
+              pattern: ^[a-zA-Z]{1}$
+              nullable: true
+            huisnummertoevoeging:
+              title: Huisnummertoevoeging
+              type: string
+              pattern: ^[a-zA-Z0-9 \-]{1,4}$
+              nullable: true
+            naamOpenbareRuimte:
+              title: Naam openbare ruimte
+              description: Een door het bevoegde gemeentelijke orgaan aan een OPENBARE
+                RUIMTE toegekende benaming.
+              type: string
+              maxLength: 80
+              minLength: 1
+            straatnaam:
+              title: Straatnaam
+              description: De officiële straatnaam zoals door het bevoegd gemeentelijk orgaan is vastgesteld, zo nodig ingekort conform de specificaties van de NEN 5825.
+              type: string
+              maxLength: 24
+              minLength: 1
+              nullable: true
+            postcode:
+              title: Postcode
+              type: string
+              pattern: ^[1-9]{1}[0-9]{3}[ ]?[A-Za-z]{2}$
+              nullable: true
+            woonplaatsnaam:
+              title: Woonplaatsnaam
+              type: string
+              pattern: ^[a-zA-Z0-9À-ž \(\)\,\.\-\']{1,80}$
+            locatiebeschrijving:
+              title: Locatiebeschrijving
+              type: string
+              maxLength: 1000
+              minLength: 1
+              nullable: true
+    Postadres:
+      title: Postadres
+      description: De gegevens die tezamen een postbusadres of antwoordnummeradres vormen.
+      allOf:
+        - $ref: '#/components/schemas/Correspondentieadres'
+        - type: object
+          required:
+            - type
+            - postcode
+            - postadrestype
+            - nummer
+            - woonplaatsnaam
+          properties:
+            postcode:
+              title: Postcode
+              type: string
+              pattern: ^[1-9]{1}[0-9]{3}[ ]?[A-Za-z]{2}$
+            postadrestype:
+              title: Postadrestype
+              type: string
+              enum:
+                - postbusnummer
+                - antwoordnummer
+            nummer:
+              title: Postbus- of antwoordnummer
+              type: integer
+              maxLength: 5
+            woonplaatsnaam:
+              title: Woonplaatsnaam
+              type: string
+              pattern: ^[a-zA-Z0-9À-ž \(\)\,\.\-\']{1,80}$
+    BuitenlandsAdres:
+      title: Buitenlands adres
       required:
       - landcode
       - landnaam
-      type: object
-      properties:
-        type:
-          type: string
-          enum:
-            - buitenlandsadres
-        adresregel1:
-          title: Adres buitenland 1
-          type: string
-          maxLength: 35
-          minLength: 1
-          nullable: true
-        adresregel2:
-          title: Adres buitenland 2
-          type: string
-          maxLength: 35
-          minLength: 1
-          nullable: true
-        adresregel3:
-          title: Adres buitenland 3
-          type: string
-          maxLength: 35
-          minLength: 1
-          nullable: true
-        landcode:
-          title: Landcode
-          description: De code, behorende bij de landnaam, zoals opgenomen in de Land/Gebied-tabel
-            van de BRP.
-          type: string
-          maxLength: 4
-          minLength: 1
-        landnaam:
-          title: Landnaam
-          description: De naam van het land, zoals opgenomen in de Land/Gebied-tabel
-            van de BRP.
-          type: string
-          maxLength: 40
-          minLength: 1
+      allOf:
+        - $ref: '#/components/schemas/Correspondentieadres'
+        - type: object
+          properties:
+            adresregel1:
+              title: Adres buitenland 1
+              type: string
+              maxLength: 35
+              minLength: 1
+              nullable: true
+            adresregel2:
+              title: Adres buitenland 2
+              type: string
+              maxLength: 35
+              minLength: 1
+              nullable: true
+            adresregel3:
+              title: Adres buitenland 3
+              type: string
+              maxLength: 35
+              minLength: 1
+              nullable: true
+            landcode:
+              title: Landcode
+              description: De code, behorende bij de landnaam, zoals opgenomen in de Land/Gebied-tabel
+                van de BRP.
+              type: string
+              maxLength: 4
+              minLength: 1
+            landnaam:
+              title: Landnaam
+              description: De naam van het land, zoals opgenomen in de Land/Gebied-tabel
+                van de BRP.
+              type: string
+              maxLength: 40
+              minLength: 1
     NatuurlijkPersoon:
       title: subject_identificatie
       type: object
@@ -1298,9 +1268,7 @@ components:
           minLength: 1
           nullable: true
         verblijfsadres:
-          $ref: '#/components/schemas/Binnenlandsadres'
-        verblijfBuitenland:
-          $ref: '#/components/schemas/Buitenlandsadres'
+          $ref: '#/components/schemas/Verblijfsadres'
     subject_identificatie_NatuurlijkPersoon:
       type: object
       properties:
@@ -1364,15 +1332,15 @@ components:
           - kapitaalvennootschap_binnen_eer
           - overige_buitenlandse_rechtspersoon_vennootschap
           - kapitaalvennootschap_buiten_eer
-        bezoekadres:
-          title: Bezoekadres
-          description: De gegevens over het adres van de NIET-NATUURLIJK PERSOON
-          type: string
-          maxLength: 1000
-          minLength: 1
-          nullable: true
-        verblijfBuitenland:
-          $ref: '#/components/schemas/Buitenlandsadres'
+        # bezoekadres:
+        #   title: Bezoekadres
+        #   description: De gegevens over het adres van de NIET-NATUURLIJK PERSOON
+        #   type: string
+        #   maxLength: 1000
+        #   minLength: 1
+        #   nullable: true
+        verblijfsadres:
+          $ref: '#/components/schemas/Verblijfsadres'
     subject_identificatie_NietNatuurlijkPersoon:
       type: object
       properties:
@@ -1404,9 +1372,7 @@ components:
             minLength: 1
             nullable: true
         verblijfsadres:
-          $ref: '#/components/schemas/Binnenlandsadres'
-        verblijfBuitenland:
-          $ref: '#/components/schemas/Buitenlandsadres'
+          $ref: '#/components/schemas/Verblijfsadres'
     subject_identificatie_Vestiging:
       type: object
       properties:
