@@ -1007,8 +1007,8 @@ components:
           type: string
           maxLength: 3
           example: "nld"
-        verblijfsadres:
-          $ref: '#/components/schemas/Verblijfsadres'
+        verblijfadres:
+          $ref: '#/components/schemas/Verblijfadres'
         correspondentieadres:
           $ref: '#/components/schemas/Correspondentieadres'
         subject:
@@ -1040,7 +1040,7 @@ components:
           nullable: true
       discriminator:
         propertyName: subjectType
-    Verblijfsadres:
+    Verblijfadres:
       required:
         - type
       description: Verblijfsplaats natuurlijk persoon, bezoekadres niet-natuurlijk persoon of locatie van vestiging.
@@ -1072,7 +1072,7 @@ components:
         - type
         - huisnummer
         - naamOpenbareRuimte
-        - woonplaatsnaam
+        - woonplaats
       allOf:
         - $ref: '#/components/schemas/Correspondentieadres'
         - type: object
@@ -1111,8 +1111,8 @@ components:
               type: string
               pattern: ^[1-9]{1}[0-9]{3}[ ]?[A-Za-z]{2}$
               nullable: true
-            woonplaatsnaam:
-              title: Woonplaatsnaam
+            woonplaats:
+              title: Woonplaats
               type: string
               pattern: ^[a-zA-Z0-9À-ž \(\)\,\.\-\']{1,80}$
             locatiebeschrijving:
@@ -1132,7 +1132,7 @@ components:
             - postcode
             - postadrestype
             - nummer
-            - woonplaatsnaam
+            - woonplaats
           properties:
             postcode:
               title: Postcode
@@ -1148,8 +1148,8 @@ components:
               title: Postbus- of antwoordnummer
               type: integer
               maxLength: 5
-            woonplaatsnaam:
-              title: Woonplaatsnaam
+            woonplaats:
+              title: Woonplaats
               type: string
               pattern: ^[a-zA-Z0-9À-ž \(\)\,\.\-\']{1,80}$
     BuitenlandsAdres:
@@ -1161,20 +1161,20 @@ components:
         - $ref: '#/components/schemas/Correspondentieadres'
         - type: object
           properties:
-            adresregel1:
-              title: Adres buitenland 1
+            regel1:
+              title: Regel 1
               type: string
               maxLength: 35
               minLength: 1
               nullable: true
-            adresregel2:
-              title: Adres buitenland 2
+            regel2:
+              title: Regel 2
               type: string
               maxLength: 35
               minLength: 1
               nullable: true
-            adresregel3:
-              title: Adres buitenland 3
+            regel3:
+              title: Regel 3
               type: string
               maxLength: 35
               minLength: 1
@@ -1267,8 +1267,8 @@ components:
           maxLength: 18
           minLength: 1
           nullable: true
-        verblijfsadres:
-          $ref: '#/components/schemas/Verblijfsadres'
+        verblijfadres:
+          $ref: '#/components/schemas/Verblijfadres'
     subject_identificatie_NatuurlijkPersoon:
       type: object
       properties:
@@ -1339,8 +1339,8 @@ components:
         #   maxLength: 1000
         #   minLength: 1
         #   nullable: true
-        verblijfsadres:
-          $ref: '#/components/schemas/Verblijfsadres'
+        verblijfadres:
+          $ref: '#/components/schemas/Verblijfadres'
     subject_identificatie_NietNatuurlijkPersoon:
       type: object
       properties:
@@ -1371,8 +1371,8 @@ components:
             maxLength: 625
             minLength: 1
             nullable: true
-        verblijfsadres:
-          $ref: '#/components/schemas/Verblijfsadres'
+        verblijfadres:
+          $ref: '#/components/schemas/Verblijfadres'
     subject_identificatie_Vestiging:
       type: object
       properties:
