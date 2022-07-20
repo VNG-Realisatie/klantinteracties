@@ -6,14 +6,14 @@ date: 09-06-2022
 
 # API-standaarden voor Klantinteracties
 
-In 2021 zijn de [API-standaarden voor Zaakgericht werken](https://vng-realisatie.github.io/gemma-zaken/) vastgesteld. Als 'spin-off' van dat ontwikkeltraject zijn ook de eerste stappen gezet van de ontwikkeling van drie daaraan gerelateerde API-standaarden waarmee gemeenten gegevens over interacties met inwoners en ondernemers op gestandaardiseerde wijze kunnen registreren, bewerken en verwijderen. De drie (concept)standaarden samen noemen we de 'API-standaarden voor Klantinteracties'. In 2022 werken we aan productiewaardige versies van deze standaarden.
+In 2021 zijn de [API-standaarden voor Zaakgericht werken](https://vng-realisatie.github.io/gemma-zaken/) vastgesteld. Als 'spin-off' van dat ontwikkeltraject zijn ook de eerste stappen gezet in de ontwikkeling van drie daaraan gerelateerde API-standaarden waarmee gemeenten gegevens over interacties met inwoners en ondernemers op gestandaardiseerde wijze kunnen registreren, bewerken en verwijderen. De drie (concept)standaarden samen noemen we de 'API-standaarden voor Klantinteracties'. In 2022 werken we aan productiewaardige versies van deze standaarden.
 
 ## Om welke standaarden gaat het?
 De set API-standaarden voor Klantinteracties bestaat uit drie API-standaarden voor het vastleggen van informatie over interacties tussen de gemeente en inwoners en ondernemers. Gedurende het ontwikkelproces wordt de documentatie per standaard geactulaliseerd en overgeheveld van de [GitHub-omgeving van de API-standaarden voor Zaakgericht werken](https://vng-realisatie.github.io/gemma-zaken/standaard/contactmomenten/index) naar deze omgeving. Voor de standaarden waarvoor dit nog niet is gebeurd, wordt hieronder verwezen naar de (concept)documentatie in de Zaakgericht werken-omgeving.
 - [Klanten API-standaard](./api-standaarden/klanten/specificaties.md)
 - [Contactmomenten API-standaard](https://vng-realisatie.github.io/gemma-zaken/standaard/contactmomenten/index)
 - [Productaanvragen API-standaard](https://vng-realisatie.github.io/gemma-zaken/standaard/contactmomenten/index) - achter de link nog 'Verzoeken API' genoemd
-- [Informatiemodellen](/informatiemodel.md)
+- [Informatiemodellen](./informatiemodellen.md)
 
 ### Status van de API-standaarden
 
@@ -33,8 +33,9 @@ De API-standaarden voor Klantinteracties hangen nauw samen met de API-standaarde
 
 Gemeenten en leveranciers worden aangemoedigd om bij te dragen aan het project. Onderstaande links geven informatie over hoe u uw bijdrage kan leveren.
 - Hoe u kunt [bijdragen](https://github.com/VNG-Realisatie/Tutorial/blob/master/CONTRIBUTING.md)
+- [Daadwerkelijk bijdragen](https://vng-realisatie.github.io/API-Kennisbank/docs/hoe-kun-je-bijdragen)
 - [Omgangsvormen](https://github.com/VNG-Realisatie/Tutorial/blob/master/CODE_OF_CONDUCT.md)
-- Functionele wens of een bug gevonden? Dien een issue in op de [GitHub repository voor Klantinteracties](https://github.com/VNG-Realisatie/klantinteracties/issues)
+- Mis je functionaliteit die voor jou belangrijk is? Heb je een issue (fout of bug) gezien in een van onze API’s? Of heb je een wens of suggestie? [Bijdragen aan VNGR API standaarden kan in verschillende vormen.](https://vng-realisatie.github.io/API-Kennisbank/docs/hoe-kun-je-bijdragen)
 
 ## Beheer en ondersteuning
 
