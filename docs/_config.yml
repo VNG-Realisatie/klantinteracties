@@ -23,6 +23,8 @@ nav:
         path: /architectuur
       - title: Informatiemodellen
         path: /informatiemodellen
+      - title: Project
+        path: /project
       - title: Vraagstukken
         path: /vraagstukken
   - title: Specificaties Klanten API (IO)
@@ -41,12 +43,12 @@ nav:
         path: /redoc-io-contactmomenten
 #      - title: Referentieimplementatie
 #        path: /api-standaarden/klanten/referentieimplementatie
-  - title: Specificaties Verzoeken API (IO)
-    subnav:
+#  - title: Specificaties Verzoeken API (IO)
+#    subnav:
 #      - title: Specificaties
 #        path: /api-standaarden/klanten/specificaties
-      - title: Verzoeken API (redoc)
-        path: /redoc-io-verzoeken
+#      - title: Verzoeken API (redoc)
+#        path: /redoc-io-verzoeken
 #      - title: Referentieimplementatie
 #        path: /api-standaarden/klanten/referentieimplementatie
 
