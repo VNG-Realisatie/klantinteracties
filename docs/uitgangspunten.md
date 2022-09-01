@@ -30,8 +30,8 @@ Opgegeven klantgegvens moeten worden beschouwd als â€˜voorkeurscontactgegevensâ€
 
 ### KLUIT05 - Klantgegevens kunnen worden vastgelegd voor Nederlandse en niet-Nederlandse personen en organisaties
 
-De meeste personen en organisaties waarmee gemeenten contact hebben, zijn in Nederland gevestigid en ingeschreven in een Nederlandse (basis)registratie. Maar zij doen zij ook zaken met personen of organisaties waarvoor dat niet geldt. De Klanten API kan daarom ook worden gebruikt voor communicatie met en identificeren van personen en organisaties die niet in Nederland gevestigd zijn of in een Nederlandse registratie voorkomen.
+De meeste personen en organisaties waarmee gemeenten contact hebben, zijn in Nederland gevestigd en ingeschreven in een Nederlandse (basis)registratie. Maar gemeenten doen ook zaken met personen of organisaties waarvoor dat niet geldt. De Klanten API kan daarom ook worden gebruikt voor communicatie met en identificeren van personen en organisaties die niet in Nederland gevestigd zijn of in een Nederlandse registratie voorkomen.
 
 ### KLUIT06 - Klantgegevens worden alleen vastgelegd door, of verstrekt aan degenen die daartoe gemachtigd zijn
 
-Klantgegevens zijn persoonsgegevens. Deze gegevens mogen alleen worden door vastgelegd (voorzover het identificerende gegevens betreft) en verstrekt aan degenen die het recht hebben dat te doen.
+Klantgegevens zijn persoonsgegevens. Deze gegevens mogen alleen worden vastgelegd (voorzover het identificerende gegevens betreft) en verstrekt aan degenen die daartoe het recht hebben.
