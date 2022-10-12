@@ -16,7 +16,7 @@ date: 09-06-2022
 
 <span style="color:#7C0A02">Omdat zo’n fundament een voorwaarde is voor doelmatige, op elkaar aansluitende API-standaarden van goede kwaliteit, én omdat op het gebied van API-ontwikkeling de komende tijd veel van gemeenten en de VNG wordt verwacht, gaan we met méér mensen méér tijd steken in de ontwikkeling daarvan. Dit betekent dat de ontwikkeling van de API-standaarden voor Klantinteracties (Klanten, Contactmomenten en Verzoeken) vanaf september 2022 wordt gepauzeerd. We verwachten de ontwikkeling van deze API-standaarden in 2023 weer op te nemen, en de tweede helft van dat jaar productieversies van deze standaarden te kunnen uitbrengen.</span>
 
-<span style="color:#7C0A02">We begrijpen dat veel van jullie wachten op productieversies van de API-standaarden voor Klantinteracties. Tegelijkertijd willen we ook, voor zover als mogelijk, de toepasbaarheid daarvan kunnen garanderen. Het werk dat we de komende maanden aan het ‘fundament’ verrichten gaat hieraan een belangrijke bijdrage leveren.</span>
+<span style="color:#7C0A02">We begrijpen dat veel van jullie wachten op productieversies van de API-standaarden voor Klantinteracties. Tegelijkertijd willen we ook, voor zover als mogelijk, de toepasbaarheid daarvan kunnen garanderen. Het werk dat we de komende maanden aan het ‘fundament’ verrichten, gaat hieraan een belangrijke bijdrage leveren.</span>
 
 <span style="color:#7C0A02">Vragen hierover? Mail naar [standaarden.ondersteuning@vng.nl](mailto:standaarden.ondersteuning@vng.nl).</span>
 
