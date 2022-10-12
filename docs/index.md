@@ -18,7 +18,7 @@ date: 09-06-2022
 
 <span style="color:#7C0A02">We begrijpen dat veel van jullie wachten op productieversies van de API-standaarden voor Klantinteracties. Tegelijkertijd willen we ook, voor zover als mogelijk, de toepasbaarheid daarvan kunnen garanderen. Het werk dat we de komende maanden aan het ‘fundament’ verrichten gaat hieraan een belangrijke bijdrage leveren.</span>
 
-<span style="color:#7C0A02">Vragen hierover? mail naar mailto:standaarden.ondersteuning@vng.nl.</span>
+<span style="color:#7C0A02">Vragen hierover? Mail naar [standaarden.ondersteuning@vng.nl](mailto:standaarden.ondersteuning@vng.nl).</span>
 
 # API-standaarden voor Klantinteracties
 
@@ -55,7 +55,7 @@ Gemeenten en leveranciers worden aangemoedigd om bij te dragen aan het project. 
 
 ## Beheer en ondersteuning
 
-Contact: mailto:standaarden.ondersteuning@vng.nl
+Contact: [standaarden.ondersteuning@vng.nl](mailto:standaarden.ondersteuning@vng.nl)
 
 ## Licentie
 
