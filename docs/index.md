@@ -4,7 +4,7 @@ title: API-standaarden voor Klantinteracties
 date: 09-06-2022
 ---
 
-<span style="color:#C21807"># Pauzering ontwikkeling API-standaarden voor Klantinteracties.</span> 
+# <span style="color:#C21807">Pauzering ontwikkeling API-standaarden voor Klantinteracties.</span> 
 
 <span style="color:#7C0A02">In 2017 zijn gemeenten, VNG en leveranciers onder de naam ‘Common Ground’ een nieuwe informatiekundige weg ingeslagen. Eén gevolg was het ontwikkelen van nieuwe API-standaarden die aansluiten bij het vijflagenmodel en de REST-architectuurstijl volgen.</span>
 
