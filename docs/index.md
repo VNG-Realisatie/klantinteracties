@@ -4,7 +4,6 @@ title: API-standaarden voor Klantinteracties
 date: 09-06-2022
 ---
 
-<span style="color:#7C0A02">12 oktober 2022</span> 
 # <span style="color:#C21807">Ontwikkeling API-standaarden voor Klantinteracties gepauzeerd</span>
 
 <span style="color:#7C0A02">In 2017 zijn gemeenten, VNG en leveranciers onder de naam ‘Common Ground’ een nieuwe informatiekundige weg ingeslagen. Eén gevolg was het ontwikkelen van nieuwe API-standaarden die aansluiten bij het vijflagenmodel en de REST-architectuurstijl volgen.</span>
@@ -15,7 +14,7 @@ date: 09-06-2022
 
 <span style="color:#7C0A02">Het antwoord op deze vragen vormt een gezamenlijke basis of ‘fundament’ waarop we de komende jaren bij de ontwikkeling van API-standaarden verder kunnen bouwen.</span>
 
-<span style="color:#7C0A02">Omdat zo’n fundament een voorwaarde is voor doelmatige, op elkaar aansluitende API-standaarden van goede kwaliteit, én omdat op het gebied van API-ontwikkeling de komende tijd veel van gemeenten en de VNG wordt verwacht, gaan we met méér mensen méér tijd steken in de ontwikkeling daarvan. Dit betekent dat de ontwikkeling van de API-standaarden voor Klantinteracties (Klanten, Contactmomenten en Verzoeken) wordt gepauzeerd. We verwachten de ontwikkeling van deze API-standaarden in 2023 weer op te nemen, en de tweede helft van dat jaar productieversies van deze standaarden te kunnen uitbrengen.</span>
+<span style="color:#7C0A02">Omdat zo’n fundament een voorwaarde is voor doelmatige, op elkaar aansluitende API-standaarden van goede kwaliteit, én omdat op het gebied van API-ontwikkeling de komende tijd veel van gemeenten en de VNG wordt verwacht, gaan we met méér mensen méér tijd steken in de ontwikkeling daarvan. Dit betekent dat de ontwikkeling van de API-standaarden voor Klantinteracties (Klanten, Contactmomenten en Verzoeken) vanaf september 2022 wordt gepauzeerd. We verwachten de ontwikkeling van deze API-standaarden in 2023 weer op te nemen, en de tweede helft van dat jaar productieversies van deze standaarden te kunnen uitbrengen.</span>
 
 <span style="color:#7C0A02">We begrijpen dat veel van jullie wachten op productieversies van de API-standaarden voor Klantinteracties. Tegelijkertijd willen we ook, voor zover als mogelijk, de toepasbaarheid daarvan kunnen garanderen. Het werk dat we de komende maanden aan het ‘fundament’ verrichten gaat hieraan een belangrijke bijdrage leveren.</span>
 
