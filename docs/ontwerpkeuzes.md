@@ -8,7 +8,7 @@ date: 20-06-2022
 
 ## Klanten
 
-### KLOK01 - Klantgegevens kunnen identificerende gegevens omvatten
+### Klantgegevens kunnen identificerende gegevens omvatten
 
 #### Relevante uitgangspunten
 
