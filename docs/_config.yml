@@ -13,20 +13,32 @@ nav:
         path: /
       - title: Productvisie
         path: /productvisie
-      - title: Begrippen
-        path: /begrippen
-      - title: Uitgangspunten
-        path: /uitgangspunten
-      - title: Ontwerpkeuzes
-        path: /ontwerpkeuzes
+      - title: Quickstart
+        path: /quickstart
       - title: Architectuur
         path: /architectuur
-      - title: Informatiemodellen
-        path: /informatiemodellen
-      - title: Project
-        path: /project
-      - title: Vraagstukken
-        path: /vraagstukken
+  - title: Informatiemodel
+    subnav:
+      - title: Basisterminologie
+        path: /informatiemodel/basisterminologie
+      - title: Semantisch model (SIM)
+        path: /semantisch_model
+      - title: Uitwisselingsmodel (UGM)
+        path: /uitwisselingsmodel
+      - title: Gegevenswoordenboek
+        path: /gegevenswoordenboek
+  - title: API-familie
+    subnav:
+      - title: API X
+        path: /api_x
+      - title: API Y
+        path: /api_y
+      - title: Referentieimplementatie
+        path: /referentieimplementatie
+  - title: Achtergrond documentatie
+    subnav: 
+      - title: Aanbevelingen
+        path: /achtergronddocumentatie/aanbevelingen
   - title: Specificaties Klanten API (IO)
     subnav:
       - title: Specificaties
