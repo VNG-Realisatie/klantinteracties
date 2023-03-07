@@ -31,3 +31,4 @@ Dit alles in overweging nemend komen tot de volgende definitie:
 Onderstaande tabel toont voor vijf verschillende cases voorbeelden bij de begrippen:
 
 <img src="./assets/cases.png" alt="SIM" width="600"/>
+.
