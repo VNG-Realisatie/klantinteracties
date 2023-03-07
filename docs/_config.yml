@@ -18,7 +18,7 @@ nav:
       - title: Architectuur
         path: /architectuur
   - title: Informatiemodel
-      subnav:
+    subnav:
       - title: Basisterminologie
         path: /informatiemodel/basisterminologie
       - title: Semantisch model (SIM)
@@ -28,7 +28,7 @@ nav:
       - title: Gegevenswoordenboek
         path: /gegevenswoordenboek
   - title: API-familie
-      subnav:
+    subnav:
       - title: API X
         path: /api_x
       - title: API Y
@@ -36,7 +36,7 @@ nav:
       - title: Referentieimplementatie
         path: /referentieimplementatie
   - title: Achtergrond documentatie
-      subnav: 
+    subnav: 
       - title: Aanbevelingen
         path: /achtergronddocumentatie/aanbevelingen
   - title: Specificaties Klanten API (IO)
