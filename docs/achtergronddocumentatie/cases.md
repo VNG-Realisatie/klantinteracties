@@ -24,12 +24,12 @@ ___Cases hieronder nog niet gemaakt:___
 - [C3546 - Klant komt langs bij de gemeente met een vraag die door de baliemedewerker beantwoord kan worden.](./artefacten/3546.md)
 - [C5499 - Klant mailt/appt/stuurt brief/komt langs met een vraag die niet door het KCC beantwoord kan worden.](./artefacten/5499.md)
 
-## Zaakbehandelaar
+## Contact vanuit zaakbehandelaar
 - [C9750 - Medewerker die bezig is met een zaak wil de klant een brief sturen over de voortgang.](./artefacten/9750.md)
 - [C5655 - Medewerker die bezig is met een zaak wil de klant een e-mail sturen over de voortgang.](./artefacten/5655.md)
 - [C7998 - Medewerker die bezig is met een zaak heeft enkele vragen en belt hiervoor de klant.](./artefacten/7998.md)
 - [C7300 - Medewerker die bezig is met een zaak heeft enkele vragen en belt hiervoor de klant, klant neemt niet op.](./artefacten/7300.md)
 - [C0322 - Een ketenpartner heeft een stap in een zaak afgerond. Hierdoor wijzigt de status. De klant wil hierover geïnformeerd worden.](./artefacten/0322.md)
 
-## Andere perspectieven
+## Overige perspectieven
 - [C9127 - Een medewerker is bezig een klacht van een klant over een zaak te beoordelen en heeft hiervoor informatie nodig over de klantcontacten.](./artefacten/9127.md)
