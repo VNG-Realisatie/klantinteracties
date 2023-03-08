@@ -24,7 +24,7 @@ nav:
       - title: Semantisch model (SIM)
         path: /informatiemodel/semantisch_model
       - title: Uitwisselingsmodel (UGM)
-        path: /informatimodel/uitwisselingsmodel
+        path: /informatiemodel/uitwisselingsmodel
       - title: Gegevenswoordenboek
         path: /informatiemodel/gegevenswoordenboek
   - title: API-familie
