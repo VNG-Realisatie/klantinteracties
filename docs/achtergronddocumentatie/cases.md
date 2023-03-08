@@ -18,9 +18,9 @@ date: 02-06-2022
 ## Kanalen
 - [C1199 - Klant mailt een vraag naar de gemeente die beantwoord kan worden door KCC.](./artefacten/1199.md)
 - [C9853 - Klant appt een vraag naar de gemeente die beantwoord kan worden door KCC.](./artefacten/9853.md)
-
-___Cases hieronder nog niet gemaakt:___
 - [C2138 - Klant stuurt een brief naar de gemeente die beantwoord kan worden door KCC.](./artefacten/2138.md)
+- 
+___Cases hieronder nog niet gemaakt:___
 - [C3546 - Klant komt langs bij de gemeente met een vraag die door de baliemedewerker beantwoord kan worden.](./artefacten/3546.md)
 - [C5499 - Klant mailt/appt/stuurt brief/komt langs met een vraag die niet door het KCC beantwoord kan worden.](./artefacten/5499.md)
 
