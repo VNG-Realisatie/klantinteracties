@@ -13,10 +13,9 @@ date: 02-06-2022
 - [C2984 - Medewerker belt op verzoek van KCC klant terug.](./artefacten/2984.md)
 - [C9761 - Medewerker belt op verzoek van KCC klant terug. Tijdens het gesprek blijkt dat dingen uitgezocht moeten worden. Hiervoor wordt een zaak aangemaakt.](./artefacten/9761.md)
 - [C4390 - Klant belt KCC met melding openbare ruimte. Hiervoor wordt direct een zaak aangemaakt.](./artefacten/4390.md)
- 
-___Cases hieronder nog niet gemaakt:___
 - [C0359 - Klant belt KCC met melding openbare ruimte. Hiervoor bestaat reeds een zaak.](./artefacten/0359.md)
-
+  
+___Cases hieronder nog niet gemaakt:___
 ## Kanalen
 - [C1199 - Klant mailt een vraag naar de gemeente die beantwoord kan worden door KCC.](./artefacten/1199.md)
 - [C9853 - Klant appt een vraag naar de gemeente die beantwoord kan worden door KCC.](./artefacten/9853.md)
