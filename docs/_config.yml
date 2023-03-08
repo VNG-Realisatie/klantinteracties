@@ -29,12 +29,8 @@ nav:
         path: /informatiemodel/gegevenswoordenboek
   - title: API-familie X
     subnav:
-      - title: Specificaties in Swagger
-        path: https://petstore.swagger.io/?url=https://klantinteracties/docs/api-familie-x/specificatie/openapi.yaml
-      - title: Specificaties in Redoc
-        path: /redoc
-      - title: Gedragsspecificaties
-        path: /api-familie-x/gedragsspecificaties
+      - title: Specificaties
+        path: /api-familie-x/specificaties
       - title: Referentieimplementatie
         path: /api-familie-x/referentieimplementatie
   - title: Achtergrond documentatie
