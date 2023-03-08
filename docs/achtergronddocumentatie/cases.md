@@ -6,7 +6,7 @@ date: 02-06-2022
 
 # Cases
 
-## KCC
+## Klantcontactcentrum (KCC)
 - [C0992 - Klant belt KCC met een vraag die direct beantwoord kan worden.](./artefacten/0992.md)
 - [C0534 - Klant belt KCC met een vraag die, na doorverbinden, direct door een collega beantwoord kan worden.](./artefacten/0534.md)
 - [C9167 - Klant belt KCC met een vraag die niet direct beantwoord kan worden en maakt een terugbelverzoek.](./artefacten/9167.md)
