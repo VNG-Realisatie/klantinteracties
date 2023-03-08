@@ -10,6 +10,8 @@ date: 02-06-2022
 - [C0992 - Klant belt KCC met een vraag die direct beantwoord kan worden.](./artefacten/0992.md)
 - [C0534 - Klant belt KCC met een vraag die, na doorverbinden, direct door een collega beantwoord kan worden.](./artefacten/0534.md)
 - [C9167 - Klant belt KCC met een vraag die niet direct beantwoord kan worden en maakt een terugbelverzoek.](./artefacten/9167.md)
+
+___Cases hieronder nog niet gemaakt:___
 - [C9761 - Klant belt KCC met een vraag die niet direct beantwoord kan worden. Een collega belt terug voor aanvullende informatie en start een zaak voor de beantwoording.](./artefacten/9761.md)
 - [C4390 - Klant belt KCC met melding openbare ruimte. Hiervoor wordt direct een zaak aangemaakt.](./artefacten/4390.md)
 - [C0359 - Klant belt KCC met melding openbare ruimte. Hiervoor bestaat reeds een zaak.](./artefacten/0359.md)
