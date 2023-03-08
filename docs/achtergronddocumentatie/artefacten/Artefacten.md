@@ -8,7 +8,9 @@ date: 08-03-2023
 - ...
 
 # Functies
-- [F2173 - Registreer Klantcontact](./2173.md)
+- [F2173 - Registreer klantcontact](./2173.md)
+- [F2120 - Registreer interne taak](./2120.md)
+- [F5241 - Markeer interne taak als afgerond](./5241.md) 
 
 # Ontwerpbesluiten
 
