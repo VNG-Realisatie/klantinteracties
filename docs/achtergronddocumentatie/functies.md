@@ -6,7 +6,7 @@ date: 02-06-2022
 
 # Functies
 
-| Code - Naam | Soort | Hoofdobject | Gerelateerde objecten |
+| Code - Naam | Hoofdobject | Gerelateerde objecten |
 | :--- | :--- | :--- |
 | [F2173 - Registreer klantcontact](./artefacten/2173.md) | `klantcontact` | |
 | [F8618 - Vraag klantcontact op](./artefacten/8618.md) | `klantcontact` | |
