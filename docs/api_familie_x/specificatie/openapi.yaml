@@ -1,0 +1,1318 @@
+openapi: 3.0.0
+servers:
+  - description: "SwaggerHub API Auto Mocking"
+    url: https://virtserver.swaggerhub.com/VNGRealisatie/api/klantinteracties/v00
+  - description: "Referentie-implementatie"
+    url: https://www.voorbeeldgemeente.nl/api/klantinteracties/v00
+info:
+  title: Klantinteracties
+  description: ""
+  version: "00.01.00"
+  x-imvertor-generator-version: "2.0.0"
+  x-yamlCompiler-stylesheets-version: "20221222"
+  contact:
+    url: https://github.com/VNG-Realisatie/Klantinteracties
+  license:
+    name: European Union Public License, version 1.2 (EUPL-1.2)
+    url: https://eupl.eu/1.2/nl/
+paths:
+  /contactpersonen:
+    get:
+      operationId: getcollectioncontactpersonen
+      description: "<body><p>Het bericht dat de JSON/REST API voor het ophalen van een collectie contactpersonen retourneert.</p></body>"
+      parameters: 
+        - in: query
+          name: bedrijfsnaam
+          description: ""
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: bezoekadres
+          description: ""
+          required: false
+          schema:
+            $ref: "#/components/schemas/Adresgegevens"
+        - in: query
+          name: functie
+          description: ""
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: naamgegevens
+          description: ""
+          required: true
+          schema:
+            $ref: "#/components/schemas/Naamgegevens"
+      responses:
+        '200':
+          description: "Zoekactie geslaagd"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+            X-Pagination-Page:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Pagination_Page"
+            X-Pagination-Limit:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Pagination_Limit"
+            X-Rate-Limit-Limit:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Limit"
+            X-Rate-Limit-Remaining:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Remaining"
+            X-Rate-Limit-Reset:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
+          content:
+            application/hal+json:
+              schema:
+                $ref: '#/components/schemas/ContactpersoonHalCollectie'
+        '400':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        '401':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        '403':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        '409':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        '410':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        '415':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        '429':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        '500':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        '501':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        '503':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        'default':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags: 
+      - Contactpersonen
+    post:
+      operationId: postcontactpersonen
+      description: "<body><p>Het bericht dat de JSON/REST API voor het vastleggen van contactpersonen wordt gebruikt.</p></body>"
+      requestBody:
+        content:
+          application/hal+json:
+            schema:
+                $ref: '#/components/schemas/Contactpersoon'
+      responses:
+        '201':
+          description: "OK"
+          headers:
+            Location:
+              description: "URI van de nieuwe resource"
+              schema:
+                type: string
+                format: uri
+                example: '/contactpersonen/'
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/hal+json:
+              schema:
+                $ref: '#/components/schemas/ContactpersoonHal'
+        '400':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        '401':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        '403':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        '409':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        '410':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        '415':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        '429':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        '500':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        '501':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        '503':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        'default':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags: 
+      - Contactpersonen
+    put:
+      operationId: putcontactpersonen
+      description: "<body><p>Het bericht dat de JSON/REST API voor het wijzigen van een contactpersoon wordt gebruikt.</p></body>"
+      requestBody:
+        content:
+          application/hal+json:
+            schema:
+                $ref: '#/components/schemas/Contactpersoon'
+      responses:
+        '200':
+          description: "Zoekactie geslaagd"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+            X-Rate-Limit-Limit:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Limit"
+            X-Rate-Limit-Remaining:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Remaining"
+            X-Rate-Limit-Reset:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
+          content:
+            application/hal+json:
+              schema:
+                $ref: '#/components/schemas/ContactpersoonHal'
+        '400':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        '401':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        '403':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        '409':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        '410':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        '415':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        '429':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        '500':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        '501':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        '503':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        'default':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags: 
+      - Contactpersonen
+  /contactpersonen/{contactpersoonnummer}:
+    delete:
+      operationId: deletecontactpersonenContactpersoonnummer
+      description: "<body><p>Het bericht dat de JSON/REST API voor het verwijderen van gegevens van een agendapunt .</p></body>"
+      parameters: 
+        - in: path
+          name: contactpersoonnummer
+          description: ""
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: "Verwijderactie geslaagd"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+        '204':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/204"
+        '404':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/404"
+      tags: 
+      - Contactpersonen
+    get:
+      operationId: getcontactpersonen
+      description: "<body><p>Het bericht dat de JSON/REST API voor het ophalen van de contactpersoon met de daarbij behorende gegevens.<br/> </p></body>"
+      parameters: 
+        - in: path
+          name: contactpersoonnummer
+          description: ""
+          required: true
+          schema:
+            type: integer
+        - $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/parameters/fields"
+      responses:
+        '200':
+          description: "Zoekactie geslaagd"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+            X-Rate-Limit-Limit:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Limit"
+            X-Rate-Limit-Remaining:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Remaining"
+            X-Rate-Limit-Reset:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
+          content:
+            application/hal+json:
+              schema:
+                $ref: '#/components/schemas/ContactpersoonHal'
+        '400':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        '401':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        '403':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        '404':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/404"
+        '409':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        '410':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        '415':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        '429':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        '500':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        '501':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        '503':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        'default':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags: 
+      - Contactpersonen
+  /klantinteracties:
+    get:
+      operationId: getcollectionklantinteracties
+      description: "<body><p>Het bericht dat de JSON/REST API voor het ophalen van een collectie klantinteracties retourneert.</p></body>"
+      responses:
+        '200':
+          description: "Zoekactie geslaagd"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+            X-Pagination-Page:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Pagination_Page"
+            X-Pagination-Limit:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Pagination_Limit"
+            X-Rate-Limit-Limit:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Limit"
+            X-Rate-Limit-Remaining:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Remaining"
+            X-Rate-Limit-Reset:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
+          content:
+            application/hal+json:
+              schema:
+                $ref: '#/components/schemas/KlantinteractieHalCollectie'
+        '400':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        '401':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        '403':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        '409':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        '410':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        '415':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        '429':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        '500':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        '501':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        '503':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        'default':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags: 
+      - Klantinteracties
+    post:
+      operationId: postklantinteracties
+      description: "<body><p>Het bericht dat de JSON/REST API voor het vastleggen van klantinteracties wordt gebruikt.</p></body>"
+      requestBody:
+        content:
+          application/hal+json:
+            schema:
+                $ref: '#/components/schemas/Klantinteractie'
+      responses:
+        '201':
+          description: "OK"
+          headers:
+            Location:
+              description: "URI van de nieuwe resource"
+              schema:
+                type: string
+                format: uri
+                example: '/klantinteracties/'
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/hal+json:
+              schema:
+                $ref: '#/components/schemas/KlantinteractieHal'
+        '400':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        '401':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        '403':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        '409':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        '410':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        '415':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        '429':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        '500':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        '501':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        '503':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        'default':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags: 
+      - Klantinteracties
+    put:
+      operationId: putklantinteracties
+      description: "<body><p>Het bericht dat de JSON/REST API voor het wijzigen van klantinteractie wordt gebruikt.</p></body>"
+      requestBody:
+        content:
+          application/hal+json:
+            schema:
+                $ref: '#/components/schemas/Klantinteractie'
+      responses:
+        '200':
+          description: "Zoekactie geslaagd"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+            X-Rate-Limit-Limit:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Limit"
+            X-Rate-Limit-Remaining:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Remaining"
+            X-Rate-Limit-Reset:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
+          content:
+            application/hal+json:
+              schema:
+                $ref: '#/components/schemas/KlantinteractieHal'
+        '400':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        '401':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        '403':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        '409':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        '410':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        '415':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        '429':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        '500':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        '501':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        '503':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        'default':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags: 
+      - Klantinteracties
+  /klantinteracties/{klantinteractieidentificatie}:
+    delete:
+      operationId: deleteklantinteractiesKlantinteractieidentificatie
+      description: "<body><p>Het bericht dat de JSON/REST API voor het verwijderen van gegevens van een agendapunt .</p></body>"
+      parameters: 
+        - in: path
+          name: klantinteractieidentificatie
+          description: ""
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: "Verwijderactie geslaagd"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+        '204':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/204"
+        '404':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/404"
+      tags: 
+      - Klantinteracties
+    get:
+      operationId: getklantinteracties
+      description: "<body><p>Het bericht dat de JSON/REST API voor het ophalen van de klantinteractie met de daarbij behorende gegevens.<br/> </p></body>"
+      parameters: 
+        - $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/parameters/fields"
+        - in: path
+          name: klantinteractieidentificatie
+          description: ""
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: "Zoekactie geslaagd"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+            X-Rate-Limit-Limit:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Limit"
+            X-Rate-Limit-Remaining:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Remaining"
+            X-Rate-Limit-Reset:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
+          content:
+            application/hal+json:
+              schema:
+                $ref: '#/components/schemas/KlantinteractieHal'
+        '400':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        '401':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        '403':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        '404':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/404"
+        '409':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        '410':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        '415':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        '429':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        '500':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        '501':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        '503':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        'default':
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags: 
+      - Klantinteracties
+components:
+  schemas:
+    ContactpersoonHalCollectie:
+      type: "object"
+      properties:
+        _links:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/schemas/HalPaginationLinks"
+        _embedded:
+          type: "object"
+          properties:
+            Contactpersonen:
+              type: "array"
+              items:
+                $ref: "#/components/schemas/ContactpersoonHal"
+    ContactpersoonHal:
+      allOf:
+      - $ref: "#/components/schemas/Contactpersoon"
+      - type: "object"
+        properties:
+          _links:
+            $ref: "#/components/schemas/Contactpersoon_links"
+          _embedded:
+            $ref: "#/components/schemas/Contactpersoon_embedded"
+    Contactpersoon:
+      type: "object"
+      description: ""
+      required:
+      - "contactgegevensnummer"
+      - "contactpersoonnummer"
+      - "naamgegevens"
+      properties:
+        bedrijfsnaam:
+          type: "string"
+          title: "bedrijfsnaam"
+          description: ""
+        bezoekadres:
+          $ref: "#/components/schemas/Adresgegevens"
+        contactgegevensnummer:
+          type: "array"
+          title: "contactgegevensnummer"
+          description: ""
+          minItems: 1
+          items:
+            type: "string"
+            minLength: 1
+        contactpersoonnummer:
+          type: "integer"
+          title: "contactpersoonnummer"
+          description: ""
+        functie:
+          type: "string"
+          title: "functie"
+          description: ""
+        naamgegevens:
+          $ref: "#/components/schemas/Naamgegevens"
+    KlantinteractieHalCollectie:
+      type: "object"
+      properties:
+        _links:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/schemas/HalPaginationLinks"
+        _embedded:
+          type: "object"
+          properties:
+            klantinteracties:
+              type: "array"
+              items:
+                $ref: "#/components/schemas/KlantinteractieHal"
+    KlantinteractieHal:
+      allOf:
+      - $ref: "#/components/schemas/Klantinteractie"
+      - type: "object"
+        properties:
+          _links:
+            $ref: "#/components/schemas/Klantinteractie_links"
+          _embedded:
+            $ref: "#/components/schemas/Klantinteractie_embedded"
+    Klantinteractie:
+      type: "object"
+      description: ""
+      required:
+      - "burgerservicenummer"
+      - "contactpersoonnummer"
+      - "datumTijdInteractie"
+      - "indicatieklant"
+      - "inhoud"
+      - "initiatiefnemer"
+      - "kanaal"
+      - "klantinteractieIdentificatie"
+      - "medewerkeridentificatie"
+      - "onderwerp"
+      - "onvangstbevestigingVerzonden"
+      properties:
+        burgerservicenummer:
+          type: "string"
+          title: "burgerservicenummer"
+          description: ""
+          minLength: 1
+        contactgegevensnummer:
+          type: "string"
+          title: "contactgegevensnummer"
+          description: ""
+        contactpersoonnummer:
+          type: "integer"
+          title: "contactpersoonnummer"
+          description: ""
+        datumTijdInteractie:
+          type: "string"
+          title: "datum-tijdInteractie"
+          description: ""
+          format: "date-time"
+        externVerzoeknummer:
+          type: "string"
+          title: "externVerzoeknummer"
+          description: ""
+        gaatOverZaakIdentificatie:
+          type: "array"
+          title: "gaatOverZaakIdentificatie"
+          description: ""
+          minItems: 0
+          items:
+            type: "string"
+        gewenstContactmoment:
+          type: "string"
+          title: "gewenstContactmoment"
+          description: ""
+        gewenstKanaal:
+          type: "string"
+          title: "gewenstKanaal"
+          description: ""
+        indicatieklant:
+          type: "boolean"
+          title: "indicatieklant"
+          description: ""
+        informatieobjectidentificatie:
+          type: "array"
+          title: "informatieobjectidentificatie"
+          description: ""
+          minItems: 0
+          items:
+            type: "string"
+        inhoud:
+          type: "string"
+          title: "inhoud"
+          description: ""
+          minLength: 1
+        initiatiefnemer:
+          $ref: "#/components/schemas/Initiatiefnemer"
+        kanLeidenTotZaakIdentificatie:
+          type: "array"
+          title: "kanLeidenTotZaakIdentificatie"
+          description: ""
+          minItems: 0
+          items:
+            type: "string"
+        kanaal:
+          type: "string"
+          title: "kanaal"
+          description: ""
+          minLength: 1
+        klantinteractieIdentificatie:
+          type: "string"
+          title: "klantinteractieIdentificatie"
+          description: ""
+          minLength: 1
+        medewerkeridentificatie:
+          type: "string"
+          title: "medewerkeridentificatie"
+          description: ""
+          minLength: 1
+        nummerAnderNatuurlijkPersoon:
+          type: "string"
+          title: "nummerAnderNatuurlijkPersoon"
+          description: ""
+        nummerAnderNietNatuurlijkPersoon:
+          type: "string"
+          title: "nummerAnderNiet-natuurlijkPersoon"
+          description: ""
+        onderwerp:
+          type: "array"
+          title: "onderwerp"
+          description: ""
+          minItems: 1
+          items:
+            type: "string"
+            minLength: 1
+        onvangstbevestigingVerzonden:
+          type: "boolean"
+          title: "onvangstbevestigingVerzonden"
+          description: ""
+        productcode:
+          type: "array"
+          title: "productcode"
+          description: ""
+          minItems: 0
+          items:
+            type: "string"
+        rsin:
+          type: "string"
+          title: "rsin"
+          description: ""
+        taakIdentificatie:
+          type: "array"
+          title: "taakIdentificatie"
+          description: ""
+          minItems: 0
+          items:
+            type: "string"
+        tijdsduur:
+          type: "integer"
+          title: "tijdsduur"
+          description: ""
+        toelichting:
+          type: "string"
+          title: "toelichting"
+          description: ""
+        vestigingsnummer:
+          type: "string"
+          title: "vestigingsnummer"
+          description: ""
+        voorkeurskanaal:
+          type: "string"
+          title: "voorkeurskanaal"
+          description: ""
+        voorkeurstaal:
+          type: "string"
+          title: "voorkeurstaal"
+          description: ""
+    ContactgegevensHal:
+      allOf:
+      - $ref: "#/components/schemas/Contactgegevens"
+      - type: "object"
+        properties:
+          _links:
+            $ref: "#/components/schemas/Contactgegevens_links"
+    Contactgegevens:
+      type: "object"
+      description: ""
+      required:
+      - "contactgegevensnummer"
+      properties:
+        bezoekadres:
+          $ref: "#/components/schemas/Adresgegevens"
+        contactgegevensnummer:
+          type: "string"
+          title: "contactgegevensnummer"
+          description: ""
+          minLength: 1
+        correspondentieadres:
+          $ref: "#/components/schemas/Adresgegevens"
+        correspondentieadresBuitenland:
+          $ref: "#/components/schemas/AdresBuitenland"
+        emailadres:
+          type: "string"
+          title: "emailadres"
+          description: ""
+        postadres:
+          $ref: "#/components/schemas/Postadres"
+        rekeningnummer:
+          $ref: "#/components/schemas/Rekeningnummer"
+        telefoonnummer:
+          type: "array"
+          title: "telefoonnummer"
+          description: ""
+          minItems: 0
+          items:
+            type: "string"
+        voorkeurskanaal:
+          type: "string"
+          title: "voorkeurskanaal"
+          description: ""
+        voorkeurstaal:
+          type: "string"
+          title: "voorkeurstaal"
+          description: ""
+        websiteUrl:
+          type: "string"
+          title: "website-url"
+          description: ""
+          format: "uri"
+    MedewerkerHal:
+      allOf:
+      - $ref: "#/components/schemas/Medewerker"
+      - type: "object"
+        properties:
+          _links:
+            $ref: "#/components/schemas/Medewerker_links"
+    Medewerker:
+      type: "object"
+      description: ""
+      required:
+      - "achternaam"
+      - "functie"
+      - "medewerkeridentificatie"
+      - "organisatieIdentificatie"
+      - "voorletters"
+      properties:
+        achternaam:
+          type: "string"
+          title: "achternaam"
+          description: ""
+          minLength: 1
+        functie:
+          type: "string"
+          title: "functie"
+          description: ""
+          minLength: 1
+        medewerkeridentificatie:
+          type: "string"
+          title: "medewerkeridentificatie"
+          description: ""
+          minLength: 1
+        organisatieIdentificatie:
+          type: "string"
+          title: "organisatie-identificatie"
+          description: ""
+          minLength: 1
+        voorletters:
+          type: "string"
+          title: "voorletters"
+          description: ""
+          minLength: 1
+        voorvoegselAchternaam:
+          type: "string"
+          title: "voorvoegselAchternaam"
+          description: ""
+    OrganisatorischeEenheidHal:
+      allOf:
+      - $ref: "#/components/schemas/OrganisatorischeEenheid"
+      - type: "object"
+        properties:
+          _links:
+            $ref: "#/components/schemas/OrganisatorischeEenheid_links"
+    OrganisatorischeEenheid:
+      type: "object"
+      description: ""
+      required:
+      - "datumOntstaan"
+      - "naam"
+      - "organisatieEenheidIdentificatie"
+      - "organisatieIdentificatie"
+      properties:
+        datumOntstaan:
+          type: "string"
+          title: "datumOntstaan"
+          description: "<body><p>Alle geldige datums zowel op, voor of na de huidige\
+            \ datum en tijd</p></body>"
+          format: "date"
+        datumOpheffing:
+          type: "string"
+          title: "datumOpheffing"
+          description: "<body><p>Alle geldige datums zowel op, voor of na de huidige\
+            \ datum en tijd</p></body>"
+          format: "date"
+        eMailAdres:
+          type: "string"
+          title: "e-mailAdres"
+          description: "<body><p>alle bestaande alfanumerieke tekens waarin zich,\
+            \ evenwel niet aan het begin en aan het eind, een ???@??? moet bevinden.</p></body>"
+        faxnummer:
+          type: "string"
+          title: "faxnummer"
+          description: "<body><p>alle bestaande alfanumerieke tekens.</p></body>"
+        naam:
+          type: "string"
+          title: "naam"
+          description: "<body><p>classificatie</p></body>"
+          minLength: 1
+        naamVerkort:
+          type: "string"
+          title: "naamVerkort"
+          description: "<body><p>alle alfanumerieke tekens</p></body>"
+        omschrijving:
+          type: "string"
+          title: "omschrijving"
+          description: "<body><p>alle alfanumerieke tekens</p></body>"
+        organisatieEenheidIdentificatie:
+          type: "string"
+          title: "organisatie-eenheid-identificatie"
+          description: "<body><p>alle alfanumerieke tekens m.u.v. diacrieten</p></body>"
+          minLength: 1
+        organisatieIdentificatie:
+          type: "integer"
+          title: "organisatie-identificatie"
+          description: "<body><p>De in het NHR voorkomende unieke identificaties van\
+            \ rechtspersonen en samenwerkingsverbanden.</p></body>"
+        telefoonnummer:
+          type: "string"
+          title: "telefoonnummer"
+          description: "<body><p>alle bestaande alfanumerieke tekens</p></body>"
+        toelichting:
+          type: "string"
+          title: "toelichting"
+          description: "<body><p>alle alfanumerieke tekens</p></body>"
+    ProductHal:
+      allOf:
+      - $ref: "#/components/schemas/Product"
+      - type: "object"
+        properties:
+          _links:
+            $ref: "#/components/schemas/Product_links"
+    Product:
+      type: "object"
+      description: ""
+      required:
+      - "product"
+      - "productcode"
+      properties:
+        product:
+          type: "string"
+          title: "product"
+          description: ""
+          format: "uri"
+        productcode:
+          type: "string"
+          title: "productcode"
+          description: ""
+          minLength: 1
+    TaakHal:
+      allOf:
+      - $ref: "#/components/schemas/Taak"
+      - type: "object"
+        properties:
+          _links:
+            $ref: "#/components/schemas/Taak_links"
+          _embedded:
+            $ref: "#/components/schemas/Taak_embedded"
+    Taak:
+      type: "object"
+      description: ""
+      required:
+      - "medewerkeridentificatie"
+      - "omschrijving"
+      - "organisatieEenheidIdentificatie"
+      - "taakIdentificatie"
+      - "taakstatus"
+      - "taaktype"
+      - "zaakidentificatie"
+      properties:
+        medewerkeridentificatie:
+          type: "string"
+          title: "medewerkeridentificatie"
+          description: ""
+          minLength: 1
+        omschrijving:
+          type: "string"
+          title: "omschrijving"
+          description: ""
+          minLength: 1
+        organisatieEenheidIdentificatie:
+          type: "string"
+          title: "organisatie-eenheid-identificatie"
+          description: "<body><p>alle alfanumerieke tekens m.u.v. diacrieten</p></body>"
+          minLength: 1
+        taakIdentificatie:
+          type: "string"
+          title: "taakIdentificatie"
+          description: ""
+          minLength: 1
+        taakstatus:
+          $ref: "#/components/schemas/Taakstatustype"
+        taaktype:
+          $ref: "#/components/schemas/Taaktype"
+        zaakidentificatie:
+          type: "string"
+          title: "zaakidentificatie"
+          description: ""
+          minLength: 1
+    Contactgegevens_links:
+      type: "object"
+      properties:
+        self:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/schemas/HalLink"
+    Contactpersoon_links:
+      type: "object"
+      properties:
+        self:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/schemas/HalLink"
+        contactgegevens:
+          title: "heeft"
+          type: "array"
+          description: ""
+          minItems: 1
+          items:
+            $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/schemas/HalLink"
+    Klantinteractie_links:
+      type: "object"
+      properties:
+        self:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/schemas/HalLink"
+        kanLeidenTotZaken:
+          title: "kanLeidenTot"
+          type: "array"
+          description: ""
+          items:
+            $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/schemas/HalLink"
+        medewerkers:
+          allOf:
+          - title: "door"
+            type: "object"
+            description: ""
+          - $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/schemas/HalLink"
+        informatieobjecten:
+          title: "heeftRelevant"
+          type: "array"
+          description: ""
+          items:
+            $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/schemas/HalLink"
+        contactpersonen:
+          allOf:
+          - title: "met"
+            type: "object"
+            description: ""
+          - $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/schemas/HalLink"
+        anderNietNatuurlijkPersonen:
+          allOf:
+          - title: "betreft"
+            type: "object"
+            description: ""
+          - $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/schemas/HalLink"
+        anderNatuurlijkPeronen:
+          allOf:
+          - title: "betreft"
+            type: "object"
+            description: ""
+          - $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/schemas/HalLink"
+        producten:
+          title: "om"
+          type: "array"
+          description: ""
+          items:
+            $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/schemas/HalLink"
+        contactgegevens:
+          allOf:
+          - title: "gebruiktAfwijkende"
+            type: "object"
+            description: ""
+          - $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/schemas/HalLink"
+        taken:
+          title: "leidtTot"
+          type: "array"
+          description: ""
+          items:
+            $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/schemas/HalLink"
+        ingeschrevenNatuurlijkPersonen:
+          allOf:
+          - title: "betreft"
+            type: "object"
+            description: ""
+          - $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/schemas/HalLink"
+        gaatOverZaken:
+          title: "gaatOver"
+          type: "array"
+          description: ""
+          items:
+            $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/schemas/HalLink"
+        ingeschrevenNietNatuurlijkPersonen:
+          allOf:
+          - title: "betreft"
+            type: "object"
+            description: ""
+          - $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/schemas/HalLink"
+        vestigingen:
+          allOf:
+          - title: "betreft"
+            type: "object"
+            description: ""
+          - $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/schemas/HalLink"
+    Medewerker_links:
+      type: "object"
+      properties:
+        self:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/schemas/HalLink"
+    OrganisatorischeEenheid_links:
+      type: "object"
+      properties:
+        self:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/schemas/HalLink"
+    Product_links:
+      type: "object"
+      properties:
+        self:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/schemas/HalLink"
+    Taak_links:
+      type: "object"
+      properties:
+        self:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/schemas/HalLink"
+        medewerkers:
+          title: "uitTeVoerenDoor"
+          type: "array"
+          description: ""
+          minItems: 1
+          items:
+            $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/schemas/HalLink"
+        kanLeidenTot:
+          title: "kanLeidenTot"
+          type: "array"
+          description: ""
+          items:
+            $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/schemas/HalLink"
+        uitTeVoerenDoor:
+          title: "uitTeVoerenDoor"
+          type: "array"
+          description: ""
+          items:
+            $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/schemas/HalLink"
+    Contactpersoon_embedded:
+      type: "object"
+      properties:
+        contactgegevens:
+          title: "heeft"
+          type: "array"
+          description: ""
+          minItems: 1
+          items:
+            $ref: "#/components/schemas/ContactgegevensHal"
+    Klantinteractie_embedded:
+      type: "object"
+      properties:
+        medewerkers:
+          $ref: "#/components/schemas/MedewerkerHal"
+        contactpersonen:
+          $ref: "#/components/schemas/ContactpersoonHal"
+        producten:
+          title: "om"
+          type: "array"
+          description: ""
+          items:
+            $ref: "#/components/schemas/ProductHal"
+        contactgegevens:
+          $ref: "#/components/schemas/ContactgegevensHal"
+        taken:
+          title: "leidtTot"
+          type: "array"
+          description: ""
+          items:
+            $ref: "#/components/schemas/TaakHal"
+    Taak_embedded:
+      type: "object"
+      properties:
+        medewerkers:
+          title: "uitTeVoerenDoor"
+          type: "array"
+          description: ""
+          minItems: 1
+          items:
+            $ref: "#/components/schemas/MedewerkerHal"
+        uitTeVoerenDoor:
+          title: "uitTeVoerenDoor"
+          type: "array"
+          description: ""
+          items:
+            $ref: "#/components/schemas/OrganisatorischeEenheidHal"
+    AdresBuitenland:
+      type: "object"
+      description: ""
+      required:
+      - "land"
+      properties:
+        adresRegelBuitenland1:
+          type: "string"
+          title: "adresRegelBuitenland1"
+          description: ""
+        adresRegelBuitenland2:
+          type: "string"
+          title: "adresRegelBuitenland2"
+          description: ""
+        adresRegelBuitenland3:
+          type: "string"
+          title: "adresRegelBuitenland3"
+          description: ""
+        land:
+          allOf:
+          - $ref: "#/components/schemas/Land"
+          - title: "land"
+            description: ""
+    Adresgegevens:
+      type: "object"
+      description: ""
+      properties:
+        huisletter:
+          type: "string"
+          title: "huisletter"
+          description: ""
+        huisnummer:
+          type: "integer"
+          title: "huisnummer"
+          description: ""
+        huisnummertoevoeging:
+          type: "string"
+          title: "huisnummertoevoeging"
+          description: ""
+        landcode:
+          type: "string"
+          title: "landcode"
+          description: ""
+        postcode:
+          type: "string"
+          title: "postcode"
+          description: ""
+        straatnaam:
+          type: "string"
+          title: "straatnaam"
+          description: ""
+        woonplaatsnaam:
+          type: "string"
+          title: "woonplaatsnaam"
+          description: ""
+    Land:
+      type: "object"
+      description: ""
+      required:
+      - "einddatumLand"
+      - "ingangsdatumLand"
+      - "landcode"
+      - "landnaam"
+      properties:
+        einddatumLand:
+          type: "string"
+          title: "einddatumLand"
+          description: ""
+          format: "date"
+        ingangsdatumLand:
+          type: "string"
+          title: "ingangsdatumLand"
+          description: ""
+          format: "date"
+        landcode:
+          type: "string"
+          title: "landcode"
+          description: ""
+          minLength: 1
+        landnaam:
+          type: "string"
+          title: "landnaam"
+          description: ""
+          minLength: 1
+    Naamgegevens:
+      type: "object"
+      description: ""
+      properties:
+        achternaam:
+          type: "string"
+          title: "achternaam"
+          description: ""
+        voornaam:
+          type: "string"
+          title: "voornaam"
+          description: ""
+        voorvoegselAchternaam:
+          type: "string"
+          title: "voorvoegselAchternaam"
+          description: ""
+    Postadres:
+      type: "object"
+      description: ""
+      required:
+      - "postadrestype"
+      properties:
+        nummer:
+          type: "string"
+          title: "nummer"
+          description: ""
+        postadrestype:
+          $ref: "#/components/schemas/Postadrestype"
+        postcode:
+          type: "string"
+          title: "postcode"
+          description: ""
+        woonplaatnaam:
+          type: "string"
+          title: "woonplaatnaam"
+          description: ""
+    Rekeningnummer:
+      type: "object"
+      description: ""
+      required:
+      - "bic"
+      - "iban"
+      properties:
+        bic:
+          type: "string"
+          title: "bic"
+          description: ""
+          minLength: 1
+        iban:
+          type: "string"
+          title: "iban"
+          description: ""
+          minLength: 1
+    Initiatiefnemer:
+      type: "string"
+      description: ""
+      enum:
+      - "gemeente"
+      - "klant"
+      - "klantcontactpersoon"
+    Postadrestype:
+      type: "string"
+      description: ""
+      enum:
+      - "postbusnummer"
+      - "antwoordnummer"
+    Taakstatustype:
+      type: "string"
+      description: "<body><ul><li>`te_doen` - te doen </li><li>`gedaan` - gedaan </li></ul></body>"
+      enum:
+      - "te_doen"
+      - "gedaan"
+    Taaktype:
+      type: "string"
+      description: "<body><ul><li>`vraag_beantwoorden` - vraag beantwoorden </li><li>`contactverzoek_afhandelen`\
+        \ - contactverzoek afhandelen </li><li>`overig` - overig </li><li>`productverzoek_afhandelen`\
+        \ - productverzoek afhandelen </li></ul></body>"
+      enum:
+      - "vraag_beantwoorden"
+      - "contactverzoek_afhandelen"
+      - "overig"
+      - "productverzoek_afhandelen"

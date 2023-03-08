@@ -12,57 +12,50 @@ nav:
       - title: Main
         path: /
       - title: Productvisie
-        path: ./productvisie
+        path: /productvisie
       - title: Quickstart
-        path: ./quickstart
+        path: /quickstart
       - title: Architectuur
-        path: ./architectuur/architectuur
+        path: /architectuur/architectuur
   - title: Informatiemodel
     subnav:
       - title: Basisterminologie
-        path: ./informatiemodel/basisterminologie
+        path: /informatiemodel/basisterminologie
       - title: Semantisch model (SIM)
-        path: ./informatiemodel/semantisch_model
+        path: /informatiemodel/semantisch_model
       - title: Uitwisselingsmodel (UGM)
-        path: ./informatiemodel/uitwisselingsmodel
+        path: /informatiemodel/uitwisselingsmodel
       - title: Gegevenswoordenboek
-        path: ./informatiemodel/gegevenswoordenboek
+        path: /informatiemodel/gegevenswoordenboek
   - title: API-familie X
     subnav:
       - title: Specificaties in Swagger
-        path: https://petstore.swagger.io/?url=https://klantinteracties/docs/api-familie-x/specificatie/openapi.yaml
+        path: /swagger-ui
       - title: Specificaties in Redoc
-        path: ./redoc
+        path: /redoc
       - title: Gedragsspecificaties
-        path: ./api-familie-x/gedragsspecificaties
+        path: /api-familie-x/gedragsspecificaties
       - title: Referentieimplementatie
-        path: ./api-familie-x/referentieimplementatie
+        path: /api-familie-x/referentieimplementatie
   - title: Achtergrond documentatie
     subnav: 
       - title: Aanbevelingen
-        path: ./achtergronddocumentatie/aanbevelingen
+        path: /achtergronddocumentatie/aanbevelingen
       - title: Besluiten
-        path: ./achtergronddocumentatie/besluiten
+        path: /achtergronddocumentatie/besluiten
       - title: Cases
-        path: ./achtergronddocumentatie/cases
+        path: /achtergronddocumentatie/cases
       - title: Functies
-        path: ./achtergronddocumentatie/funties
+        path: /achtergronddocumentatie/funties
       - title: Vraagstukken
-        path: ./achtergronddocumentatie/vraagstukken    
-  - title: Veel gestelde vragen
-    path: ./veelgesteldevragen
-  - title: 
-    path: ./contact
-#      - title: Referentieimplementatie
-#        path: /api-standaarden/klanten/referentieimplementatie
-#  - title: Specificaties Verzoeken API (IO)
-#    subnav:
-#      - title: Specificaties
-#        path: /api-standaarden/klanten/specificaties
-#      - title: Verzoeken API (redoc)
-#        path: /redoc-io-verzoeken
-#      - title: Referentieimplementatie
-#        path: /api-standaarden/klanten/referentieimplementatie
+        path: /achtergronddocumentatie/vraagstukken    
+  - title: Vraag en Antwoord
+    subnav:
+      - title: Veel gestelde vragen
+        path: /veelgesteldevragen
+      - title: Contact 
+        path: /contact
+
 
 plugins:
   - jekyll-redirect-from
