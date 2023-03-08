@@ -12,33 +12,47 @@ nav:
       - title: Main
         path: /
       - title: Productvisie
-        path: /productvisie
+        path: ./productvisie
       - title: Quickstart
-        path: /quickstart
+        path: ./quickstart
       - title: Architectuur
-        path: /architectuur/architectuur
+        path: ./architectuur/architectuur
   - title: Informatiemodel
     subnav:
       - title: Basisterminologie
-        path: /informatiemodel/basisterminologie
+        path: ./informatiemodel/basisterminologie
       - title: Semantisch model (SIM)
-        path: /informatiemodel/semantisch_model
+        path: ./informatiemodel/semantisch_model
       - title: Uitwisselingsmodel (UGM)
-        path: /informatiemodel/uitwisselingsmodel
+        path: ./informatiemodel/uitwisselingsmodel
       - title: Gegevenswoordenboek
-        path: /informatiemodel/gegevenswoordenboek
-  - title: API-familie
+        path: ./informatiemodel/gegevenswoordenboek
+  - title: API-familie X
     subnav:
-      - title: API X
-        path: /api_x
-      - title: API Y
-        path: /api_y
+      - title: Specificaties in Swagger
+        path: https://petstore.swagger.io/?url=https://klantinteracties/docs/api-familie-x/specificatie/openapi.yaml
+      - title: Specificaties in Redoc
+        path: ./redoc
+      - title: Gedragsspecificaties
+        path: ./api-familie-x/gedragsspecificaties
       - title: Referentieimplementatie
-        path: /referentieimplementatie
+        path: ./api-familie-x/referentieimplementatie
   - title: Achtergrond documentatie
     subnav: 
       - title: Aanbevelingen
-        path: /achtergronddocumentatie/aanbevelingen
+        path: ./achtergronddocumentatie/aanbevelingen
+      - title: Besluiten
+        path: ./achtergronddocumentatie/besluiten
+      - title: Cases
+        path: ./achtergronddocumentatie/cases
+      - title: Functies
+        path: ./achtergronddocumentatie/funties
+      - title: Vraagstukken
+        path: ./achtergronddocumentatie/vraagstukken    
+  - title: Veel gestelde vragen
+    path: ./veelgesteldevragen
+  - title: 
+    path: ./contact
 #      - title: Referentieimplementatie
 #        path: /api-standaarden/klanten/referentieimplementatie
 #  - title: Specificaties Verzoeken API (IO)
