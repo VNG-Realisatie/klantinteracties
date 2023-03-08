@@ -49,10 +49,12 @@ nav:
         path: /achtergronddocumentatie/funties
       - title: Vraagstukken
         path: /achtergronddocumentatie/vraagstukken    
-  - title: Veel gestelde vragen
-    path: /veelgesteldevragen
-  - title: Contact 
-    path: /contact
+  - title: Vraag en Antwoord
+    subnav:
+      - title: Veel gestelde vragen
+        path: /veelgesteldevragen
+      - title: Contact 
+        path: /contact
 
 
 plugins:
