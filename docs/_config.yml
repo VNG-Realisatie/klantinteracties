@@ -16,17 +16,17 @@ nav:
       - title: Quickstart
         path: /quickstart
       - title: Architectuur
-        path: /architectuur
+        path: /architectuur/architectuur
   - title: Informatiemodel
     subnav:
       - title: Basisterminologie
         path: /informatiemodel/basisterminologie
       - title: Semantisch model (SIM)
-        path: /semantisch_model
+        path: /informatiemodel/semantisch_model
       - title: Uitwisselingsmodel (UGM)
-        path: /uitwisselingsmodel
+        path: /informatimodel/uitwisselingsmodel
       - title: Gegevenswoordenboek
-        path: /gegevenswoordenboek
+        path: /informatiemodel/gegevenswoordenboek
   - title: API-familie
     subnav:
       - title: API X
