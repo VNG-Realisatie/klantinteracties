@@ -15,9 +15,10 @@ date: 02-06-2022
 - [C4390 - Klant belt KCC met melding openbare ruimte. Hiervoor wordt direct een zaak aangemaakt.](./artefacten/4390.md)
 - [C0359 - Klant belt KCC met melding openbare ruimte. Hiervoor bestaat reeds een zaak.](./artefacten/0359.md)
   
-___Cases hieronder nog niet gemaakt:___
 ## Kanalen
 - [C1199 - Klant mailt een vraag naar de gemeente die beantwoord kan worden door KCC.](./artefacten/1199.md)
+
+___Cases hieronder nog niet gemaakt:___
 - [C9853 - Klant appt een vraag naar de gemeente die beantwoord kan worden door KCC.](./artefacten/9853.md)
 - [C2138 - Klant stuurt een brief naar de gemeente die beantwoord kan worden door KCC.](./artefacten/2138.md)
 - [C3546 - Klant komt langs bij de gemeente met een vraag die door de baliemedewerker beantwoord kan worden.](./artefacten/3546.md)
