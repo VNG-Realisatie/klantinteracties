@@ -29,8 +29,12 @@ nav:
         path: /informatiemodel/gegevenswoordenboek
   - title: API-familie X
     subnav:
-      - title: Specificaties
-        path: /api-familie-x/specificaties
+      - title: Specificaties in Swagger
+        path: /swagger-ui
+      - title: Specificaties in Redoc
+        path: /redoc
+      - title: Gedragsspecificaties
+        path: /api-familie-x/gedragsspecificaties
       - title: Referentieimplementatie
         path: /api-familie-x/referentieimplementatie
   - title: Achtergrond documentatie
