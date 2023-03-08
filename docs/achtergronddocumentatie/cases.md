@@ -31,5 +31,5 @@ ___Cases hieronder nog niet gemaakt:___
 - [C7300 - Medewerker die bezig is met een zaak heeft enkele vragen en belt hiervoor de klant, klant neemt niet op.](./artefacten/7300.md)
 - [C0322 - Een ketenpartner heeft een stap in een zaak afgerond. Hierdoor wijzigt de status. De klant wil hierover geïnformeerd worden.](./artefacten/0322.md)
 
-## Andere perspectieven
+## Overige perspectieven
 - [C9127 - Een medewerker is bezig een klacht van een klant over een zaak te beoordelen en heeft hiervoor informatie nodig over de klantcontacten.](./artefacten/9127.md)
