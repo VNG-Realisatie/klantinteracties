@@ -12,7 +12,13 @@ Gemeenten hebben een moderne informatievoorziening nodig. In de huidige situatie
 
 Hoe noemen we dit product of deze productfamilie? 'API-standaarden voor Klantinteracties', 'Registerstandaard voor relatiebeheer' of 'Gedeelde generieke applicatieservice voor het registreren en delen van relaties en klantcontacten'?
 
-![Regiser voor relatiebeheer in GEMMA-context](./assets/gemma_relatiebeheerregister.svg){:height="40%" width="40%"}<br>
+![Register voor relatiebeheer in GEMMA-context](./assets/gemma-relatiebeheerregister.svg){:height="40%" width="40%"}<br>
+
+![Relatie met GEMMA CRM-component en bijbehorende services](./assets/relatie-met-gemma-crm-component.svg){:height="35%" width="35%"}<br>
+
+![Waar zit de standaard?](./assets/waar-zit-de-standaard.svg){:height="25%" width="25%"}<br>
+
+![En hoe zit het met registeroverstijgende API's?](./assets/registerovertijgende-apis.svg){:height="32%" width="32%"}<br>
 
 ## Wat leveren deze standaarden op voor gemeenten?
 
