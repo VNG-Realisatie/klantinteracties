@@ -18,7 +18,7 @@ Hoe noemen we dit product of deze productfamilie? 'API-standaarden voor Klantint
 
 ![Waar zit de standaard?](./assets/waar-zit-de-standaard.svg){:height="25%" width="25%"}<br>
 
-![En hoe zit het met registeroverstijgende API's?](./assets/registerovertijgende-apis.svg){:height="32%" width="32%"}<br>
+![En hoe zit het met registeroverstijgende API's?](./assets/registeroverstijgende-apis.svg){:height="32%" width="32%"}<br>
 
 ## Wat leveren deze standaarden op voor gemeenten?
 
