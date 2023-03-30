@@ -6,14 +6,14 @@ date: 02-06-2022
 
 # Functies
 
-## Relatie
+## Partijen
 
 | Code - Naam | Hoofdobject | Gerelateerde objecten | Opmerkingen |
 | :--- | :--- | :--- | :--- |
-| [F7927 - Zoek relatie](./artefacten/7927.md) | `relatie` | | |
-| [F0138 - Vraag relatie op](./artefacten/0138.md) | `relatie` | `contactgegevens` |
-| [F7554 - Registreer relatie](./artefacten/7554.md) | `relatie` | `contactgegevens` |
-| [F6580 - Registreer contactgegevens bij relatie](./artefacten/6580.md) | `relatie` | `contactgegevens` |
+| [F7927 - Zoek partij](./artefacten/7927.md) | `partij` | | |
+| [F0138 - Vraag partij op](./artefacten/0138.md) | `partij` | `contactgegevens` |
+| [F7554 - Registreer partij](./artefacten/7554.md) | `partij` | `contactgegevens` |
+| [F6580 - Registreer contactgegevens bij partij](./artefacten/6580.md) | `partij` | `contactgegevens` |
 
 ## Klantcontact
 
