@@ -41,14 +41,12 @@ nav:
     subnav: 
       - title: Aanbevelingen
         path: /achtergronddocumentatie/aanbevelingen
-      - title: Besluiten
-        path: /achtergronddocumentatie/besluiten
       - title: Cases
         path: /achtergronddocumentatie/cases
       - title: Functies
         path: /achtergronddocumentatie/functies
-      - title: Vraagstukken
-        path: /achtergronddocumentatie/vraagstukken    
+      - title: Vragen en besluiten
+        path: /achtergronddocumentatie/Vragen en besluiten    
   - title: Vraag en Antwoord
     subnav:
       - title: Veel gestelde vragen
