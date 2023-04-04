@@ -13,10 +13,10 @@ date: 02-06-2022
 - [C9167 - Klant belt KCC met een vraag die niet direct beantwoord kan worden en maakt een terugbelverzoek.](./artefacten/9167.md)
 - [C2984 - Medewerker belt op verzoek van KCC klant terug.](./artefacten/2984.md)
 - [C9761 - Medewerker belt op verzoek van KCC klant terug. Tijdens het gesprek blijkt dat dingen uitgezocht moeten worden. Hiervoor wordt een zaak aangemaakt.](./artefacten/9761.md)
+- [C4390 - Klant belt KCC met melding openbare ruimte. Hiervoor wordt direct een zaak aangemaakt.](./artefacten/4390.md)
 
 ___Cases hieronder moeten opnieuw bekeken worden___
 
-- [C4390 - Klant belt KCC met melding openbare ruimte. Hiervoor wordt direct een zaak aangemaakt.](./artefacten/4390.md)
 - [C0359 - Klant belt KCC met melding openbare ruimte. Hiervoor bestaat reeds een zaak.](./artefacten/0359.md)
 - [C9018 - Klant belt KCC met verzoek waarvoor authenticatie vereist is. Klant is nog niet bekend.](./artefacten/9018.md)
   
