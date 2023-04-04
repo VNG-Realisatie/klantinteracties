@@ -52,10 +52,15 @@ date: 30-03-2023
 
 ### Interne taak
 
+- [B8302 - Naamgeving Interne taak](./artefacten/8302.md)
 - [V1962 - Interne taak of 'Zaak light'?](./artefacten/1962.md)
 - [V0435 - Welke taakstatussen gebruiken we?](./artefacten/0435.md)
 
 ### Zaak
+
+### Klanttaak
+
+- [B4083 - Naamgeving Klanttaak](./artefacten/4083.md)
 
 ### Verzoek / Productaanvraag
 
