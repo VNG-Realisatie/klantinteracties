@@ -16,6 +16,12 @@ date: 02-06-2022
 - [C2984 - Medewerker belt op verzoek van KCC klant terug.](./artefacten/2984.md)
 - [C9761 - Medewerker belt op verzoek van KCC klant terug. Tijdens het gesprek blijkt dat dingen uitgezocht moeten worden. Hiervoor wordt een zaak aangemaakt.](./artefacten/9761.md)
 
+### Vragen / antwoorden via andere kanalen
+
+- [C1199 - Klant mailt een vraag naar de gemeente die beantwoord kan worden door KCC.](./artefacten/1199.md)
+- [C9853 - Klant appt een vraag naar de gemeente die beantwoord kan worden door KCC.](./artefacten/9853.md)
+- [C2138 - Klant stuurt een brief naar de gemeente die beantwoord kan worden door KCC.](./artefacten/2138.md)
+
 ## Meldingen openbare ruimte per telefoon
 
 - [C4390 - Klant belt KCC met melding openbare ruimte. Hiervoor wordt direct een zaak aangemaakt.](./artefacten/4390.md)
@@ -25,12 +31,4 @@ date: 02-06-2022
 
 - [C9018 - Klant belt KCC om een product aan te vragen.](./artefacten/9018.md)
 
-## Andere kanalen
-
-- [C1199 - Klant mailt een vraag naar de gemeente die beantwoord kan worden door KCC.](./artefacten/1199.md)
-- [C9853 - Klant appt een vraag naar de gemeente die beantwoord kan worden door KCC.](./artefacten/9853.md)
-
-___Cases hieronder moeten opnieuw bekeken worden___
-
-- [C2138 - Klant stuurt een brief naar de gemeente die beantwoord kan worden door KCC.](./artefacten/2138.md)
 
