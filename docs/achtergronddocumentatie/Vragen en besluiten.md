@@ -72,4 +72,7 @@ date: 30-03-2023
 
 - [V6881 - Criteria voor niet digitale authenticatie?](./artefacten/6881.md)
 
+## Archivering
+
+- [V3337 - Bewaartermijnen en vernietigingskenmerken voor partijen, klantcontacten en interne taken](./artefacten/3337.md)
 
