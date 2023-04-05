@@ -31,4 +31,9 @@ date: 02-06-2022
 
 - [C9018 - Klant belt KCC om een product aan te vragen.](./artefacten/9018.md)
 
+## Routering
+
+ - [C6114 - Verkeerde routering vanuit KCC.](./artefacten/6114.md)
+
+
 
