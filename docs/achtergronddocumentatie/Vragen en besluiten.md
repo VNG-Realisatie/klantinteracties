@@ -21,8 +21,9 @@ date: 30-03-2023
 
 ### Informatiemodellering algemeen / MIM
 
-- [B2187 - Het identificerend kenmerk van een objecttype noemen we 'ID'](./artefacten/2187.md)
 - [B8259 - Naamgevingsconventies](./artefacten/8259.md)
+- [B2187 - Het identificerend kenmerk van een objecttype noemen we 'ID'](./artefacten/2187.md)
+- [B8658 - Naamgeving classificerende attributen (soort / type / ...)](./artefacten/8658.md)
 - [B7271 - Naamgeving van historie attributen](./artefacten/7271.md)
 - [B0932 - MIM-'Keuzeconstructie' wordt niet toegepast voor XOR's](./artefacten/0932.md)
 
