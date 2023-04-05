@@ -26,6 +26,7 @@ date: 30-03-2023
 - [B8658 - Naamgeving classificerende attributen (soort / type / ...)](./artefacten/8658.md)
 - [B7271 - Naamgeving van historie attributen](./artefacten/7271.md)
 - [B0932 - MIM-'Keuzeconstructie' wordt niet toegepast voor XOR's](./artefacten/0932.md)
+- [B9876 - In SIM gegevensgroepen alleen als 'complex datatype', niet voor een herhalende groep](./artefacten/9876.md)
 
 ## Scope
 
