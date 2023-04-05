@@ -17,6 +17,7 @@ date: 30-03-2023
 - [B7030 - We beschrijven een register API. Niet een Backend For Frontend (BFF) API.](./artefacten/7030.md)
 - [V8786 - Beschrijven we saga's als onderdeel van de standaard?](./artefacten/8786.md)
 - [V1565 - Beschrijven we een registeroverstijgende API?](./artefacten/1565.md)
+- [V9866 - Voegen we in de API's over de mogelijkheid toe om extra gegevens uit te wisselen?](./artefacten/9866.md)
 
 ### Informatiemodellering algemeen / MIM
 
