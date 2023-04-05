@@ -10,7 +10,7 @@ date: 30-03-2023
 
 ### Proces
 
-- [V2703 - Als er bij stakeholders geen consensus is, werken we dan meerdere alternatieven uit?](./artefacten/2703.md)
+- [B2703 - Uitwerken van alternatieven bij gebrek aan consensus](./artefacten/2703.md)
 
 ### API-architectuur / ontwerp
 
