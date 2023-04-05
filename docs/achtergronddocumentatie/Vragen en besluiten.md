@@ -31,6 +31,7 @@ date: 30-03-2023
 ## Scope
 
 - [B3557 - Management informatie buiten scope](./artefacten/3557.md)
+- [B5791 - Gebruik van kennisbank buiten scope](./artefacten/5791.md)
 
 ## Registergrenzen
 
