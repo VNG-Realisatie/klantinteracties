@@ -27,6 +27,8 @@ nav:
         path: /informatiemodel/uitwisselingsmodel
       - title: Gegevenswoordenboek
         path: /informatiemodel/gegevenswoordenboek
+      - title: Begrippen
+        path: /informatiemodel/begrippen
   - title: API-familie X
     subnav:
       - title: Specificaties in Swagger
