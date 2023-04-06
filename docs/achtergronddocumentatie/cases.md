@@ -33,7 +33,9 @@ date: 02-06-2022
 
 ## Routering
 
- - [C6114 - Verkeerde routering vanuit KCC.](./artefacten/6114.md)
+- [C6114 - Verkeerde routering vanuit KCC.](./artefacten/6114.md)
 
+## Aspectbeschrijvingen
 
+- [A8694 - Wijzigingen, correcties en historie.](./artefacten/8694.md)
 
