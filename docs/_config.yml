@@ -31,10 +31,8 @@ nav:
         path: /informatiemodel/begrippen
   - title: API-familie X
     subnav:
-      - title: Specificaties in Swagger
+      - title: Specificaties
         path: /api_familie_x/varianten
-      - title: Specificaties in Redoc
-        path: /api_familie_x/redoc
       - title: Gedragsspecificaties
         path: /api_familie_x/gedragsspecificaties
       - title: Referentieimplementatie
