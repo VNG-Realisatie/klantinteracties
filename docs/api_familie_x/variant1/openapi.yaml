@@ -6,7 +6,7 @@ servers:
   url: "https://www.voorbeeldgemeente.nl/api/klantinteracties/v00"
 info:
   title: "Klantinteracties Variant 1"
-  version: "00.01.00"
+  version: "0.0.1"
   x-imvertor-generator-version: "2.0.0"
   x-yamlCompiler-stylesheets-version: "20230315"
   contact:
