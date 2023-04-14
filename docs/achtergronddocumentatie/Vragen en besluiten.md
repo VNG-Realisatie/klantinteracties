@@ -77,6 +77,7 @@ date: 30-03-2023
 ### Zoeken van partijen
 
 - [V6881 - Criteria voor niet digitale authenticatie?](./artefacten/6881.md)
+- [V1767 - Welke identificatie gebruiken we voor het opvragen (raadplegen?) van een partij. ](./artefacten/1767.md)
 
 ## Archivering
 
