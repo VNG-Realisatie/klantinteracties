@@ -4,59 +4,7 @@ title: Gegevenswoordenboek informatiemodel klantinteracties
 date: 14-04-2023
 ---
 
-<!DOCTYPE HTML><html>
-   <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      <meta charset="UTF-8">
-      <style type="text/css">
-                    body {
-                    font-family:"Calibri","Verdana",sans-serif;
-                    font-size:11.0pt;
-                    }
-                    table {
-                    width: 100%;
-                    }
-                    table, th, td {
-                    border: none;
-                    font-size:11.0pt;
-                    }
-                    td {
-                    vertical-align: top;
-                    }
-                    h1, h2, h3, h4 {
-                    color:#003359;
-                    }
-                    h1 {
-                    page-break-before:always;
-                    font-size:16.0pt;
-                    }
-                    h2 {
-                    font-size:12.0pt;
-                    }
-                    h3 {
-                    font-size:12.0pt;
-                    }
-                    tr.tableheader {
-                    font-style: italic;
-                    }
-                    a.anchor {
-                    color: inherit;
-                    text-decoration: none;
-                    }
-                    a.anchor:hover {
-                    color: inherit;
-                    text-decoration: underline;
-                    }
-                    a.link {
-                    color: inherit;
-                    text-decoration: none;
-                    }
-                    a.link:hover {
-                    color: blue;
-                    text-decoration: underline;
-                    }
-                </style>
-   </head>
+
    <body>
       <p>BASISMODEL
          :
