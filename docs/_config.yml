@@ -32,7 +32,7 @@ nav:
   - title: API-familie X
     subnav:
       - title: Specificaties in Swagger
-        path: /api_familie_x/swagger-ui
+        path: /api_familie_x/varianten
       - title: Specificaties in Redoc
         path: /api_familie_x/redoc
       - title: Gedragsspecificaties
