@@ -5,7 +5,7 @@ servers:
 - description: "Referentie-implementatie"
   url: "https://www.voorbeeldgemeente.nl/api/klantinteracties_variant__/v0"
 info:
-  title: "Klantinteracties Variant 3"
+  title: "Klantinteracties Variant 4"
   version: "0.0.1"
   x-imvertor-generator-version: "2.0.0"
   x-yamlCompiler-stylesheets-version: "20230315"
@@ -166,63 +166,107 @@ components:
             description: "De taal waarin de persoon ,die het klantcontact met de gemeente\
               \ heeft gehad, bij voorkeur interactie heeft met de gemeente in relatie\
               \ tot dit klantcontact."
+    Partij_parameters:
+      allOf:
+        - $ref: "#/components/schemas/PartijQuery"
+        - type: "object"
+          required:
+          - "id"
+          - "nummer"
+          properties:
+            bezoekadres:
+              $ref: "#/components/schemas/Bezoekadres"
+            correspondentieadres:
+              $ref: "#/components/schemas/Correspondentieadres"
+            digitaalAdres:
+              type: "array"
+              minItems: 0
+              items:
+                $ref: "#/components/schemas/DigitaalAdres"
+            externeIdentificatie:
+              type: "array"
+              minItems: 0
+              items:
+                $ref: "#/components/schemas/ExterneIdentificatie"
+            id:
+              $ref: "#/components/schemas/Identificatiecode"
+            klanttaakId:
+              type: "array"
+              minItems: 0
+              items:
+                $ref: "#/components/schemas/Identificatiecode"
+            nummer:
+              $ref: "#/components/schemas/IdentificerendNummer"
+            organisatienaam:
+              $ref: "#/components/schemas/Naam-lang"
+            persoonsnaam:
+              $ref: "#/components/schemas/Persoonsnaamgegevens"
+            voorkeurskanaal:
+              allOf:
+              - $ref: "#/components/schemas/Kanalen"
+              - title: "voorkeurskanaal"
+                description: "Het kanaal waarlangs de persoon ,die het klantcontact met\
+                  \ de gemeente heeft gehad, bij voorkeur interactie heeft met de gemeente\
+                  \ in relatie tot dit klantcontact."
+            voorkeurstaal:
+              allOf:
+              - $ref: "#/components/schemas/Talen"
+              - title: "voorkeurstaal"
+                description: "De taal waarin de persoon ,die het klantcontact met de gemeente\
+                  \ heeft gehad, bij voorkeur interactie heeft met de gemeente in relatie\
+                  \ tot dit klantcontact."
     Raadpleegpartij_parameters:
-      type: "object"
-      description: "Id voor het raadplgene van de partij.\n\n(Uiteindelijk) belanghebbenden\
-        \ waarmee de gemeente geen direct contact heeft (of heeft gehad) (bijvoorbeeld\
-        \ door vertegenwoordiging) zien we als partijen waarmee de gemeente een relatie\
-        \ heeft.? Een vertegenwoordiger (van een belanghebbende) is een partij? Partijen\
-        \ zijn ???gekende??? personen of organisaties? Dit betekent dat er voor eerste\
-        \ registratie en bij eventueel (her)gebruik authenticatie heeft plaatsgevonden.\
-        \ Dit hoeft niet per se te gebeuren met DigiD, eHerkenning o.i.d. Er is dus\
-        \ ook niet altijd sprake van vastlegging en verwerking van een BSN of ander\
-        \ buiten de gemeente toegekend ID-nummer.?"
-      required:
-      - "id"
-      properties:
-        id:
-          $ref: "#/components/schemas/Identificatiecode"
+      allOf:
+        - $ref: '#/components/schemas/PartijQuery'
+        - type: "object"
+          description: "Id voor het raadplgene van de partij.\n\n(Uiteindelijk) belanghebbenden\
+            \ waarmee de gemeente geen direct contact heeft (of heeft gehad) (bijvoorbeeld\
+            \ door vertegenwoordiging) zien we als partijen waarmee de gemeente een relatie\
+            \ heeft.? Een vertegenwoordiger (van een belanghebbende) is een partij? Partijen\
+            \ zijn ???gekende??? personen of organisaties? Dit betekent dat er voor eerste\
+            \ registratie en bij eventueel (her)gebruik authenticatie heeft plaatsgevonden.\
+            \ Dit hoeft niet per se te gebeuren met DigiD, eHerkenning o.i.d. Er is dus\
+            \ ook niet altijd sprake van vastlegging en verwerking van een BSN of ander\
+            \ buiten de gemeente toegekend ID-nummer.?"
+          properties:
+            id:
+              $ref: "#/components/schemas/Identificatiecode"
     Registreercontactgegevens_parameters:
-      type: "object"
-      description: "Gegevens die gewijzigd kunnen worden bij het registreren van contactgegevens\
-        \ bij een bestaande partij.\n\n(Uiteindelijk) belanghebbenden waarmee de gemeente\
-        \ geen direct contact heeft (of heeft gehad) (bijvoorbeeld door vertegenwoordiging)\
-        \ zien we als partijen waarmee de gemeente een relatie heeft.? Een vertegenwoordiger\
-        \ (van een belanghebbende) is een partij? Partijen zijn ???gekende??? personen\
-        \ of organisaties? Dit betekent dat er voor eerste registratie en bij eventueel\
-        \ (her)gebruik authenticatie heeft plaatsgevonden. Dit hoeft niet per se te\
-        \ gebeuren met DigiD, eHerkenning o.i.d. Er is dus ook niet altijd sprake\
-        \ van vastlegging en verwerking van een BSN of ander buiten de gemeente toegekend\
-        \ ID-nummer.?"
-      required:
-      - "id"
-      properties:
-        bezoekadres:
-          $ref: "#/components/schemas/Bezoekadres"
-        correspondentieadres:
-          $ref: "#/components/schemas/Correspondentieadres"
-        digitaalAdres:
-          type: "array"
-          minItems: 0
-          items:
-            $ref: "#/components/schemas/DigitaalAdres"
-        id:
-          $ref: "#/components/schemas/Identificatiecode"
+      allOf:
+        - $ref: '#/components/schemas/PartijQuery'
+        - type: "object"
+          description: "Gegevens die gewijzigd kunnen worden bij het registreren van contactgegevens\
+            \ bij een bestaande partij.\n\n(Uiteindelijk) belanghebbenden waarmee de gemeente\
+            \ geen direct contact heeft (of heeft gehad) (bijvoorbeeld door vertegenwoordiging)\
+            \ zien we als partijen waarmee de gemeente een relatie heeft.? Een vertegenwoordiger\
+            \ (van een belanghebbende) is een partij? Partijen zijn ???gekende??? personen\
+            \ of organisaties? Dit betekent dat er voor eerste registratie en bij eventueel\
+            \ (her)gebruik authenticatie heeft plaatsgevonden. Dit hoeft niet per se te\
+            \ gebeuren met DigiD, eHerkenning o.i.d. Er is dus ook niet altijd sprake\
+            \ van vastlegging en verwerking van een BSN of ander buiten de gemeente toegekend\
+            \ ID-nummer.?"
+          properties:
+            bezoekadres:
+              $ref: "#/components/schemas/Bezoekadres"
+            correspondentieadres:
+              $ref: "#/components/schemas/Correspondentieadres"
+            digitaalAdres:
+              type: "array"
+              minItems: 0
+              items:
+                $ref: "#/components/schemas/DigitaalAdres"
+            id:
+              $ref: "#/components/schemas/Identificatiecode"
     Zoekpartij_parameters:
-      type: "object"
-      description: ""
-      required:
-      - "fields"
-      properties:
-        externeIdentificatie:
-          $ref: "#/components/schemas/ExterneIdentificatie"
-        fields:
-          type: "string"
-          title: "fields"
+      allOf:
+        - $ref: '#/components/schemas/PartijQuery'
+        - type: "object"
           description: ""
-          minLength: 1
-        nummer:
-          $ref: "#/components/schemas/IdentificerendNummer"
+          properties:
+            externeIdentificatie:
+              $ref: "#/components/schemas/ExterneIdentificatie"
+            nummer:
+              $ref: "#/components/schemas/IdentificerendNummer"
     Bezoekadres:
       type: "object"
       description: "Een bezoekadres is een adres waar een persoon of een bedrijf bezoekers\
