@@ -93,7 +93,7 @@ components:
           RaadpleegPartij: '#/components/schemas/Raadpleegpartij_parameters'
           RegistreerContactgegevens: '#/components/schemas/Registreercontactgegevens_parameters'
           Zoekpartij: '#/components/schemas/Zoekpartij_parameters'
-          RegistreerPartij: '#/components/schemas/Partij'
+          RegistreerPartij: '#/components/schemas/Partij_parameters'
     Partij:
       type: "object"
       description: "Een persoon of organisatie waarmee de gemeente een relatie heeft.\n\
