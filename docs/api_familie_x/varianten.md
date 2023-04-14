@@ -17,3 +17,13 @@ In deze ontwerpvariant is er voor gekozen om relatief dicht bij een REST-like AP
 
 In deze ontwerpvariant wordt een eerste stap richting RPC gezet. De endpoints zijn genoemd naar de in te vullen functie. 
 Er wordt nog wel gebruik gemaakt van de geeigende HTTP-request varianten. De spoecificatie kan [hier](./variant2/swagger-ui) bekeken worden in swaggerui.
+
+## Variant 3
+
+In deze ontwerpvariant zijn de vier benoemde functies in vier post-enpoints vormgegeven.De endpoints zijn genoemd naar de in te vullen functie. 
+De spoecificatie kan [hier](./variant3/swagger-ui) bekeken worden in swaggerui.
+
+## Variant 4
+
+In deze ontwerpvariant zijn de vier benoemde functies in één POST endpoint. M.b.v. polymorfie is het mogelijk om aan te geven welke functie er aangeroepen wordt en kan de bijbehorende requestbody gevuld worden. 
+De spoecificatie kan [hier](./variant4/swagger-ui) bekeken worden in swaggerui.
