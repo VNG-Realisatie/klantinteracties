@@ -178,7 +178,7 @@ components:
         - type: "object"
           description: ""
           required: 
-          - "externeIdentificaties"
+          - "externeIdentificatie"
           properties:
             externeIdentificatie:
               $ref: "#/components/schemas/ExterneIdentificatie"
