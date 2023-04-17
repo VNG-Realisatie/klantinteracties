@@ -90,8 +90,8 @@ components:
         propertyName: type
         mapping:
           RaadpleegPartijOpID: '#/components/schemas/Raadpleegpartij_parameters'
-          RaadpleegPartijOpNummer: '#/components/schemas/RaadpleegpartijOpNummer_parameters'
-          RaadpleegPartijExterneId: '#/components/schemas/RaadpleegpartijOpExterneIdNummer_parameters'
+          RaadpleegPartijOpNummer: '#/components/schemas/Raadpleegpartijopnummer_parameters'
+          RaadpleegPartijExterneId: '#/components/schemas/Raadpleegpartijopexterneid_parameters'
           RegistreerContactgegevens: '#/components/schemas/Registreercontactgegevens_parameters'
           Zoekpartij: '#/components/schemas/Zoekpartij_parameters'
           RegistreerPartij: '#/components/schemas/Partij_parameters'
@@ -157,6 +157,8 @@ components:
             \ Dit hoeft niet per se te gebeuren met DigiD, eHerkenning o.i.d. Er is dus\
             \ ook niet altijd sprake van vastlegging en verwerking van een BSN of ander\
             \ buiten de gemeente toegekend ID-nummer.?"
+          required: 
+          - "id"
           properties:
             id:
               $ref: "#/components/schemas/Identificatiecode"
@@ -165,6 +167,8 @@ components:
         - $ref: '#/components/schemas/PartijQuery'
         - type: "object"
           description: ""
+          required: 
+          - "nummer"
           properties:
             nummer:
               $ref: "#/components/schemas/IdentificerendNummer"
@@ -173,6 +177,8 @@ components:
         - $ref: '#/components/schemas/PartijQuery'
         - type: "object"
           description: ""
+          required: 
+          - "externeIdentificaties"
           properties:
             externeIdentificatie:
               $ref: "#/components/schemas/ExterneIdentificatie"
