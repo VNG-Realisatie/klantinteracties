@@ -502,10 +502,6 @@ components:
       type: "object"
       description: "De identificatiecode van een Relatie zoals die in een andere (authentieke?)\
         \ registratie gevoerd wordt."
-      required:
-      - "anderSoortExternId"
-      - "externId"
-      - "soortExternId"
       properties:
         anderSoortExternId:
           $ref: "#/components/schemas/Omschrijving-kort"
