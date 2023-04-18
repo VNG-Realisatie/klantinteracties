@@ -15,13 +15,16 @@ n.b. Onderstaande cases moeten op enkele punten nog gecontroleerd worden ivm de 
 - [C0992 - Klant belt KCC met een vraag die direct beantwoord kan worden.](./artefacten/0992.md)
 - [C0534 - Klant belt KCC met een vraag die, na doorverbinden, direct door een collega beantwoord kan worden.](./artefacten/0534.md)
 - [C9167 - Klant belt KCC met een vraag die niet direct beantwoord kan worden en maakt een terugbelverzoek.](./artefacten/9167.md)
+- C4161 - Klant belt KCC en wordt geauthenticeerd en is reeds bekend , klantbeeld wordt getoond. 
 - [C2984 - Medewerker belt op verzoek van KCC klant terug.](./artefacten/2984.md)
 - [C9761 - Medewerker belt op verzoek van KCC klant terug. Tijdens het gesprek blijkt dat dingen uitgezocht moeten worden. Hiervoor wordt een zaak aangemaakt.](./artefacten/9761.md)
+- C3155 - Vooraf uitgevraagde informatie opslaan
 
 ### Vragen / antwoorden via andere kanalen
 
 - [C1199 - Klant mailt een vraag naar de gemeente die beantwoord kan worden door KCC.](./artefacten/1199.md)
 - [C2138 - Klant stuurt een brief naar de gemeente die beantwoord kan worden door KCC.](./artefacten/2138.md)
+- C9853 - Klant appt een vraag naar de gemeente die beantwoord kan worden door KCC.
 
 ## Meldingen openbare ruimte per telefoon
 
