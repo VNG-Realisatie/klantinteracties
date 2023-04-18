@@ -6,6 +6,8 @@ date: 18-04-2023
 
 # API-standaarden voor Klantinteracties
 
+### Stand van Zaken
+
 Aan de API-standaarden voor Klantinteracties wordt op dit moment gewerkt. 1.0-versies worden later in 2023 verwacht.
 
 ### Bijdragen aan het project
