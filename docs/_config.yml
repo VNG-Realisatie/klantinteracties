@@ -13,21 +13,23 @@ nav:
         path: /
       - title: Productvisie
         path: /productvisie
+#     - title: Quickstart
+#       path: /quickstart
+#     - title: Architectuur
+#       path: /architectuur
   - title: Informatiemodel
     subnav:
-      - title: Basisterminologie
-        path: /informatiemodel/basisterminologie
+#      - title: Basisterminologie
+#        path: /informatiemodel/basisterminologie
       - title: Semantisch model (SIM)
         path: /informatiemodel/semantisch_model
-      - title: Uitwisselingsmodel (UGM)
-        path: /informatiemodel/uitwisselingsmodel
+#      - title: Uitwisselingsmodel (UGM)
+#        path: /informatiemodel/uitwisselingsmodel
       - title: Gegevenswoordenboek
         path: /informatiemodel/gegevenswoordenboek
-      - title: Begrippen
-        path: /informatiemodel/begrippen
-  - title: API-familie X
+  - title: API-familie Partij
     subnav:
-      - title: Specificaties
+      - title: Ontwerpvarianten specificaties
         path: /api_familie_x/varianten
       - title: Gedragsspecificaties
         path: /api_familie_x/gedragsspecificaties
