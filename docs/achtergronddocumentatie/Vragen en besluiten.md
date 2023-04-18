@@ -44,11 +44,11 @@ date: 30-03-2023
 ### Partij
 
 - [B8315 - Naamgeving Partij](./artefacten/8315.md)
-- [V3485 - Partijen beperken tot gekende personen?](./artefacten/3485.md)
+- [B3485 - Partijen zijn beperkt tot gekende personen en organisaties](./artefacten/3485.md)
 - [V4749 - Hebben gekende personen altijd een BSN?](./artefacten/4749.md)
 - [B9045 - We introduceren een partij.nummer naast het BSN](./artefacten/9045.md)
 - [B4733 - Partij.nummer niet gebruiken als interne technische sleutel](./artefacten/4733.md)
-- [V0862 - Hoe leggen we contactpersonen bij een organisatie vast?](./artefacten/0862.md)
+- [B0862 - Registratie van personen in verschillende rollen](./artefacten/0862.md)
 - [B4771 - We maken geen gebruik van de Core Person/Business Vocabulary voor eigenschappen van personen en organisaties en/of hun identificatoren.](./artefacten/4771.md)
 
 ### Klantcontact
