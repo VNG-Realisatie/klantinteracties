@@ -49,11 +49,6 @@ n.b. Onderstaande cases moeten op enkele punten nog gecontroleerd worden ivm de 
 | :--- | :--- | 
 | C1304 | Bevestigingsmail n.a.v. klantcontact. |
 
-## Aspectbeschrijvingen
-| Code | Omschrijving | 
-| :--- | :--- | 
-| [A8694](./artefacten/8694.md) | Wijzigingen, correcties en historie. |
-
 ## Kanalen
 | Code | Omschrijving | 
 | :--- | :--- | 
