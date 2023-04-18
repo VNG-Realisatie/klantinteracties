@@ -11,7 +11,8 @@ n.b. Onderstaande cases moeten op enkele punten nog gecontroleerd worden ivm de 
 ## Klantcontact Centrum
 
 ### Vragen / antwoorden per telefoon
-
+| Code  | Omschrijving |
+| 
 - [C0992 - Klant belt KCC met een vraag die direct beantwoord kan worden.](./artefacten/0992.md)
 - [C0534 - Klant belt KCC met een vraag die, na doorverbinden, direct door een collega beantwoord kan worden.](./artefacten/0534.md)
 - [C9167 - Klant belt KCC met een vraag die niet direct beantwoord kan worden en maakt een terugbelverzoek.](./artefacten/9167.md)
@@ -38,6 +39,10 @@ n.b. Onderstaande cases moeten op enkele punten nog gecontroleerd worden ivm de 
 ## Routering
 
 - [C6114 - Verkeerde routering vanuit KCC.](./artefacten/6114.md)
+
+## Bevestiging
+
+- C1304 - Bevestigingsmail n.a.v. klantcontact.
 
 ## Aspectbeschrijvingen
 
