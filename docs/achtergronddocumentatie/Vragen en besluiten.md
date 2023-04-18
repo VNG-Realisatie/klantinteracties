@@ -17,7 +17,7 @@ date: 30-03-2023
 - [B7030 - We beschrijven een register API. Niet een Backend For Frontend (BFF) API.](./artefacten/7030.md)
 - [V8786 - Beschrijven we saga's als onderdeel van de standaard?](./artefacten/8786.md)
 - [V1565 - Beschrijven we een registeroverstijgende API?](./artefacten/1565.md)
-- [V9866 - Voegen we in de API's over de mogelijkheid toe om extra gegevens uit te wisselen?](./artefacten/9866.md)
+- [B9866 - We voegen in API's geen mogelijkheid toe om extra gegevens uit te wisselen](./artefacten/9866.md)
 - [V5698 - In hoeverre gaan we gebruik maken van de HTTP-requests zols get, put, patchen post versus uitwerken van RPC calls met alleen een post.](./artefacten/5168.md)
 
 ### Informatiemodellering algemeen / MIM
@@ -37,7 +37,7 @@ date: 30-03-2023
 ## Registergrenzen
 
 - [B4237 - De 'klantcontacten zaken' relatie ligt binnen het klantcontactregister](./artefacten/4237.md)
-- [V2538 - Overlap tussen de Verzending (ZGW) en het Klantcontact](./artefacten/2538.md)
+- [B2538 - Gedeeltelijke overlap tussen de Verzending (ZGW) en het Klantcontact](./artefacten/2538.md)
 
 ## Objecttype / Concepten
 
