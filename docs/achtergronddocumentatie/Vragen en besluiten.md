@@ -18,6 +18,7 @@ date: 30-03-2023
 - [V8786 - Beschrijven we saga's als onderdeel van de standaard?](./artefacten/8786.md)
 - [V1565 - Beschrijven we een registeroverstijgende API?](./artefacten/1565.md)
 - [V9866 - Voegen we in de API's over de mogelijkheid toe om extra gegevens uit te wisselen?](./artefacten/9866.md)
+- [V5698 - In hoeverre gaan we gebruik maken van de HTTP-requests zols get, put, patchen post versus uitwerken van RPC calls met alleen een post.](./artefacten/5168.md)
 
 ### Informatiemodellering algemeen / MIM
 
@@ -76,6 +77,7 @@ date: 30-03-2023
 ### Zoeken van partijen
 
 - [V6881 - Criteria voor niet digitale authenticatie?](./artefacten/6881.md)
+- [V1767 - Welke identificatie gebruiken we voor het opvragen (raadplegen?) van een partij. ](./artefacten/1767.md)
 
 ## Archivering
 
