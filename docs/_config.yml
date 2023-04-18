@@ -13,10 +13,6 @@ nav:
         path: /
       - title: Productvisie
         path: /productvisie
-      - title: Quickstart
-        path: /quickstart
-      - title: Architectuur
-        path: /architectuur/architectuur
   - title: Informatiemodel
     subnav:
       - title: Basisterminologie
