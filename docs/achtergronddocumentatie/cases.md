@@ -44,11 +44,6 @@ n.b. Onderstaande cases moeten op enkele punten nog gecontroleerd worden ivm de 
 | :--- | :--- | 
 | [C6114](./artefacten/6114.md) | Verkeerde routering vanuit KCC. |
 
-## Bevestiging
-| Code | Omschrijving | 
-| :--- | :--- | 
-| C1304 | Bevestigingsmail n.a.v. klantcontact. |
-
 ## Kanalen
 | Code | Omschrijving | 
 | :--- | :--- | 
