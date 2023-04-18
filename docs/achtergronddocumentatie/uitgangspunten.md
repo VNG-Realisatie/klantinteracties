@@ -6,7 +6,7 @@ date: 30-03-2023
 
 # Uitgangspunten
 
-| Code | Naam | 
+| Code | Omschrijving | 
 | :--- | :--- | 
 | [U4177](./artefacten/4177.md) | We ontwerpen primair vanuit de goede dienstverlening en toetsen daarna aan vigerende wetgeving. | 
 | [U6425](./artefacten/6425.md) | We gebruiken concepten en definities die aansluiten bij de begripswereld van (eind)gebruikers. | 
