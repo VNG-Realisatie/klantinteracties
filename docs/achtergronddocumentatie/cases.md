@@ -6,6 +6,8 @@ date: 02-06-2022
 
 # Cases
 
+n.b. Onderstaande cases moeten op enkele punten nog gecontroleerd worden ivm de meest recente wijzigingen in het informatiemodel. Het zou hierbij uitsluitend moeten gaan om nieuwe attributen die in de voorbeelden voorkomen maar daar geen essentiele functionele rol in spelen.
+
 ## Klantcontact Centrum
 
 ### Vragen / antwoorden per telefoon
