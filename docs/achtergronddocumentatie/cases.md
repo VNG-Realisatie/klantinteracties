@@ -21,7 +21,6 @@ n.b. Onderstaande cases moeten op enkele punten nog gecontroleerd worden ivm de 
 ### Vragen / antwoorden via andere kanalen
 
 - [C1199 - Klant mailt een vraag naar de gemeente die beantwoord kan worden door KCC.](./artefacten/1199.md)
-- [C9853 - Klant appt een vraag naar de gemeente die beantwoord kan worden door KCC.](./artefacten/9853.md)
 - [C2138 - Klant stuurt een brief naar de gemeente die beantwoord kan worden door KCC.](./artefacten/2138.md)
 
 ## Meldingen openbare ruimte per telefoon
