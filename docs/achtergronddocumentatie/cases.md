@@ -38,4 +38,3 @@ date: 02-06-2022
 ## Aspectbeschrijvingen
 
 - [A8694 - Wijzigingen, correcties en historie.](./artefacten/8694.md)
-
