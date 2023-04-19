@@ -3,7 +3,7 @@ layout: page-with-side-nav
 title: Gegevenswoordenboek informatiemodel klantinteracties
 date: 14-04-2023
 ---
-<!DOCTYPE HTML><html>
+
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <meta charset="UTF-8">
