@@ -13,44 +13,45 @@ nav:
         path: /
       - title: Productvisie
         path: /productvisie
-      - title: Begrippen
-        path: /begrippen
+#     - title: Quickstart
+#       path: /quickstart
+#     - title: Architectuur
+#       path: /architectuur
+  - title: Informatiemodel
+    subnav:
+#      - title: Basisterminologie
+#        path: /informatiemodel/basisterminologie
+      - title: Semantisch model (SIM)
+        path: /informatiemodel/semantisch_model
+#      - title: Uitwisselingsmodel (UGM)
+#        path: /informatiemodel/uitwisselingsmodel
+      - title: Gegevenswoordenboek
+        path: /informatiemodel/gegevenswoordenboek
+  - title: API-familie Partij
+    subnav:
+      - title: Ontwerpvarianten specificaties
+        path: /api_familie_x/varianten
+#      - title: Gedragsspecificaties
+#        path: /api_familie_x/gedragsspecificaties
+#      - title: Referentieimplementatie
+#        path: /api_familie_x/referentieimplementatie
+  - title: Achtergrond documentatie
+    subnav: 
       - title: Uitgangspunten
-        path: /uitgangspunten
-      - title: Ontwerpkeuzes
-        path: /ontwerpkeuzes
-      - title: Architectuur
-        path: /architectuur
-      - title: Informatiemodellen
-        path: /informatiemodellen
-      - title: Project
-        path: /project
-      - title: Vraagstukken
-        path: /vraagstukken
-  - title: Specificaties Klanten API (IO)
+        path: /achtergronddocumentatie/uitgangspunten
+      - title: Cases
+        path: /achtergronddocumentatie/cases
+      - title: Functies
+        path: /achtergronddocumentatie/functies
+      - title: Vragen en besluiten
+        path: /achtergronddocumentatie/Vragen en besluiten    
+  - title: Vraag en Antwoord
     subnav:
-      - title: Specificaties
-        path: /api-standaarden/klanten/specificaties
-      - title: Klanten API (redoc)
-        path: /redoc-io-klanten
-      - title: Referentieimplementatie
-        path: /api-standaarden/klanten/referentieimplementatie
-  - title: Specificaties Contactmomenten API (IO)
-    subnav:
-#      - title: Specificaties
-#        path: /api-standaarden/klanten/specificaties
-      - title: Contactmomenten API (redoc)
-        path: /redoc-io-contactmomenten
-#      - title: Referentieimplementatie
-#        path: /api-standaarden/klanten/referentieimplementatie
-#  - title: Specificaties Verzoeken API (IO)
-#    subnav:
-#      - title: Specificaties
-#        path: /api-standaarden/klanten/specificaties
-#      - title: Verzoeken API (redoc)
-#        path: /redoc-io-verzoeken
-#      - title: Referentieimplementatie
-#        path: /api-standaarden/klanten/referentieimplementatie
+#      - title: Veelgestelde vragen
+#        path: /veelgesteldevragen
+      - title: Contact 
+        path: /contact
+
 
 plugins:
   - jekyll-redirect-from
