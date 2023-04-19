@@ -57,16 +57,7 @@ date: 14-04-2023
                 </style>
    </head>
    <body>
-      <p>BASISMODEL
-         :
-         SIM Klantinteracties
-         :
-         2.0.0
-         :
-         2023-04-19T08:57:48Z</p>
       <p>
-         ID: EAPK_272B109E_0738_42bd_9D43_C4F87B5E8B8D</p>
-      <div><strong>Domein: Model</strong><div>
             <h1>Objecttypen </h1>
             
             <div><a class="anchor" name="global_class_Model_Klantcontact"></a><h2> Klantcontact</h2>
