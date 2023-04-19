@@ -3,8 +3,59 @@ layout: page-with-side-nav
 title: Gegevenswoordenboek informatiemodel klantinteracties
 date: 14-04-2023
 ---
-
-
+<!DOCTYPE HTML><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="UTF-8">
+      <style type="text/css">
+                    body {
+                    font-family:"Calibri","Verdana",sans-serif;
+                    font-size:11.0pt;
+                    }
+                    table {
+                    width: 100%;
+                    }
+                    table, th, td {
+                    border: none;
+                    font-size:11.0pt;
+                    }
+                    td {
+                    vertical-align: top;
+                    }
+                    h1, h2, h3, h4 {
+                    color:#003359;
+                    }
+                    h1 {
+                    page-break-before:always;
+                    font-size:16.0pt;
+                    }
+                    h2 {
+                    font-size:12.0pt;
+                    }
+                    h3 {
+                    font-size:12.0pt;
+                    }
+                    tr.tableheader {
+                    font-style: italic;
+                    }
+                    a.anchor {
+                    color: inherit;
+                    text-decoration: none;
+                    }
+                    a.anchor:hover {
+                    color: inherit;
+                    text-decoration: underline;
+                    }
+                    a.link {
+                    color: inherit;
+                    text-decoration: none;
+                    }
+                    a.link:hover {
+                    color: blue;
+                    text-decoration: underline;
+                    }
+                </style>
+   </head>
    <body>
       <p>BASISMODEL
          :
@@ -12,7 +63,7 @@ date: 14-04-2023
          :
          2.0.0
          :
-         2023-04-13T09:35:06Z</p>
+         2023-04-19T08:57:48Z</p>
       <p>
          ID: EAPK_272B109E_0738_42bd_9D43_C4F87B5E8B8D</p>
       <div><strong>Domein: Model</strong><div>
@@ -280,7 +331,7 @@ date: 14-04-2023
                         <td width="5%">&nbsp;</td>
                         <td width="45%">
                            
-                           Klantcontact-zaak
+                           Klantcontact bij zaak
                            
                            [ 0 .. 1 ]
                            
@@ -291,6 +342,21 @@ date: 14-04-2023
                            </td>
                         <td width="50%">Het klantcontact dat aanleiding gaf tot het starten van een zaak of dat over een zaak
                            ging.</td>
+                     </tr>
+                     <tr>
+                        <td width="5%">&nbsp;</td>
+                        <td width="45%">
+                           
+                           Object (nog uit te werken)
+                           
+                           [ 0 .. * ]
+                           
+                           betreft
+                           
+                           Klantcontact
+                           [ 0 .. * ]
+                           </td>
+                        <td width="50%"></td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
@@ -1075,6 +1141,21 @@ date: 14-04-2023
                      <tr>
                         <td width="5%">&nbsp;</td>
                         <td width="45%">
+                           
+                           Werkt voor
+                           
+                           [ 0 .. * ]
+                           
+                           vertegenwoordigt
+                           
+                           Organisatie
+                           [ 1 ]
+                           </td>
+                        <td width="50%"></td>
+                     </tr>
+                     <tr>
+                        <td width="5%">&nbsp;</td>
+                        <td width="45%">
                            Organisatie
                            is specialisatie van
                            
@@ -1106,13 +1187,13 @@ date: 14-04-2023
                </table>
                </div>
             
-            <div><a class="anchor" name="global_class_Model_Klantcontactzaak"></a><h2> Klantcontact-zaak</h2>
+            <div><a class="anchor" name="global_class_Model_Klantcontactbijzaak"></a><h2> Klantcontact bij zaak</h2>
                
                <table>
                   <tbody>
                      <tr>
                         <td width="30%"><b>Naam</b></td>
-                        <td width="70%">Klantcontact-zaak</td>
+                        <td width="70%">Klantcontact bij zaak</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst</b></td>
@@ -1200,7 +1281,7 @@ date: 14-04-2023
                      <tr>
                         <td width="5%">&nbsp;</td>
                         <td width="45%">
-                           Klantcontact-zaak
+                           Klantcontact bij zaak
                            [ 0 .. 1 ]
                            
                            heeft
@@ -1215,7 +1296,7 @@ date: 14-04-2023
                      <tr>
                         <td width="5%">&nbsp;</td>
                         <td width="45%">
-                           Klantcontact-zaak
+                           Klantcontact bij zaak
                            [ 0 .. 1 ]
                            
                            heeft
@@ -1315,6 +1396,18 @@ date: 14-04-2023
                            Partijnummer
                            </td>
                         <td width="10%">1</td>
+                     </tr>
+                     <tr>
+                        <td width="5%">&nbsp;</td>
+                        <td width="25%">
+                           Interne notitie
+                           </td>
+                        <td width="50%">Mededelingen of aantekeningen die betrekking hebben op de Partij die bedoeld zijn
+                           voor interne gebruik en niet gepubliceerd worden. </td>
+                        <td width="10%">
+                           Omschrijving-lang
+                           </td>
+                        <td width="10%">0 .. 1</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
@@ -1956,6 +2049,158 @@ date: 14-04-2023
                
                </div>
             
+            <div><a class="anchor" name="global_class_Model_Werktvoor"></a><h2> Werkt voor</h2>
+               
+               <table>
+                  <tbody>
+                     <tr>
+                        <td width="30%"><b>Naam</b></td>
+                        <td width="70%">Werkt voor</td>
+                     </tr>
+                     <tr>
+                        <td width="30%"><b>Herkomst</b></td>
+                        <td width="70%">VNG</td>
+                     </tr>
+                     <tr>
+                        <td width="30%"><b>Definitie</b></td>
+                        <td width="70%">De vastlegging van het feit dat een persoon als medewerker  van een organisatie optreedt
+                           als vertegenwoordiger.  </td>
+                     </tr>
+                     <tr>
+                        <td width="30%"><b>Herkomst definitie</b></td>
+                        <td width="70%">VNG</td>
+                     </tr>
+                     <tr>
+                        <td width="30%"><b>Datum opname</b></td>
+                        <td width="70%">20230216</td>
+                     </tr>
+                     <tr>
+                        <td width="30%"><b>Unieke aanduiding</b></td>
+                        <td width="70%"> </td>
+                     </tr>
+                     <tr>
+                        <td width="30%"><b>Populatie</b></td>
+                        <td width="70%"> </td>
+                     </tr>
+                     <tr>
+                        <td width="30%"><b>Kwaliteit</b></td>
+                        <td width="70%"> </td>
+                     </tr>
+                     <tr>
+                        <td width="30%"><b>Indicatie abstract object</b></td>
+                        <td width="70%">Nee</td>
+                     </tr>
+                  </tbody>
+               </table>
+               
+               <table>
+                  <tbody>
+                     <tr>
+                        <td width="30%"><b>Overzicht attributen</b></td>
+                     </tr>
+                  </tbody>
+               </table>
+               
+               <table>
+                  <tbody>
+                     <tr>
+                        <td><i></i></td>
+                        <td><i>Attribuutnaam</i></td>
+                        <td><i>Definitie</i></td>
+                        <td><i>Formaat</i></td>
+                        <td><i>Card</i></td>
+                     </tr>
+                     <tr>
+                        <td width="5%">&nbsp;</td>
+                        <td width="25%">
+                           functie
+                           </td>
+                        <td width="50%">Indicatie die aangeeft of dit klantcontact heeft geleid tot het ontstaan van de Zaak.
+                           </td>
+                        <td width="10%">
+                           Omschrijving-kort
+                           </td>
+                        <td width="10%">0 .. 1</td>
+                     </tr>
+                     <tr>
+                        <td width="5%">&nbsp;</td>
+                        <td width="25%">
+                           datum aanvang
+                           </td>
+                        <td width="50%">Datum waarop de persoon in dienst getreden is of onder contract gekomen is bij de
+                           organisatie.</td>
+                        <td width="10%">
+                           Datum
+                           </td>
+                        <td width="10%">0 .. 1</td>
+                     </tr>
+                     <tr>
+                        <td width="5%">&nbsp;</td>
+                        <td width="25%">
+                           datum einde
+                           </td>
+                        <td width="50%">Datum waarop de persoon uit dienst getreden is of het contract be&amp;#235;indigd is bij
+                           de organisatie.</td>
+                        <td width="10%">
+                           Datum
+                           </td>
+                        <td width="10%">0 .. 1</td>
+                     </tr>
+                  </tbody>
+               </table>
+               
+               
+               <table>
+                  <tbody>
+                     <tr>
+                        <td width="30%"><b>Overzicht relaties</b></td>
+                     </tr>
+                  </tbody>
+               </table>
+               
+               <table>
+                  <tbody>
+                     <tr>
+                        <td><i></i></td>
+                        <td><i>Relatienaam met kardinaliteiten</i></td>
+                        <td><i>Definitie</i></td>
+                     </tr>
+                     <tr>
+                        <td width="5%">&nbsp;</td>
+                        <td width="45%">
+                           Werkt voor
+                           [ 0 .. * ]
+                           
+                           vertegenwoordigt
+                           
+                           
+                           Organisatie
+                           
+                           [ 1 ]
+                           </td>
+                        <td width="50%"></td>
+                     </tr>
+                     <tr>
+                        <td width="5%">&nbsp;</td>
+                        <td width="45%">
+                           Werkt voor
+                           [ 0 .. * ]
+                           
+                           wordt vertegenwoordigd door
+                           
+                           
+                           Persoon
+                           
+                           [ 1 ]
+                           </td>
+                        <td width="50%"></td>
+                     </tr>
+                  </tbody>
+               </table>
+               
+               
+               </div>
+            
             <div><a class="anchor" name="global_class_Model_Persoon"></a><h2> Persoon</h2>
                
                <table>
@@ -2085,6 +2330,21 @@ date: 14-04-2023
                      <tr>
                         <td width="5%">&nbsp;</td>
                         <td width="45%">
+                           
+                           Werkt voor
+                           
+                           [ 0 .. * ]
+                           
+                           wordt vertegenwoordigd door
+                           
+                           Persoon
+                           [ 1 ]
+                           </td>
+                        <td width="50%"></td>
+                     </tr>
+                     <tr>
+                        <td width="5%">&nbsp;</td>
+                        <td width="45%">
                            Persoon
                            is specialisatie van
                            
@@ -2114,6 +2374,118 @@ date: 14-04-2023
                      </tr>
                   </tbody>
                </table>
+               </div>
+            
+            <div><a class="anchor" name="global_class_Model_Objectnoguittewerken"></a><h2> Object (nog uit te werken)</h2>
+               
+               <table>
+                  <tbody>
+                     <tr>
+                        <td width="30%"><b>Naam</b></td>
+                        <td width="70%">Object (nog uit te werken)</td>
+                     </tr>
+                     <tr>
+                        <td width="30%"><b>Herkomst</b></td>
+                        <td width="70%">VNG</td>
+                     </tr>
+                     <tr>
+                        <td width="30%"><b>Definitie</b></td>
+                        <td width="70%">Het object waar het klantcontact betrekking op heeft.</td>
+                     </tr>
+                     <tr>
+                        <td width="30%"><b>Herkomst definitie</b></td>
+                        <td width="70%">VNG</td>
+                     </tr>
+                     <tr>
+                        <td width="30%"><b>Datum opname</b></td>
+                        <td width="70%">20230216</td>
+                     </tr>
+                     <tr>
+                        <td width="30%"><b>Unieke aanduiding</b></td>
+                        <td width="70%"> </td>
+                     </tr>
+                     <tr>
+                        <td width="30%"><b>Populatie</b></td>
+                        <td width="70%"> </td>
+                     </tr>
+                     <tr>
+                        <td width="30%"><b>Kwaliteit</b></td>
+                        <td width="70%"> </td>
+                     </tr>
+                     <tr>
+                        <td width="30%"><b>Indicatie abstract object</b></td>
+                        <td width="70%">Nee</td>
+                     </tr>
+                  </tbody>
+               </table>
+               
+               <table>
+                  <tbody>
+                     <tr>
+                        <td width="30%"><b>Overzicht attributen</b></td>
+                     </tr>
+                  </tbody>
+               </table>
+               
+               <table>
+                  <tbody>
+                     <tr>
+                        <td><i></i></td>
+                        <td><i>Attribuutnaam</i></td>
+                        <td><i>Definitie</i></td>
+                        <td><i>Formaat</i></td>
+                        <td><i>Card</i></td>
+                     </tr>
+                     <tr>
+                        <td width="5%">&nbsp;</td>
+                        <td width="25%">
+                           ID
+                           </td>
+                        <td width="50%">De typering van het digitale adres waarmee bepaald kan worden op welk kanaal dit digitale
+                           adres valide is. </td>
+                        <td width="10%">
+                           Identificatiecode
+                           </td>
+                        <td width="10%">1</td>
+                     </tr>
+                  </tbody>
+               </table>
+               
+               
+               <table>
+                  <tbody>
+                     <tr>
+                        <td width="30%"><b>Overzicht relaties</b></td>
+                     </tr>
+                  </tbody>
+               </table>
+               
+               <table>
+                  <tbody>
+                     <tr>
+                        <td><i></i></td>
+                        <td><i>Relatienaam met kardinaliteiten</i></td>
+                        <td><i>Definitie</i></td>
+                     </tr>
+                     <tr>
+                        <td width="5%">&nbsp;</td>
+                        <td width="45%">
+                           Object (nog uit te werken)
+                           [ 0 .. * ]
+                           
+                           betreft
+                           
+                           
+                           Klantcontact
+                           
+                           [ 0 .. * ]
+                           </td>
+                        <td width="50%"></td>
+                     </tr>
+                  </tbody>
+               </table>
+               
+               
                </div>
             
             <div><a class="anchor" name="global_class_Model_Digitaaladres"></a><h2> Digitaal adres</h2>
@@ -3552,7 +3924,7 @@ date: 14-04-2023
                         <td width="5%">&nbsp;</td>
                         <td width="45%">
                            
-                           Klantcontact-zaak
+                           Klantcontact bij zaak
                            
                            [ 0 .. 1 ]
                            
@@ -3695,7 +4067,7 @@ date: 14-04-2023
                         <td width="10%">
                            Omschrijving-kort
                            </td>
-                        <td width="10%">1</td>
+                        <td width="10%">0 .. 1</td>
                      </tr>
                   </tbody>
                </table>
@@ -5754,6 +6126,31 @@ date: 14-04-2023
                      </tr>
                   </tbody>
                </table>
+               
+               <div>
+                  <h3>Overzicht relaties </h3>
+                  
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td><i></i></td>
+                           <td><i>Supertype relaties</i></td>
+                           <td><i>Supertype definitie</i></td>
+                        </tr>
+                        <tr>
+                           <td width="30%"><b>
+                                 Woonplaats
+                                 is specialisatie van
+                                 
+                                 CharacterString
+                                 
+                                 </b></td>
+                           <td width="70%"></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  </div>
                </div>
             
             <div><a class="anchor" name="global_class_Model_Naamkort"></a><h2>Primitief datatype Naam-kort</h2>
@@ -10277,9 +10674,9 @@ date: 14-04-2023
                      </div>
                   </div>
                
-               <div><a class="anchor" name="detail_class_Model_Klantcontactzaak"></a><h3> Klantcontact-zaak</h3>
+               <div><a class="anchor" name="detail_class_Model_Klantcontactbijzaak"></a><h3> Klantcontact bij zaak</h3>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_Klantcontactzaak_ontstaanuitklantcontact"></a><h4>Attribuutsoort details ontstaan uit klantcontact</h4>
+                  <div><a class="anchor" name="detail_attribute_Model_Klantcontactbijzaak_ontstaanuitklantcontact"></a><h4>Attribuutsoort details ontstaan uit klantcontact</h4>
                      
                      <table>
                         <tbody>
@@ -10358,7 +10755,7 @@ date: 14-04-2023
                      </table>
                      </div>
                   
-                  <div><a class="anchor" name="detail_association_Model_Klantcontactzaak_heeft"></a><h4>Relatiesoort details heeft</h4>
+                  <div><a class="anchor" name="detail_association_Model_Klantcontactbijzaak_heeft"></a><h4>Relatiesoort details heeft</h4>
                      
                      <table>
                         <tbody>
@@ -10421,7 +10818,7 @@ date: 14-04-2023
                      
                      </div>
                   
-                  <div><a class="anchor" name="detail_association_Model_Klantcontactzaak_heeft"></a><h4>Relatiesoort details heeft</h4>
+                  <div><a class="anchor" name="detail_association_Model_Klantcontactbijzaak_heeft"></a><h4>Relatiesoort details heeft</h4>
                      
                      <table>
                         <tbody>
@@ -12847,6 +13244,85 @@ date: 14-04-2023
                         </div>
                      </div>
                   
+                  <div><a class="anchor" name="detail_attribute_Model_Partij_Internenotitie"></a><h4>Attribuutsoort details Interne notitie</h4>
+                     
+                     <table>
+                        <tbody>
+                           <tr>
+                              <td width="30%"><b>Naam</b></td>
+                              <td width="70%">Interne notitie</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Herkomst</b></td>
+                              <td width="70%">CNG</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Definitie</b></td>
+                              <td width="70%">Mededelingen of aantekeningen die betrekking hebben op de Partij die bedoeld zijn
+                                 voor interne gebruik en niet gepubliceerd worden. </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Herkomst definitie</b></td>
+                              <td width="70%">VNG</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Datum opname</b></td>
+                              <td width="70%">20230216</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Mogelijk geen waarde</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie formele historie</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie in onderzoek</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
+                              <td width="70%">0 .. 1</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie authentiek</b></td>
+                              <td width="70%">Authentiek</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Regels</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Lengte</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Formaat</b></td>
+                              <td width="70%">
+                                 Omschrijving-lang
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Patroon</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie afleidbaar</b></td>
+                              <td width="70%">Zie package</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Waarde afleidbaar</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </div>
+                  
                   <div><a class="anchor" name="detail_attribute_Model_Partij_Voorkeurskanaal"></a><h4>Attribuutsoort details Voorkeurskanaal</h4>
                      
                      <table>
@@ -13591,6 +14067,372 @@ date: 14-04-2023
                      </div>
                   </div>
                
+               <div><a class="anchor" name="detail_class_Model_Werktvoor"></a><h3> Werkt voor</h3>
+                  
+                  <div><a class="anchor" name="detail_attribute_Model_Werktvoor_functie"></a><h4>Attribuutsoort details functie</h4>
+                     
+                     <table>
+                        <tbody>
+                           <tr>
+                              <td width="30%"><b>Naam</b></td>
+                              <td width="70%">functie</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Herkomst</b></td>
+                              <td width="70%">VNG</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Definitie</b></td>
+                              <td width="70%">Indicatie die aangeeft of dit klantcontact heeft geleid tot het ontstaan van de Zaak.
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Herkomst definitie</b></td>
+                              <td width="70%">VNG</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Datum opname</b></td>
+                              <td width="70%">20230216</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Mogelijk geen waarde</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie formele historie</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie in onderzoek</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
+                              <td width="70%">0 .. 1</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie authentiek</b></td>
+                              <td width="70%">Authentiek</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Regels</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Lengte</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Formaat</b></td>
+                              <td width="70%">
+                                 Omschrijving-kort
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Patroon</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie afleidbaar</b></td>
+                              <td width="70%">Zie package</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Waarde afleidbaar</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </div>
+                  
+                  <div><a class="anchor" name="detail_attribute_Model_Werktvoor_datumaanvang"></a><h4>Attribuutsoort details datum aanvang</h4>
+                     
+                     <table>
+                        <tbody>
+                           <tr>
+                              <td width="30%"><b>Naam</b></td>
+                              <td width="70%">datum aanvang</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Herkomst</b></td>
+                              <td width="70%">VNG</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Definitie</b></td>
+                              <td width="70%">Datum waarop de persoon in dienst getreden is of onder contract gekomen is bij de
+                                 organisatie.</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Herkomst definitie</b></td>
+                              <td width="70%">VNG</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Datum opname</b></td>
+                              <td width="70%">20230216</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Mogelijk geen waarde</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie formele historie</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie in onderzoek</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
+                              <td width="70%">0 .. 1</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie authentiek</b></td>
+                              <td width="70%">Authentiek</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Regels</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Lengte</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Formaat</b></td>
+                              <td width="70%">
+                                 Datum
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Patroon</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie afleidbaar</b></td>
+                              <td width="70%">Zie package</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Waarde afleidbaar</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </div>
+                  
+                  <div><a class="anchor" name="detail_attribute_Model_Werktvoor_datumeinde"></a><h4>Attribuutsoort details datum einde</h4>
+                     
+                     <table>
+                        <tbody>
+                           <tr>
+                              <td width="30%"><b>Naam</b></td>
+                              <td width="70%">datum einde</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Herkomst</b></td>
+                              <td width="70%">VNG</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Definitie</b></td>
+                              <td width="70%">Datum waarop de persoon uit dienst getreden is of het contract be&amp;#235;indigd is bij
+                                 de organisatie.</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Herkomst definitie</b></td>
+                              <td width="70%">VNG</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Datum opname</b></td>
+                              <td width="70%">20230216</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Mogelijk geen waarde</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie formele historie</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie in onderzoek</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
+                              <td width="70%">0 .. 1</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie authentiek</b></td>
+                              <td width="70%">Authentiek</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Regels</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Lengte</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Formaat</b></td>
+                              <td width="70%">
+                                 Datum
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Patroon</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie afleidbaar</b></td>
+                              <td width="70%">Zie package</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Waarde afleidbaar</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </div>
+                  
+                  <div><a class="anchor" name="detail_association_Model_Werktvoor_vertegenwoordigt"></a><h4>Relatiesoort details vertegenwoordigt</h4>
+                     
+                     <table>
+                        <tbody>
+                           <tr>
+                              <td width="30%"><b>Naam</b></td>
+                              <td width="70%">vertegenwoordigt</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Gerelateerd objecttype</b></td>
+                              <td width="70%">
+                                 Organisatie
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Herkomst</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Definitie</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Herkomst definitie</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Datum opname</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Mogelijk geen waarde</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie formele historie</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie in onderzoek</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
+                              <td width="70%">1</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie authentiek</b></td>
+                              <td width="70%">Authentiek</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Regels</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     
+                     </div>
+                  
+                  <div><a class="anchor" name="detail_association_Model_Werktvoor_wordtvertegenwoordigddoor"></a><h4>Relatiesoort details wordt vertegenwoordigd door</h4>
+                     
+                     <table>
+                        <tbody>
+                           <tr>
+                              <td width="30%"><b>Naam</b></td>
+                              <td width="70%">wordt vertegenwoordigd door</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Gerelateerd objecttype</b></td>
+                              <td width="70%">
+                                 Persoon
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Herkomst</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Definitie</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Herkomst definitie</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Datum opname</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Mogelijk geen waarde</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie formele historie</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie in onderzoek</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
+                              <td width="70%">1</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie authentiek</b></td>
+                              <td width="70%">Authentiek</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Regels</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     
+                     </div>
+                  </div>
+               
                <div><a class="anchor" name="detail_class_Model_Persoon"></a><h3> Persoon</h3>
                   
                   <div><a class="anchor" name="detail_attribute_Model_Persoon_Naam"></a><h4>Attribuutsoort Naam van gegevensgroeptype Persoon</h4>
@@ -13902,6 +14744,151 @@ date: 14-04-2023
                            </tbody>
                         </table>
                         </div>
+                     </div>
+                  </div>
+               
+               <div><a class="anchor" name="detail_class_Model_Objectnoguittewerken"></a><h3> Object (nog uit te werken)</h3>
+                  
+                  <div><a class="anchor" name="detail_attribute_Model_Objectnoguittewerken_ID"></a><h4>Attribuutsoort details ID</h4>
+                     
+                     <table>
+                        <tbody>
+                           <tr>
+                              <td width="30%"><b>Naam</b></td>
+                              <td width="70%">ID</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Herkomst</b></td>
+                              <td width="70%">VNG</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Definitie</b></td>
+                              <td width="70%">De typering van het digitale adres waarmee bepaald kan worden op welk kanaal dit digitale
+                                 adres valide is. </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Herkomst definitie</b></td>
+                              <td width="70%">VNG</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Datum opname</b></td>
+                              <td width="70%">20230216</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Mogelijk geen waarde</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie formele historie</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie in onderzoek</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
+                              <td width="70%">1</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie authentiek</b></td>
+                              <td width="70%">Authentiek</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Regels</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Lengte</b></td>
+                              <td width="70%">254</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Formaat</b></td>
+                              <td width="70%">
+                                 Identificatiecode
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Patroon</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie afleidbaar</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Waarde afleidbaar</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </div>
+                  
+                  <div><a class="anchor" name="detail_association_Model_Objectnoguittewerken_betreft"></a><h4>Relatiesoort details betreft</h4>
+                     
+                     <table>
+                        <tbody>
+                           <tr>
+                              <td width="30%"><b>Naam</b></td>
+                              <td width="70%">betreft</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Gerelateerd objecttype</b></td>
+                              <td width="70%">
+                                 Klantcontact
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Herkomst</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Definitie</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Herkomst definitie</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Datum opname</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Mogelijk geen waarde</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie formele historie</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie in onderzoek</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
+                              <td width="70%">0 .. *</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie authentiek</b></td>
+                              <td width="70%">Authentiek</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Regels</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     
                      </div>
                   </div>
                
@@ -17200,7 +18187,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
-                              <td width="70%">1</td>
+                              <td width="70%">0 .. 1</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
@@ -20328,4 +21315,3 @@ date: 14-04-2023
       </div>
    </body>
 </html>
-
