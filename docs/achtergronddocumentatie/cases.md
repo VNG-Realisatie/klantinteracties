@@ -11,6 +11,7 @@ n.b. Onderstaande cases moeten op enkele punten nog gecontroleerd worden ivm de 
 ## Klantcontact Centrum
 
 ### Vragen / antwoorden per telefoon
+
 | Code | Omschrijving | 
 | :--- | :--- | 
 | [C0992](./artefacten/0992.md) | Klant belt KCC met een vraag die direct beantwoord kan worden. |
@@ -22,6 +23,7 @@ n.b. Onderstaande cases moeten op enkele punten nog gecontroleerd worden ivm de 
 | C3155 | Vooraf uitgevraagde informatie opslaan. |
 
 ### Vragen / antwoorden via andere kanalen
+
 | Code | Omschrijving | 
 | :--- | :--- | 
 | [C1199](./artefacten/1199.md) | Klant mailt een vraag naar de gemeente die beantwoord kan worden door KCC. |
@@ -29,22 +31,26 @@ n.b. Onderstaande cases moeten op enkele punten nog gecontroleerd worden ivm de 
 | C9853 | Klant appt een vraag naar de gemeente die beantwoord kan worden door KCC. |
 
 ## Meldingen openbare ruimte per telefoon
+
 | Code | Omschrijving | 
 | :--- | :--- | 
 | [C4390](./artefacten/4390.md) | Klant belt KCC met melding openbare ruimte. Hiervoor wordt direct een zaak aangemaakt. |
 | [C0359](./artefacten/0359.md) | Klant belt KCC met melding openbare ruimte. Hiervoor bestaat reeds een zaak. |
 
 ## Productaanvraag per telefoon
+
 | Code | Omschrijving | 
 | :--- | :--- | 
 | [C9018](./artefacten/9018.md) | Klant belt KCC om een product aan te vragen. |
 
 ## Routering
+
 | Code | Omschrijving | 
 | :--- | :--- | 
 | [C6114](./artefacten/6114.md) | Verkeerde routering vanuit KCC. |
 
 ## Kanalen
+
 | Code | Omschrijving | 
 | :--- | :--- | 
 | C3546 | Klant komt langs bij de gemeente met een vraag die door de baliemedewerker beantwoord kan worden. |
@@ -70,7 +76,8 @@ n.b. Onderstaande cases moeten op enkele punten nog gecontroleerd worden ivm de 
 | C1924 |	Verschillende voorkeurskanalen voor verschillende interacties. |
 | C1923 |	Persoon zit midden in verhuizing, er moeten twee adressen geregistreerd kunnen worden (benoemd, met datum). |
 
-## Contact vanuit zaakbehandelaar				
+## Contact vanuit zaakbehandelaar	
+
 | Code | Omschrijving | 
 | :--- | :--- | 
 | C9750	| Medewerker die bezig is met een zaak wil de klant een brief sturen over de voortgang. |
@@ -79,14 +86,18 @@ n.b. Onderstaande cases moeten op enkele punten nog gecontroleerd worden ivm de 
 | C7300	| Medewerker die bezig is met een zaak heeft enkele vragen en belt hiervoor de klant, klant neemt niet op. |
 | C0322	| Een ketenpartner heeft een stap in een zaak afgerond. Hierdoor wijzigt de status. De klant wil hierover geïnformeerd worden. |
 | C6334	| Maken van klanttaak - Verwijzing naar formulier, data om formulier 'voor in te vullen', betaallink, link naar informatieobject (bijvoorbeeld factuur) - te koppelen aan partij die taak gaat uitvoeren. |
-## Contact over zaak				
+
+## Contact over zaak
+
 | Code | Omschrijving | 
 | :--- | :--- | 
 | C8404	| Case waarin meerdere producten aangevraagd worden - die leiden tot een hoofdzaak met meerdere deelzaken. |
 | C3090	| Case waarin in het kader van een zaak werk uitbesteed wordt aan een ketenpartner (omgevingsdienst). |
 | C0300	| Klant die een aanvulling indient op een reeds lopende aanvraag (zaak). |
 | C2975	| Klant die een aanvraag wil annuleren. |
-## Overige perspectieven				
+
+## Overige perspectieven
+
 | Code | Omschrijving | 
 | :--- | :--- | 
 | C9127	| Een medewerker is bezig een klacht van een klant over een zaak te beoordelen en heeft hiervoor informatie nodig over de klantcontacten. |
