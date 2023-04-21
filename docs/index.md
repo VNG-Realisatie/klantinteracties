@@ -6,7 +6,7 @@ date: 18-04-2023
 
 # Standaard voor klantinteracties
 
-### Stand van Zaken
+### Standaard in ontwikkeling
 
 Aan een standaarden voor klantinteracties wordt op dit moment gewerkt. Een implementeerbare versie wordt later in 2023 verwacht.
 
