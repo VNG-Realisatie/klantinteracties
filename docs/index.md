@@ -1,18 +1,20 @@
 ---
 layout: page-with-side-nav
-title: API-standaarden voor Klantinteracties
+title: Standaarden voor klantinteracties
 date: 18-04-2023
 ---
 
-# API-standaarden voor Klantinteracties
+# Standaard voor klantinteracties
 
 ### Stand van Zaken
 
-Aan de API-standaarden voor Klantinteracties wordt op dit moment gewerkt. 1.0-versies worden later in 2023 verwacht.
+Aan een standaarden voor klantinteracties wordt op dit moment gewerkt. Een implementeerbare versie wordt later in 2023 verwacht.
 
-### Bijdragen aan het project
+Benieuwd naar de stand van zaken? Bekijk [deel 1](./assets/project/20230420-toelichting-inzichten-klantinteracties-deel-1.pdf) en [deel 2](20230420-toelichting-inzichten-klantinteracties-deel-2.pdf) van de tijdens de laatste ontwikkelbijeenkomst op donderdag 20 april getoonde presentatie.
 
-Gemeenten en leveranciers worden aangemoedigd om bij te dragen aan het project. Onderstaande links geven informatie over hoe u uw bijdrage kan leveren.
+### Bijdragen aan de standaard
+
+Gemeenten en hun leveranciers worden aangemoedigd om aan de ontwikkeling van de standaard bij te dragen. Onderstaande links geven informatie over hoe u uw bijdrage kan leveren.
 - Hoe u kunt [bijdragen](https://github.com/VNG-Realisatie/Tutorial/blob/master/CONTRIBUTING.md)
 - [Omgangsvormen](https://github.com/VNG-Realisatie/Tutorial/blob/master/CODE_OF_CONDUCT.md)
 - Mis je functionaliteit die voor jou belangrijk is? Heb je een issue (fout of bug) gezien in een van onze API’s? Of heb je een wens of suggestie? [Bijdragen aan VNGR API standaarden kan in verschillende vormen.](https://vng-realisatie.github.io/API-Kennisbank/docs/hoe-kun-je-bijdragen)
