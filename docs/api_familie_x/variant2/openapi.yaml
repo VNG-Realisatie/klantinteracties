@@ -241,7 +241,6 @@ paths:
           $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
       tags:
       - "Partij"
-
 components:
   schemas:
     PartijHalCollectie:
