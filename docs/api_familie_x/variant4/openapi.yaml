@@ -90,7 +90,7 @@ components:
         propertyName: type
         mapping:
           RaadpleegPartij: '#/components/schemas/Raadpleegpartij_parameters'
-          RegistreerContactgegevens: '#/components/schemas/Registreercontactgegevens_parameters'
+          WijzigPrtijgegevens: '#/components/schemas/Registreercontactgegevens_parameters'
           Zoekpartij: '#/components/schemas/Zoekpartij_parameters'
           RegistreerPartij: '#/components/schemas/Partij_parameters'
     Partij_parameters:
@@ -173,17 +173,47 @@ components:
             \ van vastlegging en verwerking van een BSN of ander buiten de gemeente toegekend\
             \ ID-nummer.?"
           properties:
-            bezoekadres:
-              $ref: "#/components/schemas/Bezoekadres"
-            correspondentieadres:
-              $ref: "#/components/schemas/Correspondentieadres"
-            digitaalAdres:
-              type: "array"
-              minItems: 0
-              items:
-                $ref: "#/components/schemas/DigitaalAdres"
-            id:
-              $ref: "#/components/schemas/Identificatiecode"
+         bezoekadres:
+          $ref: "#/components/schemas/Bezoekadres"
+        correspondentieadres:
+          $ref: "#/components/schemas/Correspondentieadres"
+        digitaalAdres:
+          type: "array"
+          minItems: 0
+          items:
+            $ref: "#/components/schemas/DigitaalAdres"
+        externeIdentificatie:
+          type: "array"
+          minItems: 0
+          items:
+            $ref: "#/components/schemas/ExterneIdentificatie"
+        id:
+          $ref: "#/components/schemas/Identificatiecode"
+        klanttaakId:
+          type: "array"
+          minItems: 0
+          items:
+            $ref: "#/components/schemas/Identificatiecode"
+        nummer:
+          $ref: "#/components/schemas/IdentificerendNummer"
+        organisatienaam:
+          $ref: "#/components/schemas/Naam-lang"
+        persoonsnaam:
+          $ref: "#/components/schemas/Persoonsnaamgegevens"
+        voorkeurskanaal:
+          allOf:
+          - $ref: "#/components/schemas/Kanalen"
+          - title: "voorkeurskanaal"
+            description: "Het kanaal waarlangs de persoon ,die het klantcontact met\
+              \ de gemeente heeft gehad, bij voorkeur interactie heeft met de gemeente\
+              \ in relatie tot dit klantcontact."
+        voorkeurstaal:
+          allOf:
+          - $ref: "#/components/schemas/Talen"
+          - title: "voorkeurstaal"
+            description: "De taal waarin de persoon ,die het klantcontact met de gemeente\
+              \ heeft gehad, bij voorkeur interactie heeft met de gemeente in relatie\
+              \ tot dit klantcontact."
     Zoekpartij_parameters:
       allOf:
         - $ref: '#/components/schemas/PartijQuery'
