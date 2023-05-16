@@ -5,7 +5,7 @@ servers:
 - description: "Referentie-implementatie"
   url: "https://www.voorbeeldgemeente.nl/api/klantinteracties_variant__/v0"
 info:
-  title: "Klantinteracties Variant 4"
+  title: "Klantinteracties Variant 5"
   version: "0.0.1"
   x-imvertor-generator-version: "2.0.0"
   x-yamlCompiler-stylesheets-version: "20230315"
