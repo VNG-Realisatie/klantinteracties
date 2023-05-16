@@ -92,7 +92,8 @@ components:
           RaadpleegPartijOpID: '#/components/schemas/Raadpleegpartij_parameters'
           RaadpleegPartijOpNummer: '#/components/schemas/Raadpleegpartijopnummer_parameters'
           RaadpleegPartijExterneId: '#/components/schemas/Raadpleegpartijopexterneid_parameters'
-          RegistreerContactgegevens: '#/components/schemas/Registreercontactgegevens_parameters'
+          WijzigContactgegevens: '#/components/schemas/Registreercontactgegevens_parameters'
+          WijzigVoorkeuren: '#/components/schemas/Wijzigvoorkeuren_parameters'
           Zoekpartij: '#/components/schemas/Zoekpartij_parameters'
           RegistreerPartij: '#/components/schemas/Partij_parameters'
     Partij_parameters:
@@ -206,6 +207,37 @@ components:
               minItems: 0
               items:
                 $ref: "#/components/schemas/DigitaalAdres"
+            id:
+              $ref: "#/components/schemas/Identificatiecode"
+    Wijzigvoorkeuren_parameters:
+      allOf:
+        - $ref: '#/components/schemas/PartijQuery'
+        - type: "object"
+          description: "Gegevens die gewijzigd kunnen worden bij het registreren van contactgegevens\
+            \ bij een bestaande partij.\n\n(Uiteindelijk) belanghebbenden waarmee de gemeente\
+            \ geen direct contact heeft (of heeft gehad) (bijvoorbeeld door vertegenwoordiging)\
+            \ zien we als partijen waarmee de gemeente een relatie heeft.? Een vertegenwoordiger\
+            \ (van een belanghebbende) is een partij? Partijen zijn ???gekende??? personen\
+            \ of organisaties? Dit betekent dat er voor eerste registratie en bij eventueel\
+            \ (her)gebruik authenticatie heeft plaatsgevonden. Dit hoeft niet per se te\
+            \ gebeuren met DigiD, eHerkenning o.i.d. Er is dus ook niet altijd sprake\
+            \ van vastlegging en verwerking van een BSN of ander buiten de gemeente toegekend\
+            \ ID-nummer.?"
+          properties:
+            voorkeurskanaal:
+              allOf:
+              - $ref: "#/components/schemas/Kanalen"
+              - title: "voorkeurskanaal"
+                description: "Het kanaal waarlangs de persoon ,die het klantcontact met\
+                  \ de gemeente heeft gehad, bij voorkeur interactie heeft met de gemeente\
+                  \ in relatie tot dit klantcontact."
+            voorkeurstaal:
+              allOf:
+              - $ref: "#/components/schemas/Talen"
+              - title: "voorkeurstaal"
+                description: "De taal waarin de persoon ,die het klantcontact met de gemeente\
+                  \ heeft gehad, bij voorkeur interactie heeft met de gemeente in relatie\
+                  \ tot dit klantcontact."
             id:
               $ref: "#/components/schemas/Identificatiecode"
     Partij:
