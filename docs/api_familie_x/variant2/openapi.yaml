@@ -78,7 +78,7 @@ paths:
           $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
       tags:
       - "Partij"
-  /registreercontactgegevens:
+  /wijzigpartij:
     patch:
       operationId: "registreercontactgegevens"
       description: "Het bericht dat de JSON/REST API voor het wijzigen van contactgegevens\
@@ -366,8 +366,38 @@ components:
           minItems: 0
           items:
             $ref: "#/components/schemas/DigitaalAdres"
+        externeIdentificatie:
+          type: "array"
+          minItems: 0
+          items:
+            $ref: "#/components/schemas/ExterneIdentificatie"
         id:
           $ref: "#/components/schemas/Identificatiecode"
+        klanttaakId:
+          type: "array"
+          minItems: 0
+          items:
+            $ref: "#/components/schemas/Identificatiecode"
+        nummer:
+          $ref: "#/components/schemas/IdentificerendNummer"
+        organisatienaam:
+          $ref: "#/components/schemas/Naam-lang"
+        persoonsnaam:
+          $ref: "#/components/schemas/Persoonsnaamgegevens"
+        voorkeurskanaal:
+          allOf:
+          - $ref: "#/components/schemas/Kanalen"
+          - title: "voorkeurskanaal"
+            description: "Het kanaal waarlangs de persoon ,die het klantcontact met\
+              \ de gemeente heeft gehad, bij voorkeur interactie heeft met de gemeente\
+              \ in relatie tot dit klantcontact."
+        voorkeurstaal:
+          allOf:
+          - $ref: "#/components/schemas/Talen"
+          - title: "voorkeurstaal"
+            description: "De taal waarin de persoon ,die het klantcontact met de gemeente\
+              \ heeft gehad, bij voorkeur interactie heeft met de gemeente in relatie\
+              \ tot dit klantcontact."
     Partij_links:
       type: "object"
       properties:
