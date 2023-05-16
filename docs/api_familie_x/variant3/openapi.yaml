@@ -68,7 +68,60 @@ paths:
           $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
       tags:
       - "Partij"
-  /registreercontactgegevens:
+  /wijzigvoorkeuren:
+    post:
+      operationId: "wijzigcontactgegevens"
+      description: "Het bericht dat de JSON/REST API voor het wijzigen van contactgegevens\
+        \ van een partij wordt gebruikt."
+      summary: 'Wijzig voorkeuren bij een bestaande partij'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Registreercontactgegevens_parameters"
+      responses:
+        201:
+          description: "OK"
+          headers:
+            Location:
+              description: "URI van de nieuwe resource"
+              schema:
+                type: "string"
+                format: "uri"
+                example: "/registreercontactgegevens/"
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Partij"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Partij"
+  /wijzigcontactgegevens:
     post:
       operationId: "registreercontactgegevens"
       description: "Het bericht dat de JSON/REST API voor het wijzigen van contactgegevens\
@@ -345,6 +398,37 @@ components:
             $ref: "#/components/schemas/DigitaalAdres"
         id:
           $ref: "#/components/schemas/Identificatiecode"
+    Wijzigvoorkeuren_parameters:
+      type: "object"
+      description: "Gegevens die gewijzigd kunnen worden bij het registreren van contactgegevens\
+        \ bij een bestaande partij.\n\n(Uiteindelijk) belanghebbenden waarmee de gemeente\
+        \ geen direct contact heeft (of heeft gehad) (bijvoorbeeld door vertegenwoordiging)\
+        \ zien we als partijen waarmee de gemeente een relatie heeft.? Een vertegenwoordiger\
+        \ (van een belanghebbende) is een partij? Partijen zijn ???gekende??? personen\
+        \ of organisaties? Dit betekent dat er voor eerste registratie en bij eventueel\
+        \ (her)gebruik authenticatie heeft plaatsgevonden. Dit hoeft niet per se te\
+        \ gebeuren met DigiD, eHerkenning o.i.d. Er is dus ook niet altijd sprake\
+        \ van vastlegging en verwerking van een BSN of ander buiten de gemeente toegekend\
+        \ ID-nummer.?"
+      required:
+      - "id"
+      properties:
+        id:
+          $ref: "#/components/schemas/Identificatiecode"
+        voorkeurskanaal:
+          allOf:
+          - $ref: "#/components/schemas/Kanalen"
+          - title: "voorkeurskanaal"
+            description: "Het kanaal waarlangs de persoon ,die het klantcontact met\
+              \ de gemeente heeft gehad, bij voorkeur interactie heeft met de gemeente\
+              \ in relatie tot dit klantcontact."
+        voorkeurstaal:
+          allOf:
+          - $ref: "#/components/schemas/Talen"
+          - title: "voorkeurstaal"
+            description: "De taal waarin de persoon ,die het klantcontact met de gemeente\
+              \ heeft gehad, bij voorkeur interactie heeft met de gemeente in relatie\
+              \ tot dit klantcontact."
     Vraagpartijop_parameters:
       type: "object"
       description: ""
