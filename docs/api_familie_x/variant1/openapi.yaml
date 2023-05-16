@@ -79,10 +79,10 @@ paths:
       tags:
       - "Partij"
     patch:
-      operationId: "registreercontactgegevens"
-      description: "Het bericht dat de JSON/REST API voor het wijzigen van contactgegevens\
+      operationId: "wijzigpartijgegevens"
+      description: "Het bericht dat de JSON/REST API voor het wijzigen van partijgegevens\
         \ van een partij wordt gebruikt."
-      summary: Registreer contactgegevens bij bestaande partij
+      summary: Wijzig gegevens van een bestaande partij
       requestBody:
         content:
           application/hal+json:
