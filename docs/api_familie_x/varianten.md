@@ -11,7 +11,7 @@ Hiermee willen we verkennen en inzicht krijgen in welke consequenties de diverse
 
 ## Variant 1
 
-In deze ontwerpvariant is er voor gekozen om relatief dicht bij een REST-like API te blijven. 
+In deze ontwerpvariant is er voor gekozen voor een REST API.  
 De specificatie kan worden bekeken in [Swagger](./variant1/swagger-ui) of in [Redoc](./variant1/redoc).
 
 ## Variant 2
