@@ -290,8 +290,6 @@ components:
             $ref: "#/components/schemas/DigitaalAdres"
         iD:
           $ref: "#/components/schemas/Identificatiecode"
-        klantcontactId:
-          $ref: "#/components/schemas/Identificatiecode"
     Klantcontact:
       type: "object"
       description: "<body><p>Een contact tussen een klant of een vertegenwoordiger\
