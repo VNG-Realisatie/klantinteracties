@@ -28,10 +28,23 @@ De specificatie kan worden bekeken in [Swagger](./variant3/swagger-ui) of in [Re
 
 ## Variant 4
 
-In deze ontwerpvariant zijn de vier benoemde functies in één POST endpoint. M.b.v. polymorfie is het mogelijk om aan te geven welke functie er aangeroepen wordt en kan de bijbehorende requestbody gevuld worden. 
-De specificatie kan worden bekeken in [Swagger](./variant4/swagger-ui) of in [Redoc](./variant4/redoc).
+In deze ontwerpvariant is functioneel gelijk aan variant 3, maar de lees- en de bijhoudingsfuncties zijn gesplitst in aparte API's 
+De specificatie van de lees-API kan worden bekeken in [Swagger](./variant4-lees/swagger-ui) of in [Redoc](./variant4-lees/redoc).
+De specificatie van de bijhoudings-API kan worden bekeken in [Swagger](./variant4-bijhouding/swagger-ui) of in [Redoc](./variant4-bijhouding/redoc).
 
 ## Variant 5
 
-In deze ontwerpvariant zijn de vier benoemde verder gedetailleerd, maar wel in één POST endpoint opgenomen. M.b.v. polymorfie is het mogelijk om aan te geven welke functie er aangeroepen wordt en kan de bijbehorende requestbody gevuld worden. 
-De specificatie kan worden bekeken in [Swagger](./variant5/swagger-ui) of in [Redoc](./variant5/redoc).
+Door het splitsen van de lees- en de bijhoudings-API onstaat ook de mogelijkheid om bv een handelingsgerichte bijhoudinges-API te combineren met een gegevensgerichte (REST-like) lees-API. 
+De specificatie van de lees-API kan worden bekeken in [Swagger](./variant5-lees/swagger-ui) of in [Redoc](./variant5-lees/redoc).
+De specificatie van de bijhoudings-API (gelijk aan variant 4) kan worden bekeken in [Swagger](./variant4-bijhouding/swagger-ui) of in [Redoc](./variant4-bijhouding/redoc).
+
+
+## Variant 6
+
+In deze ontwerpvariant zijn de vier benoemde functies in één POST endpoint. M.b.v. polymorfie is het mogelijk om aan te geven welke functie er aangeroepen wordt en kan de bijbehorende requestbody gevuld worden. 
+De specificatie kan worden bekeken in [Swagger](./variant6/swagger-ui) of in [Redoc](./variant6/redoc).
+
+## Variant 7
+
+In deze ontwerpvariant zijn de vier benoemde functies verder gedetailleerd, maar wel in één POST endpoint opgenomen. M.b.v. polymorfie is het mogelijk om aan te geven welke functie er aangeroepen wordt en kan de bijbehorende requestbody gevuld worden. 
+De specificatie kan worden bekeken in [Swagger](./variant7/swagger-ui) of in [Redoc](./variant7/redoc).
