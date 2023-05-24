@@ -15,7 +15,7 @@ info:
     name: "European Union Public License, version 1.2 (EUPL-1.2)"
     url: "https://eupl.eu/1.2/nl/"
 paths:
-  /zoekpartij:
+  /_zoekpartij:
     get:
       operationId: "vraagpartijop"
       description: "Het bericht dat de JSON/REST API voor het ophalen van de partij\
@@ -78,12 +78,12 @@ paths:
           $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
       tags:
       - "Partij"
-  /registreercontactgegevens:
+  /_wijzigpartij:
     patch:
-      operationId: "registreercontactgegevens"
-      description: "Het bericht dat de JSON/REST API voor het wijzigen van contactgegevens\
+      operationId: "wijzigpartij"
+      description: "Het bericht dat de JSON/REST API voor het wijzigen van partijgegevens\
         \ van een partij wordt gebruikt."
-      summary: Registreer contactgegevens bij bestaande partij
+      summary: Wijzig gegevens bij bestaande partij
       requestBody:
         content:
           application/hal+json:
@@ -131,7 +131,7 @@ paths:
           $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
       tags:
       - "Partij"
-  /registreerpartij:
+  /_registreerpartij:
     post:
       operationId: "registreerpartij"
       description: "Het bericht dat de JSON/REST API voor het vastleggen van partijen\
@@ -184,7 +184,7 @@ paths:
           $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
       tags:
       - "Partij"
-  /raadpleegpartij/{id}:
+  /_raadpleegpartij/{id}:
     get:
       operationId: "raadpleegpartij"
       description: "Het bericht dat de JSON/REST API voor het ophalen van de partij\
@@ -241,7 +241,6 @@ paths:
           $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
       tags:
       - "Partij"
-
 components:
   schemas:
     PartijHalCollectie:
@@ -366,8 +365,38 @@ components:
           minItems: 0
           items:
             $ref: "#/components/schemas/DigitaalAdres"
+        externeIdentificatie:
+          type: "array"
+          minItems: 0
+          items:
+            $ref: "#/components/schemas/ExterneIdentificatie"
         id:
           $ref: "#/components/schemas/Identificatiecode"
+        klanttaakId:
+          type: "array"
+          minItems: 0
+          items:
+            $ref: "#/components/schemas/Identificatiecode"
+        nummer:
+          $ref: "#/components/schemas/IdentificerendNummer"
+        organisatienaam:
+          $ref: "#/components/schemas/Naam-lang"
+        persoonsnaam:
+          $ref: "#/components/schemas/Persoonsnaamgegevens"
+        voorkeurskanaal:
+          allOf:
+          - $ref: "#/components/schemas/Kanalen"
+          - title: "voorkeurskanaal"
+            description: "Het kanaal waarlangs de persoon ,die het klantcontact met\
+              \ de gemeente heeft gehad, bij voorkeur interactie heeft met de gemeente\
+              \ in relatie tot dit klantcontact."
+        voorkeurstaal:
+          allOf:
+          - $ref: "#/components/schemas/Talen"
+          - title: "voorkeurstaal"
+            description: "De taal waarin de persoon ,die het klantcontact met de gemeente\
+              \ heeft gehad, bij voorkeur interactie heeft met de gemeente in relatie\
+              \ tot dit klantcontact."
     Partij_links:
       type: "object"
       properties:

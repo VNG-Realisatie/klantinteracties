@@ -23,6 +23,7 @@ date: 02-06-2022
 | [F2130 - Koppel klantcontact aan interne taak](./artefacten/2130.md) | `klantcontact` - `interne taak` | | |
 | [F1888 - Koppel klantcontact aan zaak](./artefacten/1888.md) | `klantcontact` - `zaak` | | |
 | [F8618 - Vraag klantcontact op](./artefacten/8618.md) | `klantcontact` | `betrokkenen`, `bijlage`, `interne taak` | |
+| [F2084 - Vraag overzicht van klantcontacten op](./artfacten/2084.md) | `klantcontact` | | |
 
 ## Interne taak
 

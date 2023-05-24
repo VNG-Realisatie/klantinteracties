@@ -56,6 +56,7 @@ date: 30-03-2023
 
 - [B5717 - Naamgeving Klantcontact](./artefacten/5717.md)
 - [B7682 - Afbakening van het concept klantcontact](./artefacten/7682.md)
+- [V0780 - Creatiedatum, een mutatiedatum en een indiendatum vastleggen bij klantcontact](./artefacten/0780.md)
 
 ### Interne taak
 
