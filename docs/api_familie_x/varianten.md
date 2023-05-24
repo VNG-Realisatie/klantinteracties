@@ -8,6 +8,7 @@ date: 14-04-2023
 
 Er zijn diverse ontwerpvarianten voor de API te bedenken. Om hier een idee over op te doen zijn de functies rondom de Partij uitgewerkt in een aantal varianten. 
 Hiermee willen we verkennen en inzicht krijgen in welke consequenties de diverse ontwerpvarianten met zich mee brengen.
+Varianten 1 t/m 3 gaan van gegevensgericht naar handelingsgericht. Varianten 4 en 5 zijn handelingsgerichte API-specificaties waar polymorfie is toegepast. 
 
 ## Variant 1
 
@@ -22,7 +23,7 @@ De specificatie kan worden bekeken in [Swagger](./variant2/swagger-ui) of in [Re
 
 ## Variant 3
 
-In deze ontwerpvariant zijn de vier benoemde functies in vier post-enpoints vormgegeven.De endpoints zijn genoemd naar de in te vullen functie. 
+In deze ontwerpvariant zijn de functies in post-enpoints vormgegeven.De endpoints zijn genoemd naar de in te vullen functie. 
 De specificatie kan worden bekeken in [Swagger](./variant3/swagger-ui) of in [Redoc](./variant3/redoc).
 
 ## Variant 4
