@@ -11,7 +11,7 @@ Binnen VNG Realisatie wordt Enterprise Architect (EA) gebruikt voor de vastleggi
 
 <img src="assets/sim_ea_v1.png" alt="SIM in Enterprise Architect" width="1000"/>
 
-De wijzigingen die in versie 2 zijn doorgevoerd t.o.v. deze versie zijn: 
+De wijzigingen die in versie 0.0.2 zijn doorgevoerd t.o.v. deze versie zijn: 
   -	Alle objecten hebben een ID gekregen.
   -	De gaat over relaties zijn opnieuw gemodelleerd. 
     -	Klantcontact Bij Zaak is vervallen
