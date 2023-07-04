@@ -27,14 +27,12 @@ nav:
 #        path: /informatiemodel/uitwisselingsmodel
       - title: Gegevenswoordenboek
         path: /informatiemodel/gegevenswoordenboek
-  - title: API-familie Partij
+  - title: API-familie Klantinteractie
     subnav:
-      - title: Ontwerpvarianten specificaties
+      - title: Specificatie Klantintacties
+        path: /api_familie_x/Klantinteracties
+      - title: Eerdere (en achterhaalde) ontwerpvarianten
         path: /api_familie_x/varianten
-#      - title: Gedragsspecificaties
-#        path: /api_familie_x/gedragsspecificaties
-#      - title: Referentieimplementatie
-#        path: /api_familie_x/referentieimplementatie
   - title: Achtergrond documentatie
     subnav: 
       - title: Uitgangspunten
