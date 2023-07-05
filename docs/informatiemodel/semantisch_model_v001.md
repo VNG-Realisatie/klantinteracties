@@ -13,10 +13,11 @@ Binnen VNG Realisatie wordt Enterprise Architect (EA) gebruikt voor de vastleggi
 
 De wijzigingen die in versie 0.0.2 zijn doorgevoerd t.o.v. deze versie zijn: 
   -	Alle objecten hebben een ID gekregen.
-  -	De gaat over relaties zijn opnieuw gemodelleerd. 
+  - Onderwerpdeel
+    - De gaat over relaties zijn opnieuw gemodelleerd. 
     -	Klantcontact Bij Zaak is vervallen
-    -	Object Van Klantcontact is toegevoegd
-    -	Gaat over relaties tussen Klantcontact en respectievelijk Zaak, Klanttaak en Ander Object lopen nu via Object Van Klantcontact
+    -	Onderwerpdeel is toegevoegd
+    -	Gaat over relaties tussen Klantcontact en respectievelijk Zaak, Klanttaak en Ander Object lopen nu via Onderwerpdeel
     -	Ook de gaatOver relatie tussen Klantcontact en Interne Taak loopt nu via Object van klantcontact.
   -	Klanttaak
     -	Klanttaak is buiten het domein van klantinteracties geplaatst 
@@ -44,7 +45,8 @@ De wijzigingen die in versie 0.0.2 zijn doorgevoerd t.o.v. deze versie zijn:
     -	Bij Klantcontact is het attribuut  Vertrouwelijk opgenomen om aan te geven dat een Klantcontact  vertrouwelijk behandeld moet worden. Welke consequenties het vertrouwelijk zijn heeft moet nog in beeld gebracht worden. 
     -	De relatie met  met Actor  is hernoemd naar heeft als betrokkene en de De kardinaliteit bij de Actor is veranderd van 1 naar 1..*. Dit omdat er meerdere Actoren bij een Klantcontact betrokken kunnen zijn (bv. Bij een keukentafelgesprek) 
     -	De relatie Is betrokken bij (tussen Klantcontact en Betrokkene bij klantcontact) is van richting veranderd en heet nu Heeft als betrokkene. (Deze relatie is nog onderwerp van nadere analyse) 
-    -	Het attribuut Inhoud is verwijderd. Alle inhoud wordt nu opgenomen in Inhoudsdelen. 
+    -	Het attribuut Inhoud is verwijderd. Alle inhoud wordt nu opgenomen in Inhoudsdelen.
+    -	Het attribuut onderwerp is verplaatst naar het object Onderwerpdeel als Tekst
   -	Actor    
     -	De attributen Indicatie actief en Soort actor  zijn toegevoegd. De gewijzigde relaties zijn al eerder benoemd. 
 
