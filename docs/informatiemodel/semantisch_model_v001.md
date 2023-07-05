@@ -14,9 +14,9 @@ Binnen VNG Realisatie wordt Enterprise Architect (EA) gebruikt voor de vastleggi
 De wijzigingen die in versie 0.0.2 zijn doorgevoerd t.o.v. deze versie zijn: 
   -	Alle objecten hebben een ID gekregen.
   - Onderwerpdeel
-    - De gaat over relaties zijn opnieuw gemodelleerd. 
-    -	Klantcontact Bij Zaak is vervallen
-    -	Onderwerpdeel is toegevoegd
+    - De "gaat over" relaties zijn opnieuw gemodelleerd. 
+    -	Objecttype "Klantcontact Bij Zaak" is vervallen
+    -	Objecttype  "Onderwerpdeel" is toegevoegd
     -	Gaat over relaties tussen Klantcontact en respectievelijk Zaak, Klanttaak en Ander Object lopen nu via Onderwerpdeel
     -	Ook de gaatOver relatie tussen Klantcontact en Interne Taak loopt nu via Object van klantcontact.
   -	Klanttaak
