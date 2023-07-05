@@ -30,7 +30,7 @@ nav:
   - title: API-familie Klantinteractie
     subnav:
       - title: Specificatie Klantintacties
-        path: /api_familie_klantinteracties/klantinteracties.md
+        path: /api_familie_klantinteracties/klantinteracties
       - title: Oude ontwerpvarianten
         path: /api_familie_varianten/varianten
   - title: Achtergrond documentatie
