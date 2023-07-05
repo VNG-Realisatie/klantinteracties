@@ -1,0 +1,3425 @@
+openapi: "3.0.0"
+servers:
+- description: "SwaggerHub API Auto Mocking"
+  url: "https://virtserver.swaggerhub.com/VNGRealisatie/api/klantinteracties/v00"
+- description: "Referentie-implementatie"
+  url: "https://www.voorbeeldgemeente.nl/api/klantinteracties/v00"
+info:
+  title: "Klantinteracties"
+  description: "Een API om een klantinteractiecomponent (KIC) te benaderen. <br/>\
+    \ Deze API-specificatie is het resultaat van R&D-werk binnen het team standaarden\
+    \ van de VNG (Project-team Asterix) .  Opgedane bevindingen worden middels deze\
+    \ API getoetst en zullen uiteindelijk, na een aantal iteraties leiden tot versie\
+    \ van de API-specificatie die door koplopers in de praktijk getoetst kan worden.\
+    \  Na een intensieve koplopers-fase, waarin kortcyclisch wijzigingen (indien nodig\
+    \ ook breaking) worden doorgevoerd is het doel om de API-specificaties te laten\
+    \ stabiliseren en breder in gebruik te nemen waarbij de beheer-fase intreedt.\
+    \  <br/><br/>`"
+  version: "00.01.00"
+  x-imvertor-generator-version: "2.0.0"
+  x-yamlCompiler-stylesheets-version: "20230512"
+  contact:
+    url: "http://www.verzoeken.nl"
+    email: "standaarden.ondersteuning@vng.nl"
+  license:
+    name: "European Union Public License, version 1.2 (EUPL-1.2)"
+    url: "https://eupl.eu/1.2/nl/"
+paths:
+  /_corrigeer_interne_taak:
+    post:
+      operationId: "wijziginternetaak"
+      description: "De operatie waarmee gegevens van een interne taak kunnen worden\
+        \ gewijzigd. De id, het nummer, geregistreerdOp en de status (waarde `te verwerken`)\
+        \ worden door de provider bepaald en vastgelegd."
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CorrigeerInterneTaak_parameters"
+      responses:
+        200:
+          description: "OK"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/InterneTaak"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Interne taken"
+  /_haal_referentielijsten_waarden_op:
+    post:
+      operationId: "haalreferentielijstenop"
+      description: "De operatie waarmee de inhoud van de gewenste referentielijsten\
+        \ in 1 call opgehaald kan worden. In de requestbody worden booleans als input\
+        \ geleverd. Voor iedere boolean die met de waarde true wordt opgenomen in\
+        \ de requestbody worden alle waarden van de corresponderende referentielijst\
+        \ opgenomen in de response. Indien de waarden van een referentielijst niet\
+        \ gewenst zijn mag de corresponderende boolean ontbreken of als `false`worden\
+        \ opgenomen."
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Referentielijsten_parameters"
+      responses:
+        200:
+          description: "OK"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Referentielijstbody"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Referentielijsten"
+  /_markeer_interne_taak_verwerkt:
+    post:
+      operationId: "markeerinternetaakverwerkt"
+      description: "De operatie waarmee gegevens van een interne taak als verwerkt\
+        \ wordt gemarkeerd. Op basis van het ID wordt de Status van de Interne Taak\
+        \ gewijzigd naar `Verwerkt`."
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/MarkeerInterneTaakVerwerkt_parameters"
+      responses:
+        200:
+          description: "OK"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/InterneTaak"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Interne taken"
+  /_raadpleeg_kanaal:
+    post:
+      operationId: "raadpleegkanaal"
+      description: "De operatie waarmee een specifieke waarde van de referentielijst\
+        \ `kanaal` wordt opgehaald op basis van de (unieke) code."
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Kanaal_parameters"
+      responses:
+        200:
+          description: "OK"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Kanaal"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Referentielijsten"
+  /_raadpleeg_land:
+    post:
+      operationId: "raadpleegland"
+      description: "De operatie waarmee een specifieke waarde van de referentielijst\
+        \ `Land` wordt opgehaald op basis van de (unieke) landcode. Aangezien de referentietabel\
+        \ `Landen`een doior het RVIG beheerde landelijke tabel is wijkt de naamgeving\
+        \ van de code af."
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Land_parameters"
+      responses:
+        200:
+          description: "OK"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Land"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Referentielijsten"
+  /_raadpleeg_soort_digitaal_adres:
+    post:
+      operationId: "raadpleegsoortdigitaaladres"
+      description: "De operatie waarmee een specifieke waarde van de referentielijst\
+        \ `Soort digitaal adres` wordt opgehaald op basis van de (unieke) code."
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SoortDigitaalAdres_parameters"
+      responses:
+        200:
+          description: "OK"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SoortDigitaalAdres"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Referentielijsten"
+  /_raadpleeg_soort_extern_id:
+    post:
+      operationId: "raadpleegsoortexternid"
+      description: "De operatie waarmee een specifieke waarde van de referentielijst\
+        \ `Soort extern ID` wordt opgehaald op basis van de (unieke) code."
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SoortExternId_parameters"
+      responses:
+        200:
+          description: "OK"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SoortExternId"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Referentielijsten"
+  /_raadpleeg_soort_object:
+    post:
+      operationId: "raadpleegsoortobject"
+      description: "De operatie waarmee een specifieke waarde van de referentielijst\
+        \ `Soort object` wordt opgehaald op basis van de (unieke) code."
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SoortObject_parameters"
+      responses:
+        200:
+          description: "OK"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/SoortObject"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Referentielijsten"
+  /_raadpleeg_voorkeurstaal:
+    post:
+      operationId: "raadpleegvoorkeurstaal"
+      description: "De operatie waarmee een specifieke waarde van de referentielijst\
+        \ `Voorkeurstaal` wordt opgehaald op basis van de (unieke) code."
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Voorkeurstaal_parameters"
+      responses:
+        200:
+          description: "OK"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Voorkeurstaal"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Referentielijsten"
+  /_registreer_binnenkomend_telefoongesprek:
+    post:
+      operationId: "registreerbinnekomendtelefoongesprek"
+      description: "De operatie waarmee gegevens van een klantcontact kunnen worden\
+        \ geregistreerd. <br/> De id, het nummer, geregistreerdOp, plaatsgevondenOp,\
+        \ Kanaal, IndicatieGelukt (`True`) en initiatiefnemer worden door de provider\
+        \ bepaald en vastgelegd. <br/><br/> Indien de betrokkene een bekende Partij\
+        \ betreft worden de partijId en de Rol vastgelegd. de andere properties die\
+        \ ingevuld worden zullen als voorkeurs contactgegevens voor alleen de opvolging\
+        \ van dit klantcontact worden behandeld.<br/><br/> Indien de betrokkene nog\
+        \ niet als Partij bekend is wordt, na uitvraag van de naam- en contactgegevens,\
+        \ de indicatie_hergebruik gevuld. Als deze True is wordt met de gegevens die\
+        \ bekend zijn een Partij aangemaakt. <br/> Organisatienaam gevuld --> Soort_Partij\
+        \ = `Organisatie` <br/> Persoonsnaam gevuld en rol = `Klant --> Soort_Partij\
+        \ = `Persoon`<br/> Persoonsnaam gevuld en rol = `Vertegenwoordiger` --> Soort_Partij\
+        \ = `Contactpersoon`."
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Registreertelefoongesprek_parameters"
+      responses:
+        200:
+          description: "OK"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Klantcontact"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Klantcontacten"
+  /_registreer_digitaal_adres:
+    post:
+      operationId: "registreerdigitaaladres"
+      description: "De operatie waarmee gegevens van een digitaal adres kunnen worden\
+        \ geregistreerd. De id en de indicatie actief (default `True`) worden door\
+        \ de provider bepaald op het moment van registeren."
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RegistreerDigitaalAdres_parameters"
+      responses:
+        200:
+          description: "OK"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DigitaalAdres"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Digitale adressen"
+  /_registreer_geautomatiseerde_actor:
+    post:
+      operationId: "registreergeautomatiseerdeactor"
+      description: "De operatie waarmee gegevens van een geautomatiseerde actor kunnen\
+        \ worden geregistreerd. De id, de soort actor (in dit geval default `geautomatiseerde\
+        \ actor`) en de indicatie actief (default `True`) worden door de provider\
+        \ bepaald op het moment van registeren."
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RegistreerGeautomatiseerdeActor_parameters"
+      responses:
+        200:
+          description: "OK"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/GeautomatiseerdeActor"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Geautomatiseerde actoren"
+  /_registreer_interne_taak:
+    post:
+      operationId: "registreerinternetaak"
+      description: "De operatie waarmee gegevens van een interne taak kunnen worden\
+        \ geregistreerd. De id, het nummer, geregistreerdOp en de status (waarde `te\
+        \ verwerken`) worden door de provider bepaald en vastgelegd."
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RegistreerInterneTaak_parameters"
+      responses:
+        200:
+          description: "OK"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/InterneTaak"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Interne taken"
+  /_registreer_keukentafelgesprek:
+    post:
+      operationId: "registreerkeukentafelgesprek"
+      description: "De operatie waarmee gegevens van een klantcontact kunnen worden\
+        \ geregistreerd. <br/> De id, het nummer, geregistreerdOp, plaatsgevondenOp,\
+        \ Kanaal, IndicatieGelukt (`True`) worden door de provider bepaald en vastgelegd.\
+        \ <br/><br/> Indien de betrokkene een bekende Partij betreft worden de partijId\
+        \ en de Rol vastgelegd. de andere properties die ingevuld worden zullen als\
+        \ voorkeurs contactgegevens voor alleen de opvolging van dit klantcontact\
+        \ worden behandeld.<br/><br/> Indien de betrokkene nog niet als Partij bekend\
+        \ is wordt, na uitvraag van de naam- en contactgegevens, de indicatie_hergebruik\
+        \ gevuld. Als deze True is wordt met de gegevens die bekend zijn een Partij\
+        \ aangemaakt. <br/> Organisatienaam gevuld --> Soort_Partij = `Organisatie`\
+        \ <br/> Persoonsnaam gevuld en rol = `Klant --> Soort_Partij = `Persoon`<br/>\
+        \ Persoonsnaam gevuld en rol = `Vertegenwoordiger` --> Soort_Partij = `Contactpersoon`."
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Registreerkeukentafelgesprek_parameters"
+      responses:
+        200:
+          description: "OK"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Klantcontact"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Klantcontacten"
+  /_registreer_klantcontact:
+    post:
+      operationId: "registreerklantcontact"
+      description: "De operatie waarmee gegevens van een klantcontact kunnen worden\
+        \ geregistreerd. <br/> De id, het nummer en geregistreerdOp worden door de\
+        \ provider bepaald en vastgelegd. <br/><br/> Indien de betrokkene een bekende\
+        \ Partij betreft worden de partijId en de Rol vastgelegd. de andere properties\
+        \ die ingevuld worden zullen als voorkeurs contactgegevens voor alleen de\
+        \ opvolging van dit klantcontact worden behandeld.<br/><br/> Indien de betrokkene\
+        \ nog niet als Partij bekend is wordt, na uitvraag van de naam- en contactgegevens,\
+        \ de indicatie_hergebruik gevuld. Als deze True is wordt met de gegevens die\
+        \ bekend zijn een Partij aangemaakt. <br/> Organisatienaam gevuld --> Soort_Partij\
+        \ = `Organisatie` <br/> Persoonsnaam gevuld en rol = `Klant --> Soort_Partij\
+        \ = `Persoon`<br/> Persoonsnaam gevuld en rol = `Vertegenwoordiger` --> Soort_Partij\
+        \ = `Contactpersoon`."
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Registreerklantcontact_parameters"
+      responses:
+        200:
+          description: "OK"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Klantcontact"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Klantcontacten"
+  /_registreer_klantcontact_gaat_over_interne_taak:
+    post:
+      operationId: "registreerklantcontactgaatoverinternetaak"
+      description: "De operatie waarmee de koppeling tussen een Klantcontact en de\
+        \ Interne Taak waar het Klnatcontct over gaat. De provider bepaalt de waarden\
+        \ van de id, onstaanUitKlantcontact (false), soortObject (Interne taak), externRegister\
+        \ (leeg) en externId (leeg)."
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RegistreerKlantcontactGaatOverInterneTaak_parameters"
+      responses:
+        200:
+          description: "OK"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ObjectVanKlantcontact"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Klantcontacten"
+  /_registreer_klantcontact_gaat_over_object:
+    post:
+      operationId: "registreerklantcontactgaatoverobject"
+      description: "De operatie waarmee geregistreerd wordt over welk object het klantcontact\
+        \ gaat. De provider bepaalt de waarden van id en interneTaakId (leeg)."
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RegistreerKlantcontactGaatOverObject_parameters"
+      responses:
+        200:
+          description: "OK"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ObjectVanKlantcontact"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Klantcontacten"
+  /_registreer_medewerker:
+    post:
+      operationId: "registreermedewerker"
+      description: "De operatie waarmee gegevens van een medewerker kunnen worden\
+        \ geregistreerd. De id, de soort actor (in dit geval default `medewerker`)\
+        \ en de indicatie actief (default `True`) worden door de provider bepaald\
+        \ op het moment van registeren."
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RegistreerMedewerker_parameters"
+      responses:
+        200:
+          description: "OK"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Medewerker"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Medewerkers"
+  /_registreer_organisatie:
+    post:
+      operationId: "registreerorganisatie"
+      description: "De operatie waarmee gegevens van een organisaties kunnen worden\
+        \ geregistreerd. De id, het partijnummer en de soortPartij (in dit geval default\
+        \ `organisatien`) worden door de provider bepaald op het moment van registeren."
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RegistreerOrganisatie_parameters"
+      responses:
+        200:
+          description: "OK"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Organisatie"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Organisaties"
+  /_registreer_organisatorische_eenheid:
+    post:
+      operationId: "registreerorganisatorischeeenheid"
+      description: "De operatie waarmee gegevens van een organisatorische eenheid\
+        \ kunnen worden geregistreerd. De id, de soort actor (in dit geval default\
+        \ `organisatorische eenheid`) en de indicatie actief (default `True`) worden\
+        \ door de provider bepaald op het moment van registeren."
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RegistreerOrganisatorischeEenheid_parameters"
+      responses:
+        200:
+          description: "OK"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/OrganisatorischeEenheid"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Organisatorische eenheden"
+  /_registreer_persoon:
+    post:
+      operationId: "registreerpersoon"
+      description: "De operatie waarmee gegevens van een persoon kunnen worden geregistreerd.\
+        \ De id, het partijnummer en de soortPartij (in dit geval default `persoon`)\
+        \ worden door de provider bepaald op het moment van registeren."
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/RegistreerPersoon_parameters"
+      responses:
+        200:
+          description: "OK"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Persoon"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Personen"
+  /_registreer_uitgaand_telefoongesprek: {}
+  /_verwijder_klantcontact_gaat_over:
+    post:
+      operationId: "verwijderklantcontactgaatover"
+      description: "De operatie waarmee de koppeling tussen een klantcontact en het\
+        \ object of de interne taak waarover het gaat kan worden verwijderd."
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/VerwijderKlantcontactGaatOver_parameters"
+      responses:
+        200:
+          description: "OK"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ObjectVanKlantcontact"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Klantcontacten"
+  /_wijzig_digitaal_adres:
+    post:
+      operationId: "wijzigdigitaaladres"
+      description: "De operatie waarmee gegevens van digitaal adres van een partij\
+        \ kunnen worden gewijzigd. De id, de soort digitaalAdres en de indicatie actief\
+        \ kunnen niet gewijzigd worden."
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/WijzigDigitaalAdres_parameters"
+      responses:
+        200:
+          description: "OK"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DigitaalAdres"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Digitale adressen"
+  /_wijzig_geautomatiseerde_actor:
+    post:
+      operationId: "wijziggeautomatiseerdeactor"
+      description: "De operatie waarmee gegevens van een geautomatiseerde actor kunnen\
+        \ worden gewijzigd. De id, de soort actor (in dit geval `geautomatiseerde\
+        \ actor`) en de indicatie actief kunnen niet gewijzigd worden. Het deactiveren\
+        \ van de geautomatiseerde actor is een beheer-functie."
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/WijzigGeautomatiseerdeActor_parameters"
+      responses:
+        200:
+          description: "OK"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/GeautomatiseerdeActor"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Geautomatiseerde actoren"
+  /_wijzig_medewerker:
+    post:
+      operationId: "wijzigmedewerker"
+      description: "De operatie waarmee gegevens van medewerkers kunnen worden gewijzigd.\
+        \ De id, de soort actor (in dit geval `medewerker`) en de indicatie actief\
+        \ kunnen niet gewijzigd worden. Het deactiveren van de medewerker is een beheer-functie."
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/WijzigMedewerker_parameters"
+      responses:
+        200:
+          description: "OK"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Medewerker"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Medewerkers"
+  /_wijzig_organisatie:
+    post:
+      operationId: "wijzigorganisatie"
+      description: "De operatie waarmee gegevens van een persoon kunnen worden gewijzigd.\
+        \ De id en het partijnummer en de soortPartij kunnen niet gewijzigd worden."
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/WijzigOrganisatie_parameters"
+      responses:
+        200:
+          description: "OK"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Organisatie"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Organisaties"
+  /_wijzig_organisatorische_eenheid:
+    post:
+      operationId: "wijzigorganisatorischeeenheid"
+      description: "De operatie waarmee gegevens van een organisatorische eenheid\
+        \ actor kunnen worden gewijzigd. De id, de soort actor (in dit geval `organisatoriesche\
+        \ eenheid`) en de indicatie actief kunnen niet gewijzigd worden. Het deactiveren\
+        \ van de organisatorische eenheid is een beheer-functie."
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/WijzigOrganisatorischeEenheid_parameters"
+      responses:
+        200:
+          description: "OK"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/OrganisatorischeEenheid"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Organisatorische eenheden"
+  /_wijzig_persoon:
+    post:
+      operationId: "wijzigpersoon"
+      description: "De operatie waarmee gegevens van een persoon kunnen worden gewijzigd.\
+        \ De id en het partijnummer en de soortPartij kunnen niet gewijzigd worden."
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/WijzigPersoon_parameters"
+      responses:
+        200:
+          description: "OK"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Persoon"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Personen"
+  /_zoek_digitaal_adres:
+    post:
+      operationId: "zoekdigitaaladres"
+      description: "De operatie waarmee gegevens van digitaal adres kunnen worden\
+        \ gezocht."
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ZoekDigitaalAdres_parameters"
+      responses:
+        200:
+          description: "OK"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/DigitaalAdres"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Digitale adressen"
+  /_zoek_geautomatiseerde_actor:
+    post:
+      operationId: "zoekgeautomatiseerdeactor"
+      description: "De operatie waarmee gegevens van geautomatiseerde actoren kunnen worden gezocht."
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ZoekGeautomatiseerdeActor_parameters"
+      responses:
+        200:
+          description: "OK"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/GeautomatiseerdeActor"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Geautomatiseerde actoren"
+  /_zoek_interne_taak:
+    post:
+      operationId: "zoekinternetaak"
+      description: "De operatie waarmee gegevens van een interne taak kunnen worden\
+        \ gezocht."
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ZoekInterneTaak_parameters"
+      responses:
+        200:
+          description: "OK"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/InterneTaak"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Interne taken"
+  /_zoek_medewerker:
+    post:
+      operationId: "zoekmedewerker"
+      description: "De operatie waarmee gegevens van medewerkers kunnen worden gezocht."
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ZoekMedewerker_parameters"
+      responses:
+        200:
+          description: "OK"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Medewerker"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Medewerkers"
+  /_zoek_organisatie:
+    post:
+      operationId: "zoekorganisatie"
+      description: "De operatie waarmee gegevens van organisaties kunnen worden gezocht."
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ZoekOrganisatie_parameters"
+      responses:
+        200:
+          description: "OK"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Organisatie"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Organisaties"
+  /_zoek_organisatorische_eenheid:
+    post:
+      operationId: "zoekorganisatorischeeenheid"
+      description: "De operatie waarmee gegevens van organisatorische eenheid kunnen\
+        \ worden gezocht."
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ZoekOrganisatorischeEenheid_parameters"
+      responses:
+        200:
+          description: "OK"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/OrganisatorischeEenheid"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Organisatorische eenheden"
+  /_zoek_persoon:
+    post:
+      operationId: "zoekpersoon"
+      description: "De operatie waarmee gegevens van personen kunnen worden gezocht."
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ZoekPersoon_parameters"
+      responses:
+        200:
+          description: "OK"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Persoon"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Personen"
+components:
+  schemas:
+    CorrigeerInterneTaak_parameters:
+      type: "object"
+      description: ""
+      required:
+      - "id"
+      properties:
+        actorId:
+          $ref: "#/components/schemas/Identificatiecode"
+        gevraagdeHandeling:
+          $ref: "#/components/schemas/Omschrijvinglang"
+        id:
+          $ref: "#/components/schemas/Identificatiecode"
+        status:
+          $ref: "#/components/schemas/Taakstatus"
+        toelichting:
+          $ref: "#/components/schemas/Toelichting"
+    DigitaalAdres:
+      type: "object"
+      description: "Adres waarop een persoon of een organisatie via een digitaal kanaal\
+        \ bereikt kan worden.\n\nDigitaal adres duidt gegevens aan die beschrijven\
+        \ hoe een persoon of organisatie via een digitaal kanaal bereikt kan worden.\
+        \ Voorbeelden hiervan zijn een telefoonnummer, een e-mailadres of een gebruikersnaam\
+        \ op een sociaal medium. Adressen die gekoppeld kunnen worden aan een vaste\
+        \ plaats in de fysieke wereld, zoals een bezoekadres, postbus of antwoordnummer\
+        \ zijn geen digitaal adres."
+      required:
+      - "adres"
+      - "id"
+      - "indicatieActief"
+      - "omschrijving"
+      - "partijId"
+      - "soortDigitaalAdres"
+      properties:
+        adres:
+          $ref: "#/components/schemas/Adresregel"
+        id:
+          $ref: "#/components/schemas/Identificatiecode"
+        indicatieActief:
+          $ref: "#/components/schemas/IndicatieJaNee"
+        omschrijving:
+          $ref: "#/components/schemas/Omschrijvingkort"
+        partijId:
+          $ref: "#/components/schemas/Identificatiecode"
+        soortDigitaalAdres:
+          $ref: "#/components/schemas/SoortDigitaalAdres"
+    GeautomatiseerdeActor:
+      allOf:
+      - $ref: "#/components/schemas/Actor"
+      - type: "object"
+        description: "Systeemcomponent dat voor de gemeente werkzaamheden verricht."
+        required:
+        - "functie"
+        - "omschrijving"
+        properties:
+          functie:
+            $ref: "#/components/schemas/Omschrijvingkort"
+          omschrijving:
+            $ref: "#/components/schemas/Omschrijvinglang"
+    InterneTaak:
+      type: "object"
+      description: "Iets dat als onderdeel van opvolging van een klantcontact door\
+        \ een medewerker of organisatie-afdeling moet worden gedaan."
+      required:
+      - "actorId"
+      - "geregistreerdOp"
+      - "gevraagdeHandeling"
+      - "id"
+      - "nummer"
+      - "status"
+      properties:
+        actorId:
+          $ref: "#/components/schemas/Identificatiecode"
+        geregistreerdOp:
+          $ref: "#/components/schemas/Datumtijd"
+        gevraagdeHandeling:
+          $ref: "#/components/schemas/Omschrijvinglang"
+        id:
+          $ref: "#/components/schemas/Identificatiecode"
+        nummer:
+          $ref: "#/components/schemas/Identificerendnummer"
+        status:
+          $ref: "#/components/schemas/Taakstatus"
+        toelichting:
+          $ref: "#/components/schemas/Toelichting"
+    Kanaal_parameters:
+      type: "object"
+      description: "Parameter voor het raadplegen van het kanaal."
+      required:
+      - "code"
+      properties:
+        code:
+          type: "string"
+          title: "Code"
+          description: "De code, behorende bij het kanaal."
+          minLength: 1
+    Klantcontact:
+      type: "object"
+      description: "Een contact tussen een klant of een vertegenwoordiger van een\
+        \ klant en de gemeente.\n\nHet klantcontact is bedoeld om inwoners of ondernemers\
+        \ die contact hebben gehad met de gemeente op een voor hen zo begrijpelijk\
+        \ en relevant mogelijke manier te infomeren over de inhoud van dat contact.\
+        \ Over een klantcontact vastgelegde informatie kan bijvoorbeeld (na inloggen)\
+        \ worden getoond op de gemeentelijke website of telefonisch worden verstrekt\
+        \ door een medewerker van het klantcontactcentrum. Als gevolg hiervan is de\
+        \ volledige inhoud van een klantcontact geschikt voor openbaarmaking aan betrokken\
+        \ inwoners. De definitie van klantcontact is bewust wat 'open' gelaten. Op\
+        \ deze manier passen daarbinnen ook contacten die voortkomen uit nu onvoorziene\
+        \ scenario's of via nog te ontwikkelen kanalen. Uitgangspunt is in alle gevallen\
+        \ dat ????n klantcontact de informatie omvat die een klant of dienst vertegenwoordiger\
+        \ tijdens een voor hen herkenbare handeling of gebeurtenis overbrengt aan\
+        \ de gemeente of vice versa. Zo'n handeling kan bijvoorbeeld het afleggen\
+        \ van baliebezoek zijn, het telefonisch voeren van een gesprek met een medewerker\
+        \ of een interactie met een chatbot op de gemeentelijke website. Maar ook\
+        \ gebeurtenissen als het indienen van een elektronisch formulier of het versturen\
+        \ van een brief door de gemeente aan een klant of vertegenwoordiger resulteren\
+        \ in een klantcontact. Voor het bepalen van het begin en eind van een klantcontact\
+        \ geldt dat informatie die binnen een korte tijdsperiode tussen gemeente en\
+        \ klant wordt uitgewisseld waar mogelijk resulteert in ????n klantcontact,\
+        \ terwijl een verzonden kennisgeving en een uren of dagen later ontvangen\
+        \ reactie daarop resulteren in twee ???losse??? klantcontacten. Dit betekent\
+        \ dat een klantcontact naar aanleiding van een telefoongesprek 'duurt' van\
+        \ het aannemen van het gesprek tot het be??indigen hiervan, terwijl een contact\
+        \ naar aanleiding van een baliebezoek de periode beschrijft vanaf het aan\
+        \ een medewerker verschijnen van een klant of vertegenwoordiger tot aan diens\
+        \ vertrek. In het geval van ontvangst door de gemeente van een brief van een\
+        \ klant waarop de gemeente enige dagen later eveneens schriftelijk reageert,\
+        \ worden beide brieven daarentegen als twee individuele klantcontacten te\
+        \ beschouwd. Tussen de voorbeelden hierboven in ligt een aantal kanalen waarbij\
+        \ informatie minder snel wordt uitgewisseld dan bij een telefoongesprek of\
+        \ baliecontact, maar (veel) sneller dan bij een briefwisseling. Denk aan communicatie\
+        \ via contactformulieren, e-mail of chatapps en -bots. Zeker in de laatste\
+        \ gevallen kan sprake zijn van korte, elkaar snel opvolgende interacties die\
+        \ samen het karakter hebben van een gesprek. Anders dan een telefoon- of baliegesprek\
+        \ kan een interactie via deze kanalen echter voor uren of dagen onderbroken\
+        \ worden, om daarna weer te worden opgepakt. In zo'n geval is het aan medewerkers\
+        \ van de gemeente - in geval van geautomatiseerde interacties samen met systeemontwikkelaars\
+        \ - om te bepalen wat vanuit klantperspectief de meest voor de hand liggende\
+        \ ???omvang??? van een klantcontact is. Tijdens een klantcontact kan duidelijk\
+        \ worden dat een inwoner verschillende verzoeken voor de gemeente heeft. Een\
+        \ klant kan tijdens een telefoongesprek bijvoorbeeld vragen naar een afspraak\
+        \ voor overleg over een te verbouwen woning en daarnaast een verzakking van\
+        \ stoep voor zijn huis melden. Deze verzoeken moeten op uiteenlopende wijze\
+        \ en waarschijnlijk door verschillende afdelingen worden opgevolgd. Met het\
+        \ bepalen welke medewerlkers of afdelingen nodig zijn om aan verzoeken van\
+        \ een klant invulling te geven, begint in feite de behandeling van deze verzoeken.\
+        \ Deze behandeling is nadrukkelijk g????n onderdeel van het klantcontact.\
+        \ Anders dan het registreren van voor het klantcontact relevante onderwerpen\
+        \ biedt het klantcontact dan ook geen mogelijkheden de inhoud daarvan naar\
+        \ verschillende verzoeken, aanvragen of meldingen uit te splitsen. Hiervoor\
+        \ zijn de concepten 'interne taak' en 'zaak' bedoeld. Het klantcontact uit\
+        \ het voorbeeld hierboven zou bijvoorbeeld aanleiding kunnen zijn voor het\
+        \ aanmaken van zowel een zaak van type 'melding openbare ruimte' om de stoep\
+        \ te herstellen, als een interne taak voor een medewerker van de afdeling\
+        \ fysieke leefomgeving om een afspraak te maken voor overleg over de voorgenomen\
+        \ verbouwing.\n\nHet klantcontact is bedoeld om inwoners of ondernemers die\
+        \ contact hebben gehad met de gemeente op een voor hen zo begrijpelijk en\
+        \ relevant mogelijke manier te infomeren over de inhoud van dat contact. Over\
+        \ een klantcontact vastgelegde informatie kan bijvoorbeeld (na inloggen) worden\
+        \ getoond op de gemeentelijke website of telefonisch worden verstrekt door\
+        \ een medewerker van het klantcontactcentrum. Als gevolg hiervan is de volledige\
+        \ inhoud van een klantcontact geschikt voor openbaarmaking aan betrokken inwoners.\
+        \ De definitie van klantcontact is bewust wat 'open' gelaten. Op deze manier\
+        \ passen daarbinnen ook contacten die voortkomen uit nu onvoorziene scenario's\
+        \ of via nog te ontwikkelen kanalen. Uitgangspunt is in alle gevallen dat\
+        \ ????n klantcontact de informatie omvat die een klant of dienst vertegenwoordiger\
+        \ tijdens een voor hen herkenbare handeling of gebeurtenis overbrengt aan\
+        \ de gemeente of vice versa. Zo'n handeling kan bijvoorbeeld het afleggen\
+        \ van baliebezoek zijn, het telefonisch voeren van een gesprek met een medewerker\
+        \ of een interactie met een chatbot op de gemeentelijke website. Maar ook\
+        \ gebeurtenissen als het indienen van een elektronisch formulier of het versturen\
+        \ van een brief door de gemeente aan een klant of vertegenwoordiger resulteren\
+        \ in een klantcontact. Voor het bepalen van het begin en eind van een klantcontact\
+        \ geldt dat informatie die binnen een korte tijdsperiode tussen gemeente en\
+        \ klant wordt uitgewisseld waar mogelijk resulteert in ????n klantcontact,\
+        \ terwijl een verzonden kennisgeving en een uren of dagen later ontvangen\
+        \ reactie daarop resulteren in twee ???losse??? klantcontacten. Dit betekent\
+        \ dat een klantcontact naar aanleiding van een telefoongesprek 'duurt' van\
+        \ het aannemen van het gesprek tot het be??indigen hiervan, terwijl een contact\
+        \ naar aanleiding van een baliebezoek de periode beschrijft vanaf het aan\
+        \ een medewerker verschijnen van een klant of vertegenwoordiger tot aan diens\
+        \ vertrek. In het geval van ontvangst door de gemeente van een brief van een\
+        \ klant waarop de gemeente enige dagen later eveneens schriftelijk reageert,\
+        \ worden beide brieven daarentegen als twee individuele klantcontacten te\
+        \ beschouwd. Tussen de voorbeelden hierboven in ligt een aantal kanalen waarbij\
+        \ informatie minder snel wordt uitgewisseld dan bij een telefoongesprek of\
+        \ baliecontact, maar (veel) sneller dan bij een briefwisseling. Denk aan communicatie\
+        \ via contactformulieren, e-mail of chatapps en -bots. Zeker in de laatste\
+        \ gevallen kan sprake zijn van korte, elkaar snel opvolgende interacties die\
+        \ samen het karakter hebben van een gesprek. Anders dan een telefoon- of baliegesprek\
+        \ kan een interactie via deze kanalen echter voor uren of dagen onderbroken\
+        \ worden, om daarna weer te worden opgepakt. In zo'n geval is het aan medewerkers\
+        \ van de gemeente - in geval van geautomatiseerde interacties samen met systeemontwikkelaars\
+        \ - om te bepalen wat vanuit klantperspectief de meest voor de hand liggende\
+        \ ???omvang??? van een klantcontact is. Tijdens een klantcontact kan duidelijk\
+        \ worden dat een inwoner verschillende verzoeken voor de gemeente heeft. Een\
+        \ klant kan tijdens een telefoongesprek bijvoorbeeld vragen naar een afspraak\
+        \ voor overleg over een te verbouwen woning en daarnaast een verzakking van\
+        \ stoep voor zijn huis melden. Deze verzoeken moeten op uiteenlopende wijze\
+        \ en waarschijnlijk door verschillende afdelingen worden opgevolgd. Met het\
+        \ bepalen welke medewerlkers of afdelingen nodig zijn om aan verzoeken van\
+        \ een klant invulling te geven, begint in feite de behandeling van deze verzoeken.\
+        \ Deze behandeling is nadrukkelijk g????n onderdeel van het klantcontact.\
+        \ Anders dan het registreren van voor het klantcontact relevante onderwerpen\
+        \ biedt het klantcontact dan ook geen mogelijkheden de inhoud daarvan naar\
+        \ verschillende verzoeken, aanvragen of meldingen uit te splitsen. Hiervoor\
+        \ zijn de concepten 'interne taak' en 'zaak' bedoeld. Het klantcontact uit\
+        \ het voorbeeld hierboven zou bijvoorbeeld aanleiding kunnen zijn voor het\
+        \ aanmaken van zowel een zaak van type 'melding openbare ruimte' om de stoep\
+        \ te herstellen, als een interne taak voor een medewerker van de afdeling\
+        \ fysieke leefomgeving om een afspraak te maken voor overleg over de voorgenomen\
+        \ verbouwing. \n\nHet klantcontact is bedoeld om inwoners of ondernemers die\
+        \ contact hebben gehad met de gemeente op een voor hen zo begrijpelijk en\
+        \ relevant mogelijke manier te infomeren over de inhoud van dat contact. Over\
+        \ een klantcontact vastgelegde informatie kan bijvoorbeeld (na inloggen) worden\
+        \ getoond op de gemeentelijke website of telefonisch worden verstrekt door\
+        \ een medewerker van het klantcontactcentrum. Als gevolg hiervan is de volledige\
+        \ inhoud van een klantcontact geschikt voor openbaarmaking aan betrokken inwoners.\
+        \ De definitie van klantcontact is bewust wat 'open' gelaten. Op deze manier\
+        \ passen daarbinnen ook contacten die voortkomen uit nu onvoorziene scenario's\
+        \ of via nog te ontwikkelen kanalen. Uitgangspunt is in alle gevallen dat\
+        \ ????n klantcontact de informatie omvat die een klant of dienst vertegenwoordiger\
+        \ tijdens een voor hen herkenbare handeling of gebeurtenis overbrengt aan\
+        \ de gemeente of vice versa. Zo'n handeling kan bijvoorbeeld het afleggen\
+        \ van baliebezoek zijn, het telefonisch voeren van een gesprek met een medewerker\
+        \ of een interactie met een chatbot op de gemeentelijke website. Maar ook\
+        \ gebeurtenissen als het indienen van een elektronisch formulier of het versturen\
+        \ van een brief door de gemeente aan een klant of vertegenwoordiger resulteren\
+        \ in een klantcontact. Voor het bepalen van het begin en eind van een klantcontact\
+        \ geldt dat informatie die binnen een korte tijdsperiode tussen gemeente en\
+        \ klant wordt uitgewisseld waar mogelijk resulteert in ????n klantcontact,\
+        \ terwijl een verzonden kennisgeving en een uren of dagen later ontvangen\
+        \ reactie daarop resulteren in twee ???losse??? klantcontacten. Dit betekent\
+        \ dat een klantcontact naar aanleiding van een telefoongesprek 'duurt' van\
+        \ het aannemen van het gesprek tot het be??indigen hiervan, terwijl een contact\
+        \ naar aanleiding van een baliebezoek de periode beschrijft vanaf het aan\
+        \ een medewerker verschijnen van een klant of vertegenwoordiger tot aan diens\
+        \ vertrek. In het geval van ontvangst door de gemeente van een brief van een\
+        \ klant waarop de gemeente enige dagen later eveneens schriftelijk reageert,\
+        \ worden beide brieven daarentegen als twee individuele klantcontacten te\
+        \ beschouwd. Tussen de voorbeelden hierboven in ligt een aantal kanalen waarbij\
+        \ informatie minder snel wordt uitgewisseld dan bij een telefoongesprek of\
+        \ baliecontact, maar (veel) sneller dan bij een briefwisseling. Denk aan communicatie\
+        \ via contactformulieren, e-mail of chatapps en -bots. Zeker in de laatste\
+        \ gevallen kan sprake zijn van korte, elkaar snel opvolgende interacties die\
+        \ samen het karakter hebben van een gesprek. Anders dan een telefoon- of baliegesprek\
+        \ kan een interactie via deze kanalen echter voor uren of dagen onderbroken\
+        \ worden, om daarna weer te worden opgepakt. In zo'n geval is het aan medewerkers\
+        \ van de gemeente - in geval van geautomatiseerde interacties samen met systeemontwikkelaars\
+        \ - om te bepalen wat vanuit klantperspectief de meest voor de hand liggende\
+        \ ???omvang??? van een klantcontact is. Tijdens een klantcontact kan duidelijk\
+        \ worden dat een inwoner verschillende verzoeken voor de gemeente heeft. Een\
+        \ klant kan tijdens een telefoongesprek bijvoorbeeld vragen naar een afspraak\
+        \ voor overleg over een te verbouwen woning en daarnaast een verzakking van\
+        \ stoep voor zijn huis melden. Deze verzoeken moeten op uiteenlopende wijze\
+        \ en waarschijnlijk door verschillende afdelingen worden opgevolgd. Met het\
+        \ bepalen welke medewerlkers of afdelingen nodig zijn om aan verzoeken van\
+        \ een klant invulling te geven, begint in feite de behandeling van deze verzoeken.\
+        \ Deze behandeling is nadrukkelijk g????n onderdeel van het klantcontact.\
+        \ Anders dan het registreren van voor het klantcontact relevante onderwerpen\
+        \ biedt het klantcontact dan ook geen mogelijkheden de inhoud daarvan naar\
+        \ verschillende verzoeken, aanvragen of meldingen uit te splitsen. Hiervoor\
+        \ zijn de concepten 'interne taak' en 'zaak' bedoeld. Het klantcontact uit\
+        \ het voorbeeld hierboven zou bijvoorbeeld aanleiding kunnen zijn voor het\
+        \ aanmaken van zowel een zaak van type 'melding openbare ruimte' om de stoep\
+        \ te herstellen, als een interne taak voor een medewerker van de afdeling\
+        \ fysieke leefomgeving om een afspraak te maken voor overleg over de voorgenomen\
+        \ verbouwing."
+      required:
+      - "actorId"
+      - "betrokkeneBijKlantcontact"
+      - "geregistreerdOp"
+      - "id"
+      - "indicatieContactGelukt"
+      - "initiatiefnemer"
+      - "kanaal"
+      - "nummer"
+      - "onderwerp"
+      - "plaatsgevondenOp"
+      properties:
+        actorId:
+          type: "array"
+          minItems: 1
+          items:
+            $ref: "#/components/schemas/Identificatiecode"
+        betrokkeneBijKlantcontact:
+          type: "array"
+          minItems: 1
+          items:
+            $ref: "#/components/schemas/BetrokkeneBijKlantcontact"
+        geregistreerdOp:
+          $ref: "#/components/schemas/Datumtijd"
+        id:
+          $ref: "#/components/schemas/Identificatiecode"
+        indicatieContactGelukt:
+          $ref: "#/components/schemas/IndicatieJaNeeOnbekend"
+        inhoudsdelen:
+          type: "array"
+          minItems: 0
+          items:
+            $ref: "#/components/schemas/Inhoudsdeel"
+        initiatiefnemer:
+          $ref: "#/components/schemas/Initiatiefnemer"
+        kanaal:
+          $ref: "#/components/schemas/Kanaal"
+        nummer:
+          $ref: "#/components/schemas/Identificerendnummer"
+        onderwerp:
+          $ref: "#/components/schemas/Omschrijvingkort"
+        plaatsgevondenOp:
+          $ref: "#/components/schemas/Datumtijd"
+    Land_parameters:
+      type: "object"
+      description: "Parameter voor het raadplegen van het kanaal."
+      required:
+      - "landcode"
+      properties:
+        landcode:
+          type: "string"
+          title: "Landcode"
+          description: "De code, behorende bij de landnaam, opgenomen in de Landentabel\
+            \ van de GBA."
+          minLength: 1
+    MarkeerInterneTaakVerwerkt_parameters:
+      type: "object"
+      description: ""
+      required:
+      - "id"
+      properties:
+        id:
+          $ref: "#/components/schemas/Identificatiecode"
+    Medewerker:
+      allOf:
+      - $ref: "#/components/schemas/Actor"
+      - type: "object"
+        description: "Iemand die voor of namens de gemeente werkzaamheden verricht."
+        required:
+        - "eMailadres"
+        - "externId"
+        - "externRegister"
+        - "functie"
+        - "telefoonnummer"
+        properties:
+          eMailadres:
+            $ref: "#/components/schemas/Emailadres"
+          externId:
+            $ref: "#/components/schemas/Identificatiecode"
+          externRegister:
+            $ref: "#/components/schemas/Omschrijvingkort"
+          functie:
+            $ref: "#/components/schemas/Omschrijvingkort"
+          telefoonnummer:
+            $ref: "#/components/schemas/Telefoonnummer"
+    ObjectVanKlantcontact:
+      type: "object"
+      description: "De relatie tussen het klantcontact en de Zaak, Klanttaak of ander\
+        \ object waar dit klantcontact betrekking op heeft."
+      required:
+      - "externId"
+      - "externRegister"
+      - "id"
+      - "interneTaakId"
+      - "klantcontactId"
+      - "ontstaanUitKlantcontact"
+      - "soortObject"
+      properties:
+        externId:
+          $ref: "#/components/schemas/Identificatiecode"
+        externRegister:
+          $ref: "#/components/schemas/Omschrijvingkort"
+        id:
+          $ref: "#/components/schemas/Identificatiecode"
+        interneTaakId:
+          $ref: "#/components/schemas/Identificatiecode"
+        klantcontactId:
+          $ref: "#/components/schemas/Identificatiecode"
+        ontstaanUitKlantcontact:
+          $ref: "#/components/schemas/IndicatieJaNee"
+        soortObject:
+          $ref: "#/components/schemas/SoortObject"
+        InterneTaken:
+          title: "gaat over"
+          description: "De taak waarvan uitvoering aanleiding gaf tot het klantcontact."
+          type: "string"
+          format: "uri"
+          readOnly: true
+          example: "datapunt.voorbeeldgemeente.nl/api/v1/InterneTaken/123456789"
+        AndereObjecten:
+          type: "array"
+          title: "gaat over"
+          description: ""
+          items:
+            type: "string"
+            format: "uri"
+          readOnly: true
+          uniqueItems: true
+          example: "datapunt.voorbeeldgemeente.nl/api/v1/Objecten/123456789"
+        Zaken:
+          title: "gaat over"
+          description: "De zaak die uit een klantcontact ontstond of waarover een\
+            \ klantcontact ging."
+          type: "string"
+          format: "uri"
+          readOnly: true
+          example: "datapunt.voorbeeldgemeente.nl/api/v1/Zaken/123456789"
+        Klanttaken:
+          title: "gaat over"
+          description: "De klanttaak waarover het klantcontact ging."
+          type: "string"
+          format: "uri"
+          readOnly: true
+          example: "datapunt.voorbeeldgemeente.nl/api/v1/Klanttaken/123456789"
+        Klantcontacten:
+          title: "heeft"
+          description: "Het klantcontact dat aanleiding gaf tot het starten van een\
+            \ zaak of dat over een zaak ging."
+          type: "string"
+          format: "uri"
+          readOnly: true
+          example: "datapunt.voorbeeldgemeente.nl/api/v1/Klantcontacten/123456789"
+    Organisatie:
+      allOf:
+      - $ref: "#/components/schemas/Partij"
+      - type: "object"
+        description: "Geformaliseerde entiteit, niet zijnde een natuurlijk persoon,\
+          \ die maatschappelijke activiteiten uitvoert.\n\nEen organisatie met rechtspersoonlijkheid,\
+          \ of een eenmanszaak, vennootschap onder firma, maatschap of commanditaire\
+          \ vennootschap of andere organisatie zonder rechtspersoonlijkheid.\n\nEen\
+          \ organisatie met rechtspersoonlijkheid, of een eenmanszaak, vennootschap\
+          \ onder firma, maatschap of commanditaire vennootschap of andere organisatie\
+          \ zonder rechtspersoonlijkheid. \n\nEen organisatie met rechtspersoonlijkheid,\
+          \ of een eenmanszaak, vennootschap onder firma, maatschap of commanditaire\
+          \ vennootschap of andere organisatie zonder rechtspersoonlijkheid."
+        properties:
+          naam:
+            $ref: "#/components/schemas/Naamlang"
+    OrganisatorischeEenheid:
+      allOf:
+      - $ref: "#/components/schemas/Actor"
+      - type: "object"
+        description: "Het deel van een functioneel afgebakend onderdeel binnen de\
+          \ organisatie dat haar activiteiten uitvoert binnen een VESTIGING VAN ZAAKBEHANDELENDE\
+          \ ORGANISATIE en die verantwoordelijk is voor de behandeling van zaken.\n\
+          \nAlleen ORGANISATORISCHE EENHEden van de organisaties die zaken behandelen\
+          \ worden hier bedoeld (bijvoorbeeld afdelingen van gemeenten). Dus niet\
+          \ organisatorische eenheden van andere organisaties zoals de externe initiatoren\
+          \ van zaken (bijvoorbeeld de afdeling van een bedrijf die een vergunning\
+          \ aanvraagt). De ORGANISATORISCHE EENHEID zoals hier bedoeld is gehuisvest\
+          \ binnen ????n fysieke vestiging van de organisatie. Als een functioneel\
+          \ afgebakend onderdeel van de organisatie haar activiteiten uitvoert in\
+          \ meerdere vestigingen dan wordt die uitgewisseld als evenveel ORGANISATORISCHE\
+          \ EENHEden als die vestigingen. Door de relatie naar VESTIGING VAN ZAAKBEHANDELENDE\
+          \ ORGANISATIE en daarmee via VESTIGING naar NIET NATUURLIJK PERSOON is bekend\
+          \ om welke zaakbehandelende organisatie het gaat. Een ORGANISATORISCHE EENHEID\
+          \ kan zowel groot als klein zijn. De ene ORGANISATORISCHE EENHEID mag andere\
+          \ ORGANISATORISCHE EENHEden bevatten, maar dit wordt niet gemodelleerd.\
+          \ We beperken ons tot het aangeven welke ORGANISATORISCHE EENHEID welke\
+          \ rol heeft in een ZAAK en welke gegevens daarvan vanuit het oogpunt van\
+          \ een zaak relevant zijn. ORGANISATORISCHE EENHEID is een specialisatie\
+          \ ('subtype') van BETROKKENE."
+        required:
+        - "externId"
+        - "externRegister"
+        properties:
+          eMailadres:
+            $ref: "#/components/schemas/Emailadres"
+          externId:
+            $ref: "#/components/schemas/Identificatiecode"
+          externRegister:
+            $ref: "#/components/schemas/Omschrijvingkort"
+          faxnummer:
+            $ref: "#/components/schemas/Telefoonnummer"
+          omschrijving:
+            $ref: "#/components/schemas/Omschrijvingkort"
+          telefoonnummer:
+            $ref: "#/components/schemas/Telefoonnummer"
+    Persoon:
+      allOf:
+      - $ref: "#/components/schemas/Partij"
+      - type: "object"
+        description: "Een natuurlijk persoon.\n\nKan zowel een ingeschreven, niet\
+          \ ingeschreven alsook een natuurlijk persoon zijn waarvan niet bekend is\
+          \ of die ingeschreven is of niet.\n\nKan zowel een ingeschreven, niet ingeschreven\
+          \ alsook een natuurlijk persoon zijn waarvan niet bekend is of die ingeschreven\
+          \ is of niet. \n\nKan zowel een ingeschreven, niet ingeschreven alsook een\
+          \ natuurlijk persoon zijn waarvan niet bekend is of die ingeschreven is\
+          \ of niet."
+        properties:
+          naam:
+            $ref: "#/components/schemas/Persoonsnaamgegevens"
+    Referentielijstbody:
+      type: "object"
+      description: "Bevat waarden van referentielijsten."
+      properties:
+        kanalen:
+          type: "array"
+          minItems: 0
+          items:
+            $ref: "#/components/schemas/Kanaal"
+        landen:
+          type: "array"
+          minItems: 0
+          items:
+            $ref: "#/components/schemas/Land"
+        soortenDigitaalAdres:
+          type: "array"
+          minItems: 0
+          items:
+            $ref: "#/components/schemas/SoortDigitaalAdres"
+        soortenExternId:
+          type: "array"
+          minItems: 0
+          items:
+            $ref: "#/components/schemas/SoortExternId"
+        soortenObject:
+          type: "array"
+          minItems: 0
+          items:
+            $ref: "#/components/schemas/SoortObject"
+        voorkeurstalen:
+          type: "array"
+          minItems: 0
+          items:
+            $ref: "#/components/schemas/Voorkeurstaal"
+    Referentielijsten_parameters:
+      type: "object"
+      description: ""
+      properties:
+        kanaal:
+          $ref: "#/components/schemas/IndicatieJaNee"
+        land:
+          $ref: "#/components/schemas/IndicatieJaNee"
+        soortDigitaalAdres:
+          $ref: "#/components/schemas/IndicatieJaNee"
+        soortExternId:
+          $ref: "#/components/schemas/IndicatieJaNee"
+        soortObject:
+          $ref: "#/components/schemas/IndicatieJaNee"
+        voorkeurstaal:
+          $ref: "#/components/schemas/IndicatieJaNee"
+    RegistreerDigitaalAdres_parameters:
+      type: "object"
+      description: ""
+      required:
+      - "adres"
+      - "codeSoortDigitaalAdres"
+      - "omschrijving"
+      - "partijId"
+      properties:
+        adres:
+          $ref: "#/components/schemas/Adresregel"
+        codeSoortDigitaalAdres:
+          type: "string"
+          title: "Soort digitaal adres"
+          description: "De typering van het digitale adres waarmee bepaald kan worden\
+            \ op welk kanaal dit digitale adres valide is."
+          minLength: 1
+        omschrijving:
+          $ref: "#/components/schemas/Omschrijvingkort"
+        partijId:
+          $ref: "#/components/schemas/Identificatiecode"
+    RegistreerGeautomatiseerdeActor_parameters:
+      type: "object"
+      description: ""
+      required:
+      - "functie"
+      - "naam"
+      - "omschrijving"
+      properties:
+        functie:
+          $ref: "#/components/schemas/Omschrijvingkort"
+        naam:
+          $ref: "#/components/schemas/Naamlang"
+        omschrijving:
+          $ref: "#/components/schemas/Omschrijvinglang"
+    RegistreerInterneTaak_parameters:
+      type: "object"
+      description: ""
+      required:
+      - "actorId"
+      - "gevraagdeHandeling"
+      - "klantcontactId"
+      properties:
+        actorId:
+          $ref: "#/components/schemas/Identificatiecode"
+        gevraagdeHandeling:
+          $ref: "#/components/schemas/Omschrijvinglang"
+        klantcontactId:
+          $ref: "#/components/schemas/Identificatiecode"
+        toelichting:
+          $ref: "#/components/schemas/Toelichting"
+    RegistreerKlantcontactGaatOverInterneTaak_parameters:
+      type: "object"
+      description: ""
+      required:
+      - "interneTaakId"
+      - "klantcontactId"
+      properties:
+        interneTaakId:
+          $ref: "#/components/schemas/Identificatiecode"
+        klantcontactId:
+          $ref: "#/components/schemas/Identificatiecode"
+    RegistreerKlantcontactGaatOverObject_parameters:
+      type: "object"
+      description: ""
+      required:
+      - "externId"
+      - "externRegister"
+      - "klantcontactId"
+      - "ontstaanUitKlantcontact"
+      - "soortObject"
+      properties:
+        externId:
+          $ref: "#/components/schemas/Identificatiecode"
+        externRegister:
+          $ref: "#/components/schemas/Omschrijvingkort"
+        klantcontactId:
+          $ref: "#/components/schemas/Identificatiecode"
+        ontstaanUitKlantcontact:
+          $ref: "#/components/schemas/IndicatieJaNee"
+        soortObject:
+          $ref: "#/components/schemas/SoortObject"
+    RegistreerMedewerker_parameters:
+      type: "object"
+      description: ""
+      required:
+      - "eMailadres"
+      - "functie"
+      - "naam"
+      - "telefoonnummer"
+      properties:
+        eMailadres:
+          $ref: "#/components/schemas/Emailadres"
+        externId:
+          $ref: "#/components/schemas/Identificatiecode"
+        externRegister:
+          $ref: "#/components/schemas/Omschrijvingkort"
+        functie:
+          $ref: "#/components/schemas/Omschrijvingkort"
+        naam:
+          $ref: "#/components/schemas/Naamlang"
+        telefoonnummer:
+          $ref: "#/components/schemas/Telefoonnummer"
+    RegistreerOrganisatie_parameters:
+      type: "object"
+      description: ""
+      properties:
+        bezoekadres:
+          $ref: "#/components/schemas/Bezoekadres"
+        correspondentieadres:
+          $ref: "#/components/schemas/Correspondentieadres"
+        digitaalAdres:
+          type: "array"
+          minItems: 0
+          items:
+            $ref: "#/components/schemas/RegistreerDigitaalAdres_parameters"
+        interneNotitie:
+          $ref: "#/components/schemas/Omschrijvinglang"
+        naam:
+          $ref: "#/components/schemas/Naamlang"
+        voorkeurskanaal:
+          $ref: "#/components/schemas/Kanaal"
+        voorkeurstaal:
+          $ref: "#/components/schemas/Voorkeurstaal"
+    RegistreerOrganisatorischeEenheid_parameters:
+      type: "object"
+      description: ""
+      required:
+      - "naam"
+      properties:
+        eMailadres:
+          $ref: "#/components/schemas/Emailadres"
+        externId:
+          $ref: "#/components/schemas/Identificatiecode"
+        externRegister:
+          $ref: "#/components/schemas/Omschrijvingkort"
+        faxnummer:
+          $ref: "#/components/schemas/Telefoonnummer"
+        naam:
+          $ref: "#/components/schemas/Naamlang"
+        omschrijving:
+          $ref: "#/components/schemas/Omschrijvingkort"
+        telefoonnummer:
+          $ref: "#/components/schemas/Telefoonnummer"
+    RegistreerPersoon_parameters:
+      type: "object"
+      description: ""
+      properties:
+        bezoekadres:
+          $ref: "#/components/schemas/Bezoekadres"
+        correspondentieadres:
+          $ref: "#/components/schemas/Correspondentieadres"
+        digitaalAdres:
+          type: "array"
+          minItems: 0
+          items:
+            $ref: "#/components/schemas/RegistreerDigitaalAdres_parameters"
+        interneNotitie:
+          $ref: "#/components/schemas/Omschrijvinglang"
+        naam:
+          $ref: "#/components/schemas/Persoonsnaamgegevens"
+        voorkeurskanaal:
+          $ref: "#/components/schemas/Kanaal"
+        voorkeurstaal:
+          $ref: "#/components/schemas/Voorkeurstaal"
+    Registreerkeukentafelgesprek_parameters:
+      type: "object"
+      description: ""
+      required:
+      - "actorId"
+      - "betrokkeneBijKlantcontact"
+      - "indicatieHergebruikPartij"
+      - "initiatiefnemer"
+      - "onderwerp"
+      properties:
+        actorId:
+          type: "array"
+          minItems: 1
+          items:
+            $ref: "#/components/schemas/Identificatiecode"
+        betrokkeneBijKlantcontact:
+          type: "array"
+          minItems: 1
+          items:
+            $ref: "#/components/schemas/BetrokkeneBijKlantcontact_param"
+        indicatieHergebruikPartij:
+          $ref: "#/components/schemas/IndicatieJaNee"
+        inhoudsdeel:
+          type: "array"
+          minItems: 0
+          items:
+            $ref: "#/components/schemas/Inhoudsdeel_param"
+        initiatiefnemer:
+          $ref: "#/components/schemas/Initiatiefnemer"
+        onderwerp:
+          $ref: "#/components/schemas/Omschrijvingkort"
+    Registreerklantcontact_parameters:
+      type: "object"
+      description: ""
+      required:
+      - "actorId"
+      - "betrokkeneBijKlantcontact"
+      - "indicatieContactGelukt"
+      - "indicatieHergebruikPartij"
+      - "initiatiefnemer"
+      - "kanaal"
+      - "onderwerp"
+      - "plaatsgevondenOp"
+      properties:
+        actorId:
+          type: "array"
+          minItems: 1
+          items:
+            $ref: "#/components/schemas/Identificatiecode"
+        betrokkeneBijKlantcontact:
+          type: "array"
+          minItems: 1
+          items:
+            $ref: "#/components/schemas/BetrokkeneBijKlantcontact_param"
+        indicatieContactGelukt:
+          $ref: "#/components/schemas/IndicatieJaNeeOnbekend"
+        indicatieHergebruikPartij:
+          $ref: "#/components/schemas/IndicatieJaNee"
+        inhoudsdeel:
+          type: "array"
+          minItems: 0
+          items:
+            $ref: "#/components/schemas/Inhoudsdeel_param"
+        initiatiefnemer:
+          $ref: "#/components/schemas/Initiatiefnemer"
+        kanaal:
+          $ref: "#/components/schemas/Kanaal"
+        onderwerp:
+          $ref: "#/components/schemas/Omschrijvingkort"
+        plaatsgevondenOp:
+          $ref: "#/components/schemas/Datumtijd"
+    Registreertelefoongesprek_parameters:
+      type: "object"
+      description: ""
+      required:
+      - "actorId"
+      - "betrokkeneBijKlantcontact"
+      - "indicatieHergebruikPartij"
+      - "onderwerp"
+      properties:
+        actorId:
+          type: "array"
+          minItems: 1
+          items:
+            $ref: "#/components/schemas/Identificatiecode"
+        betrokkeneBijKlantcontact:
+          type: "array"
+          minItems: 1
+          items:
+            $ref: "#/components/schemas/BetrokkeneBijKlantcontact_param"
+        indicatieHergebruikPartij:
+          $ref: "#/components/schemas/IndicatieJaNee"
+        inhoudsdeel:
+          type: "array"
+          minItems: 0
+          items:
+            $ref: "#/components/schemas/Inhoudsdeel_param"
+        onderwerp:
+          $ref: "#/components/schemas/Omschrijvingkort"
+    SoortDigitaalAdres_parameters:
+      type: "object"
+      description: "Parameter voor het raadplegen van het kanaal."
+      required:
+      - "code"
+      properties:
+        code:
+          type: "string"
+          title: "Code"
+          description: "De code, behorende bij het soort digitaal adres."
+          minLength: 1
+    SoortExternId_parameters:
+      type: "object"
+      description: "Parameter voor het raadplegen van het soort extern id."
+      required:
+      - "code"
+      properties:
+        code:
+          type: "string"
+          title: "Code"
+          description: "De code, behorende bij het soort extern id."
+          minLength: 1
+    SoortObject_parameters:
+      type: "object"
+      description: "Parameter voor het raadplegen van een Soort object"
+      required:
+      - "code"
+      properties:
+        code:
+          type: "string"
+          title: "Code"
+          description: "De code, behorende bij het soort object."
+          minLength: 1
+    VerwijderKlantcontactGaatOver_parameters:
+      type: "object"
+      description: ""
+      required:
+      - "id"
+      properties:
+        id:
+          $ref: "#/components/schemas/Identificatiecode"
+    Voorkeurstaal_parameters:
+      type: "object"
+      description: "Parameter voor het raadplegen van de voorkeurstaal."
+      required:
+      - "code"
+      properties:
+        code:
+          type: "string"
+          title: "Code"
+          description: "De code, behorende bij de voorkeurstaal."
+          minLength: 1
+    WijzigDigitaalAdres_parameters:
+      type: "object"
+      description: ""
+      required:
+      - "adres"
+      - "id"
+      - "omschrijving"
+      properties:
+        adres:
+          $ref: "#/components/schemas/Adresregel"
+        id:
+          $ref: "#/components/schemas/Identificatiecode"
+        omschrijving:
+          $ref: "#/components/schemas/Omschrijvingkort"
+    WijzigGeautomatiseerdeActor_parameters:
+      type: "object"
+      description: ""
+      required:
+      - "id"
+      properties:
+        functie:
+          $ref: "#/components/schemas/Omschrijvingkort"
+        id:
+          $ref: "#/components/schemas/Identificatiecode"
+        naam:
+          $ref: "#/components/schemas/Naamlang"
+        omschrijving:
+          $ref: "#/components/schemas/Omschrijvinglang"
+    WijzigMedewerker_parameters:
+      type: "object"
+      description: ""
+      required:
+      - "id"
+      properties:
+        eMailadres:
+          $ref: "#/components/schemas/Emailadres"
+        externId:
+          $ref: "#/components/schemas/Identificatiecode"
+        externRegister:
+          $ref: "#/components/schemas/Omschrijvingkort"
+        functie:
+          $ref: "#/components/schemas/Omschrijvingkort"
+        id:
+          $ref: "#/components/schemas/Identificatiecode"
+        naam:
+          $ref: "#/components/schemas/Naamlang"
+        telefoonnummer:
+          $ref: "#/components/schemas/Telefoonnummer"
+    WijzigOrganisatie_parameters:
+      type: "object"
+      description: ""
+      required:
+      - "id"
+      properties:
+        bezoekadres:
+          $ref: "#/components/schemas/Bezoekadres"
+        correspondentieadres:
+          $ref: "#/components/schemas/Correspondentieadres"
+        digitaalAdres:
+          type: "array"
+          minItems: 0
+          items:
+            $ref: "#/components/schemas/RegistreerDigitaalAdres_parameters"
+        id:
+          $ref: "#/components/schemas/Identificatiecode"
+        interneNotitie:
+          $ref: "#/components/schemas/Omschrijvinglang"
+        naam:
+          $ref: "#/components/schemas/Naamlang"
+        voorkeurskanaal:
+          $ref: "#/components/schemas/Kanaal"
+        voorkeurstaal:
+          $ref: "#/components/schemas/Voorkeurstaal"
+    WijzigOrganisatorischeEenheid_parameters:
+      type: "object"
+      description: ""
+      required:
+      - "id"
+      properties:
+        eMailadres:
+          $ref: "#/components/schemas/Emailadres"
+        externId:
+          $ref: "#/components/schemas/Identificatiecode"
+        externRegister:
+          $ref: "#/components/schemas/Omschrijvingkort"
+        faxnummer:
+          $ref: "#/components/schemas/Telefoonnummer"
+        id:
+          $ref: "#/components/schemas/Identificatiecode"
+        naam:
+          $ref: "#/components/schemas/Naamlang"
+        omschrijving:
+          $ref: "#/components/schemas/Omschrijvingkort"
+        telefoonnummer:
+          $ref: "#/components/schemas/Telefoonnummer"
+    WijzigPersoon_parameters:
+      type: "object"
+      description: ""
+      required:
+      - "id"
+      properties:
+        bezoekadres:
+          $ref: "#/components/schemas/Bezoekadres"
+        correspondentieadres:
+          $ref: "#/components/schemas/Correspondentieadres"
+        digitaalAdres:
+          type: "array"
+          minItems: 0
+          items:
+            $ref: "#/components/schemas/RegistreerDigitaalAdres_parameters"
+        id:
+          $ref: "#/components/schemas/Identificatiecode"
+        interneNotitie:
+          $ref: "#/components/schemas/Omschrijvinglang"
+        naam:
+          $ref: "#/components/schemas/Persoonsnaamgegevens"
+        voorkeurskanaal:
+          $ref: "#/components/schemas/Kanaal"
+        voorkeurstaal:
+          $ref: "#/components/schemas/Voorkeurstaal"
+    ZoekDigitaalAdres_parameters:
+      type: "object"
+      description: ""
+      required:
+      - "adres"
+      - "id"
+      - "omschrijving"
+      - "partijId"
+      - "soortDigitaalAdres"
+      properties:
+        adres:
+          $ref: "#/components/schemas/Adresregel"
+        id:
+          $ref: "#/components/schemas/Identificatiecode"
+        omschrijving:
+          $ref: "#/components/schemas/Omschrijvingkort"
+        partijId:
+          $ref: "#/components/schemas/Identificatiecode"
+        soortDigitaalAdres:
+          $ref: "#/components/schemas/SoortDigitaalAdres"
+    ZoekGeautomatiseerdeActor_parameters:
+      type: "object"
+      description: ""
+      required:
+      - "functie"
+      - "naam"
+      - "omschrijving"
+      properties:
+        functie:
+          $ref: "#/components/schemas/Omschrijvingkort"
+        naam:
+          $ref: "#/components/schemas/Naamlang"
+        omschrijving:
+          $ref: "#/components/schemas/Omschrijvinglang"
+    ZoekInterneTaak_parameters:
+      type: "object"
+      description: ""
+      properties:
+        actorId:
+          $ref: "#/components/schemas/Identificatiecode"
+        geregistreerdOp:
+          $ref: "#/components/schemas/Datumtijd"
+        gevraagdeHandeling:
+          $ref: "#/components/schemas/Omschrijvinglang"
+        id:
+          $ref: "#/components/schemas/Identificatiecode"
+        klantcontactId:
+          $ref: "#/components/schemas/Identificatiecode"
+        nummer:
+          $ref: "#/components/schemas/Identificerendnummer"
+        status:
+          $ref: "#/components/schemas/Taakstatus"
+        toelichting:
+          $ref: "#/components/schemas/Toelichting"
+    ZoekMedewerker_parameters:
+      type: "object"
+      description: ""
+      required:
+      - "eMailadres"
+      - "functie"
+      - "naam"
+      properties:
+        eMailadres:
+          $ref: "#/components/schemas/Emailadres"
+        functie:
+          $ref: "#/components/schemas/Omschrijvingkort"
+        naam:
+          $ref: "#/components/schemas/Naamlang"
+    ZoekOrganisatie_parameters:
+      type: "object"
+      description: ""
+      required:
+      - "id"
+      - "nummer"
+      properties:
+        bezoekadres:
+          $ref: "#/components/schemas/Bezoekadres"
+        correspondentieadres:
+          $ref: "#/components/schemas/Correspondentieadres"
+        digitaalAdres:
+          type: "array"
+          minItems: 0
+          items:
+            $ref: "#/components/schemas/DigitaalAdres"
+        id:
+          $ref: "#/components/schemas/Identificatiecode"
+        naam:
+          $ref: "#/components/schemas/Naamlang"
+        nummer:
+          $ref: "#/components/schemas/Partijnummer"
+        voorkeurskanaal:
+          $ref: "#/components/schemas/Kanaal"
+    ZoekOrganisatorischeEenheid_parameters:
+      type: "object"
+      description: ""
+      properties:
+        eMailadres:
+          $ref: "#/components/schemas/Emailadres"
+        externId:
+          $ref: "#/components/schemas/Identificatiecode"
+        externRegister:
+          $ref: "#/components/schemas/Omschrijvingkort"
+        faxnummer:
+          $ref: "#/components/schemas/Telefoonnummer"
+        naam:
+          $ref: "#/components/schemas/Naamlang"
+        omschrijving:
+          $ref: "#/components/schemas/Omschrijvingkort"
+        telefoonnummer:
+          $ref: "#/components/schemas/Telefoonnummer"
+    ZoekPersoon_parameters:
+      type: "object"
+      description: ""
+      required:
+      - "id"
+      - "nummer"
+      properties:
+        bezoekadres:
+          $ref: "#/components/schemas/Bezoekadres"
+        correspondentieadres:
+          $ref: "#/components/schemas/Correspondentieadres"
+        digitaalAdres:
+          type: "array"
+          minItems: 0
+          items:
+            $ref: "#/components/schemas/DigitaalAdres"
+        id:
+          $ref: "#/components/schemas/Identificatiecode"
+        naam:
+          $ref: "#/components/schemas/Persoonsnaamgegevens"
+        nummer:
+          $ref: "#/components/schemas/Partijnummer"
+        voorkeurskanaal:
+          $ref: "#/components/schemas/Kanaal"
+    BetrokkeneBijKlantcontact:
+      type: "object"
+      description: "De betrokkenheid en de rol van een persoon of organisatie bij\
+        \ het klantcontact.\n\nKlantcontact-betrokkene kent afhankelijk van mogelijkheid\
+        \ of wenselijkheid om in het kader van (opvolging van) de klantinteractie\
+        \ persoonsgegevens te verwerken twee gebruiksmogelijkheden. 1) is van de bij\
+        \ het klantcontact betrokken inwoner of ondernemer na identificatie en/of\
+        \ authenticatie voldoende duidelijk wie die is of vertegenwoordigt, dan wordt\
+        \ eerst opgezocht of deze inwoner of ondernemer reeds als partij bij de gemeente\
+        \ bekend is. Is dat niet zo, dan kan vervolgens een partij worden geregistreerd.\
+        \ Tussen de opgezochte of gecre??erde partij en klantcontact-betrokkene wordt\
+        \ vervolgens een relatie gelegd. Als de betrokkene aangeeft dat all????n voor\
+        \ opvolging van het klantcontact andere dan de bij partij geregistreerde 'default'-contactgegevens\
+        \ gebruikt moeten, worden deze alternatieve contactgegevens vastgelegd in\
+        \ klantcontact-betrokkene. Voor opvolging van het klantcontact gelden de in\
+        \ Klantcontact-betrokkene vastgelegde contactgegevens dus boven gelijkaardige\
+        \ gegevens die bij partij zijn geregistreerd. 2) is van de bij het klantcontact\
+        \ betrokken inwoner of ondernemer na eventuele identificatie en/of authenticatie\
+        \ onvoldoende duidelijk is wie die is of vertegenwoordigt, dan kan in klantcontact-betrokkene\
+        \ een set voor opvolging van het klantcontact benodigde of gewenste contactgegevens\
+        \ worden geregistreerd. In dit geval is er dus g????n sprake van een realtie\
+        \ tussen klantcontact-betrokkene en partij."
+      required:
+      - "digitaalAdres"
+      - "id"
+      - "rol"
+      properties:
+        bezoekadres:
+          $ref: "#/components/schemas/Bezoekadres"
+        correspondentieadres:
+          $ref: "#/components/schemas/Correspondentieadres"
+        digitaalAdres:
+          $ref: "#/components/schemas/DigitaalAdres"
+        id:
+          $ref: "#/components/schemas/Identificatiecode"
+        organisatienaam:
+          $ref: "#/components/schemas/Naamlang"
+        persoonsnaam:
+          $ref: "#/components/schemas/Persoonsnaamgegevens"
+        rol:
+          $ref: "#/components/schemas/Klantcontactrol"
+        voorkeurskanaal:
+          $ref: "#/components/schemas/Kanaal"
+        voorkeurstaal:
+          $ref: "#/components/schemas/Voorkeurstaal"
+    BetrokkeneBijKlantcontact_param:
+      type: "object"
+      description: ""
+      required:
+      - "digitaalAdres"
+      - "rol"
+      properties:
+        bezoekadres:
+          $ref: "#/components/schemas/Bezoekadres"
+        correspondentieadres:
+          $ref: "#/components/schemas/Correspondentieadres"
+        digitaalAdres:
+          $ref: "#/components/schemas/DigitaalAdres"
+        organisatienaam:
+          $ref: "#/components/schemas/Naamlang"
+        persoonsnaam:
+          $ref: "#/components/schemas/Persoonsnaamgegevens"
+        rol:
+          $ref: "#/components/schemas/Klantcontactrol"
+        voorkeurskanaal:
+          $ref: "#/components/schemas/Kanaal"
+        voorkeurstaal:
+          $ref: "#/components/schemas/Voorkeurstaal"
+    Bezoekadres:
+      type: "object"
+      description: "Een bezoekadres is een adres waar een persoon of een bedrijf bezoekers\
+        \ ontvangt."
+      required:
+      - "soortBezoekadres"
+      properties:
+        aanduidingBijHuisnummer:
+          $ref: "#/components/schemas/AanduidingBijHuisnummer"
+        adresregelBuitenland1:
+          $ref: "#/components/schemas/Adresregel"
+        adresregelBuitenland2:
+          $ref: "#/components/schemas/Adresregel"
+        adresregelBuitenland3:
+          $ref: "#/components/schemas/Adresregel"
+        huisletter:
+          $ref: "#/components/schemas/Huisletter"
+        huisnummer:
+          $ref: "#/components/schemas/Huisnummer"
+        huisnummertoevoeging:
+          $ref: "#/components/schemas/Huisnummertoevoeging"
+        land:
+          $ref: "#/components/schemas/Land"
+        postcode:
+          $ref: "#/components/schemas/Postcode"
+        soortBezoekadres:
+          $ref: "#/components/schemas/SoortBezoekadres"
+        straat:
+          $ref: "#/components/schemas/Straat"
+        woonplaats:
+          $ref: "#/components/schemas/Woonplaats"
+    Correspondentieadres:
+      type: "object"
+      description: "Het adres waarnaar de persoon of de organisatie de voor hen bestemde\
+        \ correspondentie laat verzenden."
+      required:
+      - "soortCorrespondentieadres"
+      properties:
+        aanduidingBijHuisnummer:
+          $ref: "#/components/schemas/AanduidingBijHuisnummer"
+        adresregelBuitenland1:
+          $ref: "#/components/schemas/Adresregel"
+        adresregelBuitenland2:
+          $ref: "#/components/schemas/Adresregel"
+        adresregelBuitenland3:
+          $ref: "#/components/schemas/Adresregel"
+        antwoordnummer:
+          $ref: "#/components/schemas/Antwoordnummer"
+        huisletter:
+          $ref: "#/components/schemas/Huisletter"
+        huisnummer:
+          $ref: "#/components/schemas/Huisnummer"
+        huisnummertoevoeging:
+          $ref: "#/components/schemas/Huisnummertoevoeging"
+        land:
+          $ref: "#/components/schemas/Land"
+        postbusnummer:
+          $ref: "#/components/schemas/Postbusnummer"
+        postcode:
+          $ref: "#/components/schemas/Postcode"
+        soortCorrespondentieadres:
+          $ref: "#/components/schemas/SoortCorrespondentieadres"
+        straat:
+          $ref: "#/components/schemas/Straat"
+        woonplaats:
+          $ref: "#/components/schemas/Woonplaats"
+    ExterneIdentificatie:
+      type: "object"
+      description: "De identificatiecode van een Relatie zoals die in een andere (authentieke?)\
+        \ registratie gevoerd wordt."
+      required:
+      - "externId"
+      - "id"
+      - "soortExternId"
+      properties:
+        anderSoortExternId:
+          $ref: "#/components/schemas/Omschrijvingkort"
+        externId:
+          $ref: "#/components/schemas/Identificatiecode"
+        id:
+          $ref: "#/components/schemas/Identificatiecode"
+        soortExternId:
+          $ref: "#/components/schemas/SoortExternId"
+    Inhoudsdeel:
+      type: "object"
+      description: "(Een deel van) de inhoud van een klantcontact. Deze inhoud kan\
+        \ bestaan uit stuk tekst dat in het element tekst is opgenomen of een verwijzing\
+        \ naar een object zoals een informatie-object, een object uit de overige objectenregistratie\
+        \ of een ander object."
+      required:
+      - "externId"
+      - "externRegister"
+      - "id"
+      - "indicatieWeerTeGeven"
+      - "omschrijving"
+      - "soortInhoudsdeel"
+      properties:
+        externId:
+          $ref: "#/components/schemas/Identificatiecode"
+        externRegister:
+          $ref: "#/components/schemas/Omschrijvingkort"
+        id:
+          $ref: "#/components/schemas/Identificatiecode"
+        indicatieWeerTeGeven:
+          $ref: "#/components/schemas/IndicatieJaNee"
+        omschrijving:
+          $ref: "#/components/schemas/Omschrijvingkort"
+        soortInhoudsdeel:
+          $ref: "#/components/schemas/SoortInhoudsdeel"
+        tekst:
+          $ref: "#/components/schemas/Omschrijvinglang"
+    Inhoudsdeel_param:
+      type: "object"
+      description: ""
+      required:
+      - "externId"
+      - "externRegister"
+      - "indicatieWeerTeGeven"
+      - "omschrijving"
+      - "soortInhoudsdeel"
+      properties:
+        externId:
+          $ref: "#/components/schemas/Identificatiecode"
+        externRegister:
+          $ref: "#/components/schemas/Omschrijvingkort"
+        indicatieWeerTeGeven:
+          $ref: "#/components/schemas/IndicatieJaNee"
+        omschrijving:
+          $ref: "#/components/schemas/Omschrijvingkort"
+        soortInhoudsdeel:
+          $ref: "#/components/schemas/SoortInhoudsdeel"
+        tekst:
+          $ref: "#/components/schemas/Omschrijvinglang"
+    Kanaal:
+      type: "object"
+      description: "Een opsomming van de kanalen waarlangs de gemeente klantcontacten\
+        \ kan hebben."
+      required:
+      - "code"
+      - "indicatieActief"
+      - "naam"
+      properties:
+        code:
+          type: "string"
+          title: "Code"
+          description: "De code, behorende bij het kanaal."
+          minLength: 1
+        indicatieActief:
+          $ref: "#/components/schemas/IndicatieJaNee"
+        naam:
+          type: "string"
+          title: "Naam"
+          description: "De naam van het kanaal."
+          minLength: 1
+    Land:
+      type: "object"
+      description: "Een opsomming van alle huidige en voormalige landen met hun codes,\
+        \ namen en geldigheidstermijnen."
+      required:
+      - "einddatumLand"
+      - "ingangsdatumLand"
+      - "landcode"
+      - "landnaam"
+      properties:
+        einddatumLand:
+          type: "string"
+          title: "Einddatum land"
+          description: "De datum waarop het land/gebied is opgeheven."
+          format: "date"
+        ingangsdatumLand:
+          type: "string"
+          title: "Ingangsdatum land"
+          description: "De datum waarop het land/gebied is ontstaan."
+          format: "date"
+        landcode:
+          type: "string"
+          title: "Landcode"
+          description: "De code, behorende bij de landnaam, opgenomen in de Landentabel\
+            \ van de GBA."
+          minLength: 1
+        landnaam:
+          type: "string"
+          title: "Landnaam"
+          description: "De naam van het land, zoals opgenomen in de Landentabel van\
+            \ de GBA."
+          minLength: 1
+    Persoonsnaamgegevens:
+      type: "object"
+      description: "De naamgegevens van een persoon."
+      properties:
+        achternaam:
+          type: "string"
+          title: "Achternaam"
+          description: "De axhternaam waarmee de persoon aangesproken wnest te worden.\
+            \ Deze zal over het algemeen gelijk zijn aan de (geslachts)naam waarvan\
+            \ de eventueel aanwezige voorvoegsels en adellijke titel/predikaat zijn\
+            \ afgesplitst."
+        voornaam:
+          type: "string"
+          title: "Voornaam"
+          description: "De roepnaam waarmee de persoon wenst aangeproken te worden."
+        voorvoegselAchternaam:
+          type: "string"
+          title: "Voorvoegsel achternaam"
+          description: "Dat deel van de achternaam dat voorkomt in de Voorvoegseltabel\
+            \ en, gescheiden door een spatie, vooraf gaat aan de rest van de achternaam."
+    SoortDigitaalAdres:
+      type: "object"
+      description: "Een opsomming van de type digitaal adres waarlangs de gemeente\
+        \ klantcontacten kan hebben."
+      required:
+      - "code"
+      - "indicatieActief"
+      - "naam"
+      properties:
+        code:
+          type: "string"
+          title: "Code"
+          description: "De code, behorende bij het soort digitaal adres."
+          minLength: 1
+        indicatieActief:
+          $ref: "#/components/schemas/IndicatieJaNee"
+        naam:
+          type: "string"
+          title: "Naam"
+          description: "De naam van het soort digitaal adres."
+          minLength: 1
+    SoortExternId:
+      type: "object"
+      description: "Een opsomming van de soorten externe identificatiecodes met de\
+        \ bijbehorende externe registers."
+      required:
+      - "code"
+      - "externRegister"
+      - "indicatieActief"
+      - "naam"
+      - "soortPartij"
+      properties:
+        code:
+          type: "string"
+          title: "Code"
+          description: "De code, behorende bij het soort extern id."
+          minLength: 1
+        externRegister:
+          type: "string"
+          title: "Extern register"
+          description: "Het register dat geraadpleegd kan worden m.b.v. de externe\
+            \ identificatiecode."
+          minLength: 1
+        indicatieActief:
+          $ref: "#/components/schemas/IndicatieJaNee"
+        naam:
+          type: "string"
+          title: "Naam"
+          description: "De naam van het soort extern id."
+          minLength: 1
+        soortPartij:
+          $ref: "#/components/schemas/SoortPartij"
+    SoortObject:
+      type: "object"
+      description: "Een opsomming van de soorten objecten waarmee een koppeling gelegd\
+        \ wordt vanuit het register klantinteracties."
+      required:
+      - "code"
+      - "indicatieActief"
+      - "naam"
+      properties:
+        code:
+          type: "string"
+          title: "Code"
+          description: "De code, behorende bij het soort object."
+          minLength: 1
+        indicatieActief:
+          $ref: "#/components/schemas/IndicatieJaNee"
+        naam:
+          type: "string"
+          title: "Naam"
+          description: "De naam van het soort object."
+          minLength: 1
+    Voorkeurstaal:
+      type: "object"
+      description: "Een opsomming van de talen waarin de gemeente klantcontacten kan\
+        \ hebben."
+      required:
+      - "code"
+      - "indicatieActief"
+      - "naam"
+      properties:
+        code:
+          type: "string"
+          title: "Code"
+          description: "De code, behorende bij de voorkeurstaal."
+          minLength: 1
+        indicatieActief:
+          $ref: "#/components/schemas/IndicatieJaNee"
+        naam:
+          type: "string"
+          title: "Naam"
+          description: "De naam van de voorkeurstaal."
+          minLength: 1
+    Actor:
+      type: "object"
+      description: "De acor handelt in een interne taak of een klantcontact."
+      required:
+      - "id"
+      - "indicatieActief"
+      - "naam"
+      - "soortActor"
+      properties:
+        id:
+          $ref: "#/components/schemas/Identificatiecode"
+        indicatieActief:
+          $ref: "#/components/schemas/IndicatieJaNee"
+        naam:
+          $ref: "#/components/schemas/Naamlang"
+        soortActor:
+          $ref: "#/components/schemas/SoortActor"
+    Partij:
+      type: "object"
+      description: "Een persoon of organisatie waarmee de gemeente een relatie heeft.\n\
+        \n(Uiteindelijk) belanghebbenden waarmee de gemeente geen direct contact heeft\
+        \ (of heeft gehad) (bijvoorbeeld door vertegenwoordiging) zien we als partijen\
+        \ waarmee de gemeente een relatie heeft.? Een vertegenwoordiger (van een belanghebbende)\
+        \ is een partij? Partijen zijn ???gekende??? personen of organisaties? Dit\
+        \ betekent dat er voor eerste registratie en bij eventueel (her)gebruik authenticatie\
+        \ heeft plaatsgevonden. Dit hoeft niet per se te gebeuren met DigiD, eHerkenning\
+        \ o.i.d. Er is dus ook niet altijd sprake van vastlegging en verwerking van\
+        \ een BSN of ander buiten de gemeente toegekend ID-nummer.?\n\n(Uiteindelijk)\
+        \ belanghebbenden waarmee de gemeente geen direct contact heeft (of heeft\
+        \ gehad) (bijvoorbeeld door vertegenwoordiging) zien we als partijen waarmee\
+        \ de gemeente een relatie heeft.? Een vertegenwoordiger (van een belanghebbende)\
+        \ is een partij? Partijen zijn ???gekende??? personen of organisaties? Dit\
+        \ betekent dat er voor eerste registratie en bij eventueel (her)gebruik authenticatie\
+        \ heeft plaatsgevonden. Dit hoeft niet per se te gebeuren met DigiD, eHerkenning\
+        \ o.i.d. Er is dus ook niet altijd sprake van vastlegging en verwerking van\
+        \ een BSN of ander buiten de gemeente toegekend ID-nummer.? \n\n(Uiteindelijk)\
+        \ belanghebbenden waarmee de gemeente geen direct contact heeft (of heeft\
+        \ gehad) (bijvoorbeeld door vertegenwoordiging) zien we als partijen waarmee\
+        \ de gemeente een relatie heeft.? Een vertegenwoordiger (van een belanghebbende)\
+        \ is een partij? Partijen zijn ???gekende??? personen of organisaties? Dit\
+        \ betekent dat er voor eerste registratie en bij eventueel (her)gebruik authenticatie\
+        \ heeft plaatsgevonden. Dit hoeft niet per se te gebeuren met DigiD, eHerkenning\
+        \ o.i.d. Er is dus ook niet altijd sprake van vastlegging en verwerking van\
+        \ een BSN of ander buiten de gemeente toegekend ID-nummer.?"
+      required:
+      - "externeIdentificatie"
+      - "id"
+      - "nummer"
+      - "soortPartij"
+      properties:
+        bezoekadres:
+          $ref: "#/components/schemas/Bezoekadres"
+        correspondentieadres:
+          $ref: "#/components/schemas/Correspondentieadres"
+        digitaalAdres:
+          type: "array"
+          minItems: 0
+          items:
+            $ref: "#/components/schemas/DigitaalAdres"
+        externeIdentificatie:
+          $ref: "#/components/schemas/ExterneIdentificatie"
+        id:
+          $ref: "#/components/schemas/Identificatiecode"
+        interneNotitie:
+          $ref: "#/components/schemas/Omschrijvinglang"
+        nummer:
+          $ref: "#/components/schemas/Partijnummer"
+        soortPartij:
+          $ref: "#/components/schemas/SoortPartij"
+        voorkeurskanaal:
+          $ref: "#/components/schemas/Kanaal"
+        voorkeurstaal:
+          $ref: "#/components/schemas/Voorkeurstaal"
+        ExterneIdentificaties:
+          type: "array"
+          title: "geidentificeerd door"
+          description: "De identificerende gegevens die de partij in een externe registratie\
+            \ aanwijzen."
+          minItems: 1
+          items:
+            type: "string"
+            format: "uri"
+          readOnly: true
+          uniqueItems: true
+          example: "datapunt.voorbeeldgemeente.nl/api/v1//123456789"
+        DigitaleAdressen:
+          type: "array"
+          title: "heeft"
+          description: "Een e-mailadres, telefoonnumer of andere niet-fysieke adres\
+            \ waarop de partij bereikbaar is."
+          items:
+            type: "string"
+            format: "uri"
+          readOnly: true
+          uniqueItems: true
+          example: "datapunt.voorbeeldgemeente.nl/api/v1/Digitale adressen/123456789"
+    AanduidingBijHuisnummer:
+      type: "string"
+      description: "De aanduiding die gebruikt wordt voor bijvoorbeeld een ligplaats\
+        \ of een standplaats die geen eigen nummeraanduiding heeft."
+      enum:
+      - "bij"
+      - "tegenover"
+    IndicatieJaNeeOnbekend:
+      type: "string"
+      description: "Deze enumeratie is toegevoegd omdat de ingevulde waarde geen boolean\
+        \ kan zijn (waar of niet waar). De gewenste waarden zijn ja,nee of onbekend.<body><ul><li>`onbekend`\
+        \ - </li><li>`ja` - Het verzoek is afgehandeld.</li></ul></body>"
+      enum:
+      - "onbekend"
+      - "ja"
+    Initiatiefnemer:
+      type: "string"
+      description: "De waarden van de partij die het contact heeft geinitieerd.<body><ul><li>`gemeente`\
+        \ - De gemeente heeft het contact geinitieerd.</li><li>`klant` - De klant\
+        \ heeft het contact geinitieerd.</li><li>`vertegenwoordiger` - </li></ul></body>"
+      enum:
+      - "gemeente"
+      - "klant"
+      - "vertegenwoordiger"
+    Klantcontactrol:
+      type: "string"
+      description: "De typering van de rol van de persoon of organisatie in het klantcontact."
+      enum:
+      - "vertegenwoordiger"
+      - "klant"
+    SoortActor:
+      type: "string"
+      description: "De typering van de actor.<body><ul><li>`medewerker` - medewerker\
+        \ </li><li>`geautomatiseerde_actor` - geautomatiseerde actor </li><li>`organisatorische_eenheid`\
+        \ - organisatorische eenheid </li></ul></body>"
+      enum:
+      - "medewerker"
+      - "geautomatiseerde_actor"
+      - "organisatorische_eenheid"
+    SoortBezoekadres:
+      type: "string"
+      description: "Typering waarmee aangegeven of het bezoekadres een binnenlands\
+        \ - of een buitenlands adres is.<body><ul><li>`binnenlands_adres` - binnenlands\
+        \ adres </li><li>`buitenlands_adres` - buitenlands adres </li></ul></body>"
+      enum:
+      - "binnenlands_adres"
+      - "buitenlands_adres"
+    SoortCorrespondentieadres:
+      type: "string"
+      description: "Typering waarmee aangegeven wordt of het correspondentieadres\
+        \ een binnenlands - of een buitenlands adres is danwel een postbusnummer of\
+        \ een antwoordnummer.<body><ul><li>`postbusnummer` - postbusnummer </li><li>`antwoordnummer`\
+        \ - antwoordnummer </li><li>`binnenlands_adres` - binnenlands adres </li><li>`buitenlands_adres`\
+        \ - buitenlands adres </li></ul></body>"
+      enum:
+      - "postbusnummer"
+      - "antwoordnummer"
+      - "binnenlands_adres"
+      - "buitenlands_adres"
+    SoortInhoudsdeel:
+      type: "string"
+      description: "De typering van het inhoudsdeel.<body><ul><li>`informatieobject`\
+        \ - informatieobject </li><li>`overig_object` - overig object </li><li>`tekst`\
+        \ - tekst </li></ul></body>"
+      enum:
+      - "informatieobject"
+      - "overig_object"
+      - "tekst"
+    SoortPartij:
+      type: "string"
+      description: "De typering van de partij."
+      enum:
+      - "persoon"
+      - "organisatie"
+      - "contactpersoon"
+    Taakstatus:
+      type: "string"
+      description: "De waarden van de typering van de voortgang van afhandeling van\
+        \ een VERZOEK.<body><ul><li>`te_verwerken` - te verwerken Het verzoek is afgehandeld.</li><li>`verwerkt`\
+        \ - verwerkt Het verzoek id buiten behandeling gesteld.</li></ul></body>"
+      enum:
+      - "te_verwerken"
+      - "verwerkt"
+    Adresregel:
+      type: "string"
+      description: "Een generieke regel om adresgegevens in op te nemen."
+      maxLength: 80
+    Antwoordnummer:
+      type: "integer"
+      description: ""
+    Datumtijd:
+      type: "string"
+      description: ""
+      format: "date-time"
+    Emailadres:
+      type: "string"
+      description: "Een geldig email-adres, maximaal 20 karakters lang en minimaal\
+        \ een @ en een . opgenomen."
+      maxLength: 200
+    Huisletter:
+      type: "string"
+      description: ""
+      maxLength: 1
+    Huisnummer:
+      type: "integer"
+      description: ""
+    Huisnummertoevoeging:
+      type: "string"
+      description: ""
+      maxLength: 4
+    Identificatiecode:
+      type: "string"
+      description: ""
+      maxLength: 40
+    Identificerendnummer:
+      type: "integer"
+      description: ""
+    IndicatieJaNee:
+      type: "boolean"
+      description: ""
+    Naamlang:
+      type: "string"
+      description: ""
+      maxLength: 200
+    Omschrijvingkort:
+      type: "string"
+      description: ""
+      maxLength: 40
+    Omschrijvinglang:
+      type: "string"
+      description: ""
+      maxLength: 200
+    Partijnummer:
+      type: "integer"
+      description: ""
+    Postbusnummer:
+      type: "integer"
+      description: ""
+    Postcode:
+      type: "string"
+      description: ""
+      maxLength: 7
+    Straat:
+      type: "string"
+      description: ""
+      maxLength: 80
+    Telefoonnummer:
+      type: "string"
+      description: ""
+      maxLength: 20
+    Toelichting:
+      type: "string"
+      description: "Toelichtende tekst"
+      maxLength: 400
+    Woonplaats:
+      type: "string"
+      description: ""
+      maxLength: 80
