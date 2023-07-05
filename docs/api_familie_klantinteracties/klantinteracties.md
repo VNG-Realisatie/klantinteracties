@@ -12,17 +12,17 @@ In het ontwikkel-traject van Klantinteracties, dat in het kader van het maken va
 
 In deze API-standaard zijn de handelingen uitgewerkt die te maken hebben met het ondersteunen de reguliere werkzaamheden rondom klantcontacten. 
 
-De specificatie kan worden bekeken in [Swagger](./klantinteracties/swagger-ui.md) of in [Redoc](./klantinteracties/redoc).
+De specificatie kan worden bekeken in [Swagger](./klantinteracties/swagger-ui.md) of in [Redoc](./klantinteracties/redoc.md).
 
 ## Klantinteracties Beheer
 
 In deze API zijn de handelingen uitgewerkt met betrekking beheer-activiteiten van de Klantinteractie-component.   
 
-De specificatie kan worden bekeken in [Swagger](./klantinteracties_beheer/swagger-ui) of in [Redoc](./klantinteracties_beheer/redoc).
+De specificatie kan worden bekeken in [Swagger](./klantinteracties_beheer/swagger-ui.md) of in [Redoc](./klantinteracties_beheer/redoc.md).
 
 ## Beperkte CRUD variant
 
 Ter vergelijking is de CRUD-vraiant van de API (deels) uitgewerkt.
 
-De specificatie kan worden bekeken in [Swagger](./klantinteracties_CRUD/swagger-ui) of in [Redoc](./klantinteracties_CRUD/redoc).
+De specificatie kan worden bekeken in [Swagger](./klantinteracties_CRUD/swagger-ui.md) of in [Redoc](./klantinteracties_CRUD/redoc.md).
 
