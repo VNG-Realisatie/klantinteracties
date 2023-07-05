@@ -12,7 +12,7 @@ In het ontwikkel-traject van Klantinteracties, dat in het kader van het maken va
 
 In deze API-standaard zijn de handelingen uitgewerkt die te maken hebben met het ondersteunen de reguliere werkzaamheden rondom klantcontacten. 
 
-De specificatie kan worden bekeken in [Swagger](./klantinteracties/swagger-ui) of in [Redoc](./klantinteracties/redoc).
+De specificatie kan worden bekeken in [Swagger](./klantinteracties/swagger-ui.md) of in [Redoc](./klantinteracties/redoc).
 
 ## Klantinteracties Beheer
 
