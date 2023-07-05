@@ -24,5 +24,5 @@ De specificatie kan worden bekeken in [Swagger](./klantinteracties_beheer/swagge
 
 Ter vergelijking is de CRUD-vraiant van de API (deels) uitgewerkt.
 
-De specificatie kan worden bekeken in [Swagger](./klantinteractie_CRUD/swagger-ui) of in [Redoc](./klantinteractie_CRUD/redoc).
+De specificatie kan worden bekeken in [Swagger](./klantinteracties_CRUD/swagger-ui) of in [Redoc](./klantinteracties_CRUD/redoc).
 
