@@ -10,7 +10,9 @@ date: 18-04-2023
 
 Aan een standaarden voor klantinteracties wordt op dit moment gewerkt. Een implementeerbare versie wordt later in 2023 verwacht.
 
-Benieuwd naar de stand van zaken? Bekijk [deel 1](./assets/project/20230420-toelichting-inzichten-klantinteracties-deel-1.pdf) en [deel 2](./assets/project/20230420-toelichting-inzichten-klantinteracties-deel-2.pdf) van de tijdens de laatste ontwikkelbijeenkomst op donderdag 20 april getoonde presentatie.
+Benieuwd naar de stand van zaken? Bekijk de [presentatie bij de zomerupdate van 6 juli](./assets/project/20230706-zomerupdate-ontwikkeling-standaard-voor-klantinteracties.pdf).
+
+Verder terugkijken? Ook [deel 1](./assets/project/20230420-toelichting-inzichten-klantinteracties-deel-1.pdf) en [deel 2](./assets/project/20230420-toelichting-inzichten-klantinteracties-deel-2.pdf) de tijdens ontwikkelbijeenkomst op donderdag 20 april getoonde presentatie zijn nog beschikbaar. Maar let op: deze documenten beschrijven deels inzichten en uitgangspunten die door voortschrijdend inzicht zijn ingehaald.
 
 ### Bijdragen aan de standaard
 
