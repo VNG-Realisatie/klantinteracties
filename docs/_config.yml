@@ -19,8 +19,8 @@ nav:
 #       path: /architectuur
   - title: Informatiemodel
     subnav:
-#      - title: Basisterminologie
-#        path: /informatiemodel/basisterminologie
+      - title: Basisterminologie
+        path: /basisterminologie
       - title: Semantisch model (SIM)
         path: /informatiemodel/semantisch_model
 #      - title: Uitwisselingsmodel (UGM)
