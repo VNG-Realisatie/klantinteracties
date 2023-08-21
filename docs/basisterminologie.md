@@ -12,6 +12,8 @@ Deze pagina beschrijft een toelichting bij kernconcepten die binnen het domein v
 
 ![Basismodel klantinteracties](./assets/basisterminologie/klantinteracties-basismodel.svg){:height="65%" width="65%"}
 
+<img src="./assets/basisterminologie/klantinteracties-basismodel.svg" alt="Basismodel klantinteracties" width="65%"/>
+
 Een klantcontact is gedefinieerd als “een contact tussen een klant of een vertegenwoordiger van een klant en de gemeente”. Het doel van het klantcontact is tweeledig: enerzijds dient het om klanten of hun vertegenwoordigers inzicht te geven in (historische) contacten met de gemeente. En anderzijds om opvolging van hun verzoeken aan de gemeente te vergemakkelijken. Een klantcontact heeft om dit doel te dienen de volgende kenmerken:
 
 1. Bij het klantcontact is altijd tenminste één [persoon of organisatie betrokken](#betrokkene-bij-het-klantcontact) die niet voor de gemeente werkt en iets van de gemeente wil. *Er bestaat dus niet zoiets als een ‘intern’ (klant)contact voor verslaglegging over interacties tussen medewerkers van de gemeente.*
