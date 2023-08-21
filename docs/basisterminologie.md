@@ -86,6 +86,8 @@ Dat sprake is van een ‘relatie’ met de gemeente betekent dat de gemeente de 
 
 Omdat sprake is van persoonsgegevens die niet mogen ‘lekken’, noch ongeautoriseerd gewijzigd mogen worden, gelden bovenstaande voorwaarden ook voor het op een later moment bieden van inzage in, verstrekking van of het (laten) wijzigen van partijgegevens.
 
+*Deze standaard beschrijft niet onder welke voorwaarden het is toegestaan om voor het ene doel ingewonnen contactgegevens voor een ander doel te (her)gebruiken, maar stelt dat daarvoor toestemming nodig kan zijn. Evenmin beschrijft deze standaard welke mate van betrouwbaarheid authenticatie- of identificatiemiddelen moeten bieden voordat partijgegevevens kunnen worden geregistreerd, ingezien, verstrekt en aangepast. Wel stelt de standaard dat deze middelen een aanzienlijke mate van zekerheid moeten bieden over de identiteit van degene die deze handelingen wil (laten) uitvoeren . Het verder invullen van deze voorwaarden is een taak voor juristen, privacy officers en beleidsmakers.*
+
 ### Persoon
 
 Een persoon is een [natuurlijk persoon](https://www.gemmaonline.nl/index.php/Rsgb_3.0/doc/objecttype/natuurlijk_persoon). Dit kan iedere persoon zijn die contact opneemt met de gemeente. Dus zowel een op een adres in de gemeente ingeschreven inwoner als een buitenlandse toerist die de gemeente een paar dagen bezoekt.
