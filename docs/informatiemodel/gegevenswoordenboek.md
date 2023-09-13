@@ -63,7 +63,7 @@ date: 14-04-2023
          :
          2.0.0
          :
-         2023-07-05T12:09:54Z</p>
+         2023-09-13T09:45:30Z</p>
       <p>
          ID: EAPK_272B109E_0738_42bd_9D43_C4F87B5E8B8D</p>
       <div><strong>Domein: Model</strong><div>
@@ -79,7 +79,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">Klantinteracties</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
@@ -87,23 +87,15 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">Klantinteracties</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Unieke aanduiding</b></td>
                         <td width="70%">ID</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Populatie</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Kwaliteit</b></td>
-                        <td width="70%"> </td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Indicatie abstract object</b></td>
@@ -363,7 +355,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">Klantinteracties</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
@@ -371,23 +363,15 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">Klantinteracties</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Unieke aanduiding</b></td>
                         <td width="70%">ID</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Populatie</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Kwaliteit</b></td>
-                        <td width="70%"> </td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Indicatie abstract object</b></td>
@@ -486,7 +470,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Achternaam
                            </td>
-                        <td width="50%"></td>
+                        <td width="50%">Een achternaam die de persoon wil gebruiken tijdens communicatie met de gemeente.</td>
                         <td width="10%">
                            CharacterString
                            </td>
@@ -520,7 +504,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Straat
                            </td>
-                        <td width="50%">De offici&amp;#235;le straatnaam zoals door het bevoegd gemeentelijk orgaan is vastgesteld.</td>
+                        <td width="50%">De naam die aan een openbare ruimte is toegekend in een<br>daartoe strekkend formeel gemeentelijk besluit.</td>
                         <td width="10%">
                            Straat
                            </td>
@@ -531,8 +515,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Huisnummer
                            </td>
-                        <td width="50%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                           object toegekende nummering.</td>
+                        <td width="50%">Een door of namens het gemeentebestuur ten aanzien van een<br>adresseerbaar object toegekende nummering.</td>
                         <td width="10%">
                            Huisnummer
                            </td>
@@ -543,9 +526,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Huisnummertoevoeging
                            </td>
-                        <td width="50%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                           object toegekende nadere toevoeging aan een huisnummer of een combinatie van huisnummer
-                           en huisletter.</td>
+                        <td width="50%">Een door of namens het gemeentebestuur ten aanzien van een<br>adresseerbaar object toegekende nadere toevoeging aan een<br>huisnummer of een combinatie van huisnummer en huisleter.</td>
                         <td width="10%">
                            Huisnummertoevoeging
                            </td>
@@ -556,8 +537,8 @@ date: 14-04-2023
                         <td width="25%">- 
                            Huisletter
                            </td>
-                        <td width="50%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                           object toegekende toevoeging aan een huisnummer in de vorm van een alfanumeriek teken.</td>
+                        <td width="50%">Een alfabetisch teken achter het huisnummer zoals dit door het<br>gemeentebestuur is toegekend dan wel een door of namens het bevoegde gemeentelijke
+                           orgaan ten aanzien van een adresseerbaar object toegekend</td>
                         <td width="10%">
                            Huisletter
                            </td>
@@ -568,9 +549,8 @@ date: 14-04-2023
                         <td width="25%">- 
                            Aanduiding bij huisnummer
                            </td>
-                        <td width="50%">De aanduiding die wordt gebruikt voor adressen die niet zijn voorzien van gebruikelijke
-                           straat- en huisnummeraanduidingen Toelichting: Deze aanduiding wordt gebruikt bij
-                           bijvoorbeeld woonboten of woonwagens.</td>
+                        <td width="50%">De aanduiding die wordt gebruikt voor adressen die niet zijn voorzien van de gebruikelijke
+                           straatnaam en huisnummeraanduidingen.</td>
                         <td width="10%">
                            Aanduiding bij huisnummer
                            </td>
@@ -581,8 +561,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Postcode
                            </td>
-                        <td width="50%">De door PostNL vastgestelde code behorende bij een bepaalde combinatie van een naam
-                           van een woonplaats, naam van een openbare ruimte en een huisnummer</td>
+                        <td width="50%">De door PostNL vastgestelde code behorende bij een bepaalde<br>combinatie van een straatnaam en een huisnummer.</td>
                         <td width="10%">
                            Postcode
                            </td>
@@ -593,7 +572,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Woonplaats
                            </td>
-                        <td width="50%">De door het bevoegde gemeentelijke orgaan aan een Woonplaats toegekende benaming.</td>
+                        <td width="50%">De benaming van een door het gemeentebestuur aangewezen<br>woonplaats.</td>
                         <td width="10%">
                            Woonplaats
                            </td>
@@ -604,9 +583,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Antwoordnummer
                            </td>
-                        <td width="50%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                           object toegekende nadere toevoeging aan een huisnummer of een combinatie van huisnummer
-                           en huisletter.</td>
+                        <td width="50%">De numerieke aanduiding zoals deze door de PostNL is vastgesteld voor antwoordnummeradressen.</td>
                         <td width="10%">
                            Antwoordnummer
                            </td>
@@ -617,9 +594,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Postbusnummer
                            </td>
-                        <td width="50%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                           object toegekende nadere toevoeging aan een huisnummer of een combinatie van huisnummer
-                           en huisletter.</td>
+                        <td width="50%">De numerieke aanduiding zoals deze door de PostNL is vastgesteld voor postbusadressen.</td>
                         <td width="10%">
                            Postbusnummer
                            </td>
@@ -630,8 +605,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Adresregel buitenland 1
                            </td>
-                        <td width="50%">Het eerste deel van het adres in het buitenland dat het SUBJECT opgeeft bij vertrek
-                           naar het buitenland dan wel waar het SUBJECT in het buitenland verblijft.</td>
+                        <td width="50%">Eerste deel van het adres in het buitenland, met uitzondering van het land.</td>
                         <td width="10%">
                            Adresregel
                            </td>
@@ -642,8 +616,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Adresregel buitenland 2
                            </td>
-                        <td width="50%">Het tweede deel van het adres in het buitenland dat het SUBJECT opgeeft bij vertrek
-                           naar het buitenland dan wel waar het SUBJECT in het buitenland verblijft.</td>
+                        <td width="50%">Tweede deel van het adres in het buitenland, met uitzondering van het land.</td>
                         <td width="10%">
                            Adresregel
                            </td>
@@ -654,8 +627,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Adresregel buitenland 3
                            </td>
-                        <td width="50%">Het derde deel van het adres in het buitenland dat het SUBJECT opgeeft bij vertrek
-                           naar het buitenland dan wel waar het SUBJECT in het buitenland verblijft.</td>
+                        <td width="50%">Derde deel van het adres in het buitenland, met uitzondering van het land.</td>
                         <td width="10%">
                            Adresregel
                            </td>
@@ -666,7 +638,8 @@ date: 14-04-2023
                         <td width="25%">- 
                            Land
                            </td>
-                        <td width="50%">Het SUBJECT dat heeft aangegeven te (gaan) verblijven dan wel verblijft in het LAND</td>
+                        <td width="50%">Een code, opgenomen in Tabel 34, Landentabel, die het land (buiten Nederland) aangeeft
+                           alwaar de ingeschrevene verblijft. </td>
                         <td width="10%">
                            Land
                            </td>
@@ -699,7 +672,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Straat
                            </td>
-                        <td width="50%">De offici&amp;#235;le straatnaam zoals door het bevoegd gemeentelijk orgaan is vastgesteld.</td>
+                        <td width="50%">De naam die aan een openbare ruimte is toegekend in een<br>daartoe strekkend formeel gemeentelijk besluit.</td>
                         <td width="10%">
                            Straat
                            </td>
@@ -710,8 +683,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Huisnummer
                            </td>
-                        <td width="50%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                           object toegekende nummering.</td>
+                        <td width="50%">Een door of namens het gemeentebestuur ten aanzien van een<br>adresseerbaar object toegekende nummering.</td>
                         <td width="10%">
                            Huisnummer
                            </td>
@@ -722,9 +694,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Huisnummertoevoeging
                            </td>
-                        <td width="50%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                           object toegekende nadere toevoeging aan een huisnummer of een combinatie van huisnummer
-                           en huisletter.</td>
+                        <td width="50%">Een door of namens het gemeentebestuur ten aanzien van een<br>adresseerbaar object toegekende nadere toevoeging aan een<br>huisnummer of een combinatie van huisnummer en huisleter.</td>
                         <td width="10%">
                            Huisnummertoevoeging
                            </td>
@@ -735,8 +705,8 @@ date: 14-04-2023
                         <td width="25%">- 
                            Huisletter
                            </td>
-                        <td width="50%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                           object toegekende toevoeging aan een huisnummer in de vorm van een alfanumeriek teken.</td>
+                        <td width="50%">Een alfabetisch teken achter het huisnummer zoals dit door het<br>gemeentebestuur is toegekend dan wel een door of namens het bevoegde gemeentelijke
+                           orgaan ten aanzien van een adresseerbaar object toegekend</td>
                         <td width="10%">
                            Huisletter
                            </td>
@@ -747,9 +717,8 @@ date: 14-04-2023
                         <td width="25%">- 
                            Aanduiding bij huisnummer
                            </td>
-                        <td width="50%">De aanduiding die wordt gebruikt voor adressen die niet zijn voorzien van gebruikelijke
-                           straat- en huisnummeraanduidingen Toelichting: Deze aanduiding wordt gebruikt bij
-                           bijvoorbeeld woonboten of woonwagens.</td>
+                        <td width="50%">De aanduiding die wordt gebruikt voor adressen die niet zijn voorzien van de gebruikelijke
+                           straatnaam en huisnummeraanduidingen.</td>
                         <td width="10%">
                            Aanduiding bij huisnummer
                            </td>
@@ -760,7 +729,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Postcode
                            </td>
-                        <td width="50%">De postcode van het bezoekadres.</td>
+                        <td width="50%">De door PostNL vastgestelde code behorende bij een bepaalde<br>combinatie van een straatnaam en een huisnummer.</td>
                         <td width="10%">
                            Postcode
                            </td>
@@ -771,7 +740,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Woonplaats
                            </td>
-                        <td width="50%">De woonplaats die onderdeel is van het bezoekadres</td>
+                        <td width="50%">De benaming van een door het gemeentebestuur aangewezen<br>woonplaats.</td>
                         <td width="10%">
                            Woonplaats
                            </td>
@@ -782,8 +751,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Adresregel buitenland 1
                            </td>
-                        <td width="50%">Het eerste deel van het adres in het buitenland dat het SUBJECT opgeeft bij vertrek
-                           naar het buitenland dan wel waar het SUBJECT in het buitenland verblijft.</td>
+                        <td width="50%">Eerste deel van het adres in het buitenland, met uitzondering van het land.</td>
                         <td width="10%">
                            Adresregel
                            </td>
@@ -794,8 +762,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Adresregel buitenland 2
                            </td>
-                        <td width="50%">Het tweede deel van het adres in het buitenland dat het SUBJECT opgeeft bij vertrek
-                           naar het buitenland dan wel waar het SUBJECT in het buitenland verblijft.</td>
+                        <td width="50%">Tweede deel van het adres in het buitenland, met uitzondering van het land.</td>
                         <td width="10%">
                            Adresregel
                            </td>
@@ -806,8 +773,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Adresregel buitenland 3
                            </td>
-                        <td width="50%">Het derde deel van het adres in het buitenland dat het SUBJECT opgeeft bij vertrek
-                           naar het buitenland dan wel waar het SUBJECT in het buitenland verblijft.</td>
+                        <td width="50%">Derde deel van het adres in het buitenland, met uitzondering van het land.</td>
                         <td width="10%">
                            Adresregel
                            </td>
@@ -818,7 +784,8 @@ date: 14-04-2023
                         <td width="25%">- 
                            Land
                            </td>
-                        <td width="50%">Het SUBJECT dat heeft aangegeven te (gaan) verblijven dan wel verblijft in het LAND</td>
+                        <td width="50%">Een code, opgenomen in Tabel 34, Landentabel, die het land (buiten Nederland) aangeeft
+                           alwaar de ingeschrevene verblijft. </td>
                         <td width="10%">
                            Land
                            </td>
@@ -926,17 +893,17 @@ date: 14-04-2023
                </table>
                </div>
             
-            <div><a class="anchor" name="global_class_Model_OverigObjectnoguittewerken"></a><h2> Overig Object (nog uit te werken)</h2>
+            <div><a class="anchor" name="global_class_Model_OverigObject"></a><h2> Overig Object</h2>
                
                <table>
                   <tbody>
                      <tr>
                         <td width="30%"><b>Naam</b></td>
-                        <td width="70%">Overig Object (nog uit te werken)</td>
+                        <td width="70%">Overig Object</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">Klantinteracties</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
@@ -944,22 +911,14 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">Klantinteracties</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Unieke aanduiding</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Populatie</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Kwaliteit</b></td>
                         <td width="70%"> </td>
                      </tr>
                      <tr>
@@ -991,8 +950,7 @@ date: 14-04-2023
                         <td width="25%">
                            ID
                            </td>
-                        <td width="50%">De typering van het digitale adres waarmee bepaald kan worden op welk kanaal dit digitale
-                           adres valide is. </td>
+                        <td width="50%">Unieke identificatie van het Overig Object.</td>
                         <td width="10%">
                            Identificatiecode
                            </td>
@@ -1027,7 +985,7 @@ date: 14-04-2023
                            
                            was
                            
-                           Overig Object (nog uit te werken)
+                           Overig Object
                            [ 0 .. 1 ]
                            </td>
                         <td width="50%">Het overige object dat (een deel van de) inhoud van een klantcontact beschrijft.</td>
@@ -1048,7 +1006,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">Klantinteracties</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
@@ -1057,22 +1015,14 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">Klantinteracties</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Unieke aanduiding</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Populatie</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Kwaliteit</b></td>
                         <td width="70%"> </td>
                      </tr>
                      <tr>
@@ -1188,7 +1138,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">Klantinteracties</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
@@ -1197,23 +1147,15 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">Klantinteracties</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">08-06-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Unieke aanduiding</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Populatie</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Kwaliteit</b></td>
-                        <td width="70%"> </td>
+                        <td width="70%">ID</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Indicatie abstract object</b></td>
@@ -1407,7 +1349,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">Klantinteracties</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
@@ -1415,23 +1357,15 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">Klantinteracties</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Unieke aanduiding</b></td>
                         <td width="70%">ID</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Populatie</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Kwaliteit</b></td>
-                        <td width="70%"> </td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Indicatie abstract object</b></td>
@@ -1564,7 +1498,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Straat
                            </td>
-                        <td width="50%">De offici&amp;#235;le straatnaam zoals door het bevoegd gemeentelijk orgaan is vastgesteld.</td>
+                        <td width="50%">De naam die aan een openbare ruimte is toegekend in een<br>daartoe strekkend formeel gemeentelijk besluit.</td>
                         <td width="10%">
                            Straat
                            </td>
@@ -1575,8 +1509,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Huisnummer
                            </td>
-                        <td width="50%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                           object toegekende nummering.</td>
+                        <td width="50%">Een door of namens het gemeentebestuur ten aanzien van een<br>adresseerbaar object toegekende nummering.</td>
                         <td width="10%">
                            Huisnummer
                            </td>
@@ -1587,9 +1520,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Huisnummertoevoeging
                            </td>
-                        <td width="50%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                           object toegekende nadere toevoeging aan een huisnummer of een combinatie van huisnummer
-                           en huisletter.</td>
+                        <td width="50%">Een door of namens het gemeentebestuur ten aanzien van een<br>adresseerbaar object toegekende nadere toevoeging aan een<br>huisnummer of een combinatie van huisnummer en huisleter.</td>
                         <td width="10%">
                            Huisnummertoevoeging
                            </td>
@@ -1600,8 +1531,8 @@ date: 14-04-2023
                         <td width="25%">- 
                            Huisletter
                            </td>
-                        <td width="50%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                           object toegekende toevoeging aan een huisnummer in de vorm van een alfanumeriek teken.</td>
+                        <td width="50%">Een alfabetisch teken achter het huisnummer zoals dit door het<br>gemeentebestuur is toegekend dan wel een door of namens het bevoegde gemeentelijke
+                           orgaan ten aanzien van een adresseerbaar object toegekend</td>
                         <td width="10%">
                            Huisletter
                            </td>
@@ -1612,9 +1543,8 @@ date: 14-04-2023
                         <td width="25%">- 
                            Aanduiding bij huisnummer
                            </td>
-                        <td width="50%">De aanduiding die wordt gebruikt voor adressen die niet zijn voorzien van gebruikelijke
-                           straat- en huisnummeraanduidingen Toelichting: Deze aanduiding wordt gebruikt bij
-                           bijvoorbeeld woonboten of woonwagens.</td>
+                        <td width="50%">De aanduiding die wordt gebruikt voor adressen die niet zijn voorzien van de gebruikelijke
+                           straatnaam en huisnummeraanduidingen.</td>
                         <td width="10%">
                            Aanduiding bij huisnummer
                            </td>
@@ -1625,7 +1555,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Postcode
                            </td>
-                        <td width="50%">De postcode van het bezoekadres.</td>
+                        <td width="50%">De door PostNL vastgestelde code behorende bij een bepaalde<br>combinatie van een straatnaam en een huisnummer.</td>
                         <td width="10%">
                            Postcode
                            </td>
@@ -1636,7 +1566,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Woonplaats
                            </td>
-                        <td width="50%">De woonplaats die onderdeel is van het bezoekadres</td>
+                        <td width="50%">De benaming van een door het gemeentebestuur aangewezen<br>woonplaats.</td>
                         <td width="10%">
                            Woonplaats
                            </td>
@@ -1647,8 +1577,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Adresregel buitenland 1
                            </td>
-                        <td width="50%">Het eerste deel van het adres in het buitenland dat het SUBJECT opgeeft bij vertrek
-                           naar het buitenland dan wel waar het SUBJECT in het buitenland verblijft.</td>
+                        <td width="50%">Eerste deel van het adres in het buitenland, met uitzondering van het land.</td>
                         <td width="10%">
                            Adresregel
                            </td>
@@ -1659,8 +1588,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Adresregel buitenland 2
                            </td>
-                        <td width="50%">Het tweede deel van het adres in het buitenland dat het SUBJECT opgeeft bij vertrek
-                           naar het buitenland dan wel waar het SUBJECT in het buitenland verblijft.</td>
+                        <td width="50%">Tweede deel van het adres in het buitenland, met uitzondering van het land.</td>
                         <td width="10%">
                            Adresregel
                            </td>
@@ -1671,8 +1599,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Adresregel buitenland 3
                            </td>
-                        <td width="50%">Het derde deel van het adres in het buitenland dat het SUBJECT opgeeft bij vertrek
-                           naar het buitenland dan wel waar het SUBJECT in het buitenland verblijft.</td>
+                        <td width="50%">Derde deel van het adres in het buitenland, met uitzondering van het land.</td>
                         <td width="10%">
                            Adresregel
                            </td>
@@ -1683,7 +1610,8 @@ date: 14-04-2023
                         <td width="25%">- 
                            Land
                            </td>
-                        <td width="50%">Het SUBJECT dat heeft aangegeven te (gaan) verblijven dan wel verblijft in het LAND</td>
+                        <td width="50%">Een code, opgenomen in Tabel 34, Landentabel, die het land (buiten Nederland) aangeeft
+                           alwaar de ingeschrevene verblijft. </td>
                         <td width="10%">
                            Land
                            </td>
@@ -1717,7 +1645,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Straat
                            </td>
-                        <td width="50%">De offici&amp;#235;le straatnaam zoals door het bevoegd gemeentelijk orgaan is vastgesteld.</td>
+                        <td width="50%">De naam die aan een openbare ruimte is toegekend in een<br>daartoe strekkend formeel gemeentelijk besluit.</td>
                         <td width="10%">
                            Straat
                            </td>
@@ -1728,8 +1656,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Huisnummer
                            </td>
-                        <td width="50%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                           object toegekende nummering.</td>
+                        <td width="50%">Een door of namens het gemeentebestuur ten aanzien van een<br>adresseerbaar object toegekende nummering.</td>
                         <td width="10%">
                            Huisnummer
                            </td>
@@ -1740,9 +1667,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Huisnummertoevoeging
                            </td>
-                        <td width="50%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                           object toegekende nadere toevoeging aan een huisnummer of een combinatie van huisnummer
-                           en huisletter.</td>
+                        <td width="50%">Een door of namens het gemeentebestuur ten aanzien van een<br>adresseerbaar object toegekende nadere toevoeging aan een<br>huisnummer of een combinatie van huisnummer en huisleter.</td>
                         <td width="10%">
                            Huisnummertoevoeging
                            </td>
@@ -1753,8 +1678,8 @@ date: 14-04-2023
                         <td width="25%">- 
                            Huisletter
                            </td>
-                        <td width="50%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                           object toegekende toevoeging aan een huisnummer in de vorm van een alfanumeriek teken.</td>
+                        <td width="50%">Een alfabetisch teken achter het huisnummer zoals dit door het<br>gemeentebestuur is toegekend dan wel een door of namens het bevoegde gemeentelijke
+                           orgaan ten aanzien van een adresseerbaar object toegekend</td>
                         <td width="10%">
                            Huisletter
                            </td>
@@ -1765,9 +1690,8 @@ date: 14-04-2023
                         <td width="25%">- 
                            Aanduiding bij huisnummer
                            </td>
-                        <td width="50%">De aanduiding die wordt gebruikt voor adressen die niet zijn voorzien van gebruikelijke
-                           straat- en huisnummeraanduidingen Toelichting: Deze aanduiding wordt gebruikt bij
-                           bijvoorbeeld woonboten of woonwagens.</td>
+                        <td width="50%">De aanduiding die wordt gebruikt voor adressen die niet zijn voorzien van de gebruikelijke
+                           straatnaam en huisnummeraanduidingen.</td>
                         <td width="10%">
                            Aanduiding bij huisnummer
                            </td>
@@ -1778,8 +1702,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Postcode
                            </td>
-                        <td width="50%">De door PostNL vastgestelde code behorende bij een bepaalde combinatie van een naam
-                           van een woonplaats, naam van een openbare ruimte en een huisnummer</td>
+                        <td width="50%">De door PostNL vastgestelde code behorende bij een bepaalde<br>combinatie van een straatnaam en een huisnummer.</td>
                         <td width="10%">
                            Postcode
                            </td>
@@ -1790,7 +1713,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Woonplaats
                            </td>
-                        <td width="50%">De door het bevoegde gemeentelijke orgaan aan een Woonplaats toegekende benaming.</td>
+                        <td width="50%">De benaming van een door het gemeentebestuur aangewezen<br>woonplaats.</td>
                         <td width="10%">
                            Woonplaats
                            </td>
@@ -1801,9 +1724,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Antwoordnummer
                            </td>
-                        <td width="50%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                           object toegekende nadere toevoeging aan een huisnummer of een combinatie van huisnummer
-                           en huisletter.</td>
+                        <td width="50%">De numerieke aanduiding zoals deze door de PostNL is vastgesteld voor antwoordnummeradressen.</td>
                         <td width="10%">
                            Antwoordnummer
                            </td>
@@ -1814,9 +1735,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Postbusnummer
                            </td>
-                        <td width="50%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                           object toegekende nadere toevoeging aan een huisnummer of een combinatie van huisnummer
-                           en huisletter.</td>
+                        <td width="50%">De numerieke aanduiding zoals deze door de PostNL is vastgesteld voor postbusadressen.</td>
                         <td width="10%">
                            Postbusnummer
                            </td>
@@ -1827,8 +1746,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Adresregel buitenland 1
                            </td>
-                        <td width="50%">Het eerste deel van het adres in het buitenland dat het SUBJECT opgeeft bij vertrek
-                           naar het buitenland dan wel waar het SUBJECT in het buitenland verblijft.</td>
+                        <td width="50%">Eerste deel van het adres in het buitenland, met uitzondering van het land.</td>
                         <td width="10%">
                            Adresregel
                            </td>
@@ -1839,8 +1757,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Adresregel buitenland 2
                            </td>
-                        <td width="50%">Het tweede deel van het adres in het buitenland dat het SUBJECT opgeeft bij vertrek
-                           naar het buitenland dan wel waar het SUBJECT in het buitenland verblijft.</td>
+                        <td width="50%">Tweede deel van het adres in het buitenland, met uitzondering van het land.</td>
                         <td width="10%">
                            Adresregel
                            </td>
@@ -1851,8 +1768,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Adresregel buitenland 3
                            </td>
-                        <td width="50%">Het derde deel van het adres in het buitenland dat het SUBJECT opgeeft bij vertrek
-                           naar het buitenland dan wel waar het SUBJECT in het buitenland verblijft.</td>
+                        <td width="50%">Derde deel van het adres in het buitenland, met uitzondering van het land.</td>
                         <td width="10%">
                            Adresregel
                            </td>
@@ -1863,7 +1779,8 @@ date: 14-04-2023
                         <td width="25%">- 
                            Land
                            </td>
-                        <td width="50%">Het SUBJECT dat heeft aangegeven te (gaan) verblijven dan wel verblijft in het LAND</td>
+                        <td width="50%">Een code, opgenomen in Tabel 34, Landentabel, die het land (buiten Nederland) aangeeft
+                           alwaar de ingeschrevene verblijft. </td>
                         <td width="10%">
                            Land
                            </td>
@@ -1964,7 +1881,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">Klantinteracties</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
@@ -1973,23 +1890,15 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">Klantinteracties</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Unieke aanduiding</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Populatie</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Kwaliteit</b></td>
-                        <td width="70%"> </td>
+                        <td width="70%">ID</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Indicatie abstract object</b></td>
@@ -2128,7 +2037,7 @@ date: 14-04-2023
                            was
                            
                            
-                           Overig Object (nog uit te werken)
+                           Overig Object
                            
                            [ 0 .. 1 ]
                            </td>
@@ -2180,7 +2089,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">Klantinteracties</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
@@ -2189,22 +2098,14 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">Klantinteracties</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Unieke aanduiding</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Populatie</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Kwaliteit</b></td>
                         <td width="70%"> </td>
                      </tr>
                      <tr>
@@ -2282,7 +2183,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Achternaam
                            </td>
-                        <td width="50%"></td>
+                        <td width="50%">Een achternaam die de persoon wil gebruiken tijdens communicatie met de gemeente.</td>
                         <td width="10%">
                            CharacterString
                            </td>
@@ -2349,7 +2250,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">Klantinteracties</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
@@ -2357,22 +2258,14 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">Klantinteracties</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Unieke aanduiding</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Populatie</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Kwaliteit</b></td>
                         <td width="70%"> </td>
                      </tr>
                      <tr>
@@ -2438,7 +2331,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Achternaam
                            </td>
-                        <td width="50%"></td>
+                        <td width="50%">Een achternaam die de persoon wil gebruiken tijdens communicatie met de gemeente.</td>
                         <td width="10%">
                            CharacterString
                            </td>
@@ -2507,7 +2400,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">Klantinteracties</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
@@ -2515,22 +2408,14 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">Klantinteracties</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Unieke aanduiding</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Populatie</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Kwaliteit</b></td>
                         <td width="70%"> </td>
                      </tr>
                      <tr>
@@ -2562,8 +2447,7 @@ date: 14-04-2023
                         <td width="25%">
                            ID
                            </td>
-                        <td width="50%">De typering van het digitale adres waarmee bepaald kan worden op welk kanaal dit digitale
-                           adres valide is. </td>
+                        <td width="50%">Unieke identificatie van het Ander Object</td>
                         <td width="10%">
                            Identificatiecode
                            </td>
@@ -2622,6 +2506,24 @@ date: 14-04-2023
                </table>
                
                
+               
+               <table>
+                  <tbody>
+                     <tr>
+                        <td width="30%"><b>Toelichting</b></td>
+                     </tr>
+                  </tbody>
+               </table>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td width="5%">&nbsp;</td>
+                        <td width="95%">Dit kan ieder object zijn dat we bij het maken van dit model niet in beeld hebben.
+                           Deze constructie stelt providers in staat om bijvoorbeeld productverzoeken of ander
+                           digitale objecten als onderwerp te koppelen. </td>
+                     </tr>
+                  </tbody>
+               </table>
                </div>
             
             <div><a class="anchor" name="global_class_Model_Digitaaladres"></a><h2> Digitaal adres</h2>
@@ -2634,7 +2536,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">Klantinteracties</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
@@ -2643,23 +2545,15 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">Klantinteracties</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Unieke aanduiding</b></td>
                         <td width="70%">ID</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Populatie</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Kwaliteit</b></td>
-                        <td width="70%"> </td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Indicatie abstract object</b></td>
@@ -2827,30 +2721,23 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">RGBZ</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">Iemand die namens de gemeente werkzaamheden uitvoert.</td>
+                        <td width="70%">Een MEDEWERKER van de organisatie die zaken behandelt uit hoofde van zijn of haar
+                           functie binnen een ORGANISATORISCHE EENHEID.</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">RGBZ</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Unieke aanduiding</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Populatie</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Kwaliteit</b></td>
                         <td width="70%"> </td>
                      </tr>
                      <tr>
@@ -2882,7 +2769,8 @@ date: 14-04-2023
                         <td width="25%">
                            Functie
                            </td>
-                        <td width="50%">De functie van de medewerker.</td>
+                        <td width="50%">De aanduiding van de taken, rechten en plichten die de MEDEWERKER heeft of heeft gehad
+                           binnen de zaakbehandelende organisatie.</td>
                         <td width="10%">
                            Omschrijving-kort
                            </td>
@@ -2893,7 +2781,7 @@ date: 14-04-2023
                         <td width="25%">
                            E-mailadres
                            </td>
-                        <td width="50%">Het e-mailadres van de medewerker.</td>
+                        <td width="50%">Elektronisch postadres waaronder de MEDEWERKER in de regel bereikbaar is.</td>
                         <td width="10%">
                            E-mailadres
                            </td>
@@ -2904,7 +2792,7 @@ date: 14-04-2023
                         <td width="25%">
                            Telefoonnummer
                            </td>
-                        <td width="50%">Het telefoonnummer van de medewerker.</td>
+                        <td width="50%">Telefoonnummer waaronder de MEDEWERKER in de regel bereikbaar is.</td>
                         <td width="10%">
                            Telefoonnummer
                            </td>
@@ -2979,7 +2867,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">Klantinteracties</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
@@ -2987,22 +2875,14 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">Klantinteracties</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Unieke aanduiding</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Populatie</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Kwaliteit</b></td>
                         <td width="70%"> </td>
                      </tr>
                      <tr>
@@ -3097,7 +2977,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">RGBZ</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
@@ -3107,23 +2987,15 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">RGBZ</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Unieke aanduiding</b></td>
                         <td width="70%">Informatieobjectidentificatie</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Populatie</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Kwaliteit</b></td>
-                        <td width="70%"> </td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Indicatie abstract object</b></td>
@@ -3210,7 +3082,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">Klantinteracties</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
@@ -3218,23 +3090,15 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">Klantinteracties</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Unieke aanduiding</b></td>
                         <td width="70%">ID</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Populatie</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Kwaliteit</b></td>
-                        <td width="70%"> </td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Indicatie abstract object</b></td>
@@ -3370,31 +3234,24 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">GFO Zaken 2004</td>
+                        <td width="70%">RGBZ</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">Een organisatie-onderdeel van de gemeente dat werkzaamheden uitvoert.</td>
+                        <td width="70%">Het deel van een functioneel afgebakend onderdeel binnen de organisatie dat haar activiteiten
+                           uitvoert binnen een VESTIGING VAN ZAAKBEHANDELENDE ORGANISATIE en die verantwoordelijk
+                           is voor de behandeling van zaken.</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
-                        <td width="70%">VNG-R op basis van het GFO Zaken 2004</td>
+                        <td width="70%">RGBZ</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">1 juni 2008</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Unieke aanduiding</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Populatie</b></td>
-                        <td width="70%">De ORGANISATORISCHE EENHEden van de zaakbehandelende organisatie die betrokken zijn
-                           bij het zaakgericht werken betreffende geïmplementeerde zaaktypen.</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Kwaliteit</b></td>
                         <td width="70%"> </td>
                      </tr>
                      <tr>
@@ -3437,7 +3294,8 @@ date: 14-04-2023
                         <td width="25%">
                            E-mailadres
                            </td>
-                        <td width="50%">Het e-mailadres van de organisatorische eenheid.</td>
+                        <td width="50%">Elektronisch postadres waaronder de organisatorische eenheid in de regel bereikbaar
+                           is. </td>
                         <td width="10%">
                            E-mailadres
                            </td>
@@ -3448,7 +3306,7 @@ date: 14-04-2023
                         <td width="25%">
                            Faxnummer
                            </td>
-                        <td width="50%">Het faxnummer van de organisatorische eenheid.</td>
+                        <td width="50%">Faxnummer waaronder de organisatorische eenheid in de regel bereikbaar is.</td>
                         <td width="10%">
                            Telefoonnummer
                            </td>
@@ -3459,7 +3317,7 @@ date: 14-04-2023
                         <td width="25%">
                            Telefoonnummer
                            </td>
-                        <td width="50%">Het telefoonnummer van de organisatorische eenheid.</td>
+                        <td width="50%">Telefoonnummer waaronder de organisatorische eenheid in de regel bereikbaar is.</td>
                         <td width="10%">
                            Telefoonnummer
                            </td>
@@ -3522,35 +3380,6 @@ date: 14-04-2023
                </table>
                
                
-               
-               <table>
-                  <tbody>
-                     <tr>
-                        <td width="30%"><b>Toelichting</b></td>
-                     </tr>
-                  </tbody>
-               </table>
-               <table>
-                  <tbody>
-                     <tr>
-                        <td width="5%">&nbsp;</td>
-                        <td width="95%"><br>                           Alleen ORGANISATORISCHE EENHEden van de organisaties die
-                           zaken behandelen worden hier bedoeld (bijvoorbeeld afdelingen van gemeenten). Dus
-                           niet organisatorische eenheden van andere organisaties zoals de externe initiatoren
-                           van zaken (bijvoorbeeld de afdeling van een bedrijf die een vergunning aanvraagt).<br>                           De ORGANISATORISCHE EENHEID zoals hier bedoeld is gehuisvest
-                           binnen één fysieke vestiging van de organisatie. Als een functioneel afgebakend onderdeel
-                           van de organisatie haar activiteiten uitvoert in meerdere vestigingen dan wordt die
-                           uitgewisseld als evenveel ORGANISATORISCHE EENHEden als die vestigingen. Door de relatie
-                           naar VESTIGING VAN ZAAKBEHANDELENDE ORGANISATIE en daarmee via VESTIGING naar NIET
-                           NATUURLIJK PERSOON is bekend om welke zaakbehandelende organisatie het gaat.<br>                           Een ORGANISATORISCHE EENHEID kan zowel groot als klein
-                           zijn. De ene ORGANISATORISCHE EENHEID mag andere ORGANISATORISCHE EENHEden bevatten,
-                           maar dit wordt niet gemodelleerd. We beperken ons tot het aangeven welke ORGANISATORISCHE
-                           EENHEID welke rol heeft in een ZAAK en welke gegevens daarvan vanuit het oogpunt van
-                           een zaak relevant zijn. ORGANISATORISCHE EENHEID is een specialisatie ('subtype')
-                           van BETROKKENE.<br>                        </td>
-                     </tr>
-                  </tbody>
-               </table>
                </div>
             
             <div><a class="anchor" name="global_class_Model_Internetaak"></a><h2> Interne taak</h2>
@@ -3563,7 +3392,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">Klantinteracties</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
@@ -3571,23 +3400,15 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">Klantinteracties</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Unieke aanduiding</b></td>
                         <td width="70%">ID</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Populatie</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Kwaliteit</b></td>
-                        <td width="70%"> </td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Indicatie abstract object</b></td>
@@ -3765,7 +3586,9 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">Iets dat door een bij een zaak betrokken partij moet worden gedaan.</td>
+                        <td width="70%">Iets dat door een bij een zaak betrokken partij moet worden gedaan.<br><br>De noodzaak om een klanttaak te kunnen registreren is bij klantinteracties onderkend.
+                           Qua karakter en eigenschappen hoort de klanttaak binnen het domein van zaakgericht
+                           werken en is Klantinteracties dus niet de "eigenaar" van dit object. </td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -3773,19 +3596,11 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Unieke aanduiding</b></td>
                         <td width="70%">ID</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Populatie</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Kwaliteit</b></td>
-                        <td width="70%"> </td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Indicatie abstract object</b></td>
@@ -3929,31 +3744,24 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">RGBZ</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">Zie RGBZ</td>
+                        <td width="70%">Een samenhangende hoeveelheid werk met een welgedefinieerde aanleiding en een welgedefinieerd
+                           eindresultaat, waarvan kwaliteit en doorlooptijd bewaakt moeten worden. </td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">RGBZ</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Unieke aanduiding</b></td>
                         <td width="70%">Zaakidentificatie</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Populatie</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Kwaliteit</b></td>
-                        <td width="70%"> </td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Indicatie abstract object</b></td>
@@ -3984,7 +3792,8 @@ date: 14-04-2023
                         <td width="25%">
                            Zaakidentificatie
                            </td>
-                        <td width="50%">Unieke identificatie van een Zaak.</td>
+                        <td width="50%">De unieke identificatie van de ZAAK binnen de organisatie die verantwoordelijk is
+                           voor de behandeling van de ZAAK.</td>
                         <td width="10%">
                            CharacterString
                            </td>
@@ -4040,7 +3849,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">Klantinteracties</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
@@ -4049,25 +3858,15 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">Klantinteracties</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Unieke aanduiding</b></td>
                         <td width="70%">ID</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Populatie</b></td>
-                        <td width="70%">Voor objecttypen die deel uitmaken van een (basis)registratie betreft dit de beschrijving
-                           van de exemplaren van het gedefinieerde objecttype die in de desbetreffende (basis)-registratie
-                           voorhanden zijn.</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Kwaliteit</b></td>
-                        <td width="70%"> </td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Indicatie abstract object</b></td>
@@ -4098,7 +3897,7 @@ date: 14-04-2023
                         <td width="25%">
                            ID
                            </td>
-                        <td width="50%">De unike identificatie van de externe identificatie</td>
+                        <td width="50%">De unieke identificatie van de externe identificatie</td>
                         <td width="10%">
                            Identificatiecode
                            </td>
@@ -4109,8 +3908,8 @@ date: 14-04-2023
                         <td width="25%">
                            Extern ID
                            </td>
-                        <td width="50%">Identificatiecode waarmee de (contact)persoon of partij in een extern (bron)register
-                           uniek ge&amp;#239;dentificeerd kan worden.</td>
+                        <td width="50%">De identificatiecode waarmee een partij in een extern (bron)register uniek ge&amp;#239;dentificeerd
+                           kan worden.</td>
                         <td width="10%">
                            Identificatiecode
                            </td>
@@ -4205,7 +4004,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">1 november 2008</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Data locatie</b></td>
@@ -4374,7 +4173,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">GBA</td>
+                        <td width="70%">Klantinteracties</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
@@ -4387,11 +4186,11 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">1 november 2008</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Data locatie</b></td>
-                        <td width="70%"><br>                        http://publicaties.rvig.nl/Landelijke_tabellen<br>                     </td>
+                        <td width="70%"> </td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Unieke aanduiding</b></td>
@@ -4460,7 +4259,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">Klantinteracties</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
@@ -4473,7 +4272,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">8 juni 2023</td>
+                        <td width="70%">08-07-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Data locatie</b></td>
@@ -4546,7 +4345,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">GBA</td>
+                        <td width="70%">Klantinteracties</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
@@ -4559,11 +4358,11 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">1 november 2008</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Data locatie</b></td>
-                        <td width="70%"><br>                        http://publicaties.rvig.nl/Landelijke_tabellen<br>                     </td>
+                        <td width="70%"> </td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Unieke aanduiding</b></td>
@@ -4632,7 +4431,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">Klantinteracties</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
@@ -4645,7 +4444,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">10 mei 2023</td>
+                        <td width="70%">08-07-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Data locatie</b></td>
@@ -4744,19 +4543,20 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">Klantinteracties</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">Het adres waar een persoon of een organisatie bezoekers ontvangt.</td>
+                        <td width="70%">Het adres waar een persoon of een organisatie bezoekers ontvangt.<br><br>Het bezoekadres is weliswaar geen BRP-object, maar voor de definitie van adres-componenten
+                           </td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">Klantinteracties</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                   </tbody>
                </table>
@@ -4794,7 +4594,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Straat
                            </td>
-                        <td width="50%">De offici&amp;#235;le straatnaam zoals door het bevoegd gemeentelijk orgaan is vastgesteld.</td>
+                        <td width="50%">De naam die aan een openbare ruimte is toegekend in een<br>daartoe strekkend formeel gemeentelijk besluit.</td>
                         <td width="10%">
                            Straat
                            </td>
@@ -4805,8 +4605,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Huisnummer
                            </td>
-                        <td width="50%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                           object toegekende nummering.</td>
+                        <td width="50%">Een door of namens het gemeentebestuur ten aanzien van een<br>adresseerbaar object toegekende nummering.</td>
                         <td width="10%">
                            Huisnummer
                            </td>
@@ -4817,9 +4616,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Huisnummertoevoeging
                            </td>
-                        <td width="50%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                           object toegekende nadere toevoeging aan een huisnummer of een combinatie van huisnummer
-                           en huisletter.</td>
+                        <td width="50%">Een door of namens het gemeentebestuur ten aanzien van een<br>adresseerbaar object toegekende nadere toevoeging aan een<br>huisnummer of een combinatie van huisnummer en huisleter.</td>
                         <td width="10%">
                            Huisnummertoevoeging
                            </td>
@@ -4830,8 +4627,8 @@ date: 14-04-2023
                         <td width="25%">- 
                            Huisletter
                            </td>
-                        <td width="50%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                           object toegekende toevoeging aan een huisnummer in de vorm van een alfanumeriek teken.</td>
+                        <td width="50%">Een alfabetisch teken achter het huisnummer zoals dit door het<br>gemeentebestuur is toegekend dan wel een door of namens het bevoegde gemeentelijke
+                           orgaan ten aanzien van een adresseerbaar object toegekend</td>
                         <td width="10%">
                            Huisletter
                            </td>
@@ -4842,9 +4639,8 @@ date: 14-04-2023
                         <td width="25%">- 
                            Aanduiding bij huisnummer
                            </td>
-                        <td width="50%">De aanduiding die wordt gebruikt voor adressen die niet zijn voorzien van gebruikelijke
-                           straat- en huisnummeraanduidingen Toelichting: Deze aanduiding wordt gebruikt bij
-                           bijvoorbeeld woonboten of woonwagens.</td>
+                        <td width="50%">De aanduiding die wordt gebruikt voor adressen die niet zijn voorzien van de gebruikelijke
+                           straatnaam en huisnummeraanduidingen.</td>
                         <td width="10%">
                            Aanduiding bij huisnummer
                            </td>
@@ -4855,7 +4651,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Postcode
                            </td>
-                        <td width="50%">De postcode van het bezoekadres.</td>
+                        <td width="50%">De door PostNL vastgestelde code behorende bij een bepaalde<br>combinatie van een straatnaam en een huisnummer.</td>
                         <td width="10%">
                            Postcode
                            </td>
@@ -4866,7 +4662,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Woonplaats
                            </td>
-                        <td width="50%">De woonplaats die onderdeel is van het bezoekadres</td>
+                        <td width="50%">De benaming van een door het gemeentebestuur aangewezen<br>woonplaats.</td>
                         <td width="10%">
                            Woonplaats
                            </td>
@@ -4877,8 +4673,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Adresregel buitenland 1
                            </td>
-                        <td width="50%">Het eerste deel van het adres in het buitenland dat het SUBJECT opgeeft bij vertrek
-                           naar het buitenland dan wel waar het SUBJECT in het buitenland verblijft.</td>
+                        <td width="50%">Eerste deel van het adres in het buitenland, met uitzondering van het land.</td>
                         <td width="10%">
                            Adresregel
                            </td>
@@ -4889,8 +4684,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Adresregel buitenland 2
                            </td>
-                        <td width="50%">Het tweede deel van het adres in het buitenland dat het SUBJECT opgeeft bij vertrek
-                           naar het buitenland dan wel waar het SUBJECT in het buitenland verblijft.</td>
+                        <td width="50%">Tweede deel van het adres in het buitenland, met uitzondering van het land.</td>
                         <td width="10%">
                            Adresregel
                            </td>
@@ -4901,8 +4695,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Adresregel buitenland 3
                            </td>
-                        <td width="50%">Het derde deel van het adres in het buitenland dat het SUBJECT opgeeft bij vertrek
-                           naar het buitenland dan wel waar het SUBJECT in het buitenland verblijft.</td>
+                        <td width="50%">Derde deel van het adres in het buitenland, met uitzondering van het land.</td>
                         <td width="10%">
                            Adresregel
                            </td>
@@ -4913,7 +4706,8 @@ date: 14-04-2023
                         <td width="25%">- 
                            Land
                            </td>
-                        <td width="50%">Het SUBJECT dat heeft aangegeven te (gaan) verblijven dan wel verblijft in het LAND</td>
+                        <td width="50%">Een code, opgenomen in Tabel 34, Landentabel, die het land (buiten Nederland) aangeeft
+                           alwaar de ingeschrevene verblijft. </td>
                         <td width="10%">
                            Land
                            </td>
@@ -4934,7 +4728,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">Klantinteracties</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
@@ -4942,11 +4736,11 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">Klantinteracties</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                   </tbody>
                </table>
@@ -4996,7 +4790,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Achternaam
                            </td>
-                        <td width="50%"></td>
+                        <td width="50%">Een achternaam die de persoon wil gebruiken tijdens communicatie met de gemeente.</td>
                         <td width="10%">
                            CharacterString
                            </td>
@@ -5017,7 +4811,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%"> </td>
+                        <td width="70%">Klantinteracties</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
@@ -5026,11 +4820,11 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
-                        <td width="70%"> </td>
+                        <td width="70%">Klantinteracties</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                   </tbody>
                </table>
@@ -5069,7 +4863,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Straat
                            </td>
-                        <td width="50%">De offici&amp;#235;le straatnaam zoals door het bevoegd gemeentelijk orgaan is vastgesteld.</td>
+                        <td width="50%">De naam die aan een openbare ruimte is toegekend in een<br>daartoe strekkend formeel gemeentelijk besluit.</td>
                         <td width="10%">
                            Straat
                            </td>
@@ -5080,8 +4874,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Huisnummer
                            </td>
-                        <td width="50%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                           object toegekende nummering.</td>
+                        <td width="50%">Een door of namens het gemeentebestuur ten aanzien van een<br>adresseerbaar object toegekende nummering.</td>
                         <td width="10%">
                            Huisnummer
                            </td>
@@ -5092,9 +4885,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Huisnummertoevoeging
                            </td>
-                        <td width="50%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                           object toegekende nadere toevoeging aan een huisnummer of een combinatie van huisnummer
-                           en huisletter.</td>
+                        <td width="50%">Een door of namens het gemeentebestuur ten aanzien van een<br>adresseerbaar object toegekende nadere toevoeging aan een<br>huisnummer of een combinatie van huisnummer en huisleter.</td>
                         <td width="10%">
                            Huisnummertoevoeging
                            </td>
@@ -5105,8 +4896,8 @@ date: 14-04-2023
                         <td width="25%">- 
                            Huisletter
                            </td>
-                        <td width="50%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                           object toegekende toevoeging aan een huisnummer in de vorm van een alfanumeriek teken.</td>
+                        <td width="50%">Een alfabetisch teken achter het huisnummer zoals dit door het<br>gemeentebestuur is toegekend dan wel een door of namens het bevoegde gemeentelijke
+                           orgaan ten aanzien van een adresseerbaar object toegekend</td>
                         <td width="10%">
                            Huisletter
                            </td>
@@ -5117,9 +4908,8 @@ date: 14-04-2023
                         <td width="25%">- 
                            Aanduiding bij huisnummer
                            </td>
-                        <td width="50%">De aanduiding die wordt gebruikt voor adressen die niet zijn voorzien van gebruikelijke
-                           straat- en huisnummeraanduidingen Toelichting: Deze aanduiding wordt gebruikt bij
-                           bijvoorbeeld woonboten of woonwagens.</td>
+                        <td width="50%">De aanduiding die wordt gebruikt voor adressen die niet zijn voorzien van de gebruikelijke
+                           straatnaam en huisnummeraanduidingen.</td>
                         <td width="10%">
                            Aanduiding bij huisnummer
                            </td>
@@ -5130,8 +4920,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Postcode
                            </td>
-                        <td width="50%">De door PostNL vastgestelde code behorende bij een bepaalde combinatie van een naam
-                           van een woonplaats, naam van een openbare ruimte en een huisnummer</td>
+                        <td width="50%">De door PostNL vastgestelde code behorende bij een bepaalde<br>combinatie van een straatnaam en een huisnummer.</td>
                         <td width="10%">
                            Postcode
                            </td>
@@ -5142,7 +4931,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Woonplaats
                            </td>
-                        <td width="50%">De door het bevoegde gemeentelijke orgaan aan een Woonplaats toegekende benaming.</td>
+                        <td width="50%">De benaming van een door het gemeentebestuur aangewezen<br>woonplaats.</td>
                         <td width="10%">
                            Woonplaats
                            </td>
@@ -5153,9 +4942,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Antwoordnummer
                            </td>
-                        <td width="50%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                           object toegekende nadere toevoeging aan een huisnummer of een combinatie van huisnummer
-                           en huisletter.</td>
+                        <td width="50%">De numerieke aanduiding zoals deze door de PostNL is vastgesteld voor antwoordnummeradressen.</td>
                         <td width="10%">
                            Antwoordnummer
                            </td>
@@ -5166,9 +4953,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Postbusnummer
                            </td>
-                        <td width="50%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                           object toegekende nadere toevoeging aan een huisnummer of een combinatie van huisnummer
-                           en huisletter.</td>
+                        <td width="50%">De numerieke aanduiding zoals deze door de PostNL is vastgesteld voor postbusadressen.</td>
                         <td width="10%">
                            Postbusnummer
                            </td>
@@ -5179,8 +4964,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Adresregel buitenland 1
                            </td>
-                        <td width="50%">Het eerste deel van het adres in het buitenland dat het SUBJECT opgeeft bij vertrek
-                           naar het buitenland dan wel waar het SUBJECT in het buitenland verblijft.</td>
+                        <td width="50%">Eerste deel van het adres in het buitenland, met uitzondering van het land.</td>
                         <td width="10%">
                            Adresregel
                            </td>
@@ -5191,8 +4975,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Adresregel buitenland 2
                            </td>
-                        <td width="50%">Het tweede deel van het adres in het buitenland dat het SUBJECT opgeeft bij vertrek
-                           naar het buitenland dan wel waar het SUBJECT in het buitenland verblijft.</td>
+                        <td width="50%">Tweede deel van het adres in het buitenland, met uitzondering van het land.</td>
                         <td width="10%">
                            Adresregel
                            </td>
@@ -5203,8 +4986,7 @@ date: 14-04-2023
                         <td width="25%">- 
                            Adresregel buitenland 3
                            </td>
-                        <td width="50%">Het derde deel van het adres in het buitenland dat het SUBJECT opgeeft bij vertrek
-                           naar het buitenland dan wel waar het SUBJECT in het buitenland verblijft.</td>
+                        <td width="50%">Derde deel van het adres in het buitenland, met uitzondering van het land.</td>
                         <td width="10%">
                            Adresregel
                            </td>
@@ -5215,7 +4997,8 @@ date: 14-04-2023
                         <td width="25%">- 
                            Land
                            </td>
-                        <td width="50%">Het SUBJECT dat heeft aangegeven te (gaan) verblijven dan wel verblijft in het LAND</td>
+                        <td width="50%">Een code, opgenomen in Tabel 34, Landentabel, die het land (buiten Nederland) aangeeft
+                           alwaar de ingeschrevene verblijft. </td>
                         <td width="10%">
                            Land
                            </td>
@@ -5251,7 +5034,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Lengte</b></td>
@@ -5300,7 +5083,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">GBA</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
@@ -5312,7 +5095,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Lengte</b></td>
@@ -5373,7 +5156,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Lengte</b></td>
@@ -5422,7 +5205,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">GBA</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
@@ -5434,7 +5217,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Lengte</b></td>
@@ -5495,7 +5278,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Lengte</b></td>
@@ -5617,7 +5400,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Lengte</b></td>
@@ -5666,7 +5449,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">GBA</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
@@ -5678,7 +5461,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Lengte</b></td>
@@ -5739,7 +5522,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Lengte</b></td>
@@ -5800,7 +5583,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Lengte</b></td>
@@ -5849,7 +5632,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">GBA</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
@@ -5861,7 +5644,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Lengte</b></td>
@@ -5910,7 +5693,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">GBA</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
@@ -5922,7 +5705,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Lengte</b></td>
@@ -5983,7 +5766,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Lengte</b></td>
@@ -6044,7 +5827,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Lengte</b></td>
@@ -6105,7 +5888,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Lengte</b></td>
@@ -6166,7 +5949,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Lengte</b></td>
@@ -6202,7 +5985,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Lengte</b></td>
@@ -6251,7 +6034,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">GBA</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
@@ -6263,7 +6046,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Lengte</b></td>
@@ -6312,7 +6095,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">VNG</td>
+                        <td width="70%">GBA</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
@@ -6324,7 +6107,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Lengte</b></td>
@@ -6385,7 +6168,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Lengte</b></td>
@@ -6446,7 +6229,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Lengte</b></td>
@@ -6507,7 +6290,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">20230216</td>
+                        <td width="70%">16-02-2023</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Lengte</b></td>
@@ -6738,7 +6521,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -6746,27 +6529,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klentinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -6775,10 +6546,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -6816,7 +6583,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -6825,27 +6592,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -6854,10 +6609,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -6895,7 +6646,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -6903,27 +6654,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -6932,10 +6671,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -6973,7 +6708,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -6981,27 +6716,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -7010,10 +6733,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -7051,7 +6770,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -7059,27 +6778,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -7088,10 +6795,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -7129,7 +6832,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -7138,27 +6841,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -7167,10 +6858,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -7208,7 +6895,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -7217,27 +6904,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -7246,10 +6921,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -7287,7 +6958,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -7295,27 +6966,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -7324,10 +6983,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -7365,7 +7020,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -7374,27 +7029,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -7403,10 +7046,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -7450,7 +7089,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -7458,11 +7097,11 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
@@ -7513,7 +7152,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -7521,11 +7160,11 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
@@ -7576,7 +7215,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -7584,11 +7223,11 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">08-07-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
@@ -7639,7 +7278,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -7647,11 +7286,11 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">08-07-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
@@ -7699,7 +7338,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -7707,27 +7346,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -7736,10 +7363,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -7777,7 +7400,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -7786,27 +7409,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -7815,10 +7426,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -7856,7 +7463,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -7864,27 +7471,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -7893,10 +7488,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -7935,7 +7526,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -7943,11 +7534,11 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
@@ -8007,7 +7598,7 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">Klantinteracties</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
@@ -8015,27 +7606,15 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">Klantinteracties</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -8044,10 +7623,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -8085,7 +7660,7 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">Klantinteracties</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
@@ -8094,27 +7669,15 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">Klantinteracties</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -8123,10 +7686,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -8164,35 +7723,23 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">Klantinteracties</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%"> </td>
+                                 <td width="70%">Een achternaam die de persoon wil gebruiken tijdens communicatie met de gemeente.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">Klantinteracties</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -8201,10 +7748,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -8244,7 +7787,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -8252,11 +7795,11 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
@@ -8316,7 +7859,7 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">Klantinteracties</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
@@ -8325,27 +7868,15 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">Klantinteracties</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -8354,10 +7885,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -8395,35 +7922,23 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">De offici&amp;#235;le straatnaam zoals door het bevoegd gemeentelijk orgaan is vastgesteld.</td>
+                                 <td width="70%">De naam die aan een openbare ruimte is toegekend in een<br>daartoe strekkend formeel gemeentelijk besluit.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -8432,10 +7947,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -8473,36 +7984,23 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                                    object toegekende nummering.</td>
+                                 <td width="70%">Een door of namens het gemeentebestuur ten aanzien van een<br>adresseerbaar object toegekende nummering.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -8511,10 +8009,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -8552,37 +8046,23 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                                    object toegekende nadere toevoeging aan een huisnummer of een combinatie van huisnummer
-                                    en huisletter.</td>
+                                 <td width="70%">Een door of namens het gemeentebestuur ten aanzien van een<br>adresseerbaar object toegekende nadere toevoeging aan een<br>huisnummer of een combinatie van huisnummer en huisleter.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -8591,10 +8071,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -8632,36 +8108,24 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                                    object toegekende toevoeging aan een huisnummer in de vorm van een alfanumeriek teken.</td>
+                                 <td width="70%">Een alfabetisch teken achter het huisnummer zoals dit door het<br>gemeentebestuur is toegekend dan wel een door of namens het bevoegde gemeentelijke
+                                    orgaan ten aanzien van een adresseerbaar object toegekend</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -8670,10 +8134,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -8711,37 +8171,24 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BRP</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">De aanduiding die wordt gebruikt voor adressen die niet zijn voorzien van gebruikelijke
-                                    straat- en huisnummeraanduidingen Toelichting: Deze aanduiding wordt gebruikt bij
-                                    bijvoorbeeld woonboten of woonwagens.</td>
+                                 <td width="70%">De aanduiding die wordt gebruikt voor adressen die niet zijn voorzien van de gebruikelijke
+                                    straatnaam en huisnummeraanduidingen.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BRP</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -8750,10 +8197,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -8791,36 +8234,23 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">De door PostNL vastgestelde code behorende bij een bepaalde combinatie van een naam
-                                    van een woonplaats, naam van een openbare ruimte en een huisnummer</td>
+                                 <td width="70%">De door PostNL vastgestelde code behorende bij een bepaalde<br>combinatie van een straatnaam en een huisnummer.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -8829,10 +8259,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -8870,35 +8296,23 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">De door het bevoegde gemeentelijke orgaan aan een Woonplaats toegekende benaming.</td>
+                                 <td width="70%">De benaming van een door het gemeentebestuur aangewezen<br>woonplaats.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -8907,10 +8321,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -8948,37 +8358,23 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">Afgeleid van RSGB</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                                    object toegekende nadere toevoeging aan een huisnummer of een combinatie van huisnummer
-                                    en huisletter.</td>
+                                 <td width="70%">De numerieke aanduiding zoals deze door de PostNL is vastgesteld voor antwoordnummeradressen.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">Afgeleid van RSGB</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -8987,10 +8383,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -9028,37 +8420,23 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">Afgeleid van RSGB</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                                    object toegekende nadere toevoeging aan een huisnummer of een combinatie van huisnummer
-                                    en huisletter.</td>
+                                 <td width="70%">De numerieke aanduiding zoals deze door de PostNL is vastgesteld voor postbusadressen.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">Afgeleid van RSGB</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -9067,10 +8445,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -9108,36 +8482,23 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BRP</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Het eerste deel van het adres in het buitenland dat het SUBJECT opgeeft bij vertrek
-                                    naar het buitenland dan wel waar het SUBJECT in het buitenland verblijft.</td>
+                                 <td width="70%">Eerste deel van het adres in het buitenland, met uitzondering van het land.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BRP</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -9146,10 +8507,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -9187,36 +8544,23 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BRP</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Het tweede deel van het adres in het buitenland dat het SUBJECT opgeeft bij vertrek
-                                    naar het buitenland dan wel waar het SUBJECT in het buitenland verblijft.</td>
+                                 <td width="70%">Tweede deel van het adres in het buitenland, met uitzondering van het land.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BRP</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -9225,10 +8569,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -9266,36 +8606,23 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BRP</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Het derde deel van het adres in het buitenland dat het SUBJECT opgeeft bij vertrek
-                                    naar het buitenland dan wel waar het SUBJECT in het buitenland verblijft.</td>
+                                 <td width="70%">Derde deel van het adres in het buitenland, met uitzondering van het land.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BRP</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">202316</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -9304,10 +8631,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -9345,35 +8668,24 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Het SUBJECT dat heeft aangegeven te (gaan) verblijven dan wel verblijft in het LAND</td>
+                                 <td width="70%">Een code, opgenomen in Tabel 34, Landentabel, die het land (buiten Nederland) aangeeft
+                                    alwaar de ingeschrevene verblijft. </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -9382,10 +8694,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -9425,7 +8733,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -9433,11 +8741,11 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
@@ -9497,7 +8805,7 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">Klantinteracties</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
@@ -9505,27 +8813,15 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">Klantinteracties</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -9534,10 +8830,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -9575,35 +8867,23 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">De offici&amp;#235;le straatnaam zoals door het bevoegd gemeentelijk orgaan is vastgesteld.</td>
+                                 <td width="70%">De naam die aan een openbare ruimte is toegekend in een<br>daartoe strekkend formeel gemeentelijk besluit.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -9612,10 +8892,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -9653,36 +8929,23 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                                    object toegekende nummering.</td>
+                                 <td width="70%">Een door of namens het gemeentebestuur ten aanzien van een<br>adresseerbaar object toegekende nummering.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -9691,10 +8954,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -9732,37 +8991,23 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                                    object toegekende nadere toevoeging aan een huisnummer of een combinatie van huisnummer
-                                    en huisletter.</td>
+                                 <td width="70%">Een door of namens het gemeentebestuur ten aanzien van een<br>adresseerbaar object toegekende nadere toevoeging aan een<br>huisnummer of een combinatie van huisnummer en huisleter.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -9771,10 +9016,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -9812,36 +9053,24 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                                    object toegekende toevoeging aan een huisnummer in de vorm van een alfanumeriek teken.</td>
+                                 <td width="70%">Een alfabetisch teken achter het huisnummer zoals dit door het<br>gemeentebestuur is toegekend dan wel een door of namens het bevoegde gemeentelijke
+                                    orgaan ten aanzien van een adresseerbaar object toegekend</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -9850,10 +9079,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -9891,37 +9116,24 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BRP</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">De aanduiding die wordt gebruikt voor adressen die niet zijn voorzien van gebruikelijke
-                                    straat- en huisnummeraanduidingen Toelichting: Deze aanduiding wordt gebruikt bij
-                                    bijvoorbeeld woonboten of woonwagens.</td>
+                                 <td width="70%">De aanduiding die wordt gebruikt voor adressen die niet zijn voorzien van de gebruikelijke
+                                    straatnaam en huisnummeraanduidingen.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BRP</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -9930,10 +9142,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -9971,35 +9179,23 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">De postcode van het bezoekadres.</td>
+                                 <td width="70%">De door PostNL vastgestelde code behorende bij een bepaalde<br>combinatie van een straatnaam en een huisnummer.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -10008,10 +9204,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -10049,35 +9241,23 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">De woonplaats die onderdeel is van het bezoekadres</td>
+                                 <td width="70%">De benaming van een door het gemeentebestuur aangewezen<br>woonplaats.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -10086,10 +9266,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -10127,36 +9303,23 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BRP</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Het eerste deel van het adres in het buitenland dat het SUBJECT opgeeft bij vertrek
-                                    naar het buitenland dan wel waar het SUBJECT in het buitenland verblijft.</td>
+                                 <td width="70%">Eerste deel van het adres in het buitenland, met uitzondering van het land.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BRP</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -10165,10 +9328,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -10206,36 +9365,23 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BRP</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Het tweede deel van het adres in het buitenland dat het SUBJECT opgeeft bij vertrek
-                                    naar het buitenland dan wel waar het SUBJECT in het buitenland verblijft.</td>
+                                 <td width="70%">Tweede deel van het adres in het buitenland, met uitzondering van het land.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BRP</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -10244,10 +9390,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -10285,36 +9427,23 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BRP</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Het derde deel van het adres in het buitenland dat het SUBJECT opgeeft bij vertrek
-                                    naar het buitenland dan wel waar het SUBJECT in het buitenland verblijft.</td>
+                                 <td width="70%">Derde deel van het adres in het buitenland, met uitzondering van het land.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BRP</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">202316</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -10323,10 +9452,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -10364,35 +9489,24 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Het SUBJECT dat heeft aangegeven te (gaan) verblijven dan wel verblijft in het LAND</td>
+                                 <td width="70%">Een code, opgenomen in Tabel 34, Landentabel, die het land (buiten Nederland) aangeeft
+                                    alwaar de ingeschrevene verblijft. </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -10401,10 +9515,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -10449,7 +9559,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -10457,11 +9567,11 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
@@ -10512,7 +9622,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -10520,11 +9630,11 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
@@ -10560,9 +9670,9 @@ date: 14-04-2023
                      </div>
                   </div>
                
-               <div><a class="anchor" name="detail_class_Model_OverigObjectnoguittewerken"></a><h3> Overig Object (nog uit te werken)</h3>
+               <div><a class="anchor" name="detail_class_Model_OverigObject"></a><h3> Overig Object</h3>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_OverigObjectnoguittewerken_ID"></a><h4>Attribuutsoort details ID</h4>
+                  <div><a class="anchor" name="detail_attribute_Model_OverigObject_ID"></a><h4>Attribuutsoort details ID</h4>
                      
                      <table>
                         <tbody>
@@ -10572,36 +9682,23 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">RGBZ</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De typering van het digitale adres waarmee bepaald kan worden op welk kanaal dit digitale
-                                 adres valide is. </td>
+                              <td width="70%">Unieke identificatie van het Overig Object.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">RGBZ</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -10610,10 +9707,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -10654,7 +9747,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -10662,27 +9755,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -10691,10 +9772,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -10735,7 +9812,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -10743,7 +9820,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
@@ -10754,28 +9831,12 @@ date: 14-04-2023
                               <td width="70%">Nee</td>
                            </tr>
                            <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
                               <td width="70%">1</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -10813,7 +9874,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -10822,7 +9883,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
@@ -10833,28 +9894,12 @@ date: 14-04-2023
                               <td width="70%">Nee</td>
                            </tr>
                            <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
                               <td width="70%">1</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -10892,7 +9937,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -10900,27 +9945,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">08-06-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -10929,10 +9962,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -10970,7 +9999,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -10979,27 +10008,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -11010,12 +10027,8 @@ date: 14-04-2023
                               <td width="70%">Authentiek</td>
                            </tr>
                            <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
                               <td width="30%"><b>Lengte</b></td>
-                              <td width="70%">20</td>
+                              <td width="70%">36</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Formaat</b></td>
@@ -11049,7 +10062,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -11058,27 +10071,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -11087,10 +10088,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -11134,7 +10131,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -11142,11 +10139,11 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">08-07-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
@@ -11197,7 +10194,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -11205,11 +10202,11 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">08-07-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
@@ -11260,7 +10257,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -11268,11 +10265,11 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">08-07-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
@@ -11323,7 +10320,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -11331,11 +10328,11 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">08-07-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
@@ -11383,7 +10380,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -11391,27 +10388,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -11420,10 +10405,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -11461,7 +10442,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -11470,27 +10451,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -11499,10 +10468,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -11541,7 +10506,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -11549,11 +10514,11 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
@@ -11613,7 +10578,7 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">Klantinteracties</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
@@ -11621,27 +10586,15 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">Klantinteracties</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -11650,10 +10603,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -11691,35 +10640,23 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">De offici&amp;#235;le straatnaam zoals door het bevoegd gemeentelijk orgaan is vastgesteld.</td>
+                                 <td width="70%">De naam die aan een openbare ruimte is toegekend in een<br>daartoe strekkend formeel gemeentelijk besluit.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -11728,10 +10665,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -11769,36 +10702,23 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                                    object toegekende nummering.</td>
+                                 <td width="70%">Een door of namens het gemeentebestuur ten aanzien van een<br>adresseerbaar object toegekende nummering.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -11807,10 +10727,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -11848,37 +10764,23 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                                    object toegekende nadere toevoeging aan een huisnummer of een combinatie van huisnummer
-                                    en huisletter.</td>
+                                 <td width="70%">Een door of namens het gemeentebestuur ten aanzien van een<br>adresseerbaar object toegekende nadere toevoeging aan een<br>huisnummer of een combinatie van huisnummer en huisleter.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -11887,10 +10789,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -11928,36 +10826,24 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                                    object toegekende toevoeging aan een huisnummer in de vorm van een alfanumeriek teken.</td>
+                                 <td width="70%">Een alfabetisch teken achter het huisnummer zoals dit door het<br>gemeentebestuur is toegekend dan wel een door of namens het bevoegde gemeentelijke
+                                    orgaan ten aanzien van een adresseerbaar object toegekend</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -11966,10 +10852,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -12007,37 +10889,24 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BRP</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">De aanduiding die wordt gebruikt voor adressen die niet zijn voorzien van gebruikelijke
-                                    straat- en huisnummeraanduidingen Toelichting: Deze aanduiding wordt gebruikt bij
-                                    bijvoorbeeld woonboten of woonwagens.</td>
+                                 <td width="70%">De aanduiding die wordt gebruikt voor adressen die niet zijn voorzien van de gebruikelijke
+                                    straatnaam en huisnummeraanduidingen.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BRP</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -12046,10 +10915,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -12087,35 +10952,23 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">De postcode van het bezoekadres.</td>
+                                 <td width="70%">De door PostNL vastgestelde code behorende bij een bepaalde<br>combinatie van een straatnaam en een huisnummer.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -12124,10 +10977,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -12165,35 +11014,23 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">De woonplaats die onderdeel is van het bezoekadres</td>
+                                 <td width="70%">De benaming van een door het gemeentebestuur aangewezen<br>woonplaats.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -12202,10 +11039,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -12243,36 +11076,23 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BRP</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Het eerste deel van het adres in het buitenland dat het SUBJECT opgeeft bij vertrek
-                                    naar het buitenland dan wel waar het SUBJECT in het buitenland verblijft.</td>
+                                 <td width="70%">Eerste deel van het adres in het buitenland, met uitzondering van het land.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BRP</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -12281,10 +11101,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -12322,36 +11138,23 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BRP</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Het tweede deel van het adres in het buitenland dat het SUBJECT opgeeft bij vertrek
-                                    naar het buitenland dan wel waar het SUBJECT in het buitenland verblijft.</td>
+                                 <td width="70%">Tweede deel van het adres in het buitenland, met uitzondering van het land.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BRP</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -12360,10 +11163,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -12401,36 +11200,23 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BRP</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Het derde deel van het adres in het buitenland dat het SUBJECT opgeeft bij vertrek
-                                    naar het buitenland dan wel waar het SUBJECT in het buitenland verblijft.</td>
+                                 <td width="70%">Derde deel van het adres in het buitenland, met uitzondering van het land.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BRP</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">202316</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -12439,10 +11225,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -12480,35 +11262,24 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Het SUBJECT dat heeft aangegeven te (gaan) verblijven dan wel verblijft in het LAND</td>
+                                 <td width="70%">Een code, opgenomen in Tabel 34, Landentabel, die het land (buiten Nederland) aangeeft
+                                    alwaar de ingeschrevene verblijft. </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -12517,10 +11288,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -12572,7 +11339,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
@@ -12632,7 +11399,7 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">Klantinteracties</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
@@ -12641,27 +11408,15 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">Klantinteracties</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -12670,10 +11425,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -12711,35 +11462,23 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">De offici&amp;#235;le straatnaam zoals door het bevoegd gemeentelijk orgaan is vastgesteld.</td>
+                                 <td width="70%">De naam die aan een openbare ruimte is toegekend in een<br>daartoe strekkend formeel gemeentelijk besluit.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -12748,10 +11487,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -12789,36 +11524,23 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                                    object toegekende nummering.</td>
+                                 <td width="70%">Een door of namens het gemeentebestuur ten aanzien van een<br>adresseerbaar object toegekende nummering.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -12827,10 +11549,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -12868,37 +11586,23 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                                    object toegekende nadere toevoeging aan een huisnummer of een combinatie van huisnummer
-                                    en huisletter.</td>
+                                 <td width="70%">Een door of namens het gemeentebestuur ten aanzien van een<br>adresseerbaar object toegekende nadere toevoeging aan een<br>huisnummer of een combinatie van huisnummer en huisleter.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -12907,10 +11611,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -12948,36 +11648,24 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                                    object toegekende toevoeging aan een huisnummer in de vorm van een alfanumeriek teken.</td>
+                                 <td width="70%">Een alfabetisch teken achter het huisnummer zoals dit door het<br>gemeentebestuur is toegekend dan wel een door of namens het bevoegde gemeentelijke
+                                    orgaan ten aanzien van een adresseerbaar object toegekend</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -12986,10 +11674,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -13027,37 +11711,24 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BRP</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">De aanduiding die wordt gebruikt voor adressen die niet zijn voorzien van gebruikelijke
-                                    straat- en huisnummeraanduidingen Toelichting: Deze aanduiding wordt gebruikt bij
-                                    bijvoorbeeld woonboten of woonwagens.</td>
+                                 <td width="70%">De aanduiding die wordt gebruikt voor adressen die niet zijn voorzien van de gebruikelijke
+                                    straatnaam en huisnummeraanduidingen.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BRP</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -13066,10 +11737,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -13107,36 +11774,23 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">De door PostNL vastgestelde code behorende bij een bepaalde combinatie van een naam
-                                    van een woonplaats, naam van een openbare ruimte en een huisnummer</td>
+                                 <td width="70%">De door PostNL vastgestelde code behorende bij een bepaalde<br>combinatie van een straatnaam en een huisnummer.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -13145,10 +11799,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -13186,35 +11836,23 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">De door het bevoegde gemeentelijke orgaan aan een Woonplaats toegekende benaming.</td>
+                                 <td width="70%">De benaming van een door het gemeentebestuur aangewezen<br>woonplaats.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -13223,10 +11861,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -13264,37 +11898,23 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">Afgeleid van RSGB</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                                    object toegekende nadere toevoeging aan een huisnummer of een combinatie van huisnummer
-                                    en huisletter.</td>
+                                 <td width="70%">De numerieke aanduiding zoals deze door de PostNL is vastgesteld voor antwoordnummeradressen.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">Afgeleid van RSGB</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -13303,10 +11923,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -13344,37 +11960,23 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">Afgeleid van RSGB</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                                    object toegekende nadere toevoeging aan een huisnummer of een combinatie van huisnummer
-                                    en huisletter.</td>
+                                 <td width="70%">De numerieke aanduiding zoals deze door de PostNL is vastgesteld voor postbusadressen.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">Afgeleid van RSGB</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -13383,10 +11985,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -13424,36 +12022,23 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BRP</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Het eerste deel van het adres in het buitenland dat het SUBJECT opgeeft bij vertrek
-                                    naar het buitenland dan wel waar het SUBJECT in het buitenland verblijft.</td>
+                                 <td width="70%">Eerste deel van het adres in het buitenland, met uitzondering van het land.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BRP</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -13462,10 +12047,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -13503,36 +12084,23 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BRP</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Het tweede deel van het adres in het buitenland dat het SUBJECT opgeeft bij vertrek
-                                    naar het buitenland dan wel waar het SUBJECT in het buitenland verblijft.</td>
+                                 <td width="70%">Tweede deel van het adres in het buitenland, met uitzondering van het land.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BRP</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -13541,10 +12109,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -13582,36 +12146,23 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BRP</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Het derde deel van het adres in het buitenland dat het SUBJECT opgeeft bij vertrek
-                                    naar het buitenland dan wel waar het SUBJECT in het buitenland verblijft.</td>
+                                 <td width="70%">Derde deel van het adres in het buitenland, met uitzondering van het land.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BRP</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">202316</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -13620,10 +12171,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -13661,35 +12208,24 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Het SUBJECT dat heeft aangegeven te (gaan) verblijven dan wel verblijft in het LAND</td>
+                                 <td width="70%">Een code, opgenomen in Tabel 34, Landentabel, die het land (buiten Nederland) aangeeft
+                                    alwaar de ingeschrevene verblijft. </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">BAG</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -13698,10 +12234,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -13740,7 +12272,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">CNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -13749,27 +12281,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -13778,10 +12298,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -13819,7 +12335,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -13827,7 +12343,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
@@ -13838,28 +12354,12 @@ date: 14-04-2023
                               <td width="70%">Nee</td>
                            </tr>
                            <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
                               <td width="70%">1</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -13897,7 +12397,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -13906,27 +12406,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -13935,10 +12423,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -13976,7 +12460,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -13984,27 +12468,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -14013,10 +12485,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -14054,7 +12522,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -14062,27 +12530,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -14091,10 +12547,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -14138,7 +12590,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klaninteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -14146,11 +12598,11 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klaninteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">08-07-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
@@ -14201,7 +12653,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -14209,11 +12661,11 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">08-07-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
@@ -14264,7 +12716,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -14272,11 +12724,11 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">08-07-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
@@ -14324,7 +12776,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -14332,27 +12784,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -14363,12 +12803,8 @@ date: 14-04-2023
                               <td width="70%">Authentiek</td>
                            </tr>
                            <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
                               <td width="30%"><b>Lengte</b></td>
-                              <td width="70%">254</td>
+                              <td width="70%">36</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Formaat</b></td>
@@ -14402,7 +12838,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -14410,27 +12846,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -14439,10 +12863,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -14480,7 +12900,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -14489,7 +12909,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
@@ -14500,28 +12920,12 @@ date: 14-04-2023
                               <td width="70%">Nee</td>
                            </tr>
                            <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
                               <td width="70%">1</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -14559,7 +12963,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -14568,27 +12972,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -14597,10 +12989,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -14662,7 +13050,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -14671,27 +13059,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -14702,12 +13078,8 @@ date: 14-04-2023
                               <td width="70%">Authentiek</td>
                            </tr>
                            <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
                               <td width="30%"><b>Lengte</b></td>
-                              <td width="70%">20</td>
+                              <td width="70%">36</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Formaat</b></td>
@@ -14741,7 +13113,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -14750,27 +13122,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -14779,10 +13139,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -14826,7 +13182,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -14834,11 +13190,11 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">08-07-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
@@ -14884,12 +13240,12 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Gerelateerd objecttype</b></td>
                               <td width="70%">
-                                 Overig Object (nog uit te werken)
+                                 Overig Object
                                  </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -14897,11 +13253,11 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">08-07-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
@@ -14952,7 +13308,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -14960,11 +13316,11 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">08-07-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
@@ -15085,7 +13441,7 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">Klantinteracties</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
@@ -15093,27 +13449,15 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">Klantinteracties</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -15122,10 +13466,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -15163,7 +13503,7 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">Klantinteracties</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
@@ -15172,27 +13512,15 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">Klantinteracties</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -15201,10 +13529,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -15242,35 +13566,23 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">Klantinteracties</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%"> </td>
+                                 <td width="70%">Een achternaam die de persoon wil gebruiken tijdens communicatie met de gemeente.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">Klantinteracties</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -15279,10 +13591,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -15321,7 +13629,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -15330,7 +13638,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
@@ -15341,28 +13649,12 @@ date: 14-04-2023
                               <td width="70%">Nee</td>
                            </tr>
                            <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
                               <td width="70%">0 .. 1</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -15406,7 +13698,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -15414,11 +13706,11 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">08-07-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
@@ -15467,7 +13759,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -15475,11 +13767,11 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">1 mei 2016</td>
+                              <td width="70%">08-07-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
@@ -15539,7 +13831,7 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">Klantinteracties</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
@@ -15547,27 +13839,15 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">Klantinteracties</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -15576,10 +13856,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -15617,7 +13893,7 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">Klantinteracties</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
@@ -15626,27 +13902,15 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">Klantinteracties</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -15655,10 +13919,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -15696,35 +13956,23 @@ date: 14-04-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">Klantinteracties</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%"> </td>
+                                 <td width="70%">Een achternaam die de persoon wil gebruiken tijdens communicatie met de gemeente.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">VNG</td>
+                                 <td width="70%">Klantinteracties</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">20230216</td>
+                                 <td width="70%">16-02-2023</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Mogelijk geen waarde</b></td>
                                  <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie formele historie</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie in onderzoek</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -15733,10 +13981,6 @@ date: 14-04-2023
                               <tr>
                                  <td width="30%"><b>Indicatie authentiek</b></td>
                                  <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Regels</b></td>
-                                 <td width="70%"> </td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Lengte</b></td>
@@ -15782,8 +14026,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De typering van het digitale adres waarmee bepaald kan worden op welk kanaal dit digitale
-                                 adres valide is. </td>
+                              <td width="70%">Unieke identificatie van het Ander Object</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -15798,28 +14041,12 @@ date: 14-04-2023
                               <td width="70%">Nee</td>
                            </tr>
                            <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
                               <td width="70%">1</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -15860,7 +14087,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -15868,27 +14095,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -15897,10 +14112,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -15938,7 +14149,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -15947,27 +14158,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -15976,10 +14175,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -16017,7 +14212,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -16025,27 +14220,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -16054,10 +14237,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -16095,7 +14274,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -16103,27 +14282,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -16132,10 +14299,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -16173,7 +14336,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -16182,7 +14345,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
@@ -16193,28 +14356,12 @@ date: 14-04-2023
                               <td width="70%">Nee</td>
                            </tr>
                            <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
                               <td width="70%">1</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -16255,35 +14402,24 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">RGBZ</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De functie van de medewerker.</td>
+                              <td width="70%">De aanduiding van de taken, rechten en plichten die de MEDEWERKER heeft of heeft gehad
+                                 binnen de zaakbehandelende organisatie.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">RGBZ</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -16292,10 +14428,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -16333,35 +14465,23 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">RGBZ</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Het e-mailadres van de medewerker.</td>
+                              <td width="70%">Elektronisch postadres waaronder de MEDEWERKER in de regel bereikbaar is.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">RGBZ</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -16370,10 +14490,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -16411,35 +14527,23 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">RGBZ</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Het telefoonnummer van de medewerker.</td>
+                              <td width="70%">Telefoonnummer waaronder de MEDEWERKER in de regel bereikbaar is.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">RGBZ</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -16448,10 +14552,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -16489,7 +14589,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -16497,27 +14597,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -16526,10 +14614,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -16567,7 +14651,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -16576,27 +14660,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -16607,12 +14679,8 @@ date: 14-04-2023
                               <td width="70%">Authentiek</td>
                            </tr>
                            <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
                               <td width="30%"><b>Lengte</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">36</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Formaat</b></td>
@@ -16649,7 +14717,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -16657,27 +14725,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -16686,10 +14742,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -16727,7 +14779,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -16735,27 +14787,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -16764,10 +14804,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -16808,7 +14844,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">RGBZ</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -16816,27 +14852,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">RGBZ</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -16845,10 +14869,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -16889,7 +14909,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">CNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -16897,27 +14917,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -16926,10 +14934,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -16967,7 +14971,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -16975,7 +14979,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
@@ -16986,28 +14990,12 @@ date: 14-04-2023
                               <td width="70%">Nee</td>
                            </tr>
                            <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
                               <td width="70%">1</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -17045,7 +15033,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -17054,7 +15042,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
@@ -17065,28 +15053,12 @@ date: 14-04-2023
                               <td width="70%">Nee</td>
                            </tr>
                            <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
                               <td width="70%">1</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -17124,7 +15096,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -17132,27 +15104,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -17161,10 +15121,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -17205,7 +15161,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">GFO Zaken 2004</td>
+                              <td width="70%">RGBZ</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -17213,26 +15169,14 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">GFO Zaken 2004</td>
+                              <td width="70%">RGBZ</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">1 juni 2008</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
                               <td width="70%">Nee</td>
                            </tr>
                            <tr>
@@ -17242,10 +15186,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%">-</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -17283,34 +15223,23 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">GFO Zaken 2004</td>
+                              <td width="70%">RGBZ</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Het e-mailadres van de organisatorische eenheid.</td>
+                              <td width="70%">Elektronisch postadres waaronder de organisatorische eenheid in de regel bereikbaar
+                                 is. </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">GFO Zaken 2004</td>
+                              <td width="70%">RGBZ</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">1 juni 2008</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
                               <td width="70%">Nee</td>
                            </tr>
                            <tr>
@@ -17320,10 +15249,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%">-</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -17378,34 +15303,22 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">GFO Zaken 2004</td>
+                              <td width="70%">RGBZ</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Het faxnummer van de organisatorische eenheid.</td>
+                              <td width="70%">Faxnummer waaronder de organisatorische eenheid in de regel bereikbaar is.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">GFO Zaken 2004</td>
+                              <td width="70%">RGBZ</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">1 juni 2008</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
                               <td width="70%">Nee</td>
                            </tr>
                            <tr>
@@ -17415,10 +15328,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%">-</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -17474,34 +15383,22 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">GFO Zaken 2004</td>
+                              <td width="70%">RGBZ</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Het telefoonnummer van de organisatorische eenheid.</td>
+                              <td width="70%">Telefoonnummer waaronder de organisatorische eenheid in de regel bereikbaar is.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">GFO Zaken 2004</td>
+                              <td width="70%">RGBZ</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">1 juni 2008</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
                               <td width="70%">Nee</td>
                            </tr>
                            <tr>
@@ -17511,10 +15408,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%">-</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -17570,7 +15463,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -17578,27 +15471,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -17607,10 +15488,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -17648,7 +15525,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -17657,27 +15534,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -17688,12 +15553,8 @@ date: 14-04-2023
                               <td width="70%">Authentiek</td>
                            </tr>
                            <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
                               <td width="30%"><b>Lengte</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">36</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Formaat</b></td>
@@ -17730,7 +15591,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -17738,27 +15599,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -17767,10 +15616,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -17808,7 +15653,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -17817,27 +15662,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -17846,10 +15679,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -17887,7 +15716,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -17895,27 +15724,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -17924,10 +15741,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -17965,7 +15778,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -17973,27 +15786,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -18002,10 +15803,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -18043,7 +15840,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -18052,27 +15849,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -18081,10 +15866,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -18122,7 +15903,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -18130,27 +15911,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -18159,10 +15928,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -18206,7 +15971,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -18214,11 +15979,11 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">08-07-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
@@ -18269,7 +16034,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -18277,11 +16042,11 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">08-07-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
@@ -18341,23 +16106,11 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -18366,10 +16119,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -18420,23 +16169,11 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -18445,10 +16182,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -18498,23 +16231,11 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -18523,10 +16244,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -18577,23 +16294,11 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -18602,10 +16307,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -18655,23 +16356,11 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -18680,10 +16369,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -18733,23 +16418,11 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -18758,10 +16431,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -18802,35 +16471,24 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">RGBZ</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Unieke identificatie van een Zaak.</td>
+                              <td width="70%">De unieke identificatie van de ZAAK binnen de organisatie die verantwoordelijk is
+                                 voor de behandeling van de ZAAK.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">RGBZ</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -18839,10 +16497,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -18883,15 +16537,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De unike identificatie van de externe identificatie</td>
+                              <td width="70%">De unieke identificatie van de externe identificatie</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
@@ -18902,28 +16556,12 @@ date: 14-04-2023
                               <td width="70%">Nee</td>
                            </tr>
                            <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
                               <td width="70%">1</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -18961,36 +16599,24 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Identificatiecode waarmee de (contact)persoon of partij in een extern (bron)register
-                                 uniek ge&amp;#239;dentificeerd kan worden.</td>
+                              <td width="70%">De identificatiecode waarmee een partij in een extern (bron)register uniek ge&amp;#239;dentificeerd
+                                 kan worden.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -18998,11 +16624,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
-                              <td width="70%">Overig</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Authentiek</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -19016,32 +16638,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Patroon</b></td>
-                              <td width="70%">De verzameling van waarden die gegevens van dit attribuutsoort kunnen hebben, dat
-                                 wil zeggen het waardenbereik, uitgedrukt in een specifieke structuur.</td>
+                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie afleidbaar</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Zie package</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Waarde afleidbaar</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     
-                     <table>
-                        <tbody>
-                           <tr>
-                              <td width="30%"><b>Toelichting</b></td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     <table>
-                        <tbody>
-                           <tr>
-                              <td width="5%">&nbsp;</td>
-                              <td width="95%">Een inhoudelijke toelichting op de toepassing van het informatie-element.</td>
                            </tr>
                         </tbody>
                      </table>
@@ -19057,7 +16662,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -19065,7 +16670,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
@@ -19076,28 +16681,12 @@ date: 14-04-2023
                               <td width="70%">Nee</td>
                            </tr>
                            <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
                               <td width="70%">1</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Overig</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -19152,7 +16741,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -19161,7 +16750,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
@@ -19172,28 +16761,12 @@ date: 14-04-2023
                               <td width="70%">Nee</td>
                            </tr>
                            <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
                               <td width="70%">0 .. 1</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -19238,7 +16811,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -19246,27 +16819,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -19275,10 +16836,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -19316,35 +16873,23 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BAG</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De offici&amp;#235;le straatnaam zoals door het bevoegd gemeentelijk orgaan is vastgesteld.</td>
+                              <td width="70%">De naam die aan een openbare ruimte is toegekend in een<br>daartoe strekkend formeel gemeentelijk besluit.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BAG</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -19353,10 +16898,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -19394,36 +16935,23 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BAG</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                                 object toegekende nummering.</td>
+                              <td width="70%">Een door of namens het gemeentebestuur ten aanzien van een<br>adresseerbaar object toegekende nummering.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BAG</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -19432,10 +16960,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -19473,37 +16997,23 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BAG</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                                 object toegekende nadere toevoeging aan een huisnummer of een combinatie van huisnummer
-                                 en huisletter.</td>
+                              <td width="70%">Een door of namens het gemeentebestuur ten aanzien van een<br>adresseerbaar object toegekende nadere toevoeging aan een<br>huisnummer of een combinatie van huisnummer en huisleter.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BAG</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -19512,10 +17022,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -19553,36 +17059,24 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BAG</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                                 object toegekende toevoeging aan een huisnummer in de vorm van een alfanumeriek teken.</td>
+                              <td width="70%">Een alfabetisch teken achter het huisnummer zoals dit door het<br>gemeentebestuur is toegekend dan wel een door of namens het bevoegde gemeentelijke
+                                 orgaan ten aanzien van een adresseerbaar object toegekend</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BAG</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -19591,10 +17085,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -19632,37 +17122,24 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BRP</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De aanduiding die wordt gebruikt voor adressen die niet zijn voorzien van gebruikelijke
-                                 straat- en huisnummeraanduidingen Toelichting: Deze aanduiding wordt gebruikt bij
-                                 bijvoorbeeld woonboten of woonwagens.</td>
+                              <td width="70%">De aanduiding die wordt gebruikt voor adressen die niet zijn voorzien van de gebruikelijke
+                                 straatnaam en huisnummeraanduidingen.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BRP</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -19671,10 +17148,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -19712,35 +17185,23 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BAG</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De postcode van het bezoekadres.</td>
+                              <td width="70%">De door PostNL vastgestelde code behorende bij een bepaalde<br>combinatie van een straatnaam en een huisnummer.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BAG</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -19749,10 +17210,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -19790,35 +17247,23 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BAG</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De woonplaats die onderdeel is van het bezoekadres</td>
+                              <td width="70%">De benaming van een door het gemeentebestuur aangewezen<br>woonplaats.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BAG</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -19827,10 +17272,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -19868,36 +17309,23 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BRP</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Het eerste deel van het adres in het buitenland dat het SUBJECT opgeeft bij vertrek
-                                 naar het buitenland dan wel waar het SUBJECT in het buitenland verblijft.</td>
+                              <td width="70%">Eerste deel van het adres in het buitenland, met uitzondering van het land.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BRP</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -19906,10 +17334,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -19947,36 +17371,23 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BRP</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Het tweede deel van het adres in het buitenland dat het SUBJECT opgeeft bij vertrek
-                                 naar het buitenland dan wel waar het SUBJECT in het buitenland verblijft.</td>
+                              <td width="70%">Tweede deel van het adres in het buitenland, met uitzondering van het land.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BRP</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -19985,10 +17396,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -20026,36 +17433,23 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BRP</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Het derde deel van het adres in het buitenland dat het SUBJECT opgeeft bij vertrek
-                                 naar het buitenland dan wel waar het SUBJECT in het buitenland verblijft.</td>
+                              <td width="70%">Derde deel van het adres in het buitenland, met uitzondering van het land.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BRP</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">202316</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -20064,10 +17458,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -20105,35 +17495,24 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BAG</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Het SUBJECT dat heeft aangegeven te (gaan) verblijven dan wel verblijft in het LAND</td>
+                              <td width="70%">Een code, opgenomen in Tabel 34, Landentabel, die het land (buiten Nederland) aangeeft
+                                 alwaar de ingeschrevene verblijft. </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BAG</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -20142,10 +17521,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -20186,7 +17561,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -20194,27 +17569,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -20223,10 +17586,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -20264,7 +17623,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -20273,27 +17632,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -20302,10 +17649,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -20343,35 +17686,23 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%"> </td>
+                              <td width="70%">Een achternaam die de persoon wil gebruiken tijdens communicatie met de gemeente.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -20380,10 +17711,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -20424,7 +17751,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
@@ -20433,27 +17760,15 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Klantinteracties</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -20462,10 +17777,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -20503,35 +17814,23 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BAG</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De offici&amp;#235;le straatnaam zoals door het bevoegd gemeentelijk orgaan is vastgesteld.</td>
+                              <td width="70%">De naam die aan een openbare ruimte is toegekend in een<br>daartoe strekkend formeel gemeentelijk besluit.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BAG</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -20540,10 +17839,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -20581,36 +17876,23 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BAG</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                                 object toegekende nummering.</td>
+                              <td width="70%">Een door of namens het gemeentebestuur ten aanzien van een<br>adresseerbaar object toegekende nummering.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BAG</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -20619,10 +17901,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -20660,37 +17938,23 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BAG</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                                 object toegekende nadere toevoeging aan een huisnummer of een combinatie van huisnummer
-                                 en huisletter.</td>
+                              <td width="70%">Een door of namens het gemeentebestuur ten aanzien van een<br>adresseerbaar object toegekende nadere toevoeging aan een<br>huisnummer of een combinatie van huisnummer en huisleter.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BAG</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -20699,10 +17963,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -20740,36 +18000,24 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BAG</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                                 object toegekende toevoeging aan een huisnummer in de vorm van een alfanumeriek teken.</td>
+                              <td width="70%">Een alfabetisch teken achter het huisnummer zoals dit door het<br>gemeentebestuur is toegekend dan wel een door of namens het bevoegde gemeentelijke
+                                 orgaan ten aanzien van een adresseerbaar object toegekend</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BAG</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -20778,10 +18026,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -20819,37 +18063,24 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BRP</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De aanduiding die wordt gebruikt voor adressen die niet zijn voorzien van gebruikelijke
-                                 straat- en huisnummeraanduidingen Toelichting: Deze aanduiding wordt gebruikt bij
-                                 bijvoorbeeld woonboten of woonwagens.</td>
+                              <td width="70%">De aanduiding die wordt gebruikt voor adressen die niet zijn voorzien van de gebruikelijke
+                                 straatnaam en huisnummeraanduidingen.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BRP</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -20858,10 +18089,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -20899,36 +18126,23 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BAG</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De door PostNL vastgestelde code behorende bij een bepaalde combinatie van een naam
-                                 van een woonplaats, naam van een openbare ruimte en een huisnummer</td>
+                              <td width="70%">De door PostNL vastgestelde code behorende bij een bepaalde<br>combinatie van een straatnaam en een huisnummer.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BAG</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -20937,10 +18151,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -20978,35 +18188,23 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BAG</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De door het bevoegde gemeentelijke orgaan aan een Woonplaats toegekende benaming.</td>
+                              <td width="70%">De benaming van een door het gemeentebestuur aangewezen<br>woonplaats.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BAG</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -21015,10 +18213,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -21056,37 +18250,23 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Afgeleid van RSGB</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                                 object toegekende nadere toevoeging aan een huisnummer of een combinatie van huisnummer
-                                 en huisletter.</td>
+                              <td width="70%">De numerieke aanduiding zoals deze door de PostNL is vastgesteld voor antwoordnummeradressen.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Afgeleid van RSGB</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -21095,10 +18275,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -21136,37 +18312,23 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Afgeleid van RSGB</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Een door of namens het bevoegd gemeentelijk orgaan ten aanzien van een adresseerbaar
-                                 object toegekende nadere toevoeging aan een huisnummer of een combinatie van huisnummer
-                                 en huisletter.</td>
+                              <td width="70%">De numerieke aanduiding zoals deze door de PostNL is vastgesteld voor postbusadressen.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">Afgeleid van RSGB</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -21175,10 +18337,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -21216,36 +18374,23 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BRP</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Het eerste deel van het adres in het buitenland dat het SUBJECT opgeeft bij vertrek
-                                 naar het buitenland dan wel waar het SUBJECT in het buitenland verblijft.</td>
+                              <td width="70%">Eerste deel van het adres in het buitenland, met uitzondering van het land.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BRP</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -21254,10 +18399,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -21295,36 +18436,23 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BRP</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Het tweede deel van het adres in het buitenland dat het SUBJECT opgeeft bij vertrek
-                                 naar het buitenland dan wel waar het SUBJECT in het buitenland verblijft.</td>
+                              <td width="70%">Tweede deel van het adres in het buitenland, met uitzondering van het land.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BRP</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -21333,10 +18461,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -21374,36 +18498,23 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BRP</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Het derde deel van het adres in het buitenland dat het SUBJECT opgeeft bij vertrek
-                                 naar het buitenland dan wel waar het SUBJECT in het buitenland verblijft.</td>
+                              <td width="70%">Derde deel van het adres in het buitenland, met uitzondering van het land.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BRP</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">202316</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -21412,10 +18523,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
@@ -21453,35 +18560,24 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BAG</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Het SUBJECT dat heeft aangegeven te (gaan) verblijven dan wel verblijft in het LAND</td>
+                              <td width="70%">Een code, opgenomen in Tabel 34, Landentabel, die het land (buiten Nederland) aangeeft
+                                 alwaar de ingeschrevene verblijft. </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
+                              <td width="70%">BAG</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
                               <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
@@ -21490,10 +18586,6 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
                               <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Lengte</b></td>
