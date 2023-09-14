@@ -1,9 +1,10 @@
 ---
 layout: page-with-side-nav
 title: Gegevenswoordenboek informatiemodel klantinteracties
-date: 14-04-2023
+date: 14-09-2023
 ---
 
+<!DOCTYPE HTML><html>
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <meta charset="UTF-8">
@@ -63,7 +64,7 @@ date: 14-04-2023
          :
          2.0.0
          :
-         2023-09-13T09:45:30Z</p>
+         2023-09-14T12:14:39Z</p>
       <p>
          ID: EAPK_272B109E_0738_42bd_9D43_C4F87B5E8B8D</p>
       <div><strong>Domein: Model</strong><div>
@@ -438,7 +439,7 @@ date: 14-04-2023
                            :</td>
                         <td width="50%">De naam van de persoon die betrokken was bij een klantcontact.</td>
                         <td width="10%">
-                           Persoonsnaamgegevens
+                           Aanspreeknaam
                            </td>
                         <td width="10%">0 .. 1</td>
                      </tr>
@@ -1054,7 +1055,7 @@ date: 14-04-2023
                         <td width="25%">
                            Naam
                            </td>
-                        <td width="50%">De naam van de organisatie. </td>
+                        <td width="50%">De naam van de organisatie zoals gebruikt tijdens contact met de gemeente. </td>
                         <td width="10%">
                            Naam-lang
                            </td>
@@ -2135,7 +2136,7 @@ date: 14-04-2023
                      <tr>
                         <td width="5%">&nbsp;</td>
                         <td width="25%">
-                           functie
+                           Functie
                            </td>
                         <td width="50%">Indicatie die aangeeft of dit klantcontact heeft geleid tot het ontstaan van de Zaak.
                            </td>
@@ -2147,11 +2148,11 @@ date: 14-04-2023
                      <tr>
                         <td width="5%">&nbsp;</td>
                         <td width="25%">
-                           Naam
+                           Aanspreeknaam
                            :</td>
-                        <td width="50%">De naam van de contactpersoon.</td>
+                        <td width="50%">De naam die de persoon opgaf voor gebruik bij contact met de gemeente.</td>
                         <td width="10%">
-                           Persoonsnaamgegevens
+                           Aanspreeknaam
                            </td>
                         <td width="10%">1</td>
                      </tr>
@@ -2295,11 +2296,11 @@ date: 14-04-2023
                      <tr>
                         <td width="5%">&nbsp;</td>
                         <td width="25%">
-                           Naam
+                           Aanspreeknaam
                            :</td>
-                        <td width="50%">De naam van de persoon.</td>
+                        <td width="50%">De naam die de persoon opgaf voor gebruik bij contact met de gemeente.</td>
                         <td width="10%">
-                           Persoonsnaamgegevens
+                           Aanspreeknaam
                            </td>
                         <td width="10%">0 .. 1</td>
                      </tr>
@@ -4718,13 +4719,13 @@ date: 14-04-2023
                
                </div>
             
-            <div><a class="anchor" name="global_class_Model_Persoonsnaamgegevens"></a><h2>Gegevensgroep Persoonsnaamgegevens</h2>
+            <div><a class="anchor" name="global_class_Model_Aanspreeknaam"></a><h2>Gegevensgroep Aanspreeknaam</h2>
                
                <table>
                   <tbody>
                      <tr>
                         <td width="30%"><b>Naam</b></td>
-                        <td width="70%">Persoonsnaamgegevens</td>
+                        <td width="70%">Aanspreeknaam</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst</b></td>
@@ -4732,7 +4733,7 @@ date: 14-04-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">De naamgegevens van een persoon.</td>
+                        <td width="70%">De naam die de persoon opgaf voor gebruik bij contact met de gemeente.  </td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -7575,7 +7576,7 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Formaat</b></td>
                               <td width="70%">
-                                 Persoonsnaamgegevens
+                                 Aanspreeknaam
                                  </td>
                            </tr>
                            <tr>
@@ -7586,9 +7587,9 @@ date: 14-04-2023
                      </table>
                      </div>
                   
-                  <div><a class="anchor" name="detail_class_Model_Persoonsnaamgegevens"></a><h4>Gegevensgroeptype Persoonsnaamgegevens</h4>
+                  <div><a class="anchor" name="detail_class_Model_Aanspreeknaam"></a><h4>Gegevensgroeptype Aanspreeknaam</h4>
                      
-                     <div><a class="anchor" name="detail_attribute_Model_Persoonsnaamgegevens_Voornaam"></a><h5>Attribuutsoort details Voornaam</h5>
+                     <div><a class="anchor" name="detail_attribute_Model_Aanspreeknaam_Voornaam"></a><h5>Attribuutsoort details Voornaam</h5>
                         
                         <table>
                            <tbody>
@@ -7650,7 +7651,7 @@ date: 14-04-2023
                         </table>
                         </div>
                      
-                     <div><a class="anchor" name="detail_attribute_Model_Persoonsnaamgegevens_Voorvoegselachternaam"></a><h5>Attribuutsoort details Voorvoegsel achternaam</h5>
+                     <div><a class="anchor" name="detail_attribute_Model_Aanspreeknaam_Voorvoegselachternaam"></a><h5>Attribuutsoort details Voorvoegsel achternaam</h5>
                         
                         <table>
                            <tbody>
@@ -7713,7 +7714,7 @@ date: 14-04-2023
                         </table>
                         </div>
                      
-                     <div><a class="anchor" name="detail_attribute_Model_Persoonsnaamgegevens_Achternaam"></a><h5>Attribuutsoort details Achternaam</h5>
+                     <div><a class="anchor" name="detail_attribute_Model_Aanspreeknaam_Achternaam"></a><h5>Attribuutsoort details Achternaam</h5>
                         
                         <table>
                            <tbody>
@@ -9751,7 +9752,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De naam van de organisatie. </td>
+                              <td width="70%">De naam van de organisatie zoals gebruikt tijdens contact met de gemeente. </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -13358,14 +13359,14 @@ date: 14-04-2023
                
                <div><a class="anchor" name="detail_class_Model_Contactpersoon"></a><h3> Contactpersoon</h3>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_Contactpersoon_Naam"></a><h4>Attribuutsoort Naam van gegevensgroeptype Contactpersoon</h4>
+                  <div><a class="anchor" name="detail_attribute_Model_Contactpersoon_Aanspreeknaam"></a><h4>Attribuutsoort Aanspreeknaam van gegevensgroeptype Contactpersoon</h4>
                      
                      <table>
                         <tbody>
                            <tr></tr>
                            <tr>
                               <td width="30%"><b>Naam</b></td>
-                              <td width="70%">Naam</td>
+                              <td width="70%">Aanspreeknaam</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
@@ -13373,7 +13374,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De naam van de contactpersoon.</td>
+                              <td width="70%">De naam die de persoon opgaf voor gebruik bij contact met de gemeente.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -13418,7 +13419,7 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Formaat</b></td>
                               <td width="70%">
-                                 Persoonsnaamgegevens
+                                 Aanspreeknaam
                                  </td>
                            </tr>
                            <tr>
@@ -13429,9 +13430,9 @@ date: 14-04-2023
                      </table>
                      </div>
                   
-                  <div><a class="anchor" name="detail_class_Model_Persoonsnaamgegevens"></a><h4>Gegevensgroeptype Persoonsnaamgegevens</h4>
+                  <div><a class="anchor" name="detail_class_Model_Aanspreeknaam"></a><h4>Gegevensgroeptype Aanspreeknaam</h4>
                      
-                     <div><a class="anchor" name="detail_attribute_Model_Persoonsnaamgegevens_Voornaam"></a><h5>Attribuutsoort details Voornaam</h5>
+                     <div><a class="anchor" name="detail_attribute_Model_Aanspreeknaam_Voornaam"></a><h5>Attribuutsoort details Voornaam</h5>
                         
                         <table>
                            <tbody>
@@ -13493,7 +13494,7 @@ date: 14-04-2023
                         </table>
                         </div>
                      
-                     <div><a class="anchor" name="detail_attribute_Model_Persoonsnaamgegevens_Voorvoegselachternaam"></a><h5>Attribuutsoort details Voorvoegsel achternaam</h5>
+                     <div><a class="anchor" name="detail_attribute_Model_Aanspreeknaam_Voorvoegselachternaam"></a><h5>Attribuutsoort details Voorvoegsel achternaam</h5>
                         
                         <table>
                            <tbody>
@@ -13556,7 +13557,7 @@ date: 14-04-2023
                         </table>
                         </div>
                      
-                     <div><a class="anchor" name="detail_attribute_Model_Persoonsnaamgegevens_Achternaam"></a><h5>Attribuutsoort details Achternaam</h5>
+                     <div><a class="anchor" name="detail_attribute_Model_Aanspreeknaam_Achternaam"></a><h5>Attribuutsoort details Achternaam</h5>
                         
                         <table>
                            <tbody>
@@ -13619,13 +13620,13 @@ date: 14-04-2023
                         </div>
                      </div>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_Contactpersoon_functie"></a><h4>Attribuutsoort details functie</h4>
+                  <div><a class="anchor" name="detail_attribute_Model_Contactpersoon_Functie"></a><h4>Attribuutsoort details Functie</h4>
                      
                      <table>
                         <tbody>
                            <tr>
                               <td width="30%"><b>Naam</b></td>
-                              <td width="70%">functie</td>
+                              <td width="70%">Functie</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
@@ -13748,14 +13749,14 @@ date: 14-04-2023
                
                <div><a class="anchor" name="detail_class_Model_Persoon"></a><h3> Persoon</h3>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_Persoon_Naam"></a><h4>Attribuutsoort Naam van gegevensgroeptype Persoon</h4>
+                  <div><a class="anchor" name="detail_attribute_Model_Persoon_Aanspreeknaam"></a><h4>Attribuutsoort Aanspreeknaam van gegevensgroeptype Persoon</h4>
                      
                      <table>
                         <tbody>
                            <tr></tr>
                            <tr>
                               <td width="30%"><b>Naam</b></td>
-                              <td width="70%">Naam</td>
+                              <td width="70%">Aanspreeknaam</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
@@ -13763,7 +13764,7 @@ date: 14-04-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De naam van de persoon.</td>
+                              <td width="70%">De naam die de persoon opgaf voor gebruik bij contact met de gemeente.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -13808,7 +13809,7 @@ date: 14-04-2023
                            <tr>
                               <td width="30%"><b>Formaat</b></td>
                               <td width="70%">
-                                 Persoonsnaamgegevens
+                                 Aanspreeknaam
                                  </td>
                            </tr>
                            <tr>
@@ -13819,9 +13820,9 @@ date: 14-04-2023
                      </table>
                      </div>
                   
-                  <div><a class="anchor" name="detail_class_Model_Persoonsnaamgegevens"></a><h4>Gegevensgroeptype Persoonsnaamgegevens</h4>
+                  <div><a class="anchor" name="detail_class_Model_Aanspreeknaam"></a><h4>Gegevensgroeptype Aanspreeknaam</h4>
                      
-                     <div><a class="anchor" name="detail_attribute_Model_Persoonsnaamgegevens_Voornaam"></a><h5>Attribuutsoort details Voornaam</h5>
+                     <div><a class="anchor" name="detail_attribute_Model_Aanspreeknaam_Voornaam"></a><h5>Attribuutsoort details Voornaam</h5>
                         
                         <table>
                            <tbody>
@@ -13883,7 +13884,7 @@ date: 14-04-2023
                         </table>
                         </div>
                      
-                     <div><a class="anchor" name="detail_attribute_Model_Persoonsnaamgegevens_Voorvoegselachternaam"></a><h5>Attribuutsoort details Voorvoegsel achternaam</h5>
+                     <div><a class="anchor" name="detail_attribute_Model_Aanspreeknaam_Voorvoegselachternaam"></a><h5>Attribuutsoort details Voorvoegsel achternaam</h5>
                         
                         <table>
                            <tbody>
@@ -13946,7 +13947,7 @@ date: 14-04-2023
                         </table>
                         </div>
                      
-                     <div><a class="anchor" name="detail_attribute_Model_Persoonsnaamgegevens_Achternaam"></a><h5>Attribuutsoort details Achternaam</h5>
+                     <div><a class="anchor" name="detail_attribute_Model_Aanspreeknaam_Achternaam"></a><h5>Attribuutsoort details Achternaam</h5>
                         
                         <table>
                            <tbody>
@@ -17549,9 +17550,9 @@ date: 14-04-2023
                      </div>
                   </div>
                
-               <div><a class="anchor" name="detail_class_Model_Persoonsnaamgegevens"></a><h3>Gegevensgroeptype Persoonsnaamgegevens</h3>
+               <div><a class="anchor" name="detail_class_Model_Aanspreeknaam"></a><h3>Gegevensgroeptype Aanspreeknaam</h3>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_Persoonsnaamgegevens_Voornaam"></a><h4>Attribuutsoort details Voornaam</h4>
+                  <div><a class="anchor" name="detail_attribute_Model_Aanspreeknaam_Voornaam"></a><h4>Attribuutsoort details Voornaam</h4>
                      
                      <table>
                         <tbody>
@@ -17613,7 +17614,7 @@ date: 14-04-2023
                      </table>
                      </div>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_Persoonsnaamgegevens_Voorvoegselachternaam"></a><h4>Attribuutsoort details Voorvoegsel achternaam</h4>
+                  <div><a class="anchor" name="detail_attribute_Model_Aanspreeknaam_Voorvoegselachternaam"></a><h4>Attribuutsoort details Voorvoegsel achternaam</h4>
                      
                      <table>
                         <tbody>
@@ -17676,7 +17677,7 @@ date: 14-04-2023
                      </table>
                      </div>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_Persoonsnaamgegevens_Achternaam"></a><h4>Attribuutsoort details Achternaam</h4>
+                  <div><a class="anchor" name="detail_attribute_Model_Aanspreeknaam_Achternaam"></a><h4>Attribuutsoort details Achternaam</h4>
                      
                      <table>
                         <tbody>
