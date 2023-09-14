@@ -4,10 +4,27 @@ title: Semantisch informatiemodel versie 0.0.1.
 date: 03-07-2023
 ---
 
-# Semantisch informatiemodel Versie 1
+# Semantisch informatiemodel: Oude versies
 
 ## Modellering in Enterprise Architect
-Binnen VNG Realisatie wordt Enterprise Architect (EA) gebruikt voor de vastlegging van semantische informatiemodellen (SIM). Onderstaand figuur geeft de modellering van het SIM versie 1 weer zoals deze in EA is gemodelleerd.
+Binnen VNG Realisatie wordt Enterprise Architect (EA) gebruikt voor de vastlegging van semantische informatiemodellen (SIM). 
+
+
+Onderstaand figuur geeft de modellering van het SIM versie 0.0.2 weer zoals deze in EA was gemodelleerd.
+
+<img src="assets/SIM_Klantinteracties_v002.png" alt="SIM in Enterprise Architect" width="1000"/>
+
+De wijzigingen die in versie 0.0.3 zijn doorgevoerd t.o.v. deze versie zijn: 
+  -	De definities en de MIM-egenschappen "Herkomst" en "Herkomst Definitie" zijn gecorrigeerd.
+    Definities van objecttypen en attribuutsoorten die aan andere informatiemodellen zijn ontleend zijn gelijkgetrokken met de definities uit die informatiemodellen.
+   	Met de "Herkomst" en de "Herkomst definitie" meta-eigenschappen wordt naar de juiste bron verwezen. 
+  -	Gegevensgroeptype : Persoonsnaamgegevens is gewijzigd naar Aanspreeknaam.
+  -	Attribuutsoorten :
+    - Persoon.Naam is gewijzigd naar Persoon.Aanspreeknaam
+    - Contactpersoon.Naam is gewijzigd naar Contactpersoon.Aanspreeknaam
+    - Contactpersoon.functie is gewijzigd naar Contactpersoon.Functie
+
+Onderstaand figuur geeft de modellering van het SIM versie 0.0.1 weer zoals deze in EA was gemodelleerd.
 
 <img src="assets/SIM_Klantinteracties_v001.png" alt="SIM in Enterprise Architect" width="1000"/>
 
