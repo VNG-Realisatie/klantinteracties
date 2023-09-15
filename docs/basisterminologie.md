@@ -161,7 +161,13 @@ In deze casus ontvangt de gemeente een e-mail met bijlagen. De e-mail beschrijft
 
 In deze casus dient een organisatie een aanvraag voor levering van een product of dienst in namens een persoon. Dat deze organisatie het recht heeft deze persoon te vertegenwoordigen is tijdens het aanvraagproces met voldoende zekerheid vastgesteld. De organisatie wordt tijdens deze aanvraag zelf ook vertegenwoordigd. Namelijk door de werknemer die de aanvraag indient.
 
-Bij de aanvraag, die beschouwd kan worden als een specifieke vorm van een klantcontact, spelen dus drie partijen een rol. De persoon die geldt als uiteindelijk belanghebbende, de organisatie die namens de persoon handelt, en de contactpersoon die voor de organisatie werkt. De eerste twee kunnen op basis van authenticatie die onderdeel is van het aanvraagproces uniek worden geïdentificeerd in een basisregistratie. De persoon op basis van het BSN in de BRP, en de organisatie op basis van het RSIN in het Handelsregister. Uit het authenticatieproces blijkt ook dat de contactpersoon bevoegd is voor de organisatie te handelen. Maar deze bevoegdheid is niet op basis van een sleutelgegeven in een extern register op te vragen. De contactpersoon kent daarom geen externe identificatie.
+Bij de aanvraag, die beschouwd kan worden als een specifieke vorm van een klantcontact, spelen dus drie partijen een rol:
+
+1. de persoon die geldt als uiteindelijk belanghebbende;
+2. de organisatie die namens de persoon handelt, en
+3. de contactpersoon die voor de organisatie werkt.
+
+De eerste twee kunnen op basis van authenticatie die onderdeel is van het aanvraagproces uniek worden geïdentificeerd in een basisregistratie. De persoon op basis van het BSN in de BRP, en de organisatie op basis van het RSIN in het Handelsregister. Uit het authenticatieproces blijkt ook dat de contactpersoon bevoegd is voor de organisatie te handelen. Maar deze bevoegdheid is niet op basis van een sleutelgegeven in een extern register op te vragen. De contactpersoon kent daarom geen externe identificatie.
 
 Kijken we naar de betrokkenheid bij het klantcontact dat als gevolg van de aanvraag wordt geregistreerd, dan zien we slechts twee van de bovengenoemde drie partijen terug. De organisatie heeft immers, in tegenstellig tot de werknemer (de contactpersoon) die voor deze organisatie werkt, geen contact met de gemeente gehad. Zij geldt daarom niet als betrokkene bij het klantcontact. Wel kan de betrokkenheid van de organisatie via de werkt-voor-relatie van de contactpersoon worden afgeleid.
 
