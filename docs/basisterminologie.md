@@ -62,7 +62,7 @@ Maar het onderwerp kan ook meer specifiek of persoonlijk zijn en betrekking hebb
 
 ### Betrokkene bij het klantcontact
 
-<img src="./assets/basisterminologie/klantinteracties-submodel-betrokkene-bij-klantcontact.svg" alt="Submodel betrokkene bij het klantcontact" width="52%"/>
+<img src="./assets/basisterminologie/klantinteracties-submodel-betrokkene-bij-klantcontact.svg" alt="Submodel betrokkene bij het klantcontact" width="50%"/>
 
 Zowel inzage in historische contacten met de gemeente als opvolging van verzoeken aan de gemeente maken het nodig bij te houden welke personen of organisaties bij klantcontacten betrokken waren. Daarvoor dient ‘betrokkene bij klantcontact’. Naast de rol die de betrokkene bij een klantcontact speelde (belanghebbende of vertegenwoordiger), kunnen hierin contactgegevens (in de vorm van zowel ‘fysieke’ als [‘digitale’](#digitaal-adres) adressen) worden vastgelegd. Deze dienen voor opvolging van het klantcontact.
 
@@ -75,7 +75,7 @@ Als bij een contact geen enkele gekende partij betrokken is, én dat contact gee
 
 ### Opvolging van het klantcontact
 
-<img src="./assets/basisterminologie/klantinteracties-submodel-opvolging-van-klantcontact.svg" alt="Submodel opvolging van het klantcontact" width="46%"/>
+<img src="./assets/basisterminologie/klantinteracties-submodel-opvolging-van-klantcontact.svg" alt="Submodel opvolging van het klantcontact" width="40%"/>
 
 Het klantcontact zal in veel gevallen aanleiding geven tot vervolghandelingen, zoals het terugbellen van een betrokkene met de gevraagde informatie of het starten van een proces dat het leveren van een aangevraagd product mogelijk maakt.
 
@@ -83,11 +83,13 @@ Omdat het klantcontact zoveel mogelijk een weergave is van tijdens een contact u
 
 Als een interne taak ertoe aanleiding geeft opnieuw contact op te nemen (bijvoorbeeld als een vraagsteller met een antwoord wordt teruggebeld), ontstaat een nieuw klantcontact met de interne taak als onderwerp. Op deze manier kunnen het initiële klantcontact, de taak die als gevolg daarvan werd aangemaakt, en het klantcontact dat hoort bij de uitvoering van die taak aan elkaar worden gerelateerd.
 
+Een klantcontact kan ook, zij het direct, zij het na nadat uit het uitvoeren van een interne taak bleek dat dit nodig of gewenst was, opgevolgd worden door het behandelen van een reeds lopende of nieuw te registreren zaak.
+
 ## Partij
 
-<img src="./assets/basisterminologie/klantinteracties-submodel-partij.svg" alt="Submodel partij" width="46%"/>
+<img src="./assets/basisterminologie/klantinteracties-submodel-partij.svg" alt="Submodel partij" width="36%"/>
 
-Een partij is gedefinieerd als “een persoon of organisatie waarmee de gemeente een relatie heeft”. Deze definitie kan de vraag oproepen waarom we een eigenlijk een klantenregister nodig hebben. Gegevens over personen of organisaties zijn toch al vastgelegd en opvraagbaar in basisregistraties? Dat klopt. Maar in de Basisregistratie Personen (BRP) en het Nationaal Handelsregister (HR) vind je van een inwoner of ondernemer geen e-mailadres, telefoonnummer of postadres. Terwijl gemeenten deze gegevens vaak wel nodig hebben, bijvoorbeeld voor het beantwoorden van vragen en het verwerken van aanvragen of meldingen.
+Een partij is gedefinieerd als “een persoon of organisatie waarmee de gemeente een relatie heeft”. Deze definitie kan de vraag oproepen waarom we een eigenlijk een klantenregister nodig hebben. Gegevens over personen of organisaties zijn toch al vastgelegd en opvraagbaar in basisregistraties? Dat klopt. Maar in de Basisregistratie Personen (BRP) en het Handelsregister (HR) vind je van een inwoner of ondernemer geen e-mailadres, telefoonnummer of postadres. Terwijl gemeenten deze gegevens vaak wel nodig hebben, bijvoorbeeld voor het beantwoorden van vragen en het verwerken van aanvragen of meldingen.
 
 Gegevens die in een basisregistratie niet kunnen worden opgenomen, maar (vaak) wel te relateren zijn aan een in een basisregistratie geregistreerde persoon of organisatie noemen we wel ‘aangehaakte’ of ‘plus’gegevens. Partijgegevens zijn hiervan een voorbeeld en gelden als binnen de hele gemeente te gebruiken ‘default’contactgegevens die gebruikt om contact op te nemen met personen of organisaties. Dit betekent dat sprake is van ‘duurzame’ gegevens, die een bestaansrecht hebben dat langer kan duren dan het afhandelen van de vraag of het verzoek waarbij ze (voor het eerst) zijn verstrekt.
 
@@ -103,7 +105,7 @@ Dat partijen een ‘relatie’ met de gemeente hebben, betekent dat de gemeente 
 
 Omdat sprake is van persoonsgegevens die niet mogen ‘lekken’, noch ongeautoriseerd gewijzigd mogen worden, gelden bovenstaande voorwaarden ook voor het op een later moment bieden van inzage in, verstrekking van of het (laten) wijzigen van partijgegevens.
 
-Het ‘kennen’ van partijen zal in veel gevallen betekenen dat de gemeente beschikt over gegevens waarmee een partij in een extern register (dat zich buiten het domein van klantinteracties bevindt) uniek geïdentificeerd kan worden. Voor Nederlandse partijen zullen dit met name Burgerservicenummers, KVK- en RSIN-nummers zijn die hun bron hebben in de Basisregistratie Personen en het Nationaal Handelsregister, maar dit kunnen ook andere binnen- of buitenlandse identificatienummers zijn. Deze identificerende gegevens kunnen worden als ‘externe identificatie’ bij partij worden vastgelegd.
+Het ‘kennen’ van partijen zal in veel gevallen betekenen dat de gemeente beschikt over gegevens waarmee een partij in een extern register (dat zich buiten het domein van klantinteracties bevindt) uniek geïdentificeerd kan worden. Voor Nederlandse partijen zullen dit met name Burgerservicenummers, KVK- en RSIN-nummers zijn die hun bron hebben in de Basisregistratie Personen en het Handelsregister, maar dit kunnen ook andere binnen- of buitenlandse identificatienummers zijn. Deze identificerende gegevens kunnen worden als ‘externe identificatie’ bij partij worden vastgelegd.
 
 *Deze standaard schrijft niet voor niet onder welke voorwaarden het is toegestaan om voor het ene doel ingewonnen contactgegevens voor een ander doel te (her)gebruiken, maar erkent dat hiervoor toestemming nodig kan zijn. Evenmin beschrijft deze standaard welke mate van betrouwbaarheid authenticatie- of identificatiemiddelen moeten bieden voordat partijgegevevens kunnen worden geregistreerd, ingezien, verstrekt en aangepast. Wel stelt de standaard dat deze middelen een aanzienlijke mate van zekerheid moeten bieden over de identiteit van degene die deze handelingen wil (laten) uitvoeren. Het verder invullen van deze voorwaarden is een taak voor juristen, privacy officers en beleidsmakers.*
 
@@ -121,7 +123,7 @@ Een contactpersoon is “een persoon die (formeel of informeel) namens een ander
 
 ## Actor
 
-<img src="./assets/basisterminologie/klantinteracties-submodel-actor.svg" alt="Submodel actor" width="40%"/>
+<img src="./assets/basisterminologie/klantinteracties-submodel-actor.svg" alt="Submodel actor" width="32%"/>
 
 Een actor is “iets dat of iemand die voor de gemeente werkzaamheden uitvoert”. We onderscheiden drie verschillende soorten actoren: 
 
@@ -133,9 +135,9 @@ Waar de eerste twee waarschijnlijk voor zich spreken, verdient de laatste enige 
 
 Met name in relatie tot medewerkersgegevens is het belangrijk op te merken dat HR-systemen buiten het domein van klantinteracties vallen. Wat binnen dit domein is gemodelleerd moet bij het ontbreken van algemeen gebruikte standaarden voor het toegankelijk maken van medewerkers- en organisatiegegevens gezien worden als ‘stub’ die gegevens over organisatie-onderdelen en medewerkers omvat voor zover die binnen dit domein van belang zijn.
 
-## Toepassingsvoorbeelden
+## Registratievoorbeelden
 
-Hieronder wordt voor een vijftal voorbeeldcasussen waarbij de gemeente contact heeft met klanten en/of vertegenwoordigers geïllustreerd welke gegevens op welke manier daarover gegevens worden geregistreerd.
+Hieronder wordt voor een vijftal voorbeeldcasussen waarbij de gemeente contact heeft met klanten en/of vertegenwoordigers geïllustreerd welke gegevens op welke manier daarover gegevens worden geregistreerd. Let op: deze voorbeelden zijn beschreven op basis van objecttypen die in het semantisch informatiemodel zijn onderkend. Het is goed mogelijk dat deze in toekomstige API-specificaties niet als afzonderlijke ‘resources’ herkenbaar zijn.
 
 ### Anoniem telefoongesprek leidt niet tot vervolgacties 
 
@@ -145,4 +147,30 @@ In deze casus voert een KCC-medewerker een telefoongesprek met een anonieme inwo
 
 <img src="./assets/basisterminologie/klantinteracties-casus-baliegesprek-met-terugbelverzoek.svg" alt="Casus baliegesprek met terugbelverzoek" width="100%"/>
 
-In deze casus voert een medewerker van de gemeente een gesprek met een door een paspoort geïdentificeerde inwoner. Deze inwoner heeft eerder contactgegevens aan de gemeente verstrekt, waardoor de inwoner als partij bij de gemeente bekend is. De vraag van deze inwoner kan niet door de medewerker aan de balie worden beantwoord, hiervoor zal een andere medewerker moeten terugbellen. De inwoner wil eenmalig (dus alleen voor de opvolging van dit klantcontact) worden teruggebeld op een telefoonnummer dat afwijkt van het bij partij geregistreerde telefoonnummer.
+In deze casus voert een medewerker van de gemeente een gesprek met een door een paspoort geïdentificeerde persoon. Deze persoon heeft eerder contactgegevens aan de gemeente verstrekt, waardoor de persoon als partij bij de gemeente bekend is. De vraag van de persoon kan niet door de medewerker aan de balie worden beantwoord; hiervoor zal een andere medewerker moeten terugbellen. Dit leidt tot registratie van een aan de gesproken partij gerelateerd klantcontact en een aan (collega)medewerker toegewezen interne taak met het verzoek terug te bellen. De persoon wil eenmalig (dus alleen voor de opvolging van dit klantcontact) wil worden teruggebeld op een telefoonnummer dat afwijkt van het bij partij geregistreerde telefoonnummer. Dit telefoonnummer wordt in een aan betrokkene bij klantcontact gerelateerd digitaal adres geregistreerd.
+
+### Ontvangen e-mailbericht met bijlagen
+
+<img src="./assets/basisterminologie/klantinteracties-casus-ontvangen-e-mail-met-bijlagen.svg" alt="Casus ontvangen e-mailbericht met bijlagen" width="100%"/>
+
+In deze casus ontvangt de gemeente een e-mail met bijlagen. De e-mail beschrijft de aankondiging van een buurtfeest - de gemeente biedt aan deze op haar website te publiceren. Bijgevoegd zijn een flyer, waarin het feest wordt aangekondigd, en een routebeschrijving. Zowel het opgeslagen e-mailbericht als de individuele bijlagen worden als informatieobject (of document) opgeslagen en aan het klantcontact gerelateerd. Het is voor het leveren van deze dienst niet nodig met zekerheid te weten wie de afzender van de aankondiging is. Bovendien is ‘zekere’ identificatie naar aanleiding van e-mailadres niet mogelijk. Er wordt aan het klantcontact dus geen partij gerelateerd.
+
+### Aangevraagd product door organisatie die persoon vertegenwoordigt
+
+<img src="./assets/basisterminologie/klantinteracties-casus-aangevraagd-product-door-organisatie-namens-persoon.svg" alt="Casus aangevraagd product door organisatie die persoon vertegenwoordigt" width="100%"/>
+
+In deze casus dient een organisatie een aanvraag voor levering van een product of dienst in namens een persoon. Dat deze organisatie het recht heeft deze persoon te vertegenwoordigen is tijdens het aanvraagproces met voldoende zekerheid vastgesteld. De organisatie wordt tijdens deze aanvraag zelf ook vertegenwoordigd. Namelijk door de werknemer die de aanvraag indient.
+
+Bij de aanvraag, die beschouwd kan worden als een specifieke vorm van een klantcontact, spelen dus drie partijen een rol. De persoon die geldt als uiteindelijk belanghebbende, de organisatie die namens de persoon handelt, en de contactpersoon die voor de organisatie werkt. De eerste twee kunnen op basis van authenticatie die onderdeel is van het aanvraagproces uniek worden geïdentificeerd in een basisregistratie. De persoon op basis van het BSN in de BRP, en de organisatie op basis van het RSIN in het Handelsregister. Uit het authenticatieproces blijkt ook dat de contactpersoon bevoegd is voor de organisatie te handelen. Maar deze bevoegdheid is niet op basis van een sleutelgegeven in een extern register op te vragen. De contactpersoon kent daarom geen externe identificatie.
+
+Kijken we naar de betrokkenheid bij het klantcontact dat als gevolg van de aanvraag wordt geregistreerd, dan zien we slechts twee van de bovengenoemde drie partijen terug. De organisatie heeft immers, in tegenstellig tot de werknemer (de contactpersoon) die voor deze organisatie werkt, geen contact met de gemeente gehad. Zij geldt daarom niet als betrokkene bij het klantcontact. Wel kan de betrokkenheid van de organisatie via de werkt-voor-relatie van de contactpersoon worden afgeleid.
+
+Bij het indienen van de aanvraag heeft de contactpersoon via een e-formulier gegevens verstrekt. Deze gegevens worden gestructureerd opgeslagen in een specifiek register en als inhoudsdeel aan het klantcontact gerelateerd. Op basis van deze gestructureerde gegevens wordt geautomatiseerd een zaak aangemaakt van het juiste zaaktype, die een afdeling van de gemeente vervolgens kan behandelen.
+
+### Ontvangst van document bij lopende zaak
+
+<img src="./assets/basisterminologie/klantinteracties-casus-ontvangen-document-bij-lopende-zaak.svg" alt="Casus ontvangst van document bij lopende zaak" width="100%"/>
+
+In deze casus levert een persoon extra informatie aan om de (verdere) behandeling van een lopende zaak mogelijk te maken. Dit gebeurt in een door authtenticatie beschermd deel van de gemeentelijke website, waarbinnen aanvragers hun lopende zaken kunnen bekijken en in het kader daarvan aangeleverde informatie kunnen corrigeren en aanvullen. Omdat de gemeente dankzij authenticatie  weet wie de persoon is, en bovendien kennis heeft van de zaak waarbij de informatie hoort, kan vanuit het klantcontact een relatie worden gelegd naar de partij die de informatie aanlevert en (als onderwerp) de zaak waarop die betrekking heeft.
+
+De aangeleverde informatie, die de vorm heeft van een Pdf-bestand dat een wegdeel toont dat men vanwege een buurtfeest tijdelijk wil afsluiten en in een contactformulier beschreven toelichting daarbij, wordt als twee inhoudsdelen bij het klantcontact geregistreerd. De toelichting als tekst, het Pdf-bestand als informatieobject.
