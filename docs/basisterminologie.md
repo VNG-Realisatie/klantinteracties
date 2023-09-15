@@ -21,8 +21,6 @@ Het informatiemodel Klantinteracties biedt afhankelijk van de situatie verschill
 
 ## Klantcontact
 
-<img src="./assets/basisterminologie/klantinteracties-basismodel.svg" alt="Basismodel klantinteracties" width="80%"/>
-
 Een klantcontact is gedefinieerd als “een contact tussen een klant of een vertegenwoordiger van een klant en de gemeente”. Het doel van het klantcontact is tweeledig: enerzijds dient het om klanten of hun vertegenwoordigers inzicht te geven in (historische) contacten met de gemeente. En anderzijds om opvolging van hun verzoeken aan de gemeente te vergemakkelijken. Een klantcontact heeft om dit doel te dienen de volgende kenmerken:
 
 1. Bij het klantcontact is altijd tenminste één [persoon of organisatie betrokken](#betrokkene-bij-het-klantcontact) die niet voor de gemeente werkt en iets van de gemeente wil. *Er bestaat dus niet zoiets als een ‘intern’ (klant)contact voor verslaglegging over interacties tussen medewerkers van de gemeente.*
@@ -33,9 +31,9 @@ Een klantcontact is gedefinieerd als “een contact tussen een klant of een vert
 6. Het klantcontact heeft vanwege het besproken doel een ‘omvang’ of ‘duur’ die aansluit bij wat vanuit klantperspectief logisch is. Zo ‘duurt’ een klantcontact naar aanleiding van een telefoongesprek van het aannemen van het gesprek tot het beëindigen hiervan, terwijl een contact naar aanleiding van een baliebezoek de periode beschrijft vanaf het aan een medewerker verschijnen van een klant of vertegenwoordiger tot aan diens vertrek. Aan de andere kant resulteren een verzonden besluit en weken later daartegen ontvangen bezwaarschrift in twee ‘losse’ klantcontacten. Dit betekent dat binnen één klantcontact meerdere vragen kunnen worden gesteld, en dat daarbinnen meerdere [onderwerpen](#onderwerp-van-het-klantcontact) kunnen worden besproken.
 7. Het documentaire karakter van het klantcontact betekent dat dit na eerste vastlegging (behalve om fouten te herstellen) niet meer wordt gewijzigd. Eventuele handelingen die worden uitgevoerd omwille van [opvolging van een klantcontact](#opvolging-van-het-klantcontact) of instructies daarvoor zijn daarom geen onderdeel van dat klantcontact.
 
-### Inhoud van het klantcontact
+<img src="./assets/basisterminologie/klantinteracties-basismodel.svg" alt="Basismodel klantinteracties" width="80%"/>
 
-<img src="./assets/basisterminologie/klantinteracties-submodel-inhoud-klantcontact.svg" alt="Submodel inhoud van het klantcontact" width="40%"/>
+### Inhoud van het klantcontact
 
 De inhoud van een klantcontact omvat de informatie die tijdens het contact is uitgewisseld of overgebracht, voor zover die informatie relevant is voor de betrokken persoon of organisatie, óf voor zover die informatie van belang is voor de [opvolging van klantcontact](#opvolging-van-het-klantcontact).
 
@@ -47,9 +45,9 @@ Om te waarborgen dat de standaard aan dit soort scenario's invulling kan geven, 
 2. Een verwijzing naar het informatieobject (of document) dat (een deel van) de inhoud van het klantcontact beschrijft.
 3. Een verwijzing naar het dataobject dat (een deel van) de inhoud van het klantcontact beschrijft. De standaard legt geen beperkingen op als het gaat om de objecttypen (en bijbehorende registers) waarnaar vanuit een klantcontact verwezen mag worden, maar erkent expliciet het bestaan van het [register voor overige objectregistraties](https://vng.nl/projecten/overige-objecten-registratie-api).
 
-### Onderwerp van het klantcontact
+<img src="./assets/basisterminologie/klantinteracties-submodel-inhoud-klantcontact.svg" alt="Submodel inhoud van het klantcontact" width="40%"/>
 
-<img src="./assets/basisterminologie/klantinteracties-submodel-onderwerp-klantcontact.svg" alt="Submodel onderwerp van het klantcontact" width="52%"/>
+### Onderwerp van het klantcontact
 
 Naast inhoud heeft het klantcontact een onderwerp. Omdat (zeker tijdens een gesprek) uiteenlopende zaken besproken kunnen worden, kunnen dit ook meerdere onderwerpen zijn. Het onderwerp of de onderwerpen beschrijft waar het klantcontact over ging. Als het klantcontact een eenvoudig verzoek om informatie betrof (“wat zijn de voorwaarden voor kwijtschelding van gemeentelijke belastingen?”), zal zo’n onderwerp vaak een generiek karakter hebben.
 
@@ -60,9 +58,9 @@ Maar het onderwerp kan ook meer specifiek of persoonlijk zijn en betrekking hebb
 3. Een verwijzing naar de zaak waarover (een deel van) het klantcontactging.
 4. Een verwijzing naar de klanttaak waarover (een deel van) het klantcontact ging.
 
-### Betrokkene bij het klantcontact
+<img src="./assets/basisterminologie/klantinteracties-submodel-onderwerp-klantcontact.svg" alt="Submodel onderwerp van het klantcontact" width="52%"/>
 
-<img src="./assets/basisterminologie/klantinteracties-submodel-betrokkene-bij-klantcontact.svg" alt="Submodel betrokkene bij het klantcontact" width="50%"/>
+### Betrokkene bij het klantcontact
 
 Zowel inzage in historische contacten met de gemeente als opvolging van verzoeken aan de gemeente maken het nodig bij te houden welke personen of organisaties bij klantcontacten betrokken waren. Daarvoor dient ‘betrokkene bij klantcontact’. Naast de rol die de betrokkene bij een klantcontact speelde (belanghebbende of vertegenwoordiger), kunnen hierin contactgegevens (in de vorm van zowel ‘fysieke’ als [‘digitale’](#digitaal-adres) adressen) worden vastgelegd. Deze dienen voor opvolging van het klantcontact.
 
@@ -73,9 +71,9 @@ Als de betrokkene bij het klantcontact als [partij gekend](#partij) is, en ófwe
 
 Als bij een contact geen enkele gekende partij betrokken is, én dat contact geen aanleiding geeft tot opvolging, dient het vastleggen van een klantcontact geen doel. Registratie kan in dit geval dus achterwege blijven.
 
-### Opvolging van het klantcontact
+<img src="./assets/basisterminologie/klantinteracties-submodel-betrokkene-bij-klantcontact.svg" alt="Submodel betrokkene bij het klantcontact" width="50%"/>
 
-<img src="./assets/basisterminologie/klantinteracties-submodel-opvolging-van-klantcontact.svg" alt="Submodel opvolging van het klantcontact" width="40%"/>
+### Opvolging van het klantcontact
 
 Het klantcontact zal in veel gevallen aanleiding geven tot vervolghandelingen, zoals het terugbellen van een betrokkene met de gevraagde informatie of het starten van een proces dat het leveren van een aangevraagd product mogelijk maakt.
 
@@ -85,9 +83,9 @@ Als een interne taak ertoe aanleiding geeft opnieuw contact op te nemen (bijvoor
 
 Een klantcontact kan ook, zij het direct, zij het na nadat uit het uitvoeren van een interne taak bleek dat dit nodig of gewenst was, opgevolgd worden door het behandelen van een reeds lopende of nieuw te registreren zaak.
 
-## Partij
+<img src="./assets/basisterminologie/klantinteracties-submodel-opvolging-van-klantcontact.svg" alt="Submodel opvolging van het klantcontact" width="40%"/>
 
-<img src="./assets/basisterminologie/klantinteracties-submodel-partij.svg" alt="Submodel partij" width="36%"/>
+## Partij
 
 Een partij is gedefinieerd als “een persoon of organisatie waarmee de gemeente een relatie heeft”. Deze definitie kan de vraag oproepen waarom we een eigenlijk een klantenregister nodig hebben. Gegevens over personen of organisaties zijn toch al vastgelegd en opvraagbaar in basisregistraties? Dat klopt. Maar in de Basisregistratie Personen (BRP) en het Handelsregister (HR) vind je van een inwoner of ondernemer geen e-mailadres, telefoonnummer of postadres. Terwijl gemeenten deze gegevens vaak wel nodig hebben, bijvoorbeeld voor het beantwoorden van vragen en het verwerken van aanvragen of meldingen.
 
@@ -121,9 +119,9 @@ Ook organisaties met en zonder rechtspersoonlijkheid die niet in het Handelsregi
 
 Een contactpersoon is “een persoon die (formeel of informeel) namens een andere persoon handelde of als werknemer of eigenaar namens een organisatie optrad”. Merk op dat nadrukkelijk de verleden tijd wordt gebruikt omdat de  vertegenwoordiging in het verleden op basis van toen actuele informatie is geregistreerd. Hiermee is niet gezegd dat de grond voor eerder vastgestelde (formele) vertegenwoordiging op een later moment nog geldt.
 
-## Actor
+<img src="./assets/basisterminologie/klantinteracties-submodel-partij.svg" alt="Submodel partij" width="36%"/>
 
-<img src="./assets/basisterminologie/klantinteracties-submodel-actor.svg" alt="Submodel actor" width="32%"/>
+## Actor
 
 Een actor is “iets dat of iemand die voor de gemeente werkzaamheden uitvoert”. We onderscheiden drie verschillende soorten actoren: 
 
@@ -135,9 +133,13 @@ Waar de eerste twee waarschijnlijk voor zich spreken, verdient de laatste enige 
 
 Met name in relatie tot medewerkersgegevens is het belangrijk op te merken dat HR-systemen buiten het domein van klantinteracties vallen. Wat binnen dit domein is gemodelleerd moet bij het ontbreken van algemeen gebruikte standaarden voor het toegankelijk maken van medewerkers- en organisatiegegevens gezien worden als ‘stub’ die gegevens over organisatie-onderdelen en medewerkers omvat voor zover die binnen dit domein van belang zijn.
 
+<img src="./assets/basisterminologie/klantinteracties-submodel-actor.svg" alt="Submodel actor" width="32%"/>
+
 ## Registratievoorbeelden
 
-Hieronder wordt voor een vijftal voorbeeldcasussen waarbij de gemeente contact heeft met klanten en/of vertegenwoordigers geïllustreerd welke gegevens op welke manier daarover gegevens worden geregistreerd. Let op: deze voorbeelden zijn beschreven op basis van objecttypen die in het semantisch informatiemodel zijn onderkend. Het is goed mogelijk dat deze in toekomstige API-specificaties niet als afzonderlijke ‘resources’ herkenbaar zijn.
+Hieronder wordt voor een vijftal voorbeeldcasussen waarbij de gemeente contact heeft met klanten en/of vertegenwoordigers geïllustreerd welke gegevens daarover op welke manier worden geregistreerd.
+
+*Deze voorbeelden zijn beschreven op basis van objecttypen die in het semantisch informatiemodel zijn onderkend. Het is goed mogelijk dat deze in nog te ontwikkelen API-specificaties niet als afzonderlijke ‘resources’ herkenbaar zullen zijn.*
 
 ### Anoniem telefoongesprek leidt niet tot vervolgacties 
 
@@ -148,7 +150,6 @@ In deze casus voert een KCC-medewerker een telefoongesprek met een anonieme inwo
 In deze casus voert een medewerker van de gemeente een gesprek met een door een paspoort geïdentificeerde persoon. Deze persoon heeft eerder contactgegevens aan de gemeente verstrekt, waardoor de persoon als partij bij de gemeente bekend is. De vraag van de persoon kan niet door de medewerker aan de balie worden beantwoord; hiervoor zal een andere medewerker moeten terugbellen. Dit leidt tot registratie van een aan de gesproken partij gerelateerd klantcontact en een aan (collega)medewerker toegewezen interne taak met het verzoek terug te bellen. De persoon wil eenmalig (dus alleen voor de opvolging van dit klantcontact) wil worden teruggebeld op een telefoonnummer dat afwijkt van het bij partij geregistreerde telefoonnummer. Dit telefoonnummer wordt in een aan betrokkene bij klantcontact gerelateerd digitaal adres geregistreerd.
 
 <img src="./assets/basisterminologie/klantinteracties-casus-baliegesprek-met-terugbelverzoek.svg" alt="Casus baliegesprek met terugbelverzoek" width="100%"/>
-
 
 ### Ontvangen e-mailbericht met bijlagen
 
