@@ -155,9 +155,9 @@ In deze casus voert een medewerker van de gemeente een gesprek met een door een 
 
 In deze casus ontvangt de gemeente een e-mail met bijlagen. De e-mail beschrijft de aankondiging van een buurtfeest - de gemeente biedt aan deze op haar website te publiceren. Bijgevoegd zijn een flyer, waarin het feest wordt aangekondigd, en een routebeschrijving. Zowel het opgeslagen e-mailbericht als de individuele bijlagen worden als informatieobject (of document) opgeslagen en aan het klantcontact gerelateerd. Het is voor het leveren van deze dienst niet nodig met zekerheid te weten wie de afzender van de aankondiging is. Bovendien is ‘zekere’ identificatie naar aanleiding van e-mailadres niet mogelijk. Er wordt aan het klantcontact dus geen partij gerelateerd.
 
-### Aangevraagd product door organisatie die persoon vertegenwoordigt
+### Product aangevraagd door organisatie die persoon vertegenwoordigt
 
-<img src="./assets/basisterminologie/klantinteracties-casus-aangevraagd-product-door-organisatie-namens-persoon.svg" alt="Casus aangevraagd product door organisatie die persoon vertegenwoordigt" width="100%"/>
+<img src="./assets/basisterminologie/klantinteracties-casus-aangevraagd-product-door-organisatie-namens-persoon.svg" alt="Casus product aangevraagd door organisatie die persoon vertegenwoordigt" width="100%"/>
 
 In deze casus dient een organisatie een aanvraag voor levering van een product of dienst in namens een persoon. Dat deze organisatie het recht heeft deze persoon te vertegenwoordigen is tijdens het aanvraagproces met voldoende zekerheid vastgesteld. De organisatie wordt tijdens deze aanvraag zelf ook vertegenwoordigd. Namelijk door de werknemer die de aanvraag indient.
 
