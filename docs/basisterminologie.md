@@ -145,19 +145,18 @@ In deze casus voert een KCC-medewerker een telefoongesprek met een anonieme inwo
 
 ### Baliegesprek leidt tot terugbelverzoek
 
+In deze casus voert een medewerker van de gemeente een gesprek met een door een paspoort geïdentificeerde persoon. Deze persoon heeft eerder contactgegevens aan de gemeente verstrekt, waardoor de persoon als partij bij de gemeente bekend is. De vraag van de persoon kan niet door de medewerker aan de balie worden beantwoord; hiervoor zal een andere medewerker moeten terugbellen. Dit leidt tot registratie van een aan de gesproken partij gerelateerd klantcontact en een aan (collega)medewerker toegewezen interne taak met het verzoek terug te bellen. De persoon wil eenmalig (dus alleen voor de opvolging van dit klantcontact) wil worden teruggebeld op een telefoonnummer dat afwijkt van het bij partij geregistreerde telefoonnummer. Dit telefoonnummer wordt in een aan betrokkene bij klantcontact gerelateerd digitaal adres geregistreerd.
+
 <img src="./assets/basisterminologie/klantinteracties-casus-baliegesprek-met-terugbelverzoek.svg" alt="Casus baliegesprek met terugbelverzoek" width="100%"/>
 
-In deze casus voert een medewerker van de gemeente een gesprek met een door een paspoort geïdentificeerde persoon. Deze persoon heeft eerder contactgegevens aan de gemeente verstrekt, waardoor de persoon als partij bij de gemeente bekend is. De vraag van de persoon kan niet door de medewerker aan de balie worden beantwoord; hiervoor zal een andere medewerker moeten terugbellen. Dit leidt tot registratie van een aan de gesproken partij gerelateerd klantcontact en een aan (collega)medewerker toegewezen interne taak met het verzoek terug te bellen. De persoon wil eenmalig (dus alleen voor de opvolging van dit klantcontact) wil worden teruggebeld op een telefoonnummer dat afwijkt van het bij partij geregistreerde telefoonnummer. Dit telefoonnummer wordt in een aan betrokkene bij klantcontact gerelateerd digitaal adres geregistreerd.
 
 ### Ontvangen e-mailbericht met bijlagen
 
-<img src="./assets/basisterminologie/klantinteracties-casus-ontvangen-e-mail-met-bijlagen.svg" alt="Casus ontvangen e-mailbericht met bijlagen" width="100%"/>
-
 In deze casus ontvangt de gemeente een e-mail met bijlagen. De e-mail beschrijft de aankondiging van een buurtfeest - de gemeente biedt aan deze op haar website te publiceren. Bijgevoegd zijn een flyer, waarin het feest wordt aangekondigd, en een routebeschrijving. Zowel het opgeslagen e-mailbericht als de individuele bijlagen worden als informatieobject (of document) opgeslagen en aan het klantcontact gerelateerd. Het is voor het leveren van deze dienst niet nodig met zekerheid te weten wie de afzender van de aankondiging is. Bovendien is ‘zekere’ identificatie naar aanleiding van e-mailadres niet mogelijk. Er wordt aan het klantcontact dus geen partij gerelateerd.
 
-### Product aangevraagd door organisatie die persoon vertegenwoordigt
+<img src="./assets/basisterminologie/klantinteracties-casus-ontvangen-e-mail-met-bijlagen.svg" alt="Casus ontvangen e-mailbericht met bijlagen" width="100%"/>
 
-<img src="./assets/basisterminologie/klantinteracties-casus-aangevraagd-product-door-organisatie-namens-persoon.svg" alt="Casus product aangevraagd door organisatie die persoon vertegenwoordigt" width="100%"/>
+### Product aangevraagd door organisatie die persoon vertegenwoordigt
 
 In deze casus dient een organisatie een aanvraag voor levering van een product of dienst in namens een persoon. Dat deze organisatie het recht heeft deze persoon te vertegenwoordigen is tijdens het aanvraagproces met voldoende zekerheid vastgesteld. De organisatie wordt tijdens deze aanvraag zelf ook vertegenwoordigd. Namelijk door de werknemer die de aanvraag indient.
 
@@ -173,10 +172,12 @@ Kijken we naar de betrokkenheid bij het klantcontact dat als gevolg van de aanvr
 
 Bij het indienen van de aanvraag heeft de contactpersoon via een e-formulier gegevens verstrekt. Deze gegevens worden gestructureerd opgeslagen in een specifiek register en als inhoudsdeel aan het klantcontact gerelateerd. Op basis van deze gestructureerde gegevens wordt geautomatiseerd een zaak aangemaakt van het juiste zaaktype, die een afdeling van de gemeente vervolgens kan behandelen.
 
-### Ontvangst van document bij lopende zaak
+<img src="./assets/basisterminologie/klantinteracties-casus-aangevraagd-product-door-organisatie-namens-persoon.svg" alt="Casus product aangevraagd door organisatie die persoon vertegenwoordigt" width="100%"/>
 
-<img src="./assets/basisterminologie/klantinteracties-casus-ontvangen-document-bij-lopende-zaak.svg" alt="Casus ontvangst van document bij lopende zaak" width="100%"/>
+### Ontvangst van document bij lopende zaak
 
 In deze casus levert een persoon extra informatie aan om de (verdere) behandeling van een lopende zaak mogelijk te maken. Dit gebeurt in een door authtenticatie beschermd deel van de gemeentelijke website, waarbinnen aanvragers hun lopende zaken kunnen bekijken en in het kader daarvan aangeleverde informatie kunnen corrigeren en aanvullen. Omdat de gemeente dankzij authenticatie  weet wie de persoon is, en bovendien kennis heeft van de zaak waarbij de informatie hoort, kan vanuit het klantcontact een relatie worden gelegd naar de partij die de informatie aanlevert en (als onderwerp) de zaak waarop die betrekking heeft.
 
 De aangeleverde informatie, die de vorm heeft van een Pdf-bestand dat een wegdeel toont dat men vanwege een buurtfeest tijdelijk wil afsluiten en in een contactformulier beschreven toelichting daarbij, wordt als twee inhoudsdelen bij het klantcontact geregistreerd. De toelichting als tekst, het Pdf-bestand als informatieobject.
+
+<img src="./assets/basisterminologie/klantinteracties-casus-ontvangen-document-bij-lopende-zaak.svg" alt="Casus ontvangst van document bij lopende zaak" width="100%"/>
