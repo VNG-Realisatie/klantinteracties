@@ -8,8 +8,9 @@ date: 27-09-2023
 
 ## Modellering in Enterprise Architect
 Binnen VNG Realisatie wordt Enterprise Architect (EA) gebruikt voor de vastlegging van semantische informatiemodellen (SIM). 
+Onderstaand zijn de diagrammen van de oude versies van het infromatiemodel weergegeven en zijn de wijzigingen opgesomd die in het nieuwe model zijn doorgevoerd. 
 
-
+## Van versie 0.0.2 naar 0.0.3
 Onderstaand figuur geeft de modellering van het SIM versie 0.0.2 weer zoals deze in EA was gemodelleerd.
 
 <img src="assets/SIM_Klantinteracties_v002.png" alt="SIM in Enterprise Architect" width="1000"/>
@@ -72,6 +73,7 @@ De wijzigingen die in versie 0.0.3 zijn doorgevoerd t.o.v. deze versie zijn:
     - Kardinaliteit bij Inhoudsobject is gewijzigd van 1..* naar 0..*)
   - Legenda toegevoegd
 
+## Van versie 0.0.1 naar 0.0.2
 Onderstaand figuur geeft de modellering van het SIM versie 0.0.1 weer zoals deze in EA was gemodelleerd.
 
 <img src="assets/SIM_Klantinteracties_v001.png" alt="SIM in Enterprise Architect" width="1000"/>
