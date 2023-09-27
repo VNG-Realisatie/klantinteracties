@@ -1,7 +1,7 @@
 ---
 layout: page-with-side-nav
 title: Semantisch informatiemodel
-date: 14-09-2023
+date: 27-09-2023
 ---
 
 # Semantisch informatiemodel
