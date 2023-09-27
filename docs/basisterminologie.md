@@ -6,11 +6,13 @@ date: 21-08-2023
 
 # Basisterminologie klantinteracties
 
-Deze pagina beschrijft een toelichting bij kernconcepten die binnen het domein van klantinteracties worden erkend. Deze toelichting dient als inleiding tot en aanvulling bij het [semantisch informatiemodel Klantinteracties](informatiemodel/semantisch_model.md).
+Deze pagina beschrijft een toelichting bij kernconcepten die binnen het domein van klantinteracties worden erkend. Deze toelichting dient als inleiding tot en aanvulling bij het [semantisch informatiemodel Klantinteracties](informatiemodel/semantisch_model.md). In de illustraties bij deze toelichting wordt een drietal kleuren gebruikt:
 
-In de illustraties blauwgekleurde concepten (bijvoorbeeld partij en klantcontact) hebben hun ‘thuis’ in het domein klantinteracties. Van rozegekleurde concepten (bijvoorbeeld zaak en informatieobject) verwachten we dat die buiten dit domein (gestandaardiseerd) beschikbaar zijn. Paarsgekleurde concepten (medewerker, organisatorische eenheid en geautomatiseerde actor) hebben we nodig om het domein goed te laten werken, maar ‘horen’ eigenlijk niet daarbinnen. Deze zouden op termijn dus weer uit het domein kunnen verdwijnen.
+1. blauwgekleurde concepten (bijvoorbeeld partij en klantcontact) hebben hun ‘thuis’ in het domein klantinteracties;
+2. van rozegekleurde concepten (bijvoorbeeld zaak en informatieobject) verwachten we dat die buiten dit domein (gestandaardiseerd) beschikbaar zijn of komen, en
+3. paarsgekleurde concepten (medewerker, organisatorische eenheid en geautomatiseerde actor) hebben we nodig om het domein goed te laten werken, maar ‘horen’ eigenlijk niet daarbinnen. Deze zouden op termijn dus weer uit het domein kunnen verdwijnen.
 
-# Begrippen
+## Begripsverklaring
 In deze toelichting wordt een aantal begrippen genoemd. Het grootste deel daarvan is gedefinieerd in het informatiemodel Klantinteracties:
 - Klantcontact: een contact tussen een klant of een vertegenwoordiger van een klant en de gemeente;
 - Partij: een persoon of organisatie waarmee de gemeente een relatie heeft;
@@ -41,24 +43,24 @@ De inhoud van een klantcontact omvat de informatie die tijdens het contact is ui
 
 In sommige gevallen bestaat de inhoud van een klantcontact uit verschillende onderdelen, die bovendien verschillende vastleggingsvormen kunnen vereisen. Denk bijvoorbeeld aan een ontvangen e-mailbericht (‘platte’ tekst) met bijlagen (documenten). In andere gevallen kan het behulpzaam zijn om dezelfde inhoud in meerdere vormen (‘representaties’) vast te leggen. Zo kan het, om verdere geautomatiseerde verwerking mogelijk te maken, enerzijds raadzaam zijn de in een e-formulier ingevulde gegevens als gestructureerde data te registreren, terwijl het vanuit dienstverleningsoogpunt wenselijk is diezelfde gegevens in de vorm van een Pdf-bestand aan de indiener ter beschikking te stellen.
 
-Om te waarborgen dat de standaard aan dit soort scenario's invulling kan geven, wordt de inhoud van een klantcontact vastgelegd in één of meerdere ‘inhoudsdelen’, die ieder één van de volgende drie vormen kunnen hebben:
+Om te waarborgen dat de standaard aan dit soort scenario's invulling kan geven, kan de inhoud van een klantcontact in meerdere vormen vastgelegd worden, waarbij aan het klantcontact eventueel ‘inhoudsobjecten’ worden gerelateerd:
 
-1. (‘Platte’) tekst die (een deel van) de inhoud van het klantcontact beschrijft.
-2. Een verwijzing naar het informatieobject (of document) dat (een deel van) de inhoud van het klantcontact beschrijft.
-3. Een verwijzing naar het dataobject dat (een deel van) de inhoud van het klantcontact beschrijft. De standaard legt geen beperkingen op als het gaat om de objecttypen (en bijbehorende registers) waarnaar vanuit een klantcontact verwezen mag worden, maar erkent expliciet het bestaan van het [register voor overige objectregistraties](https://vng.nl/projecten/overige-objecten-registratie-api).
+1. (‘platte’) tekst die de inhoud van het klantcontact beschrijft;
+2. een verwijzing (via inhoudsobject) naar het informatieobject (of document) dat (een deel van) de inhoud van het klantcontact beschrijft;
+3. een verwijzing (via inhoudsobject) naar het dataobject dat (een deel van) de inhoud van het klantcontact beschrijft. De standaard legt geen beperkingen op als het gaat om de objecttypen (en bijbehorende registers) waarnaar vanuit een klantcontact verwezen mag worden, maar erkent expliciet het bestaan van het [register voor overige objectregistraties](https://vng.nl/projecten/overige-objecten-registratie-api).
 
 <img src="./assets/basisterminologie/klantinteracties-submodel-inhoud-klantcontact.svg" alt="Submodel inhoud van het klantcontact" width="40%"/>
 
 ### Onderwerp van het klantcontact
 
-Naast inhoud heeft het klantcontact een onderwerp. Omdat (zeker tijdens een gesprek) uiteenlopende zaken besproken kunnen worden, kunnen dit ook meerdere onderwerpen zijn. Het onderwerp of de onderwerpen beschrijft waar het klantcontact over ging. Als het klantcontact een eenvoudig verzoek om informatie betrof (“wat zijn de voorwaarden voor kwijtschelding van gemeentelijke belastingen?”), zal zo’n onderwerp vaak een generiek karakter hebben.
+Naast inhoud heeft het klantcontact tenmiste één onderwerp. Maar omdat (zeker tijdens een gesprek) uiteenlopende zaken besproken kunnen worden, kunnen dit er ook meerdere zijn. Het onderwerp of de onderwerpen beschrijft waar het klantcontact over ging. Als het klantcontact een eenvoudig verzoek om informatie betrof (“wat zijn de voorwaarden voor kwijtschelding van gemeentelijke belastingen?”), zal zo’n onderwerp vaak een generiek karakter hebben.
 
-Maar het onderwerp kan ook meer specifiek of persoonlijk zijn en betrekking hebben op een specifiek voor één klant gestart proces (“kunt u toelichting geven bij het verzoek extra informatie aan te leveren om de aanvraag van mijn omgevingsvergunning te kunnen beoordelen?”). Om in verschillende situaties onderwerp(en) van het klantcontact te kunnen vastleggen, worden onderwerpdelen geregistreerd. Net als de klantcontactinhoud, kunnen deze kunnen verschillende vormen hebben:
+Maar het onderwerp kan ook meer specifiek of persoonlijk zijn en betrekking hebben op een specifiek voor één klant gestart proces (“kunt u toelichting geven bij het verzoek extra informatie aan te leveren om de aanvraag van mijn omgevingsvergunning te kunnen beoordelen?”). Om in verschillende situaties onderwerp(en) van het klantcontact te kunnen vastleggen, kunnen onderwerpen in diverse vormen worden geregistreerd:
 
-1. (‘Platte’) tekst die (een deel van) het onderwerp van het klantcontact beschrijft.
-2. Een verwijzing naar de interne taak die aanleiding gaf tot (een deel van) het klantcontact.
-3. Een verwijzing naar de zaak waarover (een deel van) het klantcontactging.
-4. Een verwijzing naar de klanttaak waarover (een deel van) het klantcontact ging.
+1. (‘platte’) tekst die het onderwerp van het klantcontact beschrijft;
+2. een verwijzing (via onderwerpobject) naar de interne taak die aanleiding gaf tot (een deel van) het klantcontact;
+3. een verwijzing (via onderwerpobject) naar de zaak waarover (een deel van) het klantcontactging;
+4. een verwijzing (via onderwerpobject) naar de klanttaak waarover (een deel van) het klantcontact ging.
 
 <img src="./assets/basisterminologie/klantinteracties-submodel-onderwerp-klantcontact.svg" alt="Submodel onderwerp van het klantcontact" width="50%"/>
 
@@ -89,14 +91,12 @@ Een klantcontact kan ook, zij het direct, zij het na nadat uit het uitvoeren van
 
 ## Partij
 
-Een partij is gedefinieerd als “een persoon of organisatie waarmee de gemeente een relatie heeft”.  De definitie kan de vraag oproepen waarom we een eigenlijk een partijenregister nodig hebben. Gegevens over personen of organisaties zijn toch al vastgelegd en opvraagbaar in basisregistraties? Dat klopt. Maar in de Basisregistratie Personen (BRP) en het Handelsregister (HR) vind je van een inwoner of ondernemer geen e-mailadres, telefoonnummer of postadres. Terwijl gemeenten deze gegevens vaak wel nodig hebben, bijvoorbeeld voor het beantwoorden van vragen en het verwerken van aanvragen of meldingen. Gegevens die in een basisregistratie niet kunnen worden opgenomen, maar (vaak) wel te relateren zijn aan een in een basisregistratie geregistreerde persoon of organisatie noemen we wel ‘aangehaakte’ of ‘plus’gegevens. 
-
 Het registreren van partijgegevens dient twee doelen:
 
 1. Het duurzaam vastleggen van (voor zover toegestaan) binnen de hele gemeente te gebruiken ‘default-’contactgegevens van personen en organisaties. Deze contactgegevens hebben daartoe een ‘duurzaam’ karakter, en (dus) een bestaansrecht dat langer kan duren dan het afhandelen van de vraag of het verzoek waarbij ze (voor het eerst) zijn verstrekt.
 2. Het relateren van personen en organisaties aan de klantcontacten die zij met de gemeente hebben gehad zodat die in bijvoorbeeld een Mijnomgeving binnen de gemeentelijke website getoond kunnen worden. Dit doel betekent dat óók als tijdens een eerste contact tussen de gemeente en een persoon of organisatie geen voor hergebruik bedoelde contactgegevens worden verstrekt, het zinvol is een (in dit geval behalve een naar gegevens in een extern register verwijzende externe identificatie ‘lege’) partij te registreren.
 
-Dat partij dient voor het vastleggen van contactgegevens markeert het verschil tussen qua vorm op elkaar lijkende gegevensverzamelingen zoals ‘namen’ of ‘adressen’ die zowel in basisregistraties als bij partijen voorkomen: hun vastlegging heeft een andere aanleiding en dient een ander doel. De persoonsnaam van een als partij geregistreerde persoon is de naam die deze persoon in contact met de gemeente wil gebruiken. Dit hoeft dus niet dezelfde persoonsnaam te zijn als in de Basisregistratie personen is opgeslagen. Hetzelfde geldt voor adresgegevens. Het bezoekadres van een partij is het adres waar die partij zelf heeft aangegeven bezoek te willen ontvangen. Dit adres hoeft dus niet overeen te komen met een BRP-verblijfsadres of een in het Handelsregister bekend vestigingsadres. In sommige situaties mag echter voor correspondentie of bezoek geen adres worden gebruikt dat afwijkt van bijvoorbeeld het in de BRP bekende verblijfsadres van een persoon. Hiermee moet bij de inrichting van processen rekening worden gehouden.
+Dat partij dient voor het vastleggen van contactgegevens markeert het verschil tussen qua vorm op elkaar lijkende gegevensverzamelingen zoals ‘namen’ of ‘adressen’ die zowel in basisregistraties als bij partijen voorkomen: hun vastlegging heeft een andere aanleiding en dient een ander doel. De persoonsnaam van een als partij geregistreerde persoon is de naam die deze persoon in contact met de gemeente wil gebruiken. Dit hoeft dus niet dezelfde persoonsnaam te zijn als die BRP personen is opgeslagen. Hetzelfde geldt voor adresgegevens. Het bezoekadres van een partij is het adres waar die partij zelf heeft aangegeven bezoek te willen ontvangen. Dit adres hoeft dus niet overeen te komen met een BRP-verblijfsadres of een in het Handelsregister bekend vestigingsadres. In sommige situaties mag echter voor correspondentie of bezoek geen adres worden gebruikt dat afwijkt van bijvoorbeeld het in de BRP bekende verblijfsadres van een persoon. Hiermee moet bij de inrichting van processen rekening worden gehouden.
 
 Van wat we ‘digitale adressen’ noemen, bestaan in de basisregistraties slechts beperkt equivalenten. Digitale adressen dienen om bereikbaarheidsgegevens vast te leggen die niet zijn gebonden aan een locatie in de fysieke wereld (waar een bezoekadres, correspondentieadres of postbus wél horen bij zo'n fysieke locatie). Denk hierbij aan e-mailadressen, telefoonnummers of op contactgegevens horend bij gebruikersprofielen op specifieke sociale mediaplatforms.
 
