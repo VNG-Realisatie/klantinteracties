@@ -52,18 +52,25 @@ De wijzigingen die in versie 0.0.3 zijn doorgevoerd t.o.v. deze versie zijn:
     - Persoonsnaam is gewijzigd in Contactnaam
     - Geregistreerd op is toegevoegd
   - Objecttype : Partij
+    -  Indicatie actief toegevoegd
+    -  Geregistreerd op toegevoegd
+  -  Objecttype : Persoon
+     - Naam is gewijzigd naar Contactnaam
+  -  Objecttype : Contactpersoon
+     - Naam is gewijzigd naar Contactnaam
+     - Functie is verwijderd
   - Objecttype Digitaal adres
-    - Geregistreerd op toegeveogd  
+    - Geregistreerd op toegevoegd
+  - Objecttype : Externe identificatie
+    - Geregistreerd op is toegevoegd
   - Objecttype : Interne Taak
     - Geregistreerd op is toegevoegd
+  - Nieuw Objecttype Interne Identificatie toegevoegd. 
   - Relatie : ging over (tussen Klantcontact en Onderwerpobject (was Onderwerpdeel)
     - Kardinaliteit bij Onderwerpobject is gewijzigd van 1..* naar 0..*)
   - Relatie : omvatte (tussen Klantcontact en Inhoudsobject (was Inhoudsdeel)
     - Kardinaliteit bij Inhoudsobject is gewijzigd van 1..* naar 0..*)
-  -	Attribuutsoorten :
-    - Persoon.Naam is gewijzigd naar Persoon.Contactnaam
-    - Contactpersoon.Naam is gewijzigd naar Contactpersoon.Contactnaam
-    - Contactpersoon.functie is verwijderd
+  - Legenda toegevoegd
 
 Onderstaand figuur geeft de modellering van het SIM versie 0.0.1 weer zoals deze in EA was gemodelleerd.
 
