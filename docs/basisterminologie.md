@@ -10,7 +10,7 @@ Deze pagina beschrijft een toelichting bij kernconcepten die binnen het domein v
 
 1. blauwgekleurde concepten (bijvoorbeeld partij en klantcontact) hebben hun ‘thuis’ in het domein klantinteracties;
 2. van rozegekleurde concepten (bijvoorbeeld zaak en informatieobject) verwachten we dat die buiten dit domein (gestandaardiseerd) beschikbaar zijn of komen, en
-3. paarsgekleurde concepten (medewerker, organisatorische eenheid en geautomatiseerde actor) hebben we nodig om het domein goed te laten werken, maar ‘horen’ eigenlijk niet daarbinnen. Deze zouden op termijn dus weer uit het domein kunnen verdwijnen.
+3. paarsgekleurde concepten (medewerker, organisatorische eenheid en geautomatiseerde actor) hebben we nodig om het domein goed te laten werken, maar ‘horen’ eigenlijk niet daarbinnen. Deze zouden op termijn dus weer uit het domein kunnen verdwijnen. Zie ook de toelichting bij [actor](#actor).
 
 ## Begripsverklaring
 In deze toelichting wordt een aantal begrippen genoemd. Het grootste deel daarvan is gedefinieerd in het informatiemodel Klantinteracties:
@@ -43,11 +43,11 @@ De inhoud van een klantcontact omvat de informatie die tijdens het contact is ui
 
 In sommige gevallen bestaat de inhoud van een klantcontact uit verschillende onderdelen, die bovendien verschillende vastleggingsvormen kunnen vereisen. Denk bijvoorbeeld aan een ontvangen e-mailbericht (‘platte’ tekst) met bijlagen (documenten). In andere gevallen kan het behulpzaam zijn om dezelfde inhoud in meerdere vormen (‘representaties’) vast te leggen. Zo kan het, om verdere geautomatiseerde verwerking mogelijk te maken, enerzijds raadzaam zijn de in een e-formulier ingevulde gegevens als gestructureerde data te registreren, terwijl het vanuit dienstverleningsoogpunt wenselijk is diezelfde gegevens in de vorm van een Pdf-bestand aan de indiener ter beschikking te stellen.
 
-Om te waarborgen dat de standaard aan dit soort scenario's invulling kan geven, kan de inhoud van een klantcontact in meerdere vormen vastgelegd worden, waarbij aan het klantcontact eventueel ‘inhoudsobjecten’ worden gerelateerd:
+Om aan dit soort scenario's invulling te geven, kan de inhoud van een klantcontact in meerdere vormen vastgelegd worden, waarbij aan het klantcontact eventueel ‘inhoudsobjecten’ worden gerelateerd:
 
 1. (‘platte’) tekst die de inhoud van het klantcontact beschrijft;
 2. een verwijzing (via inhoudsobject) naar het informatieobject (of document) dat (een deel van) de inhoud van het klantcontact beschrijft;
-3. een verwijzing (via inhoudsobject) naar het dataobject dat (een deel van) de inhoud van het klantcontact beschrijft. De standaard legt geen beperkingen op als het gaat om de objecttypen (en bijbehorende registers) waarnaar vanuit een klantcontact verwezen mag worden, maar erkent expliciet het bestaan van het [register voor overige objectregistraties](https://vng.nl/projecten/overige-objecten-registratie-api).
+3. een verwijzing (via inhoudsobject) naar het dataobject dat (een deel van) de inhoud van het klantcontact beschrijft. Deze documentatie legt geen beperkingen op als het gaat om de objecttypen (en bijbehorende registers) waarnaar vanuit een klantcontact verwezen mag worden, maar erkent expliciet het bestaan van het [register voor overige objectregistraties](https://vng.nl/projecten/overige-objecten-registratie-api).
 
 <img src="./assets/basisterminologie/klantinteracties-submodel-inhoud-klantcontact.svg" alt="Submodel inhoud van het klantcontact" width="40%"/>
 
@@ -110,7 +110,7 @@ Omdat sprake is van persoonsgegevens die niet mogen ‘lekken’, noch ongeautor
 
 Het ‘kennen’ van partijen zal in de praktijk vaak betekenen dat de gemeente beschikt over gegevens waarmee een partij in een extern register (dat zich buiten het domein van klantinteracties bevindt) uniek geïdentificeerd kan worden. Voor Nederlandse partijen zullen dit met name Burgerservicenummers, KVK- en RSIN-nummers zijn die hun bron hebben in de Basisregistratie Personen en het Handelsregister, maar dit kunnen ook andere binnen- of buitenlandse identificatienummers zijn. Deze identificerende gegevens kunnen worden als ‘externe identificatie’ bij partij worden vastgelegd.
 
-*Deze standaard schrijft niet voor niet onder welke voorwaarden het is toegestaan om voor het ene doel ingewonnen contactgegevens voor een ander doel te (her)gebruiken, maar erkent dat hiervoor toestemming nodig kan zijn. Evenmin beschrijft deze standaard welke mate van betrouwbaarheid authenticatie- of identificatiemiddelen moeten bieden voordat partijgegevevens kunnen worden geregistreerd, ingezien, verstrekt en aangepast. Wel stelt de standaard dat deze middelen een aanzienlijke mate van zekerheid moeten bieden over de identiteit van degene die deze handelingen wil (laten) uitvoeren. Het verder invullen van deze voorwaarden is een taak voor juristen, privacy officers en beleidsmakers.*
+*Deze documentatie schrijft niet voor niet onder welke voorwaarden het is toegestaan om voor het ene doel ingewonnen contactgegevens voor een ander doel te (her)gebruiken, maar erkent dat hiervoor toestemming nodig kan zijn. Evenmin beschrijft deze documentatie welke mate van betrouwbaarheid authenticatie- of identificatiemiddelen moeten bieden voordat partijgegevevens kunnen worden geregistreerd, ingezien, verstrekt en aangepast. Wel stelt de documentatie dat deze middelen een aanzienlijke mate van zekerheid moeten bieden over de identiteit van degene die deze handelingen wil (laten) uitvoeren. Het verder invullen van deze voorwaarden is een taak voor juristen, privacy officers en beleidsmakers.*
 
 ### Soorten partijen
 
