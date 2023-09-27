@@ -102,7 +102,7 @@ Dat partij dient voor het vastleggen van contactgegevens markeert het verschil t
 
 Van wat we ‘digitale adressen’ noemen, bestaan in de basisregistraties slechts beperkt equivalenten. Digitale adressen dienen om bereikbaarheidsgegevens vast te leggen die niet zijn gebonden aan een locatie in de fysieke wereld (waar een bezoekadres, correspondentieadres of postbus wél horen bij zo'n fysieke locatie). Denk hierbij aan een e-mailadres, telefoonnummer of contactgegevens horend bij gebruikersprofielen op specifieke sociale mediaplatforms.
 
-Omdat verwarring te voorkomen over hoe contact op te nemen, wordt aan een partij per ‘soort’ digitaal adres (mobiel tefoonnummer, vast telefoonnumer, e-mailadres) slechts één exemplaar gerelateerd. Afwijkende contactgegevens kunnen (voor gebruik bij de afhandeling van één specifiek klantcontact) worden geregistreerd in [betrokkene bij klantcontact](#betrokkene-bij-klantcontact).
+Om verwarring te voorkomen over hoe contact op te nemen, wordt aan een partij per ‘soort’ digitaal adres (mobiel tefoonnummer, vast telefoonnumer, e-mailadres) slechts één exemplaar gerelateerd. Afwijkende contactgegevens kunnen (voor gebruik bij de afhandeling van één specifiek klantcontact) worden geregistreerd in [betrokkene bij klantcontact](#betrokkene-bij-klantcontact).
 
 ### De betekenis van ‘relatie’
 
