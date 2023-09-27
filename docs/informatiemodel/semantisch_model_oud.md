@@ -1,13 +1,80 @@
 ---
 layout: page-with-side-nav
 title: Semantisch informatiemodel versie 0.0.1.
-date: 03-07-2023
+date: 27-09-2023
 ---
 
-# Semantisch informatiemodel Versie 1
+# Semantisch informatiemodel: Oude versies
 
 ## Modellering in Enterprise Architect
-Binnen VNG Realisatie wordt Enterprise Architect (EA) gebruikt voor de vastlegging van semantische informatiemodellen (SIM). Onderstaand figuur geeft de modellering van het SIM versie 1 weer zoals deze in EA is gemodelleerd.
+Binnen VNG Realisatie wordt Enterprise Architect (EA) gebruikt voor de vastlegging van semantische informatiemodellen (SIM). 
+Onderstaand zijn de diagrammen van de oude versies van het infromatiemodel weergegeven en zijn de wijzigingen opgesomd die in het nieuwe model zijn doorgevoerd. 
+
+## Van versie 0.0.2 naar 0.0.3
+Onderstaand figuur geeft de modellering van het SIM versie 0.0.2 weer zoals deze in EA was gemodelleerd.
+
+<img src="assets/SIM_Klantinteracties_v002.png" alt="SIM in Enterprise Architect" width="1000"/>
+
+De wijzigingen die in versie 0.0.3 zijn doorgevoerd t.o.v. deze versie zijn: 
+  -	De definities en de MIM-egenschappen "Herkomst" en "Herkomst Definitie" zijn gecorrigeerd.
+    Definities van objecttypen en attribuutsoorten die aan andere informatiemodellen zijn ontleend zijn gelijkgetrokken met de definities uit die informatiemodellen.
+   	Met de "Herkomst" en de "Herkomst definitie" meta-eigenschappen wordt naar de juiste bron verwezen. 
+  -	Gegevensgroeptype Persoonsnaamgegevens:
+    -	is gewijzigd naar Contactnaam.
+    -	Voorletters toegevoegd.
+  -	Gegevensgroeptype Bezoekadres:
+    -	De specifieke adres attributen zijn verwijderd en er is een verwijzing naar de BAG toegevoegd (nummeraanduiding)
+    -	Er zijn drie adresregels toegevoegd om adressen vast te leggen die niet in de BAG voorkomen.
+  -	Gegevensgroeptype Correspondentieadres:
+    -	De specifieke adres attributen zijn verwijderd en er is een verwijzing naar de BAG toegevoegd (nummeraanduiding)
+    -	Er zijn drie adresregels toegevoegd om adressen vast te leggen die niet in de BAG voorkomen. 
+  -	Objecttype : Geautomatiseerde actor
+    -	is lichtgeel gemaakt (onderdeel van het register bij gebrek aan geautomatiseerder actor-register)
+  -	Objecttype : Actor
+    - Extern Register en Extern ID zijn toegevoegd en optioneel gemaakt.
+    - Geregistreerd op is toegevoegd
+  - Objecttype : Medewerker
+    - Extern Register en Extern ID zijn verplaats naar Actor omdat die nu ook relevant zijn voor de Geautomatiseerde actor
+  - Objecttype : Geautomatiseerde eenheid
+    - Extern Register en Extern ID zijn verplaats naar Actor omdat die nu ook relevant zijn voor de Geautomatiseerde actor
+  - Objecttype : Klantcontact
+    - Inhoud is toegevoegd
+    - Onderwerp is toegevoegd
+  - Objecttype : Onderwerpdeel
+    - is gewijzigd naar Onderwerpobject.
+    - Tekst is verwijderd
+    - Geregistreerd op is toegevoegd
+  - Objecttype : Inhoudsdeel
+    - is gewijzigd naar Inhoudsobject.
+    - Tekst is verwijderd
+    - Soort inhoudsdeel is Soort object geworden (analooog aan Onderwerpobject)
+    - Geregistreerd op is toegevoegd
+  - Objecttype : Betrokkene bij klantcontact
+    - Persoonsnaam is gewijzigd in Contactnaam
+    - Geregistreerd op is toegevoegd
+  - Objecttype : Partij
+    -  Indicatie actief toegevoegd
+    -  Geregistreerd op toegevoegd
+  -  Objecttype : Persoon
+     - Naam is gewijzigd naar Contactnaam
+  -  Objecttype : Contactpersoon
+     - Naam is gewijzigd naar Contactnaam
+     - Functie is verwijderd
+  - Objecttype Digitaal adres
+    - Geregistreerd op toegevoegd
+  - Objecttype : Externe identificatie
+    - Geregistreerd op is toegevoegd
+  - Objecttype : Interne Taak
+    - Geregistreerd op is toegevoegd
+  - Nieuw Objecttype Interne Identificatie toegevoegd. 
+  - Relatie : ging over (tussen Klantcontact en Onderwerpobject (was Onderwerpdeel)
+    - Kardinaliteit bij Onderwerpobject is gewijzigd van 1..* naar 0..*)
+  - Relatie : omvatte (tussen Klantcontact en Inhoudsobject (was Inhoudsdeel)
+    - Kardinaliteit bij Inhoudsobject is gewijzigd van 1..* naar 0..*)
+  - Legenda toegevoegd
+
+## Van versie 0.0.1 naar 0.0.2
+Onderstaand figuur geeft de modellering van het SIM versie 0.0.1 weer zoals deze in EA was gemodelleerd.
 
 <img src="assets/SIM_Klantinteracties_v001.png" alt="SIM in Enterprise Architect" width="1000"/>
 
