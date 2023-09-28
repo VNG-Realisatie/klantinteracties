@@ -49,6 +49,7 @@ De wijzigingen die in versie 0.0.3 zijn doorgevoerd t.o.v. deze versie zijn:
     - Tekst is verwijderd
     - Soort inhoudsdeel is Soort object geworden (analooog aan Onderwerpobject)
     - Geregistreerd op is toegevoegd
+    - Omschrijving is verwijderd
   - Objecttype : Betrokkene bij klantcontact
     - Persoonsnaam is gewijzigd in Contactnaam
     - Geregistreerd op is toegevoegd
