@@ -72,6 +72,8 @@ De wijzigingen die in versie 0.0.3 zijn doorgevoerd t.o.v. deze versie zijn:
     - Kardinaliteit bij Onderwerpobject is gewijzigd van 1..* naar 0..*)
   - Relatie : omvatte (tussen Klantcontact en Inhoudsobject (was Inhoudsdeel)
     - Kardinaliteit bij Inhoudsobject is gewijzigd van 1..* naar 0..*)
+  - Relatie : was (tussen Onderwerpobject (was Onderwerpdeel en Interne taak)
+    - is verlegd van Interne taak naar klantcontact. Het onderwerp zal nooi de interne taak zijn, maar het Klantcontact dat n.a.v. de interne taak is ontstaan.
   - Legenda toegevoegd
 
 ## Van versie 0.0.1 naar 0.0.2
