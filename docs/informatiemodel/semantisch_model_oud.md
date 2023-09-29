@@ -1,7 +1,7 @@
 ---
 layout: page-with-side-nav
 title: Semantisch informatiemodel versie 0.0.1.
-date: 28-09-2023
+date: 29-09-2023
 ---
 
 # Semantisch informatiemodel: Oude versies
@@ -74,7 +74,7 @@ De wijzigingen die in versie 0.0.3 zijn doorgevoerd t.o.v. deze versie zijn:
   - Relatie : omvatte (tussen Klantcontact en Inhoudsobject (was Inhoudsdeel)
     - Kardinaliteit bij Inhoudsobject is gewijzigd van 1..* naar 0..*)
   - Relatie : was (tussen Onderwerpobject (was Onderwerpdeel en Interne taak)
-    - is verlegd van Interne taak naar klantcontact. Het onderwerp zal nooi de interne taak zijn, maar het Klantcontact dat n.a.v. de interne taak is ontstaan.
+    - is verlegd van Interne taak naar klantcontact. Het onderwerp zal nooit de interne taak zijn, maar het Klantcontact dat n.a.v. de interne taak is ontstaan.
   - Legenda toegevoegd
 
 ## Van versie 0.0.1 naar 0.0.2
