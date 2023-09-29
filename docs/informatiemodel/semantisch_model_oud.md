@@ -33,6 +33,7 @@ De wijzigingen die in versie 0.0.3 zijn doorgevoerd t.o.v. deze versie zijn:
   -	Objecttype : Actor
     - Extern Register en Extern ID zijn toegevoegd en optioneel gemaakt.
     - Geregistreerd op is toegevoegd
+    - Extern regsister is van het type referentielijst geworden.
   - Objecttype : Medewerker
     - Extern Register en Extern ID zijn verplaats naar Actor omdat die nu ook relevant zijn voor de Geautomatiseerde actor
   - Objecttype : Geautomatiseerde eenheid
@@ -44,12 +45,14 @@ De wijzigingen die in versie 0.0.3 zijn doorgevoerd t.o.v. deze versie zijn:
     - is gewijzigd naar Onderwerpobject.
     - Tekst is verwijderd
     - Geregistreerd op is toegevoegd
+    - Extern regsister is van het type referntielijst geworden.
   - Objecttype : Inhoudsdeel
     - is gewijzigd naar Inhoudsobject.
     - Tekst is verwijderd
     - Soort inhoudsdeel is Soort object geworden (analooog aan Onderwerpobject)
     - Geregistreerd op is toegevoegd
     - Omschrijving is verwijderd
+    - Extern regsister is van het type referentielijst geworden.
   - Objecttype : Betrokkene bij klantcontact
     - Persoonsnaam is gewijzigd in Contactnaam
     - Geregistreerd op is toegevoegd
