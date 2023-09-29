@@ -1,0 +1,17 @@
+---
+layout: page-with-side-nav
+title: V6468 - Is het moment (datumTijd) waarop het klantcontact plaatsgevonden heeft hetzelfde als "Geregistreerd op"
+Date: 29-09-2023
+---
+
+# V6468 - Is het moment (datumTijd) waarop het klantcontact plaatsgevonden heeft hetzelfde als "Geregistreerd op"
+
+## Vraagstuk
+
+Is het moment (datumTijd) waarop het klantcontact plaatsgevonden heeft hetzelfde als "Geregistreerd op" 
+Is er een reden om een extra datumtijd "Heeft plaatsgevonden op" op te nemendatum en indiendatum vast te leggen. 
+
+## Principebesluit
+
+Er is een datum plaatsgevonden opgenomen in het Klantcontact. 
+
