@@ -1,7 +1,7 @@
 ---
 layout: page-with-side-nav
 title: Vragen en besluiten
-date: 30-03-2023
+date: 29-09-2023
 ---
 
 # Vragen en besluiten
@@ -80,6 +80,13 @@ date: 30-03-2023
 
 - [V6881 - Criteria voor niet digitale authenticatie?](./artefacten/6881.md)
 - [V1767 - Welke identificatie gebruiken we voor het opvragen (raadplegen?) van een partij. ](./artefacten/1767.md)
+
+## Technisch uitwisselingsmodel
+
+- [B1304 - Entiteit Partij](./artefacten/1304.md)
+- [B7993 - Entiteit Actor en de subtypen worden polymorf vormgegeven](./artefacten/7993.md)
+- [B2703 - Relatie *had betrokken* tussen Klantcontact en Actor wordt een koppelresource](./artefacten/2703.md)
+- [B2270 - Implementatie van relaties d.m.v. toevoegen verwijzende attributen](./artefacten/2270.md)
 
 ## Archivering
 
