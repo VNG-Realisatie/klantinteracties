@@ -1,7 +1,7 @@
 ---
 layout: page-with-side-nav
 title: Vragen en besluiten
-date: 29-09-2023
+date: 02-10-2023
 ---
 
 # Vragen en besluiten
@@ -43,7 +43,7 @@ date: 29-09-2023
 
 ### Partij
 
-- [B8315 - Naamgeving Partij](./artefacten/8315.md)
+- [B8315 - Naamgeving objecten Partij, Persoon en Organisatie](./artefacten/8315.md)
 - [B3485 - Partijen zijn beperkt tot gekende personen en organisaties](./artefacten/3485.md)
 - [B4749 - Van gekende personen is niet altijd het BSN bekend](./artefacten/4749.md)
 - [B9045 - We introduceren een partij.nummer naast het BSN](./artefacten/9045.md)
