@@ -86,7 +86,7 @@ date: 02-10-2023
 
 - [B1304 - Resource Partij met contactpersoon, organisatie en persoon.](./artefacten/1304.md)
 - [B7993 - Entiteit Actor en de subtypen worden polymorf vormgegeven](./artefacten/7993.md)
-- [B2703 - Relatie *had betrokken* tussen Klantcontact en Actor wordt een koppelresource](./artefacten/2703.md)
+- [B0399 - Relatie *had betrokken* tussen Klantcontact en Actor wordt een koppelresource](./artefacten/2703.md)
 - [B2270 - Implementatie van relaties d.m.v. toevoegen verwijzende attributen](./artefacten/2270.md)
 
 ## Archivering
