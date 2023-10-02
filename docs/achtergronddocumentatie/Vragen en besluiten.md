@@ -51,6 +51,7 @@ date: 02-10-2023
 - [B0862 - Registratie van personen in verschillende rollen](./artefacten/0862.md)
 - [B4771 - We maken geen gebruik van de Core Person/Business Vocabulary voor eigenschappen van personen en organisaties en/of hun identificatoren.](./artefacten/4771.md)
 - [B8841 - Adres worden vastgelegd middels een verwijzing naar de BAG.](./artefacten/8841.md)
+- [B9491 - Personen hebben een voornaam en een achternaam](./artefacten/9491.md)
 
 ### Klantcontact
 
