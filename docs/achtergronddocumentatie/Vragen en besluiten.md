@@ -53,6 +53,7 @@ date: 02-10-2023
 - [B8841 - Adres worden vastgelegd middels een verwijzing naar de BAG](./artefacten/8841.md)
 - [B9491 - Personen hebben een voornaam en een achternaam](./artefacten/9491.md)
 - [B0606 - Interne notities worden alleen bij Partijen vastgelegd](./artefacten/0606.md)
+- [B9339 - De relatie *werkte voor* wordt niet geïmplementeerd](./artefacten/9339.md)
 
 ### Klantcontact
 
