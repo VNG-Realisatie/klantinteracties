@@ -50,7 +50,7 @@ date: 02-10-2023
 - [B4733 - Partij.nummer niet gebruiken als interne technische sleutel](./artefacten/4733.md)
 - [B0862 - Registratie van personen in verschillende rollen](./artefacten/0862.md)
 - [B4771 - We maken geen gebruik van de Core Person/Business Vocabulary voor eigenschappen van personen en organisaties en/of hun identificatoren.](./artefacten/4771.md)
-- [B8841 - De componenten van een adres worden als aparte attributen opgenomen](./artefacten/8841.md)
+- [B8841 - Adres worden vastgelegd middels een verwijzing naar de BAG.](./artefacten/8841.md)
 
 ### Klantcontact
 
