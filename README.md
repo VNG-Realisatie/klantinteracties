@@ -15,7 +15,6 @@ Verder terugkijken? Ook [deel 1](./assets/project/20230420-toelichting-inzichten
 Gemeenten en hun leveranciers worden uitgenodigd om bij te dragen aan deze ontwikkeling. Onderstaande links geven informatie over hoe die bijdrage geleverd kan worden.
 - Hoe u kunt [bijdragen](https://github.com/VNG-Realisatie/Tutorial/blob/master/CONTRIBUTING.md)
 - [Omgangsvormen](https://github.com/VNG-Realisatie/Tutorial/blob/master/CODE_OF_CONDUCT.md)
-- Mis je functionaliteit die voor jou belangrijk is? Heb je een issue (fout of bug) gezien in een van onze API’s? Of heb je een wens of suggestie? [Bijdragen aan VNGR API standaarden kan in verschillende vormen.](https://vng-realisatie.github.io/API-Kennisbank/docs/hoe-kun-je-bijdragen)
 
 ## Beheer en ondersteuning
 
