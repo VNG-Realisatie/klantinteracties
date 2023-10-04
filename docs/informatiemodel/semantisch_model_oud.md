@@ -16,7 +16,7 @@ Onderstaand figuur geeft de modellering van het SIM versie 0.0.3 weer zoals deze
 <img src="assets/SIM_Klantinteracties_v003.png" alt="SIM in Enterprise Architect" width="1000"/>
 
 De wijzigingen die in versie 0.0.4 zijn doorgevoerd t.o.v. deze versie zijn: 
-  - Primitief datatype Tkest (1000 karakters) toegevoegdd
+  - Primitief datatype Tkest (1000 karakters) toegevoegd
   -	Objecttype Klantontact:
     -	Gemuteerd op toegevoegd.
     -	Mutatiereden toegevoegd.
