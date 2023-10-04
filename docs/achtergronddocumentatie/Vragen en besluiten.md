@@ -1,7 +1,7 @@
 ---
 layout: page-with-side-nav
 title: Vragen en besluiten
-date: 30-03-2023
+date: 02-10-2023
 ---
 
 # Vragen en besluiten
@@ -43,14 +43,16 @@ date: 30-03-2023
 
 ### Partij
 
-- [B8315 - Naamgeving Partij](./artefacten/8315.md)
+- [B8315 - Naamgeving Partij, Persoon en Organisatie](./artefacten/8315.md)
 - [B3485 - Partijen zijn beperkt tot gekende personen en organisaties](./artefacten/3485.md)
 - [B4749 - Van gekende personen is niet altijd het BSN bekend](./artefacten/4749.md)
 - [B9045 - We introduceren een partij.nummer naast het BSN](./artefacten/9045.md)
 - [B4733 - Partij.nummer niet gebruiken als interne technische sleutel](./artefacten/4733.md)
 - [B0862 - Registratie van personen in verschillende rollen](./artefacten/0862.md)
 - [B4771 - We maken geen gebruik van de Core Person/Business Vocabulary voor eigenschappen van personen en organisaties en/of hun identificatoren.](./artefacten/4771.md)
-- [B8841 - De componenten van een adres worden als aparte attributen opgenomen](./artefacten/8841.md)
+- [B8841 - Adres worden vastgelegd middels een verwijzing naar de BAG](./artefacten/8841.md)
+- [B9491 - Personen hebben een voornaam en een achternaam](./artefacten/9491.md)
+- [B0606 - Interne notities worden alleen bij Partijen vastgelegd](./artefacten/0606.md)
 
 ### Klantcontact
 
@@ -80,6 +82,13 @@ date: 30-03-2023
 
 - [V6881 - Criteria voor niet digitale authenticatie?](./artefacten/6881.md)
 - [V1767 - Welke identificatie gebruiken we voor het opvragen (raadplegen?) van een partij. ](./artefacten/1767.md)
+
+## Technisch uitwisselingsmodel
+
+- [B1304 - Resource Partij met contactpersoon, organisatie en persoon.](./artefacten/1304.md)
+- [B7993 - Entiteit Actor en de subtypen worden polymorf vormgegeven](./artefacten/7993.md)
+- [B0399 - Relatie *had betrokken* tussen Klantcontact en Actor wordt een koppelresource](./artefacten/2703.md)
+- [B2270 - Implementatie van relaties d.m.v. toevoegen verwijzende attributen](./artefacten/2270.md)
 
 ## Archivering
 
