@@ -16,7 +16,7 @@ Onderstaand figuur geeft de modellering van het SIM versie 0.0.3 weer zoals deze
 <img src="assets/SIM_Klantinteracties_v003.png" alt="SIM in Enterprise Architect" width="1000"/>
 
 De wijzigingen die in versie 0.0.4 zijn doorgevoerd t.o.v. deze versie zijn: 
-  - Primitief datatype Tkest (1000 karakters) toegevoegd
+  - Primitief datatype Tekst (1000 karakters) toegevoegd
   -	Objecttype Klantontact:
     -	Gemuteerd op toegevoegd.
     -	Mutatiereden toegevoegd.
@@ -24,7 +24,8 @@ De wijzigingen die in versie 0.0.4 zijn doorgevoerd t.o.v. deze versie zijn:
   -	Relatie was (tussen Onderwerpobject en Zaak)
     -	Kardinaliteit bij Zaak aangepast van 1 naar 0..1.
   -	Objecttype Partij:
-    -	Interne notitie heeft als primitief datatype Tekst gekregen. 
+    -	Interne notitie heeft als primitief datatype Tekst gekregen.
+  -	Diverse beschrijvingen van objecttypen, attribuutsoorten en relaties aangescherpt om beoogd gebruik beter te illustreren.
 
 
 ## Van versie 0.0.2 naar 0.0.3
