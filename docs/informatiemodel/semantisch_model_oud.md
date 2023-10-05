@@ -1,7 +1,7 @@
 ---
 layout: page-with-side-nav
 title: Semantisch informatiemodel versie 0.0.1.
-date: 29-09-2023
+date: 05-10-2023
 ---
 
 # Semantisch informatiemodel: Oude versies
@@ -10,21 +10,22 @@ date: 29-09-2023
 Binnen VNG Realisatie wordt Enterprise Architect (EA) gebruikt voor de vastlegging van semantische informatiemodellen (SIM). 
 Onderstaand zijn de diagrammen van de oude versies van het infromatiemodel weergegeven en zijn de wijzigingen opgesomd die in het nieuwe model zijn doorgevoerd. 
 
-## Van versie 0.0.3 naar 0.0.4 (04-10-2023)
+## Van versie 0.0.3 naar 0.0.4 (05-10-2023)
 Onderstaand figuur geeft de modellering van het SIM versie 0.0.3 weer zoals deze in EA was gemodelleerd.
 
 <img src="assets/SIM_Klantinteracties_v003.png" alt="SIM in Enterprise Architect" width="1000"/>
 
 De wijzigingen die in versie 0.0.4 zijn doorgevoerd t.o.v. deze versie zijn: 
   - Primitief datatype Tekst (1000 karakters) toegevoegd
+  - Bij alle objecttypen waar Geregistreerd op een eigenschap was is deze nu verwijderd.
   -	Objecttype Klantontact:
-    -	Gemuteerd op toegevoegd.
-    -	Mutatiereden toegevoegd.
     -	Inhoud heeft als primitief datatype Tekst gekregen.
   -	Relatie was (tussen Onderwerpobject en Zaak)
     -	Kardinaliteit bij Zaak aangepast van 1 naar 0..1.
   -	Objecttype Partij:
     -	Interne notitie heeft als primitief datatype Tekst gekregen.
+  -	Objecttype Interne Taak:
+    -	Toegewezen op toegevoegd.
   -	Diverse beschrijvingen van objecttypen, attribuutsoorten en relaties aangescherpt om beoogd gebruik beter te illustreren.
 
 
