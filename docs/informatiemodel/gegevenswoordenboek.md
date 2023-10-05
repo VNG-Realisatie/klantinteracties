@@ -1,7 +1,7 @@
 ---
 layout: page-with-side-nav
 title: Gegevenswoordenboek informatiemodel klantinteracties
-date: 14-09-2023
+date: 05-10-2023
 ---
 
 <!DOCTYPE HTML><html>
@@ -62,9 +62,9 @@ date: 14-09-2023
          :
          SIM Klantinteracties
          :
-         2.0.0
+         0.0.4
          :
-         2023-09-25T07:14:42Z</p>
+         2023-10-05T12:13:33Z</p>
       <p>
          ID: EAPK_272B109E_0738_42bd_9D43_C4F87B5E8B8D</p>
       <div><strong>Domein: Model</strong><div>
@@ -84,7 +84,8 @@ date: 14-09-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">Een contact tussen een klant of een vertegenwoordiger van een klant en de gemeente.</td>
+                        <td width="70%">Een contact tussen een klant of een vertegenwoordiger van een klant en de gemeente
+                           over een onderwerp.</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -138,8 +139,8 @@ date: 14-09-2023
                         <td width="25%">
                            Nummer
                            </td>
-                        <td width="50%">Uniek identificerend nummer waarmee tijdens communicatie tussen mensen verwezen kan
-                           worden naar het klantcontact.</td>
+                        <td width="50%">Uniek identificerend nummer dat tijdens communicatie tussen mensen kan worden gebruikt
+                           om het specifieke klantcontact aan te duiden.</td>
                         <td width="10%">
                            Identificerend nummer
                            </td>
@@ -150,7 +151,7 @@ date: 14-09-2023
                         <td width="25%">
                            Kanaal
                            </td>
-                        <td width="50%">Het communicatiekanaal dat bij het klantcontact werd gebruikt.</td>
+                        <td width="50%">Communicatiekanaal dat bij het klantcontact werd gebruikt.</td>
                         <td width="10%">
                            Kanaal
                            </td>
@@ -159,9 +160,32 @@ date: 14-09-2023
                      <tr>
                         <td width="5%">&nbsp;</td>
                         <td width="25%">
+                           Onderwerp
+                           </td>
+                        <td width="50%">Datgene waarover het klantcontact ging.</td>
+                        <td width="10%">
+                           Omschrijving-lang
+                           </td>
+                        <td width="10%">1</td>
+                     </tr>
+                     <tr>
+                        <td width="5%">&nbsp;</td>
+                        <td width="25%">
+                           Inhoud
+                           </td>
+                        <td width="50%">Informatie die tijdens het klantcontact werd overgebracht of uitgewisseld, voor zover
+                           die voor betrokkenen of actoren relevant is.</td>
+                        <td width="10%">
+                           Tekst
+                           </td>
+                        <td width="10%">0 .. 1</td>
+                     </tr>
+                     <tr>
+                        <td width="5%">&nbsp;</td>
+                        <td width="25%">
                            Initiator
                            </td>
-                        <td width="50%">De partij die het klantcontact initieerde.</td>
+                        <td width="50%">Degene die het klantcontact initieerde.</td>
                         <td width="10%">
                            Initiator
                            </td>
@@ -184,7 +208,7 @@ date: 14-09-2023
                         <td width="25%">
                            Taal
                            </td>
-                        <td width="50%">De taal die bij het klantcontact werd gesproken of geschreven.</td>
+                        <td width="50%">Taal die bij het klantcontact werd gesproken of geschreven.</td>
                         <td width="10%">
                            Taal
                            </td>
@@ -207,19 +231,10 @@ date: 14-09-2023
                         <td width="25%">
                            Plaatsgevonden op
                            </td>
-                        <td width="50%">Datum en tijdstip waarop het klantcontact plaatsvond. Als het klantcontact een tijdsduur
-                           had, wordt hier de datum en het tijdstip van aanvang bedoeld.</td>
-                        <td width="10%">
-                           Datumtijd
-                           </td>
-                        <td width="10%">1</td>
-                     </tr>
-                     <tr>
-                        <td width="5%">&nbsp;</td>
-                        <td width="25%">
-                           Geregistreerd op
-                           </td>
-                        <td width="50%">De datum en het tijdstip waarop registratie heeft plaatsgevonden.</td>
+                        <td width="50%">Datum en tijdstip waarop het klantontact plaatsvond. Als het klantcontact een gesprek
+                           betrof, is dit het moment waarop het gesprek begon. Als het klantcontact verzending
+                           of ontvangst van informatie betrof, is dit bij benadering het moment waarop informatie
+                           door gemeente verzonden of ontvangen werd.</td>
                         <td width="10%">
                            Datumtijd
                            </td>
@@ -265,7 +280,7 @@ date: 14-09-2023
                            Klantcontact
                            [ 1 ]
                            
-                           had betrokken
+                           had
                            
                            
                            Betrokkene bij klantcontact
@@ -283,11 +298,11 @@ date: 14-09-2023
                            ging over
                            
                            
-                           Onderwerpdeel
+                           Onderwerpobject
                            
-                           [ 1 .. * ]
+                           [ 0 .. * ]
                            </td>
-                        <td width="50%">De onderwerpen die tijdens een klantcontact aan de orde waren.</td>
+                        <td width="50%">Het onderwerp dat tijdens een klantcontact aan de orde was.</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
@@ -298,11 +313,26 @@ date: 14-09-2023
                            omvatte
                            
                            
-                           Inhoudsdeel
+                           Inhoudsobject
                            
-                           [ 1 .. * ]
+                           [ 0 .. * ]
                            </td>
                         <td width="50%">De informatie die tijdens een klantcontact werd medegedeeld of uitgewisseld.</td>
+                     </tr>
+                     <tr>
+                        <td width="5%">&nbsp;</td>
+                        <td width="45%">
+                           
+                           Onderwerpobject
+                           
+                           [ 0 .. * ]
+                           
+                           was
+                           
+                           Klantcontact
+                           [ 0 .. 1 ]
+                           </td>
+                        <td width="50%">De interne taak waarover (een deel van) een klantcontact ging.</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
@@ -360,7 +390,10 @@ date: 14-09-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">Betrokkenheid en rol van een persoon of organisatie bij een klantcontact. </td>
+                        <td width="70%">Ofwel de betrokkenheid van een partij bij een klantcontact, eventueel aangevuld met
+                           specifiek voor opvolging van dat klantcontact te gebruiken contactgegevens, ofwel
+                           de voor opvolging van een klantcontact te gebruiken contactgegevens van een tijdens
+                           dat klantcontact niet als partij gekende persoon.</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -414,8 +447,7 @@ date: 14-09-2023
                         <td width="25%">
                            Rol
                            </td>
-                        <td width="50%">Geeft aan of de persoon of organisatie die bij een klantcontact betrokken was optrad
-                           als (uiteindelijk) belanghebbende of als vertegenwoordiger.</td>
+                        <td width="50%">Rol die de betrokkene bij klantcontact tijdens dat contact vervulde.</td>
                         <td width="10%">
                            Klantcontactrol
                            </td>
@@ -426,7 +458,7 @@ date: 14-09-2023
                         <td width="25%">
                            Organisatienaam
                            </td>
-                        <td width="50%">De naam van de organisatie die betrokken was bij een klantcontact.</td>
+                        <td width="50%">Naam van de organisatie waarmee de betrokkene bij klantcontact een relatie had.</td>
                         <td width="10%">
                            Naam-lang
                            </td>
@@ -435,24 +467,25 @@ date: 14-09-2023
                      <tr>
                         <td width="5%">&nbsp;</td>
                         <td width="25%">
-                           Geregistreerd op
-                           </td>
-                        <td width="50%">De datum en het tijdstip waarop registratie heeft plaatsgevonden.</td>
+                           Contactnaam
+                           :</td>
+                        <td width="50%">Naam die de betrokkene bij klantcontact bij opvolging van dat contact wil gebruiken.</td>
                         <td width="10%">
-                           Datumtijd
+                           Contactnaam
                            </td>
-                        <td width="10%">1</td>
+                        <td width="10%">0 .. 1</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
-                        <td width="25%">
-                           Persoonsnaam
-                           :</td>
-                        <td width="50%">De naam van de persoon die betrokken was bij een klantcontact.</td>
-                        <td width="10%">
-                           Aanspreeknaam
+                        <td width="25%">- 
+                           Voorletters
                            </td>
-                        <td width="10%">0 .. 1</td>
+                        <td width="50%">Een afkorting van de voornamen. Meestal de beginletter, maar in sommige gevallen de
+                           beginletter gecombineerd met de tweede letter van een voornaam.</td>
+                        <td width="10%">
+                           CharacterString
+                           </td>
+                        <td width="10%">1</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
@@ -493,7 +526,8 @@ date: 14-09-2023
                         <td width="25%">
                            Correspondentieadres
                            :</td>
-                        <td width="50%">Het correspondentieadres van de persoon of organisatie die betrokken was bij een klantcontact.</td>
+                        <td width="50%">Adres waarop de betrokkene bij klantcontact naar aanleiding van dat contact te versturen
+                           post wil ontvangen.</td>
                         <td width="10%">
                            Correspondentieadres
                            </td>
@@ -560,7 +594,8 @@ date: 14-09-2023
                         <td width="25%">
                            Bezoekadres
                            :</td>
-                        <td width="50%">Het bezoekadres van de persoon of organisatie die betrokken was bij een klantcontact.</td>
+                        <td width="50%">Adres waarop de betrokkene bij klantcontact in naar aanleiding van dat contact af
+                           te leggen bezoeken wil ontvangen.</td>
                         <td width="10%">
                            Bezoekadres
                            </td>
@@ -662,14 +697,15 @@ date: 14-09-2023
                            Betrokkene bij klantcontact
                            [ 0 .. 1 ]
                            
-                           was bereikbaar op
+                           verstrekte voor opvolging van klantcontact
                            
                            
                            Digitaal adres
                            
                            [ 0 .. * ]
                            </td>
-                        <td width="50%">Het digitale adres waarop de betrokkene bij klantcontact bereikbaar was.</td>
+                        <td width="50%">Het digitale adres dat de betrokkene bij klantcontact opgaf voor gebruik bij opvolging
+                           van het klantcontact.</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
@@ -679,7 +715,7 @@ date: 14-09-2023
                            
                            [ 1 ]
                            
-                           had betrokken
+                           had
                            
                            Betrokkene bij klantcontact
                            [ 0 .. * ]
@@ -810,7 +846,7 @@ date: 14-09-2023
                         <td width="5%">&nbsp;</td>
                         <td width="45%">
                            
-                           Inhoudsdeel
+                           Inhoudsobject
                            
                            [ 0 .. 1 ]
                            
@@ -885,7 +921,7 @@ date: 14-09-2023
                         <td width="25%">
                            Naam
                            </td>
-                        <td width="50%">De naam van de organisatie zoals gebruikt tijdens contact met de gemeente. </td>
+                        <td width="50%">Naam van de organisatie.</td>
                         <td width="10%">
                            Naam-lang
                            </td>
@@ -934,7 +970,7 @@ date: 14-09-2023
                            Partij
                            
                            </td>
-                        <td width="50%">Een persoon of organisatie waarmee de gemeente een relatie heeft.</td>
+                        <td width="50%">Persoon of organisatie waarmee de gemeente een relatie heeft.</td>
                      </tr>
                   </tbody>
                </table>
@@ -959,13 +995,13 @@ date: 14-09-2023
                </table>
                </div>
             
-            <div><a class="anchor" name="global_class_Model_Onderwerpdeel"></a><h2> Onderwerpdeel</h2>
+            <div><a class="anchor" name="global_class_Model_Onderwerpobject"></a><h2> Onderwerpobject</h2>
                
                <table>
                   <tbody>
                      <tr>
                         <td width="30%"><b>Naam</b></td>
-                        <td width="70%">Onderwerpdeel</td>
+                        <td width="70%">Onderwerpobject</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst</b></td>
@@ -973,8 +1009,7 @@ date: 14-09-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">(Een deel van) het onderwerp van een klantcontact. Dit onderwerp kan tekstueel worden
-                           beschreven of bestaan uit een verwijzing naar een (extern) object.</td>
+                        <td width="70%">Een verwijzing naar een (extern) object dat onderwerp van het klantcontact was. </td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -1028,8 +1063,7 @@ date: 14-09-2023
                         <td width="25%">
                            Soort object
                            </td>
-                        <td width="50%">Geeft de vorm (objecttype) aan waarin het (deel)onderwerp van een klantcontact is
-                           geregistreerd.</td>
+                        <td width="50%">Geeft de vorm (objecttype) aan waarin het onderwerp van een klantcontact is geregistreerd.</td>
                         <td width="10%">
                            Soort object
                            </td>
@@ -1038,20 +1072,9 @@ date: 14-09-2023
                      <tr>
                         <td width="5%">&nbsp;</td>
                         <td width="25%">
-                           Tekst
-                           </td>
-                        <td width="50%">Een tekstuele omschrijving van het (deel)onderwerp van het klantcontact.</td>
-                        <td width="10%">
-                           Omschrijving-lang
-                           </td>
-                        <td width="10%">1</td>
-                     </tr>
-                     <tr>
-                        <td width="5%">&nbsp;</td>
-                        <td width="25%">
                            Extern ID
                            </td>
-                        <td width="50%">De identificatiecode waarmee het object dat geldt als (deel)onderwerp van een klantcontact
+                        <td width="50%">Identificatiecode waarmee het object dat geldt als deelonderwerp van een klantcontact
                            in het externe (bron)register uniek ge&amp;#239;dentificeerd kan worden.</td>
                         <td width="10%">
                            Identificatiecode
@@ -1063,21 +1086,10 @@ date: 14-09-2023
                         <td width="25%">
                            Extern register
                            </td>
-                        <td width="50%">Het externe (bron)register waarin het object dat geldt als (deel)onderwerp van een
-                           klantcontact geregistreerd is.</td>
+                        <td width="50%">Extern register waarin het object dat geldt als onderwerp van een klantcontact geregistreerd
+                           is.</td>
                         <td width="10%">
-                           Omschrijving-kort
-                           </td>
-                        <td width="10%">1</td>
-                     </tr>
-                     <tr>
-                        <td width="5%">&nbsp;</td>
-                        <td width="25%">
-                           Geregistreerd op
-                           </td>
-                        <td width="50%">De datum en het tijdstip waarop registratie heeft plaatsgevonden.</td>
-                        <td width="10%">
-                           Datumtijd
+                           Extern register
                            </td>
                         <td width="10%">1</td>
                      </tr>
@@ -1103,13 +1115,13 @@ date: 14-09-2023
                      <tr>
                         <td width="5%">&nbsp;</td>
                         <td width="45%">
-                           Onderwerpdeel
+                           Onderwerpobject
                            [ 0 .. * ]
                            
                            was
                            
                            
-                           Interne taak
+                           Klantcontact
                            
                            [ 0 .. 1 ]
                            </td>
@@ -1118,7 +1130,7 @@ date: 14-09-2023
                      <tr>
                         <td width="5%">&nbsp;</td>
                         <td width="45%">
-                           Onderwerpdeel
+                           Onderwerpobject
                            [ 0 .. * ]
                            
                            was
@@ -1128,12 +1140,12 @@ date: 14-09-2023
                            
                            [ 0 .. 1 ]
                            </td>
-                        <td width="50%">Het andere object waarover (een deel van) een klantcontact ging.</td>
+                        <td width="50%">Het andere object waarover een klantcontact ging.</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
                         <td width="45%">
-                           Onderwerpdeel
+                           Onderwerpobject
                            [ 0 .. * ]
                            
                            was
@@ -1143,12 +1155,12 @@ date: 14-09-2023
                            
                            [ 0 .. 1 ]
                            </td>
-                        <td width="50%">De klanttaak waarover (een deel van) een klantcontact ging.</td>
+                        <td width="50%">De klanttaak waarover een klantcontact ging.</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
                         <td width="45%">
-                           Onderwerpdeel
+                           Onderwerpobject
                            [ 0 .. * ]
                            
                            was
@@ -1156,9 +1168,9 @@ date: 14-09-2023
                            
                            Zaak
                            
-                           [ 1 ]
+                           [ 0 .. 1 ]
                            </td>
-                        <td width="50%">De zaak waarover (een deel van) een klantcontact ging.</td>
+                        <td width="50%">De zaak waarover een klantcontact ging.</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
@@ -1170,10 +1182,10 @@ date: 14-09-2023
                            
                            ging over
                            
-                           Onderwerpdeel
-                           [ 1 .. * ]
+                           Onderwerpobject
+                           [ 0 .. * ]
                            </td>
-                        <td width="50%">De onderwerpen die tijdens een klantcontact aan de orde waren.</td>
+                        <td width="50%">Het onderwerp dat tijdens een klantcontact aan de orde was.</td>
                      </tr>
                   </tbody>
                </table>
@@ -1195,7 +1207,7 @@ date: 14-09-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">Een persoon of organisatie waarmee de gemeente een relatie heeft.</td>
+                        <td width="70%">Persoon of organisatie waarmee de gemeente een relatie heeft.</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -1249,8 +1261,8 @@ date: 14-09-2023
                         <td width="25%">
                            Nummer
                            </td>
-                        <td width="50%">Uniek identificerend nummer waarmee tijdens communicatie tussen mensen verwezen kan
-                           worden naar de partij.</td>
+                        <td width="50%">Uniek identificerend nummer dat tijdens communicatie tussen mensen kan worden gebruikt
+                           om de specifieke partij aan te duiden.</td>
                         <td width="10%">
                            Partijnummer
                            </td>
@@ -1264,7 +1276,7 @@ date: 14-09-2023
                         <td width="50%">Mededelingen, aantekeningen of bijzonderheden over de partij, bedoeld voor intern
                            gebruik.</td>
                         <td width="10%">
-                           Omschrijving-lang
+                           Tekst
                            </td>
                         <td width="10%">0 .. 1</td>
                      </tr>
@@ -1296,7 +1308,7 @@ date: 14-09-2023
                         <td width="25%">
                            Voorkeurskanaal
                            </td>
-                        <td width="50%">Het kanaal dat de partij bij voorkeur gebruikt voor contact met de gemeente.</td>
+                        <td width="50%">Kanaal dat de partij bij voorkeur gebruikt voor contact met de gemeente.</td>
                         <td width="10%">
                            Kanaal
                            </td>
@@ -1307,7 +1319,7 @@ date: 14-09-2023
                         <td width="25%">
                            Voorkeurstaal
                            </td>
-                        <td width="50%">De taal waarin de partij bij voorkeur contact heeft met de gemeente.</td>
+                        <td width="50%">Taal waarin de partij bij voorkeur contact heeft met de gemeente.</td>
                         <td width="10%">
                            Taal
                            </td>
@@ -1318,9 +1330,8 @@ date: 14-09-2023
                         <td width="25%">
                            Indicatie actief
                            </td>
-                        <td width="50%">Geeft aan of de betreffende partij nog actief gebruikt kan worden voor contacten.
-                           Gegevens van Partijen die niet actief zijn mogen niet gebruikt worden om contact op
-                           te nemen. </td>
+                        <td width="50%">Geeft aan of de contactgegevens van de partij nog gebruikt morgen worden om contact
+                           op te nemen. Gegevens van niet-actieve partijen mogen hiervoor niet worden gebruikt.</td>
                         <td width="10%">
                            Indicatie Ja Nee
                            </td>
@@ -1329,20 +1340,9 @@ date: 14-09-2023
                      <tr>
                         <td width="5%">&nbsp;</td>
                         <td width="25%">
-                           Geregistreerd op
-                           </td>
-                        <td width="50%">De datum en het tijdstip waarop registratie heeft plaatsgevonden.</td>
-                        <td width="10%">
-                           Datumtijd
-                           </td>
-                        <td width="10%">1</td>
-                     </tr>
-                     <tr>
-                        <td width="5%">&nbsp;</td>
-                        <td width="25%">
                            Bezoekadres
                            :</td>
-                        <td width="50%">Het bezoekadres van de partij.</td>
+                        <td width="50%">Adres waarop de partij door gemeente bezocht wil worden.</td>
                         <td width="10%">
                            Bezoekadres
                            </td>
@@ -1409,7 +1409,7 @@ date: 14-09-2023
                         <td width="25%">
                            Correspondentieadres
                            :</td>
-                        <td width="50%">Het correspondentieadres van de partij.</td>
+                        <td width="50%">Adres waarop de partij post van de gemeente wil ontvangen.</td>
                         <td width="10%">
                            Correspondentieadres
                            </td>
@@ -1503,7 +1503,8 @@ date: 14-09-2023
                            
                            [ 0 .. * ]
                            </td>
-                        <td width="50%">De identificerende gegevens die de partij in een andere interne registratie aanwijzen.</td>
+                        <td width="50%">De identificerende gegevens die de bij een partij horende gegevens in een ander intern
+                           register aanwijzen.</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
@@ -1518,7 +1519,7 @@ date: 14-09-2023
                            
                            [ 1 .. * ]
                            </td>
-                        <td width="50%">De identificerende gegevens die de partij in een externe registratie aanwijzen.</td>
+                        <td width="50%">De identificerende gegevens die de partij in een extern register aanwijzen.</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
@@ -1541,14 +1542,15 @@ date: 14-09-2023
                            Partij
                            [ 0 .. 1 ]
                            
-                           was bereikbaar op
+                           verstrekte voor toekomstig contact
                            
                            
                            Digitaal adres
                            
                            [ 0 .. * ]
                            </td>
-                        <td width="50%">Het digitale adres waarop de partij bereikbaar was.</td>
+                        <td width="50%">Het digitale adres dat de partij voor gebruik bij toekomstig contact met de gemeente
+                           verstrekte.</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
@@ -1571,13 +1573,13 @@ date: 14-09-2023
                
                </div>
             
-            <div><a class="anchor" name="global_class_Model_Inhoudsdeel"></a><h2> Inhoudsdeel</h2>
+            <div><a class="anchor" name="global_class_Model_Inhoudsobject"></a><h2> Inhoudsobject</h2>
                
                <table>
                   <tbody>
                      <tr>
                         <td width="30%"><b>Naam</b></td>
-                        <td width="70%">Inhoudsdeel</td>
+                        <td width="70%">Inhoudsobject</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst</b></td>
@@ -1585,8 +1587,8 @@ date: 14-09-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">(Een deel van) de inhoud van een klantcontact. Dit onderwerp kan tekstueel worden
-                           beschreven of bestaan uit een verwijzing naar een (extern) object.</td>
+                        <td width="70%">Een verwijzing naar een (extern) object dat uitgewisseld of gemaakt is tijdens het
+                           klantcontact.</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -1638,45 +1640,22 @@ date: 14-09-2023
                      <tr>
                         <td width="5%">&nbsp;</td>
                         <td width="25%">
-                           Omschrijving
-                           </td>
-                        <td width="50%">Een omschrijving van het inhoudsdeel.</td>
-                        <td width="10%">
-                           Omschrijving-kort
-                           </td>
-                        <td width="10%">1</td>
-                     </tr>
-                     <tr>
-                        <td width="5%">&nbsp;</td>
-                        <td width="25%">
-                           Soort inhoudsdeel
+                           Soort object
                            </td>
                         <td width="50%">Geeft de vorm (objecttype) aan waarin (een deel van) de inhoud van een klantcontact
                            is beschreven.</td>
                         <td width="10%">
-                           Soort inhoudsdeel
+                           Soort object
                            </td>
                         <td width="10%">1</td>
-                     </tr>
-                     <tr>
-                        <td width="5%">&nbsp;</td>
-                        <td width="25%">
-                           Tekst
-                           </td>
-                        <td width="50%">Een zo feitelijk mogelijke tekstuele weergave van de inhoud van het klantcontact,
-                           voor zover die voor betrokkenen relevant is.</td>
-                        <td width="10%">
-                           Omschrijving-lang
-                           </td>
-                        <td width="10%">0 .. 1</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
                         <td width="25%">
                            Extern ID
                            </td>
-                        <td width="50%">De identificatiecode waarmee het object dat (een deel van) de inhoud van een klantcontact
-                           beschrijft in het externe (bron)register uniek ge&amp;#239;dentificeerd kan worden.</td>
+                        <td width="50%">Identificatiecode waarmee het object dat (een deel van) de inhoud van een klantcontact
+                           beschrijft in het externe register uniek ge&amp;#239;dentificeerd kan worden.</td>
                         <td width="10%">
                            Identificatiecode
                            </td>
@@ -1687,21 +1666,10 @@ date: 14-09-2023
                         <td width="25%">
                            Extern register
                            </td>
-                        <td width="50%">Het externe (bron)register waarin het object dat (een deel van) de inhoud van een
-                           klantcontact beschrijft geregistreerd is.</td>
+                        <td width="50%">Extern register waarin het object dat (een deel van) de inhoud van een klantcontact
+                           beschrijft geregistreerd is.</td>
                         <td width="10%">
-                           Omschrijving-kort
-                           </td>
-                        <td width="10%">1</td>
-                     </tr>
-                     <tr>
-                        <td width="5%">&nbsp;</td>
-                        <td width="25%">
-                           Geregistreerd op
-                           </td>
-                        <td width="50%">De datum en het tijdstip waarop registratie heeft plaatsgevonden.</td>
-                        <td width="10%">
-                           Datumtijd
+                           Extern register
                            </td>
                         <td width="10%">1</td>
                      </tr>
@@ -1727,7 +1695,7 @@ date: 14-09-2023
                      <tr>
                         <td width="5%">&nbsp;</td>
                         <td width="45%">
-                           Inhoudsdeel
+                           Inhoudsobject
                            [ 0 .. 1 ]
                            
                            was
@@ -1742,7 +1710,7 @@ date: 14-09-2023
                      <tr>
                         <td width="5%">&nbsp;</td>
                         <td width="45%">
-                           Inhoudsdeel
+                           Inhoudsobject
                            [ 0 .. 1 ]
                            
                            was
@@ -1757,7 +1725,7 @@ date: 14-09-2023
                      <tr>
                         <td width="5%">&nbsp;</td>
                         <td width="45%">
-                           Inhoudsdeel
+                           Inhoudsobject
                            [ 0 .. 1 ]
                            
                            was
@@ -1779,8 +1747,8 @@ date: 14-09-2023
                            
                            omvatte
                            
-                           Inhoudsdeel
-                           [ 1 .. * ]
+                           Inhoudsobject
+                           [ 0 .. * ]
                            </td>
                         <td width="50%">De informatie die tijdens een klantcontact werd medegedeeld of uitgewisseld.</td>
                      </tr>
@@ -1804,8 +1772,7 @@ date: 14-09-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">Een persoon die als werknemer handelde namens een organisatie, of een persoon die
-                           een andere persoon vertegenwoordigde.</td>
+                        <td width="70%">Persoon die werkte voor een organisatie, of persoon die een andere persoon vertegenwoordigde.</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -1846,11 +1813,23 @@ date: 14-09-2023
                      <tr>
                         <td width="5%">&nbsp;</td>
                         <td width="25%">
-                           Aanspreeknaam
+                           Contactnaam
                            :</td>
-                        <td width="50%">De naam die de persoon opgaf voor gebruik bij contact met de gemeente.</td>
+                        <td width="50%">De naam die de contactpersoon wil gebruiken tijdens contact met de gemeente.</td>
                         <td width="10%">
-                           Aanspreeknaam
+                           Contactnaam
+                           </td>
+                        <td width="10%">1</td>
+                     </tr>
+                     <tr>
+                        <td width="5%">&nbsp;</td>
+                        <td width="25%">- 
+                           Voorletters
+                           </td>
+                        <td width="50%">Een afkorting van de voornamen. Meestal de beginletter, maar in sommige gevallen de
+                           beginletter gecombineerd met de tweede letter van een voornaam.</td>
+                        <td width="10%">
+                           CharacterString
                            </td>
                         <td width="10%">1</td>
                      </tr>
@@ -1931,7 +1910,7 @@ date: 14-09-2023
                            Partij
                            
                            </td>
-                        <td width="50%">Een persoon of organisatie waarmee de gemeente een relatie heeft.</td>
+                        <td width="50%">Persoon of organisatie waarmee de gemeente een relatie heeft.</td>
                      </tr>
                   </tbody>
                </table>
@@ -1953,7 +1932,7 @@ date: 14-09-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">Een natuurlijk persoon.</td>
+                        <td width="70%">Natuurlijk persoon.</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -1994,13 +1973,25 @@ date: 14-09-2023
                      <tr>
                         <td width="5%">&nbsp;</td>
                         <td width="25%">
-                           Aanspreeknaam
+                           Contactnaam
                            :</td>
-                        <td width="50%">De naam die de persoon opgaf voor gebruik bij contact met de gemeente.</td>
+                        <td width="50%">De naam die de persoon wil gebruiken tijdens contact met de gemeente.</td>
                         <td width="10%">
-                           Aanspreeknaam
+                           Contactnaam
                            </td>
                         <td width="10%">0 .. 1</td>
+                     </tr>
+                     <tr>
+                        <td width="5%">&nbsp;</td>
+                        <td width="25%">- 
+                           Voorletters
+                           </td>
+                        <td width="50%">Een afkorting van de voornamen. Meestal de beginletter, maar in sommige gevallen de
+                           beginletter gecombineerd met de tweede letter van een voornaam.</td>
+                        <td width="10%">
+                           CharacterString
+                           </td>
+                        <td width="10%">1</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
@@ -2064,7 +2055,7 @@ date: 14-09-2023
                            Partij
                            
                            </td>
-                        <td width="50%">Een persoon of organisatie waarmee de gemeente een relatie heeft.</td>
+                        <td width="50%">Persoon of organisatie waarmee de gemeente een relatie heeft.</td>
                      </tr>
                   </tbody>
                </table>
@@ -2175,7 +2166,7 @@ date: 14-09-2023
                         <td width="5%">&nbsp;</td>
                         <td width="45%">
                            
-                           Onderwerpdeel
+                           Onderwerpobject
                            
                            [ 0 .. * ]
                            
@@ -2184,13 +2175,13 @@ date: 14-09-2023
                            Ander Object
                            [ 0 .. 1 ]
                            </td>
-                        <td width="50%">Het andere object waarover (een deel van) een klantcontact ging.</td>
+                        <td width="50%">Het andere object waarover een klantcontact ging.</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
                         <td width="45%">
                            
-                           Inhoudsdeel
+                           Inhoudsobject
                            
                            [ 0 .. 1 ]
                            
@@ -2239,8 +2230,8 @@ date: 14-09-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">Contactgegevens waarmee een persoon of organisatie via een digitaal kanaal bereikt
-                           kan worden.</td>
+                        <td width="70%">Contactgegevens die niet verbonden zijn aan een specifieke fysieke locatie waarmee
+                           een persoon of organisatie bereikt kan worden.</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -2294,8 +2285,8 @@ date: 14-09-2023
                         <td width="25%">
                            Soort digitaal adres
                            </td>
-                        <td width="50%">De typering van het digitale adres die aangeeft via welk(e) kanaal of kanalen met
-                           dit adres contact kan worden opgenomen.</td>
+                        <td width="50%">Typering van het digitale adres die aangeeft via welk(e) kanaal of kanalen met dit
+                           adres contact kan worden opgenomen.</td>
                         <td width="10%">
                            Soort digitaal adres
                            </td>
@@ -2306,7 +2297,7 @@ date: 14-09-2023
                         <td width="25%">
                            Adres
                            </td>
-                        <td width="50%">Het digitale adres van de partij of betrokkene bij klantcontact.</td>
+                        <td width="50%">Digitaal adres waarmee een persoon of organisatie bereikt kan worden.</td>
                         <td width="10%">
                            Adresregel
                            </td>
@@ -2320,29 +2311,6 @@ date: 14-09-2023
                         <td width="50%">Omschrijving van het digitaal adres.</td>
                         <td width="10%">
                            Omschrijving-kort
-                           </td>
-                        <td width="10%">1</td>
-                     </tr>
-                     <tr>
-                        <td width="5%">&nbsp;</td>
-                        <td width="25%">
-                           Indicatie actief
-                           </td>
-                        <td width="50%">Geeft aan of het betreffende digitale adres nog gebruikt kan worden om contact te
-                           leggen met de partij of betrokkene bij klantcontact.</td>
-                        <td width="10%">
-                           Indicatie Ja Nee
-                           </td>
-                        <td width="10%">1</td>
-                     </tr>
-                     <tr>
-                        <td width="5%">&nbsp;</td>
-                        <td width="25%">
-                           Geregistreerd op
-                           </td>
-                        <td width="50%">De datum en het tijdstip waarop registratie heeft plaatsgevonden.</td>
-                        <td width="10%">
-                           Datumtijd
                            </td>
                         <td width="10%">1</td>
                      </tr>
@@ -2373,12 +2341,13 @@ date: 14-09-2023
                            
                            [ 0 .. 1 ]
                            
-                           was bereikbaar op
+                           verstrekte voor opvolging van klantcontact
                            
                            Digitaal adres
                            [ 0 .. * ]
                            </td>
-                        <td width="50%">Het digitale adres waarop de betrokkene bij klantcontact bereikbaar was.</td>
+                        <td width="50%">Het digitale adres dat de betrokkene bij klantcontact opgaf voor gebruik bij opvolging
+                           van het klantcontact.</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
@@ -2388,12 +2357,13 @@ date: 14-09-2023
                            
                            [ 0 .. 1 ]
                            
-                           was bereikbaar op
+                           verstrekte voor toekomstig contact
                            
                            Digitaal adres
                            [ 0 .. * ]
                            </td>
-                        <td width="50%">Het digitale adres waarop de partij bereikbaar was.</td>
+                        <td width="50%">Het digitale adres dat de partij voor gebruik bij toekomstig contact met de gemeente
+                           verstrekte.</td>
                      </tr>
                   </tbody>
                </table>
@@ -2508,29 +2478,6 @@ date: 14-09-2023
                            </td>
                         <td width="10%">1</td>
                      </tr>
-                     <tr>
-                        <td width="5%">&nbsp;</td>
-                        <td width="25%">
-                           Extern register
-                           </td>
-                        <td width="50%">Het externe (bron)register waarin gegevens over de medewerker zijn geregistreerd.</td>
-                        <td width="10%">
-                           Omschrijving-kort
-                           </td>
-                        <td width="10%">1</td>
-                     </tr>
-                     <tr>
-                        <td width="5%">&nbsp;</td>
-                        <td width="25%">
-                           Extern ID
-                           </td>
-                        <td width="50%">De identificatiecode waarmee een medewerker in het externe (bron)register uniek ge&amp;#239;dentificeerd
-                           kan worden.</td>
-                        <td width="10%">
-                           Identificatiecode
-                           </td>
-                        <td width="10%">1</td>
-                     </tr>
                   </tbody>
                </table>
                
@@ -2624,7 +2571,8 @@ date: 14-09-2023
                         <td width="25%">
                            Functie
                            </td>
-                        <td width="50%">De functie van de geautomatiseerde actor.</td>
+                        <td width="50%">Functie van de geautomatiseerde actor of beschrijving van de werkzaamheden die deze
+                           uitvoert.</td>
                         <td width="10%">
                            Omschrijving-kort
                            </td>
@@ -2635,7 +2583,7 @@ date: 14-09-2023
                         <td width="25%">
                            Omschrijving
                            </td>
-                        <td width="50%">Een omschrijving van de geautomatiseerde actor.</td>
+                        <td width="50%">Omschrijving van de geautomatiseerde actor.</td>
                         <td width="10%">
                            Omschrijving-lang
                            </td>
@@ -2765,7 +2713,7 @@ date: 14-09-2023
                         <td width="5%">&nbsp;</td>
                         <td width="45%">
                            
-                           Inhoudsdeel
+                           Inhoudsobject
                            
                            [ 0 .. 1 ]
                            
@@ -2850,7 +2798,7 @@ date: 14-09-2023
                         <td width="25%">
                            Naam
                            </td>
-                        <td width="50%">De naam van de actor.</td>
+                        <td width="50%">Naam van de actor.</td>
                         <td width="10%">
                            Naam-lang
                            </td>
@@ -2872,8 +2820,8 @@ date: 14-09-2023
                         <td width="25%">
                            Indicatie actief
                            </td>
-                        <td width="50%">Geeft aan of de betreffende actor nog actief is. Actoren die niet actief zijn mogen
-                           niet gekoppeld worden aan nieuwe klantcontacten. </td>
+                        <td width="50%">Geeft aan of aan de actor nog betrokken mag worden bij nieuwe klantcontacten. Voor
+                           niet-actieve is dit niet toegestaan.</td>
                         <td width="10%">
                            Indicatie Ja Nee
                            </td>
@@ -2882,13 +2830,25 @@ date: 14-09-2023
                      <tr>
                         <td width="5%">&nbsp;</td>
                         <td width="25%">
-                           Geregistreerd op
+                           Extern register
                            </td>
-                        <td width="50%">De datum en het tijdstip waarop registratie heeft plaatsgevonden.</td>
+                        <td width="50%">Externe (bron)register waarin gegevens over de actor zijn geregistreerd.</td>
                         <td width="10%">
-                           Datumtijd
+                           Extern register
                            </td>
-                        <td width="10%">1</td>
+                        <td width="10%">0 .. 1</td>
+                     </tr>
+                     <tr>
+                        <td width="5%">&nbsp;</td>
+                        <td width="25%">
+                           Extern ID
+                           </td>
+                        <td width="50%">Identificatiecode waarmee een actor in het externe (bron)register uniek ge&amp;#239;dentificeerd
+                           kan worden.</td>
+                        <td width="10%">
+                           Identificatiecode
+                           </td>
+                        <td width="10%">0 .. 1</td>
                      </tr>
                   </tbody>
                </table>
@@ -3044,29 +3004,6 @@ date: 14-09-2023
                            </td>
                         <td width="10%">0 .. 1</td>
                      </tr>
-                     <tr>
-                        <td width="5%">&nbsp;</td>
-                        <td width="25%">
-                           Extern register
-                           </td>
-                        <td width="50%">Het externe (bron)register waarin gegevens over de organisatorische eenheid zijn geregistreerd.</td>
-                        <td width="10%">
-                           Omschrijving-kort
-                           </td>
-                        <td width="10%">1</td>
-                     </tr>
-                     <tr>
-                        <td width="5%">&nbsp;</td>
-                        <td width="25%">
-                           Extern ID
-                           </td>
-                        <td width="50%">De identificatiecode waarmee de organisatorische eenheid in het externe (bron)register
-                           uniek ge&amp;#239;dentificeerd kan worden.</td>
-                        <td width="10%">
-                           Identificatiecode
-                           </td>
-                        <td width="10%">1</td>
-                     </tr>
                   </tbody>
                </table>
                
@@ -3171,8 +3108,8 @@ date: 14-09-2023
                         <td width="25%">
                            Nummer
                            </td>
-                        <td width="50%">Uniek identificerend nummer waarmee tijdens communicatie tussen mensen verwezen kan
-                           worden naar de interne taak.</td>
+                        <td width="50%">Uniek identificerend nummer dat tijdens communicatie tussen mensen kan worden gebruikt
+                           om de specifieke interne taak aan te duiden.</td>
                         <td width="10%">
                            Identificerend nummer
                            </td>
@@ -3183,7 +3120,7 @@ date: 14-09-2023
                         <td width="25%">
                            Gevraagde handeling
                            </td>
-                        <td width="50%">De handeling die moet worden uitgevoerd om de taak af te ronden.</td>
+                        <td width="50%">Handeling die moet worden uitgevoerd om de taak af te ronden.</td>
                         <td width="10%">
                            Omschrijving-lang
                            </td>
@@ -3195,7 +3132,8 @@ date: 14-09-2023
                            Toelichting
                            </td>
                         <td width="50%">Toelichting die, aanvullend bij de inhoud van het klantcontact dat aanleiding gaf
-                           tot de taak en de gevraagde handeling bijdraagt aan het kunnen afhandelen van de taak.</td>
+                           tot de taak en de gevraagde handeling, bijdraagt aan het kunnen afhandelen van de
+                           taak.</td>
                         <td width="10%">
                            Toelichting
                            </td>
@@ -3206,7 +3144,7 @@ date: 14-09-2023
                         <td width="25%">
                            Status
                            </td>
-                        <td width="50%">De voortgang van afhandeling van de TAAK.</td>
+                        <td width="50%">Aanduiding van de vordering bij afhandeling van de interne taak.</td>
                         <td width="10%">
                            Taakstatus
                            </td>
@@ -3215,9 +3153,9 @@ date: 14-09-2023
                      <tr>
                         <td width="5%">&nbsp;</td>
                         <td width="25%">
-                           Geregistreerd op
+                           Toegewezen op
                            </td>
-                        <td width="50%">De datum en het tijdstip waarop de registratie heeft plaatsgevonden. </td>
+                        <td width="50%">Datum en tijdstip waarop de interne taak aan een actor werd toegewezen.</td>
                         <td width="10%">
                            Datumtijd
                            </td>
@@ -3271,21 +3209,6 @@ date: 14-09-2023
                            [ 1 ]
                            </td>
                         <td width="50%">Het klantcontact dat aanleiding gaf tot het ontstaan van een interne taak.</td>
-                     </tr>
-                     <tr>
-                        <td width="5%">&nbsp;</td>
-                        <td width="45%">
-                           
-                           Onderwerpdeel
-                           
-                           [ 0 .. * ]
-                           
-                           was
-                           
-                           Interne taak
-                           [ 0 .. 1 ]
-                           </td>
-                        <td width="50%">De interne taak waarover (een deel van) een klantcontact ging.</td>
                      </tr>
                   </tbody>
                </table>
@@ -3373,17 +3296,6 @@ date: 14-09-2023
                      <tr>
                         <td width="5%">&nbsp;</td>
                         <td width="25%">
-                           Geregistreerd op
-                           </td>
-                        <td width="50%">Datum en tijd waarop de registratie heeft plaatsgevonden.</td>
-                        <td width="10%">
-                           Datumtijd
-                           </td>
-                        <td width="10%">1</td>
-                     </tr>
-                     <tr>
-                        <td width="5%">&nbsp;</td>
-                        <td width="25%">
                            Gevraagde handeling
                            </td>
                         <td width="50%">Op de klant gerichte uitleg van de activiteit die de gemeente vraag aan de klant om
@@ -3438,7 +3350,7 @@ date: 14-09-2023
                         <td width="5%">&nbsp;</td>
                         <td width="45%">
                            
-                           Onderwerpdeel
+                           Onderwerpobject
                            
                            [ 0 .. * ]
                            
@@ -3447,7 +3359,7 @@ date: 14-09-2023
                            Klanttaak
                            [ 0 .. 1 ]
                            </td>
-                        <td width="50%">De klanttaak waarover (een deel van) een klantcontact ging.</td>
+                        <td width="50%">De klanttaak waarover een klantcontact ging.</td>
                      </tr>
                   </tbody>
                </table>
@@ -3543,16 +3455,16 @@ date: 14-09-2023
                         <td width="5%">&nbsp;</td>
                         <td width="45%">
                            
-                           Onderwerpdeel
+                           Onderwerpobject
                            
                            [ 0 .. * ]
                            
                            was
                            
                            Zaak
-                           [ 1 ]
+                           [ 0 .. 1 ]
                            </td>
-                        <td width="50%">De zaak waarover (een deel van) een klantcontact ging.</td>
+                        <td width="50%">De zaak waarover een klantcontact ging.</td>
                      </tr>
                   </tbody>
                </table>
@@ -3574,8 +3486,7 @@ date: 14-09-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">Gegevens waarmee een partij in een niet intern (bron)register uniek ge&amp;#239;dentificeerd
-                           kan worden.</td>
+                        <td width="70%">In een intern register opgeslagen (domein)gegevens die horen bij een partij.</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -3618,7 +3529,7 @@ date: 14-09-2023
                         <td width="25%">
                            ID
                            </td>
-                        <td width="50%">De unieke identificatie van de externe identificatie</td>
+                        <td width="50%">Unieke (technische) identificatiecode van de interne identificatie.</td>
                         <td width="10%">
                            Identificatiecode
                            </td>
@@ -3629,8 +3540,8 @@ date: 14-09-2023
                         <td width="25%">
                            Intern ID
                            </td>
-                        <td width="50%">De identificatiecode waarmee een partij in een intern (bron)register uniek ge&amp;#239;dentificeerd
-                           kan worden.</td>
+                        <td width="50%">Identificatiecode waarmee aan een partij gerelateerde (domein)gegevens uniek ge&amp;#239;dentificeerd
+                           kunnen worden.</td>
                         <td width="10%">
                            Identificatiecode
                            </td>
@@ -3644,17 +3555,6 @@ date: 14-09-2023
                         <td width="50%">Geeft aan bij welk identificatiesysteem het externe ID hoort.</td>
                         <td width="10%">
                            Soort intern
-                           </td>
-                        <td width="10%">1</td>
-                     </tr>
-                     <tr>
-                        <td width="5%">&nbsp;</td>
-                        <td width="25%">
-                           Geregistreerd op
-                           </td>
-                        <td width="50%">De datum en het tijdstip waarop registratie heeft plaatsgevonden.</td>
-                        <td width="10%">
-                           Datumtijd
                            </td>
                         <td width="10%">1</td>
                      </tr>
@@ -3690,7 +3590,8 @@ date: 14-09-2023
                            Interne identificatie
                            [ 0 .. * ]
                            </td>
-                        <td width="50%">De identificerende gegevens die de partij in een andere interne registratie aanwijzen.</td>
+                        <td width="50%">De identificerende gegevens die de bij een partij horende gegevens in een ander intern
+                           register aanwijzen.</td>
                      </tr>
                   </tbody>
                </table>
@@ -3756,7 +3657,7 @@ date: 14-09-2023
                         <td width="25%">
                            ID
                            </td>
-                        <td width="50%">De unieke identificatie van de externe identificatie</td>
+                        <td width="50%">Unieke (technische) identificatiecode van de externe identificatie</td>
                         <td width="10%">
                            Identificatiecode
                            </td>
@@ -3767,7 +3668,7 @@ date: 14-09-2023
                         <td width="25%">
                            Extern ID
                            </td>
-                        <td width="50%">De identificatiecode waarmee een partij in een extern (bron)register uniek ge&amp;#239;dentificeerd
+                        <td width="50%">Identificatiecode waarmee een partij in een extern (bron)register uniek ge&amp;#239;dentificeerd
                            kan worden.</td>
                         <td width="10%">
                            Identificatiecode
@@ -3796,17 +3697,6 @@ date: 14-09-2023
                            Omschrijving-kort
                            </td>
                         <td width="10%">0 .. 1</td>
-                     </tr>
-                     <tr>
-                        <td width="5%">&nbsp;</td>
-                        <td width="25%">
-                           Geregistreerd op
-                           </td>
-                        <td width="50%">De datum en het tijdstip waarop registratie heeft plaatsgevonden.</td>
-                        <td width="10%">
-                           Datumtijd
-                           </td>
-                        <td width="10%">1</td>
                      </tr>
                   </tbody>
                </table>
@@ -3840,7 +3730,7 @@ date: 14-09-2023
                            Externe identificatie
                            [ 1 .. * ]
                            </td>
-                        <td width="50%">De identificerende gegevens die de partij in een externe registratie aanwijzen.</td>
+                        <td width="50%">De identificerende gegevens die de partij in een extern register aanwijzen.</td>
                      </tr>
                   </tbody>
                </table>
@@ -4197,6 +4087,93 @@ date: 14-09-2023
                            <td width="50%">Indicatie of het betreffende soort object nog gebruikt mag worden. </td>
                            <td width="10%">
                               Indicatie Ja Nee
+                              </td>
+                           <td width="10%">1</td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  </div>
+               </div>
+            
+            <div><a class="anchor" name="global_class_Model_Externregister"></a><h2>Referentielijst Extern register</h2>
+               
+               <table>
+                  <tbody>
+                     <tr>
+                        <td width="30%"><b>Naam</b></td>
+                        <td width="70%">Extern register</td>
+                     </tr>
+                     <tr>
+                        <td width="30%"><b>Herkomst</b></td>
+                        <td width="70%">Klantinteracties</td>
+                     </tr>
+                     <tr>
+                        <td width="30%"><b>Definitie</b></td>
+                        <td width="70%">Een lijst van registers buiten het domein van klantinteracties waarin objecten zijn
+                           geregistreerd die gerelateerd zijn met objecen in het klantinteractiesdomein.</td>
+                     </tr>
+                     <tr>
+                        <td width="30%"><b>Herkomst definitie</b></td>
+                        <td width="70%"> </td>
+                     </tr>
+                     <tr>
+                        <td width="30%"><b>Datum opname</b></td>
+                        <td width="70%">08-07-2023</td>
+                     </tr>
+                     <tr>
+                        <td width="30%"><b>Data locatie</b></td>
+                        <td width="70%"> </td>
+                     </tr>
+                     <tr>
+                        <td width="30%"><b>Unieke aanduiding</b></td>
+                        <td width="70%">Code</td>
+                     </tr>
+                  </tbody>
+               </table>
+               
+               <div>
+                  <h3>Overzicht referentie elementen </h3>
+                  
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td><i></i></td>
+                           <td><i>Referentie element</i></td>
+                           <td><i>Definitie</i></td>
+                           <td><i>Formaat</i></td>
+                           <td><i>Card</i></td>
+                        </tr>
+                        <tr>
+                           <td width="5%">&nbsp;</td>
+                           <td width="25%">
+                              Code
+                              </td>
+                           <td width="50%">De code, behorende bij het soort extern id.</td>
+                           <td width="10%">
+                              Identificatiecode
+                              </td>
+                           <td width="10%">1</td>
+                        </tr>
+                        <tr>
+                           <td width="5%">&nbsp;</td>
+                           <td width="25%">
+                              Naam
+                              </td>
+                           <td width="50%">De naam van het soort extern id.</td>
+                           <td width="10%">
+                              Naam-kort
+                              </td>
+                           <td width="10%">1</td>
+                        </tr>
+                        <tr>
+                           <td width="5%">&nbsp;</td>
+                           <td width="25%">
+                              Locatie
+                              </td>
+                           <td width="50%">Indicatie die aangeeft of het soort extern ID nog actief is en toegekend mag worden
+                              aan een etern ID van een Partij. </td>
+                           <td width="10%">
+                              Omschrijving-kort
                               </td>
                            <td width="10%">1</td>
                         </tr>
@@ -4607,13 +4584,13 @@ date: 14-09-2023
                
                </div>
             
-            <div><a class="anchor" name="global_class_Model_Aanspreeknaam"></a><h2>Gegevensgroep Aanspreeknaam</h2>
+            <div><a class="anchor" name="global_class_Model_Contactnaam"></a><h2>Gegevensgroep Contactnaam</h2>
                
                <table>
                   <tbody>
                      <tr>
                         <td width="30%"><b>Naam</b></td>
-                        <td width="70%">Aanspreeknaam</td>
+                        <td width="70%">Contactnaam</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst</b></td>
@@ -4650,6 +4627,18 @@ date: 14-09-2023
                         <td><i>Definitie</i></td>
                         <td><i>Formaat</i></td>
                         <td><i>Card</i></td>
+                     </tr>
+                     <tr>
+                        <td width="5%">&nbsp;</td>
+                        <td width="25%">- 
+                           Voorletters
+                           </td>
+                        <td width="50%">Een afkorting van de voornamen. Meestal de beginletter, maar in sommige gevallen de
+                           beginletter gecombineerd met de tweede letter van een voornaam.</td>
+                        <td width="10%">
+                           CharacterString
+                           </td>
+                        <td width="10%">1</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
@@ -5030,6 +5019,67 @@ date: 14-09-2023
                         <tr>
                            <td width="30%"><b>
                                  Postcode
+                                 is specialisatie van
+                                 
+                                 CharacterString
+                                 
+                                 </b></td>
+                           <td width="70%"></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  </div>
+               </div>
+            
+            <div><a class="anchor" name="global_class_Model_Tekst"></a><h2>Primitief datatype Tekst</h2>
+               
+               <table>
+                  <tbody>
+                     <tr>
+                        <td width="30%"><b>Naam</b></td>
+                        <td width="70%">Tekst</td>
+                     </tr>
+                     <tr>
+                        <td width="30%"><b>Herkomst</b></td>
+                        <td width="70%">Klantinteracties</td>
+                     </tr>
+                     <tr>
+                        <td width="30%"><b>Definitie</b></td>
+                        <td width="70%"> </td>
+                     </tr>
+                     <tr>
+                        <td width="30%"><b>Herkomst definitie</b></td>
+                        <td width="70%"> </td>
+                     </tr>
+                     <tr>
+                        <td width="30%"><b>Datum opname</b></td>
+                        <td width="70%">04-10-2023</td>
+                     </tr>
+                     <tr>
+                        <td width="30%"><b>Lengte</b></td>
+                        <td width="70%">1000</td>
+                     </tr>
+                     <tr>
+                        <td width="30%"><b>Patroon</b></td>
+                        <td width="70%"> </td>
+                     </tr>
+                  </tbody>
+               </table>
+               
+               <div>
+                  <h3>Overzicht relaties </h3>
+                  
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td><i></i></td>
+                           <td><i>Supertype relaties</i></td>
+                           <td><i>Supertype definitie</i></td>
+                        </tr>
+                        <tr>
+                           <td width="30%"><b>
+                                 Tekst
                                  is specialisatie van
                                  
                                  CharacterString
@@ -6374,8 +6424,8 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Uniek identificerend nummer waarmee tijdens communicatie tussen mensen verwezen kan
-                                 worden naar het klantcontact.</td>
+                              <td width="70%">Uniek identificerend nummer dat tijdens communicatie tussen mensen kan worden gebruikt
+                                 om het specifieke klantcontact aan te duiden.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -6437,7 +6487,7 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Het communicatiekanaal dat bij het klantcontact werd gebruikt.</td>
+                              <td width="70%">Communicatiekanaal dat bij het klantcontact werd gebruikt.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -6485,6 +6535,155 @@ date: 14-09-2023
                      </table>
                      </div>
                   
+                  <div><a class="anchor" name="detail_attribute_Model_Klantcontact_Onderwerp"></a><h4>Attribuutsoort details Onderwerp</h4>
+                     
+                     <table>
+                        <tbody>
+                           <tr>
+                              <td width="30%"><b>Naam</b></td>
+                              <td width="70%">Onderwerp</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Herkomst</b></td>
+                              <td width="70%">Klantinteracties</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Definitie</b></td>
+                              <td width="70%">Datgene waarover het klantcontact ging.</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Herkomst definitie</b></td>
+                              <td width="70%">Klantinteracties</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Datum opname</b></td>
+                              <td width="70%">08-06-2023</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Mogelijk geen waarde</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
+                              <td width="70%">1</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie authentiek</b></td>
+                              <td width="70%">Authentiek</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Lengte</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Formaat</b></td>
+                              <td width="70%">
+                                 Omschrijving-lang
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Patroon</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie afleidbaar</b></td>
+                              <td width="70%">Zie package</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Waarde afleidbaar</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </div>
+                  
+                  <div><a class="anchor" name="detail_attribute_Model_Klantcontact_Inhoud"></a><h4>Attribuutsoort details Inhoud</h4>
+                     
+                     <table>
+                        <tbody>
+                           <tr>
+                              <td width="30%"><b>Naam</b></td>
+                              <td width="70%">Inhoud</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Herkomst</b></td>
+                              <td width="70%">Klantinteracties</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Definitie</b></td>
+                              <td width="70%">Informatie die tijdens het klantcontact werd overgebracht of uitgewisseld, voor zover
+                                 die voor betrokkenen of actoren relevant is.</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Herkomst definitie</b></td>
+                              <td width="70%">Klantinteracties</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Datum opname</b></td>
+                              <td width="70%">16-02-2023</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Mogelijk geen waarde</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
+                              <td width="70%">0 .. 1</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie authentiek</b></td>
+                              <td width="70%">Authentiek</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Lengte</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Formaat</b></td>
+                              <td width="70%">
+                                 Tekst
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Patroon</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie afleidbaar</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Waarde afleidbaar</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     
+                     <table>
+                        <tbody>
+                           <tr>
+                              <td width="30%"><b>Toelichting</b></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table>
+                        <tbody>
+                           <tr>
+                              <td width="5%">&nbsp;</td>
+                              <td width="95%"><br>                                 De inhoud van een klantcontact vormt zoveel mogelijk
+                                 een feitelijke, 'onbehandelde' weergave van de informatie die tijdens een contact
+                                 tussen inwoners of ondernemers en de gemeente kenbaar is gemaakt of uitgewisseld.
+                                 Dit betekent niet dat altijd sprake is van een letterlijk verslag: het gaat erom die
+                                 informatie vast te leggen die voor betrokken inwoners op een later moment relevant
+                                 kan zijn.<br>                                 <br>                                 Als de inhoud van het klantcontact al duidelijk wordt
+                                 uit de inhoud van een bijlage waarin bijvoorbeeld een gescande brief of in een elektronisch
+                                 formulier ontvangen gegevens zijn opgenomen, blijft het attribuut 'inhoud' bij registratie
+                                 van een klantcontact leeg.<br>                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </div>
+                  
                   <div><a class="anchor" name="detail_attribute_Model_Klantcontact_Initiator"></a><h4>Attribuutsoort details Initiator</h4>
                      
                      <table>
@@ -6499,7 +6698,7 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De partij die het klantcontact initieerde.</td>
+                              <td width="70%">Degene die het klantcontact initieerde.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -6624,7 +6823,7 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De taal die bij het klantcontact werd gesproken of geschreven.</td>
+                              <td width="70%">Taal die bij het klantcontact werd gesproken of geschreven.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -6749,8 +6948,10 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Datum en tijdstip waarop het klantcontact plaatsvond. Als het klantcontact een tijdsduur
-                                 had, wordt hier de datum en het tijdstip van aanvang bedoeld.</td>
+                              <td width="70%">Datum en tijdstip waarop het klantontact plaatsvond. Als het klantcontact een gesprek
+                                 betrof, is dit het moment waarop het gesprek begon. Als het klantcontact verzending
+                                 of ontvangst van informatie betrof, is dit bij benadering het moment waarop informatie
+                                 door gemeente verzonden of ontvangen werd.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -6759,68 +6960,6 @@ date: 14-09-2023
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
                               <td width="70%">16-02-2023</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Mogelijk geen waarde</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
-                              <td width="70%">1</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie authentiek</b></td>
-                              <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Lengte</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Formaat</b></td>
-                              <td width="70%">
-                                 Datumtijd
-                                 </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Patroon</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie afleidbaar</b></td>
-                              <td width="70%">Zie package</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Waarde afleidbaar</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </div>
-                  
-                  <div><a class="anchor" name="detail_attribute_Model_Klantcontact_Geregistreerdop"></a><h4>Attribuutsoort details Geregistreerd op</h4>
-                     
-                     <table>
-                        <tbody>
-                           <tr>
-                              <td width="30%"><b>Naam</b></td>
-                              <td width="70%">Geregistreerd op</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De datum en het tijdstip waarop registratie heeft plaatsgevonden.</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">22-09-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
@@ -6923,13 +7062,13 @@ date: 14-09-2023
                      
                      </div>
                   
-                  <div><a class="anchor" name="detail_association_Model_Klantcontact_hadbetrokken"></a><h4>Relatiesoort details had betrokken</h4>
+                  <div><a class="anchor" name="detail_association_Model_Klantcontact_had"></a><h4>Relatiesoort details had</h4>
                      
                      <table>
                         <tbody>
                            <tr>
                               <td width="30%"><b>Naam</b></td>
-                              <td width="70%">had betrokken</td>
+                              <td width="70%">had</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Gerelateerd objecttype</b></td>
@@ -6997,7 +7136,7 @@ date: 14-09-2023
                            <tr>
                               <td width="30%"><b>Gerelateerd objecttype</b></td>
                               <td width="70%">
-                                 Onderwerpdeel
+                                 Onderwerpobject
                                  </td>
                            </tr>
                            <tr>
@@ -7006,7 +7145,7 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De onderwerpen die tijdens een klantcontact aan de orde waren.</td>
+                              <td width="70%">Het onderwerp dat tijdens een klantcontact aan de orde was.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -7034,7 +7173,7 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
-                              <td width="70%">1 .. *</td>
+                              <td width="70%">0 .. *</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
@@ -7060,7 +7199,7 @@ date: 14-09-2023
                            <tr>
                               <td width="30%"><b>Gerelateerd objecttype</b></td>
                               <td width="70%">
-                                 Inhoudsdeel
+                                 Inhoudsobject
                                  </td>
                            </tr>
                            <tr>
@@ -7097,7 +7236,7 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
-                              <td width="70%">1 .. *</td>
+                              <td width="70%">0 .. *</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
@@ -7191,8 +7330,7 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Geeft aan of de persoon of organisatie die bij een klantcontact betrokken was optrad
-                                 als (uiteindelijk) belanghebbende of als vertegenwoordiger.</td>
+                              <td width="70%">Rol die de betrokkene bij klantcontact tijdens dat contact vervulde.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -7254,7 +7392,7 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De naam van de organisatie die betrokken was bij een klantcontact.</td>
+                              <td width="70%">Naam van de organisatie waarmee de betrokkene bij klantcontact een relatie had.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -7302,76 +7440,14 @@ date: 14-09-2023
                      </table>
                      </div>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_Betrokkenebijklantcontact_Geregistreerdop"></a><h4>Attribuutsoort details Geregistreerd op</h4>
-                     
-                     <table>
-                        <tbody>
-                           <tr>
-                              <td width="30%"><b>Naam</b></td>
-                              <td width="70%">Geregistreerd op</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De datum en het tijdstip waarop registratie heeft plaatsgevonden.</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">22-09-2023</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Mogelijk geen waarde</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
-                              <td width="70%">1</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie authentiek</b></td>
-                              <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Lengte</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Formaat</b></td>
-                              <td width="70%">
-                                 Datumtijd
-                                 </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Patroon</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie afleidbaar</b></td>
-                              <td width="70%">Zie package</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Waarde afleidbaar</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </div>
-                  
-                  <div><a class="anchor" name="detail_attribute_Model_Betrokkenebijklantcontact_Persoonsnaam"></a><h4>Attribuutsoort Persoonsnaam van gegevensgroeptype Betrokkene bij klantcontact</h4>
+                  <div><a class="anchor" name="detail_attribute_Model_Betrokkenebijklantcontact_Contactnaam"></a><h4>Attribuutsoort Contactnaam van gegevensgroeptype Betrokkene bij klantcontact</h4>
                      
                      <table>
                         <tbody>
                            <tr></tr>
                            <tr>
                               <td width="30%"><b>Naam</b></td>
-                              <td width="70%">Persoonsnaam</td>
+                              <td width="70%">Contactnaam</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
@@ -7379,7 +7455,7 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De naam van de persoon die betrokken was bij een klantcontact.</td>
+                              <td width="70%">Naam die de betrokkene bij klantcontact bij opvolging van dat contact wil gebruiken.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -7424,7 +7500,7 @@ date: 14-09-2023
                            <tr>
                               <td width="30%"><b>Formaat</b></td>
                               <td width="70%">
-                                 Aanspreeknaam
+                                 Contactnaam
                                  </td>
                            </tr>
                            <tr>
@@ -7435,9 +7511,72 @@ date: 14-09-2023
                      </table>
                      </div>
                   
-                  <div><a class="anchor" name="detail_class_Model_Aanspreeknaam"></a><h4>Gegevensgroeptype Aanspreeknaam</h4>
+                  <div><a class="anchor" name="detail_class_Model_Contactnaam"></a><h4>Gegevensgroeptype Contactnaam</h4>
                      
-                     <div><a class="anchor" name="detail_attribute_Model_Aanspreeknaam_Voornaam"></a><h5>Attribuutsoort details Voornaam</h5>
+                     <div><a class="anchor" name="detail_attribute_Model_Contactnaam_Voorletters"></a><h5>Attribuutsoort details Voorletters</h5>
+                        
+                        <table>
+                           <tbody>
+                              <tr>
+                                 <td width="30%"><b>Naam</b></td>
+                                 <td width="70%">Voorletters</td>
+                              </tr>
+                              <tr>
+                                 <td width="30%"><b>Herkomst</b></td>
+                                 <td width="70%">Klantinteracties</td>
+                              </tr>
+                              <tr>
+                                 <td width="30%"><b>Definitie</b></td>
+                                 <td width="70%">Een afkorting van de voornamen. Meestal de beginletter, maar in sommige gevallen de
+                                    beginletter gecombineerd met de tweede letter van een voornaam.</td>
+                              </tr>
+                              <tr>
+                                 <td width="30%"><b>Herkomst definitie</b></td>
+                                 <td width="70%">Klantinteracties</td>
+                              </tr>
+                              <tr>
+                                 <td width="30%"><b>Datum opname</b></td>
+                                 <td width="70%">02-10-2023</td>
+                              </tr>
+                              <tr>
+                                 <td width="30%"><b>Mogelijk geen waarde</b></td>
+                                 <td width="70%">Nee</td>
+                              </tr>
+                              <tr>
+                                 <td width="30%"><b>Indicatie kardinaliteit</b></td>
+                                 <td width="70%">1</td>
+                              </tr>
+                              <tr>
+                                 <td width="30%"><b>Indicatie authentiek</b></td>
+                                 <td width="70%">Authentiek</td>
+                              </tr>
+                              <tr>
+                                 <td width="30%"><b>Lengte</b></td>
+                                 <td width="70%"> </td>
+                              </tr>
+                              <tr>
+                                 <td width="30%"><b>Formaat</b></td>
+                                 <td width="70%">
+                                    CharacterString
+                                    </td>
+                              </tr>
+                              <tr>
+                                 <td width="30%"><b>Patroon</b></td>
+                                 <td width="70%"> </td>
+                              </tr>
+                              <tr>
+                                 <td width="30%"><b>Indicatie afleidbaar</b></td>
+                                 <td width="70%">Zie package</td>
+                              </tr>
+                              <tr>
+                                 <td width="30%"><b>Waarde afleidbaar</b></td>
+                                 <td width="70%">Nee</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        </div>
+                     
+                     <div><a class="anchor" name="detail_attribute_Model_Contactnaam_Voornaam"></a><h5>Attribuutsoort details Voornaam</h5>
                         
                         <table>
                            <tbody>
@@ -7499,7 +7638,7 @@ date: 14-09-2023
                         </table>
                         </div>
                      
-                     <div><a class="anchor" name="detail_attribute_Model_Aanspreeknaam_Voorvoegselachternaam"></a><h5>Attribuutsoort details Voorvoegsel achternaam</h5>
+                     <div><a class="anchor" name="detail_attribute_Model_Contactnaam_Voorvoegselachternaam"></a><h5>Attribuutsoort details Voorvoegsel achternaam</h5>
                         
                         <table>
                            <tbody>
@@ -7562,7 +7701,7 @@ date: 14-09-2023
                         </table>
                         </div>
                      
-                     <div><a class="anchor" name="detail_attribute_Model_Aanspreeknaam_Achternaam"></a><h5>Attribuutsoort details Achternaam</h5>
+                     <div><a class="anchor" name="detail_attribute_Model_Contactnaam_Achternaam"></a><h5>Attribuutsoort details Achternaam</h5>
                         
                         <table>
                            <tbody>
@@ -7640,7 +7779,8 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Het correspondentieadres van de persoon of organisatie die betrokken was bij een klantcontact.</td>
+                              <td width="70%">Adres waarop de betrokkene bij klantcontact naar aanleiding van dat contact te versturen
+                                 post wil ontvangen.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -8025,7 +8165,8 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Het bezoekadres van de persoon of organisatie die betrokken was bij een klantcontact.</td>
+                              <td width="70%">Adres waarop de betrokkene bij klantcontact in naar aanleiding van dat contact af
+                                 te leggen bezoeken wil ontvangen.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -8458,13 +8599,13 @@ date: 14-09-2023
                      
                      </div>
                   
-                  <div><a class="anchor" name="detail_association_Model_Betrokkenebijklantcontact_wasbereikbaarop"></a><h4>Relatiesoort details was bereikbaar op</h4>
+                  <div><a class="anchor" name="detail_association_Model_Betrokkenebijklantcontact_verstrektevooropvolgingvanklantcontact"></a><h4>Relatiesoort details verstrekte voor opvolging van klantcontact</h4>
                      
                      <table>
                         <tbody>
                            <tr>
                               <td width="30%"><b>Naam</b></td>
-                              <td width="70%">was bereikbaar op</td>
+                              <td width="70%">verstrekte voor opvolging van klantcontact</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Gerelateerd objecttype</b></td>
@@ -8478,7 +8619,8 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Het digitale adres waarop de betrokkene bij klantcontact bereikbaar was.</td>
+                              <td width="70%">Het digitale adres dat de betrokkene bij klantcontact opgaf voor gebruik bij opvolging
+                                 van het klantcontact.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -8603,7 +8745,7 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De naam van de organisatie zoals gebruikt tijdens contact met de gemeente. </td>
+                              <td width="70%">Naam van de organisatie.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -8652,9 +8794,9 @@ date: 14-09-2023
                      </div>
                   </div>
                
-               <div><a class="anchor" name="detail_class_Model_Onderwerpdeel"></a><h3> Onderwerpdeel</h3>
+               <div><a class="anchor" name="detail_class_Model_Onderwerpobject"></a><h3> Onderwerpobject</h3>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_Onderwerpdeel_ID"></a><h4>Attribuutsoort details ID</h4>
+                  <div><a class="anchor" name="detail_attribute_Model_Onderwerpobject_ID"></a><h4>Attribuutsoort details ID</h4>
                      
                      <table>
                         <tbody>
@@ -8716,7 +8858,7 @@ date: 14-09-2023
                      </table>
                      </div>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_Onderwerpdeel_Soortobject"></a><h4>Attribuutsoort details Soort object</h4>
+                  <div><a class="anchor" name="detail_attribute_Model_Onderwerpobject_Soortobject"></a><h4>Attribuutsoort details Soort object</h4>
                      
                      <table>
                         <tbody>
@@ -8730,8 +8872,7 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Geeft de vorm (objecttype) aan waarin het (deel)onderwerp van een klantcontact is
-                                 geregistreerd.</td>
+                              <td width="70%">Geeft de vorm (objecttype) aan waarin het onderwerp van een klantcontact is geregistreerd.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -8779,69 +8920,7 @@ date: 14-09-2023
                      </table>
                      </div>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_Onderwerpdeel_Tekst"></a><h4>Attribuutsoort details Tekst</h4>
-                     
-                     <table>
-                        <tbody>
-                           <tr>
-                              <td width="30%"><b>Naam</b></td>
-                              <td width="70%">Tekst</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Een tekstuele omschrijving van het (deel)onderwerp van het klantcontact.</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">08-06-2023</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Mogelijk geen waarde</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
-                              <td width="70%">1</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie authentiek</b></td>
-                              <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Lengte</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Formaat</b></td>
-                              <td width="70%">
-                                 Omschrijving-lang
-                                 </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Patroon</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie afleidbaar</b></td>
-                              <td width="70%">Zie package</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Waarde afleidbaar</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </div>
-                  
-                  <div><a class="anchor" name="detail_attribute_Model_Onderwerpdeel_ExternID"></a><h4>Attribuutsoort details Extern ID</h4>
+                  <div><a class="anchor" name="detail_attribute_Model_Onderwerpobject_ExternID"></a><h4>Attribuutsoort details Extern ID</h4>
                      
                      <table>
                         <tbody>
@@ -8855,7 +8934,7 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De identificatiecode waarmee het object dat geldt als (deel)onderwerp van een klantcontact
+                              <td width="70%">Identificatiecode waarmee het object dat geldt als deelonderwerp van een klantcontact
                                  in het externe (bron)register uniek ge&amp;#239;dentificeerd kan worden.</td>
                            </tr>
                            <tr>
@@ -8904,7 +8983,7 @@ date: 14-09-2023
                      </table>
                      </div>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_Onderwerpdeel_Externregister"></a><h4>Attribuutsoort details Extern register</h4>
+                  <div><a class="anchor" name="detail_attribute_Model_Onderwerpobject_Externregister"></a><h4>Attribuutsoort details Extern register</h4>
                      
                      <table>
                         <tbody>
@@ -8918,8 +8997,8 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Het externe (bron)register waarin het object dat geldt als (deel)onderwerp van een
-                                 klantcontact geregistreerd is.</td>
+                              <td width="70%">Extern register waarin het object dat geldt als onderwerp van een klantcontact geregistreerd
+                                 is.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -8948,7 +9027,7 @@ date: 14-09-2023
                            <tr>
                               <td width="30%"><b>Formaat</b></td>
                               <td width="70%">
-                                 Omschrijving-kort
+                                 Extern register
                                  </td>
                            </tr>
                            <tr>
@@ -8967,69 +9046,7 @@ date: 14-09-2023
                      </table>
                      </div>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_Onderwerpdeel_Geregistreerdop"></a><h4>Attribuutsoort details Geregistreerd op</h4>
-                     
-                     <table>
-                        <tbody>
-                           <tr>
-                              <td width="30%"><b>Naam</b></td>
-                              <td width="70%">Geregistreerd op</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De datum en het tijdstip waarop registratie heeft plaatsgevonden.</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">22-09-2023</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Mogelijk geen waarde</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
-                              <td width="70%">1</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie authentiek</b></td>
-                              <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Lengte</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Formaat</b></td>
-                              <td width="70%">
-                                 Datumtijd
-                                 </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Patroon</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie afleidbaar</b></td>
-                              <td width="70%">Zie package</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Waarde afleidbaar</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </div>
-                  
-                  <div><a class="anchor" name="detail_association_Model_Onderwerpdeel_was"></a><h4>Relatiesoort details was</h4>
+                  <div><a class="anchor" name="detail_association_Model_Onderwerpobject_was"></a><h4>Relatiesoort details was</h4>
                      
                      <table>
                         <tbody>
@@ -9040,7 +9057,7 @@ date: 14-09-2023
                            <tr>
                               <td width="30%"><b>Gerelateerd objecttype</b></td>
                               <td width="70%">
-                                 Interne taak
+                                 Klantcontact
                                  </td>
                            </tr>
                            <tr>
@@ -9092,7 +9109,7 @@ date: 14-09-2023
                      
                      </div>
                   
-                  <div><a class="anchor" name="detail_association_Model_Onderwerpdeel_was"></a><h4>Relatiesoort details was</h4>
+                  <div><a class="anchor" name="detail_association_Model_Onderwerpobject_was"></a><h4>Relatiesoort details was</h4>
                      
                      <table>
                         <tbody>
@@ -9112,7 +9129,7 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Het andere object waarover (een deel van) een klantcontact ging.</td>
+                              <td width="70%">Het andere object waarover een klantcontact ging.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -9155,7 +9172,7 @@ date: 14-09-2023
                      
                      </div>
                   
-                  <div><a class="anchor" name="detail_association_Model_Onderwerpdeel_was"></a><h4>Relatiesoort details was</h4>
+                  <div><a class="anchor" name="detail_association_Model_Onderwerpobject_was"></a><h4>Relatiesoort details was</h4>
                      
                      <table>
                         <tbody>
@@ -9175,7 +9192,7 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De klanttaak waarover (een deel van) een klantcontact ging.</td>
+                              <td width="70%">De klanttaak waarover een klantcontact ging.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -9218,7 +9235,7 @@ date: 14-09-2023
                      
                      </div>
                   
-                  <div><a class="anchor" name="detail_association_Model_Onderwerpdeel_was"></a><h4>Relatiesoort details was</h4>
+                  <div><a class="anchor" name="detail_association_Model_Onderwerpobject_was"></a><h4>Relatiesoort details was</h4>
                      
                      <table>
                         <tbody>
@@ -9238,7 +9255,7 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De zaak waarover (een deel van) een klantcontact ging.</td>
+                              <td width="70%">De zaak waarover een klantcontact ging.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -9266,7 +9283,7 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
-                              <td width="70%">1</td>
+                              <td width="70%">0 .. 1</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
@@ -9360,8 +9377,8 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Uniek identificerend nummer waarmee tijdens communicatie tussen mensen verwezen kan
-                                 worden naar de partij.</td>
+                              <td width="70%">Uniek identificerend nummer dat tijdens communicatie tussen mensen kan worden gebruikt
+                                 om de specifieke partij aan te duiden.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -9424,7 +9441,7 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Het bezoekadres van de partij.</td>
+                              <td width="70%">Adres waarop de partij door gemeente bezocht wil worden.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -9809,7 +9826,7 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Het correspondentieadres van de partij.</td>
+                              <td width="70%">Adres waarop de partij post van de gemeente wil ontvangen.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -10223,7 +10240,7 @@ date: 14-09-2023
                            <tr>
                               <td width="30%"><b>Formaat</b></td>
                               <td width="70%">
-                                 Omschrijving-lang
+                                 Tekst
                                  </td>
                            </tr>
                            <tr>
@@ -10381,7 +10398,7 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Het kanaal dat de partij bij voorkeur gebruikt voor contact met de gemeente.</td>
+                              <td width="70%">Kanaal dat de partij bij voorkeur gebruikt voor contact met de gemeente.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -10443,7 +10460,7 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De taal waarin de partij bij voorkeur contact heeft met de gemeente.</td>
+                              <td width="70%">Taal waarin de partij bij voorkeur contact heeft met de gemeente.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -10505,9 +10522,8 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Geeft aan of de betreffende partij nog actief gebruikt kan worden voor contacten.
-                                 Gegevens van Partijen die niet actief zijn mogen niet gebruikt worden om contact op
-                                 te nemen. </td>
+                              <td width="70%">Geeft aan of de contactgegevens van de partij nog gebruikt morgen worden om contact
+                                 op te nemen. Gegevens van niet-actieve partijen mogen hiervoor niet worden gebruikt.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -10555,68 +10571,6 @@ date: 14-09-2023
                      </table>
                      </div>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_Partij_Geregistreerdop"></a><h4>Attribuutsoort details Geregistreerd op</h4>
-                     
-                     <table>
-                        <tbody>
-                           <tr>
-                              <td width="30%"><b>Naam</b></td>
-                              <td width="70%">Geregistreerd op</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De datum en het tijdstip waarop registratie heeft plaatsgevonden.</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">22-09-2023</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Mogelijk geen waarde</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
-                              <td width="70%">1</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie authentiek</b></td>
-                              <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Lengte</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Formaat</b></td>
-                              <td width="70%">
-                                 Datumtijd
-                                 </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Patroon</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie afleidbaar</b></td>
-                              <td width="70%">Zie package</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Waarde afleidbaar</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </div>
-                  
                   <div><a class="anchor" name="detail_association_Model_Partij_wasteidentificerenmet"></a><h4>Relatiesoort details was te identificeren met</h4>
                      
                      <table>
@@ -10637,7 +10591,8 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De identificerende gegevens die de partij in een andere interne registratie aanwijzen.</td>
+                              <td width="70%">De identificerende gegevens die de bij een partij horende gegevens in een ander intern
+                                 register aanwijzen.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -10700,7 +10655,7 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De identificerende gegevens die de partij in een externe registratie aanwijzen.</td>
+                              <td width="70%">De identificerende gegevens die de partij in een extern register aanwijzen.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -10806,13 +10761,13 @@ date: 14-09-2023
                      
                      </div>
                   
-                  <div><a class="anchor" name="detail_association_Model_Partij_wasbereikbaarop"></a><h4>Relatiesoort details was bereikbaar op</h4>
+                  <div><a class="anchor" name="detail_association_Model_Partij_verstrektevoortoekomstigcontact"></a><h4>Relatiesoort details verstrekte voor toekomstig contact</h4>
                      
                      <table>
                         <tbody>
                            <tr>
                               <td width="30%"><b>Naam</b></td>
-                              <td width="70%">was bereikbaar op</td>
+                              <td width="70%">verstrekte voor toekomstig contact</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Gerelateerd objecttype</b></td>
@@ -10826,7 +10781,8 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Het digitale adres waarop de partij bereikbaar was.</td>
+                              <td width="70%">Het digitale adres dat de partij voor gebruik bij toekomstig contact met de gemeente
+                                 verstrekte.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -10870,9 +10826,9 @@ date: 14-09-2023
                      </div>
                   </div>
                
-               <div><a class="anchor" name="detail_class_Model_Inhoudsdeel"></a><h3> Inhoudsdeel</h3>
+               <div><a class="anchor" name="detail_class_Model_Inhoudsobject"></a><h3> Inhoudsobject</h3>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_Inhoudsdeel_ID"></a><h4>Attribuutsoort details ID</h4>
+                  <div><a class="anchor" name="detail_attribute_Model_Inhoudsobject_ID"></a><h4>Attribuutsoort details ID</h4>
                      
                      <table>
                         <tbody>
@@ -10934,75 +10890,13 @@ date: 14-09-2023
                      </table>
                      </div>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_Inhoudsdeel_Omschrijving"></a><h4>Attribuutsoort details Omschrijving</h4>
+                  <div><a class="anchor" name="detail_attribute_Model_Inhoudsobject_Soortobject"></a><h4>Attribuutsoort details Soort object</h4>
                      
                      <table>
                         <tbody>
                            <tr>
                               <td width="30%"><b>Naam</b></td>
-                              <td width="70%">Omschrijving</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Een omschrijving van het inhoudsdeel.</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">16-02-2023</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Mogelijk geen waarde</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
-                              <td width="70%">1</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie authentiek</b></td>
-                              <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Lengte</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Formaat</b></td>
-                              <td width="70%">
-                                 Omschrijving-kort
-                                 </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Patroon</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie afleidbaar</b></td>
-                              <td width="70%">Zie package</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Waarde afleidbaar</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </div>
-                  
-                  <div><a class="anchor" name="detail_attribute_Model_Inhoudsdeel_Soortinhoudsdeel"></a><h4>Attribuutsoort details Soort inhoudsdeel</h4>
-                     
-                     <table>
-                        <tbody>
-                           <tr>
-                              <td width="30%"><b>Naam</b></td>
-                              <td width="70%">Soort inhoudsdeel</td>
+                              <td width="70%">Soort object</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
@@ -11040,7 +10934,7 @@ date: 14-09-2023
                            <tr>
                               <td width="30%"><b>Formaat</b></td>
                               <td width="70%">
-                                 Soort inhoudsdeel
+                                 Soort object
                                  </td>
                            </tr>
                            <tr>
@@ -11059,94 +10953,7 @@ date: 14-09-2023
                      </table>
                      </div>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_Inhoudsdeel_Tekst"></a><h4>Attribuutsoort details Tekst</h4>
-                     
-                     <table>
-                        <tbody>
-                           <tr>
-                              <td width="30%"><b>Naam</b></td>
-                              <td width="70%">Tekst</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Een zo feitelijk mogelijke tekstuele weergave van de inhoud van het klantcontact,
-                                 voor zover die voor betrokkenen relevant is.</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">16-02-2023</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Mogelijk geen waarde</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
-                              <td width="70%">0 .. 1</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie authentiek</b></td>
-                              <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Lengte</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Formaat</b></td>
-                              <td width="70%">
-                                 Omschrijving-lang
-                                 </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Patroon</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie afleidbaar</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Waarde afleidbaar</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     
-                     <table>
-                        <tbody>
-                           <tr>
-                              <td width="30%"><b>Toelichting</b></td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     <table>
-                        <tbody>
-                           <tr>
-                              <td width="5%">&nbsp;</td>
-                              <td width="95%"><br>                                 De inhoud van een klantcontact vormt zoveel mogelijk
-                                 een feitelijke, 'onbehandelde' weergave van de informatie die tijdens een contact
-                                 tussen inwoners of ondernemers en de gemeente kenbaar is gemaakt of uitgewisseld.
-                                 Dit betekent niet dat altijd sprake is van een letterlijk verslag: het gaat erom die
-                                 informatie vast te leggen die voor betrokken inwoners op een later moment relevant
-                                 kan zijn.<br>                                 <br>                                 Als de inhoud van het klantcontact al duidelijk wordt
-                                 uit de inhoud van een bijlage waarin bijvoorbeeld een gescande brief of in een elektronisch
-                                 formulier ontvangen gegevens zijn opgenomen, blijft het attribuut 'inhoud' bij registratie
-                                 van een klantcontact leeg.<br>                              </td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </div>
-                  
-                  <div><a class="anchor" name="detail_attribute_Model_Inhoudsdeel_ExternID"></a><h4>Attribuutsoort details Extern ID</h4>
+                  <div><a class="anchor" name="detail_attribute_Model_Inhoudsobject_ExternID"></a><h4>Attribuutsoort details Extern ID</h4>
                      
                      <table>
                         <tbody>
@@ -11160,8 +10967,8 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De identificatiecode waarmee het object dat (een deel van) de inhoud van een klantcontact
-                                 beschrijft in het externe (bron)register uniek ge&amp;#239;dentificeerd kan worden.</td>
+                              <td width="70%">Identificatiecode waarmee het object dat (een deel van) de inhoud van een klantcontact
+                                 beschrijft in het externe register uniek ge&amp;#239;dentificeerd kan worden.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -11209,7 +11016,7 @@ date: 14-09-2023
                      </table>
                      </div>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_Inhoudsdeel_Externregister"></a><h4>Attribuutsoort details Extern register</h4>
+                  <div><a class="anchor" name="detail_attribute_Model_Inhoudsobject_Externregister"></a><h4>Attribuutsoort details Extern register</h4>
                      
                      <table>
                         <tbody>
@@ -11223,8 +11030,8 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Het externe (bron)register waarin het object dat (een deel van) de inhoud van een
-                                 klantcontact beschrijft geregistreerd is.</td>
+                              <td width="70%">Extern register waarin het object dat (een deel van) de inhoud van een klantcontact
+                                 beschrijft geregistreerd is.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -11253,7 +11060,7 @@ date: 14-09-2023
                            <tr>
                               <td width="30%"><b>Formaat</b></td>
                               <td width="70%">
-                                 Omschrijving-kort
+                                 Extern register
                                  </td>
                            </tr>
                            <tr>
@@ -11272,69 +11079,7 @@ date: 14-09-2023
                      </table>
                      </div>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_Inhoudsdeel_Geregistreerdop"></a><h4>Attribuutsoort details Geregistreerd op</h4>
-                     
-                     <table>
-                        <tbody>
-                           <tr>
-                              <td width="30%"><b>Naam</b></td>
-                              <td width="70%">Geregistreerd op</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De datum en het tijdstip waarop registratie heeft plaatsgevonden.</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">22-09-2023</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Mogelijk geen waarde</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
-                              <td width="70%">1</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie authentiek</b></td>
-                              <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Lengte</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Formaat</b></td>
-                              <td width="70%">
-                                 Datumtijd
-                                 </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Patroon</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie afleidbaar</b></td>
-                              <td width="70%">Zie package</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Waarde afleidbaar</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </div>
-                  
-                  <div><a class="anchor" name="detail_association_Model_Inhoudsdeel_was"></a><h4>Relatiesoort details was</h4>
+                  <div><a class="anchor" name="detail_association_Model_Inhoudsobject_was"></a><h4>Relatiesoort details was</h4>
                      
                      <table>
                         <tbody>
@@ -11397,7 +11142,7 @@ date: 14-09-2023
                      
                      </div>
                   
-                  <div><a class="anchor" name="detail_association_Model_Inhoudsdeel_was"></a><h4>Relatiesoort details was</h4>
+                  <div><a class="anchor" name="detail_association_Model_Inhoudsobject_was"></a><h4>Relatiesoort details was</h4>
                      
                      <table>
                         <tbody>
@@ -11460,7 +11205,7 @@ date: 14-09-2023
                      
                      </div>
                   
-                  <div><a class="anchor" name="detail_association_Model_Inhoudsdeel_was"></a><h4>Relatiesoort details was</h4>
+                  <div><a class="anchor" name="detail_association_Model_Inhoudsobject_was"></a><h4>Relatiesoort details was</h4>
                      
                      <table>
                         <tbody>
@@ -11526,14 +11271,14 @@ date: 14-09-2023
                
                <div><a class="anchor" name="detail_class_Model_Contactpersoon"></a><h3> Contactpersoon</h3>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_Contactpersoon_Aanspreeknaam"></a><h4>Attribuutsoort Aanspreeknaam van gegevensgroeptype Contactpersoon</h4>
+                  <div><a class="anchor" name="detail_attribute_Model_Contactpersoon_Contactnaam"></a><h4>Attribuutsoort Contactnaam van gegevensgroeptype Contactpersoon</h4>
                      
                      <table>
                         <tbody>
                            <tr></tr>
                            <tr>
                               <td width="30%"><b>Naam</b></td>
-                              <td width="70%">Aanspreeknaam</td>
+                              <td width="70%">Contactnaam</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
@@ -11541,7 +11286,7 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De naam die de persoon opgaf voor gebruik bij contact met de gemeente.</td>
+                              <td width="70%">De naam die de contactpersoon wil gebruiken tijdens contact met de gemeente.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -11586,7 +11331,7 @@ date: 14-09-2023
                            <tr>
                               <td width="30%"><b>Formaat</b></td>
                               <td width="70%">
-                                 Aanspreeknaam
+                                 Contactnaam
                                  </td>
                            </tr>
                            <tr>
@@ -11597,9 +11342,72 @@ date: 14-09-2023
                      </table>
                      </div>
                   
-                  <div><a class="anchor" name="detail_class_Model_Aanspreeknaam"></a><h4>Gegevensgroeptype Aanspreeknaam</h4>
+                  <div><a class="anchor" name="detail_class_Model_Contactnaam"></a><h4>Gegevensgroeptype Contactnaam</h4>
                      
-                     <div><a class="anchor" name="detail_attribute_Model_Aanspreeknaam_Voornaam"></a><h5>Attribuutsoort details Voornaam</h5>
+                     <div><a class="anchor" name="detail_attribute_Model_Contactnaam_Voorletters"></a><h5>Attribuutsoort details Voorletters</h5>
+                        
+                        <table>
+                           <tbody>
+                              <tr>
+                                 <td width="30%"><b>Naam</b></td>
+                                 <td width="70%">Voorletters</td>
+                              </tr>
+                              <tr>
+                                 <td width="30%"><b>Herkomst</b></td>
+                                 <td width="70%">Klantinteracties</td>
+                              </tr>
+                              <tr>
+                                 <td width="30%"><b>Definitie</b></td>
+                                 <td width="70%">Een afkorting van de voornamen. Meestal de beginletter, maar in sommige gevallen de
+                                    beginletter gecombineerd met de tweede letter van een voornaam.</td>
+                              </tr>
+                              <tr>
+                                 <td width="30%"><b>Herkomst definitie</b></td>
+                                 <td width="70%">Klantinteracties</td>
+                              </tr>
+                              <tr>
+                                 <td width="30%"><b>Datum opname</b></td>
+                                 <td width="70%">02-10-2023</td>
+                              </tr>
+                              <tr>
+                                 <td width="30%"><b>Mogelijk geen waarde</b></td>
+                                 <td width="70%">Nee</td>
+                              </tr>
+                              <tr>
+                                 <td width="30%"><b>Indicatie kardinaliteit</b></td>
+                                 <td width="70%">1</td>
+                              </tr>
+                              <tr>
+                                 <td width="30%"><b>Indicatie authentiek</b></td>
+                                 <td width="70%">Authentiek</td>
+                              </tr>
+                              <tr>
+                                 <td width="30%"><b>Lengte</b></td>
+                                 <td width="70%"> </td>
+                              </tr>
+                              <tr>
+                                 <td width="30%"><b>Formaat</b></td>
+                                 <td width="70%">
+                                    CharacterString
+                                    </td>
+                              </tr>
+                              <tr>
+                                 <td width="30%"><b>Patroon</b></td>
+                                 <td width="70%"> </td>
+                              </tr>
+                              <tr>
+                                 <td width="30%"><b>Indicatie afleidbaar</b></td>
+                                 <td width="70%">Zie package</td>
+                              </tr>
+                              <tr>
+                                 <td width="30%"><b>Waarde afleidbaar</b></td>
+                                 <td width="70%">Nee</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        </div>
+                     
+                     <div><a class="anchor" name="detail_attribute_Model_Contactnaam_Voornaam"></a><h5>Attribuutsoort details Voornaam</h5>
                         
                         <table>
                            <tbody>
@@ -11661,7 +11469,7 @@ date: 14-09-2023
                         </table>
                         </div>
                      
-                     <div><a class="anchor" name="detail_attribute_Model_Aanspreeknaam_Voorvoegselachternaam"></a><h5>Attribuutsoort details Voorvoegsel achternaam</h5>
+                     <div><a class="anchor" name="detail_attribute_Model_Contactnaam_Voorvoegselachternaam"></a><h5>Attribuutsoort details Voorvoegsel achternaam</h5>
                         
                         <table>
                            <tbody>
@@ -11724,7 +11532,7 @@ date: 14-09-2023
                         </table>
                         </div>
                      
-                     <div><a class="anchor" name="detail_attribute_Model_Aanspreeknaam_Achternaam"></a><h5>Attribuutsoort details Achternaam</h5>
+                     <div><a class="anchor" name="detail_attribute_Model_Contactnaam_Achternaam"></a><h5>Attribuutsoort details Achternaam</h5>
                         
                         <table>
                            <tbody>
@@ -11853,14 +11661,14 @@ date: 14-09-2023
                
                <div><a class="anchor" name="detail_class_Model_Persoon"></a><h3> Persoon</h3>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_Persoon_Aanspreeknaam"></a><h4>Attribuutsoort Aanspreeknaam van gegevensgroeptype Persoon</h4>
+                  <div><a class="anchor" name="detail_attribute_Model_Persoon_Contactnaam"></a><h4>Attribuutsoort Contactnaam van gegevensgroeptype Persoon</h4>
                      
                      <table>
                         <tbody>
                            <tr></tr>
                            <tr>
                               <td width="30%"><b>Naam</b></td>
-                              <td width="70%">Aanspreeknaam</td>
+                              <td width="70%">Contactnaam</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
@@ -11868,7 +11676,7 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De naam die de persoon opgaf voor gebruik bij contact met de gemeente.</td>
+                              <td width="70%">De naam die de persoon wil gebruiken tijdens contact met de gemeente.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -11913,7 +11721,7 @@ date: 14-09-2023
                            <tr>
                               <td width="30%"><b>Formaat</b></td>
                               <td width="70%">
-                                 Aanspreeknaam
+                                 Contactnaam
                                  </td>
                            </tr>
                            <tr>
@@ -11924,9 +11732,72 @@ date: 14-09-2023
                      </table>
                      </div>
                   
-                  <div><a class="anchor" name="detail_class_Model_Aanspreeknaam"></a><h4>Gegevensgroeptype Aanspreeknaam</h4>
+                  <div><a class="anchor" name="detail_class_Model_Contactnaam"></a><h4>Gegevensgroeptype Contactnaam</h4>
                      
-                     <div><a class="anchor" name="detail_attribute_Model_Aanspreeknaam_Voornaam"></a><h5>Attribuutsoort details Voornaam</h5>
+                     <div><a class="anchor" name="detail_attribute_Model_Contactnaam_Voorletters"></a><h5>Attribuutsoort details Voorletters</h5>
+                        
+                        <table>
+                           <tbody>
+                              <tr>
+                                 <td width="30%"><b>Naam</b></td>
+                                 <td width="70%">Voorletters</td>
+                              </tr>
+                              <tr>
+                                 <td width="30%"><b>Herkomst</b></td>
+                                 <td width="70%">Klantinteracties</td>
+                              </tr>
+                              <tr>
+                                 <td width="30%"><b>Definitie</b></td>
+                                 <td width="70%">Een afkorting van de voornamen. Meestal de beginletter, maar in sommige gevallen de
+                                    beginletter gecombineerd met de tweede letter van een voornaam.</td>
+                              </tr>
+                              <tr>
+                                 <td width="30%"><b>Herkomst definitie</b></td>
+                                 <td width="70%">Klantinteracties</td>
+                              </tr>
+                              <tr>
+                                 <td width="30%"><b>Datum opname</b></td>
+                                 <td width="70%">02-10-2023</td>
+                              </tr>
+                              <tr>
+                                 <td width="30%"><b>Mogelijk geen waarde</b></td>
+                                 <td width="70%">Nee</td>
+                              </tr>
+                              <tr>
+                                 <td width="30%"><b>Indicatie kardinaliteit</b></td>
+                                 <td width="70%">1</td>
+                              </tr>
+                              <tr>
+                                 <td width="30%"><b>Indicatie authentiek</b></td>
+                                 <td width="70%">Authentiek</td>
+                              </tr>
+                              <tr>
+                                 <td width="30%"><b>Lengte</b></td>
+                                 <td width="70%"> </td>
+                              </tr>
+                              <tr>
+                                 <td width="30%"><b>Formaat</b></td>
+                                 <td width="70%">
+                                    CharacterString
+                                    </td>
+                              </tr>
+                              <tr>
+                                 <td width="30%"><b>Patroon</b></td>
+                                 <td width="70%"> </td>
+                              </tr>
+                              <tr>
+                                 <td width="30%"><b>Indicatie afleidbaar</b></td>
+                                 <td width="70%">Zie package</td>
+                              </tr>
+                              <tr>
+                                 <td width="30%"><b>Waarde afleidbaar</b></td>
+                                 <td width="70%">Nee</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        </div>
+                     
+                     <div><a class="anchor" name="detail_attribute_Model_Contactnaam_Voornaam"></a><h5>Attribuutsoort details Voornaam</h5>
                         
                         <table>
                            <tbody>
@@ -11988,7 +11859,7 @@ date: 14-09-2023
                         </table>
                         </div>
                      
-                     <div><a class="anchor" name="detail_attribute_Model_Aanspreeknaam_Voorvoegselachternaam"></a><h5>Attribuutsoort details Voorvoegsel achternaam</h5>
+                     <div><a class="anchor" name="detail_attribute_Model_Contactnaam_Voorvoegselachternaam"></a><h5>Attribuutsoort details Voorvoegsel achternaam</h5>
                         
                         <table>
                            <tbody>
@@ -12051,7 +11922,7 @@ date: 14-09-2023
                         </table>
                         </div>
                      
-                     <div><a class="anchor" name="detail_attribute_Model_Aanspreeknaam_Achternaam"></a><h5>Attribuutsoort details Achternaam</h5>
+                     <div><a class="anchor" name="detail_attribute_Model_Contactnaam_Achternaam"></a><h5>Attribuutsoort details Achternaam</h5>
                         
                         <table>
                            <tbody>
@@ -12258,8 +12129,8 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De typering van het digitale adres die aangeeft via welk(e) kanaal of kanalen met
-                                 dit adres contact kan worden opgenomen.</td>
+                              <td width="70%">Typering van het digitale adres die aangeeft via welk(e) kanaal of kanalen met dit
+                                 adres contact kan worden opgenomen.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -12321,7 +12192,7 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Het digitale adres van de partij of betrokkene bij klantcontact.</td>
+                              <td width="70%">Digitaal adres waarmee een persoon of organisatie bereikt kan worden.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -12413,131 +12284,6 @@ date: 14-09-2023
                               <td width="30%"><b>Formaat</b></td>
                               <td width="70%">
                                  Omschrijving-kort
-                                 </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Patroon</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie afleidbaar</b></td>
-                              <td width="70%">Zie package</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Waarde afleidbaar</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </div>
-                  
-                  <div><a class="anchor" name="detail_attribute_Model_Digitaaladres_Indicatieactief"></a><h4>Attribuutsoort details Indicatie actief</h4>
-                     
-                     <table>
-                        <tbody>
-                           <tr>
-                              <td width="30%"><b>Naam</b></td>
-                              <td width="70%">Indicatie actief</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Geeft aan of het betreffende digitale adres nog gebruikt kan worden om contact te
-                                 leggen met de partij of betrokkene bij klantcontact.</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">08-06-2023</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Mogelijk geen waarde</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
-                              <td width="70%">1</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie authentiek</b></td>
-                              <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Lengte</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Formaat</b></td>
-                              <td width="70%">
-                                 Indicatie Ja Nee
-                                 </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Patroon</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie afleidbaar</b></td>
-                              <td width="70%">Zie package</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Waarde afleidbaar</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </div>
-                  
-                  <div><a class="anchor" name="detail_attribute_Model_Digitaaladres_Geregistreerdop"></a><h4>Attribuutsoort details Geregistreerd op</h4>
-                     
-                     <table>
-                        <tbody>
-                           <tr>
-                              <td width="30%"><b>Naam</b></td>
-                              <td width="70%">Geregistreerd op</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De datum en het tijdstip waarop registratie heeft plaatsgevonden.</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">22-09-2023</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Mogelijk geen waarde</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
-                              <td width="70%">1</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie authentiek</b></td>
-                              <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Lengte</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Formaat</b></td>
-                              <td width="70%">
-                                 Datumtijd
                                  </td>
                            </tr>
                            <tr>
@@ -12745,131 +12491,6 @@ date: 14-09-2023
                         </tbody>
                      </table>
                      </div>
-                  
-                  <div><a class="anchor" name="detail_attribute_Model_Medewerker_Externregister"></a><h4>Attribuutsoort details Extern register</h4>
-                     
-                     <table>
-                        <tbody>
-                           <tr>
-                              <td width="30%"><b>Naam</b></td>
-                              <td width="70%">Extern register</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Het externe (bron)register waarin gegevens over de medewerker zijn geregistreerd.</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">16-02-2023</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Mogelijk geen waarde</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
-                              <td width="70%">1</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie authentiek</b></td>
-                              <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Lengte</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Formaat</b></td>
-                              <td width="70%">
-                                 Omschrijving-kort
-                                 </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Patroon</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie afleidbaar</b></td>
-                              <td width="70%">Zie package</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Waarde afleidbaar</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </div>
-                  
-                  <div><a class="anchor" name="detail_attribute_Model_Medewerker_ExternID"></a><h4>Attribuutsoort details Extern ID</h4>
-                     
-                     <table>
-                        <tbody>
-                           <tr>
-                              <td width="30%"><b>Naam</b></td>
-                              <td width="70%">Extern ID</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De identificatiecode waarmee een medewerker in het externe (bron)register uniek ge&amp;#239;dentificeerd
-                                 kan worden.</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">16-02-2023</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Mogelijk geen waarde</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
-                              <td width="70%">1</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie authentiek</b></td>
-                              <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Lengte</b></td>
-                              <td width="70%">36</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Formaat</b></td>
-                              <td width="70%">
-                                 Identificatiecode
-                                 </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Patroon</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie afleidbaar</b></td>
-                              <td width="70%">Zie package</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Waarde afleidbaar</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </div>
                   </div>
                
                <div><a class="anchor" name="detail_class_Model_Geautomatiseerdeactor"></a><h3> Geautomatiseerde actor</h3>
@@ -12888,7 +12509,8 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De functie van de geautomatiseerde actor.</td>
+                              <td width="70%">Functie van de geautomatiseerde actor of beschrijving van de werkzaamheden die deze
+                                 uitvoert.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -12950,7 +12572,7 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Een omschrijving van de geautomatiseerde actor.</td>
+                              <td width="70%">Omschrijving van de geautomatiseerde actor.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -13142,7 +12764,7 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De naam van de actor.</td>
+                              <td width="70%">Naam van de actor.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -13266,8 +12888,8 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Geeft aan of de betreffende actor nog actief is. Actoren die niet actief zijn mogen
-                                 niet gekoppeld worden aan nieuwe klantcontacten. </td>
+                              <td width="70%">Geeft aan of aan de actor nog betrokken mag worden bij nieuwe klantcontacten. Voor
+                                 niet-actieve is dit niet toegestaan.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -13315,13 +12937,13 @@ date: 14-09-2023
                      </table>
                      </div>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_Actor_Geregistreerdop"></a><h4>Attribuutsoort details Geregistreerd op</h4>
+                  <div><a class="anchor" name="detail_attribute_Model_Actor_Externregister"></a><h4>Attribuutsoort details Extern register</h4>
                      
                      <table>
                         <tbody>
                            <tr>
                               <td width="30%"><b>Naam</b></td>
-                              <td width="70%">Geregistreerd op</td>
+                              <td width="70%">Extern register</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
@@ -13329,7 +12951,7 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De datum en het tijdstip waarop registratie heeft plaatsgevonden.</td>
+                              <td width="70%">Externe (bron)register waarin gegevens over de actor zijn geregistreerd.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -13337,7 +12959,7 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">22-09-2023</td>
+                              <td width="70%">16-02-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
@@ -13345,7 +12967,7 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie kardinaliteit</b></td>
-                              <td width="70%">1</td>
+                              <td width="70%">0 .. 1</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Indicatie authentiek</b></td>
@@ -13358,7 +12980,70 @@ date: 14-09-2023
                            <tr>
                               <td width="30%"><b>Formaat</b></td>
                               <td width="70%">
-                                 Datumtijd
+                                 Extern register
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Patroon</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie afleidbaar</b></td>
+                              <td width="70%">Zie package</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Waarde afleidbaar</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </div>
+                  
+                  <div><a class="anchor" name="detail_attribute_Model_Actor_ExternID"></a><h4>Attribuutsoort details Extern ID</h4>
+                     
+                     <table>
+                        <tbody>
+                           <tr>
+                              <td width="30%"><b>Naam</b></td>
+                              <td width="70%">Extern ID</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Herkomst</b></td>
+                              <td width="70%">Klantinteracties</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Definitie</b></td>
+                              <td width="70%">Identificatiecode waarmee een actor in het externe (bron)register uniek ge&amp;#239;dentificeerd
+                                 kan worden.</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Herkomst definitie</b></td>
+                              <td width="70%">Klantinteracties</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Datum opname</b></td>
+                              <td width="70%">16-02-2023</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Mogelijk geen waarde</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
+                              <td width="70%">0 .. 1</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie authentiek</b></td>
+                              <td width="70%">Authentiek</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Lengte</b></td>
+                              <td width="70%">36</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Formaat</b></td>
+                              <td width="70%">
+                                 Identificatiecode
                                  </td>
                            </tr>
                            <tr>
@@ -13681,131 +13366,6 @@ date: 14-09-2023
                         </tbody>
                      </table>
                      </div>
-                  
-                  <div><a class="anchor" name="detail_attribute_Model_Organisatorischeeenheid_Externregister"></a><h4>Attribuutsoort details Extern register</h4>
-                     
-                     <table>
-                        <tbody>
-                           <tr>
-                              <td width="30%"><b>Naam</b></td>
-                              <td width="70%">Extern register</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Het externe (bron)register waarin gegevens over de organisatorische eenheid zijn geregistreerd.</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">16-02-2023</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Mogelijk geen waarde</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
-                              <td width="70%">1</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie authentiek</b></td>
-                              <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Lengte</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Formaat</b></td>
-                              <td width="70%">
-                                 Omschrijving-kort
-                                 </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Patroon</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie afleidbaar</b></td>
-                              <td width="70%">Zie package</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Waarde afleidbaar</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </div>
-                  
-                  <div><a class="anchor" name="detail_attribute_Model_Organisatorischeeenheid_ExternID"></a><h4>Attribuutsoort details Extern ID</h4>
-                     
-                     <table>
-                        <tbody>
-                           <tr>
-                              <td width="30%"><b>Naam</b></td>
-                              <td width="70%">Extern ID</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De identificatiecode waarmee de organisatorische eenheid in het externe (bron)register
-                                 uniek ge&amp;#239;dentificeerd kan worden.</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">16-02-2023</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Mogelijk geen waarde</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
-                              <td width="70%">1</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie authentiek</b></td>
-                              <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Lengte</b></td>
-                              <td width="70%">36</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Formaat</b></td>
-                              <td width="70%">
-                                 Identificatiecode
-                                 </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Patroon</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie afleidbaar</b></td>
-                              <td width="70%">Zie package</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Waarde afleidbaar</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </div>
                   </div>
                
                <div><a class="anchor" name="detail_class_Model_Internetaak"></a><h3> Interne taak</h3>
@@ -13886,8 +13446,8 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Uniek identificerend nummer waarmee tijdens communicatie tussen mensen verwezen kan
-                                 worden naar de interne taak.</td>
+                              <td width="70%">Uniek identificerend nummer dat tijdens communicatie tussen mensen kan worden gebruikt
+                                 om de specifieke interne taak aan te duiden.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -13949,7 +13509,7 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De handeling die moet worden uitgevoerd om de taak af te ronden.</td>
+                              <td width="70%">Handeling die moet worden uitgevoerd om de taak af te ronden.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -14012,7 +13572,8 @@ date: 14-09-2023
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
                               <td width="70%">Toelichting die, aanvullend bij de inhoud van het klantcontact dat aanleiding gaf
-                                 tot de taak en de gevraagde handeling bijdraagt aan het kunnen afhandelen van de taak.</td>
+                                 tot de taak en de gevraagde handeling, bijdraagt aan het kunnen afhandelen van de
+                                 taak.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -14074,7 +13635,7 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De voortgang van afhandeling van de TAAK.</td>
+                              <td width="70%">Aanduiding van de vordering bij afhandeling van de interne taak.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -14122,13 +13683,13 @@ date: 14-09-2023
                      </table>
                      </div>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_Internetaak_Geregistreerdop"></a><h4>Attribuutsoort details Geregistreerd op</h4>
+                  <div><a class="anchor" name="detail_attribute_Model_Internetaak_Toegewezenop"></a><h4>Attribuutsoort details Toegewezen op</h4>
                      
                      <table>
                         <tbody>
                            <tr>
                               <td width="30%"><b>Naam</b></td>
-                              <td width="70%">Geregistreerd op</td>
+                              <td width="70%">Toegewezen op</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
@@ -14136,7 +13697,7 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De datum en het tijdstip waarop de registratie heeft plaatsgevonden. </td>
+                              <td width="70%">Datum en tijdstip waarop de interne taak aan een actor werd toegewezen.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -14144,7 +13705,7 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">16-02-2023</td>
+                              <td width="70%">05-10-2023</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Mogelijk geen waarde</b></td>
@@ -14438,68 +13999,6 @@ date: 14-09-2023
                      </table>
                      </div>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_Klanttaak_Geregistreerdop"></a><h4>Attribuutsoort details Geregistreerd op</h4>
-                     
-                     <table>
-                        <tbody>
-                           <tr>
-                              <td width="30%"><b>Naam</b></td>
-                              <td width="70%">Geregistreerd op</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Datum en tijd waarop de registratie heeft plaatsgevonden.</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">16-02-2023</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Mogelijk geen waarde</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
-                              <td width="70%">1</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie authentiek</b></td>
-                              <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Lengte</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Formaat</b></td>
-                              <td width="70%">
-                                 Datumtijd
-                                 </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Patroon</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie afleidbaar</b></td>
-                              <td width="70%">Zie package</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Waarde afleidbaar</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </div>
-                  
                   <div><a class="anchor" name="detail_attribute_Model_Klanttaak_Gevraagdehandeling"></a><h4>Attribuutsoort details Gevraagde handeling</h4>
                      
                      <table>
@@ -14770,7 +14269,7 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De unieke identificatie van de externe identificatie</td>
+                              <td width="70%">Unieke (technische) identificatiecode van de interne identificatie.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -14832,8 +14331,8 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De identificatiecode waarmee een partij in een intern (bron)register uniek ge&amp;#239;dentificeerd
-                                 kan worden.</td>
+                              <td width="70%">Identificatiecode waarmee aan een partij gerelateerde (domein)gegevens uniek ge&amp;#239;dentificeerd
+                                 kunnen worden.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -14959,68 +14458,6 @@ date: 14-09-2023
                         </tbody>
                      </table>
                      </div>
-                  
-                  <div><a class="anchor" name="detail_attribute_Model_Interneidentificatie_Geregistreerdop"></a><h4>Attribuutsoort details Geregistreerd op</h4>
-                     
-                     <table>
-                        <tbody>
-                           <tr>
-                              <td width="30%"><b>Naam</b></td>
-                              <td width="70%">Geregistreerd op</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De datum en het tijdstip waarop registratie heeft plaatsgevonden.</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">22-09-2023</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Mogelijk geen waarde</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
-                              <td width="70%">1</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie authentiek</b></td>
-                              <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Lengte</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Formaat</b></td>
-                              <td width="70%">
-                                 Datumtijd
-                                 </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Patroon</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie afleidbaar</b></td>
-                              <td width="70%">Zie package</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Waarde afleidbaar</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </div>
                   </div>
                
                <div><a class="anchor" name="detail_class_Model_Externeidentificatie"></a><h3> Externe identificatie</h3>
@@ -15039,7 +14476,7 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De unieke identificatie van de externe identificatie</td>
+                              <td width="70%">Unieke (technische) identificatiecode van de externe identificatie</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -15101,7 +14538,7 @@ date: 14-09-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De identificatiecode waarmee een partij in een extern (bron)register uniek ge&amp;#239;dentificeerd
+                              <td width="70%">Identificatiecode waarmee een partij in een extern (bron)register uniek ge&amp;#239;dentificeerd
                                  kan worden.</td>
                            </tr>
                            <tr>
@@ -15274,68 +14711,6 @@ date: 14-09-2023
                               <td width="30%"><b>Formaat</b></td>
                               <td width="70%">
                                  Omschrijving-kort
-                                 </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Patroon</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie afleidbaar</b></td>
-                              <td width="70%">Zie package</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Waarde afleidbaar</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </div>
-                  
-                  <div><a class="anchor" name="detail_attribute_Model_Externeidentificatie_Geregistreerdop"></a><h4>Attribuutsoort details Geregistreerd op</h4>
-                     
-                     <table>
-                        <tbody>
-                           <tr>
-                              <td width="30%"><b>Naam</b></td>
-                              <td width="70%">Geregistreerd op</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De datum en het tijdstip waarop registratie heeft plaatsgevonden.</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">Klentinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">22-09-2023</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Mogelijk geen waarde</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
-                              <td width="70%">1</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie authentiek</b></td>
-                              <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Lengte</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Formaat</b></td>
-                              <td width="70%">
-                                 Datumtijd
                                  </td>
                            </tr>
                            <tr>
@@ -15673,9 +15048,72 @@ date: 14-09-2023
                      </div>
                   </div>
                
-               <div><a class="anchor" name="detail_class_Model_Aanspreeknaam"></a><h3>Gegevensgroeptype Aanspreeknaam</h3>
+               <div><a class="anchor" name="detail_class_Model_Contactnaam"></a><h3>Gegevensgroeptype Contactnaam</h3>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_Aanspreeknaam_Voornaam"></a><h4>Attribuutsoort details Voornaam</h4>
+                  <div><a class="anchor" name="detail_attribute_Model_Contactnaam_Voorletters"></a><h4>Attribuutsoort details Voorletters</h4>
+                     
+                     <table>
+                        <tbody>
+                           <tr>
+                              <td width="30%"><b>Naam</b></td>
+                              <td width="70%">Voorletters</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Herkomst</b></td>
+                              <td width="70%">Klantinteracties</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Definitie</b></td>
+                              <td width="70%">Een afkorting van de voornamen. Meestal de beginletter, maar in sommige gevallen de
+                                 beginletter gecombineerd met de tweede letter van een voornaam.</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Herkomst definitie</b></td>
+                              <td width="70%">Klantinteracties</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Datum opname</b></td>
+                              <td width="70%">02-10-2023</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Mogelijk geen waarde</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
+                              <td width="70%">1</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie authentiek</b></td>
+                              <td width="70%">Authentiek</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Lengte</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Formaat</b></td>
+                              <td width="70%">
+                                 CharacterString
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Patroon</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie afleidbaar</b></td>
+                              <td width="70%">Zie package</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Waarde afleidbaar</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </div>
+                  
+                  <div><a class="anchor" name="detail_attribute_Model_Contactnaam_Voornaam"></a><h4>Attribuutsoort details Voornaam</h4>
                      
                      <table>
                         <tbody>
@@ -15737,7 +15175,7 @@ date: 14-09-2023
                      </table>
                      </div>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_Aanspreeknaam_Voorvoegselachternaam"></a><h4>Attribuutsoort details Voorvoegsel achternaam</h4>
+                  <div><a class="anchor" name="detail_attribute_Model_Contactnaam_Voorvoegselachternaam"></a><h4>Attribuutsoort details Voorvoegsel achternaam</h4>
                      
                      <table>
                         <tbody>
@@ -15800,7 +15238,7 @@ date: 14-09-2023
                      </table>
                      </div>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_Aanspreeknaam_Achternaam"></a><h4>Attribuutsoort details Achternaam</h4>
+                  <div><a class="anchor" name="detail_attribute_Model_Contactnaam_Achternaam"></a><h4>Attribuutsoort details Achternaam</h4>
                      
                      <table>
                         <tbody>
@@ -16732,6 +16170,136 @@ date: 14-09-2023
                               <td width="30%"><b>Formaat</b></td>
                               <td width="70%">
                                  Indicatie Ja Nee
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Patroon</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </div>
+                  </div>
+               
+               <div><a class="anchor" name="detail_class_Model_Externregister"></a><h3>Referentielijst Extern register</h3>
+                  
+                  <div><a class="anchor" name="detail_attribute_Model_Externregister_Code"></a><h4>Referentie element Code</h4>
+                     
+                     <table>
+                        <tbody>
+                           <tr>
+                              <td width="30%"><b>Naam</b></td>
+                              <td width="70%">Code</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Herkomst</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Definitie</b></td>
+                              <td width="70%">De code, behorende bij het soort extern id.</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Herkomst definitie</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Datum opname</b></td>
+                              <td width="70%">1 november 2008</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
+                              <td width="70%">1</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Formaat</b></td>
+                              <td width="70%">
+                                 Identificatiecode
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Patroon</b></td>
+                              <td width="70%">0000 en verder alleen natuurlijke getallen zonder voorloopnullen</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </div>
+                  
+                  <div><a class="anchor" name="detail_attribute_Model_Externregister_Naam"></a><h4>Referentie element Naam</h4>
+                     
+                     <table>
+                        <tbody>
+                           <tr>
+                              <td width="30%"><b>Naam</b></td>
+                              <td width="70%">Naam</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Herkomst</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Definitie</b></td>
+                              <td width="70%">De naam van het soort extern id.</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Herkomst definitie</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Datum opname</b></td>
+                              <td width="70%">1 november 2008</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
+                              <td width="70%">1</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Formaat</b></td>
+                              <td width="70%">
+                                 Naam-kort
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Patroon</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </div>
+                  
+                  <div><a class="anchor" name="detail_attribute_Model_Externregister_Locatie"></a><h4>Referentie element Locatie</h4>
+                     
+                     <table>
+                        <tbody>
+                           <tr>
+                              <td width="30%"><b>Naam</b></td>
+                              <td width="70%">Locatie</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Herkomst</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Definitie</b></td>
+                              <td width="70%">Indicatie die aangeeft of het soort extern ID nog actief is en toegekend mag worden
+                                 aan een etern ID van een Partij. </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Herkomst definitie</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Datum opname</b></td>
+                              <td width="70%">08-06-2023</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
+                              <td width="70%">1</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Formaat</b></td>
+                              <td width="70%">
+                                 Omschrijving-kort
                                  </td>
                            </tr>
                            <tr>
