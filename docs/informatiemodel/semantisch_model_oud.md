@@ -10,6 +10,24 @@ date: 05-10-2023
 Binnen VNG Realisatie wordt Enterprise Architect (EA) gebruikt voor de vastlegging van semantische informatiemodellen (SIM). 
 Onderstaand zijn de diagrammen van de oude versies van het infromatiemodel weergegeven en zijn de wijzigingen opgesomd die in het nieuwe model zijn doorgevoerd. 
 
+## Van versie 0.0.4 naar 0.0.5 (11-10-2023)
+Onderstaand figuur geeft de modellering van het SIM versie 0.0.4 weer zoals deze in EA was gemodelleerd.
+
+<img src="assets/SIM_Klantinteracties_v004.png" alt="SIM in Enterprise Architect" width="1000"/>
+
+De wijzigingen die in versie 0.0.5 zijn doorgevoerd t.o.v. deze versie zijn: 
+  - Verwijzingen naar voorkomen van een objecttype in een ander register zijn verder uitgewerkt en overal op dezelfde wijze toegepast.
+  - Naar aanleiding hiervan is het gegevensgroeptype *Verwijzing*  toegevoegd.
+  - Dit gegevensgroeptype vervangt de properties *Extern register* en *Extern ID* in de volgende objecttypes
+    - *Actor*
+    - *Onderwerpobject*
+    - *Inhoudsobject*
+    - *Externe identificatie*
+  - Dit gegevensgroeptype vervangt de properties *Intern register* en *Intern ID* in de volgende objecttypes
+    - *Interne Identificatie*
+  - In het gegevensgroeptype *Contactnaam* zijn de prperties nu voorzien van een primitief datatype.  
+
+
 ## Van versie 0.0.3 naar 0.0.4 (05-10-2023)
 Onderstaand figuur geeft de modellering van het SIM versie 0.0.3 weer zoals deze in EA was gemodelleerd.
 
