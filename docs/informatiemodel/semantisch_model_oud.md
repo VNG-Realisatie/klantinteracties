@@ -1,7 +1,7 @@
 ---
 layout: page-with-side-nav
 title: Semantisch informatiemodel versie 0.0.1.
-date: 05-10-2023
+date: 11-10-2023
 ---
 
 # Semantisch informatiemodel: Oude versies
@@ -9,6 +9,26 @@ date: 05-10-2023
 ## Modellering in Enterprise Architect
 Binnen VNG Realisatie wordt Enterprise Architect (EA) gebruikt voor de vastlegging van semantische informatiemodellen (SIM). 
 Onderstaand zijn de diagrammen van de oude versies van het infromatiemodel weergegeven en zijn de wijzigingen opgesomd die in het nieuwe model zijn doorgevoerd. 
+
+## Van versie 0.0.4 naar 0.0.5 (11-10-2023)
+Onderstaand figuur geeft de modellering van het SIM versie 0.0.4 weer zoals deze in EA was gemodelleerd.
+
+<img src="assets/SIM_Klantinteracties_v004.png" alt="SIM in Enterprise Architect" width="1000"/>
+
+De wijzigingen die in versie 0.0.5 zijn doorgevoerd t.o.v. deze versie zijn: 
+  - Identificatoren van voorkomens van een objecttype in een ander register zijn verder uitgewerkt en overal op dezelfde wijze toegepast.
+    - Naar aanleiding hiervan is het gegevensgroeptype *Identificator* toegevoegd.
+    - Gegevensgroeptype *Identificator* vervangt de attribuutsoorten *Extern register* en *Extern ID* in de volgende objecttypes:
+      - *Actor* middels de gegevensgroep *Actoridentificatie*
+      - *Onderwerpobject* middels de gegevensgroep *ObjectIdentificator* 
+      - *Inhoudsobject* middels de gegevensgroep *ObjectIdentificator* 
+  - De objecttypen *Interne identificatie* en *Externe identificatie* zijn samengevoegd in nieuw objecttype *Partij-identificator*. Bij dit objecttype:
+    - is toegevoegd een gegevensgroep van type *Identificator* onder de naam *Partij-identificator*
+    - is toegevoegd de attribuutsoort *Andere partij-identificator* om verwijzingen naar niet-voorgedefinieerde externe objecten te registreren
+  - In het gegevensgroeptype *Contactnaam* zijn de attribuutsoorten nu voorzien van een primitief datatype.
+  - Referentielijsten *Soort Intern ID* en *Soort extern ID* zijn verwijderd.
+  - Referentielijst *Soort Object ID* is toegevoegd.
+  - Enkele definities van relaties zijn aangepast.
 
 ## Van versie 0.0.3 naar 0.0.4 (05-10-2023)
 Onderstaand figuur geeft de modellering van het SIM versie 0.0.3 weer zoals deze in EA was gemodelleerd.
