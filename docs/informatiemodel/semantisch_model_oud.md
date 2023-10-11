@@ -16,20 +16,21 @@ Onderstaand figuur geeft de modellering van het SIM versie 0.0.4 weer zoals deze
 <img src="assets/SIM_Klantinteracties_v004.png" alt="SIM in Enterprise Architect" width="1000"/>
 
 De wijzigingen die in versie 0.0.5 zijn doorgevoerd t.o.v. deze versie zijn: 
-  - Verwijzingen naar voorkomen van een objecttype in een ander register zijn verder uitgewerkt en overal op dezelfde wijze toegepast.
-  - Naar aanleiding hiervan is het gegevensgroeptype *Verwijzing*  toegevoegd.
-  - Gegevensgroeptype *Verwijzing* vervangt de attribuutsoorten *Extern register* en *Extern ID* in de volgende objecttypes
-    - *Actor*
-    - *Onderwerpobject*
-    - *Inhoudsobject*
-    - *Externe identificatie*
-  - Gegevensgroeptype *Verwijzing* vervangt de attribuutsoorten *Intern register* en *Intern ID* in de volgende objecttypes
-    - *Interne Identificatie*
-  - Bij objecttype *Externe identificatie*:
-    - De attribuutsoort *Ander soort extern ID* is aangepast naar *Ander soort verwijzing*
+  - Het objecttype *Interne identificatie* is vervallen.
+  - Het objecttype *Externe identificatie* is hernoemd naar *Partij-Identificator*
+  - Identificatoren van voorkomens van een objecttype in een ander register zijn verder uitgewerkt en overal op dezelfde wijze toegepast.
+    - Naar aanleiding hiervan is het gegevensgroeptype *Identificator*  toegevoegd.
+    - Gegevensgroeptype *Identificator* vervangt de attribuutsoorten *Extern register* en *Extern ID* in de volgende objecttypes
+      - *Actor* middels de gegevensgroep *Actoridentificatie*
+      - *Onderwerpobject* middels de gegevensgroep *ObjectIdentificator* 
+      - *Inhoudsobject*
+      - *Externe identificatie* middels de gegevensgroep *ObjectIdentificator*
+  - Bij objecttype *Partij-identificator*:
+    - De attribuutsoort *Ander soort extern ID* is aangepast naar *Andere partij-identificator*
   - In het gegevensgroeptype *Contactnaam* zijn de attribuutsoorten nu voorzien van een primitief datatype.
   - Referentielijsten *Soort Intern ID* en *Soort extern ID* zijn verwijderd.
   - Referentielijst *Soort Object ID* is toegevoegd.
+  - Enkele definities van relaties zijn aangepast.
 
 
 ## Van versie 0.0.3 naar 0.0.4 (05-10-2023)
