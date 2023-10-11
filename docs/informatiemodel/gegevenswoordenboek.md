@@ -64,7 +64,7 @@ date: 11-10-2023
          :
          2.0.0
          :
-         2023-10-11T09:29:36Z</p>
+         2023-10-11T14:31:36Z</p>
       <p>
          ID: EAPK_272B109E_0738_42bd_9D43_C4F87B5E8B8D</p>
       <div><strong>Domein: Model</strong><div>
@@ -84,8 +84,8 @@ date: 11-10-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">Een contact tussen een klant of een vertegenwoordiger van een klant en de gemeente
-                           over een onderwerp.</td>
+                        <td width="70%">Contact tussen een klant of een vertegenwoordiger van een klant en de gemeente over
+                           een onderwerp.</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -272,7 +272,7 @@ date: 11-10-2023
                            
                            [ 1 .. * ]
                            </td>
-                        <td width="50%">De actor die tijdens het klantcontant contact had met klanten of hun vertegenwoordigers.</td>
+                        <td width="50%">Actor die bij een klantcontact betrokken was.</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
@@ -287,7 +287,7 @@ date: 11-10-2023
                            
                            [ 0 .. * ]
                            </td>
-                        <td width="50%">De persoon of organisatie die betrokken was bij een klantcontact.</td>
+                        <td width="50%">Persoon of organisatie die betrokken was bij een klantcontact.</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
@@ -302,7 +302,7 @@ date: 11-10-2023
                            
                            [ 0 .. * ]
                            </td>
-                        <td width="50%">Het onderwerp dat tijdens een klantcontact aan de orde was.</td>
+                        <td width="50%">Onderwerpobject dat tijdens een klantcontact aan de orde kwam.</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
@@ -317,7 +317,7 @@ date: 11-10-2023
                            
                            [ 0 .. * ]
                            </td>
-                        <td width="50%">De informatie die tijdens een klantcontact werd medegedeeld of uitgewisseld.</td>
+                        <td width="50%">Inhoudsobject dat onderdeel was van de inhoud van het klantcontact.</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
@@ -332,7 +332,7 @@ date: 11-10-2023
                            Klantcontact
                            [ 0 .. 1 ]
                            </td>
-                        <td width="50%">De interne taak waarover (een deel van) een klantcontact ging.</td>
+                        <td width="50%">Klantcontact dat een onderwerpobject was.</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
@@ -347,7 +347,7 @@ date: 11-10-2023
                            Klantcontact
                            [ 1 ]
                            </td>
-                        <td width="50%">Het klantcontact dat aanleiding gaf tot het ontstaan van een interne taak.</td>
+                        <td width="50%">Klantcontact dat leidde tot een interne taak.</td>
                      </tr>
                   </tbody>
                </table>
@@ -390,10 +390,10 @@ date: 11-10-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">Ofwel de betrokkenheid van een partij bij een klantcontact, eventueel aangevuld met
-                           specifiek voor opvolging van dat klantcontact te gebruiken contactgegevens, ofwel
-                           de voor opvolging van een klantcontact te gebruiken contactgegevens van een tijdens
-                           dat klantcontact niet als partij gekende persoon.</td>
+                        <td width="70%">Ofwel betrokkenheid van een partij bij een klantcontact, eventueel aangevuld met specifiek
+                           voor opvolging van dat klantcontact te gebruiken contactgegevens, ofwel voor opvolging
+                           van een klantcontact te gebruiken contactgegevens van een tijdens dat klantcontact
+                           niet als partij gekende persoon.</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -689,7 +689,7 @@ date: 11-10-2023
                            
                            [ 0 .. 1 ]
                            </td>
-                        <td width="50%">De partij die optrad als betrokkene bij een klantcontact.</td>
+                        <td width="50%">Betrokkene bij klantcontact die een partij was.</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
@@ -704,8 +704,8 @@ date: 11-10-2023
                            
                            [ 0 .. * ]
                            </td>
-                        <td width="50%">Het digitale adres dat de betrokkene bij klantcontact opgaf voor gebruik bij opvolging
-                           van het klantcontact.</td>
+                        <td width="50%">Digitaal adres dat een betrokkene bij klantcontact verstrekte voor gebruik bij opvolging
+                           van een klantcontact.</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
@@ -720,7 +720,7 @@ date: 11-10-2023
                            Betrokkene bij klantcontact
                            [ 0 .. * ]
                            </td>
-                        <td width="50%">De persoon of organisatie die betrokken was bij een klantcontact.</td>
+                        <td width="50%">Persoon of organisatie die betrokken was bij een klantcontact.</td>
                      </tr>
                   </tbody>
                </table>
@@ -774,7 +774,7 @@ date: 11-10-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">Het object in de overige objectenregistratie waarop het klantcontact betrekking heeft.</td>
+                        <td width="70%">Object, geregistreerd in het register voor Overige objectregistraties</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -855,7 +855,7 @@ date: 11-10-2023
                            Overig Object
                            [ 0 .. 1 ]
                            </td>
-                        <td width="50%">Het overige object dat (een deel van de) inhoud van een klantcontact beschrijft.</td>
+                        <td width="50%">Overig object dat een inhoudsobject was.</td>
                      </tr>
                   </tbody>
                </table>
@@ -959,7 +959,7 @@ date: 11-10-2023
                            Organisatie
                            [ 0 .. 1 ]
                            </td>
-                        <td width="50%">De contactpersoon die werkte voor een organisatie.</td>
+                        <td width="50%">Organisatie waarvoor een contactpersoon werkte.</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
@@ -1009,7 +1009,7 @@ date: 11-10-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">Een verwijzing naar een (extern) object dat onderwerp van het klantcontact was. </td>
+                        <td width="70%">Object dat onderwerp van een klantcontact was. </td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -1061,12 +1061,11 @@ date: 11-10-2023
                      <tr>
                         <td width="5%">&nbsp;</td>
                         <td width="25%">
-                           Verwijzing
+                           Objectidentificator
                            :</td>
-                        <td width="50%">Verwijzende eigenschappen waarmee het object dat geldt als deelonderwerp van een klantcontact
-                           in het externe (bron)register uniek ge&amp;#239;dentificeerd kan worden.</td>
+                        <td width="50%">Gegevens die een onderwerpobject in een extern register uniek identificeren.</td>
                         <td width="10%">
-                           Verwijzing
+                           Identificator
                            </td>
                         <td width="10%">1</td>
                      </tr>
@@ -1075,7 +1074,7 @@ date: 11-10-2023
                         <td width="25%">- 
                            Objecttype
                            </td>
-                        <td width="50%">Het Objecttype waarnaar verwezen wordt.</td>
+                        <td width="50%">Type van het object.</td>
                         <td width="10%">
                            Soort object
                            </td>
@@ -1086,8 +1085,7 @@ date: 11-10-2023
                         <td width="25%">- 
                            Soort Object ID
                            </td>
-                        <td width="50%">De naam van de eigenschap binnen het objecttype waarnaar verwezen wordt dat gebruikt
-                           wordt om het voorkomen waarnaar verwezen wordt te identificeren. </td>
+                        <td width="50%">Naam van de eigenschap die het object identificeert.</td>
                         <td width="10%">
                            Soort object
                            </td>
@@ -1098,8 +1096,7 @@ date: 11-10-2023
                         <td width="25%">- 
                            Object ID
                            </td>
-                        <td width="50%">De waarde van de eigenschap binnen het objecttype waarnaar verwezen wordt dat gebruikt
-                           wordt om het voorkomen waarnaar verwezen wordt te identificeren. </td>
+                        <td width="50%">Waarde van de eigenschap die het object identificeert.</td>
                         <td width="10%">
                            Identificatiecode
                            </td>
@@ -1110,8 +1107,8 @@ date: 11-10-2023
                         <td width="25%">- 
                            Register
                            </td>
-                        <td width="50%">Een omschrijving van het register waar het voorkomen van het objecttype waarnaar verwezen
-                           wordt leeft. </td>
+                        <td width="50%">Binnen het landschap van registers unieke omschrijving van het register waarin het
+                           object is geregistreerd.</td>
                         <td width="10%">
                            Extern register
                            </td>
@@ -1149,7 +1146,7 @@ date: 11-10-2023
                            
                            [ 0 .. 1 ]
                            </td>
-                        <td width="50%">De interne taak waarover (een deel van) een klantcontact ging.</td>
+                        <td width="50%">Klantcontact dat een onderwerpobject was.</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
@@ -1164,7 +1161,7 @@ date: 11-10-2023
                            
                            [ 0 .. 1 ]
                            </td>
-                        <td width="50%">Het andere object waarover een klantcontact ging.</td>
+                        <td width="50%">Ander object dat een onderwerpobject was.</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
@@ -1179,7 +1176,7 @@ date: 11-10-2023
                            
                            [ 0 .. 1 ]
                            </td>
-                        <td width="50%">De klanttaak waarover een klantcontact ging.</td>
+                        <td width="50%">Klanttaak die een onderwerpobject was.</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
@@ -1194,7 +1191,7 @@ date: 11-10-2023
                            
                            [ 0 .. 1 ]
                            </td>
-                        <td width="50%">De zaak waarover een klantcontact ging.</td>
+                        <td width="50%">Zaak die een onderwerpobject was.</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
@@ -1209,7 +1206,7 @@ date: 11-10-2023
                            Onderwerpobject
                            [ 0 .. * ]
                            </td>
-                        <td width="50%">Het onderwerp dat tijdens een klantcontact aan de orde was.</td>
+                        <td width="50%">Onderwerpobject dat tijdens een klantcontact aan de orde kwam.</td>
                      </tr>
                   </tbody>
                </table>
@@ -1520,30 +1517,14 @@ date: 11-10-2023
                            Partij
                            [ 0 .. 1 ]
                            
-                           was te identificeren met
+                           had
                            
                            
-                           Interne identificatie
-                           
-                           [ 0 .. * ]
-                           </td>
-                        <td width="50%">De identificerende gegevens die de bij een partij horende gegevens in een ander intern
-                           register aanwijzen.</td>
-                     </tr>
-                     <tr>
-                        <td width="5%">&nbsp;</td>
-                        <td width="45%">
-                           Partij
-                           [ 0 .. 1 ]
-                           
-                           was te identificeren met
-                           
-                           
-                           Externe identificatie
+                           Partij-identificator
                            
                            [ 1 .. * ]
                            </td>
-                        <td width="50%">De identificerende gegevens die de partij in een extern register aanwijzen.</td>
+                        <td width="50%">Partij-identificator die een partij had.</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
@@ -1558,7 +1539,7 @@ date: 11-10-2023
                            
                            [ 0 .. * ]
                            </td>
-                        <td width="50%">De partij die een andere partij vertegenwoordigde.</td>
+                        <td width="50%">Partij die een andere partij vertegenwoordigde.</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
@@ -1573,8 +1554,8 @@ date: 11-10-2023
                            
                            [ 0 .. * ]
                            </td>
-                        <td width="50%">Het digitale adres dat de partij voor gebruik bij toekomstig contact met de gemeente
-                           verstrekte.</td>
+                        <td width="50%">Digitaal adres dat een partij verstrekte voor gebruik bij toekomstig contact met de
+                           gemeente.</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
@@ -1589,7 +1570,7 @@ date: 11-10-2023
                            Partij
                            [ 0 .. 1 ]
                            </td>
-                        <td width="50%">De partij die optrad als betrokkene bij een klantcontact.</td>
+                        <td width="50%">Betrokkene bij klantcontact die een partij was.</td>
                      </tr>
                   </tbody>
                </table>
@@ -1611,8 +1592,7 @@ date: 11-10-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">Een verwijzing naar een (extern) object dat uitgewisseld of gemaakt is tijdens het
-                           klantcontact.</td>
+                        <td width="70%">Object dat tijdens een klantcontact werd gemaakt of overgebracht.</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -1664,12 +1644,11 @@ date: 11-10-2023
                      <tr>
                         <td width="5%">&nbsp;</td>
                         <td width="25%">
-                           Verwijzing
+                           Objectidentificator
                            :</td>
-                        <td width="50%">Verwijzende eigenschappen waarmee het object dat (een deel van) de inhoud van een
-                           klantcontact beschrijft in het externe register uniek ge&amp;#239;dentificeerd kan worden.</td>
+                        <td width="50%">Gegevens die een inhoudsobject in een extern register uniek identificeren.</td>
                         <td width="10%">
-                           Verwijzing
+                           Identificator
                            </td>
                         <td width="10%">1</td>
                      </tr>
@@ -1678,7 +1657,7 @@ date: 11-10-2023
                         <td width="25%">- 
                            Objecttype
                            </td>
-                        <td width="50%">Het Objecttype waarnaar verwezen wordt.</td>
+                        <td width="50%">Type van het object.</td>
                         <td width="10%">
                            Soort object
                            </td>
@@ -1689,8 +1668,7 @@ date: 11-10-2023
                         <td width="25%">- 
                            Soort Object ID
                            </td>
-                        <td width="50%">De naam van de eigenschap binnen het objecttype waarnaar verwezen wordt dat gebruikt
-                           wordt om het voorkomen waarnaar verwezen wordt te identificeren. </td>
+                        <td width="50%">Naam van de eigenschap die het object identificeert.</td>
                         <td width="10%">
                            Soort object
                            </td>
@@ -1701,8 +1679,7 @@ date: 11-10-2023
                         <td width="25%">- 
                            Object ID
                            </td>
-                        <td width="50%">De waarde van de eigenschap binnen het objecttype waarnaar verwezen wordt dat gebruikt
-                           wordt om het voorkomen waarnaar verwezen wordt te identificeren. </td>
+                        <td width="50%">Waarde van de eigenschap die het object identificeert.</td>
                         <td width="10%">
                            Identificatiecode
                            </td>
@@ -1713,8 +1690,8 @@ date: 11-10-2023
                         <td width="25%">- 
                            Register
                            </td>
-                        <td width="50%">Een omschrijving van het register waar het voorkomen van het objecttype waarnaar verwezen
-                           wordt leeft. </td>
+                        <td width="50%">Binnen het landschap van registers unieke omschrijving van het register waarin het
+                           object is geregistreerd.</td>
                         <td width="10%">
                            Extern register
                            </td>
@@ -1752,7 +1729,7 @@ date: 11-10-2023
                            
                            [ 0 .. 1 ]
                            </td>
-                        <td width="50%">Het andere object dat (een deel van de) inhoud van een klantcontact beschrijft.</td>
+                        <td width="50%">Informatieobject dat een inhoudsobject was.</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
@@ -1767,7 +1744,7 @@ date: 11-10-2023
                            
                            [ 0 .. 1 ]
                            </td>
-                        <td width="50%">Het overige object dat (een deel van de) inhoud van een klantcontact beschrijft.</td>
+                        <td width="50%">Overig object dat een inhoudsobject was.</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
@@ -1782,7 +1759,7 @@ date: 11-10-2023
                            
                            [ 0 .. 1 ]
                            </td>
-                        <td width="50%">Het andere object dat (een deel van de) inhoud van een klantcontact beschrijft.</td>
+                        <td width="50%">Ander object dat een inhoudsobject was.</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
@@ -1797,7 +1774,7 @@ date: 11-10-2023
                            Inhoudsobject
                            [ 0 .. * ]
                            </td>
-                        <td width="50%">De informatie die tijdens een klantcontact werd medegedeeld of uitgewisseld.</td>
+                        <td width="50%">Inhoudsobject dat onderdeel was van de inhoud van het klantcontact.</td>
                      </tr>
                   </tbody>
                </table>
@@ -1819,7 +1796,8 @@ date: 11-10-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">Persoon die werkte voor een organisatie, of persoon die een andere persoon vertegenwoordigde.</td>
+                        <td width="70%">Natuurlijk persoon die werkte voor een organisatie, of natuurlijk persoon die een
+                           andere persoon vertegenwoordigde.</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -1946,7 +1924,7 @@ date: 11-10-2023
                            
                            [ 0 .. 1 ]
                            </td>
-                        <td width="50%">De contactpersoon die werkte voor een organisatie.</td>
+                        <td width="50%">Organisatie waarvoor een contactpersoon werkte.</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
@@ -2141,7 +2119,7 @@ date: 11-10-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">Het object van een ander type waarop het klantcontact betrekking heeft.</td>
+                        <td width="70%">Object, geregistreerd in een ander register</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -2222,7 +2200,7 @@ date: 11-10-2023
                            Ander Object
                            [ 0 .. 1 ]
                            </td>
-                        <td width="50%">Het andere object waarover een klantcontact ging.</td>
+                        <td width="50%">Ander object dat een onderwerpobject was.</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
@@ -2237,7 +2215,7 @@ date: 11-10-2023
                            Ander Object
                            [ 0 .. 1 ]
                            </td>
-                        <td width="50%">Het andere object dat (een deel van de) inhoud van een klantcontact beschrijft.</td>
+                        <td width="50%">Ander object dat een inhoudsobject was.</td>
                      </tr>
                   </tbody>
                </table>
@@ -2277,8 +2255,8 @@ date: 11-10-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">Contactgegevens die niet verbonden zijn aan een specifieke fysieke locatie waarmee
-                           een persoon of organisatie bereikt kan worden.</td>
+                        <td width="70%">Niet aan een specifieke fysieke locatie verbonden contactgegevens van een persoon
+                           of organisatie.</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -2393,8 +2371,8 @@ date: 11-10-2023
                            Digitaal adres
                            [ 0 .. * ]
                            </td>
-                        <td width="50%">Het digitale adres dat de betrokkene bij klantcontact opgaf voor gebruik bij opvolging
-                           van het klantcontact.</td>
+                        <td width="50%">Digitaal adres dat een betrokkene bij klantcontact verstrekte voor gebruik bij opvolging
+                           van een klantcontact.</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
@@ -2409,8 +2387,8 @@ date: 11-10-2023
                            Digitaal adres
                            [ 0 .. * ]
                            </td>
-                        <td width="50%">Het digitale adres dat de partij voor gebruik bij toekomstig contact met de gemeente
-                           verstrekte.</td>
+                        <td width="50%">Digitaal adres dat een partij verstrekte voor gebruik bij toekomstig contact met de
+                           gemeente.</td>
                      </tr>
                   </tbody>
                </table>
@@ -2769,7 +2747,7 @@ date: 11-10-2023
                            Informatieobject
                            [ 0 .. 1 ]
                            </td>
-                        <td width="50%">Het andere object dat (een deel van de) inhoud van een klantcontact beschrijft.</td>
+                        <td width="50%">Informatieobject dat een inhoudsobject was.</td>
                      </tr>
                   </tbody>
                </table>
@@ -2877,12 +2855,11 @@ date: 11-10-2023
                      <tr>
                         <td width="5%">&nbsp;</td>
                         <td width="25%">
-                           Verwijzing
+                           Actoridentifcator
                            :</td>
-                        <td width="50%">Verwijzende eigenschappen waarmee een partij in een intern (bron)register uniek ge&amp;#239;dentificeerd
-                           kan worden.</td>
+                        <td width="50%">Gegevens die een actor in een extern register uniek identificeren.</td>
                         <td width="10%">
-                           Verwijzing
+                           Identificator
                            </td>
                         <td width="10%">0 .. 1</td>
                      </tr>
@@ -2891,7 +2868,7 @@ date: 11-10-2023
                         <td width="25%">- 
                            Objecttype
                            </td>
-                        <td width="50%">Het Objecttype waarnaar verwezen wordt.</td>
+                        <td width="50%">Type van het object.</td>
                         <td width="10%">
                            Soort object
                            </td>
@@ -2902,8 +2879,7 @@ date: 11-10-2023
                         <td width="25%">- 
                            Soort Object ID
                            </td>
-                        <td width="50%">De naam van de eigenschap binnen het objecttype waarnaar verwezen wordt dat gebruikt
-                           wordt om het voorkomen waarnaar verwezen wordt te identificeren. </td>
+                        <td width="50%">Naam van de eigenschap die het object identificeert.</td>
                         <td width="10%">
                            Soort object
                            </td>
@@ -2914,8 +2890,7 @@ date: 11-10-2023
                         <td width="25%">- 
                            Object ID
                            </td>
-                        <td width="50%">De waarde van de eigenschap binnen het objecttype waarnaar verwezen wordt dat gebruikt
-                           wordt om het voorkomen waarnaar verwezen wordt te identificeren. </td>
+                        <td width="50%">Waarde van de eigenschap die het object identificeert.</td>
                         <td width="10%">
                            Identificatiecode
                            </td>
@@ -2926,8 +2901,8 @@ date: 11-10-2023
                         <td width="25%">- 
                            Register
                            </td>
-                        <td width="50%">Een omschrijving van het register waar het voorkomen van het objecttype waarnaar verwezen
-                           wordt leeft. </td>
+                        <td width="50%">Binnen het landschap van registers unieke omschrijving van het register waarin het
+                           object is geregistreerd.</td>
                         <td width="10%">
                            Extern register
                            </td>
@@ -2965,7 +2940,7 @@ date: 11-10-2023
                            Actor
                            [ 1 .. * ]
                            </td>
-                        <td width="50%">De actor die tijdens het klantcontant contact had met klanten of hun vertegenwoordigers.</td>
+                        <td width="50%">Actor die bij een klantcontact betrokken was.</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
@@ -2980,7 +2955,7 @@ date: 11-10-2023
                            Actor
                            [ 1 ]
                            </td>
-                        <td width="50%">De actor aan wie de interne taak werd toegewezen.</td>
+                        <td width="50%">Actor die een interne taak toegewezen kreeg.</td>
                      </tr>
                   </tbody>
                </table>
@@ -3276,7 +3251,7 @@ date: 11-10-2023
                            
                            [ 1 ]
                            </td>
-                        <td width="50%">De actor aan wie de interne taak werd toegewezen.</td>
+                        <td width="50%">Actor die een interne taak toegewezen kreeg.</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
@@ -3291,7 +3266,7 @@ date: 11-10-2023
                            
                            [ 1 ]
                            </td>
-                        <td width="50%">Het klantcontact dat aanleiding gaf tot het ontstaan van een interne taak.</td>
+                        <td width="50%">Klantcontact dat leidde tot een interne taak.</td>
                      </tr>
                   </tbody>
                </table>
@@ -3313,9 +3288,9 @@ date: 11-10-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">Iets dat door een bij een zaak betrokken partij moet worden gedaan.<br><br>De noodzaak om een klanttaak te kunnen registreren is bij klantinteracties onderkend.
-                           Qua karakter en eigenschappen hoort de klanttaak binnen het domein van zaakgericht
-                           werken en is Klantinteracties dus niet de "eigenaar" van dit object. </td>
+                        <td width="70%">Iets dat door een bij een zaak betrokken partij moet worden gedaan.<br><br>De noodzaak om een klanttaak te kunnen registreren is tijdens ontwikkeling van klantinteracties
+                           onderkend. Qua karakter en eigenschappen hoort de klanttaak binnen het domein van
+                           zaakgericht werken en is Klantinteracties dus niet het 'thuisdomein' van dit object.</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -3442,7 +3417,7 @@ date: 11-10-2023
                            Klanttaak
                            [ 0 .. 1 ]
                            </td>
-                        <td width="50%">De klanttaak waarover een klantcontact ging.</td>
+                        <td width="50%">Klanttaak die een onderwerpobject was.</td>
                      </tr>
                   </tbody>
                </table>
@@ -3547,7 +3522,7 @@ date: 11-10-2023
                            Zaak
                            [ 0 .. 1 ]
                            </td>
-                        <td width="50%">De zaak waarover een klantcontact ging.</td>
+                        <td width="50%">Zaak die een onderwerpobject was.</td>
                      </tr>
                   </tbody>
                </table>
@@ -3555,13 +3530,13 @@ date: 11-10-2023
                
                </div>
             
-            <div><a class="anchor" name="global_class_Model_Interneidentificatie"></a><h2> Interne identificatie</h2>
+            <div><a class="anchor" name="global_class_Model_Partijidentificator"></a><h2> Partij-identificator</h2>
                
                <table>
                   <tbody>
                      <tr>
                         <td width="30%"><b>Naam</b></td>
-                        <td width="70%">Interne identificatie</td>
+                        <td width="70%">Partij-identificator</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst</b></td>
@@ -3569,171 +3544,7 @@ date: 11-10-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">In een intern register opgeslagen (domein)gegevens die horen bij een partij.</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Herkomst definitie</b></td>
-                        <td width="70%">Klantinteracties</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">22-09-1964</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Unieke aanduiding</b></td>
-                        <td width="70%">ID</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Indicatie abstract object</b></td>
-                        <td width="70%">Nee</td>
-                     </tr>
-                  </tbody>
-               </table>
-               
-               <table>
-                  <tbody>
-                     <tr>
-                        <td width="30%"><b>Overzicht attributen</b></td>
-                     </tr>
-                  </tbody>
-               </table>
-               
-               <table>
-                  <tbody>
-                     <tr>
-                        <td><i></i></td>
-                        <td><i>Attribuutnaam</i></td>
-                        <td><i>Definitie</i></td>
-                        <td><i>Formaat</i></td>
-                        <td><i>Card</i></td>
-                     </tr>
-                     <tr>
-                        <td width="5%">&nbsp;</td>
-                        <td width="25%">
-                           ID
-                           </td>
-                        <td width="50%">Unieke (technische) identificatiecode van de interne identificatie.</td>
-                        <td width="10%">
-                           Identificatiecode
-                           </td>
-                        <td width="10%">1</td>
-                     </tr>
-                     <tr>
-                        <td width="5%">&nbsp;</td>
-                        <td width="25%">
-                           Verwijzing
-                           :</td>
-                        <td width="50%">Verwijzende eigenschappen waarmee een partij in een intern (bron)register uniek ge&amp;#239;dentificeerd
-                           kan worden.</td>
-                        <td width="10%">
-                           Verwijzing
-                           </td>
-                        <td width="10%">1</td>
-                     </tr>
-                     <tr>
-                        <td width="5%">&nbsp;</td>
-                        <td width="25%">- 
-                           Objecttype
-                           </td>
-                        <td width="50%">Het Objecttype waarnaar verwezen wordt.</td>
-                        <td width="10%">
-                           Soort object
-                           </td>
-                        <td width="10%">1</td>
-                     </tr>
-                     <tr>
-                        <td width="5%">&nbsp;</td>
-                        <td width="25%">- 
-                           Soort Object ID
-                           </td>
-                        <td width="50%">De naam van de eigenschap binnen het objecttype waarnaar verwezen wordt dat gebruikt
-                           wordt om het voorkomen waarnaar verwezen wordt te identificeren. </td>
-                        <td width="10%">
-                           Soort object
-                           </td>
-                        <td width="10%">1</td>
-                     </tr>
-                     <tr>
-                        <td width="5%">&nbsp;</td>
-                        <td width="25%">- 
-                           Object ID
-                           </td>
-                        <td width="50%">De waarde van de eigenschap binnen het objecttype waarnaar verwezen wordt dat gebruikt
-                           wordt om het voorkomen waarnaar verwezen wordt te identificeren. </td>
-                        <td width="10%">
-                           Identificatiecode
-                           </td>
-                        <td width="10%">1</td>
-                     </tr>
-                     <tr>
-                        <td width="5%">&nbsp;</td>
-                        <td width="25%">- 
-                           Register
-                           </td>
-                        <td width="50%">Een omschrijving van het register waar het voorkomen van het objecttype waarnaar verwezen
-                           wordt leeft. </td>
-                        <td width="10%">
-                           Extern register
-                           </td>
-                        <td width="10%">1</td>
-                     </tr>
-                  </tbody>
-               </table>
-               
-               
-               <table>
-                  <tbody>
-                     <tr>
-                        <td width="30%"><b>Overzicht relaties</b></td>
-                     </tr>
-                  </tbody>
-               </table>
-               
-               <table>
-                  <tbody>
-                     <tr>
-                        <td><i></i></td>
-                        <td><i>Relatienaam met kardinaliteiten</i></td>
-                        <td><i>Definitie</i></td>
-                     </tr>
-                     <tr>
-                        <td width="5%">&nbsp;</td>
-                        <td width="45%">
-                           
-                           Partij
-                           
-                           [ 0 .. 1 ]
-                           
-                           was te identificeren met
-                           
-                           Interne identificatie
-                           [ 0 .. * ]
-                           </td>
-                        <td width="50%">De identificerende gegevens die de bij een partij horende gegevens in een ander intern
-                           register aanwijzen.</td>
-                     </tr>
-                  </tbody>
-               </table>
-               
-               
-               </div>
-            
-            <div><a class="anchor" name="global_class_Model_Externeidentificatie"></a><h2> Externe identificatie</h2>
-               
-               <table>
-                  <tbody>
-                     <tr>
-                        <td width="30%"><b>Naam</b></td>
-                        <td width="70%">Externe identificatie</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">Klantinteracties</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">Gegevens waarmee een partij in een extern (bron)register uniek ge&amp;#239;dentificeerd
-                           kan worden.</td>
+                        <td width="70%">Gegevens die een partij in een basisregistratie of ander extern register uniek identificeren.</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -3785,24 +3596,23 @@ date: 11-10-2023
                      <tr>
                         <td width="5%">&nbsp;</td>
                         <td width="25%">
-                           Ander soort verwijzing
+                           Andere partij-identificator
                            </td>
                         <td width="50%">Vrij tekstveld om de verwijzing naar een niet-voorgedefinieerd objecttype, soort objectID
                            of Register vast te leggen. </td>
                         <td width="10%">
-                           Omschrijving-kort
+                           Omschrijving-lang
                            </td>
                         <td width="10%">0 .. 1</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
                         <td width="25%">
-                           Verwijzing
+                           Partij-identificator
                            :</td>
-                        <td width="50%">Verwijzende eigenschappen waarmee een partij in een extern (bron)register uniek ge&amp;#239;dentificeerd
-                           kan worden.</td>
+                        <td width="50%">Gegevens die een partij in een basisregistratie of ander extern register uniek identificeren.</td>
                         <td width="10%">
-                           Verwijzing
+                           Identificator
                            </td>
                         <td width="10%">1</td>
                      </tr>
@@ -3811,7 +3621,7 @@ date: 11-10-2023
                         <td width="25%">- 
                            Objecttype
                            </td>
-                        <td width="50%">Het Objecttype waarnaar verwezen wordt.</td>
+                        <td width="50%">Type van het object.</td>
                         <td width="10%">
                            Soort object
                            </td>
@@ -3822,8 +3632,7 @@ date: 11-10-2023
                         <td width="25%">- 
                            Soort Object ID
                            </td>
-                        <td width="50%">De naam van de eigenschap binnen het objecttype waarnaar verwezen wordt dat gebruikt
-                           wordt om het voorkomen waarnaar verwezen wordt te identificeren. </td>
+                        <td width="50%">Naam van de eigenschap die het object identificeert.</td>
                         <td width="10%">
                            Soort object
                            </td>
@@ -3834,8 +3643,7 @@ date: 11-10-2023
                         <td width="25%">- 
                            Object ID
                            </td>
-                        <td width="50%">De waarde van de eigenschap binnen het objecttype waarnaar verwezen wordt dat gebruikt
-                           wordt om het voorkomen waarnaar verwezen wordt te identificeren. </td>
+                        <td width="50%">Waarde van de eigenschap die het object identificeert.</td>
                         <td width="10%">
                            Identificatiecode
                            </td>
@@ -3846,8 +3654,8 @@ date: 11-10-2023
                         <td width="25%">- 
                            Register
                            </td>
-                        <td width="50%">Een omschrijving van het register waar het voorkomen van het objecttype waarnaar verwezen
-                           wordt leeft. </td>
+                        <td width="50%">Binnen het landschap van registers unieke omschrijving van het register waarin het
+                           object is geregistreerd.</td>
                         <td width="10%">
                            Extern register
                            </td>
@@ -3880,12 +3688,12 @@ date: 11-10-2023
                            
                            [ 0 .. 1 ]
                            
-                           was te identificeren met
+                           had
                            
-                           Externe identificatie
+                           Partij-identificator
                            [ 1 .. * ]
                            </td>
-                        <td width="50%">De identificerende gegevens die de partij in een extern register aanwijzen.</td>
+                        <td width="50%">Partij-identificator die een partij had.</td>
                      </tr>
                   </tbody>
                </table>
@@ -4535,13 +4343,13 @@ date: 11-10-2023
          <div>
             <h1>Gegevensgroeptypen </h1>
             
-            <div><a class="anchor" name="global_class_Model_Verwijzing"></a><h2>Gegevensgroep Verwijzing</h2>
+            <div><a class="anchor" name="global_class_Model_Identificator"></a><h2>Gegevensgroep Identificator</h2>
                
                <table>
                   <tbody>
                      <tr>
                         <td width="30%"><b>Naam</b></td>
-                        <td width="70%">Verwijzing</td>
+                        <td width="70%">Identificator</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst</b></td>
@@ -4549,8 +4357,7 @@ date: 11-10-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">De componenten waarmee een verwijzing naar een voorkomen van een objecttype in een
-                           ander register wordt gelegd.</td>
+                        <td width="70%">Gegevens die een object in een extern register uniek identificeren.</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -4585,7 +4392,7 @@ date: 11-10-2023
                         <td width="25%">- 
                            Objecttype
                            </td>
-                        <td width="50%">Het Objecttype waarnaar verwezen wordt.</td>
+                        <td width="50%">Type van het object.</td>
                         <td width="10%">
                            Soort object
                            </td>
@@ -4596,8 +4403,7 @@ date: 11-10-2023
                         <td width="25%">- 
                            Soort Object ID
                            </td>
-                        <td width="50%">De naam van de eigenschap binnen het objecttype waarnaar verwezen wordt dat gebruikt
-                           wordt om het voorkomen waarnaar verwezen wordt te identificeren. </td>
+                        <td width="50%">Naam van de eigenschap die het object identificeert.</td>
                         <td width="10%">
                            Soort object
                            </td>
@@ -4608,8 +4414,7 @@ date: 11-10-2023
                         <td width="25%">- 
                            Object ID
                            </td>
-                        <td width="50%">De waarde van de eigenschap binnen het objecttype waarnaar verwezen wordt dat gebruikt
-                           wordt om het voorkomen waarnaar verwezen wordt te identificeren. </td>
+                        <td width="50%">Waarde van de eigenschap die het object identificeert.</td>
                         <td width="10%">
                            Identificatiecode
                            </td>
@@ -4620,8 +4425,8 @@ date: 11-10-2023
                         <td width="25%">- 
                            Register
                            </td>
-                        <td width="50%">Een omschrijving van het register waar het voorkomen van het objecttype waarnaar verwezen
-                           wordt leeft. </td>
+                        <td width="50%">Binnen het landschap van registers unieke omschrijving van het register waarin het
+                           object is geregistreerd.</td>
                         <td width="10%">
                            Extern register
                            </td>
@@ -7234,7 +7039,7 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De actor die tijdens het klantcontant contact had met klanten of hun vertegenwoordigers.</td>
+                              <td width="70%">Actor die bij een klantcontact betrokken was.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -7297,7 +7102,7 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De persoon of organisatie die betrokken was bij een klantcontact.</td>
+                              <td width="70%">Persoon of organisatie die betrokken was bij een klantcontact.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -7360,7 +7165,7 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Het onderwerp dat tijdens een klantcontact aan de orde was.</td>
+                              <td width="70%">Onderwerpobject dat tijdens een klantcontact aan de orde kwam.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -7423,7 +7228,7 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De informatie die tijdens een klantcontact werd medegedeeld of uitgewisseld.</td>
+                              <td width="70%">Inhoudsobject dat onderdeel was van de inhoud van het klantcontact.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -8771,7 +8576,7 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De partij die optrad als betrokkene bij een klantcontact.</td>
+                              <td width="70%">Betrokkene bij klantcontact die een partij was.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -8834,8 +8639,8 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Het digitale adres dat de betrokkene bij klantcontact opgaf voor gebruik bij opvolging
-                                 van het klantcontact.</td>
+                              <td width="70%">Digitaal adres dat een betrokkene bij klantcontact verstrekte voor gebruik bij opvolging
+                                 van een klantcontact.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -9073,14 +8878,14 @@ date: 11-10-2023
                      </table>
                      </div>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_Onderwerpobject_Verwijzing"></a><h4>Attribuutsoort Verwijzing van gegevensgroeptype Onderwerpobject</h4>
+                  <div><a class="anchor" name="detail_attribute_Model_Onderwerpobject_Objectidentificator"></a><h4>Attribuutsoort Objectidentificator van gegevensgroeptype Onderwerpobject</h4>
                      
                      <table>
                         <tbody>
                            <tr></tr>
                            <tr>
                               <td width="30%"><b>Naam</b></td>
-                              <td width="70%">Verwijzing</td>
+                              <td width="70%">Objectidentificator</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
@@ -9088,8 +8893,7 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Verwijzende eigenschappen waarmee het object dat geldt als deelonderwerp van een klantcontact
-                                 in het externe (bron)register uniek ge&amp;#239;dentificeerd kan worden.</td>
+                              <td width="70%">Gegevens die een onderwerpobject in een extern register uniek identificeren.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -9134,7 +8938,7 @@ date: 11-10-2023
                            <tr>
                               <td width="30%"><b>Formaat</b></td>
                               <td width="70%">
-                                 Verwijzing
+                                 Identificator
                                  </td>
                            </tr>
                            <tr>
@@ -9145,9 +8949,9 @@ date: 11-10-2023
                      </table>
                      </div>
                   
-                  <div><a class="anchor" name="detail_class_Model_Verwijzing"></a><h4>Gegevensgroeptype Verwijzing</h4>
+                  <div><a class="anchor" name="detail_class_Model_Identificator"></a><h4>Gegevensgroeptype Identificator</h4>
                      
-                     <div><a class="anchor" name="detail_attribute_Model_Verwijzing_Objecttype"></a><h5>Attribuutsoort details Objecttype</h5>
+                     <div><a class="anchor" name="detail_attribute_Model_Identificator_Objecttype"></a><h5>Attribuutsoort details Objecttype</h5>
                         
                         <table>
                            <tbody>
@@ -9161,7 +8965,7 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Het Objecttype waarnaar verwezen wordt.</td>
+                                 <td width="70%">Type van het object.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -9209,7 +9013,7 @@ date: 11-10-2023
                         </table>
                         </div>
                      
-                     <div><a class="anchor" name="detail_attribute_Model_Verwijzing_SoortObjectID"></a><h5>Attribuutsoort details Soort Object ID</h5>
+                     <div><a class="anchor" name="detail_attribute_Model_Identificator_SoortObjectID"></a><h5>Attribuutsoort details Soort Object ID</h5>
                         
                         <table>
                            <tbody>
@@ -9223,8 +9027,7 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">De naam van de eigenschap binnen het objecttype waarnaar verwezen wordt dat gebruikt
-                                    wordt om het voorkomen waarnaar verwezen wordt te identificeren. </td>
+                                 <td width="70%">Naam van de eigenschap die het object identificeert.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -9272,7 +9075,7 @@ date: 11-10-2023
                         </table>
                         </div>
                      
-                     <div><a class="anchor" name="detail_attribute_Model_Verwijzing_ObjectID"></a><h5>Attribuutsoort details Object ID</h5>
+                     <div><a class="anchor" name="detail_attribute_Model_Identificator_ObjectID"></a><h5>Attribuutsoort details Object ID</h5>
                         
                         <table>
                            <tbody>
@@ -9286,8 +9089,7 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">De waarde van de eigenschap binnen het objecttype waarnaar verwezen wordt dat gebruikt
-                                    wordt om het voorkomen waarnaar verwezen wordt te identificeren. </td>
+                                 <td width="70%">Waarde van de eigenschap die het object identificeert.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -9335,7 +9137,7 @@ date: 11-10-2023
                         </table>
                         </div>
                      
-                     <div><a class="anchor" name="detail_attribute_Model_Verwijzing_Register"></a><h5>Attribuutsoort details Register</h5>
+                     <div><a class="anchor" name="detail_attribute_Model_Identificator_Register"></a><h5>Attribuutsoort details Register</h5>
                         
                         <table>
                            <tbody>
@@ -9349,8 +9151,8 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Een omschrijving van het register waar het voorkomen van het objecttype waarnaar verwezen
-                                    wordt leeft. </td>
+                                 <td width="70%">Binnen het landschap van registers unieke omschrijving van het register waarin het
+                                    object is geregistreerd.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -9419,7 +9221,7 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De interne taak waarover (een deel van) een klantcontact ging.</td>
+                              <td width="70%">Klantcontact dat een onderwerpobject was.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -9482,7 +9284,7 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Het andere object waarover een klantcontact ging.</td>
+                              <td width="70%">Ander object dat een onderwerpobject was.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -9545,7 +9347,7 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De klanttaak waarover een klantcontact ging.</td>
+                              <td width="70%">Klanttaak die een onderwerpobject was.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -9608,7 +9410,7 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De zaak waarover een klantcontact ging.</td>
+                              <td width="70%">Zaak die een onderwerpobject was.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -10924,82 +10726,18 @@ date: 11-10-2023
                      </table>
                      </div>
                   
-                  <div><a class="anchor" name="detail_association_Model_Partij_wasteidentificerenmet"></a><h4>Relatiesoort details was te identificeren met</h4>
+                  <div><a class="anchor" name="detail_association_Model_Partij_had"></a><h4>Relatiesoort details had</h4>
                      
                      <table>
                         <tbody>
                            <tr>
                               <td width="30%"><b>Naam</b></td>
-                              <td width="70%">was te identificeren met</td>
+                              <td width="70%">had</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Gerelateerd objecttype</b></td>
                               <td width="70%">
-                                 Interne identificatie
-                                 </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De identificerende gegevens die de bij een partij horende gegevens in een ander intern
-                                 register aanwijzen.</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Mogelijk geen waarde</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
-                              <td width="70%">0 .. *</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie authentiek</b></td>
-                              <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     
-                     </div>
-                  
-                  <div><a class="anchor" name="detail_association_Model_Partij_wasteidentificerenmet"></a><h4>Relatiesoort details was te identificeren met</h4>
-                     
-                     <table>
-                        <tbody>
-                           <tr>
-                              <td width="30%"><b>Naam</b></td>
-                              <td width="70%">was te identificeren met</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Gerelateerd objecttype</b></td>
-                              <td width="70%">
-                                 Externe identificatie
+                                 Partij-identificator
                                  </td>
                            </tr>
                            <tr>
@@ -11008,7 +10746,7 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De identificerende gegevens die de partij in een extern register aanwijzen.</td>
+                              <td width="70%">Partij-identificator die een partij had.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -11071,7 +10809,7 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De partij die een andere partij vertegenwoordigde.</td>
+                              <td width="70%">Partij die een andere partij vertegenwoordigde.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -11134,8 +10872,8 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Het digitale adres dat de partij voor gebruik bij toekomstig contact met de gemeente
-                                 verstrekte.</td>
+                              <td width="70%">Digitaal adres dat een partij verstrekte voor gebruik bij toekomstig contact met de
+                                 gemeente.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -11243,14 +10981,14 @@ date: 11-10-2023
                      </table>
                      </div>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_Inhoudsobject_Verwijzing"></a><h4>Attribuutsoort Verwijzing van gegevensgroeptype Inhoudsobject</h4>
+                  <div><a class="anchor" name="detail_attribute_Model_Inhoudsobject_Objectidentificator"></a><h4>Attribuutsoort Objectidentificator van gegevensgroeptype Inhoudsobject</h4>
                      
                      <table>
                         <tbody>
                            <tr></tr>
                            <tr>
                               <td width="30%"><b>Naam</b></td>
-                              <td width="70%">Verwijzing</td>
+                              <td width="70%">Objectidentificator</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
@@ -11258,8 +10996,7 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Verwijzende eigenschappen waarmee het object dat (een deel van) de inhoud van een
-                                 klantcontact beschrijft in het externe register uniek ge&amp;#239;dentificeerd kan worden.</td>
+                              <td width="70%">Gegevens die een inhoudsobject in een extern register uniek identificeren.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -11304,7 +11041,7 @@ date: 11-10-2023
                            <tr>
                               <td width="30%"><b>Formaat</b></td>
                               <td width="70%">
-                                 Verwijzing
+                                 Identificator
                                  </td>
                            </tr>
                            <tr>
@@ -11315,9 +11052,9 @@ date: 11-10-2023
                      </table>
                      </div>
                   
-                  <div><a class="anchor" name="detail_class_Model_Verwijzing"></a><h4>Gegevensgroeptype Verwijzing</h4>
+                  <div><a class="anchor" name="detail_class_Model_Identificator"></a><h4>Gegevensgroeptype Identificator</h4>
                      
-                     <div><a class="anchor" name="detail_attribute_Model_Verwijzing_Objecttype"></a><h5>Attribuutsoort details Objecttype</h5>
+                     <div><a class="anchor" name="detail_attribute_Model_Identificator_Objecttype"></a><h5>Attribuutsoort details Objecttype</h5>
                         
                         <table>
                            <tbody>
@@ -11331,7 +11068,7 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Het Objecttype waarnaar verwezen wordt.</td>
+                                 <td width="70%">Type van het object.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -11379,7 +11116,7 @@ date: 11-10-2023
                         </table>
                         </div>
                      
-                     <div><a class="anchor" name="detail_attribute_Model_Verwijzing_SoortObjectID"></a><h5>Attribuutsoort details Soort Object ID</h5>
+                     <div><a class="anchor" name="detail_attribute_Model_Identificator_SoortObjectID"></a><h5>Attribuutsoort details Soort Object ID</h5>
                         
                         <table>
                            <tbody>
@@ -11393,8 +11130,7 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">De naam van de eigenschap binnen het objecttype waarnaar verwezen wordt dat gebruikt
-                                    wordt om het voorkomen waarnaar verwezen wordt te identificeren. </td>
+                                 <td width="70%">Naam van de eigenschap die het object identificeert.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -11442,7 +11178,7 @@ date: 11-10-2023
                         </table>
                         </div>
                      
-                     <div><a class="anchor" name="detail_attribute_Model_Verwijzing_ObjectID"></a><h5>Attribuutsoort details Object ID</h5>
+                     <div><a class="anchor" name="detail_attribute_Model_Identificator_ObjectID"></a><h5>Attribuutsoort details Object ID</h5>
                         
                         <table>
                            <tbody>
@@ -11456,8 +11192,7 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">De waarde van de eigenschap binnen het objecttype waarnaar verwezen wordt dat gebruikt
-                                    wordt om het voorkomen waarnaar verwezen wordt te identificeren. </td>
+                                 <td width="70%">Waarde van de eigenschap die het object identificeert.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -11505,7 +11240,7 @@ date: 11-10-2023
                         </table>
                         </div>
                      
-                     <div><a class="anchor" name="detail_attribute_Model_Verwijzing_Register"></a><h5>Attribuutsoort details Register</h5>
+                     <div><a class="anchor" name="detail_attribute_Model_Identificator_Register"></a><h5>Attribuutsoort details Register</h5>
                         
                         <table>
                            <tbody>
@@ -11519,8 +11254,8 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Een omschrijving van het register waar het voorkomen van het objecttype waarnaar verwezen
-                                    wordt leeft. </td>
+                                 <td width="70%">Binnen het landschap van registers unieke omschrijving van het register waarin het
+                                    object is geregistreerd.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -11589,7 +11324,7 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Het andere object dat (een deel van de) inhoud van een klantcontact beschrijft.</td>
+                              <td width="70%">Informatieobject dat een inhoudsobject was.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -11652,7 +11387,7 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Het overige object dat (een deel van de) inhoud van een klantcontact beschrijft.</td>
+                              <td width="70%">Overig object dat een inhoudsobject was.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -11715,7 +11450,7 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Het andere object dat (een deel van de) inhoud van een klantcontact beschrijft.</td>
+                              <td width="70%">Ander object dat een inhoudsobject was.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -12105,7 +11840,7 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De contactpersoon die werkte voor een organisatie.</td>
+                              <td width="70%">Organisatie waarvoor een contactpersoon werkte.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -13427,14 +13162,14 @@ date: 11-10-2023
                      </table>
                      </div>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_Actor_Verwijzing"></a><h4>Attribuutsoort Verwijzing van gegevensgroeptype Actor</h4>
+                  <div><a class="anchor" name="detail_attribute_Model_Actor_Actoridentifcator"></a><h4>Attribuutsoort Actoridentifcator van gegevensgroeptype Actor</h4>
                      
                      <table>
                         <tbody>
                            <tr></tr>
                            <tr>
                               <td width="30%"><b>Naam</b></td>
-                              <td width="70%">Verwijzing</td>
+                              <td width="70%">Actoridentifcator</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
@@ -13442,8 +13177,7 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Verwijzende eigenschappen waarmee een partij in een intern (bron)register uniek ge&amp;#239;dentificeerd
-                                 kan worden.</td>
+                              <td width="70%">Gegevens die een actor in een extern register uniek identificeren.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -13488,7 +13222,7 @@ date: 11-10-2023
                            <tr>
                               <td width="30%"><b>Formaat</b></td>
                               <td width="70%">
-                                 Verwijzing
+                                 Identificator
                                  </td>
                            </tr>
                            <tr>
@@ -13499,9 +13233,9 @@ date: 11-10-2023
                      </table>
                      </div>
                   
-                  <div><a class="anchor" name="detail_class_Model_Verwijzing"></a><h4>Gegevensgroeptype Verwijzing</h4>
+                  <div><a class="anchor" name="detail_class_Model_Identificator"></a><h4>Gegevensgroeptype Identificator</h4>
                      
-                     <div><a class="anchor" name="detail_attribute_Model_Verwijzing_Objecttype"></a><h5>Attribuutsoort details Objecttype</h5>
+                     <div><a class="anchor" name="detail_attribute_Model_Identificator_Objecttype"></a><h5>Attribuutsoort details Objecttype</h5>
                         
                         <table>
                            <tbody>
@@ -13515,7 +13249,7 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Het Objecttype waarnaar verwezen wordt.</td>
+                                 <td width="70%">Type van het object.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -13563,7 +13297,7 @@ date: 11-10-2023
                         </table>
                         </div>
                      
-                     <div><a class="anchor" name="detail_attribute_Model_Verwijzing_SoortObjectID"></a><h5>Attribuutsoort details Soort Object ID</h5>
+                     <div><a class="anchor" name="detail_attribute_Model_Identificator_SoortObjectID"></a><h5>Attribuutsoort details Soort Object ID</h5>
                         
                         <table>
                            <tbody>
@@ -13577,8 +13311,7 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">De naam van de eigenschap binnen het objecttype waarnaar verwezen wordt dat gebruikt
-                                    wordt om het voorkomen waarnaar verwezen wordt te identificeren. </td>
+                                 <td width="70%">Naam van de eigenschap die het object identificeert.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -13626,7 +13359,7 @@ date: 11-10-2023
                         </table>
                         </div>
                      
-                     <div><a class="anchor" name="detail_attribute_Model_Verwijzing_ObjectID"></a><h5>Attribuutsoort details Object ID</h5>
+                     <div><a class="anchor" name="detail_attribute_Model_Identificator_ObjectID"></a><h5>Attribuutsoort details Object ID</h5>
                         
                         <table>
                            <tbody>
@@ -13640,8 +13373,7 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">De waarde van de eigenschap binnen het objecttype waarnaar verwezen wordt dat gebruikt
-                                    wordt om het voorkomen waarnaar verwezen wordt te identificeren. </td>
+                                 <td width="70%">Waarde van de eigenschap die het object identificeert.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -13689,7 +13421,7 @@ date: 11-10-2023
                         </table>
                         </div>
                      
-                     <div><a class="anchor" name="detail_attribute_Model_Verwijzing_Register"></a><h5>Attribuutsoort details Register</h5>
+                     <div><a class="anchor" name="detail_attribute_Model_Identificator_Register"></a><h5>Attribuutsoort details Register</h5>
                         
                         <table>
                            <tbody>
@@ -13703,8 +13435,8 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Een omschrijving van het register waar het voorkomen van het objecttype waarnaar verwezen
-                                    wordt leeft. </td>
+                                 <td width="70%">Binnen het landschap van registers unieke omschrijving van het register waarin het
+                                    object is geregistreerd.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -14456,7 +14188,7 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De actor aan wie de interne taak werd toegewezen.</td>
+                              <td width="70%">Actor die een interne taak toegewezen kreeg.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -14519,7 +14251,7 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Het klantcontact dat aanleiding gaf tot het ontstaan van een interne taak.</td>
+                              <td width="70%">Klantcontact dat leidde tot een interne taak.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -14944,400 +14676,9 @@ date: 11-10-2023
                      </div>
                   </div>
                
-               <div><a class="anchor" name="detail_class_Model_Interneidentificatie"></a><h3> Interne identificatie</h3>
+               <div><a class="anchor" name="detail_class_Model_Partijidentificator"></a><h3> Partij-identificator</h3>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_Interneidentificatie_ID"></a><h4>Attribuutsoort details ID</h4>
-                     
-                     <table>
-                        <tbody>
-                           <tr>
-                              <td width="30%"><b>Naam</b></td>
-                              <td width="70%">ID</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Unieke (technische) identificatiecode van de interne identificatie.</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">08-06-2023</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Mogelijk geen waarde</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
-                              <td width="70%">1</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie authentiek</b></td>
-                              <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Lengte</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Formaat</b></td>
-                              <td width="70%">
-                                 Identificatiecode
-                                 </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Patroon</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie afleidbaar</b></td>
-                              <td width="70%">Zie package</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Waarde afleidbaar</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </div>
-                  
-                  <div><a class="anchor" name="detail_attribute_Model_Interneidentificatie_Verwijzing"></a><h4>Attribuutsoort Verwijzing van gegevensgroeptype Interne identificatie</h4>
-                     
-                     <table>
-                        <tbody>
-                           <tr></tr>
-                           <tr>
-                              <td width="30%"><b>Naam</b></td>
-                              <td width="70%">Verwijzing</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Verwijzende eigenschappen waarmee een partij in een intern (bron)register uniek ge&amp;#239;dentificeerd
-                                 kan worden.</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">10-10-2023</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Mogelijk geen waarde</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
-                              <td width="70%">1</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie authentiek</b></td>
-                              <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Lengte</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Formaat</b></td>
-                              <td width="70%">
-                                 Verwijzing
-                                 </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Patroon</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </div>
-                  
-                  <div><a class="anchor" name="detail_class_Model_Verwijzing"></a><h4>Gegevensgroeptype Verwijzing</h4>
-                     
-                     <div><a class="anchor" name="detail_attribute_Model_Verwijzing_Objecttype"></a><h5>Attribuutsoort details Objecttype</h5>
-                        
-                        <table>
-                           <tbody>
-                              <tr>
-                                 <td width="30%"><b>Naam</b></td>
-                                 <td width="70%">Objecttype</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">Klantinteracties</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Het Objecttype waarnaar verwezen wordt.</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">Klantinteracties</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">10-10-2023</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Mogelijk geen waarde</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie kardinaliteit</b></td>
-                                 <td width="70%">1</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie authentiek</b></td>
-                                 <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Lengte</b></td>
-                                 <td width="70%"> </td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Formaat</b></td>
-                                 <td width="70%">
-                                    Soort object
-                                    </td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Patroon</b></td>
-                                 <td width="70%"> </td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie afleidbaar</b></td>
-                                 <td width="70%">Zie package</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Waarde afleidbaar</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                           </tbody>
-                        </table>
-                        </div>
-                     
-                     <div><a class="anchor" name="detail_attribute_Model_Verwijzing_SoortObjectID"></a><h5>Attribuutsoort details Soort Object ID</h5>
-                        
-                        <table>
-                           <tbody>
-                              <tr>
-                                 <td width="30%"><b>Naam</b></td>
-                                 <td width="70%">Soort Object ID</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">BRP</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">De naam van de eigenschap binnen het objecttype waarnaar verwezen wordt dat gebruikt
-                                    wordt om het voorkomen waarnaar verwezen wordt te identificeren. </td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">BRP</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">10-10-2023</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Mogelijk geen waarde</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie kardinaliteit</b></td>
-                                 <td width="70%">1</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie authentiek</b></td>
-                                 <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Lengte</b></td>
-                                 <td width="70%"> </td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Formaat</b></td>
-                                 <td width="70%">
-                                    Soort object ID
-                                    </td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Patroon</b></td>
-                                 <td width="70%"> </td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie afleidbaar</b></td>
-                                 <td width="70%">Zie package</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Waarde afleidbaar</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                           </tbody>
-                        </table>
-                        </div>
-                     
-                     <div><a class="anchor" name="detail_attribute_Model_Verwijzing_ObjectID"></a><h5>Attribuutsoort details Object ID</h5>
-                        
-                        <table>
-                           <tbody>
-                              <tr>
-                                 <td width="30%"><b>Naam</b></td>
-                                 <td width="70%">Object ID</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">BRP</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">De waarde van de eigenschap binnen het objecttype waarnaar verwezen wordt dat gebruikt
-                                    wordt om het voorkomen waarnaar verwezen wordt te identificeren. </td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">BRP</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">10-10-2023</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Mogelijk geen waarde</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie kardinaliteit</b></td>
-                                 <td width="70%">1</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie authentiek</b></td>
-                                 <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Lengte</b></td>
-                                 <td width="70%"> </td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Formaat</b></td>
-                                 <td width="70%">
-                                    Identificatiecode
-                                    </td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Patroon</b></td>
-                                 <td width="70%"> </td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie afleidbaar</b></td>
-                                 <td width="70%">Zie package</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Waarde afleidbaar</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                           </tbody>
-                        </table>
-                        </div>
-                     
-                     <div><a class="anchor" name="detail_attribute_Model_Verwijzing_Register"></a><h5>Attribuutsoort details Register</h5>
-                        
-                        <table>
-                           <tbody>
-                              <tr>
-                                 <td width="30%"><b>Naam</b></td>
-                                 <td width="70%">Register</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Herkomst</b></td>
-                                 <td width="70%">BRP</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Een omschrijving van het register waar het voorkomen van het objecttype waarnaar verwezen
-                                    wordt leeft. </td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Herkomst definitie</b></td>
-                                 <td width="70%">BRP</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Datum opname</b></td>
-                                 <td width="70%">10-10-2023</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Mogelijk geen waarde</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie kardinaliteit</b></td>
-                                 <td width="70%">1</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie authentiek</b></td>
-                                 <td width="70%">Authentiek</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Lengte</b></td>
-                                 <td width="70%"> </td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Formaat</b></td>
-                                 <td width="70%">
-                                    Extern register
-                                    </td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Patroon</b></td>
-                                 <td width="70%"> </td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Indicatie afleidbaar</b></td>
-                                 <td width="70%">Zie package</td>
-                              </tr>
-                              <tr>
-                                 <td width="30%"><b>Waarde afleidbaar</b></td>
-                                 <td width="70%">Nee</td>
-                              </tr>
-                           </tbody>
-                        </table>
-                        </div>
-                     </div>
-                  </div>
-               
-               <div><a class="anchor" name="detail_class_Model_Externeidentificatie"></a><h3> Externe identificatie</h3>
-                  
-                  <div><a class="anchor" name="detail_attribute_Model_Externeidentificatie_ID"></a><h4>Attribuutsoort details ID</h4>
+                  <div><a class="anchor" name="detail_attribute_Model_Partijidentificator_ID"></a><h4>Attribuutsoort details ID</h4>
                      
                      <table>
                         <tbody>
@@ -15399,14 +14740,14 @@ date: 11-10-2023
                      </table>
                      </div>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_Externeidentificatie_Verwijzing"></a><h4>Attribuutsoort Verwijzing van gegevensgroeptype Externe identificatie</h4>
+                  <div><a class="anchor" name="detail_attribute_Model_Partijidentificator_Partijidentificator"></a><h4>Attribuutsoort Partij-identificator van gegevensgroeptype Partij-identificator</h4>
                      
                      <table>
                         <tbody>
                            <tr></tr>
                            <tr>
                               <td width="30%"><b>Naam</b></td>
-                              <td width="70%">Verwijzing</td>
+                              <td width="70%">Partij-identificator</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
@@ -15414,8 +14755,7 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Verwijzende eigenschappen waarmee een partij in een extern (bron)register uniek ge&amp;#239;dentificeerd
-                                 kan worden.</td>
+                              <td width="70%">Gegevens die een partij in een basisregistratie of ander extern register uniek identificeren.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -15460,7 +14800,7 @@ date: 11-10-2023
                            <tr>
                               <td width="30%"><b>Formaat</b></td>
                               <td width="70%">
-                                 Verwijzing
+                                 Identificator
                                  </td>
                            </tr>
                            <tr>
@@ -15471,9 +14811,9 @@ date: 11-10-2023
                      </table>
                      </div>
                   
-                  <div><a class="anchor" name="detail_class_Model_Verwijzing"></a><h4>Gegevensgroeptype Verwijzing</h4>
+                  <div><a class="anchor" name="detail_class_Model_Identificator"></a><h4>Gegevensgroeptype Identificator</h4>
                      
-                     <div><a class="anchor" name="detail_attribute_Model_Verwijzing_Objecttype"></a><h5>Attribuutsoort details Objecttype</h5>
+                     <div><a class="anchor" name="detail_attribute_Model_Identificator_Objecttype"></a><h5>Attribuutsoort details Objecttype</h5>
                         
                         <table>
                            <tbody>
@@ -15487,7 +14827,7 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Het Objecttype waarnaar verwezen wordt.</td>
+                                 <td width="70%">Type van het object.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -15535,7 +14875,7 @@ date: 11-10-2023
                         </table>
                         </div>
                      
-                     <div><a class="anchor" name="detail_attribute_Model_Verwijzing_SoortObjectID"></a><h5>Attribuutsoort details Soort Object ID</h5>
+                     <div><a class="anchor" name="detail_attribute_Model_Identificator_SoortObjectID"></a><h5>Attribuutsoort details Soort Object ID</h5>
                         
                         <table>
                            <tbody>
@@ -15549,8 +14889,7 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">De naam van de eigenschap binnen het objecttype waarnaar verwezen wordt dat gebruikt
-                                    wordt om het voorkomen waarnaar verwezen wordt te identificeren. </td>
+                                 <td width="70%">Naam van de eigenschap die het object identificeert.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -15598,7 +14937,7 @@ date: 11-10-2023
                         </table>
                         </div>
                      
-                     <div><a class="anchor" name="detail_attribute_Model_Verwijzing_ObjectID"></a><h5>Attribuutsoort details Object ID</h5>
+                     <div><a class="anchor" name="detail_attribute_Model_Identificator_ObjectID"></a><h5>Attribuutsoort details Object ID</h5>
                         
                         <table>
                            <tbody>
@@ -15612,8 +14951,7 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">De waarde van de eigenschap binnen het objecttype waarnaar verwezen wordt dat gebruikt
-                                    wordt om het voorkomen waarnaar verwezen wordt te identificeren. </td>
+                                 <td width="70%">Waarde van de eigenschap die het object identificeert.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -15661,7 +14999,7 @@ date: 11-10-2023
                         </table>
                         </div>
                      
-                     <div><a class="anchor" name="detail_attribute_Model_Verwijzing_Register"></a><h5>Attribuutsoort details Register</h5>
+                     <div><a class="anchor" name="detail_attribute_Model_Identificator_Register"></a><h5>Attribuutsoort details Register</h5>
                         
                         <table>
                            <tbody>
@@ -15675,8 +15013,8 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Een omschrijving van het register waar het voorkomen van het objecttype waarnaar verwezen
-                                    wordt leeft. </td>
+                                 <td width="70%">Binnen het landschap van registers unieke omschrijving van het register waarin het
+                                    object is geregistreerd.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -15725,13 +15063,13 @@ date: 11-10-2023
                         </div>
                      </div>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_Externeidentificatie_Andersoortverwijzing"></a><h4>Attribuutsoort details Ander soort verwijzing</h4>
+                  <div><a class="anchor" name="detail_attribute_Model_Partijidentificator_Anderepartijidentificator"></a><h4>Attribuutsoort details Andere partij-identificator</h4>
                      
                      <table>
                         <tbody>
                            <tr>
                               <td width="30%"><b>Naam</b></td>
-                              <td width="70%">Ander soort verwijzing</td>
+                              <td width="70%">Andere partij-identificator</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst</b></td>
@@ -15769,7 +15107,7 @@ date: 11-10-2023
                            <tr>
                               <td width="30%"><b>Formaat</b></td>
                               <td width="70%">
-                                 Omschrijving-kort
+                                 Omschrijving-lang
                                  </td>
                            </tr>
                            <tr>
@@ -15793,9 +15131,9 @@ date: 11-10-2023
             <div>
                <h2>Gegevensgroeptype details </h2>
                
-               <div><a class="anchor" name="detail_class_Model_Verwijzing"></a><h3>Gegevensgroeptype Verwijzing</h3>
+               <div><a class="anchor" name="detail_class_Model_Identificator"></a><h3>Gegevensgroeptype Identificator</h3>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_Verwijzing_Objecttype"></a><h4>Attribuutsoort details Objecttype</h4>
+                  <div><a class="anchor" name="detail_attribute_Model_Identificator_Objecttype"></a><h4>Attribuutsoort details Objecttype</h4>
                      
                      <table>
                         <tbody>
@@ -15809,7 +15147,7 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Het Objecttype waarnaar verwezen wordt.</td>
+                              <td width="70%">Type van het object.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -15857,7 +15195,7 @@ date: 11-10-2023
                      </table>
                      </div>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_Verwijzing_SoortObjectID"></a><h4>Attribuutsoort details Soort Object ID</h4>
+                  <div><a class="anchor" name="detail_attribute_Model_Identificator_SoortObjectID"></a><h4>Attribuutsoort details Soort Object ID</h4>
                      
                      <table>
                         <tbody>
@@ -15871,8 +15209,7 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De naam van de eigenschap binnen het objecttype waarnaar verwezen wordt dat gebruikt
-                                 wordt om het voorkomen waarnaar verwezen wordt te identificeren. </td>
+                              <td width="70%">Naam van de eigenschap die het object identificeert.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -15920,7 +15257,7 @@ date: 11-10-2023
                      </table>
                      </div>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_Verwijzing_ObjectID"></a><h4>Attribuutsoort details Object ID</h4>
+                  <div><a class="anchor" name="detail_attribute_Model_Identificator_ObjectID"></a><h4>Attribuutsoort details Object ID</h4>
                      
                      <table>
                         <tbody>
@@ -15934,8 +15271,7 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De waarde van de eigenschap binnen het objecttype waarnaar verwezen wordt dat gebruikt
-                                 wordt om het voorkomen waarnaar verwezen wordt te identificeren. </td>
+                              <td width="70%">Waarde van de eigenschap die het object identificeert.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -15983,7 +15319,7 @@ date: 11-10-2023
                      </table>
                      </div>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_Verwijzing_Register"></a><h4>Attribuutsoort details Register</h4>
+                  <div><a class="anchor" name="detail_attribute_Model_Identificator_Register"></a><h4>Attribuutsoort details Register</h4>
                      
                      <table>
                         <tbody>
@@ -15997,8 +15333,8 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Een omschrijving van het register waar het voorkomen van het objecttype waarnaar verwezen
-                                 wordt leeft. </td>
+                              <td width="70%">Binnen het landschap van registers unieke omschrijving van het register waarin het
+                                 object is geregistreerd.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
