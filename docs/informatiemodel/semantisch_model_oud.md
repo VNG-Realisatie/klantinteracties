@@ -18,14 +18,18 @@ Onderstaand figuur geeft de modellering van het SIM versie 0.0.4 weer zoals deze
 De wijzigingen die in versie 0.0.5 zijn doorgevoerd t.o.v. deze versie zijn: 
   - Verwijzingen naar voorkomen van een objecttype in een ander register zijn verder uitgewerkt en overal op dezelfde wijze toegepast.
   - Naar aanleiding hiervan is het gegevensgroeptype *Verwijzing*  toegevoegd.
-  - Dit gegevensgroeptype vervangt de properties *Extern register* en *Extern ID* in de volgende objecttypes
+  - Gegevensgroeptype *Verwijzing* vervangt de attribuutsoorten *Extern register* en *Extern ID* in de volgende objecttypes
     - *Actor*
     - *Onderwerpobject*
     - *Inhoudsobject*
     - *Externe identificatie*
-  - Dit gegevensgroeptype vervangt de properties *Intern register* en *Intern ID* in de volgende objecttypes
+  - Gegevensgroeptype *Verwijzing* vervangt de attribuutsoorten *Intern register* en *Intern ID* in de volgende objecttypes
     - *Interne Identificatie*
-  - In het gegevensgroeptype *Contactnaam* zijn de prperties nu voorzien van een primitief datatype.  
+  - Bij objecttype *Externe identificatie*:
+    - De attribuutsoort *Ander soort extern ID* is aangepast naar *Ander soort verwijzing*
+  - In het gegevensgroeptype *Contactnaam* zijn de attribuutsoorten nu voorzien van een primitief datatype.
+  - Referentielijsten *Soort Intern ID* en *Soort extern ID* zijn verwijderd.
+  - Referentielijst *Soort Object ID* is toegevoegd.
 
 
 ## Van versie 0.0.3 naar 0.0.4 (05-10-2023)
