@@ -558,7 +558,7 @@ components:
             $ref: "#/components/schemas/Actor_links"
     Contactpersoon:
       allOf:
-      - $ref: "#/components/schemas/Partij"
+      - $ref: "#/components/schemas/PartijHal"
       - type: "object"
         description: "Natuurlijk persoon die werkte voor een organisatie, of natuurlijk\
           \ persoon die een andere persoon vertegenwoordigde."
@@ -598,7 +598,7 @@ components:
             $ref: "#/components/schemas/Telefoonnummer"
     Organisatie:
       allOf:
-      - $ref: "#/components/schemas/Partij"
+      - $ref: "#/components/schemas/PartijHal"
       - type: "object"
         description: "Geformaliseerde entiteit die geen natuurlijk persoon is en maatschappelijke\
           \ activiteiten uitvoert.\n\nEen organisatie met rechtspersoonlijkheid, of\
@@ -696,7 +696,7 @@ components:
           organisatie: '#/components/schemas/Organisatie'
     Persoon:
       allOf:
-      - $ref: "#/components/schemas/Partij"
+      - $ref: "#/components/schemas/PartijHal"
       - type: "object"
         description: "Natuurlijk persoon.\n\nKan zowel een ingeschreven, niet ingeschreven\
           \ alsook een natuurlijk persoon zijn waarvan niet bekend is of die ingeschreven\
