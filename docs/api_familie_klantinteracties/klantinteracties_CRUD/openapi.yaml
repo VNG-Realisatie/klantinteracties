@@ -954,7 +954,7 @@ components:
       discriminator:
         propertyName: soortActor
         mapping:
-          medewerker: '#/components/schemas/medewerker'
+          medewerker: '#/components/schemas/Medewerker'
           geautomatiseerdeActor: '#/components/schemas/GeautomatiseerdeActor'
           organisatorischeEenheid: '#/components/schemas/OrganisatorischeEenheid'
     SoortActor:
