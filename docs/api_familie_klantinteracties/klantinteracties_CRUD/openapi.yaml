@@ -954,16 +954,16 @@ components:
       discriminator:
         propertyName: soortActor
         mapping:
-          medewerker: '#/components/schemas/Medewerker'
-          geautomatiseerdeActor: '#/components/schemas/GeautomatiseerdeActor'
-          organisatorischeEenheid: '#/components/schemas/OrganisatorischeEenheid'
+          Medewerker: '#/components/schemas/Medewerker'
+          GeautomatiseerdeActor: '#/components/schemas/GeautomatiseerdeActor'
+          OrganisatorischeEenheid: '#/components/schemas/OrganisatorischeEenheid'
     SoortActor:
       type: "string"
       description: "De typering van de actor."
       enum:
-      - "medewerker"
-      - "geautomatiseerdeActor"
-      - "organisatorischeEenheid"
+      - "Medewerker"
+      - "GeautomatiseerdeActor"
+      - "OrganisatorischeEenheid"
     SoortPartij:
       type: "string"
       description: "De typering van de partij."
