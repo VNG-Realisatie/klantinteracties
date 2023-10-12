@@ -64,11 +64,9 @@ paths:
             X-Rate-Limit-Reset:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
           content:
-            application/json:
+            application/hal+json:
               schema:
-                type: "array"
-                items:
-                  $ref: "#/components/schemas/Actor"
+                $ref: "#/components/schemas/ActorHalCollectie"
         400:
           $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
         401:
@@ -98,7 +96,7 @@ paths:
       description: "De operatie waarmee gegevens van medewerkers kunnen worden gewijzigd."
       requestBody:
         content:
-          application/json:
+          application/hal+json:
             schema:
               $ref: "#/components/schemas/Actor"
       responses:
@@ -116,9 +114,9 @@ paths:
             X-Rate-Limit-Reset:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
           content:
-            application/json:
+            application/hal+json:
               schema:
-                $ref: "#/components/schemas/Actor"
+                $ref: "#/components/schemas/ActorHal"
         400:
           $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
         401:
@@ -149,7 +147,7 @@ paths:
         \ geregistreerd."
       requestBody:
         content:
-          application/json:
+          application/hal+json:
             schema:
               $ref: "#/components/schemas/Actor"
       responses:
@@ -167,9 +165,9 @@ paths:
             warning:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
           content:
-            application/json:
+            application/hal+json:
               schema:
-                $ref: "#/components/schemas/Actor"
+                $ref: "#/components/schemas/ActorHal"
         400:
           $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
         401:
@@ -244,9 +242,9 @@ paths:
             X-Rate-Limit-Reset:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
           content:
-            application/json:
+            application/hal+json:
               schema:
-                $ref: "#/components/schemas/Actor"
+                $ref: "#/components/schemas/ActorHal"
         400:
           $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
         401:
@@ -333,11 +331,9 @@ paths:
             X-Rate-Limit-Reset:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
           content:
-            application/json:
+            application/hal+json:
               schema:
-                type: "array"
-                items:
-                  $ref: "#/components/schemas/Partij"
+                $ref: "#/components/schemas/PartijHalCollectie"
         400:
           $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
         401:
@@ -367,7 +363,7 @@ paths:
       description: "De operatie waarmee gegevens van interne taken kunnen worden gewijzigd."
       requestBody:
         content:
-          application/json:
+          application/hal+json:
             schema:
               $ref: "#/components/schemas/Partij"
       responses:
@@ -385,9 +381,9 @@ paths:
             X-Rate-Limit-Reset:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
           content:
-            application/json:
+            application/hal+json:
               schema:
-                $ref: "#/components/schemas/Partij"
+                $ref: "#/components/schemas/PartijHal"
         400:
           $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
         401:
@@ -417,7 +413,7 @@ paths:
       description: "De operatie waarmee gegevens van een partij kunnen worden geregistreerd."
       requestBody:
         content:
-          application/json:
+          application/hal+json:
             schema:
               $ref: "#/components/schemas/Partij"
       responses:
@@ -435,9 +431,9 @@ paths:
             warning:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
           content:
-            application/json:
+            application/hal+json:
               schema:
-                $ref: "#/components/schemas/Partij"
+                $ref: "#/components/schemas/PartijHal"
         400:
           $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
         401:
@@ -510,9 +506,9 @@ paths:
             X-Rate-Limit-Reset:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
           content:
-            application/json:
+            application/hal+json:
               schema:
-                $ref: "#/components/schemas/Partij"
+                $ref: "#/components/schemas/PartijHal"
         400:
           $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
         401:
@@ -541,6 +537,25 @@ paths:
       - "Partijen"
 components:
   schemas:
+    ActorHalCollectie:
+      type: "object"
+      properties:
+        _links:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/schemas/HalCollectionLinks"
+        _embedded:
+          type: "object"
+          properties:
+            actoren:
+              type: "array"
+              items:
+                $ref: "#/components/schemas/ActorHal"
+    ActorHal:
+      allOf:
+      - $ref: "#/components/schemas/Actor"
+      - type: "object"
+        properties:
+          _links:
+            $ref: "#/components/schemas/Actor_links"
     Contactpersoon:
       allOf:
       - $ref: "#/components/schemas/Partij"
@@ -613,6 +628,25 @@ components:
             $ref: "#/components/schemas/Omschrijving-lang"
           telefoonnummer:
             $ref: "#/components/schemas/Telefoonnummer"
+    PartijHalCollectie:
+      type: "object"
+      properties:
+        _links:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/schemas/HalCollectionLinks"
+        _embedded:
+          type: "object"
+          properties:
+            partijen:
+              type: "array"
+              items:
+                $ref: "#/components/schemas/PartijHal"
+    PartijHal:
+      allOf:
+      - $ref: "#/components/schemas/Partij"
+      - type: "object"
+        properties:
+          _links:
+            $ref: "#/components/schemas/Partij_links"
     Partij:
       type: "object"
       description: "Persoon of organisatie waarmee de gemeente een relatie heeft."
@@ -654,44 +688,6 @@ components:
               \ gemeente."
         werkteVoorPartij:
           $ref: "#/components/schemas/Identificatiecode"
-        had:
-          type: "array"
-          title: "had"
-          description: "Partij-identificator die een partij had."
-          minItems: 1
-          items:
-            type: "string"
-            format: "uri"
-          readOnly: true
-          uniqueItems: true
-          example: "datapunt.voorbeeldgemeente.nl/api/v1//123456789"
-        vertegenwoordigde:
-          type: "array"
-          title: "vertegenwoordigde"
-          description: ""
-          items:
-            type: "string"
-            format: "uri"
-          readOnly: true
-          uniqueItems: true
-          example: "datapunt.voorbeeldgemeente.nl/api/v1/vertegenwoordigdePartijen/123456789"
-        werkeVoor:
-          title: "werkeVoor"
-          description: ""
-          type: "string"
-          format: "uri"
-          readOnly: true
-          example: "datapunt.voorbeeldgemeente.nl/api/v1/werkteVoorPartij/123456789"
-        werdVertegenwoordigdDoor:
-          type: "array"
-          title: "werdVertegenwoordigdDoor"
-          description: ""
-          items:
-            type: "string"
-            format: "uri"
-          readOnly: true
-          uniqueItems: true
-          example: "datapunt.voorbeeldgemeente.nl/api/v1/vertegenwoordigdDoorPartijen/123456789"
       discriminator:
         propertyName: soortPartij
         mapping:
@@ -712,6 +708,66 @@ components:
         properties:
           contactnaam:
             $ref: "#/components/schemas/Contactnaam"
+    Actor:
+      type: "object"
+      description: "Iets dat of iemand die voor de gemeente werkzaamheden uitvoert."
+      required:
+      - "id"
+      - "indicatieActief"
+      - "naam"
+      - "soortActor"
+      properties:
+        actoridentifcator:
+          $ref: "#/components/schemas/Identificator"
+        id:
+          $ref: "#/components/schemas/Identificatiecode"
+        indicatieActief:
+          $ref: "#/components/schemas/IndicatieJaNee"
+        naam:
+          $ref: "#/components/schemas/Naam-lang"
+        soortActor:
+          $ref: "#/components/schemas/SoortActor"
+      discriminator:
+        propertyName: soortActor
+        mapping:
+          medewerker: '#/components/schemas/Medewerker'
+          geautomatiseerdeActor: '#/components/schemas/GeautomatiseerdeActor'
+          organisatorischeEenheid: '#/components/schemas/OrganisatorischeEenheid'
+    Actor_links:
+      type: "object"
+      properties:
+        self:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/schemas/HalLink"
+    Partij_links:
+      type: "object"
+      properties:
+        self:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/schemas/HalLink"
+        had:
+          title: "had"
+          type: "array"
+          description: "Partij-identificator die een partij had."
+          minItems: 1
+          items:
+            $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/schemas/HalLink"
+        vertegenwoordigde:
+          title: "vertegenwoordigde"
+          type: "array"
+          description: ""
+          items:
+            $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/schemas/HalLink"
+        werdVertegenwoordigdDoor:
+          title: "werdVertegenwoordigdDoor"
+          type: "array"
+          description: ""
+          items:
+            $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/schemas/HalLink"
+        werkteVoor:
+          allOf:
+          - title: "werkteVoor"
+            type: "object"
+            description: ""
+          - $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/schemas/HalLink"
     Bezoekadres:
       type: "object"
       description: "Het adres waar een persoon of een organisatie bezoekers ontvangt.\
@@ -932,38 +988,13 @@ components:
           title: "Naam"
           description: "De naam van de voorkeurstaal."
           minLength: 1
-    Actor:
-      type: "object"
-      description: "Iets dat of iemand die voor de gemeente werkzaamheden uitvoert."
-      required:
-      - "id"
-      - "indicatieActief"
-      - "naam"
-      - "soortActor"
-      properties:
-        actoridentifcator:
-          $ref: "#/components/schemas/Identificator"
-        id:
-          $ref: "#/components/schemas/Identificatiecode"
-        indicatieActief:
-          $ref: "#/components/schemas/IndicatieJaNee"
-        naam:
-          $ref: "#/components/schemas/Naam-lang"
-        soortActor:
-          $ref: "#/components/schemas/SoortActor"
-      discriminator:
-        propertyName: soortActor
-        mapping:
-          Medewerker: '#/components/schemas/Medewerker'
-          GeautomatiseerdeActor: '#/components/schemas/GeautomatiseerdeActor'
-          OrganisatorischeEenheid: '#/components/schemas/OrganisatorischeEenheid'
     SoortActor:
       type: "string"
       description: "De typering van de actor."
       enum:
-      - "Medewerker"
-      - "GeautomatiseerdeActor"
-      - "OrganisatorischeEenheid"
+      - "medewerker"
+      - "geautomatiseerdeActor"
+      - "organisatorischeEenheid"
     SoortPartij:
       type: "string"
       description: "De typering van de partij."
