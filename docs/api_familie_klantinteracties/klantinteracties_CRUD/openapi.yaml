@@ -464,7 +464,7 @@ components:
         soortActor:
           $ref: "#/components/schemas/SoortActor"
       discriminator:
-        propertyName: type
+        propertyName: soortActor
         mapping:
           Medewerker: '#/components/schemas/medewerker'
           GeautomatiseerdeActor: '#/components/schemas/GeautomatiseerdeActor'
