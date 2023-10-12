@@ -7,9 +7,8 @@ servers:
 info:
   title: "Klantinteracties CRUD"
   description: "Een API om een klantinteractiecomponent (KIC) te benaderen. <br/>\
-    \ Deze API-specificatie is (pure) crud variant ter vergelijking met de handelingsgerichte\
-    \ API-specificaties."
-  version: "00.01.00"
+    \ Deze API-specificatie is de crud variant."
+  version: "00.00.04"
   x-imvertor-generator-version: "2.0.0"
   x-yamlCompiler-stylesheets-version: "20230512"
   contact:
@@ -19,327 +18,37 @@ info:
     name: "European Union Public License, version 1.2 (EUPL-1.2)"
     url: "https://eupl.eu/1.2/nl/"
 paths:
-  /internetaken:
+  /actoren:
     get:
-      operationId: "getinternetaken"
-      description: "De operatie waarmee gegevens van interne taken kunnen worden gezocht."
-      parameters:
-      - in: "query"
-        name: "geregistreerdOp"
-        description: "De datum en het tijdstip waarop de interne taak werd geregistreerd."
-        required: true
-        schema:
-          type: "string"
-          format: "date-time"
-      - in: "query"
-        name: "gevraagdeHandeling"
-        description: "De handeling die moet worden uitgevoerd om de taak af te ronden."
-        required: true
-        schema:
-          type: "string"
-          maxLength: 200
-      - in: "query"
-        name: "nummer"
-        description: "Uniek identificerend nummer waarmee tijdens communicatie tussen\
-          \ mensen verwezen kan worden naar de interne taak."
-        required: true
-        schema:
-          type: "integer"
-      - in: "query"
-        name: "status"
-        description: "De voortgang van afhandeling van de TAAK."
-        required: true
-        schema:
-          $ref: "#/components/schemas/Taakstatus"
-      - in: "query"
-        name: "toelichting"
-        description: "Toelichting die, aanvullend bij de inhoud van het klantcontact\
-          \ dat aanleiding gaf tot de taak en de gevraagde handeling bijdraagt aan\
-          \ het kunnen afhandelen van de taak."
-        required: false
-        schema:
-          type: "string"
-          maxLength: 400
-      responses:
-        200:
-          description: "Zoekactie geslaagd"
-          headers:
-            api-version:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
-            warning:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
-            X-Rate-Limit-Limit:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Limit"
-            X-Rate-Limit-Remaining:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Remaining"
-            X-Rate-Limit-Reset:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
-          content:
-            application/json:
-              schema:
-                type: "array"
-                items:
-                  $ref: "#/components/schemas/InterneTaak"
-        400:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
-        401:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
-        403:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
-        409:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
-        410:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
-        415:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
-        429:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
-        500:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
-        501:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
-        503:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
-        default:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
-      tags:
-      - "Interne taken"
-    patch:
-      operationId: "patchinternetaken"
-      description: "De operatie waarmee gegevens van interne taken kunnen worden gewijzigd."
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: "#/components/schemas/InterneTaak"
-      responses:
-        200:
-          description: "Zoekactie geslaagd"
-          headers:
-            api-version:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
-            warning:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
-            X-Rate-Limit-Limit:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Limit"
-            X-Rate-Limit-Remaining:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Remaining"
-            X-Rate-Limit-Reset:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/InterneTaak"
-        400:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
-        401:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
-        403:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
-        409:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
-        410:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
-        415:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
-        429:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
-        500:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
-        501:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
-        503:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
-        default:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
-      tags:
-      - "Interne taken"
-    post:
-      operationId: "postinternetaken"
-      description: "De operatie waarmee gegevens van een interne taak kunnen worden\
-        \ geregistreerd."
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: "#/components/schemas/InterneTaak"
-      responses:
-        201:
-          description: "OK"
-          headers:
-            Location:
-              description: "URI van de nieuwe resource"
-              schema:
-                type: "string"
-                format: "uri"
-                example: "/internetaken/"
-            api-version:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
-            warning:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/InterneTaak"
-        400:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
-        401:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
-        403:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
-        409:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
-        410:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
-        415:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
-        429:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
-        500:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
-        501:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
-        503:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
-        default:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
-      tags:
-      - "Interne taken"
-  /internetaken/{id}:
-    delete:
-      operationId: "delinternetaak"
-      description: "De operatie waarmee gegevens van een interne taak kunnen worden\
-        \ verwijderd."
-      parameters:
-      - in: "path"
-        name: "id"
-        description: "Unieke (technische) identificatiecode van de interne taak."
-        required: true
-        schema:
-          $ref: "#/components/schemas/Identificatiecode"
-      responses:
-        200:
-          description: "Verwijderactie geslaagd"
-          headers:
-            api-version:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
-        204:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/204"
-        404:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/404"
-      tags:
-      - "Interne taken"
-    get:
-      operationId: "getinternetaak"
-      description: "De operatie waarmee gegevens van een interne taak kunnen worden\
-        \ geregistreerd."
-      parameters:
-      - in: "path"
-        name: "id"
-        description: "Unieke (technische) identificatiecode van de interne taak."
-        required: true
-        schema:
-          $ref: "#/components/schemas/Identificatiecode"
-      responses:
-        200:
-          description: "Zoekactie geslaagd"
-          headers:
-            api-version:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
-            warning:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
-            X-Rate-Limit-Limit:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Limit"
-            X-Rate-Limit-Remaining:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Remaining"
-            X-Rate-Limit-Reset:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/InterneTaak"
-        400:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
-        401:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
-        403:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
-        404:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/404"
-        409:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
-        410:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
-        415:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
-        429:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
-        500:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
-        501:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
-        503:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
-        default:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
-      tags:
-      - "Interne taken"
-  /medewerkers:
-    get:
-      operationId: "getmedewerkers"
+      operationId: "getactoren"
       description: "De operatie waarmee gegevens van medewerkers kunnen worden gezocht."
       parameters:
       - in: "query"
-        name: "e-mailadres"
-        description: "Het e-mailadres van de medewerker."
+        name: "actoridentifcator"
+        description: "Gegevens die een actor in een extern register uniek identificeren."
         required: false
         schema:
-          type: "string"
-          maxLength: 200
-      - in: "query"
-        name: "externId"
-        description: "De identificatiecode waarmee een medewerker in het externe (bron)register\
-          \ uniek ge&#239;dentificeerd kan worden."
-        required: true
-        schema:
-          type: "string"
-          maxLength: 40
-      - in: "query"
-        name: "externRegister"
-        description: "Het externe (bron)register waarin gegevens over de medewerker\
-          \ zijn geregistreerd."
-        required: true
-        schema:
-          type: "string"
-          maxLength: 40
-      - in: "query"
-        name: "functie"
-        description: "De functie van de medewerker."
-        required: false
-        schema:
-          type: "string"
-          maxLength: 40
+          $ref: "#/components/schemas/Identificator"
       - in: "query"
         name: "indicatieActief"
-        description: "Geeft aan of de betreffende actor nog actief is. Actoren die\
-          \ niet actief zijn mogen niet gekoppeld worden aan nieuwe klantcontacten."
+        description: "Geeft aan of aan de actor nog betrokken mag worden bij nieuwe\
+          \ klantcontacten. Voor niet-actieve is dit niet toegestaan."
         required: true
         schema:
           type: "boolean"
       - in: "query"
         name: "naam"
-        description: "De naam van de actor."
-        required: false
+        description: "Naam van de actor."
+        required: true
         schema:
           type: "string"
           maxLength: 200
       - in: "query"
-        name: "telefoonnummer"
-        description: "Het telefoonnummer van de medewerker."
+        name: "soortActor"
+        description: "Geeft aan van welke specifieke soort actor sprake is."
         required: true
         schema:
-          type: "string"
-          maxLength: 20
+          $ref: "#/components/schemas/SoortActor"
       responses:
         200:
           description: "Zoekactie geslaagd"
@@ -359,7 +68,7 @@ paths:
               schema:
                 type: "array"
                 items:
-                  $ref: "#/components/schemas/Medewerker"
+                  $ref: "#/components/schemas/Actor"
         400:
           $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
         401:
@@ -383,15 +92,15 @@ paths:
         default:
           $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
       tags:
-      - "Medewerkers"
+      - "Actoren"
     patch:
-      operationId: "patchmedewerker"
+      operationId: "patchactor"
       description: "De operatie waarmee gegevens van medewerkers kunnen worden gewijzigd."
       requestBody:
         content:
           application/json:
             schema:
-              $ref: "#/components/schemas/Medewerker"
+              $ref: "#/components/schemas/Actor"
       responses:
         200:
           description: "Zoekactie geslaagd"
@@ -409,7 +118,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/Medewerker"
+                $ref: "#/components/schemas/Actor"
         400:
           $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
         401:
@@ -433,16 +142,16 @@ paths:
         default:
           $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
       tags:
-      - "Medewerkers"
+      - "Actoren"
     post:
-      operationId: "postmedewerker"
+      operationId: "postactor"
       description: "De operatie waarmee gegevens van een medewerker kunnen worden\
         \ geregistreerd."
       requestBody:
         content:
           application/json:
             schema:
-              $ref: "#/components/schemas/Medewerker"
+              $ref: "#/components/schemas/Actor"
       responses:
         201:
           description: "OK"
@@ -452,7 +161,7 @@ paths:
               schema:
                 type: "string"
                 format: "uri"
-                example: "/medewerkers/"
+                example: "/actoren/"
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
             warning:
@@ -460,7 +169,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/Medewerker"
+                $ref: "#/components/schemas/Actor"
         400:
           $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
         401:
@@ -484,10 +193,10 @@ paths:
         default:
           $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
       tags:
-      - "Medewerkers"
-  /medewerkers/{id}:
+      - "Actoren"
+  /actoren/{id}:
     delete:
-      operationId: "delmedewerker"
+      operationId: "delactor"
       description: "De operatie waarmee gegevens van een medewerker kunnen worden\
         \ verwijderd."
       parameters:
@@ -508,7 +217,119 @@ paths:
         404:
           $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/404"
       tags:
-      - "Medewerkers"
+      - "Actoren"
+    get:
+      operationId: "getactor"
+      description: "De operatie waarmee gegevens van een medewerker kunnen worden\
+        \ geregistreerd."
+      parameters:
+      - in: "path"
+        name: "id"
+        description: "Unieke (technische) identificatiecode van de actor."
+        required: true
+        schema:
+          $ref: "#/components/schemas/Identificatiecode"
+      responses:
+        200:
+          description: "Zoekactie geslaagd"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+            X-Rate-Limit-Limit:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Limit"
+            X-Rate-Limit-Remaining:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Remaining"
+            X-Rate-Limit-Reset:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Actor"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        404:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/404"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Actoren"
+  /geautomatiseerdeactoren/{id}:
+    get:
+      operationId: "getgeautomatiseerdeactor"
+      description: "De operatie waarmee gegevens van een geautomatiseerde actor kunnen\
+        \ worden geregistreerd."
+      parameters:
+      - in: "path"
+        name: "id"
+        description: "Unieke (technische) identificatiecode van de actor."
+        required: true
+        schema:
+          $ref: "#/components/schemas/Identificatiecode"
+      responses:
+        200:
+          description: "Zoekactie geslaagd"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+            X-Rate-Limit-Limit:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Limit"
+            X-Rate-Limit-Remaining:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Remaining"
+            X-Rate-Limit-Reset:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/GeautomatiseerdeActor"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        404:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/404"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Geautomatiseerde Actoren"
+  /medewerkers/{id}:
     get:
       operationId: "getmedewerker"
       description: "De operatie waarmee gegevens van een medewerker kunnen worden\
@@ -564,250 +385,7 @@ paths:
           $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
       tags:
       - "Medewerkers"
-  /organisatorischeeenheden:
-    get:
-      operationId: "getorganisatorischeeenheden"
-      description: "De operatie waarmee gegevens van organisatorische eenheid kunnen\
-        \ worden gezocht."
-      parameters:
-      - in: "query"
-        name: "e-mailadres"
-        description: "Het e-mailadres van de organisatorische eenheid.\n\nHet attribuutsoort\
-          \ is overeenkomstig het attribuutsoort Subject.Emailadres.\n\nalle bestaande\
-          \ alfanumerieke tekens waarin zich, evenwel niet aan het begin en aan het\
-          \ eind, een ???@??? moet bevinden."
-        required: false
-        schema:
-          type: "string"
-          maxLength: 200
-      - in: "query"
-        name: "externId"
-        description: "De identificatiecode waarmee de organisatorische eenheid in\
-          \ het externe (bron)register uniek ge&#239;dentificeerd kan worden."
-        required: false
-        schema:
-          type: "string"
-          maxLength: 40
-      - in: "query"
-        name: "externRegister"
-        description: "Het externe (bron)register waarin gegevens over de organisatorische\
-          \ eenheid zijn geregistreerd."
-        required: false
-        schema:
-          type: "string"
-          maxLength: 40
-      - in: "query"
-        name: "faxnummer"
-        description: "Het faxnummer van de organisatorische eenheid.\n\nHet attribuutsoort\
-          \ is overeenkomstig het attribuutsoort Subject.FAX-nummer. Het type is alfanumeriek\
-          \ zodat eventuele toevoegingen als 'bgg', 'zak' of 'mobiel' kunnen worden\
-          \ verwerkt.\n\nalle bestaande alfanumerieke tekens."
-        required: false
-        schema:
-          type: "string"
-          maxLength: 20
-      - in: "query"
-        name: "indicatieActief"
-        description: "Geeft aan of de betreffende actor nog actief is. Actoren die\
-          \ niet actief zijn mogen niet gekoppeld worden aan nieuwe klantcontacten."
-        required: false
-        schema:
-          type: "boolean"
-      - in: "query"
-        name: "naam"
-        description: "De naam van de actor."
-        required: false
-        schema:
-          type: "string"
-          maxLength: 200
-      - in: "query"
-        name: "omschrijving"
-        description: "Een omschrijving van de organisatorische eenheid.\n\nalle alfanumerieke\
-          \ tekens"
-        required: false
-        schema:
-          type: "string"
-          maxLength: 40
-      - in: "query"
-        name: "telefoonnummer"
-        description: "Het telefoonnummer van de organisatorische eenheid.\n\nHet attribuutsoort\
-          \ is overeenkomstig het attribuutsoort Subject.Telefoonnummer. Het type\
-          \ is alfanumeriek zodat eventuele toevoegingen als 'bgg', 'zak' of 'mobiel'\
-          \ kunnen worden verwerkt.\n\nalle bestaande alfanumerieke tekens"
-        required: false
-        schema:
-          type: "string"
-          maxLength: 20
-      responses:
-        200:
-          description: "Zoekactie geslaagd"
-          headers:
-            api-version:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
-            warning:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
-            X-Rate-Limit-Limit:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Limit"
-            X-Rate-Limit-Remaining:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Remaining"
-            X-Rate-Limit-Reset:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
-          content:
-            application/json:
-              schema:
-                type: "array"
-                items:
-                  $ref: "#/components/schemas/OrganisatorischeEenheid"
-        400:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
-        401:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
-        403:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
-        409:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
-        410:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
-        415:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
-        429:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
-        500:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
-        501:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
-        503:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
-        default:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
-      tags:
-      - "Organisatorische eenheden"
-    patch:
-      operationId: "patchorganisatorischeeenheid"
-      description: "De operatie waarmee gegevens van organisatorische eenheid kunnen\
-        \ worden gewijzigd."
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: "#/components/schemas/OrganisatorischeEenheid"
-      responses:
-        200:
-          description: "Zoekactie geslaagd"
-          headers:
-            api-version:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
-            warning:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
-            X-Rate-Limit-Limit:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Limit"
-            X-Rate-Limit-Remaining:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Remaining"
-            X-Rate-Limit-Reset:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/OrganisatorischeEenheid"
-        400:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
-        401:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
-        403:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
-        409:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
-        410:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
-        415:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
-        429:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
-        500:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
-        501:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
-        503:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
-        default:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
-      tags:
-      - "Organisatorische eenheden"
-    post:
-      operationId: "postorganisatoerischeeenheid"
-      description: "De operatie waarmee gegevens van een organisatorische eenheid\
-        \ kunnen worden geregistreerd."
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: "#/components/schemas/OrganisatorischeEenheid"
-      responses:
-        201:
-          description: "OK"
-          headers:
-            Location:
-              description: "URI van de nieuwe resource"
-              schema:
-                type: "string"
-                format: "uri"
-                example: "/organisatorischeeenheden/"
-            api-version:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
-            warning:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/OrganisatorischeEenheid"
-        400:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
-        401:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
-        403:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
-        409:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
-        410:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
-        415:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
-        429:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
-        500:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
-        501:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
-        503:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
-        default:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
-      tags:
-      - "Organisatorische eenheden"
   /organisatorischeeenheden/{id}:
-    delete:
-      operationId: "delorganisatorischeeenheid"
-      description: "De operatie waarmee gegevens van een organisatorische eenheid\
-        \ kunnen worden verwijderd."
-      parameters:
-      - in: "path"
-        name: "id"
-        description: "Unieke (technische) identificatiecode van de actor."
-        required: true
-        schema:
-          $ref: "#/components/schemas/Identificatiecode"
-      responses:
-        200:
-          description: "Verwijderactie geslaagd"
-          headers:
-            api-version:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
-        204:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/204"
-        404:
-          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/404"
-      tags:
-      - "Organisatorische eenheden"
     get:
       operationId: "getorganisatorischeeenheid"
       description: "De operatie waarmee gegevens van een organisatorische eenheid\
@@ -862,110 +440,169 @@ paths:
         default:
           $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
       tags:
-      - "Organisatorische eenheden"
+      - "Organisatorische Eenheid"
 
 components:
   schemas:
-    InterneTaak:
-      type: "object"
-      description: "Iets dat door een actor moet worden gedaan om opvolging te geven\
-        \ aan een klantcontact."
-      required:
-      - "actorId"
-      - "geregistreerdOp"
-      - "gevraagdeHandeling"
-      - "id"
-      - "nummer"
-      - "status"
-      properties:
-        actorId:
-          $ref: "#/components/schemas/Identificatiecode"
-        geregistreerdOp:
-          $ref: "#/components/schemas/Datumtijd"
-        gevraagdeHandeling:
-          $ref: "#/components/schemas/Omschrijvinglang"
-        id:
-          $ref: "#/components/schemas/Identificatiecode"
-        nummer:
-          $ref: "#/components/schemas/Identificerendnummer"
-        status:
-          $ref: "#/components/schemas/Taakstatus"
-        toelichting:
-          $ref: "#/components/schemas/Toelichting"
-    Medewerker:
-      allOf:
-      - $ref: "#/components/schemas/Actor"
-      - type: "object"
-        description: "Iemand die namens de gemeente werkzaamheden uitvoert."
-        required:
-        - "eMailadres"
-        - "externId"
-        - "externRegister"
-        - "functie"
-        - "telefoonnummer"
-        properties:
-          eMailadres:
-            $ref: "#/components/schemas/Emailadres"
-          externId:
-            $ref: "#/components/schemas/Identificatiecode"
-          externRegister:
-            $ref: "#/components/schemas/Omschrijvingkort"
-          functie:
-            $ref: "#/components/schemas/Omschrijvingkort"
-          telefoonnummer:
-            $ref: "#/components/schemas/Telefoonnummer"
-    OrganisatorischeEenheid:
-      allOf:
-      - $ref: "#/components/schemas/Actor"
-      - type: "object"
-        description: "Een organisatie-onderdeel van de gemeente dat werkzaamheden\
-          \ uitvoert.\n\nAlleen ORGANISATORISCHE EENHEden van de organisaties die\
-          \ zaken behandelen worden hier bedoeld (bijvoorbeeld afdelingen van gemeenten).\
-          \ Dus niet organisatorische eenheden van andere organisaties zoals de externe\
-          \ initiatoren van zaken (bijvoorbeeld de afdeling van een bedrijf die een\
-          \ vergunning aanvraagt). De ORGANISATORISCHE EENHEID zoals hier bedoeld\
-          \ is gehuisvest binnen ????n fysieke vestiging van de organisatie. Als een\
-          \ functioneel afgebakend onderdeel van de organisatie haar activiteiten\
-          \ uitvoert in meerdere vestigingen dan wordt die uitgewisseld als evenveel\
-          \ ORGANISATORISCHE EENHEden als die vestigingen. Door de relatie naar VESTIGING\
-          \ VAN ZAAKBEHANDELENDE ORGANISATIE en daarmee via VESTIGING naar NIET NATUURLIJK\
-          \ PERSOON is bekend om welke zaakbehandelende organisatie het gaat. Een\
-          \ ORGANISATORISCHE EENHEID kan zowel groot als klein zijn. De ene ORGANISATORISCHE\
-          \ EENHEID mag andere ORGANISATORISCHE EENHEden bevatten, maar dit wordt\
-          \ niet gemodelleerd. We beperken ons tot het aangeven welke ORGANISATORISCHE\
-          \ EENHEID welke rol heeft in een ZAAK en welke gegevens daarvan vanuit het\
-          \ oogpunt van een zaak relevant zijn. ORGANISATORISCHE EENHEID is een specialisatie\
-          \ ('subtype') van BETROKKENE."
-        properties:
-          eMailadres:
-            $ref: "#/components/schemas/Emailadres"
-          externId:
-            $ref: "#/components/schemas/Identificatiecode"
-          externRegister:
-            $ref: "#/components/schemas/Omschrijvingkort"
-          faxnummer:
-            $ref: "#/components/schemas/Telefoonnummer"
-          omschrijving:
-            $ref: "#/components/schemas/Omschrijvingkort"
-          telefoonnummer:
-            $ref: "#/components/schemas/Telefoonnummer"
     Actor:
       type: "object"
-      description: "Iets dat of iemand die voor de gemeente werkzaamheden uitvoert."
+      description: ""
       required:
       - "id"
       - "indicatieActief"
       - "naam"
       - "soortActor"
       properties:
+        actoridentifcator:
+          $ref: "#/components/schemas/Identificator"
         id:
           $ref: "#/components/schemas/Identificatiecode"
         indicatieActief:
           $ref: "#/components/schemas/IndicatieJaNee"
         naam:
-          $ref: "#/components/schemas/Naamlang"
+          $ref: "#/components/schemas/Naam-lang"
         soortActor:
           $ref: "#/components/schemas/SoortActor"
+      discriminator:
+        propertyName: type
+        mapping:
+          Medewerker: '#/components/schemas/medewerker'
+          GeautomatiseerdeActor: '#/components/schemas/GeautomatiseerdeActor'
+          OrganisatorischeEenheid: '#/components/schemas/OrganisatorischeEenheid'
+    GeautomatiseerdeActor:
+      allOf:
+      - $ref: "#/components/schemas/Actor"
+      - type: "object"
+        description: "Systeemcomponent dat voor de gemeente werkzaamheden uitvoert."
+        required:
+        - "functie"
+        properties:
+          functie:
+            $ref: "#/components/schemas/Omschrijving-kort"
+          omschrijving:
+            $ref: "#/components/schemas/Omschrijving-lang"
+    Medewerker:
+      allOf:
+      - $ref: "#/components/schemas/Actor"
+      - type: "object"
+        description: "Een MEDEWERKER van de organisatie die zaken behandelt uit hoofde\
+          \ van zijn of haar functie binnen een ORGANISATORISCHE EENHEID."
+        required:
+        - "eMailadres"
+        - "functie"
+        - "telefoonnummer"
+        properties:
+          eMailadres:
+            $ref: "#/components/schemas/E-mailadres"
+          functie:
+            $ref: "#/components/schemas/Omschrijving-kort"
+          telefoonnummer:
+            $ref: "#/components/schemas/Telefoonnummer"
+    OrganisatorischeEenheid:
+      allOf:
+      - $ref: "#/components/schemas/Actor"
+      - type: "object"
+        description: "Het deel van een functioneel afgebakend onderdeel binnen de\
+          \ organisatie dat haar activiteiten uitvoert binnen een VESTIGING VAN ZAAKBEHANDELENDE\
+          \ ORGANISATIE en die verantwoordelijk is voor de behandeling van zaken."
+        properties:
+          eMailadres:
+            $ref: "#/components/schemas/E-mailadres"
+          faxnummer:
+            $ref: "#/components/schemas/Telefoonnummer"
+          omschrijving:
+            $ref: "#/components/schemas/Omschrijving-lang"
+          telefoonnummer:
+            $ref: "#/components/schemas/Telefoonnummer"
+    ExternRegister:
+      type: "object"
+      description: "Een lijst van registers buiten het domein van klantinteracties\
+        \ waarin objecten zijn geregistreerd die gerelateerd zijn met objecen in het\
+        \ klantinteractiesdomein."
+      required:
+      - "code"
+      - "locatie"
+      - "naam"
+      properties:
+        code:
+          $ref: "#/components/schemas/Identificatiecode"
+        locatie:
+          $ref: "#/components/schemas/Omschrijving-kort"
+        naam:
+          $ref: "#/components/schemas/Naam-kort"
+    Identificator:
+      type: "object"
+      description: "Gegevens die een object in een extern register uniek identificeren."
+      required:
+      - "objectId"
+      - "objecttype"
+      - "register"
+      - "soortObjectId"
+      properties:
+        objectId:
+          $ref: "#/components/schemas/Identificatiecode"
+        objecttype:
+          allOf:
+          - $ref: "#/components/schemas/SoortObject"
+          - title: "objecttype"
+            description: "Type van het object."
+        register:
+          allOf:
+          - $ref: "#/components/schemas/ExternRegister"
+          - title: "register"
+            description: "Binnen het landschap van registers unieke omschrijving van\
+              \ het register waarin het object is geregistreerd."
+        soortObjectId:
+          allOf:
+          - $ref: "#/components/schemas/SoortObjectId"
+          - title: "soortObjectId"
+            description: "Naam van de eigenschap die het object identificeert."
+    SoortObject:
+      type: "object"
+      description: "Een lijst van typen objecten waarnaar vanuit het klantinteractiesregister\
+        \ relaties kunnen worden gelegd."
+      required:
+      - "code"
+      - "indicatieActief"
+      - "naam"
+      properties:
+        code:
+          type: "string"
+          title: "Code"
+          description: "De code, behorende bij het soort object."
+          minLength: 1
+        indicatieActief:
+          $ref: "#/components/schemas/IndicatieJaNee"
+        naam:
+          type: "string"
+          title: "Naam"
+          description: "De naam van het soort object."
+          minLength: 1
+    SoortObjectId:
+      type: "object"
+      description: "Een lijst van identificatiesystemen en de (bron)registers die\
+        \ de authentieke vindplaats vormen van volgens deze systemen geregistreerde\
+        \ gegevens."
+      required:
+      - "code"
+      - "indicatieActief"
+      - "naam"
+      - "soortPartij"
+      properties:
+        code:
+          type: "string"
+          title: "Code"
+          description: "De code, behorende bij het soort extern id."
+          minLength: 1
+        indicatieActief:
+          $ref: "#/components/schemas/IndicatieJaNee"
+        naam:
+          type: "string"
+          title: "Naam"
+          description: "De naam van het soort extern id."
+          minLength: 1
+        soortPartij:
+          $ref: "#/components/schemas/SoortPartij"
     SoortActor:
       type: "string"
       description: "De typering van de actor.<body><ul><li>`medewerker` - medewerker\
@@ -975,19 +612,14 @@ components:
       - "medewerker"
       - "geautomatiseerde_actor"
       - "organisatorische_eenheid"
-    Taakstatus:
+    SoortPartij:
       type: "string"
-      description: "De waarden van de typering van de voortgang van afhandeling van\
-        \ een VERZOEK.<body><ul><li>`te_verwerken` - te verwerken Het verzoek is afgehandeld.</li><li>`verwerkt`\
-        \ - verwerkt Het verzoek id buiten behandeling gesteld.</li></ul></body>"
+      description: "De typering van de partij."
       enum:
-      - "te_verwerken"
-      - "verwerkt"
-    Datumtijd:
-      type: "string"
-      description: ""
-      format: "date-time"
-    Emailadres:
+      - "persoon"
+      - "organisatie"
+      - "contactpersoon"
+    E-mailadres:
       type: "string"
       description: "Een geldig email-adres, maximaal 20 karakters lang en minimaal\
         \ een @ en een . opgenomen."
@@ -996,21 +628,22 @@ components:
       type: "string"
       description: ""
       maxLength: 40
-    Identificerendnummer:
-      type: "integer"
-      description: ""
     IndicatieJaNee:
       type: "boolean"
       description: ""
-    Naamlang:
+    Naam-kort:
+      type: "string"
+      description: ""
+      maxLength: 80
+    Naam-lang:
       type: "string"
       description: ""
       maxLength: 200
-    Omschrijvingkort:
+    Omschrijving-kort:
       type: "string"
       description: ""
       maxLength: 40
-    Omschrijvinglang:
+    Omschrijving-lang:
       type: "string"
       description: ""
       maxLength: 200
@@ -1018,7 +651,3 @@ components:
       type: "string"
       description: ""
       maxLength: 20
-    Toelichting:
-      type: "string"
-      description: "Toelichtende tekst"
-      maxLength: 400
