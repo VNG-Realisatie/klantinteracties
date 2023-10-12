@@ -383,7 +383,7 @@ paths:
           content:
             application/hal+json:
               schema:
-                $ref: "#/components/schemas/PartijHal"
+                $ref: "#/components/schemas/Partij"
         400:
           $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
         401:
@@ -433,7 +433,7 @@ paths:
           content:
             application/hal+json:
               schema:
-                $ref: "#/components/schemas/PartijHal"
+                $ref: "#/components/schemas/Partij"
         400:
           $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
         401:
@@ -508,7 +508,7 @@ paths:
           content:
             application/hal+json:
               schema:
-                $ref: "#/components/schemas/PartijHal"
+                $ref: "#/components/schemas/Partij"
         400:
           $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
         401:
@@ -558,7 +558,7 @@ components:
             $ref: "#/components/schemas/Actor_links"
     Contactpersoon:
       allOf:
-      - $ref: "#/components/schemas/PartijHal"
+      - $ref: "#/components/schemas/Partij"
       - type: "object"
         description: "Natuurlijk persoon die werkte voor een organisatie, of natuurlijk\
           \ persoon die een andere persoon vertegenwoordigde."
@@ -567,6 +567,8 @@ components:
         properties:
           contactnaam:
             $ref: "#/components/schemas/Contactnaam"
+          _links:
+            $ref: "#/components/schemas/Partij_links"
     GeautomatiseerdeActor:
       allOf:
       - $ref: "#/components/schemas/Actor"
@@ -598,7 +600,7 @@ components:
             $ref: "#/components/schemas/Telefoonnummer"
     Organisatie:
       allOf:
-      - $ref: "#/components/schemas/PartijHal"
+      - $ref: "#/components/schemas/Partij"
       - type: "object"
         description: "Geformaliseerde entiteit die geen natuurlijk persoon is en maatschappelijke\
           \ activiteiten uitvoert.\n\nEen organisatie met rechtspersoonlijkheid, of\
@@ -612,6 +614,8 @@ components:
         properties:
           naam:
             $ref: "#/components/schemas/Naam-lang"
+          _links:
+            $ref: "#/components/schemas/Partij_links"
     OrganisatorischeEenheid:
       allOf:
       - $ref: "#/components/schemas/Actor"
@@ -639,14 +643,7 @@ components:
             partijen:
               type: "array"
               items:
-                $ref: "#/components/schemas/PartijHal"
-    PartijHal:
-      allOf:
-      - $ref: "#/components/schemas/Partij"
-      - type: "object"
-        properties:
-          _links:
-            $ref: "#/components/schemas/Partij_links"
+                $ref: "#/components/schemas/Partij"
     Partij:
       type: "object"
       description: "Persoon of organisatie waarmee de gemeente een relatie heeft."
@@ -696,7 +693,7 @@ components:
           organisatie: '#/components/schemas/Organisatie'
     Persoon:
       allOf:
-      - $ref: "#/components/schemas/PartijHal"
+      - $ref: "#/components/schemas/Partij"
       - type: "object"
         description: "Natuurlijk persoon.\n\nKan zowel een ingeschreven, niet ingeschreven\
           \ alsook een natuurlijk persoon zijn waarvan niet bekend is of die ingeschreven\
@@ -708,6 +705,8 @@ components:
         properties:
           contactnaam:
             $ref: "#/components/schemas/Contactnaam"
+          _links:
+            $ref: "#/components/schemas/Partij_links"
     Actor:
       type: "object"
       description: "Iets dat of iemand die voor de gemeente werkzaamheden uitvoert."
