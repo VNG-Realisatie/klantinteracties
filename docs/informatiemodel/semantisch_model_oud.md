@@ -1,7 +1,7 @@
 ---
 layout: page-with-side-nav
-title: Semantisch informatiemodel versie 0.0.1.
-date: 11-10-2023
+title: Semantisch informatiemodel wijzigingen historie.
+date: 19-10-2023
 ---
 
 # Semantisch informatiemodel: Oude versies
@@ -9,6 +9,29 @@ date: 11-10-2023
 ## Modellering in Enterprise Architect
 Binnen VNG Realisatie wordt Enterprise Architect (EA) gebruikt voor de vastlegging van semantische informatiemodellen (SIM). 
 Onderstaand zijn de diagrammen van de oude versies van het infromatiemodel weergegeven en zijn de wijzigingen opgesomd die in het nieuwe model zijn doorgevoerd. 
+
+## Van versie 0.0.5 naar 0.0.6 (19-10-2023)
+Onderstaand figuur geeft de modellering van het SIM versie 0.0.5 weer zoals deze in EA was gemodelleerd.
+
+<img src="assets/SIM_Klantinteracties_v005.png" alt="SIM in Enterprise Architect" width="1000"/>
+
+De wijzigingen die in versie 0.0.6 zijn doorgevoerd t.o.v. deze versie zijn: 
+  - Het *inhoudsobject* is hernoemd naar *bijlage* .
+    - Bij de *bijlage* is een toelichting opgenomen.
+  - *ander object* is verwijderd uit het model.
+    - De lijst met objecten en registraties waarnaar verwezen kan worden vanuit Klantinteracties is niet uitputtend te maken. 
+      De generieke modellering van de verwijzing faciliteert dat ook. Er wordt aan de definitie van bijlage en onderwerpobject
+      toegevoegd dat de verwijzing naar externe objecten niet uitputtend is.
+  - De eigenschap *voorkeurskanaal* van *partij* wordt vervangen door de relatie *werd gekenmerkt als voorkeur* van *Partij* naar *Digitaal Adres*
+    Hiermee wordt het *digitaal adres* van voorkeur van een *partij* vastgelegd.
+  - Het enkelvoudig datatype *email-adres* is nu maximaal 254 karakters lang (conform https://www.rfc-editor.org/errata/eid1690). Dit was 200 karakters. Alle attribuutsoorten die van dit datatype zijn zijn dus ook maximaal 254 lang geworden.
+  - Enkelvoudige datatypes die niet in gebruik waren zijn verwijderd.
+  - Enumeraties die niet in gebruik waren zijn verwijderd.
+  - Bij Enkelvoudig datatype *Soort obect ID* is het kenmerk *Soort Partij* en het kenmerk *Extern register* verwijderd.
+  - Bij alle enkelvoudige datatypen is een definitie opgenomen.
+  - Attribuutsoort *Initiator* is verplaatst naar *Betrokkene Bij Klantcontact* en het is een *Indicatie Ja Nee* geworden.
+  - Het *Faxnummer* is verwijderd uit het objecttype *Organisatorische Eenheid*.
+
 
 ## Van versie 0.0.4 naar 0.0.5 (11-10-2023)
 Onderstaand figuur geeft de modellering van het SIM versie 0.0.4 weer zoals deze in EA was gemodelleerd.
