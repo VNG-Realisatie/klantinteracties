@@ -26,8 +26,10 @@ De wijzigingen die in versie 0.0.6 zijn doorgevoerd t.o.v. deze versie zijn:
     Hiermee wordt het *digitaal adres* van voorkeur van een *partij* vastgelegd.
   - Het enkelvoudig datatype *email-adres* is nu maximaal 256 karakters lang (conform https://www.rfc-editor.org/errata/eid1690). Dit was 20 karakters. Alle attribuutsoorten die van dit datatype zijn zijn dus ook maximaal 256 lang geworden.
   - Enkelvoudige datatypes die niet in gebruik waren zijn verwijderd.
-  - Bij Enkelvoudig datatype Soort obect ID is het kenmerk Soort Partij verwijderd. 
+  - Enumeraties die niet in gebruik waren zijn verwijderd.
+  - Bij Enkelvoudig datatype Soort obect ID is het kenmerk Soort Partij en het kenmerk Extern register verwijderd.
   - Bij alle enkelvoudige datatypen is een definitie opgenomen.
+  - Attribuutsoort *Initiator* is verplaatst naar *Betrokkene Bij Klantcontact* en het is een *Indicatie Ja Nee* geworden.
 
 
 ## Van versie 0.0.4 naar 0.0.5 (11-10-2023)
