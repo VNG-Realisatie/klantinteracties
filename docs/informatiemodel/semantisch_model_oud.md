@@ -24,7 +24,9 @@ De wijzigingen die in versie 0.0.6 zijn doorgevoerd t.o.v. deze versie zijn:
       toegevoegd dat de verwijzing naar externe objecten niet uitputtend is.
   - De eigenschap *voorkeurskanaal* van *partij* wordt vervangen door de relatie *werd gekenmerkt als voorkeur* van *Partij* naar *Digitaal Adres*
     Hiermee wordt het *digitaal adres* van voorkeur van een *partij* vastgelegd.
-  - Het enkelvoudig datatype *email-adres* is nu maximaal 256 karakters lang (conform https://www.rfc-editor.org/errata/eid1690). Dit was 20 karakters. Alle attribuutsoorten die van dit datatype zijn zijn dus ook maximaal 256 lang geworden.  
+  - Het enkelvoudig datatype *email-adres* is nu maximaal 256 karakters lang (conform https://www.rfc-editor.org/errata/eid1690). Dit was 20 karakters. Alle attribuutsoorten die van dit datatype zijn zijn dus ook maximaal 256 lang geworden.
+  - Enkelvoudige datatypes die niet in gebruik waren zijn verwijderd.
+  - Bij Enkelvoudig datatype Soort obect ID is het kenmerk Soort Partij verwijderd. 
   - Bij alle enkelvoudige datatypen is een definitie opgenomen.
 
 
