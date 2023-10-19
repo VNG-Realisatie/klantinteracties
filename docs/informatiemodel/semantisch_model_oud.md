@@ -1,6 +1,6 @@
 ---
 layout: page-with-side-nav
-title: Semantisch informatiemodel versie 0.0.1.
+title: Semantisch informatiemodel wijzigingen historie.
 date: 19-10-2023
 ---
 
