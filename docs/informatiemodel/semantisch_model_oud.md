@@ -30,6 +30,7 @@ De wijzigingen die in versie 0.0.6 zijn doorgevoerd t.o.v. deze versie zijn:
   - Bij Enkelvoudig datatype Soort obect ID is het kenmerk Soort Partij en het kenmerk Extern register verwijderd.
   - Bij alle enkelvoudige datatypen is een definitie opgenomen.
   - Attribuutsoort *Initiator* is verplaatst naar *Betrokkene Bij Klantcontact* en het is een *Indicatie Ja Nee* geworden.
+  - Het Faxnummer is verwijderd uit het objecttype Organisatorische Eenheid.
 
 
 ## Van versie 0.0.4 naar 0.0.5 (11-10-2023)
