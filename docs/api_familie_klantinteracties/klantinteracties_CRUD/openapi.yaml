@@ -2712,12 +2712,7 @@ components:
               items:
                 $ref: "#/components/schemas/ActorHal"
     ActorHal:
-      allOf:
-      - $ref: "#/components/schemas/Actor"
-      - type: "object"
-        properties:
-          _links:
-            $ref: "#/components/schemas/Actor_links"
+      $ref: "#/components/schemas/Actor"
     Actor:
       type: "object"
       description: "Iets dat of iemand die voor de gemeente werkzaamheden uitvoert."
@@ -2818,7 +2813,7 @@ components:
           $ref: "#/components/schemas/Identificatiecode"
     Contactpersoon:
       allOf:
-      - $ref: "#/components/schemas/PartijCopy"
+      - $ref: "#/components/schemas/Partij"
       - type: "object"
         description: "Natuurlijk persoon die werkte voor een organisatie, of natuurlijk\
           \ persoon die een andere persoon vertegenwoordigde."
@@ -2888,6 +2883,8 @@ components:
             $ref: "#/components/schemas/Omschrijving-kort"
           omschrijving:
             $ref: "#/components/schemas/Omschrijving-lang"
+          _links:
+            $ref: "#/components/schemas/Actor_links"
     InterneTaakHalCollectie:
       type: "object"
       properties:
@@ -3024,6 +3021,8 @@ components:
             $ref: "#/components/schemas/Omschrijving-kort"
           telefoonnummer:
             $ref: "#/components/schemas/Telefoonnummer"
+          _links:
+            $ref: "#/components/schemas/Actor_links"
     OnderwerpobjectHalCollectie:
       type: "object"
       properties:
@@ -3063,7 +3062,7 @@ components:
           $ref: "#/components/schemas/Identificatiecode"
     Organisatie:
       allOf:
-      - $ref: "#/components/schemas/PartijCopy"
+      - $ref: "#/components/schemas/Partij"
       - type: "object"
         description: "Geformaliseerde entiteit die geen natuurlijk persoon is en maatschappelijke\
           \ activiteiten uitvoert.\n\nEen organisatie met rechtspersoonlijkheid, of\
@@ -3089,6 +3088,8 @@ components:
             $ref: "#/components/schemas/Omschrijving-lang"
           telefoonnummer:
             $ref: "#/components/schemas/Telefoonnummer"
+          _links:
+            $ref: "#/components/schemas/Actor_links"
     PartijHalCollectie:
       type: "object"
       properties:
@@ -3139,11 +3140,7 @@ components:
         voorkeursDigitaalAdres:
           $ref: "#/components/schemas/Identificatiecode"
         voorkeurstaal:
-          allOf:
-          - $ref: "#/components/schemas/Taal"
-          - title: "voorkeurstaal"
-            description: "Taal waarin de partij bij voorkeur contact heeft met de\
-              \ gemeente."
+          $ref: "#/components/schemas/Taal"
         werkteVoorPartij:
           $ref: "#/components/schemas/Identificatiecode"
       discriminator:
@@ -3188,10 +3185,9 @@ components:
           $ref: "#/components/schemas/Identificatiecode"
         partijIdentificator:
           $ref: "#/components/schemas/Identificator"
-
     Persoon:
       allOf:
-      - $ref: "#/components/schemas/PartijCopy"
+      - $ref: "#/components/schemas/Partij"
       - type: "object"
         description: "Natuurlijk persoon.\n\nKan zowel een ingeschreven, niet ingeschreven\
           \ alsook een natuurlijk persoon zijn waarvan niet bekend is of die ingeschreven\
@@ -3292,44 +3288,6 @@ components:
         rol:
           $ref: "#/components/schemas/Klantcontactrol"
         wasPartij:
-          $ref: "#/components/schemas/Identificatiecode"
-    PartijCopy:
-      type: "object"
-      description: ""
-      required:
-      - "id"
-      - "indicatieActief"
-      - "indicatieGeheimhouding"
-      - "nummer"
-      - "soortPartij"
-      - "voorkeursDigitaalAdres"
-      - "werkteVoorPartij"
-      properties:
-        bezoekadres:
-          $ref: "#/components/schemas/Bezoekadres"
-        correspondentieadres:
-          $ref: "#/components/schemas/Correspondentieadres"
-        id:
-          $ref: "#/components/schemas/Identificatiecode"
-        indicatieActief:
-          $ref: "#/components/schemas/IndicatieJaNee"
-        indicatieGeheimhouding:
-          $ref: "#/components/schemas/IndicatieJaNee"
-        interneNotitie:
-          $ref: "#/components/schemas/Tekst"
-        nummer:
-          $ref: "#/components/schemas/IdentificerendNummer"
-        soortPartij:
-          $ref: "#/components/schemas/SoortPartij"
-        voorkeursDigitaalAdres:
-          $ref: "#/components/schemas/Identificatiecode"
-        voorkeurstaal:
-          allOf:
-          - $ref: "#/components/schemas/Taal"
-          - title: "voorkeurstaal"
-            description: "Taal waarin de partij bij voorkeur contact heeft met de\
-              \ gemeente."
-        werkteVoorPartij:
           $ref: "#/components/schemas/Identificatiecode"
     Actor_links:
       type: "object"
