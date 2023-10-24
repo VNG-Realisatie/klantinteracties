@@ -1,7 +1,7 @@
 ---
 layout: page-with-side-nav
 title: Gegevenswoordenboek informatiemodel klantinteracties
-date: 11-10-2023
+date: 19-10-2023
 ---
 
 <!DOCTYPE HTML><html>
@@ -64,7 +64,7 @@ date: 11-10-2023
          :
          2.0.0
          :
-         2023-10-11T14:31:36Z</p>
+         2023-10-19T08:08:00Z</p>
       <p>
          ID: EAPK_272B109E_0738_42bd_9D43_C4F87B5E8B8D</p>
       <div><strong>Domein: Model</strong><div>
@@ -183,17 +183,6 @@ date: 11-10-2023
                      <tr>
                         <td width="5%">&nbsp;</td>
                         <td width="25%">
-                           Initiator
-                           </td>
-                        <td width="50%">Degene die het klantcontact initieerde.</td>
-                        <td width="10%">
-                           Initiator
-                           </td>
-                        <td width="10%">1</td>
-                     </tr>
-                     <tr>
-                        <td width="5%">&nbsp;</td>
-                        <td width="25%">
                            Indicatie contact gelukt
                            </td>
                         <td width="50%">Geeft, indien bekend, aan of de poging contact tussen de gemeente en inwoner(s) of
@@ -302,7 +291,7 @@ date: 11-10-2023
                            
                            [ 0 .. * ]
                            </td>
-                        <td width="50%">Onderwerpobject dat tijdens een klantcontact aan de orde kwam.</td>
+                        <td width="50%">Onderwerpobject dat tijdens een klantcontact aan de orde was.</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
@@ -313,11 +302,11 @@ date: 11-10-2023
                            omvatte
                            
                            
-                           Inhoudsobject
+                           Bijlage
                            
                            [ 0 .. * ]
                            </td>
-                        <td width="50%">Inhoudsobject dat onderdeel was van de inhoud van het klantcontact.</td>
+                        <td width="50%">Bijlage die (een deel van) de inhoud van het klantcontact beschrijft.</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
@@ -467,9 +456,22 @@ date: 11-10-2023
                      <tr>
                         <td width="5%">&nbsp;</td>
                         <td width="25%">
+                           Initiator
+                           </td>
+                        <td width="50%">Degene die het klantcontact initieerde.</td>
+                        <td width="10%">
+                           Indicatie Ja Nee
+                           </td>
+                        <td width="10%">1</td>
+                     </tr>
+                     <tr>
+                        <td width="5%">&nbsp;</td>
+                        <td width="25%">
                            Contactnaam
                            :</td>
-                        <td width="50%">Naam die de betrokkene bij klantcontact bij opvolging van dat contact wil gebruiken.</td>
+                        <td width="50%">Naam die de betrokkene bij klantcontact tijdens vervolghandelingen naar aanleiding
+                           van dat contact wil gebruiken. Deze mag afwijken van eventueel in de Basisregistratie
+                           Personen (BRP) bekende naam van de betrokkene.</td>
                         <td width="10%">
                            Contactnaam
                            </td>
@@ -480,8 +482,8 @@ date: 11-10-2023
                         <td width="25%">- 
                            Voorletters
                            </td>
-                        <td width="50%">Een afkorting van de voornamen. Meestal de beginletter, maar in sommige gevallen de
-                           beginletter gecombineerd met de tweede letter van een voornaam.</td>
+                        <td width="50%">Afkorting van een voornaam of voornamen. Meestal de beginletter, maar in sommige gevallen
+                           de beginletter gecombineerd met de tweede letter van een voornaam.</td>
                         <td width="10%">
                            Voorletters
                            </td>
@@ -492,7 +494,7 @@ date: 11-10-2023
                         <td width="25%">- 
                            Voornaam
                            </td>
-                        <td width="50%">De voornaam die de persoon wil gebruiken tijdens communicatie met de gemeente.</td>
+                        <td width="50%">Voornaam of voornamen.</td>
                         <td width="10%">
                            Naam-kort
                            </td>
@@ -503,8 +505,7 @@ date: 11-10-2023
                         <td width="25%">- 
                            Voorvoegsel achternaam
                            </td>
-                        <td width="50%">Een eventueel voorvoegsel dat hoort bij de achternaam die de persoon wil gebruiken
-                           tijdens communicatie met de gemeente.</td>
+                        <td width="50%">Eventueel voorvoegsel dat hoort bij de achternaam.</td>
                         <td width="10%">
                            Voorvoegsel
                            </td>
@@ -515,9 +516,9 @@ date: 11-10-2023
                         <td width="25%">- 
                            Achternaam
                            </td>
-                        <td width="50%">Een achternaam die de persoon wil gebruiken tijdens communicatie met de gemeente.</td>
+                        <td width="50%">Achternaam (of combinatie van gelachtsnamen).</td>
                         <td width="10%">
-                           Omschrijving-lang
+                           Naam-lang
                            </td>
                         <td width="10%">0 .. 1</td>
                      </tr>
@@ -527,7 +528,8 @@ date: 11-10-2023
                            Correspondentieadres
                            :</td>
                         <td width="50%">Adres waarop de betrokkene bij klantcontact naar aanleiding van dat contact te versturen
-                           post wil ontvangen.</td>
+                           post wil ontvangen. Dit mag afwijken van voor de verstrekker eventueel in een basisregistratie
+                           bekende adressen.</td>
                         <td width="10%">
                            Correspondentieadres
                            </td>
@@ -538,7 +540,7 @@ date: 11-10-2023
                         <td width="25%">- 
                            NummeraanduidingID
                            </td>
-                        <td width="50%">Identificatie van het adres bij de Basisregistratie Adressen en Gebouwen.</td>
+                        <td width="50%">Identificatiecode van een adres in de Basisregistratie Adressen en Gebouwen (BAG).</td>
                         <td width="10%">
                            Identificatiecode
                            </td>
@@ -549,7 +551,8 @@ date: 11-10-2023
                         <td width="25%">- 
                            Adresregel 1
                            </td>
-                        <td width="50%">Eerste deel van het adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen.</td>
+                        <td width="50%">Eerste deel van een adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen
+                           (BAG).</td>
                         <td width="10%">
                            Adresregel
                            </td>
@@ -560,7 +563,8 @@ date: 11-10-2023
                         <td width="25%">- 
                            Adresregel 2
                            </td>
-                        <td width="50%">Tweede deel van het adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen.</td>
+                        <td width="50%">Tweede deel van een adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen
+                           (BAG).</td>
                         <td width="10%">
                            Adresregel
                            </td>
@@ -571,7 +575,8 @@ date: 11-10-2023
                         <td width="25%">- 
                            Adresregel 3
                            </td>
-                        <td width="50%">Derde van het adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen.</td>
+                        <td width="50%">Derde deel van een adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen
+                           (BAG).</td>
                         <td width="10%">
                            Adresregel
                            </td>
@@ -582,8 +587,8 @@ date: 11-10-2023
                         <td width="25%">- 
                            Land
                            </td>
-                        <td width="50%">Een code, opgenomen in Tabel 34, Landentabel, die het land (buiten Nederland) aangeeft
-                           alwaar de ingeschrevene verblijft. </td>
+                        <td width="50%">Een code, opgenomen in Tabel 34 Landentabel, die een land buiten Nederland aangeeft
+                           waar het adres gevonden kan worden.</td>
                         <td width="10%">
                            Land
                            </td>
@@ -595,7 +600,8 @@ date: 11-10-2023
                            Bezoekadres
                            :</td>
                         <td width="50%">Adres waarop de betrokkene bij klantcontact in naar aanleiding van dat contact af
-                           te leggen bezoeken wil ontvangen.</td>
+                           te leggen bezoeken wil ontvangen. Dit mag afwijken van voor de verstrekker eventueel
+                           in een basisregistratie bekende adressen.</td>
                         <td width="10%">
                            Bezoekadres
                            </td>
@@ -606,7 +612,7 @@ date: 11-10-2023
                         <td width="25%">- 
                            NummeraanduidingID
                            </td>
-                        <td width="50%">Identificatie van het adres bij de Basisregistratie Adressen en Gebouwen.</td>
+                        <td width="50%">Identificatiecode van een adres in de Basisregistratie Adressen en Gebouwen (BAG).</td>
                         <td width="10%">
                            Identificatiecode
                            </td>
@@ -617,7 +623,8 @@ date: 11-10-2023
                         <td width="25%">- 
                            Adresregel 1
                            </td>
-                        <td width="50%">Eerste deel van het adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen.</td>
+                        <td width="50%">Eerste deel van een adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen
+                           (BAG).</td>
                         <td width="10%">
                            Adresregel
                            </td>
@@ -628,7 +635,8 @@ date: 11-10-2023
                         <td width="25%">- 
                            Adresregel 2
                            </td>
-                        <td width="50%">Tweede deel van het adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen.</td>
+                        <td width="50%">Tweede deel van een adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen
+                           (BAG).</td>
                         <td width="10%">
                            Adresregel
                            </td>
@@ -639,7 +647,8 @@ date: 11-10-2023
                         <td width="25%">- 
                            Adresregel 3
                            </td>
-                        <td width="50%">Derde deel van het adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen.</td>
+                        <td width="50%">Derde deel van een adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen
+                           (BAG).</td>
                         <td width="10%">
                            Adresregel
                            </td>
@@ -650,8 +659,8 @@ date: 11-10-2023
                         <td width="25%">- 
                            Land
                            </td>
-                        <td width="50%">Een code, opgenomen in Tabel 34, Landentabel, die het land (buiten Nederland) aangeeft
-                           alwaar de ingeschrevene verblijft. </td>
+                        <td width="50%">Een code, opgenomen in Tabel 34 Landentabel, die een land buiten Nederland aangeeft
+                           waar het adres gevonden kan worden.</td>
                         <td width="10%">
                            Land
                            </td>
@@ -846,7 +855,7 @@ date: 11-10-2023
                         <td width="5%">&nbsp;</td>
                         <td width="45%">
                            
-                           Inhoudsobject
+                           Bijlage
                            
                            [ 0 .. 1 ]
                            
@@ -855,7 +864,7 @@ date: 11-10-2023
                            Overig Object
                            [ 0 .. 1 ]
                            </td>
-                        <td width="50%">Overig object dat een inhoudsobject was.</td>
+                        <td width="50%">Overig object dat een bijlage was.</td>
                      </tr>
                   </tbody>
                </table>
@@ -1009,7 +1018,8 @@ date: 11-10-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">Object dat onderwerp van een klantcontact was. </td>
+                        <td width="70%">Verwijzing naar een object dat onderwerp van een klantcontact was.<br>Enkele mogelijke verwijzingen zijn opgenomen in dit model. Dit is geen uitputtende
+                           lijst. <br> </td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -1052,7 +1062,7 @@ date: 11-10-2023
                         <td width="25%">
                            ID
                            </td>
-                        <td width="50%">Unieke (technische) identificatiecode van het onderwerpdeel.</td>
+                        <td width="50%">Unieke (technische) identificatiecode van het onderwerpobject.</td>
                         <td width="10%">
                            Identificatiecode
                            </td>
@@ -1157,21 +1167,6 @@ date: 11-10-2023
                            was
                            
                            
-                           Ander Object
-                           
-                           [ 0 .. 1 ]
-                           </td>
-                        <td width="50%">Ander object dat een onderwerpobject was.</td>
-                     </tr>
-                     <tr>
-                        <td width="5%">&nbsp;</td>
-                        <td width="45%">
-                           Onderwerpobject
-                           [ 0 .. * ]
-                           
-                           was
-                           
-                           
                            Klanttaak
                            
                            [ 0 .. 1 ]
@@ -1206,7 +1201,7 @@ date: 11-10-2023
                            Onderwerpobject
                            [ 0 .. * ]
                            </td>
-                        <td width="50%">Onderwerpobject dat tijdens een klantcontact aan de orde kwam.</td>
+                        <td width="50%">Onderwerpobject dat tijdens een klantcontact aan de orde was.</td>
                      </tr>
                   </tbody>
                </table>
@@ -1285,7 +1280,7 @@ date: 11-10-2023
                         <td width="50%">Uniek identificerend nummer dat tijdens communicatie tussen mensen kan worden gebruikt
                            om de specifieke partij aan te duiden.</td>
                         <td width="10%">
-                           Partijnummer
+                           Identificerend nummer
                            </td>
                         <td width="10%">1</td>
                      </tr>
@@ -1327,17 +1322,6 @@ date: 11-10-2023
                      <tr>
                         <td width="5%">&nbsp;</td>
                         <td width="25%">
-                           Voorkeurskanaal
-                           </td>
-                        <td width="50%">Kanaal dat de partij bij voorkeur gebruikt voor contact met de gemeente.</td>
-                        <td width="10%">
-                           Kanaal
-                           </td>
-                        <td width="10%">0 .. 1</td>
-                     </tr>
-                     <tr>
-                        <td width="5%">&nbsp;</td>
-                        <td width="25%">
                            Voorkeurstaal
                            </td>
                         <td width="50%">Taal waarin de partij bij voorkeur contact heeft met de gemeente.</td>
@@ -1363,7 +1347,8 @@ date: 11-10-2023
                         <td width="25%">
                            Bezoekadres
                            :</td>
-                        <td width="50%">Adres waarop de partij door gemeente bezocht wil worden.</td>
+                        <td width="50%">Adres waarop de partij door gemeente bezocht wil worden. Dit mag afwijken van voor
+                           de verstrekker eventueel in een basisregistratie bekende adressen.</td>
                         <td width="10%">
                            Bezoekadres
                            </td>
@@ -1374,7 +1359,7 @@ date: 11-10-2023
                         <td width="25%">- 
                            NummeraanduidingID
                            </td>
-                        <td width="50%">Identificatie van het adres bij de Basisregistratie Adressen en Gebouwen.</td>
+                        <td width="50%">Identificatiecode van een adres in de Basisregistratie Adressen en Gebouwen (BAG).</td>
                         <td width="10%">
                            Identificatiecode
                            </td>
@@ -1385,7 +1370,8 @@ date: 11-10-2023
                         <td width="25%">- 
                            Adresregel 1
                            </td>
-                        <td width="50%">Eerste deel van het adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen.</td>
+                        <td width="50%">Eerste deel van een adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen
+                           (BAG).</td>
                         <td width="10%">
                            Adresregel
                            </td>
@@ -1396,7 +1382,8 @@ date: 11-10-2023
                         <td width="25%">- 
                            Adresregel 2
                            </td>
-                        <td width="50%">Tweede deel van het adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen.</td>
+                        <td width="50%">Tweede deel van een adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen
+                           (BAG).</td>
                         <td width="10%">
                            Adresregel
                            </td>
@@ -1407,7 +1394,8 @@ date: 11-10-2023
                         <td width="25%">- 
                            Adresregel 3
                            </td>
-                        <td width="50%">Derde deel van het adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen.</td>
+                        <td width="50%">Derde deel van een adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen
+                           (BAG).</td>
                         <td width="10%">
                            Adresregel
                            </td>
@@ -1418,8 +1406,8 @@ date: 11-10-2023
                         <td width="25%">- 
                            Land
                            </td>
-                        <td width="50%">Een code, opgenomen in Tabel 34, Landentabel, die het land (buiten Nederland) aangeeft
-                           alwaar de ingeschrevene verblijft. </td>
+                        <td width="50%">Een code, opgenomen in Tabel 34 Landentabel, die een land buiten Nederland aangeeft
+                           waar het adres gevonden kan worden.</td>
                         <td width="10%">
                            Land
                            </td>
@@ -1430,7 +1418,8 @@ date: 11-10-2023
                         <td width="25%">
                            Correspondentieadres
                            :</td>
-                        <td width="50%">Adres waarop de partij post van de gemeente wil ontvangen.</td>
+                        <td width="50%">Adres waarop de partij post van de gemeente wil ontvangen. Dit mag afwijken van voor
+                           de verstrekker eventueel in een basisregistratie bekende adressen.</td>
                         <td width="10%">
                            Correspondentieadres
                            </td>
@@ -1441,7 +1430,7 @@ date: 11-10-2023
                         <td width="25%">- 
                            NummeraanduidingID
                            </td>
-                        <td width="50%">Identificatie van het adres bij de Basisregistratie Adressen en Gebouwen.</td>
+                        <td width="50%">Identificatiecode van een adres in de Basisregistratie Adressen en Gebouwen (BAG).</td>
                         <td width="10%">
                            Identificatiecode
                            </td>
@@ -1452,7 +1441,8 @@ date: 11-10-2023
                         <td width="25%">- 
                            Adresregel 1
                            </td>
-                        <td width="50%">Eerste deel van het adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen.</td>
+                        <td width="50%">Eerste deel van een adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen
+                           (BAG).</td>
                         <td width="10%">
                            Adresregel
                            </td>
@@ -1463,7 +1453,8 @@ date: 11-10-2023
                         <td width="25%">- 
                            Adresregel 2
                            </td>
-                        <td width="50%">Tweede deel van het adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen.</td>
+                        <td width="50%">Tweede deel van een adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen
+                           (BAG).</td>
                         <td width="10%">
                            Adresregel
                            </td>
@@ -1474,7 +1465,8 @@ date: 11-10-2023
                         <td width="25%">- 
                            Adresregel 3
                            </td>
-                        <td width="50%">Derde van het adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen.</td>
+                        <td width="50%">Derde deel van een adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen
+                           (BAG).</td>
                         <td width="10%">
                            Adresregel
                            </td>
@@ -1485,8 +1477,8 @@ date: 11-10-2023
                         <td width="25%">- 
                            Land
                            </td>
-                        <td width="50%">Een code, opgenomen in Tabel 34, Landentabel, die het land (buiten Nederland) aangeeft
-                           alwaar de ingeschrevene verblijft. </td>
+                        <td width="50%">Een code, opgenomen in Tabel 34 Landentabel, die een land buiten Nederland aangeeft
+                           waar het adres gevonden kan worden.</td>
                         <td width="10%">
                            Land
                            </td>
@@ -1524,7 +1516,7 @@ date: 11-10-2023
                            
                            [ 1 .. * ]
                            </td>
-                        <td width="50%">Partij-identificator die een partij had.</td>
+                        <td width="50%">Partij-identificator die hoorde bij een partij.</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
@@ -1560,6 +1552,21 @@ date: 11-10-2023
                      <tr>
                         <td width="5%">&nbsp;</td>
                         <td width="45%">
+                           Partij
+                           [ 0 .. 1 ]
+                           
+                           gaf voorkeur aan voor contact via
+                           
+                           
+                           Digitaal adres
+                           
+                           [ 0 .. 1 ]
+                           </td>
+                        <td width="50%">Digitaal adres waarop een partij bij voorkeur door de gemeente benaderd wordt.</td>
+                     </tr>
+                     <tr>
+                        <td width="5%">&nbsp;</td>
+                        <td width="45%">
                            
                            Betrokkene bij klantcontact
                            
@@ -1578,13 +1585,13 @@ date: 11-10-2023
                
                </div>
             
-            <div><a class="anchor" name="global_class_Model_Inhoudsobject"></a><h2> Inhoudsobject</h2>
+            <div><a class="anchor" name="global_class_Model_Bijlage"></a><h2> Bijlage</h2>
                
                <table>
                   <tbody>
                      <tr>
                         <td width="30%"><b>Naam</b></td>
-                        <td width="70%">Inhoudsobject</td>
+                        <td width="70%">Bijlage</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst</b></td>
@@ -1592,7 +1599,9 @@ date: 11-10-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">Object dat tijdens een klantcontact werd gemaakt of overgebracht.</td>
+                        <td width="70%">Verwijzing naar een object dat tijdens een klantcontact ontstond of werd overgebracht
+                           en dat daarom beschouwd kan worden als bijlage bij het klantcontact.<br>Enkele mogelijke verwijzingen zijn opgenomen in dit model. Dit is geen uitputtende
+                           lijst. </td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -1635,7 +1644,7 @@ date: 11-10-2023
                         <td width="25%">
                            ID
                            </td>
-                        <td width="50%">Unieke (technische) identificatiecode van het inhoudsdeel.</td>
+                        <td width="50%">Unieke (technische) identificatiecode van het inhoudsobject.</td>
                         <td width="10%">
                            Identificatiecode
                            </td>
@@ -1719,7 +1728,7 @@ date: 11-10-2023
                      <tr>
                         <td width="5%">&nbsp;</td>
                         <td width="45%">
-                           Inhoudsobject
+                           Bijlage
                            [ 0 .. 1 ]
                            
                            was
@@ -1729,12 +1738,12 @@ date: 11-10-2023
                            
                            [ 0 .. 1 ]
                            </td>
-                        <td width="50%">Informatieobject dat een inhoudsobject was.</td>
+                        <td width="50%">Informatieobject dat een bijlage was.</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
                         <td width="45%">
-                           Inhoudsobject
+                           Bijlage
                            [ 0 .. 1 ]
                            
                            was
@@ -1744,22 +1753,7 @@ date: 11-10-2023
                            
                            [ 0 .. 1 ]
                            </td>
-                        <td width="50%">Overig object dat een inhoudsobject was.</td>
-                     </tr>
-                     <tr>
-                        <td width="5%">&nbsp;</td>
-                        <td width="45%">
-                           Inhoudsobject
-                           [ 0 .. 1 ]
-                           
-                           was
-                           
-                           
-                           Ander Object
-                           
-                           [ 0 .. 1 ]
-                           </td>
-                        <td width="50%">Ander object dat een inhoudsobject was.</td>
+                        <td width="50%">Overig object dat een bijlage was.</td>
                      </tr>
                      <tr>
                         <td width="5%">&nbsp;</td>
@@ -1771,15 +1765,33 @@ date: 11-10-2023
                            
                            omvatte
                            
-                           Inhoudsobject
+                           Bijlage
                            [ 0 .. * ]
                            </td>
-                        <td width="50%">Inhoudsobject dat onderdeel was van de inhoud van het klantcontact.</td>
+                        <td width="50%">Bijlage die (een deel van) de inhoud van het klantcontact beschrijft.</td>
                      </tr>
                   </tbody>
                </table>
                
                
+               
+               <table>
+                  <tbody>
+                     <tr>
+                        <td width="30%"><b>Toelichting</b></td>
+                     </tr>
+                  </tbody>
+               </table>
+               <table>
+                  <tbody>
+                     <tr>
+                        <td width="5%">&nbsp;</td>
+                        <td width="95%">Het kan voorkomen dat een klantcontact geen inhoudstekst heeft, maar alleen bijlagen.
+                           Denk hierbij aan een email met bijlagen. De email zelf wordt als bijlage vastgelegd
+                           en de bijlagen van de email worden ook vastgelegd bij het klantcontact.</td>
+                     </tr>
+                  </tbody>
+               </table>
                </div>
             
             <div><a class="anchor" name="global_class_Model_Contactpersoon"></a><h2> Contactpersoon</h2>
@@ -1840,7 +1852,9 @@ date: 11-10-2023
                         <td width="25%">
                            Contactnaam
                            :</td>
-                        <td width="50%">De naam die de contactpersoon wil gebruiken tijdens contact met de gemeente.</td>
+                        <td width="50%">Naam die een contactpersoon wil gebruiken tijdens contact met de gemeente. Deze mag
+                           afwijken van de eventueel in de Basisregistratie Personen (BRP) bekende naam van de
+                           contactpersoon.</td>
                         <td width="10%">
                            Contactnaam
                            </td>
@@ -1851,8 +1865,8 @@ date: 11-10-2023
                         <td width="25%">- 
                            Voorletters
                            </td>
-                        <td width="50%">Een afkorting van de voornamen. Meestal de beginletter, maar in sommige gevallen de
-                           beginletter gecombineerd met de tweede letter van een voornaam.</td>
+                        <td width="50%">Afkorting van een voornaam of voornamen. Meestal de beginletter, maar in sommige gevallen
+                           de beginletter gecombineerd met de tweede letter van een voornaam.</td>
                         <td width="10%">
                            Voorletters
                            </td>
@@ -1863,7 +1877,7 @@ date: 11-10-2023
                         <td width="25%">- 
                            Voornaam
                            </td>
-                        <td width="50%">De voornaam die de persoon wil gebruiken tijdens communicatie met de gemeente.</td>
+                        <td width="50%">Voornaam of voornamen.</td>
                         <td width="10%">
                            Naam-kort
                            </td>
@@ -1874,8 +1888,7 @@ date: 11-10-2023
                         <td width="25%">- 
                            Voorvoegsel achternaam
                            </td>
-                        <td width="50%">Een eventueel voorvoegsel dat hoort bij de achternaam die de persoon wil gebruiken
-                           tijdens communicatie met de gemeente.</td>
+                        <td width="50%">Eventueel voorvoegsel dat hoort bij de achternaam.</td>
                         <td width="10%">
                            Voorvoegsel
                            </td>
@@ -1886,9 +1899,9 @@ date: 11-10-2023
                         <td width="25%">- 
                            Achternaam
                            </td>
-                        <td width="50%">Een achternaam die de persoon wil gebruiken tijdens communicatie met de gemeente.</td>
+                        <td width="50%">Achternaam (of combinatie van gelachtsnamen).</td>
                         <td width="10%">
-                           Omschrijving-lang
+                           Naam-lang
                            </td>
                         <td width="10%">0 .. 1</td>
                      </tr>
@@ -2000,7 +2013,8 @@ date: 11-10-2023
                         <td width="25%">
                            Contactnaam
                            :</td>
-                        <td width="50%">De naam die de persoon wil gebruiken tijdens contact met de gemeente.</td>
+                        <td width="50%">Naam die een persoon wil gebruiken tijdens contact met de gemeente. Deze mag afwijken
+                           van de eventueel in de Basisregistratie Personen (BRP) bekende naam van de persoon.</td>
                         <td width="10%">
                            Contactnaam
                            </td>
@@ -2011,8 +2025,8 @@ date: 11-10-2023
                         <td width="25%">- 
                            Voorletters
                            </td>
-                        <td width="50%">Een afkorting van de voornamen. Meestal de beginletter, maar in sommige gevallen de
-                           beginletter gecombineerd met de tweede letter van een voornaam.</td>
+                        <td width="50%">Afkorting van een voornaam of voornamen. Meestal de beginletter, maar in sommige gevallen
+                           de beginletter gecombineerd met de tweede letter van een voornaam.</td>
                         <td width="10%">
                            Voorletters
                            </td>
@@ -2023,7 +2037,7 @@ date: 11-10-2023
                         <td width="25%">- 
                            Voornaam
                            </td>
-                        <td width="50%">De voornaam die de persoon wil gebruiken tijdens communicatie met de gemeente.</td>
+                        <td width="50%">Voornaam of voornamen.</td>
                         <td width="10%">
                            Naam-kort
                            </td>
@@ -2034,8 +2048,7 @@ date: 11-10-2023
                         <td width="25%">- 
                            Voorvoegsel achternaam
                            </td>
-                        <td width="50%">Een eventueel voorvoegsel dat hoort bij de achternaam die de persoon wil gebruiken
-                           tijdens communicatie met de gemeente.</td>
+                        <td width="50%">Eventueel voorvoegsel dat hoort bij de achternaam.</td>
                         <td width="10%">
                            Voorvoegsel
                            </td>
@@ -2046,9 +2059,9 @@ date: 11-10-2023
                         <td width="25%">- 
                            Achternaam
                            </td>
-                        <td width="50%">Een achternaam die de persoon wil gebruiken tijdens communicatie met de gemeente.</td>
+                        <td width="50%">Achternaam (of combinatie van gelachtsnamen).</td>
                         <td width="10%">
-                           Omschrijving-lang
+                           Naam-lang
                            </td>
                         <td width="10%">0 .. 1</td>
                      </tr>
@@ -2100,142 +2113,6 @@ date: 11-10-2023
                         <td width="5%">&nbsp;</td>
                         <td width="95%">Kan zowel een ingeschreven, niet ingeschreven alsook een natuurlijk persoon zijn waarvan
                            niet bekend is of die ingeschreven is of niet.</td>
-                     </tr>
-                  </tbody>
-               </table>
-               </div>
-            
-            <div><a class="anchor" name="global_class_Model_AnderObject"></a><h2> Ander Object</h2>
-               
-               <table>
-                  <tbody>
-                     <tr>
-                        <td width="30%"><b>Naam</b></td>
-                        <td width="70%">Ander Object</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">Klantinteracties</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">Object, geregistreerd in een ander register</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Herkomst definitie</b></td>
-                        <td width="70%">Klantinteracties</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">16-02-2023</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Unieke aanduiding</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Indicatie abstract object</b></td>
-                        <td width="70%">Nee</td>
-                     </tr>
-                  </tbody>
-               </table>
-               
-               <table>
-                  <tbody>
-                     <tr>
-                        <td width="30%"><b>Overzicht attributen</b></td>
-                     </tr>
-                  </tbody>
-               </table>
-               
-               <table>
-                  <tbody>
-                     <tr>
-                        <td><i></i></td>
-                        <td><i>Attribuutnaam</i></td>
-                        <td><i>Definitie</i></td>
-                        <td><i>Formaat</i></td>
-                        <td><i>Card</i></td>
-                     </tr>
-                     <tr>
-                        <td width="5%">&nbsp;</td>
-                        <td width="25%">
-                           ID
-                           </td>
-                        <td width="50%">Unieke identificatie van het Ander Object</td>
-                        <td width="10%">
-                           Identificatiecode
-                           </td>
-                        <td width="10%">1</td>
-                     </tr>
-                  </tbody>
-               </table>
-               
-               
-               <table>
-                  <tbody>
-                     <tr>
-                        <td width="30%"><b>Overzicht relaties</b></td>
-                     </tr>
-                  </tbody>
-               </table>
-               
-               <table>
-                  <tbody>
-                     <tr>
-                        <td><i></i></td>
-                        <td><i>Relatienaam met kardinaliteiten</i></td>
-                        <td><i>Definitie</i></td>
-                     </tr>
-                     <tr>
-                        <td width="5%">&nbsp;</td>
-                        <td width="45%">
-                           
-                           Onderwerpobject
-                           
-                           [ 0 .. * ]
-                           
-                           was
-                           
-                           Ander Object
-                           [ 0 .. 1 ]
-                           </td>
-                        <td width="50%">Ander object dat een onderwerpobject was.</td>
-                     </tr>
-                     <tr>
-                        <td width="5%">&nbsp;</td>
-                        <td width="45%">
-                           
-                           Inhoudsobject
-                           
-                           [ 0 .. 1 ]
-                           
-                           was
-                           
-                           Ander Object
-                           [ 0 .. 1 ]
-                           </td>
-                        <td width="50%">Ander object dat een inhoudsobject was.</td>
-                     </tr>
-                  </tbody>
-               </table>
-               
-               
-               
-               <table>
-                  <tbody>
-                     <tr>
-                        <td width="30%"><b>Toelichting</b></td>
-                     </tr>
-                  </tbody>
-               </table>
-               <table>
-                  <tbody>
-                     <tr>
-                        <td width="5%">&nbsp;</td>
-                        <td width="95%">Dit kan ieder object zijn dat we bij het maken van dit model niet in beeld hebben.
-                           Deze constructie stelt providers in staat om bijvoorbeeld productverzoeken of ander
-                           digitale objecten als onderwerp te koppelen. </td>
                      </tr>
                   </tbody>
                </table>
@@ -2389,6 +2266,21 @@ date: 11-10-2023
                            </td>
                         <td width="50%">Digitaal adres dat een partij verstrekte voor gebruik bij toekomstig contact met de
                            gemeente.</td>
+                     </tr>
+                     <tr>
+                        <td width="5%">&nbsp;</td>
+                        <td width="45%">
+                           
+                           Partij
+                           
+                           [ 0 .. 1 ]
+                           
+                           gaf voorkeur aan voor contact via
+                           
+                           Digitaal adres
+                           [ 0 .. 1 ]
+                           </td>
+                        <td width="50%">Digitaal adres waarop een partij bij voorkeur door de gemeente benaderd wordt.</td>
                      </tr>
                   </tbody>
                </table>
@@ -2738,7 +2630,7 @@ date: 11-10-2023
                         <td width="5%">&nbsp;</td>
                         <td width="45%">
                            
-                           Inhoudsobject
+                           Bijlage
                            
                            [ 0 .. 1 ]
                            
@@ -2747,7 +2639,7 @@ date: 11-10-2023
                            Informatieobject
                            [ 0 .. 1 ]
                            </td>
-                        <td width="50%">Informatieobject dat een inhoudsobject was.</td>
+                        <td width="50%">Informatieobject dat een bijlage was.</td>
                      </tr>
                   </tbody>
                </table>
@@ -3043,17 +2935,6 @@ date: 11-10-2023
                      <tr>
                         <td width="5%">&nbsp;</td>
                         <td width="25%">
-                           Faxnummer
-                           </td>
-                        <td width="50%">Faxnummer waaronder de organisatorische eenheid in de regel bereikbaar is.</td>
-                        <td width="10%">
-                           Telefoonnummer
-                           </td>
-                        <td width="10%">0 .. 1</td>
-                     </tr>
-                     <tr>
-                        <td width="5%">&nbsp;</td>
-                        <td width="25%">
                            Telefoonnummer
                            </td>
                         <td width="50%">Telefoonnummer waaronder de organisatorische eenheid in de regel bereikbaar is.</td>
@@ -3193,7 +3074,7 @@ date: 11-10-2023
                            tot de taak en de gevraagde handeling, bijdraagt aan het kunnen afhandelen van de
                            taak.</td>
                         <td width="10%">
-                           Toelichting
+                           Tekst
                            </td>
                         <td width="10%">0 .. 1</td>
                      </tr>
@@ -3370,7 +3251,7 @@ date: 11-10-2023
                            </td>
                         <td width="50%">Toelichtende tekst op de aan de klant gevraagde uit te voeren handeling. </td>
                         <td width="10%">
-                           Toelichting
+                           Tekst
                            </td>
                         <td width="10%">0 .. 1</td>
                      </tr>
@@ -3587,7 +3468,7 @@ date: 11-10-2023
                         <td width="25%">
                            ID
                            </td>
-                        <td width="50%">Unieke (technische) identificatiecode van de externe identificatie</td>
+                        <td width="50%">Unieke (technische) identificatiecode van de partij-identificator.</td>
                         <td width="10%">
                            Identificatiecode
                            </td>
@@ -3693,7 +3574,7 @@ date: 11-10-2023
                            Partij-identificator
                            [ 1 .. * ]
                            </td>
-                        <td width="50%">Partij-identificator die een partij had.</td>
+                        <td width="50%">Partij-identificator die hoorde bij een partij.</td>
                      </tr>
                   </tbody>
                </table>
@@ -3718,8 +3599,8 @@ date: 11-10-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">Een lijst van talen die personen en organisaties kunnen gebruiken bij contact met
-                           de gemeente en vice versa.</td>
+                        <td width="70%">Lijst van talen die personen en organisaties kunnen gebruiken bij contact met de gemeente
+                           en vice versa.</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -3804,7 +3685,7 @@ date: 11-10-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">Een lijst van alle huidige en voormalige landen met hun codes, namen en geldigheidstermijnen.</td>
+                        <td width="70%">Lijst van alle huidige en voormalige landen met hun codes, namen en geldigheidsinformatie.</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -3900,8 +3781,8 @@ date: 11-10-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">Een lijst van kanalen die personen en organisaties kunnen gebruiken voor contact met
-                           de gemeente en vice versa.</td>
+                        <td width="70%">Lijst van kanalen die personen en organisaties kunnen gebruiken voor contact met de
+                           gemeente en vice versa.</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -3986,8 +3867,8 @@ date: 11-10-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">Een lijst van typen objecten waarnaar vanuit het klantinteractiesregister relaties
-                           kunnen worden gelegd.</td>
+                        <td width="70%">Lijst van typen objecten waarnaar vanuit het klantinteractiesregister relaties kunnen
+                           worden gelegd.</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -4072,8 +3953,8 @@ date: 11-10-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">Een lijst van registers buiten het domein van klantinteracties waarin objecten zijn
-                           geregistreerd die gerelateerd zijn met objecen in het klantinteractiesdomein.</td>
+                        <td width="70%">Lijst van registers buiten het domein van klantinteracties waarin objecten zijn geregistreerd
+                           die binnen het domein van klantinteracties een rol (kunnen) spelen.</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -4159,7 +4040,7 @@ date: 11-10-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">Een lijst van soorten digitale adressen die personen en organisaties kunnen gebruiken
+                        <td width="70%">Lijst van soorten digitale adressen die personen en organisaties kunnen gebruiken
                            voor contact met de gemeente en vice versa.</td>
                      </tr>
                      <tr>
@@ -4245,8 +4126,8 @@ date: 11-10-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">Een lijst van identificatiesystemen en de (bron)registers die de authentieke vindplaats
-                           vormen van volgens deze systemen geregistreerde gegevens.</td>
+                        <td width="70%">Lijst van identificatiesystemen en de registers waarin volgens deze systemen te identificeren
+                           objecten gevonden kunnen worden.</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -4284,7 +4165,7 @@ date: 11-10-2023
                            <td width="25%">
                               Code
                               </td>
-                           <td width="50%">De code, behorende bij het soort extern id.</td>
+                           <td width="50%">De code, behorende bij het soort object ID.</td>
                            <td width="10%">
                               CharacterString
                               </td>
@@ -4293,20 +4174,9 @@ date: 11-10-2023
                         <tr>
                            <td width="5%">&nbsp;</td>
                            <td width="25%">
-                              Extern register
-                              </td>
-                           <td width="50%">Het register dat geraadpleegd kan worden m.b.v. de externe identificatiecode. </td>
-                           <td width="10%">
-                              Extern register
-                              </td>
-                           <td width="10%">1</td>
-                        </tr>
-                        <tr>
-                           <td width="5%">&nbsp;</td>
-                           <td width="25%">
                               Naam
                               </td>
-                           <td width="50%">De naam van het soort extern id.</td>
+                           <td width="50%">Naam van het soort object ID.</td>
                            <td width="10%">
                               CharacterString
                               </td>
@@ -4317,21 +4187,9 @@ date: 11-10-2023
                            <td width="25%">
                               Indicatie actief
                               </td>
-                           <td width="50%">Indicatie die aangeeft of het soort extern ID nog actief is en toegekend mag worden
-                              aan een etern ID van een Partij. </td>
+                           <td width="50%">Indicatie die aangeeft of het soort object ID actief is. </td>
                            <td width="10%">
                               Indicatie Ja Nee
-                              </td>
-                           <td width="10%">1</td>
-                        </tr>
-                        <tr>
-                           <td width="5%">&nbsp;</td>
-                           <td width="25%">
-                              Soort partij
-                              </td>
-                           <td width="50%">Indicatie voor welk soort partij dit soort extern ID toepasbaar is. </td>
-                           <td width="10%">
-                              Soort partij
                               </td>
                            <td width="10%">1</td>
                         </tr>
@@ -4451,8 +4309,7 @@ date: 11-10-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">Het adres waar een persoon of een organisatie bezoekers ontvangt.<br><br>Het bezoekadres is weliswaar geen BRP-object, maar voor de definitie van adres-componenten
-                           </td>
+                        <td width="70%">Adres waaraan een bezoek gebracht kan worden.</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -4487,7 +4344,7 @@ date: 11-10-2023
                         <td width="25%">- 
                            NummeraanduidingID
                            </td>
-                        <td width="50%">Identificatie van het adres bij de Basisregistratie Adressen en Gebouwen.</td>
+                        <td width="50%">Identificatiecode van een adres in de Basisregistratie Adressen en Gebouwen (BAG).</td>
                         <td width="10%">
                            Identificatiecode
                            </td>
@@ -4498,7 +4355,8 @@ date: 11-10-2023
                         <td width="25%">- 
                            Adresregel 1
                            </td>
-                        <td width="50%">Eerste deel van het adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen.</td>
+                        <td width="50%">Eerste deel van een adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen
+                           (BAG).</td>
                         <td width="10%">
                            Adresregel
                            </td>
@@ -4509,7 +4367,8 @@ date: 11-10-2023
                         <td width="25%">- 
                            Adresregel 2
                            </td>
-                        <td width="50%">Tweede deel van het adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen.</td>
+                        <td width="50%">Tweede deel van een adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen
+                           (BAG).</td>
                         <td width="10%">
                            Adresregel
                            </td>
@@ -4520,7 +4379,8 @@ date: 11-10-2023
                         <td width="25%">- 
                            Adresregel 3
                            </td>
-                        <td width="50%">Derde deel van het adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen.</td>
+                        <td width="50%">Derde deel van een adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen
+                           (BAG).</td>
                         <td width="10%">
                            Adresregel
                            </td>
@@ -4531,8 +4391,8 @@ date: 11-10-2023
                         <td width="25%">- 
                            Land
                            </td>
-                        <td width="50%">Een code, opgenomen in Tabel 34, Landentabel, die het land (buiten Nederland) aangeeft
-                           alwaar de ingeschrevene verblijft. </td>
+                        <td width="50%">Een code, opgenomen in Tabel 34 Landentabel, die een land buiten Nederland aangeeft
+                           waar het adres gevonden kan worden.</td>
                         <td width="10%">
                            Land
                            </td>
@@ -4557,7 +4417,7 @@ date: 11-10-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">De naam die de persoon opgaf voor gebruik bij contact met de gemeente.  </td>
+                        <td width="70%">Naam voor gebruik tijdens contact met de gemeente.</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -4592,8 +4452,8 @@ date: 11-10-2023
                         <td width="25%">- 
                            Voorletters
                            </td>
-                        <td width="50%">Een afkorting van de voornamen. Meestal de beginletter, maar in sommige gevallen de
-                           beginletter gecombineerd met de tweede letter van een voornaam.</td>
+                        <td width="50%">Afkorting van een voornaam of voornamen. Meestal de beginletter, maar in sommige gevallen
+                           de beginletter gecombineerd met de tweede letter van een voornaam.</td>
                         <td width="10%">
                            Voorletters
                            </td>
@@ -4604,7 +4464,7 @@ date: 11-10-2023
                         <td width="25%">- 
                            Voornaam
                            </td>
-                        <td width="50%">De voornaam die de persoon wil gebruiken tijdens communicatie met de gemeente.</td>
+                        <td width="50%">Voornaam of voornamen.</td>
                         <td width="10%">
                            Naam-kort
                            </td>
@@ -4615,8 +4475,7 @@ date: 11-10-2023
                         <td width="25%">- 
                            Voorvoegsel achternaam
                            </td>
-                        <td width="50%">Een eventueel voorvoegsel dat hoort bij de achternaam die de persoon wil gebruiken
-                           tijdens communicatie met de gemeente.</td>
+                        <td width="50%">Eventueel voorvoegsel dat hoort bij de achternaam.</td>
                         <td width="10%">
                            Voorvoegsel
                            </td>
@@ -4627,9 +4486,9 @@ date: 11-10-2023
                         <td width="25%">- 
                            Achternaam
                            </td>
-                        <td width="50%">Een achternaam die de persoon wil gebruiken tijdens communicatie met de gemeente.</td>
+                        <td width="50%">Achternaam (of combinatie van gelachtsnamen).</td>
                         <td width="10%">
-                           Omschrijving-lang
+                           Naam-lang
                            </td>
                         <td width="10%">0 .. 1</td>
                      </tr>
@@ -4652,8 +4511,7 @@ date: 11-10-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">Het adres waarnaar de persoon of de organisatie de voor hen bestemde correspondentie
-                           laat verzenden. </td>
+                        <td width="70%">Adres waarop post ontvangen kan worden.</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -4688,7 +4546,7 @@ date: 11-10-2023
                         <td width="25%">- 
                            NummeraanduidingID
                            </td>
-                        <td width="50%">Identificatie van het adres bij de Basisregistratie Adressen en Gebouwen.</td>
+                        <td width="50%">Identificatiecode van een adres in de Basisregistratie Adressen en Gebouwen (BAG).</td>
                         <td width="10%">
                            Identificatiecode
                            </td>
@@ -4699,7 +4557,8 @@ date: 11-10-2023
                         <td width="25%">- 
                            Adresregel 1
                            </td>
-                        <td width="50%">Eerste deel van het adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen.</td>
+                        <td width="50%">Eerste deel van een adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen
+                           (BAG).</td>
                         <td width="10%">
                            Adresregel
                            </td>
@@ -4710,7 +4569,8 @@ date: 11-10-2023
                         <td width="25%">- 
                            Adresregel 2
                            </td>
-                        <td width="50%">Tweede deel van het adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen.</td>
+                        <td width="50%">Tweede deel van een adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen
+                           (BAG).</td>
                         <td width="10%">
                            Adresregel
                            </td>
@@ -4721,7 +4581,8 @@ date: 11-10-2023
                         <td width="25%">- 
                            Adresregel 3
                            </td>
-                        <td width="50%">Derde van het adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen.</td>
+                        <td width="50%">Derde deel van een adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen
+                           (BAG).</td>
                         <td width="10%">
                            Adresregel
                            </td>
@@ -4732,8 +4593,8 @@ date: 11-10-2023
                         <td width="25%">- 
                            Land
                            </td>
-                        <td width="50%">Een code, opgenomen in Tabel 34, Landentabel, die het land (buiten Nederland) aangeeft
-                           alwaar de ingeschrevene verblijft. </td>
+                        <td width="50%">Een code, opgenomen in Tabel 34 Landentabel, die een land buiten Nederland aangeeft
+                           waar het adres gevonden kan worden.</td>
                         <td width="10%">
                            Land
                            </td>
@@ -4761,7 +4622,7 @@ date: 11-10-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%"> </td>
+                        <td width="70%">Lang (200 karakters) tekstveld voor een omschrijving.</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -4808,189 +4669,6 @@ date: 11-10-2023
                   </div>
                </div>
             
-            <div><a class="anchor" name="global_class_Model_Huisletter"></a><h2>Primitief datatype Huisletter</h2>
-               
-               <table>
-                  <tbody>
-                     <tr>
-                        <td width="30%"><b>Naam</b></td>
-                        <td width="70%">Huisletter</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">GBA</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Definitie</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Herkomst definitie</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">16-02-2023</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Lengte</b></td>
-                        <td width="70%">1</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Patroon</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                  </tbody>
-               </table>
-               
-               <div>
-                  <h3>Overzicht relaties </h3>
-                  
-                  <table>
-                     <tbody>
-                        <tr>
-                           <td><i></i></td>
-                           <td><i>Supertype relaties</i></td>
-                           <td><i>Supertype definitie</i></td>
-                        </tr>
-                        <tr>
-                           <td width="30%"><b>
-                                 Huisletter
-                                 is specialisatie van
-                                 
-                                 CharacterString
-                                 
-                                 </b></td>
-                           <td width="70%"></td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  </div>
-               </div>
-            
-            <div><a class="anchor" name="global_class_Model_Antwoordnummer"></a><h2>Primitief datatype Antwoordnummer</h2>
-               
-               <table>
-                  <tbody>
-                     <tr>
-                        <td width="30%"><b>Naam</b></td>
-                        <td width="70%">Antwoordnummer</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">VNG</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Definitie</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Herkomst definitie</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">16-02-2023</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Lengte</b></td>
-                        <td width="70%">5</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Patroon</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                  </tbody>
-               </table>
-               
-               <div>
-                  <h3>Overzicht relaties </h3>
-                  
-                  <table>
-                     <tbody>
-                        <tr>
-                           <td><i></i></td>
-                           <td><i>Supertype relaties</i></td>
-                           <td><i>Supertype definitie</i></td>
-                        </tr>
-                        <tr>
-                           <td width="30%"><b>
-                                 Antwoordnummer
-                                 is specialisatie van
-                                 
-                                 Integer
-                                 
-                                 </b></td>
-                           <td width="70%"></td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  </div>
-               </div>
-            
-            <div><a class="anchor" name="global_class_Model_Postcode"></a><h2>Primitief datatype Postcode</h2>
-               
-               <table>
-                  <tbody>
-                     <tr>
-                        <td width="30%"><b>Naam</b></td>
-                        <td width="70%">Postcode</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">GBA</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Definitie</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Herkomst definitie</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">16-02-2023</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Lengte</b></td>
-                        <td width="70%">7</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Patroon</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                  </tbody>
-               </table>
-               
-               <div>
-                  <h3>Overzicht relaties </h3>
-                  
-                  <table>
-                     <tbody>
-                        <tr>
-                           <td><i></i></td>
-                           <td><i>Supertype relaties</i></td>
-                           <td><i>Supertype definitie</i></td>
-                        </tr>
-                        <tr>
-                           <td width="30%"><b>
-                                 Postcode
-                                 is specialisatie van
-                                 
-                                 CharacterString
-                                 
-                                 </b></td>
-                           <td width="70%"></td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  </div>
-               </div>
-            
             <div><a class="anchor" name="global_class_Model_Tekst"></a><h2>Primitief datatype Tekst</h2>
                
                <table>
@@ -5005,7 +4683,7 @@ date: 11-10-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%"> </td>
+                        <td width="70%">Vrij tekstveld voor lange (1000 karakters) teksten.</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -5066,7 +4744,7 @@ date: 11-10-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%"> </td>
+                        <td width="70%">Kort (80 karakters) tekstveld voor een omschrijving.</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -5127,7 +4805,11 @@ date: 11-10-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%"> </td>
+                        <td width="70%">Aanduiding van datum en tijd volgens de NEN-ISO 8601:2019-standaard.<br>Een datum en tijd wordt genoteerd van het meest naar het minst significante onderdeel
+                           met een 'T' tussen de datum en tijd. De standaard geeft tijden weer in het 24-uurs
+                           systeem. Optioneel kan een tijdzone worden gespecificeerd. Een voorbeeld:<br>2022-02-21T13:47:16+01:00<br>representeert 21 februari 2022, 's middags om 1 uur 47 minuten en 16 seconden, in
+                           een tijdzone die 1 uur vooruitloopt op UTC (vroeger vaak 'Greenwich Mean Time' of
+                           'GMT' genoemd).</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -5174,67 +4856,6 @@ date: 11-10-2023
                   </div>
                </div>
             
-            <div><a class="anchor" name="global_class_Model_Postbusnummer"></a><h2>Primitief datatype Postbusnummer</h2>
-               
-               <table>
-                  <tbody>
-                     <tr>
-                        <td width="30%"><b>Naam</b></td>
-                        <td width="70%">Postbusnummer</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">VNG</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Definitie</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Herkomst definitie</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">16-02-2023</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Lengte</b></td>
-                        <td width="70%">5</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Patroon</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                  </tbody>
-               </table>
-               
-               <div>
-                  <h3>Overzicht relaties </h3>
-                  
-                  <table>
-                     <tbody>
-                        <tr>
-                           <td><i></i></td>
-                           <td><i>Supertype relaties</i></td>
-                           <td><i>Supertype definitie</i></td>
-                        </tr>
-                        <tr>
-                           <td width="30%"><b>
-                                 Postbusnummer
-                                 is specialisatie van
-                                 
-                                 Integer
-                                 
-                                 </b></td>
-                           <td width="70%"></td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  </div>
-               </div>
-            
             <div><a class="anchor" name="global_class_Model_Voorvoegsel"></a><h2>Primitief datatype Voorvoegsel</h2>
                
                <table>
@@ -5249,7 +4870,7 @@ date: 11-10-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%"> </td>
+                        <td width="70%">Eventueel voorvoegsel dat hoort bij een achternaam.</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -5310,7 +4931,7 @@ date: 11-10-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">Een generieke regel om adresgegevens in op te nemen.</td>
+                        <td width="70%">Deel van een adres dat gewoonlijk op &amp;#233;&amp;#233;n (adres)regel wordt geschreven.</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -5357,67 +4978,6 @@ date: 11-10-2023
                   </div>
                </div>
             
-            <div><a class="anchor" name="global_class_Model_Straat"></a><h2>Primitief datatype Straat</h2>
-               
-               <table>
-                  <tbody>
-                     <tr>
-                        <td width="30%"><b>Naam</b></td>
-                        <td width="70%">Straat</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">VNG</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Definitie</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Herkomst definitie</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">16-02-2023</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Lengte</b></td>
-                        <td width="70%">80</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Patroon</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                  </tbody>
-               </table>
-               
-               <div>
-                  <h3>Overzicht relaties </h3>
-                  
-                  <table>
-                     <tbody>
-                        <tr>
-                           <td><i></i></td>
-                           <td><i>Supertype relaties</i></td>
-                           <td><i>Supertype definitie</i></td>
-                        </tr>
-                        <tr>
-                           <td width="30%"><b>
-                                 Straat
-                                 is specialisatie van
-                                 
-                                 CharacterString
-                                 
-                                 </b></td>
-                           <td width="70%"></td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  </div>
-               </div>
-            
             <div><a class="anchor" name="global_class_Model_Telefoonnummer"></a><h2>Primitief datatype Telefoonnummer</h2>
                
                <table>
@@ -5432,7 +4992,7 @@ date: 11-10-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%"> </td>
+                        <td width="70%">Uniek nummer dat een aansluiting op het publieke telefoonnet identificeert.</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -5479,67 +5039,6 @@ date: 11-10-2023
                   </div>
                </div>
             
-            <div><a class="anchor" name="global_class_Model_Huisnummer"></a><h2>Primitief datatype Huisnummer</h2>
-               
-               <table>
-                  <tbody>
-                     <tr>
-                        <td width="30%"><b>Naam</b></td>
-                        <td width="70%">Huisnummer</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">GBA</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Definitie</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Herkomst definitie</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">16-02-2023</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Lengte</b></td>
-                        <td width="70%">5</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Patroon</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                  </tbody>
-               </table>
-               
-               <div>
-                  <h3>Overzicht relaties </h3>
-                  
-                  <table>
-                     <tbody>
-                        <tr>
-                           <td><i></i></td>
-                           <td><i>Supertype relaties</i></td>
-                           <td><i>Supertype definitie</i></td>
-                        </tr>
-                        <tr>
-                           <td width="30%"><b>
-                                 Huisnummer
-                                 is specialisatie van
-                                 
-                                 Integer
-                                 
-                                 </b></td>
-                           <td width="70%"></td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  </div>
-               </div>
-            
             <div><a class="anchor" name="global_class_Model_Emailadres"></a><h2>Primitief datatype E-mailadres</h2>
                
                <table>
@@ -5554,7 +5053,8 @@ date: 11-10-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">Een geldig email-adres, maximaal 20 karakters lang en minimaal een @ en een . opgenomen.</td>
+                        <td width="70%">E-mail-adres, maximaal 254 karakters lang. (conform https://www.rfc-editor.org/errata/eid1690
+                           ) Omvat minimaal een '@' en een '.'.</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -5566,7 +5066,7 @@ date: 11-10-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Lengte</b></td>
-                        <td width="70%">200</td>
+                        <td width="70%">254</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Patroon</b></td>
@@ -5601,128 +5101,6 @@ date: 11-10-2023
                   </div>
                </div>
             
-            <div><a class="anchor" name="global_class_Model_Partijnummer"></a><h2>Primitief datatype Partijnummer</h2>
-               
-               <table>
-                  <tbody>
-                     <tr>
-                        <td width="30%"><b>Naam</b></td>
-                        <td width="70%">Partijnummer</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">VNG</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Definitie</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Herkomst definitie</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">16-02-2023</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Lengte</b></td>
-                        <td width="70%">10</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Patroon</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                  </tbody>
-               </table>
-               
-               <div>
-                  <h3>Overzicht relaties </h3>
-                  
-                  <table>
-                     <tbody>
-                        <tr>
-                           <td><i></i></td>
-                           <td><i>Supertype relaties</i></td>
-                           <td><i>Supertype definitie</i></td>
-                        </tr>
-                        <tr>
-                           <td width="30%"><b>
-                                 Partijnummer
-                                 is specialisatie van
-                                 
-                                 Integer
-                                 
-                                 </b></td>
-                           <td width="70%"></td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  </div>
-               </div>
-            
-            <div><a class="anchor" name="global_class_Model_AantalJaar"></a><h2>Primitief datatype Aantal Jaar</h2>
-               
-               <table>
-                  <tbody>
-                     <tr>
-                        <td width="30%"><b>Naam</b></td>
-                        <td width="70%">Aantal Jaar</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">VNG</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Definitie</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Herkomst definitie</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">16-02-2023</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Lengte</b></td>
-                        <td width="70%">Groter of gelijk aan nul.</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Patroon</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                  </tbody>
-               </table>
-               
-               <div>
-                  <h3>Overzicht relaties </h3>
-                  
-                  <table>
-                     <tbody>
-                        <tr>
-                           <td><i></i></td>
-                           <td><i>Supertype relaties</i></td>
-                           <td><i>Supertype definitie</i></td>
-                        </tr>
-                        <tr>
-                           <td width="30%"><b>
-                                 Aantal Jaar
-                                 is specialisatie van
-                                 
-                                 Integer
-                                 
-                                 </b></td>
-                           <td width="70%"></td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  </div>
-               </div>
-            
             <div><a class="anchor" name="global_class_Model_Voorletters"></a><h2>Primitief datatype Voorletters</h2>
                
                <table>
@@ -5737,7 +5115,8 @@ date: 11-10-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%"> </td>
+                        <td width="70%">Afkorting van een voornaam of voornamen. Meestal de beginletter, maar in sommige gevallen
+                           de beginletter gecombineerd met de tweede letter van een voornaam.</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -5757,6 +5136,31 @@ date: 11-10-2023
                      </tr>
                   </tbody>
                </table>
+               
+               <div>
+                  <h3>Overzicht relaties </h3>
+                  
+                  <table>
+                     <tbody>
+                        <tr>
+                           <td><i></i></td>
+                           <td><i>Supertype relaties</i></td>
+                           <td><i>Supertype definitie</i></td>
+                        </tr>
+                        <tr>
+                           <td width="30%"><b>
+                                 Voorletters
+                                 is specialisatie van
+                                 
+                                 CharacterString
+                                 
+                                 </b></td>
+                           <td width="70%"></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  
+                  </div>
                </div>
             
             <div><a class="anchor" name="global_class_Model_Identificerendnummer"></a><h2>Primitief datatype Identificerend nummer</h2>
@@ -5773,7 +5177,8 @@ date: 11-10-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%"> </td>
+                        <td width="70%">Leesbaar en mondeling of schriftelijk overdraagbaar uniek identificerend nummer voor
+                           gebruik tijdens interacties tussen mensen.</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -5820,189 +5225,6 @@ date: 11-10-2023
                   </div>
                </div>
             
-            <div><a class="anchor" name="global_class_Model_Toelichting"></a><h2>Primitief datatype Toelichting</h2>
-               
-               <table>
-                  <tbody>
-                     <tr>
-                        <td width="30%"><b>Naam</b></td>
-                        <td width="70%">Toelichting</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">VNG</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">Toelichtende tekst</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Herkomst definitie</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">16-02-2023</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Lengte</b></td>
-                        <td width="70%">400</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Patroon</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                  </tbody>
-               </table>
-               
-               <div>
-                  <h3>Overzicht relaties </h3>
-                  
-                  <table>
-                     <tbody>
-                        <tr>
-                           <td><i></i></td>
-                           <td><i>Supertype relaties</i></td>
-                           <td><i>Supertype definitie</i></td>
-                        </tr>
-                        <tr>
-                           <td width="30%"><b>
-                                 Toelichting
-                                 is specialisatie van
-                                 
-                                 CharacterString
-                                 
-                                 </b></td>
-                           <td width="70%"></td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  </div>
-               </div>
-            
-            <div><a class="anchor" name="global_class_Model_Huisnummertoevoeging"></a><h2>Primitief datatype Huisnummertoevoeging</h2>
-               
-               <table>
-                  <tbody>
-                     <tr>
-                        <td width="30%"><b>Naam</b></td>
-                        <td width="70%">Huisnummertoevoeging</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">GBA</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Definitie</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Herkomst definitie</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">16-02-2023</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Lengte</b></td>
-                        <td width="70%">4</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Patroon</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                  </tbody>
-               </table>
-               
-               <div>
-                  <h3>Overzicht relaties </h3>
-                  
-                  <table>
-                     <tbody>
-                        <tr>
-                           <td><i></i></td>
-                           <td><i>Supertype relaties</i></td>
-                           <td><i>Supertype definitie</i></td>
-                        </tr>
-                        <tr>
-                           <td width="30%"><b>
-                                 Huisnummertoevoeging
-                                 is specialisatie van
-                                 
-                                 CharacterString
-                                 
-                                 </b></td>
-                           <td width="70%"></td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  </div>
-               </div>
-            
-            <div><a class="anchor" name="global_class_Model_Woonplaats"></a><h2>Primitief datatype Woonplaats</h2>
-               
-               <table>
-                  <tbody>
-                     <tr>
-                        <td width="30%"><b>Naam</b></td>
-                        <td width="70%">Woonplaats</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Herkomst</b></td>
-                        <td width="70%">GBA</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Definitie</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Herkomst definitie</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Datum opname</b></td>
-                        <td width="70%">16-02-2023</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Lengte</b></td>
-                        <td width="70%">80</td>
-                     </tr>
-                     <tr>
-                        <td width="30%"><b>Patroon</b></td>
-                        <td width="70%"> </td>
-                     </tr>
-                  </tbody>
-               </table>
-               
-               <div>
-                  <h3>Overzicht relaties </h3>
-                  
-                  <table>
-                     <tbody>
-                        <tr>
-                           <td><i></i></td>
-                           <td><i>Supertype relaties</i></td>
-                           <td><i>Supertype definitie</i></td>
-                        </tr>
-                        <tr>
-                           <td width="30%"><b>
-                                 Woonplaats
-                                 is specialisatie van
-                                 
-                                 CharacterString
-                                 
-                                 </b></td>
-                           <td width="70%"></td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  </div>
-               </div>
-            
             <div><a class="anchor" name="global_class_Model_Naamkort"></a><h2>Primitief datatype Naam-kort</h2>
                
                <table>
@@ -6017,7 +5239,7 @@ date: 11-10-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%"> </td>
+                        <td width="70%">Kort (80 karakters) tekstveld voor een naam.</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -6078,7 +5300,7 @@ date: 11-10-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%"> </td>
+                        <td width="70%">Lang (200 karakters) tekstveld voor een naam. </td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -6139,7 +5361,8 @@ date: 11-10-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%"> </td>
+                        <td width="70%">Unieke technische identificerende code, primair bedoeld voor gebruik bij interacties
+                           tussen IT-systemen.</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -6200,7 +5423,8 @@ date: 11-10-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%">Datum</td>
+                        <td width="70%">Aanduiding van datum volgens de NEN-ISO 8601:2019-standaard.<br>Een datum wordt genoteerd van het meest naar het minst significante onderdeel. Een
+                           voorbeeld:<br>2022-02-21<br>representeert 21 februari 2022.</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -6261,7 +5485,7 @@ date: 11-10-2023
                      </tr>
                      <tr>
                         <td width="30%"><b>Definitie</b></td>
-                        <td width="70%"> </td>
+                        <td width="70%">Indicatie voor een waarde "Ja" of een waarde "Nee".</td>
                      </tr>
                      <tr>
                         <td width="30%"><b>Herkomst definitie</b></td>
@@ -6314,48 +5538,24 @@ date: 11-10-2023
             <table>
                <tbody>
                   <tr>
-                     <td width="30%"><b><a class="anchor" name="global_class_Model_Initiator"></a>Initiator</b></td>
-                     <td width="70%">De waarden van de partij die het contact heeft geinitieerd.</td>
-                  </tr>
-                  <tr>
                      <td width="30%"><b><a class="anchor" name="global_class_Model_Indicatiejaneeonbekend"></a>Indicatie ja nee onbekend</b></td>
-                     <td width="70%">Deze enumeratie is toegevoegd omdat de ingevulde waarde geen boolean kan zijn (waar
-                        of niet waar). De gewenste waarden zijn ja,nee of onbekend.  </td>
+                     <td width="70%">Enumeratie met waarden 'ja', 'nee' en 'onbekend'.</td>
                   </tr>
                   <tr>
                      <td width="30%"><b><a class="anchor" name="global_class_Model_Taakstatus"></a>Taakstatus</b></td>
-                     <td width="70%">De waarden van de typering van de voortgang van afhandeling van een VERZOEK.</td>
-                  </tr>
-                  <tr>
-                     <td width="30%"><b><a class="anchor" name="global_class_Model_Soortbezoekadres"></a>Soort bezoekadres</b></td>
-                     <td width="70%">Typering waarmee aangegeven of het bezoekadres een binnenlands - of een buitenlands
-                        adres is. </td>
-                  </tr>
-                  <tr>
-                     <td width="30%"><b><a class="anchor" name="global_class_Model_Aanduidingbijhuisnummer"></a>Aanduiding bij huisnummer</b></td>
-                     <td width="70%">De aanduiding die gebruikt wordt voor bijvoorbeeld een ligplaats of een standplaats
-                        die geen eigen nummeraanduiding heeft. </td>
-                  </tr>
-                  <tr>
-                     <td width="30%"><b><a class="anchor" name="global_class_Model_Soortcorrespondentieadres"></a>Soort correspondentieadres</b></td>
-                     <td width="70%">Typering waarmee aangegeven wordt of het correspondentieadres een binnenlands - of
-                        een buitenlands adres is danwel een postbusnummer of een antwoordnummer. </td>
+                     <td width="70%">Status die aangeeft in hoeverre de taak is afgehandeld.</td>
                   </tr>
                   <tr>
                      <td width="30%"><b><a class="anchor" name="global_class_Model_Soortactor"></a>Soort actor</b></td>
-                     <td width="70%">De typering van de actor.   </td>
-                  </tr>
-                  <tr>
-                     <td width="30%"><b><a class="anchor" name="global_class_Model_Soortinhoudsdeel"></a>Soort inhoudsdeel</b></td>
-                     <td width="70%">De typering van het inhoudsdeel.   </td>
+                     <td width="70%">Typering van de actor.   </td>
                   </tr>
                   <tr>
                      <td width="30%"><b><a class="anchor" name="global_class_Model_Soortpartij"></a>Soort partij</b></td>
-                     <td width="70%">De typering van de partij.</td>
+                     <td width="70%">Typering van de partij.</td>
                   </tr>
                   <tr>
                      <td width="30%"><b><a class="anchor" name="global_class_Model_Klantcontactrol"></a>Klantcontactrol</b></td>
-                     <td width="70%">De typering van de rol van de persoon of organisatie in het klantcontact.   </td>
+                     <td width="70%">Typering van de rol die een betrokkene tijdens het klantcontact vervulde. </td>
                   </tr>
                </tbody>
             </table>
@@ -6699,68 +5899,6 @@ date: 11-10-2023
                                  uit de inhoud van een bijlage waarin bijvoorbeeld een gescande brief of in een elektronisch
                                  formulier ontvangen gegevens zijn opgenomen, blijft het attribuut 'inhoud' bij registratie
                                  van een klantcontact leeg.<br>                              </td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </div>
-                  
-                  <div><a class="anchor" name="detail_attribute_Model_Klantcontact_Initiator"></a><h4>Attribuutsoort details Initiator</h4>
-                     
-                     <table>
-                        <tbody>
-                           <tr>
-                              <td width="30%"><b>Naam</b></td>
-                              <td width="70%">Initiator</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Degene die het klantcontact initieerde.</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">16-02-2023</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Mogelijk geen waarde</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
-                              <td width="70%">1</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie authentiek</b></td>
-                              <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Lengte</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Formaat</b></td>
-                              <td width="70%">
-                                 Initiator
-                                 </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Patroon</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie afleidbaar</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Waarde afleidbaar</b></td>
-                              <td width="70%">Nee</td>
                            </tr>
                         </tbody>
                      </table>
@@ -7165,7 +6303,7 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Onderwerpobject dat tijdens een klantcontact aan de orde kwam.</td>
+                              <td width="70%">Onderwerpobject dat tijdens een klantcontact aan de orde was.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -7219,7 +6357,7 @@ date: 11-10-2023
                            <tr>
                               <td width="30%"><b>Gerelateerd objecttype</b></td>
                               <td width="70%">
-                                 Inhoudsobject
+                                 Bijlage
                                  </td>
                            </tr>
                            <tr>
@@ -7228,7 +6366,7 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Inhoudsobject dat onderdeel was van de inhoud van het klantcontact.</td>
+                              <td width="70%">Bijlage die (een deel van) de inhoud van het klantcontact beschrijft.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -7460,6 +6598,68 @@ date: 11-10-2023
                      </table>
                      </div>
                   
+                  <div><a class="anchor" name="detail_attribute_Model_Betrokkenebijklantcontact_Initiator"></a><h4>Attribuutsoort details Initiator</h4>
+                     
+                     <table>
+                        <tbody>
+                           <tr>
+                              <td width="30%"><b>Naam</b></td>
+                              <td width="70%">Initiator</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Herkomst</b></td>
+                              <td width="70%">Klantinteracties</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Definitie</b></td>
+                              <td width="70%">Degene die het klantcontact initieerde.</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Herkomst definitie</b></td>
+                              <td width="70%">Klantinteracties</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Datum opname</b></td>
+                              <td width="70%">16-02-2023</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Mogelijk geen waarde</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
+                              <td width="70%">1</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie authentiek</b></td>
+                              <td width="70%">Authentiek</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Lengte</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Formaat</b></td>
+                              <td width="70%">
+                                 Indicatie Ja Nee
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Patroon</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie afleidbaar</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Waarde afleidbaar</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     </div>
+                  
                   <div><a class="anchor" name="detail_attribute_Model_Betrokkenebijklantcontact_Contactnaam"></a><h4>Attribuutsoort Contactnaam van gegevensgroeptype Betrokkene bij klantcontact</h4>
                      
                      <table>
@@ -7475,7 +6675,9 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Naam die de betrokkene bij klantcontact bij opvolging van dat contact wil gebruiken.</td>
+                              <td width="70%">Naam die de betrokkene bij klantcontact tijdens vervolghandelingen naar aanleiding
+                                 van dat contact wil gebruiken. Deze mag afwijken van eventueel in de Basisregistratie
+                                 Personen (BRP) bekende naam van de betrokkene.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -7547,8 +6749,8 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Een afkorting van de voornamen. Meestal de beginletter, maar in sommige gevallen de
-                                    beginletter gecombineerd met de tweede letter van een voornaam.</td>
+                                 <td width="70%">Afkorting van een voornaam of voornamen. Meestal de beginletter, maar in sommige gevallen
+                                    de beginletter gecombineerd met de tweede letter van een voornaam.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -7610,7 +6812,7 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">De voornaam die de persoon wil gebruiken tijdens communicatie met de gemeente.</td>
+                                 <td width="70%">Voornaam of voornamen.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -7672,8 +6874,7 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Een eventueel voorvoegsel dat hoort bij de achternaam die de persoon wil gebruiken
-                                    tijdens communicatie met de gemeente.</td>
+                                 <td width="70%">Eventueel voorvoegsel dat hoort bij de achternaam.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -7735,7 +6936,7 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Een achternaam die de persoon wil gebruiken tijdens communicatie met de gemeente.</td>
+                                 <td width="70%">Achternaam (of combinatie van gelachtsnamen).</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -7764,7 +6965,7 @@ date: 11-10-2023
                               <tr>
                                  <td width="30%"><b>Formaat</b></td>
                                  <td width="70%">
-                                    Omschrijving-lang
+                                    Naam-lang
                                     </td>
                               </tr>
                               <tr>
@@ -7800,7 +7001,8 @@ date: 11-10-2023
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
                               <td width="70%">Adres waarop de betrokkene bij klantcontact naar aanleiding van dat contact te versturen
-                                 post wil ontvangen.</td>
+                                 post wil ontvangen. Dit mag afwijken van voor de verstrekker eventueel in een basisregistratie
+                                 bekende adressen.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -7872,7 +7074,7 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Identificatie van het adres bij de Basisregistratie Adressen en Gebouwen.</td>
+                                 <td width="70%">Identificatiecode van een adres in de Basisregistratie Adressen en Gebouwen (BAG).</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -7934,7 +7136,8 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Eerste deel van het adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen.</td>
+                                 <td width="70%">Eerste deel van een adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen
+                                    (BAG).</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -7996,7 +7199,8 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Tweede deel van het adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen.</td>
+                                 <td width="70%">Tweede deel van een adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen
+                                    (BAG).</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -8058,7 +7262,8 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Derde van het adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen.</td>
+                                 <td width="70%">Derde deel van een adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen
+                                    (BAG).</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -8120,8 +7325,8 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Een code, opgenomen in Tabel 34, Landentabel, die het land (buiten Nederland) aangeeft
-                                    alwaar de ingeschrevene verblijft. </td>
+                                 <td width="70%">Een code, opgenomen in Tabel 34 Landentabel, die een land buiten Nederland aangeeft
+                                    waar het adres gevonden kan worden.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -8186,7 +7391,8 @@ date: 11-10-2023
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
                               <td width="70%">Adres waarop de betrokkene bij klantcontact in naar aanleiding van dat contact af
-                                 te leggen bezoeken wil ontvangen.</td>
+                                 te leggen bezoeken wil ontvangen. Dit mag afwijken van voor de verstrekker eventueel
+                                 in een basisregistratie bekende adressen.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -8258,7 +7464,7 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Identificatie van het adres bij de Basisregistratie Adressen en Gebouwen.</td>
+                                 <td width="70%">Identificatiecode van een adres in de Basisregistratie Adressen en Gebouwen (BAG).</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -8320,7 +7526,8 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Eerste deel van het adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen.</td>
+                                 <td width="70%">Eerste deel van een adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen
+                                    (BAG).</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -8382,7 +7589,8 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Tweede deel van het adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen.</td>
+                                 <td width="70%">Tweede deel van een adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen
+                                    (BAG).</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -8444,7 +7652,8 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Derde deel van het adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen.</td>
+                                 <td width="70%">Derde deel van een adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen
+                                    (BAG).</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -8506,8 +7715,8 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Een code, opgenomen in Tabel 34, Landentabel, die het land (buiten Nederland) aangeeft
-                                    alwaar de ingeschrevene verblijft. </td>
+                                 <td width="70%">Een code, opgenomen in Tabel 34 Landentabel, die een land buiten Nederland aangeeft
+                                    waar het adres gevonden kan worden.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -8830,7 +8039,7 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Unieke (technische) identificatiecode van het onderwerpdeel.</td>
+                              <td width="70%">Unieke (technische) identificatiecode van het onderwerpobject.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -9275,69 +8484,6 @@ date: 11-10-2023
                            <tr>
                               <td width="30%"><b>Gerelateerd objecttype</b></td>
                               <td width="70%">
-                                 Ander Object
-                                 </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Ander object dat een onderwerpobject was.</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">08-07-2023</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Mogelijk geen waarde</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
-                              <td width="70%">0 .. 1</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie authentiek</b></td>
-                              <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     
-                     </div>
-                  
-                  <div><a class="anchor" name="detail_association_Model_Onderwerpobject_was"></a><h4>Relatiesoort details was</h4>
-                     
-                     <table>
-                        <tbody>
-                           <tr>
-                              <td width="30%"><b>Naam</b></td>
-                              <td width="70%">was</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Gerelateerd objecttype</b></td>
-                              <td width="70%">
                                  Klanttaak
                                  </td>
                            </tr>
@@ -9562,7 +8708,7 @@ date: 11-10-2023
                            <tr>
                               <td width="30%"><b>Formaat</b></td>
                               <td width="70%">
-                                 Partijnummer
+                                 Identificerend nummer
                                  </td>
                            </tr>
                            <tr>
@@ -9596,7 +8742,8 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Adres waarop de partij door gemeente bezocht wil worden.</td>
+                              <td width="70%">Adres waarop de partij door gemeente bezocht wil worden. Dit mag afwijken van voor
+                                 de verstrekker eventueel in een basisregistratie bekende adressen.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -9668,7 +8815,7 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Identificatie van het adres bij de Basisregistratie Adressen en Gebouwen.</td>
+                                 <td width="70%">Identificatiecode van een adres in de Basisregistratie Adressen en Gebouwen (BAG).</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -9730,7 +8877,8 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Eerste deel van het adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen.</td>
+                                 <td width="70%">Eerste deel van een adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen
+                                    (BAG).</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -9792,7 +8940,8 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Tweede deel van het adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen.</td>
+                                 <td width="70%">Tweede deel van een adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen
+                                    (BAG).</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -9854,7 +9003,8 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Derde deel van het adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen.</td>
+                                 <td width="70%">Derde deel van een adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen
+                                    (BAG).</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -9916,8 +9066,8 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Een code, opgenomen in Tabel 34, Landentabel, die het land (buiten Nederland) aangeeft
-                                    alwaar de ingeschrevene verblijft. </td>
+                                 <td width="70%">Een code, opgenomen in Tabel 34 Landentabel, die een land buiten Nederland aangeeft
+                                    waar het adres gevonden kan worden.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -9981,7 +9131,8 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Adres waarop de partij post van de gemeente wil ontvangen.</td>
+                              <td width="70%">Adres waarop de partij post van de gemeente wil ontvangen. Dit mag afwijken van voor
+                                 de verstrekker eventueel in een basisregistratie bekende adressen.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -10053,7 +9204,7 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Identificatie van het adres bij de Basisregistratie Adressen en Gebouwen.</td>
+                                 <td width="70%">Identificatiecode van een adres in de Basisregistratie Adressen en Gebouwen (BAG).</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -10115,7 +9266,8 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Eerste deel van het adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen.</td>
+                                 <td width="70%">Eerste deel van een adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen
+                                    (BAG).</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -10177,7 +9329,8 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Tweede deel van het adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen.</td>
+                                 <td width="70%">Tweede deel van een adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen
+                                    (BAG).</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -10239,7 +9392,8 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Derde van het adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen.</td>
+                                 <td width="70%">Derde deel van een adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen
+                                    (BAG).</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -10301,8 +9455,8 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Een code, opgenomen in Tabel 34, Landentabel, die het land (buiten Nederland) aangeeft
-                                    alwaar de ingeschrevene verblijft. </td>
+                                 <td width="70%">Een code, opgenomen in Tabel 34 Landentabel, die een land buiten Nederland aangeeft
+                                    waar het adres gevonden kan worden.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -10539,68 +9693,6 @@ date: 11-10-2023
                      </table>
                      </div>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_Partij_Voorkeurskanaal"></a><h4>Attribuutsoort details Voorkeurskanaal</h4>
-                     
-                     <table>
-                        <tbody>
-                           <tr>
-                              <td width="30%"><b>Naam</b></td>
-                              <td width="70%">Voorkeurskanaal</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Kanaal dat de partij bij voorkeur gebruikt voor contact met de gemeente.</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">16-02-2023</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Mogelijk geen waarde</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
-                              <td width="70%">0 .. 1</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie authentiek</b></td>
-                              <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Lengte</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Formaat</b></td>
-                              <td width="70%">
-                                 Kanaal
-                                 </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Patroon</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie afleidbaar</b></td>
-                              <td width="70%">Zie package</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Waarde afleidbaar</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </div>
-                  
                   <div><a class="anchor" name="detail_attribute_Model_Partij_Voorkeurstaal"></a><h4>Attribuutsoort details Voorkeurstaal</h4>
                      
                      <table>
@@ -10746,7 +9838,7 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Partij-identificator die een partij had.</td>
+                              <td width="70%">Partij-identificator die hoorde bij een partij.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -10915,11 +10007,74 @@ date: 11-10-2023
                      </table>
                      
                      </div>
+                  
+                  <div><a class="anchor" name="detail_association_Model_Partij_gafvoorkeuraanvoorcontactvia"></a><h4>Relatiesoort details gaf voorkeur aan voor contact via</h4>
+                     
+                     <table>
+                        <tbody>
+                           <tr>
+                              <td width="30%"><b>Naam</b></td>
+                              <td width="70%">gaf voorkeur aan voor contact via</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Gerelateerd objecttype</b></td>
+                              <td width="70%">
+                                 Digitaal adres
+                                 </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Herkomst</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Definitie</b></td>
+                              <td width="70%">Digitaal adres waarop een partij bij voorkeur door de gemeente benaderd wordt.</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Herkomst definitie</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Datum opname</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Mogelijk geen waarde</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie formele historie</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie in onderzoek</b></td>
+                              <td width="70%">Nee</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
+                              <td width="70%">0 .. 1</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Indicatie authentiek</b></td>
+                              <td width="70%">Authentiek</td>
+                           </tr>
+                           <tr>
+                              <td width="30%"><b>Regels</b></td>
+                              <td width="70%"> </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     
+                     </div>
                   </div>
                
-               <div><a class="anchor" name="detail_class_Model_Inhoudsobject"></a><h3> Inhoudsobject</h3>
+               <div><a class="anchor" name="detail_class_Model_Bijlage"></a><h3> Bijlage</h3>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_Inhoudsobject_ID"></a><h4>Attribuutsoort details ID</h4>
+                  <div><a class="anchor" name="detail_attribute_Model_Bijlage_ID"></a><h4>Attribuutsoort details ID</h4>
                      
                      <table>
                         <tbody>
@@ -10933,7 +10088,7 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Unieke (technische) identificatiecode van het inhoudsdeel.</td>
+                              <td width="70%">Unieke (technische) identificatiecode van het inhoudsobject.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -10981,7 +10136,7 @@ date: 11-10-2023
                      </table>
                      </div>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_Inhoudsobject_Objectidentificator"></a><h4>Attribuutsoort Objectidentificator van gegevensgroeptype Inhoudsobject</h4>
+                  <div><a class="anchor" name="detail_attribute_Model_Bijlage_Objectidentificator"></a><h4>Attribuutsoort Objectidentificator van gegevensgroeptype Bijlage</h4>
                      
                      <table>
                         <tbody>
@@ -11304,7 +10459,7 @@ date: 11-10-2023
                         </div>
                      </div>
                   
-                  <div><a class="anchor" name="detail_association_Model_Inhoudsobject_was"></a><h4>Relatiesoort details was</h4>
+                  <div><a class="anchor" name="detail_association_Model_Bijlage_was"></a><h4>Relatiesoort details was</h4>
                      
                      <table>
                         <tbody>
@@ -11324,7 +10479,7 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Informatieobject dat een inhoudsobject was.</td>
+                              <td width="70%">Informatieobject dat een bijlage was.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -11367,7 +10522,7 @@ date: 11-10-2023
                      
                      </div>
                   
-                  <div><a class="anchor" name="detail_association_Model_Inhoudsobject_was"></a><h4>Relatiesoort details was</h4>
+                  <div><a class="anchor" name="detail_association_Model_Bijlage_was"></a><h4>Relatiesoort details was</h4>
                      
                      <table>
                         <tbody>
@@ -11387,70 +10542,7 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Overig object dat een inhoudsobject was.</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">08-07-2023</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Mogelijk geen waarde</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie formele historie</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie in onderzoek</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Aanduiding strijdigheid/nietigheid</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
-                              <td width="70%">0 .. 1</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie authentiek</b></td>
-                              <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Regels</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     
-                     </div>
-                  
-                  <div><a class="anchor" name="detail_association_Model_Inhoudsobject_was"></a><h4>Relatiesoort details was</h4>
-                     
-                     <table>
-                        <tbody>
-                           <tr>
-                              <td width="30%"><b>Naam</b></td>
-                              <td width="70%">was</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Gerelateerd objecttype</b></td>
-                              <td width="70%">
-                                 Ander Object
-                                 </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">Klantinteracties</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Ander object dat een inhoudsobject was.</td>
+                              <td width="70%">Overig object dat een bijlage was.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -11511,7 +10603,9 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De naam die de contactpersoon wil gebruiken tijdens contact met de gemeente.</td>
+                              <td width="70%">Naam die een contactpersoon wil gebruiken tijdens contact met de gemeente. Deze mag
+                                 afwijken van de eventueel in de Basisregistratie Personen (BRP) bekende naam van de
+                                 contactpersoon.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -11583,8 +10677,8 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Een afkorting van de voornamen. Meestal de beginletter, maar in sommige gevallen de
-                                    beginletter gecombineerd met de tweede letter van een voornaam.</td>
+                                 <td width="70%">Afkorting van een voornaam of voornamen. Meestal de beginletter, maar in sommige gevallen
+                                    de beginletter gecombineerd met de tweede letter van een voornaam.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -11646,7 +10740,7 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">De voornaam die de persoon wil gebruiken tijdens communicatie met de gemeente.</td>
+                                 <td width="70%">Voornaam of voornamen.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -11708,8 +10802,7 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Een eventueel voorvoegsel dat hoort bij de achternaam die de persoon wil gebruiken
-                                    tijdens communicatie met de gemeente.</td>
+                                 <td width="70%">Eventueel voorvoegsel dat hoort bij de achternaam.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -11771,7 +10864,7 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Een achternaam die de persoon wil gebruiken tijdens communicatie met de gemeente.</td>
+                                 <td width="70%">Achternaam (of combinatie van gelachtsnamen).</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -11800,7 +10893,7 @@ date: 11-10-2023
                               <tr>
                                  <td width="30%"><b>Formaat</b></td>
                                  <td width="70%">
-                                    Omschrijving-lang
+                                    Naam-lang
                                     </td>
                               </tr>
                               <tr>
@@ -11901,7 +10994,8 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De naam die de persoon wil gebruiken tijdens contact met de gemeente.</td>
+                              <td width="70%">Naam die een persoon wil gebruiken tijdens contact met de gemeente. Deze mag afwijken
+                                 van de eventueel in de Basisregistratie Personen (BRP) bekende naam van de persoon.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -11973,8 +11067,8 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Een afkorting van de voornamen. Meestal de beginletter, maar in sommige gevallen de
-                                    beginletter gecombineerd met de tweede letter van een voornaam.</td>
+                                 <td width="70%">Afkorting van een voornaam of voornamen. Meestal de beginletter, maar in sommige gevallen
+                                    de beginletter gecombineerd met de tweede letter van een voornaam.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -12036,7 +11130,7 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">De voornaam die de persoon wil gebruiken tijdens communicatie met de gemeente.</td>
+                                 <td width="70%">Voornaam of voornamen.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -12098,8 +11192,7 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Een eventueel voorvoegsel dat hoort bij de achternaam die de persoon wil gebruiken
-                                    tijdens communicatie met de gemeente.</td>
+                                 <td width="70%">Eventueel voorvoegsel dat hoort bij de achternaam.</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -12161,7 +11254,7 @@ date: 11-10-2023
                               </tr>
                               <tr>
                                  <td width="30%"><b>Definitie</b></td>
-                                 <td width="70%">Een achternaam die de persoon wil gebruiken tijdens communicatie met de gemeente.</td>
+                                 <td width="70%">Achternaam (of combinatie van gelachtsnamen).</td>
                               </tr>
                               <tr>
                                  <td width="30%"><b>Herkomst definitie</b></td>
@@ -12190,7 +11283,7 @@ date: 11-10-2023
                               <tr>
                                  <td width="30%"><b>Formaat</b></td>
                                  <td width="70%">
-                                    Omschrijving-lang
+                                    Naam-lang
                                     </td>
                               </tr>
                               <tr>
@@ -12208,71 +11301,6 @@ date: 11-10-2023
                            </tbody>
                         </table>
                         </div>
-                     </div>
-                  </div>
-               
-               <div><a class="anchor" name="detail_class_Model_AnderObject"></a><h3> Ander Object</h3>
-                  
-                  <div><a class="anchor" name="detail_attribute_Model_AnderObject_ID"></a><h4>Attribuutsoort details ID</h4>
-                     
-                     <table>
-                        <tbody>
-                           <tr>
-                              <td width="30%"><b>Naam</b></td>
-                              <td width="70%">ID</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">VNG</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Unieke identificatie van het Ander Object</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">VNG</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">20230216</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Mogelijk geen waarde</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
-                              <td width="70%">1</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie authentiek</b></td>
-                              <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Lengte</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Formaat</b></td>
-                              <td width="70%">
-                                 Identificatiecode
-                                 </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Patroon</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie afleidbaar</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Waarde afleidbaar</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                        </tbody>
-                     </table>
                      </div>
                   </div>
                
@@ -13630,86 +12658,6 @@ date: 11-10-2023
                      </table>
                      </div>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_Organisatorischeeenheid_Faxnummer"></a><h4>Attribuutsoort details Faxnummer</h4>
-                     
-                     <table>
-                        <tbody>
-                           <tr>
-                              <td width="30%"><b>Naam</b></td>
-                              <td width="70%">Faxnummer</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%">RGBZ</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Faxnummer waaronder de organisatorische eenheid in de regel bereikbaar is.</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%">RGBZ</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">16-02-2023</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Mogelijk geen waarde</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
-                              <td width="70%">0 .. 1</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie authentiek</b></td>
-                              <td width="70%">Authentiek</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Lengte</b></td>
-                              <td width="70%">20</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Formaat</b></td>
-                              <td width="70%">
-                                 Telefoonnummer
-                                 </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Patroon</b></td>
-                              <td width="70%">alle bestaande alfanumerieke tekens.</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie afleidbaar</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Waarde afleidbaar</b></td>
-                              <td width="70%">Nee</td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     
-                     <table>
-                        <tbody>
-                           <tr>
-                              <td width="30%"><b>Toelichting</b></td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     <table>
-                        <tbody>
-                           <tr>
-                              <td width="5%">&nbsp;</td>
-                              <td width="95%"><br>                                 Het attribuutsoort is overeenkomstig het attribuutsoort
-                                 Subject.FAX-nummer.<br>                                 Het type is alfanumeriek zodat eventuele toevoegingen
-                                 als 'bgg', 'zak' of 'mobiel' kunnen worden verwerkt.<br>                              </td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </div>
-                  
                   <div><a class="anchor" name="detail_attribute_Model_Organisatorischeeenheid_Telefoonnummer"></a><h4>Attribuutsoort details Telefoonnummer</h4>
                      
                      <table>
@@ -14025,7 +12973,7 @@ date: 11-10-2023
                            <tr>
                               <td width="30%"><b>Formaat</b></td>
                               <td width="70%">
-                                 Toelichting
+                                 Tekst
                                  </td>
                            </tr>
                            <tr>
@@ -14528,7 +13476,7 @@ date: 11-10-2023
                            <tr>
                               <td width="30%"><b>Formaat</b></td>
                               <td width="70%">
-                                 Toelichting
+                                 Tekst
                                  </td>
                            </tr>
                            <tr>
@@ -14692,7 +13640,7 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Unieke (technische) identificatiecode van de externe identificatie</td>
+                              <td width="70%">Unieke (technische) identificatiecode van de partij-identificator.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -15399,7 +14347,7 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Identificatie van het adres bij de Basisregistratie Adressen en Gebouwen.</td>
+                              <td width="70%">Identificatiecode van een adres in de Basisregistratie Adressen en Gebouwen (BAG).</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -15461,7 +14409,8 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Eerste deel van het adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen.</td>
+                              <td width="70%">Eerste deel van een adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen
+                                 (BAG).</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -15523,7 +14472,8 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Tweede deel van het adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen.</td>
+                              <td width="70%">Tweede deel van een adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen
+                                 (BAG).</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -15585,7 +14535,8 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Derde deel van het adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen.</td>
+                              <td width="70%">Derde deel van een adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen
+                                 (BAG).</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -15647,8 +14598,8 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Een code, opgenomen in Tabel 34, Landentabel, die het land (buiten Nederland) aangeeft
-                                 alwaar de ingeschrevene verblijft. </td>
+                              <td width="70%">Een code, opgenomen in Tabel 34 Landentabel, die een land buiten Nederland aangeeft
+                                 waar het adres gevonden kan worden.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -15713,8 +14664,8 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Een afkorting van de voornamen. Meestal de beginletter, maar in sommige gevallen de
-                                 beginletter gecombineerd met de tweede letter van een voornaam.</td>
+                              <td width="70%">Afkorting van een voornaam of voornamen. Meestal de beginletter, maar in sommige gevallen
+                                 de beginletter gecombineerd met de tweede letter van een voornaam.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -15776,7 +14727,7 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De voornaam die de persoon wil gebruiken tijdens communicatie met de gemeente.</td>
+                              <td width="70%">Voornaam of voornamen.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -15838,8 +14789,7 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Een eventueel voorvoegsel dat hoort bij de achternaam die de persoon wil gebruiken
-                                 tijdens communicatie met de gemeente.</td>
+                              <td width="70%">Eventueel voorvoegsel dat hoort bij de achternaam.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -15901,7 +14851,7 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Een achternaam die de persoon wil gebruiken tijdens communicatie met de gemeente.</td>
+                              <td width="70%">Achternaam (of combinatie van gelachtsnamen).</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -15930,7 +14880,7 @@ date: 11-10-2023
                            <tr>
                               <td width="30%"><b>Formaat</b></td>
                               <td width="70%">
-                                 Omschrijving-lang
+                                 Naam-lang
                                  </td>
                            </tr>
                            <tr>
@@ -15966,7 +14916,7 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Identificatie van het adres bij de Basisregistratie Adressen en Gebouwen.</td>
+                              <td width="70%">Identificatiecode van een adres in de Basisregistratie Adressen en Gebouwen (BAG).</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -16028,7 +14978,8 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Eerste deel van het adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen.</td>
+                              <td width="70%">Eerste deel van een adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen
+                                 (BAG).</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -16090,7 +15041,8 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Tweede deel van het adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen.</td>
+                              <td width="70%">Tweede deel van een adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen
+                                 (BAG).</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -16152,7 +15104,8 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Derde van het adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen.</td>
+                              <td width="70%">Derde deel van een adres dat niet voorkomt in de Basisregistratie Adressen en Gebouwen
+                                 (BAG).</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -16214,8 +15167,8 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Een code, opgenomen in Tabel 34, Landentabel, die het land (buiten Nederland) aangeeft
-                                 alwaar de ingeschrevene verblijft. </td>
+                              <td width="70%">Een code, opgenomen in Tabel 34 Landentabel, die een land buiten Nederland aangeeft
+                                 waar het adres gevonden kan worden.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -17105,7 +16058,7 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De code, behorende bij het soort extern id.</td>
+                              <td width="70%">De code, behorende bij het soort object ID.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -17133,48 +16086,6 @@ date: 11-10-2023
                      </table>
                      </div>
                   
-                  <div><a class="anchor" name="detail_attribute_Model_SoortobjectID_Externregister"></a><h4>Referentie element Extern register</h4>
-                     
-                     <table>
-                        <tbody>
-                           <tr>
-                              <td width="30%"><b>Naam</b></td>
-                              <td width="70%">Extern register</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Het register dat geraadpleegd kan worden m.b.v. de externe identificatiecode. </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">1 november 2008</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
-                              <td width="70%">1</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Formaat</b></td>
-                              <td width="70%">
-                                 Extern register
-                                 </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Patroon</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </div>
-                  
                   <div><a class="anchor" name="detail_attribute_Model_SoortobjectID_Naam"></a><h4>Referentie element Naam</h4>
                      
                      <table>
@@ -17189,7 +16100,7 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">De naam van het soort extern id.</td>
+                              <td width="70%">Naam van het soort object ID.</td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -17231,8 +16142,7 @@ date: 11-10-2023
                            </tr>
                            <tr>
                               <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Indicatie die aangeeft of het soort extern ID nog actief is en toegekend mag worden
-                                 aan een etern ID van een Partij. </td>
+                              <td width="70%">Indicatie die aangeeft of het soort object ID actief is. </td>
                            </tr>
                            <tr>
                               <td width="30%"><b>Herkomst definitie</b></td>
@@ -17259,48 +16169,6 @@ date: 11-10-2023
                         </tbody>
                      </table>
                      </div>
-                  
-                  <div><a class="anchor" name="detail_attribute_Model_SoortobjectID_Soortpartij"></a><h4>Referentie element Soort partij</h4>
-                     
-                     <table>
-                        <tbody>
-                           <tr>
-                              <td width="30%"><b>Naam</b></td>
-                              <td width="70%">Soort partij</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Definitie</b></td>
-                              <td width="70%">Indicatie voor welk soort partij dit soort extern ID toepasbaar is. </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Herkomst definitie</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Datum opname</b></td>
-                              <td width="70%">08-06-2023</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Indicatie kardinaliteit</b></td>
-                              <td width="70%">1</td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Formaat</b></td>
-                              <td width="70%">
-                                 Soort partij
-                                 </td>
-                           </tr>
-                           <tr>
-                              <td width="30%"><b>Patroon</b></td>
-                              <td width="70%"> </td>
-                           </tr>
-                        </tbody>
-                     </table>
-                     </div>
                   </div>
                </div>
             
@@ -17308,45 +16176,12 @@ date: 11-10-2023
             <div>
                <h2>Enumeratie </h2>
                
-               <div><a class="anchor" name="detail_class_Model_Initiator"></a><h3>Enumeratie details Initiator</h3>
-                  
-                  <table>
-                     <tbody>
-                        <tr>
-                           <td width="100%">De waarden van de partij die het contact heeft geinitieerd.</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  <table>
-                     <tbody>
-                        <tr>
-                           <td><i>Waarde</i></td>
-                           <td><i>Omschrijving</i></td>
-                        </tr>
-                        <tr>
-                           <td width="40%"><b>gemeente</b></td>
-                           <td width="60%">De gemeente heeft het contact geinitieerd.</td>
-                        </tr>
-                        <tr>
-                           <td width="40%"><b>klant</b></td>
-                           <td width="60%">De klant heeft het contact geinitieerd.</td>
-                        </tr>
-                        <tr>
-                           <td width="40%"><b>vertegenwoordiger</b></td>
-                           <td width="60%"></td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
                <div><a class="anchor" name="detail_class_Model_Indicatiejaneeonbekend"></a><h3>Enumeratie details Indicatie ja nee onbekend</h3>
                   
                   <table>
                      <tbody>
                         <tr>
-                           <td width="100%">Deze enumeratie is toegevoegd omdat de ingevulde waarde geen boolean kan zijn (waar
-                              of niet waar). De gewenste waarden zijn ja,nee of onbekend.  </td>
+                           <td width="100%">Enumeratie met waarden 'ja', 'nee' en 'onbekend'.</td>
                         </tr>
                      </tbody>
                   </table>
@@ -17363,7 +16198,11 @@ date: 11-10-2023
                         </tr>
                         <tr>
                            <td width="40%"><b>ja</b></td>
-                           <td width="60%">Het verzoek is afgehandeld.</td>
+                           <td width="60%"></td>
+                        </tr>
+                        <tr>
+                           <td width="40%"><b>nee</b></td>
+                           <td width="60%"></td>
                         </tr>
                      </tbody>
                   </table>
@@ -17374,7 +16213,7 @@ date: 11-10-2023
                   <table>
                      <tbody>
                         <tr>
-                           <td width="100%">De waarden van de typering van de voortgang van afhandeling van een VERZOEK.</td>
+                           <td width="100%">Status die aangeeft in hoeverre de taak is afgehandeld.</td>
                         </tr>
                      </tbody>
                   </table>
@@ -17387,105 +16226,10 @@ date: 11-10-2023
                         </tr>
                         <tr>
                            <td width="40%"><b>te verwerken</b></td>
-                           <td width="60%">Het verzoek is afgehandeld.</td>
+                           <td width="60%"></td>
                         </tr>
                         <tr>
                            <td width="40%"><b>verwerkt</b></td>
-                           <td width="60%">Het verzoek id buiten behandeling gesteld.</td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div><a class="anchor" name="detail_class_Model_Soortbezoekadres"></a><h3>Enumeratie details Soort bezoekadres</h3>
-                  
-                  <table>
-                     <tbody>
-                        <tr>
-                           <td width="100%">Typering waarmee aangegeven of het bezoekadres een binnenlands - of een buitenlands
-                              adres is. </td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  <table>
-                     <tbody>
-                        <tr>
-                           <td><i>Waarde</i></td>
-                           <td><i>Omschrijving</i></td>
-                        </tr>
-                        <tr>
-                           <td width="40%"><b>binnenlands adres</b></td>
-                           <td width="60%"></td>
-                        </tr>
-                        <tr>
-                           <td width="40%"><b>buitenlands adres</b></td>
-                           <td width="60%"></td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div><a class="anchor" name="detail_class_Model_Aanduidingbijhuisnummer"></a><h3>Enumeratie details Aanduiding bij huisnummer</h3>
-                  
-                  <table>
-                     <tbody>
-                        <tr>
-                           <td width="100%">De aanduiding die gebruikt wordt voor bijvoorbeeld een ligplaats of een standplaats
-                              die geen eigen nummeraanduiding heeft. </td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  <table>
-                     <tbody>
-                        <tr>
-                           <td><i>Waarde</i></td>
-                           <td><i>Omschrijving</i></td>
-                        </tr>
-                        <tr>
-                           <td width="40%"><b>bij</b></td>
-                           <td width="60%"></td>
-                        </tr>
-                        <tr>
-                           <td width="40%"><b>tegenover</b></td>
-                           <td width="60%"></td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
-               <div><a class="anchor" name="detail_class_Model_Soortcorrespondentieadres"></a><h3>Enumeratie details Soort correspondentieadres</h3>
-                  
-                  <table>
-                     <tbody>
-                        <tr>
-                           <td width="100%">Typering waarmee aangegeven wordt of het correspondentieadres een binnenlands - of
-                              een buitenlands adres is danwel een postbusnummer of een antwoordnummer. </td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  <table>
-                     <tbody>
-                        <tr>
-                           <td><i>Waarde</i></td>
-                           <td><i>Omschrijving</i></td>
-                        </tr>
-                        <tr>
-                           <td width="40%"><b>postbusnummer</b></td>
-                           <td width="60%"></td>
-                        </tr>
-                        <tr>
-                           <td width="40%"><b>antwoordnummer</b></td>
-                           <td width="60%"></td>
-                        </tr>
-                        <tr>
-                           <td width="40%"><b>binnenlands adres</b></td>
-                           <td width="60%"></td>
-                        </tr>
-                        <tr>
-                           <td width="40%"><b>buitenlands adres</b></td>
                            <td width="60%"></td>
                         </tr>
                      </tbody>
@@ -17497,7 +16241,7 @@ date: 11-10-2023
                   <table>
                      <tbody>
                         <tr>
-                           <td width="100%">De typering van de actor.   </td>
+                           <td width="100%">Typering van de actor.   </td>
                         </tr>
                      </tbody>
                   </table>
@@ -17524,44 +16268,12 @@ date: 11-10-2023
                   </table>
                   </div>
                
-               <div><a class="anchor" name="detail_class_Model_Soortinhoudsdeel"></a><h3>Enumeratie details Soort inhoudsdeel</h3>
-                  
-                  <table>
-                     <tbody>
-                        <tr>
-                           <td width="100%">De typering van het inhoudsdeel.   </td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  
-                  <table>
-                     <tbody>
-                        <tr>
-                           <td><i>Waarde</i></td>
-                           <td><i>Omschrijving</i></td>
-                        </tr>
-                        <tr>
-                           <td width="40%"><b>informatieobject</b></td>
-                           <td width="60%"></td>
-                        </tr>
-                        <tr>
-                           <td width="40%"><b>overig object</b></td>
-                           <td width="60%"></td>
-                        </tr>
-                        <tr>
-                           <td width="40%"><b>tekst</b></td>
-                           <td width="60%"></td>
-                        </tr>
-                     </tbody>
-                  </table>
-                  </div>
-               
                <div><a class="anchor" name="detail_class_Model_Soortpartij"></a><h3>Enumeratie details Soort partij</h3>
                   
                   <table>
                      <tbody>
                         <tr>
-                           <td width="100%">De typering van de partij.</td>
+                           <td width="100%">Typering van de partij.</td>
                         </tr>
                      </tbody>
                   </table>
@@ -17593,7 +16305,7 @@ date: 11-10-2023
                   <table>
                      <tbody>
                         <tr>
-                           <td width="100%">De typering van de rol van de persoon of organisatie in het klantcontact.   </td>
+                           <td width="100%">Typering van de rol die een betrokkene tijdens het klantcontact vervulde. </td>
                         </tr>
                      </tbody>
                   </table>
@@ -17606,11 +16318,11 @@ date: 11-10-2023
                         </tr>
                         <tr>
                            <td width="40%"><b>vertegenwoordiger</b></td>
-                           <td width="60%"></td>
+                           <td width="60%">degene die tijdens contact met de gemeente iemand anders of een organisatie vertegenwoordigde.</td>
                         </tr>
                         <tr>
                            <td width="40%"><b>klant</b></td>
-                           <td width="60%"></td>
+                           <td width="60%">degene die geldt als uiteindelijk belanghebbende bij contact met de gemeente</td>
                         </tr>
                      </tbody>
                   </table>
