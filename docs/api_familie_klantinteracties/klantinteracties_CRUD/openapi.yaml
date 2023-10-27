@@ -6,9 +6,8 @@ servers:
   url: "https://www.voorbeeldgemeente.nl/api/klantinteracties_crud/v00"
 info:
   title: "Klantinteracties CRUD"
-  description: "Een API om een klantinteractiecomponent (KIC) te benaderen. <br/>\
-    \ Deze API-specificatie is de crud variant."
-  version: "00.00.06"
+  description: "Een API om een klantinteractiecomponent (KIC) te benaderen. Deze API-specificatie is de crud variant."
+  version: 0.0.1
   x-imvertor-generator-version: "2.0.0"
   x-yamlCompiler-stylesheets-version: "20230512"
   contact:
@@ -31,8 +30,7 @@ paths:
           $ref: "#/components/schemas/Identificator"
       - in: "query"
         name: "indicatieActief"
-        description: "Geeft aan of aan de actor nog betrokken mag worden bij nieuwe\
-          \ klantcontacten. Voor niet-actieve is dit niet toegestaan."
+        description: "Geeft aan of aan de actor nog betrokken mag worden bij nieuwe klantcontacten. Voor niet-actieve is dit niet toegestaan."
         required: false
         schema:
           type: "boolean"
@@ -51,18 +49,12 @@ paths:
           $ref: "#/components/schemas/SoortActor"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
             warning:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
-            X-Rate-Limit-Limit:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Limit"
-            X-Rate-Limit-Remaining:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Remaining"
-            X-Rate-Limit-Reset:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
           content:
             application/hal+json:
               schema:
@@ -101,7 +93,7 @@ paths:
               $ref: "#/components/schemas/Actor"
       responses:
         201:
-          description: "OK"
+          description: "Created"
           headers:
             Location:
               description: "URI van de nieuwe resource"
@@ -154,7 +146,7 @@ paths:
           $ref: "#/components/schemas/IdentificatiecodeReadOnly"
       responses:
         200:
-          description: "Verwijderactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -176,18 +168,12 @@ paths:
           $ref: "#/components/schemas/IdentificatiecodeReadOnly"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
             warning:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
-            X-Rate-Limit-Limit:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Limit"
-            X-Rate-Limit-Remaining:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Remaining"
-            X-Rate-Limit-Reset:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
           content:
             application/hal+json:
               schema:
@@ -235,7 +221,7 @@ paths:
               $ref: "#/components/schemas/Actor"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -299,18 +285,12 @@ paths:
           maxLength: 40
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
             warning:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
-            X-Rate-Limit-Limit:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Limit"
-            X-Rate-Limit-Remaining:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Remaining"
-            X-Rate-Limit-Reset:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
           content:
             application/hal+json:
               schema:
@@ -350,7 +330,7 @@ paths:
               $ref: "#/components/schemas/ActorKlantcontact"
       responses:
         201:
-          description: "OK"
+          description: "Created"
           headers:
             Location:
               description: "URI van de nieuwe resource"
@@ -404,7 +384,7 @@ paths:
           $ref: "#/components/schemas/Identificatiecode"
       responses:
         200:
-          description: "Verwijderactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -427,18 +407,12 @@ paths:
           $ref: "#/components/schemas/Identificatiecode"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
             warning:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
-            X-Rate-Limit-Limit:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Limit"
-            X-Rate-Limit-Remaining:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Remaining"
-            X-Rate-Limit-Reset:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
           content:
             application/hal+json:
               schema:
@@ -487,7 +461,7 @@ paths:
               $ref: "#/components/schemas/ActorKlantcontact"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -549,18 +523,12 @@ paths:
           maxLength: 40
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
             warning:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
-            X-Rate-Limit-Limit:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Limit"
-            X-Rate-Limit-Remaining:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Remaining"
-            X-Rate-Limit-Reset:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
           content:
             application/hal+json:
               schema:
@@ -599,7 +567,7 @@ paths:
               $ref: "#/components/schemas/Bijlage"
       responses:
         201:
-          description: "OK"
+          description: "Created"
           headers:
             Location:
               description: "URI van de nieuwe resource"
@@ -652,7 +620,7 @@ paths:
           $ref: "#/components/schemas/Identificatiecode"
       responses:
         200:
-          description: "Verwijderactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -674,18 +642,12 @@ paths:
           $ref: "#/components/schemas/Identificatiecode"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
             warning:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
-            X-Rate-Limit-Limit:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Limit"
-            X-Rate-Limit-Remaining:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Remaining"
-            X-Rate-Limit-Reset:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
           content:
             application/hal+json:
               schema:
@@ -733,18 +695,12 @@ paths:
               $ref: "#/components/schemas/Bijlage"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
             warning:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
-            X-Rate-Limit-Limit:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Limit"
-            X-Rate-Limit-Remaining:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Remaining"
-            X-Rate-Limit-Reset:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
           content:
             application/hal+json:
               schema:
@@ -812,18 +768,12 @@ paths:
           maxLength: 40
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
             warning:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
-            X-Rate-Limit-Limit:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Limit"
-            X-Rate-Limit-Remaining:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Remaining"
-            X-Rate-Limit-Reset:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
           content:
             application/hal+json:
               schema:
@@ -863,7 +813,7 @@ paths:
               $ref: "#/components/schemas/DigitaalAdres"
       responses:
         201:
-          description: "OK"
+          description: "Created"
           headers:
             Location:
               description: "URI van de nieuwe resource"
@@ -917,7 +867,7 @@ paths:
           $ref: "#/components/schemas/Identificatiecode"
       responses:
         200:
-          description: "Verwijderactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -940,18 +890,12 @@ paths:
           $ref: "#/components/schemas/Identificatiecode"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
             warning:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
-            X-Rate-Limit-Limit:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Limit"
-            X-Rate-Limit-Remaining:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Remaining"
-            X-Rate-Limit-Reset:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
           content:
             application/hal+json:
               schema:
@@ -1000,18 +944,12 @@ paths:
               $ref: "#/components/schemas/DigitaalAdres"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
             warning:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
-            X-Rate-Limit-Limit:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Limit"
-            X-Rate-Limit-Remaining:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Remaining"
-            X-Rate-Limit-Reset:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
           content:
             application/hal+json:
               schema:
@@ -1100,18 +1038,12 @@ paths:
           maxLength: 1000
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
             warning:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
-            X-Rate-Limit-Limit:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Limit"
-            X-Rate-Limit-Remaining:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Remaining"
-            X-Rate-Limit-Reset:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
           content:
             application/hal+json:
               schema:
@@ -1151,7 +1083,7 @@ paths:
               $ref: "#/components/schemas/InterneTaak"
       responses:
         201:
-          description: "OK"
+          description: "Created"
           headers:
             Location:
               description: "URI van de nieuwe resource"
@@ -1205,7 +1137,7 @@ paths:
           $ref: "#/components/schemas/Identificatiecode"
       responses:
         200:
-          description: "Verwijderactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -1228,18 +1160,12 @@ paths:
           $ref: "#/components/schemas/Identificatiecode"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
             warning:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
-            X-Rate-Limit-Limit:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Limit"
-            X-Rate-Limit-Remaining:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Remaining"
-            X-Rate-Limit-Reset:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
           content:
             application/hal+json:
               schema:
@@ -1287,18 +1213,12 @@ paths:
               $ref: "#/components/schemas/InterneTaak"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
             warning:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
-            X-Rate-Limit-Limit:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Limit"
-            X-Rate-Limit-Remaining:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Remaining"
-            X-Rate-Limit-Reset:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
           content:
             application/hal+json:
               schema:
@@ -1399,18 +1319,12 @@ paths:
           type: "boolean"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
             warning:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
-            X-Rate-Limit-Limit:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Limit"
-            X-Rate-Limit-Remaining:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Remaining"
-            X-Rate-Limit-Reset:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
           content:
             application/hal+json:
               schema:
@@ -1450,7 +1364,7 @@ paths:
               $ref: "#/components/schemas/Klantcontact"
       responses:
         201:
-          description: "OK"
+          description: "Created"
           headers:
             Location:
               description: "URI van de nieuwe resource"
@@ -1504,7 +1418,7 @@ paths:
           $ref: "#/components/schemas/Identificatiecode"
       responses:
         200:
-          description: "Verwijderactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -1527,18 +1441,12 @@ paths:
           $ref: "#/components/schemas/Identificatiecode"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
             warning:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
-            X-Rate-Limit-Limit:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Limit"
-            X-Rate-Limit-Remaining:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Remaining"
-            X-Rate-Limit-Reset:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
           content:
             application/hal+json:
               schema:
@@ -1586,18 +1494,12 @@ paths:
               $ref: "#/components/schemas/Klantcontact"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
             warning:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
-            X-Rate-Limit-Limit:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Limit"
-            X-Rate-Limit-Remaining:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Remaining"
-            X-Rate-Limit-Reset:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
           content:
             application/hal+json:
               schema:
@@ -1657,18 +1559,12 @@ paths:
           maxLength: 40
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
             warning:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
-            X-Rate-Limit-Limit:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Limit"
-            X-Rate-Limit-Remaining:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Remaining"
-            X-Rate-Limit-Reset:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
           content:
             application/hal+json:
               schema:
@@ -1708,7 +1604,7 @@ paths:
               $ref: "#/components/schemas/Onderwerpobject"
       responses:
         201:
-          description: "OK"
+          description: "Created"
           headers:
             Location:
               description: "URI van de nieuwe resource"
@@ -1762,7 +1658,7 @@ paths:
           $ref: "#/components/schemas/Identificatiecode"
       responses:
         200:
-          description: "Verwijderactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -1785,18 +1681,12 @@ paths:
           $ref: "#/components/schemas/Identificatiecode"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
             warning:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
-            X-Rate-Limit-Limit:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Limit"
-            X-Rate-Limit-Remaining:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Remaining"
-            X-Rate-Limit-Reset:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
           content:
             application/hal+json:
               schema:
@@ -1845,7 +1735,7 @@ paths:
               $ref: "#/components/schemas/Onderwerpobject"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -1916,18 +1806,12 @@ paths:
           $ref: "#/components/schemas/Identificator"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
             warning:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
-            X-Rate-Limit-Limit:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Limit"
-            X-Rate-Limit-Remaining:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Remaining"
-            X-Rate-Limit-Reset:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
           content:
             application/hal+json:
               schema:
@@ -1967,7 +1851,7 @@ paths:
               $ref: "#/components/schemas/Partij-identificator"
       responses:
         201:
-          description: "OK"
+          description: "Created"
           headers:
             Location:
               description: "URI van de nieuwe resource"
@@ -2021,7 +1905,7 @@ paths:
           $ref: "#/components/schemas/Identificatiecode"
       responses:
         200:
-          description: "Verwijderactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -2044,18 +1928,12 @@ paths:
           $ref: "#/components/schemas/Identificatiecode"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
             warning:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
-            X-Rate-Limit-Limit:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Limit"
-            X-Rate-Limit-Remaining:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Remaining"
-            X-Rate-Limit-Reset:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
           content:
             application/hal+json:
               schema:
@@ -2104,18 +1982,12 @@ paths:
               $ref: "#/components/schemas/Partij-identificator"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
             warning:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
-            X-Rate-Limit-Limit:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Limit"
-            X-Rate-Limit-Remaining:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Remaining"
-            X-Rate-Limit-Reset:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
           content:
             application/hal+json:
               schema:
@@ -2219,18 +2091,12 @@ paths:
           maxLength: 40
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
             warning:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
-            X-Rate-Limit-Limit:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Limit"
-            X-Rate-Limit-Remaining:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Remaining"
-            X-Rate-Limit-Reset:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
           content:
             application/hal+json:
               schema:
@@ -2269,7 +2135,7 @@ paths:
               $ref: "#/components/schemas/Partij"
       responses:
         201:
-          description: "OK"
+          description: "Created"
           headers:
             Location:
               description: "URI van de nieuwe resource"
@@ -2322,7 +2188,7 @@ paths:
           $ref: "#/components/schemas/Identificatiecode"
       responses:
         200:
-          description: "Verwijderactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -2344,18 +2210,12 @@ paths:
           $ref: "#/components/schemas/Identificatiecode"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
             warning:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
-            X-Rate-Limit-Limit:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Limit"
-            X-Rate-Limit-Remaining:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Remaining"
-            X-Rate-Limit-Reset:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
           content:
             application/hal+json:
               schema:
@@ -2403,18 +2263,12 @@ paths:
               $ref: "#/components/schemas/Partij"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
             warning:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
-            X-Rate-Limit-Limit:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Limit"
-            X-Rate-Limit-Remaining:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Remaining"
-            X-Rate-Limit-Reset:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
           content:
             application/hal+json:
               schema:
@@ -2468,18 +2322,12 @@ paths:
           maxLength: 40
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
             warning:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
-            X-Rate-Limit-Limit:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Limit"
-            X-Rate-Limit-Remaining:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Remaining"
-            X-Rate-Limit-Reset:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
           content:
             application/hal+json:
               schema:
@@ -2519,7 +2367,7 @@ paths:
               $ref: "#/components/schemas/Vertegenwoordiging"
       responses:
         201:
-          description: "OK"
+          description: "Created"
           headers:
             Location:
               description: "URI van de nieuwe resource"
@@ -2573,7 +2421,7 @@ paths:
           $ref: "#/components/schemas/Identificatiecode"
       responses:
         200:
-          description: "Verwijderactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -2596,18 +2444,12 @@ paths:
           $ref: "#/components/schemas/Identificatiecode"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
             warning:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
-            X-Rate-Limit-Limit:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Limit"
-            X-Rate-Limit-Remaining:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Remaining"
-            X-Rate-Limit-Reset:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
           content:
             application/hal+json:
               schema:
@@ -2656,18 +2498,12 @@ paths:
               $ref: "#/components/schemas/Vertegenwoordiging"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
             warning:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
-            X-Rate-Limit-Limit:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Limit"
-            X-Rate-Limit-Remaining:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Remaining"
-            X-Rate-Limit-Reset:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
           content:
             application/hal+json:
               schema:
@@ -2722,8 +2558,6 @@ components:
       - "naam"
       - "soortActor"
       properties:
-        actoridentifcator:
-          $ref: "#/components/schemas/Identificator"
         id:
           $ref: "#/components/schemas/IdentificatiecodeReadOnly"
         indicatieActief:
@@ -2732,6 +2566,8 @@ components:
           $ref: "#/components/schemas/Naam-lang"
         soortActor:
           $ref: "#/components/schemas/SoortActor"
+        actoridentifcator:
+          $ref: "#/components/schemas/Identificator"
       discriminator:
         propertyName: soortActor
         mapping:
@@ -2766,9 +2602,9 @@ components:
       - "id"
       - "klantcontactId"
       properties:
-        actorId:
-          $ref: "#/components/schemas/Identificatiecode"
         id:
+          $ref: "#/components/schemas/Identificatiecode"
+        actorId:
           $ref: "#/components/schemas/Identificatiecode"
         klantcontactId:
           $ref: "#/components/schemas/Identificatiecode"
@@ -2793,13 +2629,7 @@ components:
             $ref: "#/components/schemas/Bijlage_links"
     Bijlage:
       type: "object"
-      description: "Verwijzing naar een object dat tijdens een klantcontact ontstond\
-        \ of werd overgebracht en dat daarom beschouwd kan worden als bijlage bij\
-        \ het klantcontact. Enkele mogelijke verwijzingen zijn opgenomen in dit model.\
-        \ Dit is geen uitputtende lijst.\n\nHet kan voorkomen dat een klantcontact\
-        \ geen inhoudstekst heeft, maar alleen bijlagen. Denk hierbij aan een email\
-        \ met bijlagen. De email zelf wordt als bijlage vastgelegd en de bijlagen\
-        \ van de email worden ook vastgelegd bij het klantcontact."
+      description: "Verwijzing naar een object dat tijdens een klantcontact ontstond of werd overgebracht en dat daarom beschouwd kan worden als bijlage bij het klantcontact. Enkele mogelijke verwijzingen zijn opgenomen in dit model. Dit is geen uitputtende lijst. Het kan voorkomen dat een klantcontact geen inhoudstekst heeft, maar alleen bijlagen. Denk hierbij aan een email met bijlagen. De email zelf wordt als bijlage vastgelegd en de bijlagen van de email worden ook vastgelegd bij het klantcontact."
       required:
       - "id"
       - "objectidentificator"
@@ -2815,13 +2645,14 @@ components:
       allOf:
       - $ref: "#/components/schemas/Partij"
       - type: "object"
-        description: "Natuurlijk persoon die werkte voor een organisatie, of natuurlijk\
-          \ persoon die een andere persoon vertegenwoordigde."
+        description: "Natuurlijk persoon die werkte voor een organisatie, of natuurlijk persoon die een andere persoon vertegenwoordigde."
         required:
         - "contactnaam"
         properties:
           contactnaam:
             $ref: "#/components/schemas/Contactnaam"
+          _links:
+            $ref: "#/components/schemas/Partij_links"
     DigitaalAdresHalCollectie:
       type: "object"
       properties:
@@ -2843,30 +2674,23 @@ components:
             $ref: "#/components/schemas/DigitaalAdres_links"
     DigitaalAdres:
       type: "object"
-      description: "Niet aan een specifieke fysieke locatie verbonden contactgegevens\
-        \ van een persoon of organisatie.\n\nDigitaal adres duidt gegevens aan die\
-        \ beschrijven hoe een persoon of organisatie via een digitaal kanaal bereikt\
-        \ kan worden. Voorbeelden hiervan zijn een telefoonnummer, een e-mailadres\
-        \ of een gebruikersnaam op een sociaal medium. Adressen die gekoppeld kunnen\
-        \ worden aan een vaste plaats in de fysieke wereld, zoals een bezoekadres,\
-        \ postbus of antwoordnummer zijn geen digitaal adres."
+      description: "Niet aan een specifieke fysieke locatie verbonden contactgegevens van een persoon of organisatie. \n\nDigitaal adres duidt gegevens aan die beschrijven hoe een persoon of organisatie via een digitaal kanaal bereikt kan worden. Voorbeelden hiervan zijn een telefoonnummer, een e-mailadres of een gebruikersnaam op een sociaal medium. Adressen die gekoppeld kunnen worden aan een vaste plaats in de fysieke wereld, zoals een bezoekadres, postbus of antwoordnummer zijn geen digitaal adres."
       required:
       - "adres"
       - "id"
       - "omschrijving"
       properties:
-        adres:
-          $ref: "#/components/schemas/Adresregel"
         id:
           $ref: "#/components/schemas/IdentificatiecodeReadOnly"
+        adres:
+          $ref: "#/components/schemas/Adresregel"
         omschrijving:
           $ref: "#/components/schemas/Omschrijving-kort"
         soortDigitaalAdres:
           allOf:
           - $ref: "#/components/schemas/SoortDigitaalAdres"
           - title: "soortDigitaalAdres"
-            description: "Typering van het digitale adres die aangeeft via welk(e)\
-              \ kanaal of kanalen met dit adres contact kan worden opgenomen."
+            description: "Typering van het digitale adres die aangeeft via welk(e) kanaal of kanalen met dit adres contact kan worden opgenomen."
         verstrektDoorBetrokkene:
           $ref: "#/components/schemas/Identificatiecode"
         verstrektDoorPartij:
@@ -2906,8 +2730,7 @@ components:
             $ref: "#/components/schemas/InterneTaak_links"
     InterneTaak:
       type: "object"
-      description: "Iets dat door een actor moet worden gedaan om opvolging te geven\
-        \ aan een klantcontact."
+      description: "Iets dat door een actor moet worden gedaan om opvolging te geven aan een klantcontact."
       required:
       - "aanleidinggevendKlantcontact"
       - "gevraagdeHandeling"
@@ -2917,22 +2740,22 @@ components:
       - "toegewezenAanActor"
       - "toegewezenOp"
       properties:
-        aanleidinggevendKlantcontact:
-          $ref: "#/components/schemas/Identificatiecode"
-        gevraagdeHandeling:
-          $ref: "#/components/schemas/Omschrijving-lang"
         id:
           $ref: "#/components/schemas/IdentificatiecodeReadOnly"
+        gevraagdeHandeling:
+          $ref: "#/components/schemas/Omschrijving-lang"
         nummer:
           $ref: "#/components/schemas/IdentificerendNummer"
         status:
           $ref: "#/components/schemas/Taakstatus"
-        toegewezenAanActor:
-          $ref: "#/components/schemas/Identificatiecode"
         toegewezenOp:
           $ref: "#/components/schemas/Datumtijd"
         toelichting:
           $ref: "#/components/schemas/Tekst"
+        aanleidinggevendKlantcontact:
+          $ref: "#/components/schemas/Identificatiecode"
+        toegewezenAanActor:
+          $ref: "#/components/schemas/Identificatiecode"
     KlantcontactHalCollectie:
       type: "object"
       properties:
@@ -2956,22 +2779,7 @@ components:
             $ref: "#/components/schemas/Klantcontact_embedded"
     Klantcontact:
       type: "object"
-      description: "Contact tussen een klant of een vertegenwoordiger van een klant\
-        \ en de gemeente over een onderwerp.\n\nHet klantcontact is bedoeld om inwoners\
-        \ of ondernemers die contact hebben gehad met de gemeente op een voor hen\
-        \ zo begrijpelijk en relevant mogelijke manier te infomeren over de inhoud\
-        \ van dat contact. Over een klantcontact vastgelegde informatie kan bijvoorbeeld\
-        \ (na inloggen) worden getoond op de gemeentelijke website of telefonisch\
-        \ worden verstrekt door een medewerker van het klantcontactcentrum. Als gevolg\
-        \ hiervan is de volledige inhoud van een klantcontact geschikt voor openbaarmaking\
-        \ aan betrokken inwoners.\n\nHet klantcontact is bedoeld om inwoners of ondernemers\
-        \ die contact hebben gehad met de gemeente op een voor hen zo begrijpelijk\
-        \ en relevant mogelijke manier te infomeren over de inhoud van dat contact.\
-        \ Over een klantcontact vastgelegde informatie kan bijvoorbeeld (na inloggen)\
-        \ worden getoond op de gemeentelijke website of telefonisch worden verstrekt\
-        \ door een medewerker van het klantcontactcentrum. Als gevolg hiervan is de\
-        \ volledige inhoud van een klantcontact geschikt voor openbaarmaking aan betrokken\
-        \ inwoners."
+      description: "Contact tussen een klant of een vertegenwoordiger van een klant en de gemeente over een onderwerp.\n\nHet klantcontact is bedoeld om inwoners of ondernemers die contact hebben gehad met de gemeente op een voor hen zo begrijpelijk en relevant mogelijke manier te infomeren over de inhoud van dat contact. Over een klantcontact vastgelegde informatie kan bijvoorbeeld (na inloggen) worden getoond op de gemeentelijke website of telefonisch worden verstrekt door een medewerker van het klantcontactcentrum. Als gevolg hiervan is de volledige inhoud van een klantcontact geschikt voor openbaarmaking aan betrokken inwoners.\n\nHet klantcontact is bedoeld om inwoners of ondernemers die contact hebben gehad met de gemeente op een voor hen zo begrijpelijk en relevant mogelijke manier te infomeren over de inhoud van dat contact. Over een klantcontact vastgelegde informatie kan bijvoorbeeld (na inloggen) worden getoond op de gemeentelijke website of telefonisch worden verstrekt door een medewerker van het klantcontactcentrum. Als gevolg hiervan is de volledige inhoud van een klantcontact geschikt voor openbaarmaking aan betrokken inwoners."
       required:
       - "id"
       - "indicatieContactGelukt"
@@ -3008,8 +2816,7 @@ components:
       allOf:
       - $ref: "#/components/schemas/Actor"
       - type: "object"
-        description: "Een MEDEWERKER van de organisatie die zaken behandelt uit hoofde\
-          \ van zijn of haar functie binnen een ORGANISATORISCHE EENHEID."
+        description: "Een MEDEWERKER van de organisatie die zaken behandelt uit hoofde van zijn of haar functie binnen een ORGANISATORISCHE EENHEID."
         required:
         - "eMailadres"
         - "functie"
@@ -3044,9 +2851,7 @@ components:
             $ref: "#/components/schemas/Onderwerpobject_links"
     Onderwerpobject:
       type: "object"
-      description: "Verwijzing naar een object dat onderwerp van een klantcontact\
-        \ was. Enkele mogelijke verwijzingen zijn opgenomen in dit model. Dit is geen\
-        \ uitputtende lijst."
+      description: "Verwijzing naar een object dat onderwerp van een klantcontact was. Enkele mogelijke verwijzingen zijn opgenomen in dit model. Dit is geen uitputtende lijst."
       required:
       - "id"
       - "objectidentificator"
@@ -3054,33 +2859,27 @@ components:
       properties:
         id:
           $ref: "#/components/schemas/Identificatiecode"
-        objectidentificator:
-          $ref: "#/components/schemas/Identificator"
         onderwerpWasKlantcontact:
           $ref: "#/components/schemas/Identificatiecode"
         wasOnderwerpVanKlantcontact:
           $ref: "#/components/schemas/Identificatiecode"
+        objectidentificator:
+          $ref: "#/components/schemas/Identificator"
     Organisatie:
       allOf:
       - $ref: "#/components/schemas/Partij"
       - type: "object"
-        description: "Geformaliseerde entiteit die geen natuurlijk persoon is en maatschappelijke\
-          \ activiteiten uitvoert.\n\nEen organisatie met rechtspersoonlijkheid, of\
-          \ een eenmanszaak, vennootschap onder firma, maatschap of commanditaire\
-          \ vennootschap of andere organisatie zonder rechtspersoonlijkheid.\n\nEen\
-          \ organisatie met rechtspersoonlijkheid, of een eenmanszaak, vennootschap\
-          \ onder firma, maatschap of commanditaire vennootschap of andere organisatie\
-          \ zonder rechtspersoonlijkheid."
+        description: "Geformaliseerde entiteit die geen natuurlijk persoon is en maatschappelijke activiteiten uitvoert.\n\nEen organisatie met rechtspersoonlijkheid, of een eenmanszaak, vennootschap onder firma, maatschap of commanditaire vennootschap of andere organisatie zonder rechtspersoonlijkheid.Een organisatie met rechtspersoonlijkheid, of een eenmanszaak, vennootschap onder firma, maatschap of commanditaire vennootschap of andere organisatie zonder rechtspersoonlijkheid."
         properties:
           naam:
             $ref: "#/components/schemas/Naam-lang"
+          _links:
+            $ref: "#/components/schemas/Partij_links"
     OrganisatorischeEenheid:
       allOf:
       - $ref: "#/components/schemas/Actor"
       - type: "object"
-        description: "Het deel van een functioneel afgebakend onderdeel binnen de\
-          \ organisatie dat haar activiteiten uitvoert binnen een VESTIGING VAN ZAAKBEHANDELENDE\
-          \ ORGANISATIE en die verantwoordelijk is voor de behandeling van zaken."
+        description: "Het deel van een functioneel afgebakend onderdeel binnen de organisatie dat haar activiteiten uitvoert binnen een VESTIGING VAN ZAAKBEHANDELENDE ORGANISATIE en die verantwoordelijk is voor de behandeling van zaken."
         properties:
           eMailadres:
             $ref: "#/components/schemas/E-mailadres"
@@ -3121,12 +2920,12 @@ components:
       - "voorkeursDigitaalAdres"
       - "werkteVoorPartij"
       properties:
+        id:
+          $ref: "#/components/schemas/Identificatiecode"
         bezoekadres:
           $ref: "#/components/schemas/Bezoekadres"
         correspondentieadres:
           $ref: "#/components/schemas/Correspondentieadres"
-        id:
-          $ref: "#/components/schemas/Identificatiecode"
         indicatieActief:
           $ref: "#/components/schemas/IndicatieJaNee"
         indicatieGeheimhouding:
@@ -3170,17 +2969,16 @@ components:
             $ref: "#/components/schemas/Partij-identificator_links"
     Partij-identificator:
       type: "object"
-      description: "Gegevens die een partij in een basisregistratie of ander extern\
-        \ register uniek identificeren."
+      description: "Gegevens die een partij in een basisregistratie of ander extern register uniek identificeren."
       required:
       - "id"
       - "identificeerdePartij"
       - "partijIdentificator"
       properties:
-        anderePartijIdentificator:
-          $ref: "#/components/schemas/Omschrijving-lang"
         id:
           $ref: "#/components/schemas/Identificatiecode"
+        anderePartijIdentificator:
+          $ref: "#/components/schemas/Omschrijving-lang"
         identificeerdePartij:
           $ref: "#/components/schemas/Identificatiecode"
         partijIdentificator:
@@ -3189,14 +2987,12 @@ components:
       allOf:
       - $ref: "#/components/schemas/Partij"
       - type: "object"
-        description: "Natuurlijk persoon.\n\nKan zowel een ingeschreven, niet ingeschreven\
-          \ alsook een natuurlijk persoon zijn waarvan niet bekend is of die ingeschreven\
-          \ is of niet.\n\nKan zowel een ingeschreven, niet ingeschreven alsook een\
-          \ natuurlijk persoon zijn waarvan niet bekend is of die ingeschreven is\
-          \ of niet."
+        description: "Natuurlijk persoon.\n\nKan zowel een ingeschreven, niet ingeschreven alsook een natuurlijk persoon zijn waarvan niet bekend is of die ingeschreven is of niet.\n\nKan zowel een ingeschreven, niet ingeschreven alsook een natuurlijk persoon zijn waarvan niet bekend is of die ingeschreven is of niet."
         properties:
           contactnaam:
             $ref: "#/components/schemas/Contactnaam"
+          _links:
+            $ref: "#/components/schemas/Partij_links"
     VertegenwoordigingHalCollectie:
       type: "object"
       properties:
@@ -3218,8 +3014,7 @@ components:
             $ref: "#/components/schemas/Vertegenwoordiging_links"
     Vertegenwoordiging:
       type: "object"
-      description: "Koppelresource om vertegenwoordigingsrelaties tussen partijen\
-        \ te registreren."
+      description: "Koppelresource om vertegenwoordigingsrelaties tussen partijen te registreren."
       required:
       - "id"
       - "vertegenwoordigdePartij"
@@ -3242,35 +3037,15 @@ components:
             $ref: "#/components/schemas/BetrokkeneBijKlantcontact_embedded"
     BetrokkeneBijKlantcontact:
       type: "object"
-      description: "Ofwel betrokkenheid van een partij bij een klantcontact, eventueel\
-        \ aangevuld met specifiek voor opvolging van dat klantcontact te gebruiken\
-        \ contactgegevens, ofwel voor opvolging van een klantcontact te gebruiken\
-        \ contactgegevens van een tijdens dat klantcontact niet als partij gekende\
-        \ persoon.\n\nKlantcontact-betrokkene kent afhankelijk van mogelijkheid of\
-        \ wenselijkheid om in het kader van (opvolging van) de klantinteractie persoonsgegevens\
-        \ te verwerken twee gebruiksmogelijkheden. 1) is van de bij het klantcontact\
-        \ betrokken inwoner of ondernemer na identificatie en/of authenticatie voldoende\
-        \ duidelijk wie die is of vertegenwoordigt, dan wordt eerst opgezocht of deze\
-        \ inwoner of ondernemer reeds als partij bij de gemeente bekend is. Is dat\
-        \ niet zo, dan kan vervolgens een partij worden geregistreerd. Tussen de opgezochte\
-        \ of gecre??erde partij en klantcontact-betrokkene wordt vervolgens een relatie\
-        \ gelegd. Als de betrokkene aangeeft dat all????n voor opvolging van het klantcontact\
-        \ andere dan de bij partij geregistreerde 'default'-contactgegevens gebruikt\
-        \ moeten, worden deze alternatieve contactgegevens vastgelegd in klantcontact-betrokkene.\
-        \ Voor opvolging van het klantcontact gelden de in Klantcontact-betrokkene\
-        \ vastgelegde contactgegevens dus boven gelijkaardige gegevens die bij partij\
-        \ zijn geregistreerd. 2) is van de bij het klantcontact betrokken inwoner\
-        \ of ondernemer na eventuele identificatie en/of authenticatie onvoldoende\
-        \ duidelijk is wie die is of vertegenwoordigt, dan kan in klantcontact-betrokkene\
-        \ een set voor opvolging van het klantcontact benodigde of gewenste contactgegevens\
-        \ worden geregistreerd. In dit geval is er dus g????n sprake van een realtie\
-        \ tussen klantcontact-betrokkene en partij."
+      description: "Ofwel betrokkenheid van een partij bij een klantcontact, eventueel aangevuld met specifiek voor opvolging van dat klantcontact te gebruiken contactgegevens, ofwel voor opvolging van een klantcontact te gebruiken contactgegevens van een tijdens dat klantcontact niet als partij gekende persoon.\n\nKlantcontact-betrokkene kent afhankelijk van mogelijkheid of wenselijkheid om in het kader van (opvolging van) de klantinteractie persoonsgegevens te verwerken twee gebruiksmogelijkheden. 1) is van de bij het klantcontact betrokken inwoner of ondernemer na identificatie en/of authenticatie voldoende duidelijk wie die is of vertegenwoordigt, dan wordt eerst opgezocht of deze inwoner of ondernemer reeds als partij bij de gemeente bekend is. Is dat niet zo, dan kan vervolgens een partij worden geregistreerd. Tussen de opgezochte of gecre??erde partij en klantcontact-betrokkene wordt vervolgens een relatie gelegd. Als de betrokkene aangeeft dat all????n voor opvolging van het klantcontact andere dan de bij partij geregistreerde 'default'-contactgegevens gebruikt moeten, worden deze alternatieve contactgegevens vastgelegd in klantcontact-betrokkene. Voor opvolging van het klantcontact gelden de in Klantcontact-betrokkene vastgelegde contactgegevens dus boven gelijkaardige gegevens die bij partij zijn geregistreerd. 2) is van de bij het klantcontact betrokken inwoner of ondernemer na eventuele identificatie en/of authenticatie onvoldoende duidelijk is wie die is of vertegenwoordigt, dan kan in klantcontact-betrokkene een set voor opvolging van het klantcontact benodigde of gewenste contactgegevens worden geregistreerd. In dit geval is er dus g????n sprake van een realtie tussen klantcontact-betrokkene en partij."
       required:
       - "hadKlantcontact"
       - "id"
       - "initiator"
       - "rol"
       properties:
+        id:
+          $ref: "#/components/schemas/Identificatiecode"
         bezoekadres:
           $ref: "#/components/schemas/Bezoekadres"
         contactnaam:
@@ -3278,8 +3053,6 @@ components:
         correspondentieadres:
           $ref: "#/components/schemas/Correspondentieadres"
         hadKlantcontact:
-          $ref: "#/components/schemas/Identificatiecode"
-        id:
           $ref: "#/components/schemas/Identificatiecode"
         initiator:
           $ref: "#/components/schemas/IndicatieJaNee"
@@ -3303,15 +3076,13 @@ components:
           allOf:
           - title: "omvatIdVan"
             type: "object"
-            description: "Actor die bij een klantcontact betrokken was.\n\nrelatie\
-              \ van actorKlantcontact naar klantcontact"
+            description: "Actor die bij een klantcontact betrokken was.\n\nrelatie van actorKlantcontact naar klantcontact"
           - $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/schemas/HalLink"
         actoren:
           allOf:
           - title: "omvatIdVan"
             type: "object"
-            description: "Actor die bij een klantcontact betrokken was.\n\nrelatie\
-              \ van actorKlantcontact naar actor"
+            description: "Actor die bij een klantcontact betrokken was.\n\nrelatie van actorKlantcontact naar actor"
           - $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/schemas/HalLink"
     BetrokkeneBijKlantcontact_links:
       type: "object"
@@ -3320,10 +3091,10 @@ components:
           $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/schemas/HalLink"
         was:
           allOf:
+          - $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/schemas/HalLink"
           - title: "was"
             type: "object"
             description: "Betrokkene bij klantcontact die een partij was."
-          - $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/schemas/HalLink"
     Bijlage_links:
       type: "object"
       properties:
@@ -3333,8 +3104,7 @@ components:
           allOf:
           - title: "omvatte"
             type: "object"
-            description: "Bijlage die (een deel van) de inhoud van het klantcontact\
-              \ beschrijft."
+            description: "Bijlage die (een deel van) de inhoud van het klantcontact beschrijft."
           - $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/schemas/HalLink"
     DigitaalAdres_links:
       type: "object"
@@ -3529,9 +3299,13 @@ components:
         code:
           $ref: "#/components/schemas/Identificatiecode"
         locatie:
-          $ref: "#/components/schemas/Omschrijving-kort"
+          allOf: 
+          - $ref: "#/components/schemas/Omschrijving-kort"
+          - readOnly: true
         naam:
-          $ref: "#/components/schemas/Naam-kort"
+          allOf:
+          - $ref: "#/components/schemas/Naam-kort"
+          - readOnly: true
     Identificator:
       type: "object"
       description: "Gegevens die een object in een extern register uniek identificeren."
@@ -3574,12 +3348,15 @@ components:
           description: "De code, behorende bij het kanaal."
           minLength: 1
         indicatieActief:
-          $ref: "#/components/schemas/IndicatieJaNee"
+          allOf:
+          - $ref: "#/components/schemas/IndicatieJaNee"
+          - readOnly: true
         naam:
           type: "string"
           title: "Naam"
           description: "De naam van het kanaal."
           minLength: 1
+          readOnly: true
     Land:
       type: "object"
       description: "Lijst van alle huidige en voormalige landen met hun codes, namen\
@@ -3595,11 +3372,13 @@ components:
           title: "Einddatum land"
           description: "De datum waarop het land/gebied is opgeheven."
           format: "date"
+          readOnly: true
         ingangsdatumLand:
           type: "string"
           title: "Ingangsdatum land"
           description: "De datum waarop het land/gebied is ontstaan."
           format: "date"
+          readOnly: true
         landcode:
           type: "string"
           title: "Landcode"
@@ -3612,6 +3391,7 @@ components:
           description: "De naam van het land, zoals opgenomen in de Landentabel van\
             \ de GBA."
           minLength: 1
+          readOnly: true
     SoortDigitaalAdres:
       type: "object"
       description: "Lijst van soorten digitale adressen die personen en organisaties\
@@ -3627,12 +3407,15 @@ components:
           description: "De code, behorende bij het soort digitaal adres."
           minLength: 1
         indicatieActief:
-          $ref: "#/components/schemas/IndicatieJaNee"
+          allOf:
+          - $ref: "#/components/schemas/IndicatieJaNee"
+          - readOnly: true
         naam:
           type: "string"
           title: "Naam"
           description: "De naam van het soort digitaal adres."
           minLength: 1
+          readOnly: true
     SoortObject:
       type: "object"
       description: "Lijst van typen objecten waarnaar vanuit het klantinteractiesregister\
@@ -3648,12 +3431,15 @@ components:
           description: "De code, behorende bij het soort object."
           minLength: 1
         indicatieActief:
-          $ref: "#/components/schemas/IndicatieJaNee"
+          allOf:
+          - $ref: "#/components/schemas/IndicatieJaNee"
+          - readOnly: true
         naam:
           type: "string"
           title: "Naam"
           description: "De naam van het soort object."
           minLength: 1
+          readOnly: true
     SoortObjectId:
       type: "object"
       description: "Lijst van identificatiesystemen en de registers waarin volgens\
@@ -3669,12 +3455,15 @@ components:
           description: "De code, behorende bij het soort object ID."
           minLength: 1
         indicatieActief:
-          $ref: "#/components/schemas/IndicatieJaNee"
+          allOf:
+          - $ref: "#/components/schemas/IndicatieJaNee"
+          - readOnly: true
         naam:
           type: "string"
           title: "Naam"
           description: "Naam van het soort object ID."
           minLength: 1
+          readOnly: true
     Taal:
       type: "object"
       description: "Lijst van talen die personen en organisaties kunnen gebruiken\
@@ -3690,12 +3479,15 @@ components:
           description: "De code, behorende bij de voorkeurstaal."
           minLength: 1
         indicatieActief:
-          $ref: "#/components/schemas/IndicatieJaNee"
+          allOf:
+          - $ref: "#/components/schemas/IndicatieJaNee"
+          - readOnly: true
         naam:
           type: "string"
           title: "Naam"
           description: "De naam van de voorkeurstaal."
           minLength: 1
+          readOnly: true
     IndicatieJaNeeOnbekend:
       type: "string"
       description: "Enumeratie met waarden 'ja', 'nee' en 'onbekend'."
@@ -3764,6 +3556,7 @@ components:
       type: "string"
       description: ""
       maxLength: 40
+      readOnly: true
     IdentificerendNummer:
       type: "integer"
       description: "Leesbaar en mondeling of schriftelijk overdraagbaar uniek identificerend\
