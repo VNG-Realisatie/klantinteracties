@@ -3689,9 +3689,13 @@ components:
         code:
           $ref: "#/components/schemas/Identificatiecode"
         locatie:
-          $ref: "#/components/schemas/Omschrijving-kort"
+          allOf:
+          - readOnly: true
+          - $ref: "#/components/schemas/Omschrijving-kort"
         naam:
-          $ref: "#/components/schemas/Naam-kort"
+          allOf:
+          - readOnly: true
+          - $ref: "#/components/schemas/Naam-kort"
     Identificator:
       type: "object"
       description: "Gegevens die een object in een extern register uniek identificeren."
@@ -3708,17 +3712,20 @@ components:
           - $ref: "#/components/schemas/SoortObject"
           - title: "objecttype"
             description: "Type van het object."
+            readOnly: true
         register:
           allOf:
           - $ref: "#/components/schemas/ExternRegister"
           - title: "register"
             description: "Binnen het landschap van registers unieke omschrijving van\
               \ het register waarin het object is geregistreerd."
+            readOnly: true
         soortObjectId:
           allOf:
           - $ref: "#/components/schemas/SoortObjectId"
           - title: "soortObjectId"
             description: "Naam van de eigenschap die het object identificeert."
+            readOnly: true
     Kanaal:
       type: "object"
       description: "Lijst van kanalen die personen en organisaties kunnen gebruiken\
@@ -3729,17 +3736,11 @@ components:
       - "naam"
       properties:
         code:
-          type: "string"
-          title: "Code"
-          description: "De code, behorende bij het kanaal."
-          minLength: 1
+          $ref: "#/components/schemas/Identificatiecode"
         indicatieActief:
           $ref: "#/components/schemas/IndicatieJaNee"
         naam:
-          type: "string"
-          title: "Naam"
-          description: "De naam van het kanaal."
-          minLength: 1
+          $ref: "#/components/schemas/Naam-kort"
     Land:
       type: "object"
       description: "Lijst van alle huidige en voormalige landen met hun codes, namen\
@@ -3751,27 +3752,13 @@ components:
       - "landnaam"
       properties:
         einddatumLand:
-          type: "string"
-          title: "Einddatum land"
-          description: "De datum waarop het land/gebied is opgeheven."
-          format: "date"
+          $ref: "#/components/schemas/Datum"
         ingangsdatumLand:
-          type: "string"
-          title: "Ingangsdatum land"
-          description: "De datum waarop het land/gebied is ontstaan."
-          format: "date"
+          $ref: "#/components/schemas/Datum"
         landcode:
-          type: "string"
-          title: "Landcode"
-          description: "De code, behorende bij de landnaam, opgenomen in de Landentabel\
-            \ van de GBA."
-          minLength: 1
+          $ref: "#/components/schemas/Identificatiecode"
         landnaam:
-          type: "string"
-          title: "Landnaam"
-          description: "De naam van het land, zoals opgenomen in de Landentabel van\
-            \ de GBA."
-          minLength: 1
+          $ref: "#/components/schemas/Identificatiecode"
     SoortDigitaalAdres:
       type: "object"
       description: "Lijst van soorten digitale adressen die personen en organisaties\
@@ -3782,17 +3769,11 @@ components:
       - "naam"
       properties:
         code:
-          type: "string"
-          title: "Code"
-          description: "De code, behorende bij het soort digitaal adres."
-          minLength: 1
+          $ref: "#/components/schemas/Identificatiecode"
         indicatieActief:
           $ref: "#/components/schemas/IndicatieJaNee"
         naam:
-          type: "string"
-          title: "Naam"
-          description: "De naam van het soort digitaal adres."
-          minLength: 1
+          $ref: "#/components/schemas/Naam-kort"
     SoortObject:
       type: "object"
       description: "Lijst van typen objecten waarnaar vanuit het klantinteractiesregister\
@@ -3803,17 +3784,11 @@ components:
       - "naam"
       properties:
         code:
-          type: "string"
-          title: "Code"
-          description: "De code, behorende bij het soort object."
-          minLength: 1
+          $ref: "#/components/schemas/Identificatiecode"
         indicatieActief:
           $ref: "#/components/schemas/IndicatieJaNee"
         naam:
-          type: "string"
-          title: "Naam"
-          description: "De naam van het soort object."
-          minLength: 1
+          $ref: "#/components/schemas/Naam-kort"
     SoortObjectId:
       type: "object"
       description: "Lijst van identificatiesystemen en de registers waarin volgens\
@@ -3824,17 +3799,11 @@ components:
       - "naam"
       properties:
         code:
-          type: "string"
-          title: "Code"
-          description: "De code, behorende bij het soort object ID."
-          minLength: 1
+          $ref: "#/components/schemas/Identificatiecode"
         indicatieActief:
           $ref: "#/components/schemas/IndicatieJaNee"
         naam:
-          type: "string"
-          title: "Naam"
-          description: "Naam van het soort object ID."
-          minLength: 1
+          $ref: "#/components/schemas/Naam-kort"
     Taal:
       type: "object"
       description: "Lijst van talen die personen en organisaties kunnen gebruiken\
@@ -3845,17 +3814,11 @@ components:
       - "naam"
       properties:
         code:
-          type: "string"
-          title: "Code"
-          description: "De code, behorende bij de voorkeurstaal."
-          minLength: 1
+          $ref: "#/components/schemas/Identificatiecode"
         indicatieActief:
           $ref: "#/components/schemas/IndicatieJaNee"
         naam:
-          type: "string"
-          title: "Naam"
-          description: "De naam van de voorkeurstaal."
-          minLength: 1
+          $ref: "#/components/schemas/Naam-kort"
     IndicatieJaNeeOnbekend:
       type: "string"
       description: "Enumeratie met waarden 'ja', 'nee' en 'onbekend'."
@@ -3900,6 +3863,12 @@ components:
       description: "Deel van een adres dat gewoonlijk op &#233;&#233;n (adres)regel\
         \ wordt geschreven."
       maxLength: 80
+    Datum:
+      type: "string"
+      description: "Aanduiding van datum volgens de NEN-ISO 8601:2019-standaard. Een\
+        \ datum wordt genoteerd van het meest naar het minst significante onderdeel.\
+        \ Een voorbeeld: 2022-02-21 representeert 21 februari 2022."
+      format: "date"
     Datumtijd:
       type: "string"
       description: "Aanduiding van datum en tijd volgens de NEN-ISO 8601:2019-standaard.\
