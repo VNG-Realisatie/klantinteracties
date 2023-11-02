@@ -50,7 +50,7 @@ paths:
           $ref: "#/components/schemas/SoortActor"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -94,7 +94,7 @@ paths:
               $ref: "#/components/schemas/Actor"
       responses:
         201:
-          description: "OK"
+          description: "Created"
           headers:
             Location:
               description: "URI van de nieuwe resource"
@@ -147,7 +147,7 @@ paths:
           $ref: "#/components/schemas/IdentificatiecodeReadOnly"
       responses:
         200:
-          description: "Verwijderactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -169,7 +169,7 @@ paths:
           $ref: "#/components/schemas/IdentificatiecodeReadOnly"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -222,7 +222,7 @@ paths:
               $ref: "#/components/schemas/Actor"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -280,7 +280,7 @@ paths:
           maxLength: 40
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -325,7 +325,7 @@ paths:
               $ref: "#/components/schemas/ActorKlantcontact"
       responses:
         201:
-          description: "OK"
+          description: "Created"
           headers:
             Location:
               description: "URI van de nieuwe resource"
@@ -379,7 +379,7 @@ paths:
           $ref: "#/components/schemas/Identificatiecode"
       responses:
         200:
-          description: "Verwijderactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -402,7 +402,7 @@ paths:
           $ref: "#/components/schemas/Identificatiecode"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -456,7 +456,7 @@ paths:
               $ref: "#/components/schemas/ActorKlantcontact"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -558,7 +558,7 @@ paths:
           maxLength: 40
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -603,7 +603,7 @@ paths:
               $ref: "#/components/schemas/BetrokkeneBijKlantcontact"
       responses:
         201:
-          description: "OK"
+          description: "Created"
           headers:
             Location:
               description: "URI van de nieuwe resource"
@@ -658,7 +658,7 @@ paths:
           $ref: "#/components/schemas/Identificatiecode"
       responses:
         200:
-          description: "Verwijderactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -682,7 +682,7 @@ paths:
           $ref: "#/components/schemas/Identificatiecode"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -737,7 +737,7 @@ paths:
               $ref: "#/components/schemas/BetrokkeneBijKlantcontact"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -793,7 +793,7 @@ paths:
           maxLength: 40
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -837,7 +837,7 @@ paths:
               $ref: "#/components/schemas/Bijlage"
       responses:
         201:
-          description: "OK"
+          description: "Created"
           headers:
             Location:
               description: "URI van de nieuwe resource"
@@ -890,7 +890,7 @@ paths:
           $ref: "#/components/schemas/Identificatiecode"
       responses:
         200:
-          description: "Verwijderactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -912,7 +912,7 @@ paths:
           $ref: "#/components/schemas/Identificatiecode"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -965,7 +965,7 @@ paths:
               $ref: "#/components/schemas/Bijlage"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -1038,7 +1038,7 @@ paths:
           maxLength: 40
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -1083,7 +1083,7 @@ paths:
               $ref: "#/components/schemas/DigitaalAdres"
       responses:
         201:
-          description: "OK"
+          description: "Created"
           headers:
             Location:
               description: "URI van de nieuwe resource"
@@ -1137,7 +1137,7 @@ paths:
           $ref: "#/components/schemas/Identificatiecode"
       responses:
         200:
-          description: "Verwijderactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -1160,7 +1160,7 @@ paths:
           $ref: "#/components/schemas/Identificatiecode"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -1214,7 +1214,7 @@ paths:
               $ref: "#/components/schemas/DigitaalAdres"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -1308,7 +1308,7 @@ paths:
           maxLength: 40
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -1353,7 +1353,7 @@ paths:
               $ref: "#/components/schemas/InterneTaak"
       responses:
         201:
-          description: "OK"
+          description: "Created"
           headers:
             Location:
               description: "URI van de nieuwe resource"
@@ -1407,7 +1407,7 @@ paths:
           $ref: "#/components/schemas/Identificatiecode"
       responses:
         200:
-          description: "Verwijderactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -1430,7 +1430,7 @@ paths:
           $ref: "#/components/schemas/Identificatiecode"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -1483,7 +1483,7 @@ paths:
               $ref: "#/components/schemas/InterneTaak"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -1589,7 +1589,7 @@ paths:
           type: "boolean"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -1634,7 +1634,7 @@ paths:
               $ref: "#/components/schemas/Klantcontact"
       responses:
         201:
-          description: "OK"
+          description: "Created"
           headers:
             Location:
               description: "URI van de nieuwe resource"
@@ -1688,7 +1688,7 @@ paths:
           $ref: "#/components/schemas/Identificatiecode"
       responses:
         200:
-          description: "Verwijderactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -1711,7 +1711,7 @@ paths:
           $ref: "#/components/schemas/Identificatiecode"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -1764,7 +1764,7 @@ paths:
               $ref: "#/components/schemas/Klantcontact"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -1829,7 +1829,7 @@ paths:
           maxLength: 40
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -1874,7 +1874,7 @@ paths:
               $ref: "#/components/schemas/Onderwerpobject"
       responses:
         201:
-          description: "OK"
+          description: "Created"
           headers:
             Location:
               description: "URI van de nieuwe resource"
@@ -1928,7 +1928,7 @@ paths:
           $ref: "#/components/schemas/Identificatiecode"
       responses:
         200:
-          description: "Verwijderactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -1951,7 +1951,7 @@ paths:
           $ref: "#/components/schemas/Identificatiecode"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -2005,7 +2005,7 @@ paths:
               $ref: "#/components/schemas/Onderwerpobject"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -2070,7 +2070,7 @@ paths:
           maxLength: 40
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -2115,7 +2115,7 @@ paths:
               $ref: "#/components/schemas/Partij-identificator"
       responses:
         201:
-          description: "OK"
+          description: "Created"
           headers:
             Location:
               description: "URI van de nieuwe resource"
@@ -2169,7 +2169,7 @@ paths:
           $ref: "#/components/schemas/Identificatiecode"
       responses:
         200:
-          description: "Verwijderactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -2192,7 +2192,7 @@ paths:
           $ref: "#/components/schemas/Identificatiecode"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -2246,7 +2246,7 @@ paths:
               $ref: "#/components/schemas/Partij-identificator"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -2356,7 +2356,7 @@ paths:
           maxLength: 40
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -2400,7 +2400,7 @@ paths:
               $ref: "#/components/schemas/Partij"
       responses:
         201:
-          description: "OK"
+          description: "Created"
           headers:
             Location:
               description: "URI van de nieuwe resource"
@@ -2453,7 +2453,7 @@ paths:
           $ref: "#/components/schemas/Identificatiecode"
       responses:
         200:
-          description: "Verwijderactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -2475,7 +2475,7 @@ paths:
           $ref: "#/components/schemas/Identificatiecode"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -2528,7 +2528,7 @@ paths:
               $ref: "#/components/schemas/Partij"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -2587,7 +2587,7 @@ paths:
           maxLength: 40
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -2632,7 +2632,7 @@ paths:
               $ref: "#/components/schemas/Vertegenwoordiging"
       responses:
         201:
-          description: "OK"
+          description: "Created"
           headers:
             Location:
               description: "URI van de nieuwe resource"
@@ -2686,7 +2686,7 @@ paths:
           $ref: "#/components/schemas/Identificatiecode"
       responses:
         200:
-          description: "Verwijderactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -2709,7 +2709,7 @@ paths:
           $ref: "#/components/schemas/Identificatiecode"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
@@ -2763,7 +2763,7 @@ paths:
               $ref: "#/components/schemas/Vertegenwoordiging"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
