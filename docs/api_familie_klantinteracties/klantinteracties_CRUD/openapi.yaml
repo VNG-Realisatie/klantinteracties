@@ -3160,15 +3160,11 @@ components:
       - "vertrouwelijk"
       properties:
         kanaal:
-          allOf:
-          - $ref: "#/components/schemas/Kanaal"
-          - title: "kanaal"
-            description: "Communicatiekanaal dat bij het klantcontact werd gebruikt."
+          $ref: "#/components/schemas/Kanaal"
+          description: "Communicatiekanaal dat bij het klantcontact werd gebruikt."
         taal:
-          allOf:
-          - $ref: "#/components/schemas/Taal"
-          - title: "taal"
-            description: "Taal die bij het klantcontact werd gesproken of geschreven."
+          $ref: "#/components/schemas/Taal"
+          description: "Taal die bij het klantcontact werd gesproken of geschreven."
         id:
           $ref: "#/components/schemas/Identificatiecode"
         nummer:
