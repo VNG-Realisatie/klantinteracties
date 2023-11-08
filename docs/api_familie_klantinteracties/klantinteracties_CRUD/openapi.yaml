@@ -3885,8 +3885,6 @@ components:
     Bezoekadres:
       type: "object"
       description: "Adres waaraan een bezoek gebracht kan worden."
-      required:
-      - "nummeraanduidingid"
       properties:
         adresregel1:
           $ref: "#/components/schemas/Adresregel"
@@ -3915,8 +3913,6 @@ components:
     Correspondentieadres:
       type: "object"
       description: "Adres waarop post ontvangen kan worden."
-      required:
-      - "nummeraanduidingid"
       properties:
         adresregel1:
           $ref: "#/components/schemas/Adresregel"
