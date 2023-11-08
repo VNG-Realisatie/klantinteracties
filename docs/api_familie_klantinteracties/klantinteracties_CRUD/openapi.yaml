@@ -3977,15 +3977,25 @@ components:
       properties:
         objectId:
           $ref: "#/components/schemas/Identificatiecode"
-        objecttype:
-          $ref: "#/components/schemas/SoortObject"
-          description: "Type van het object."
-        register:
-          $ref: "#/components/schemas/ExternRegister"
-          description: "Binnen het landschap van registers unieke omschrijving van\
+        objecttypecode:
+          $ref: "#/components/schemas/Identificatiecode"
+          description: "De code van het type van het object."
+        objecttypenaam:
+          $ref: "#/components/schemas/Naam-kort"
+          description: "De code van het type van het object."
+        registercode:
+          $ref: "#/components/schemas/Identificatiecode"
+          description: "Binnen het landschap van registers unieke code van\
               \ het register waarin het object is geregistreerd."
-        soortObjectId:
-          $ref: "#/components/schemas/SoortObjectId"
+        registernaam:
+          $ref: "#/components/schemas/Naam-kort"
+          description: "Binnen het landschap van registers de naam \
+              \ het register waarin het object is geregistreerd."
+        soortObjectIdCode:
+          $ref: "#/components/schemas/Identificatiecode"
+          description: "Code van de eigenschap die het object identificeert."
+        soortObjectIdNaam:
+          $ref: "#/components/schemas/Naam-kort"
           description: "Naam van de eigenschap die het object identificeert."
     Kanaal:
       type: "object"
