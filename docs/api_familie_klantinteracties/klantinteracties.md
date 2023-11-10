@@ -1,7 +1,7 @@
 ---
 layout: page-with-side-nav
 title: API ontwerpvarianten
-date: 14-04-2023
+date: 10-11-2023
 ---
 
 # Inleiding
@@ -11,20 +11,26 @@ In het ontwikkel-traject van Klantinteracties, dat in het kader van het maken va
 ## Klantinteracties
 
 In deze API-specificatie zijn de handelingen uitgewerkt die te maken hebben met het ondersteunen de reguliere werkzaamheden rondom klantcontacten.
-Daarmee hebben we een eerste verkenning rondom handelingen gedaan.
+Daarmee hebben we een eerste verkenning rondom handelingen gedaan. Deze eerste verkenning kan in het kader van het koplopertraject met een aantal gemeenten nog drastisch aangepast worden. 
 
 De specificatie kan worden bekeken in [Swagger](./klantinteracties/swagger-ui.md) of in [Redoc](./klantinteracties/redoc.md).
 
 ## Klantinteracties Beheer
 
 In deze API zijn de handelingen uitgewerkt met betrekking tot beheer-activiteiten van de Klantinteractie-component.   
-Daarmee hebben we een eerste verkenning rondom handelingen in beheer gedaan.
+Daarmee hebben we een eerste verkenning rondom handelingen in beheer gedaan. Deze eerste verkenning kan in het kader van het koplopertraject met een aantal gemeenten nog drastisch aangepast worden. 
 
 De specificatie kan worden bekeken in [Swagger](./klantinteracties_beheer/swagger-ui.md) of in [Redoc](./klantinteracties_beheer/redoc.md).
 
-## Beperkte CRUD variant
+## CRUD variant
 
 In samenwerking met een aantal koplopergemeenten is een eerste versie van een CRUD-Api-specificatie opgesteld. Deze versie is één (van de vele) stappen in het ontwikkelproces en kan dagelijks wijzigen.  
 
 De specificatie kan worden bekeken in [Swagger](./klantinteracties_CRUD/swagger-ui.md) of in [Redoc](./klantinteracties_CRUD/redoc.md).
 
+## Referentielijsten API-specificatie
+
+In samenwerking met een aantal koplopergemeenten wordt verkend wat de beste wijze is om het beheer van referentielijsten in te richten. 
+In dat kader is er een API-specificatie voor het beheren en raadplegen van referentielijsten opgesteld. 
+
+De specificatie kan worden bekeken in [Swagger](./klantinteracties_referentelijsten/swagger-ui.md) of in [Redoc](./klantinteracties_referentielijsten/redoc.md).
