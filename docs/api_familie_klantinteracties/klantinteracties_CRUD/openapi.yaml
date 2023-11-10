@@ -42,7 +42,7 @@ paths:
         description: "Gegevens die een actor in een extern register uniek identificeren."
         required: false
         schema:
-          $ref: "#/components/schemas/IdentificatorQuery"
+          $ref: "#/components/schemas/Identificator"
       - in: "query"
         name: "soortActor"
         description: "Geeft aan van welke specifieke soort actor sprake is."
@@ -208,6 +208,57 @@ paths:
       - "Actoren"
     patch:
       operationId: "patchactor"
+      description: "De operatie waarmee gegevens van medewerkers kunnen worden gewijzigd."
+      parameters:
+      - in: "path"
+        name: "id"
+        description: "Unieke (technische) identificatiecode van de actor."
+        required: true
+        schema:
+          $ref: "#/components/schemas/IdentificatiecodeReadOnly"
+      requestBody:
+        content:
+          application/hal+json:
+            schema:
+              $ref: "#/components/schemas/Actor"
+      responses:
+        200:
+          description: "Ok"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/hal+json:
+              schema:
+                $ref: "#/components/schemas/ActorHal"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Actoren"
+    put:
+      operationId: "putactor"
       description: "De operatie waarmee gegevens van medewerkers kunnen worden gewijzigd."
       parameters:
       - in: "path"
@@ -497,6 +548,58 @@ paths:
           $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
       tags:
       - "ActorKlantcontacten"
+    put:
+      operationId: "putactorklantcontact"
+      description: "De operatie waarmee gegevens van de koppelresource ActorKlantcontact\
+        \ kunnen worden gewijzigd."
+      parameters:
+      - in: "path"
+        name: "id"
+        description: "Unieke identificatiecode van actorKlantcontact."
+        required: true
+        schema:
+          $ref: "#/components/schemas/Identificatiecode"
+      requestBody:
+        content:
+          application/hal+json:
+            schema:
+              $ref: "#/components/schemas/ActorKlantcontact"
+      responses:
+        200:
+          description: "Ok"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/hal+json:
+              schema:
+                $ref: "#/components/schemas/ActorKlantcontactHal"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "ActorKlantcontacten"
   /betrokkenenBijKlantcontact:
     get:
       operationId: "getbetrokkenebijklantcontact"
@@ -726,7 +829,60 @@ paths:
       tags:
       - "BetrokkenenBijKlantcontact"
     patch:
-      operationId: "patchetrokkenebijklantcontact"
+      operationId: "patchbetrokkenebijklantcontact"
+      description: "De operatie waarmee gegevens van een betrokkeneBijKlantcontact\
+        \ kunnen worden gewijzigd."
+      parameters:
+      - in: "path"
+        name: "id"
+        description: "Unieke (technische) identificatiecode van de betrokkene bij\
+          \ klantcontact."
+        required: true
+        schema:
+          $ref: "#/components/schemas/Identificatiecode"
+      requestBody:
+        content:
+          application/hal+json:
+            schema:
+              $ref: "#/components/schemas/BetrokkeneBijKlantcontact"
+      responses:
+        200:
+          description: "Ok"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/hal+json:
+              schema:
+                $ref: "#/components/schemas/BetrokkeneBijKlantcontactHal"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "BetrokkenenBijKlantcontact"
+    put:
+      operationId: "putbetrokkenebijklantcontact"
       description: "De operatie waarmee gegevens van een betrokkeneBijKlantcontact\
         \ kunnen worden gewijzigd."
       parameters:
@@ -789,7 +945,7 @@ paths:
           \ identificeren."
         required: false
         schema:
-          $ref: "#/components/schemas/IdentificatorQuery"
+          $ref: "#/components/schemas/Identificator"
       - in: "query"
         name: "wasBijlageVanKlantcontact"
         description: "Identificatiecode van het klantcontact waarbij de bijlage werd\
@@ -957,6 +1113,57 @@ paths:
       - "Bijlagen"
     patch:
       operationId: "patchbijlage"
+      description: "De operatie waarmee gegevens van bijlagen kunnen worden gewijzigd."
+      parameters:
+      - in: "path"
+        name: "id"
+        description: "Unieke (technische) identificatiecode van het inhoudsobject."
+        required: true
+        schema:
+          $ref: "#/components/schemas/Identificatiecode"
+      requestBody:
+        content:
+          application/hal+json:
+            schema:
+              $ref: "#/components/schemas/Bijlage"
+      responses:
+        200:
+          description: "Ok"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/hal+json:
+              schema:
+                $ref: "#/components/schemas/BijlageHal"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Bijlagen"
+    put:
+      operationId: "putbijlage"
       description: "De operatie waarmee gegevens van bijlagen kunnen worden gewijzigd."
       parameters:
       - in: "path"
@@ -1255,6 +1462,58 @@ paths:
           $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
       tags:
       - "Digitaal Adressen"
+    put:
+      operationId: "putdigitaaladres"
+      description: "De operatie waarmee gegevens van digitaal adressen kunnen worden\
+        \ gewijzigd."
+      parameters:
+      - in: "path"
+        name: "id"
+        description: "Unieke (technische) identificatiecode van het digitaal adres."
+        required: true
+        schema:
+          $ref: "#/components/schemas/Identificatiecode"
+      requestBody:
+        content:
+          application/hal+json:
+            schema:
+              $ref: "#/components/schemas/DigitaalAdres"
+      responses:
+        200:
+          description: "Ok"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/hal+json:
+              schema:
+                $ref: "#/components/schemas/DigitaalAdresHal"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Digitaal Adressen"
   /internetaken:
     get:
       operationId: "getinternetaken"
@@ -1475,6 +1734,57 @@ paths:
       - "Interne taken"
     patch:
       operationId: "patchinternetaken"
+      description: "De operatie waarmee gegevens van interne taken kunnen worden gewijzigd."
+      parameters:
+      - in: "path"
+        name: "id"
+        description: "Unieke (technische) identificatiecode van de interne taak."
+        required: true
+        schema:
+          $ref: "#/components/schemas/Identificatiecode"
+      requestBody:
+        content:
+          application/hal+json:
+            schema:
+              $ref: "#/components/schemas/InterneTaak"
+      responses:
+        200:
+          description: "Ok"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/hal+json:
+              schema:
+                $ref: "#/components/schemas/InterneTaakHal"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Interne taken"
+    put:
+      operationId: "putinternetaken"
       description: "De operatie waarmee gegevens van interne taken kunnen worden gewijzigd."
       parameters:
       - in: "path"
@@ -1805,6 +2115,57 @@ paths:
           $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
       tags:
       - "Klantcontacten"
+    put:
+      operationId: "putklantcontact"
+      description: "De operatie waarmee gegevens van klantcontact kunnen worden gewijzigd."
+      parameters:
+      - in: "path"
+        name: "id"
+        description: "Unieke (technische) identificatiecode van het klantcontact."
+        required: true
+        schema:
+          $ref: "#/components/schemas/Identificatiecode"
+      requestBody:
+        content:
+          application/hal+json:
+            schema:
+              $ref: "#/components/schemas/Klantcontact"
+      responses:
+        200:
+          description: "Ok"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/hal+json:
+              schema:
+                $ref: "#/components/schemas/KlantcontactHal"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Klantcontacten"
   /onderwerpobjecten:
     get:
       operationId: "getonderwerpobjecten"
@@ -1817,7 +2178,7 @@ paths:
           \ identificeren."
         required: false
         schema:
-          $ref: "#/components/schemas/IdentificatorQuery"
+          $ref: "#/components/schemas/Identificator"
       - in: "query"
         name: "onderwerpWasKlantcontact"
         description: "Identificatiecode van het klantcontact dat het onderwerpobject\
@@ -2046,6 +2407,58 @@ paths:
           $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
       tags:
       - "Onderwerpobjecten"
+    put:
+      operationId: "putonderwerpobject"
+      description: "De operatie waarmee gegevens van onderwerpobjecten kunnen worden\
+        \ gewijzigd."
+      parameters:
+      - in: "path"
+        name: "id"
+        description: "Unieke (technische) identificatiecode van het onderwerpobject."
+        required: true
+        schema:
+          $ref: "#/components/schemas/Identificatiecode"
+      requestBody:
+        content:
+          application/hal+json:
+            schema:
+              $ref: "#/components/schemas/Onderwerpobject"
+      responses:
+        200:
+          description: "Ok"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/hal+json:
+              schema:
+                $ref: "#/components/schemas/OnderwerpobjectHal"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Onderwerpobjecten"
   /partij-identificatoren:
     get:
       operationId: "getpartijidentificatoren"
@@ -2066,7 +2479,7 @@ paths:
           \ register uniek identificeren."
         required: false
         schema:
-          $ref: "#/components/schemas/IdentificatorQuery"
+          $ref: "#/components/schemas/Identificator"
       - in: "query"
         name: "identificeerdePartij"
         description: "Identificatiecode van de partij die in een extern register door\
@@ -2287,6 +2700,58 @@ paths:
           $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
       tags:
       - "Partij-identificatoren"
+    put:
+      operationId: "putpartijidentificator"
+      description: "De operatie waarmee gegevens van de Partij-identificator kunnen\
+        \ worden gewijzigd."
+      parameters:
+      - in: "path"
+        name: "id"
+        description: "Unieke (technische) identificatiecode van de partij-identificator."
+        required: true
+        schema:
+          $ref: "#/components/schemas/Identificatiecode"
+      requestBody:
+        content:
+          application/hal+json:
+            schema:
+              $ref: "#/components/schemas/Partij-identificator"
+      responses:
+        200:
+          description: "Ok"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/hal+json:
+              schema:
+                $ref: "#/components/schemas/Partij-identificatorHal"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Partij-identificatoren"
   /partijen:
     get:
       operationId: "getpartijen"
@@ -2414,7 +2879,7 @@ paths:
               schema:
                 type: "string"
                 format: "uri"
-                example: "/partijen/"
+                example: "/partijen/123"
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
             warning:
@@ -2520,6 +2985,57 @@ paths:
       - "Partijen"
     patch:
       operationId: "patchpartijen"
+      description: "De operatie waarmee gegevens van interne taken kunnen worden gewijzigd."
+      parameters:
+      - in: "path"
+        name: "id"
+        description: "Unieke (technische) identificatiecode van de partij."
+        required: true
+        schema:
+          $ref: "#/components/schemas/Identificatiecode"
+      requestBody:
+        content:
+          application/hal+json:
+            schema:
+              $ref: "#/components/schemas/Partij"
+      responses:
+        200:
+          description: "Ok"
+          headers:
+            api-version:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
+            warning:
+              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
+          content:
+            application/hal+json:
+              schema:
+                $ref: "#/components/schemas/PartijHal"
+        400:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
+        401:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/401"
+        403:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/403"
+        409:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/409"
+        410:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/410"
+        415:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/415"
+        429:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/429"
+        500:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/500"
+        501:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/501"
+        503:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/503"
+        default:
+          $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
+      tags:
+      - "Partijen"
+    put:
+      operationId: "putpartijen"
       description: "De operatie waarmee gegevens van interne taken kunnen worden gewijzigd."
       parameters:
       - in: "path"
@@ -2804,37 +3320,34 @@ paths:
           $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
       tags:
       - "Vertegenwoordigingen"
-  /externRegisters:
-    get:
-      operationId: "getexternregisters"
-      description: "De operatie waarmee gegevens over een extern register kunnen worden\
-        \ geraadpleegd."
+    put:
+      operationId: "putvertegenwoordiging"
+      description: "De operatie waarmee gegevens van de koppelresource ActorKlantcontact\
+        \ kunnen worden gewijzigd."
       parameters:
-      - in: "query"
+      - in: "path"
         name: "id"
-        description: "Unieke (technische) identificatiecode van de partij."
+        description: "Unieke identificatie van de vertegenwoordiging."
         required: true
         schema:
-          type: "string"
-          maxLength: 40
+          $ref: "#/components/schemas/Identificatiecode"
+      requestBody:
+        content:
+          application/hal+json:
+            schema:
+              $ref: "#/components/schemas/Vertegenwoordiging"
       responses:
         200:
-          description: "Zoekactie geslaagd"
+          description: "Ok"
           headers:
             api-version:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
             warning:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
-            X-Rate-Limit-Limit:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Limit"
-            X-Rate-Limit-Remaining:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Remaining"
-            X-Rate-Limit-Reset:
-              $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/X_Rate_Limit_Reset"
           content:
             application/hal+json:
               schema:
-                $ref: "#/components/schemas/ExternRegisterHalCollectie"
+                $ref: "#/components/schemas/VertegenwoordigingHal"
         400:
           $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/400"
         401:
@@ -2858,7 +3371,8 @@ paths:
         default:
           $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
       tags:
-      - "Referentielijsten"
+      - "Vertegenwoordigingen"
+
 components:
   schemas:
     ActorHalCollectie:
@@ -3373,8 +3887,7 @@ components:
       properties:
         voorkeurstaal:
           $ref: "#/components/schemas/Taal"
-          description: "Taal waarin de partij bij voorkeur contact heeft met de\
-              \ gemeente."
+          description: "Taal waarin de partij bij voorkeur contact heeft met de gemeente."
         id:
           $ref: "#/components/schemas/IdentificatiecodeReadOnly"
         bezoekadres:
@@ -3721,32 +4234,7 @@ components:
         soortObjectId:
           $ref: "#/components/schemas/SoortObjectId"
           description: "Naam van de eigenschap die het object identificeert."
-    IdentificatorQuery:
-      type: "object"
-      description: "Gegevens die een object in een extern register uniek identificeren."
-      properties:
-        objectId:
-          $ref: "#/components/schemas/Identificatiecode"
-        objecttypecode:
-          $ref: "#/components/schemas/Identificatiecode"
-          description: "De code van het type van het object."
-        objecttypenaam:
-          $ref: "#/components/schemas/Naam-kort"
-          description: "De code van het type van het object."
-        registercode:
-          $ref: "#/components/schemas/Identificatiecode"
-          description: "Binnen het landschap van registers unieke code van\
-              \ het register waarin het object is geregistreerd."
-        registernaam:
-          $ref: "#/components/schemas/Naam-kort"
-          description: "Binnen het landschap van registers de naam \
-              \ het register waarin het object is geregistreerd."
-        soortObjectIdCode:
-          $ref: "#/components/schemas/Identificatiecode"
-          description: "Code van de eigenschap die het object identificeert."
-        soortObjectIdNaam:
-          $ref: "#/components/schemas/Naam-kort"
-          description: "Naam van de eigenschap die het object identificeert."
+ 
     Kanaal:
       type: "object"
       description: "Lijst van kanalen die personen en organisaties kunnen gebruiken\
@@ -3758,12 +4246,6 @@ components:
       properties:
         code:
           $ref: "#/components/schemas/Identificatiecode"
-        indicatieActief:
-          $ref: "#/components/schemas/IndicatieJaNee"
-          readOnly: true
-        naam:
-          $ref: "#/components/schemas/Naam-kort"
-          readOnly: true
     Land:
       type: "object"
       description: "Lijst van alle huidige en voormalige landen met hun codes, namen\
@@ -3776,15 +4258,6 @@ components:
       properties:
         landcode:
           $ref: "#/components/schemas/Identificatiecode"
-        landnaam:
-          $ref: "#/components/schemas/Naam-kort"
-          readOnly: true
-        ingangsdatumLand:
-          $ref: "#/components/schemas/Datum"
-          readOnly: true
-        einddatumLand:
-          $ref: "#/components/schemas/Datum"
-          readOnly: true
     SoortDigitaalAdres:
       type: "object"
       description: "Lijst van soorten digitale adressen die personen en organisaties\
@@ -3796,12 +4269,6 @@ components:
       properties:
         code:
           $ref: "#/components/schemas/Identificatiecode"
-        indicatieActief:
-          $ref: "#/components/schemas/IndicatieJaNee"
-          readOnly: true
-        naam:
-          $ref: "#/components/schemas/Naam-kort"
-          readOnly: true
     SoortObject:
       type: "object"
       description: "Lijst van typen objecten waarnaar vanuit het klantinteractiesregister\
@@ -3813,12 +4280,6 @@ components:
       properties:
         code:
           $ref: "#/components/schemas/Identificatiecode"
-        indicatieActief:
-          $ref: "#/components/schemas/IndicatieJaNee"
-          readOnly: true
-        naam:
-          $ref: "#/components/schemas/Naam-kort"
-          readOnly: true
     SoortObjectId:
       type: "object"
       description: "Lijst van identificatiesystemen en de registers waarin volgens\
@@ -3830,29 +4291,14 @@ components:
       properties:
         code:
           $ref: "#/components/schemas/Identificatiecode"
-        indicatieActief:
-          $ref: "#/components/schemas/IndicatieJaNee"
-          readOnly: true
-        naam:
-          $ref: "#/components/schemas/Naam-kort"
-          readOnly: true
     Taal:
       type: "object"
-      description: "Lijst van talen die personen en organisaties kunnen gebruiken\
-        \ bij contact met de gemeente en vice versa."
+      description: "Lijst van talen die personen en organisaties kunnen gebruiken bij contact met de gemeente en vice versa."
       required:
       - "code"
-      - "indicatieActief"
-      - "naam"
       properties:
         code:
           $ref: "#/components/schemas/Identificatiecode"
-        indicatieActief:
-          $ref: "#/components/schemas/IndicatieJaNee"
-          readOnly: true
-        naam:
-          $ref: "#/components/schemas/Naam-kort"
-          readOnly: true
     IndicatieJaNeeOnbekend:
       type: "string"
       description: "Enumeratie met waarden 'ja', 'nee' en 'onbekend'."
