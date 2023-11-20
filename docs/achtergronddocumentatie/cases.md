@@ -17,7 +17,7 @@ n.b. Onderstaande cases moeten op enkele punten nog gecontroleerd worden ivm de 
 | [C0992](./artefacten/0992.md) | Klant belt KCC met een vraag die direct beantwoord kan worden. |
 | [C0534](./artefacten/0534.md) | Klant belt KCC met een vraag die, na doorverbinden, direct door een collega beantwoord kan worden. |
 | [C9167](./artefacten/9167.md) | Klant belt KCC met een vraag die niet direct beantwoord kan worden en maakt een terugbelverzoek. |
-| C4161 | Klant belt KCC en wordt geauthenticeerd en is reeds bekend , klantbeeld wordt getoond. |
+| [C4161](./artefacten/4161.md) | Klant belt KCC en wordt geauthenticeerd en is reeds bekend , klantbeeld wordt getoond. |
 | [C2984](./artefacten/2984.md) | Medewerker belt op verzoek van KCC klant terug. |
 | [C9761](./artefacten/9761.md) | Medewerker belt op verzoek van KCC klant terug. Tijdens het gesprek blijkt dat dingen uitgezocht moeten worden. Hiervoor wordt een zaak aangemaakt. |
 | C3155 | Vooraf uitgevraagde informatie opslaan. |
