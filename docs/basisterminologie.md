@@ -88,7 +88,7 @@ Omdat het klantcontact zoveel mogelijk een weergave is van tijdens een contact u
 
 Als een interne taak ertoe aanleiding geeft opnieuw contact op te nemen (bijvoorbeeld als een vraagsteller met een antwoord wordt teruggebeld), ontstaat een nieuw klantcontact met het klantcontact dat aanleiding gaf tot het aanmaken van de interne taak als onderwerp. Op deze manier kunnen het initiële klantcontact, de taak die als gevolg daarvan werd aangemaakt, en het klantcontact dat hoort bij de uitvoering van die taak aan elkaar worden gerelateerd.
 
-Een klantcontact kan ook, zij het direct, zij het na nadat uit het uitvoeren van een interne taak bleek dat dit nodig of gewenst was, opgevolgd worden door het behandelen van een reeds lopende of nieuw te registreren zaak.
+Een klantcontact kan ook, zij het direct, zij het na nadat uit het uitvoeren van een interne taak bleek dat dit nodig of gewenst was, opgevolgd worden door het behandelen van een reeds lopende of nieuw te registreren zaak. In het eerste geval wordt de reeds lopende zaak beschouwd als onderwerp van het klantcontact. Deze relatie wordt vastgelegd in ‘onderwerpobject’. Als een klantcontact aanleiding gaf tot het starten met de behandeling van een nieuwe zaak, dan wordt vanuit de zaak verwezen naar het aanleidinggevend klantcontact. *Let op: vanuit een zaak kan op dit moment nog niet worden verwezen naar een ‘aanleidinggevend klantcontact’. Hiervoor is een wijziging in het bijbehorende informatiemodel nodig.*
 
 <img src="./assets/basisterminologie/klantinteracties-submodel-opvolging-van-klantcontact.svg" alt="Submodel opvolging van het klantcontact" width="30%"/>
 
@@ -168,7 +168,7 @@ Met name in relatie tot medewerkersgegevens is het belangrijk op te merken dat H
 
 Hieronder wordt voor een vijftal voorbeeldcasussen waarbij de gemeente contact heeft met klanten en/of vertegenwoordigers geïllustreerd welke gegevens daarover op welke manier worden geregistreerd.
 
-*Deze voorbeelden zijn beschreven op basis van objecttypen die in het semantisch informatiemodel zijn onderkend. Het is goed mogelijk dat deze in nog te ontwikkelen API-specificaties niet als afzonderlijke ‘resources’ herkenbaar zullen zijn.*
+*Deze voorbeelden zijn beschreven op basis van objecttypen die in het semantisch informatiemodel zijn onderkend. Deze zullen in nog te ontwikkelen API-specificaties niet vanzelfsprekend als afzonderlijke ‘resources’ herkenbaar zijn. Zo voorzien we bijvoorbeeld dat de specifieke vormen van Partij (Persoon, Contactpersoon en Organisatie) in één resource zullen worden samengevoegd.*
 
 ### Anoniem telefoongesprek leidt niet tot vervolgacties 
 
