@@ -37,7 +37,7 @@ Een klantcontact is gedefinieerd als “een contact tussen een klant of een vert
 5. Het klantcontact bestaat pas nadat tussen daarbij betrokkenen contact tot stand is gekomen (in het geval van bijvoorbeeld een telefoongesprek), of als met grote waarschijnlijkheid verwacht mag worden dat een boodschap de geadresseerde zal bereiken (in het geval van bijvoorbeeld het verzenden van een brief aan een inwoner of het aanbieden van een bericht voor publicatie op MijnOverheid). *Er bestaat dus niet zoiets als een ’gepland’ of ‘toekomstig’ klantcontact.*
 7. Het documentaire karakter van het klantcontact betekent dat dit na eerste vastlegging (behalve om fouten te herstellen) niet meer wordt gewijzigd. Eventuele handelingen die worden uitgevoerd omwille van [opvolging van een klantcontact](#opvolging-van-het-klantcontact) of instructies daarvoor zijn daarom geen onderdeel van dat klantcontact.
 
-<img src="./assets/basisterminologie/klantinteracties-basismodel.svg" alt="Basismodel klantinteracties" width="60%"/>
+<img src="./assets/basisterminologie/klantinteracties-basismodel.svg" alt="Basismodel klantinteracties" width="80%"/>
 
 ### Inhoud van het klantcontact
 
@@ -51,7 +51,7 @@ Om aan dit soort scenario's invulling te geven, kan de inhoud van een klantconta
 2. een verwijzing (via bijlage) naar het informatieobject (of document) dat (een deel van) de inhoud van het klantcontact beschrijft;
 3. een verwijzing (via bijlage) naar het dataobject met een andere vorm dat (een deel van) de inhoud van het klantcontact beschrijft. Deze documentatie legt geen beperkingen op als het gaat om de objecttypen (en bijbehorende registers) die als bijlage geregistreerd mogen worden. Als voorbeeld kan het [register voor overige objectregistraties](https://vng.nl/projecten/overige-objecten-registratie-api) worden genoemd.
 
-<img src="./assets/basisterminologie/klantinteracties-submodel-inhoud-van-klantcontact.svg" alt="Submodel inhoud van het klantcontact" width="40%"/>
+<img src="./assets/basisterminologie/klantinteracties-submodel-inhoud-van-klantcontact.svg" alt="Submodel inhoud van het klantcontact" width="54%"/>
 
 ### Onderwerp van het klantcontact
 
@@ -65,7 +65,7 @@ Maar het onderwerp kan ook specifieker of persoonlijker zijn, en betrekking hebb
 4. een verwijzing (via onderwerpobject) naar de klanttaak waarover (een deel van) het klantcontact ging;
 5. een verwijzing (via onderwerpobject) naar het dataobject met een andere vorm dat (een deel van) het onderwerp van het klantcontact beschrijft. Deze documentatie legt geen beperkingen op als het gaat om de objecttypen (en bijbehorende registers) die als onderwerpobject geregistreerd mogen worden.
 
-<img src="./assets/basisterminologie/klantinteracties-submodel-onderwerp-van-klantcontact.svg" alt="Submodel onderwerp van het klantcontact" width="50%"/>
+<img src="./assets/basisterminologie/klantinteracties-submodel-onderwerp-van-klantcontact.svg" alt="Submodel onderwerp van het klantcontact" width="72%"/>
 
 ### Betrokkene bij het klantcontact
 
@@ -78,7 +78,7 @@ Als de betrokkene bij het klantcontact als [partij gekend](#partij) is, en ófwe
 
 Als bij een contact geen enkele gekende partij betrokken is, én dat contact geen aanleiding geeft tot opvolging, dient het vastleggen van een klantcontact geen doel. Registratie kan in dit geval dus achterwege blijven.
 
-<img src="./assets/basisterminologie/klantinteracties-submodel-betrokkene-bij-klantcontact.svg" alt="Submodel betrokkene bij het klantcontact" width="32%"/>
+<img src="./assets/basisterminologie/klantinteracties-submodel-betrokkene-bij-klantcontact.svg" alt="Submodel betrokkene bij het klantcontact" width="40%"/>
 
 ### Opvolging van het klantcontact
 
@@ -90,7 +90,7 @@ Als een interne taak ertoe aanleiding geeft opnieuw contact op te nemen (bijvoor
 
 Een klantcontact kan ook, zij het direct, zij het na nadat uit het uitvoeren van een interne taak bleek dat dit nodig of gewenst was, opgevolgd worden door het behandelen van een reeds lopende of nieuw te registreren zaak. In het eerste geval wordt de reeds lopende zaak beschouwd als onderwerp van het klantcontact. Deze relatie wordt vastgelegd in ‘onderwerpobject’. Als een klantcontact aanleiding gaf tot het starten met de behandeling van een nieuwe zaak, dan wordt vanuit de zaak verwezen naar het aanleidinggevend klantcontact. *Let op: vanuit een zaak kan op dit moment nog niet worden verwezen naar een ‘aanleidinggevend klantcontact’. Hiervoor is een wijziging in het bijbehorende informatiemodel nodig.*
 
-<img src="./assets/basisterminologie/klantinteracties-submodel-opvolging-van-klantcontact.svg" alt="Submodel opvolging van het klantcontact" width="30%"/>
+<img src="./assets/basisterminologie/klantinteracties-submodel-opvolging-van-klantcontact.svg" alt="Submodel opvolging van het klantcontact" width="36%"/>
 
 ## Partij
 
@@ -148,7 +148,7 @@ In domein- of taakgebiedspecifieke gegevensverzamelingen kunnen de gegevens die 
 
 *N.B. deze documentatie schrijft niet voor niet onder welke voorwaarden het is toegestaan om voor het ene doel ingewonnen contactgegevens voor een ander doel te (her)gebruiken, maar erkent dat hiervoor toestemming nodig kan zijn. Evenmin beschrijft deze documentatie welke mate van betrouwbaarheid authenticatie- of identificatiemiddelen moeten bieden voordat partijgevevens kunnen worden geregistreerd, ingezien, verstrekt en aangepast. Wel stelt de documentatie dat deze middelen een aanzienlijke mate van zekerheid moeten bieden over de identiteit van degene die deze handelingen wil (laten) uitvoeren. Het verder invullen van deze voorwaarden is een taak voor juristen, privacy officers en beleidsmakers.*
 
-<img src="./assets/basisterminologie/klantinteracties-van-basis-naar-domeingegevens.svg" alt="Relatie tussen basis- partij- en domeinspecifieke klant, client- of relatiegegevens" width="55%"/>
+<img src="./assets/basisterminologie/klantinteracties-van-basis-naar-domeingegevens.svg" alt="Relatie tussen basis- partij- en domeinspecifieke klant, client- of relatiegegevens" width="70%"/>
 
 ## Actor
 
@@ -162,7 +162,7 @@ Waar de eerste twee waarschijnlijk voor zich spreken, verdient de laatste enige 
 
 Met name in relatie tot medewerkersgegevens is het belangrijk op te merken dat HR-systemen buiten het domein van klantinteracties vallen. Wat binnen dit domein is gemodelleerd moet bij het ontbreken van algemeen gebruikte standaarden voor het toegankelijk maken van medewerkers- en organisatiegegevens gezien worden als ‘stub’ die gegevens over organisatieonderdelen en medewerkers omvat voor zover die binnen dit domein van belang zijn.
 
-<img src="./assets/basisterminologie/klantinteracties-submodel-actor.svg" alt="Submodel actor" width="24%"/>
+<img src="./assets/basisterminologie/klantinteracties-submodel-actor.svg" alt="Submodel actor" width="27%"/>
 
 ## Registratievoorbeelden
 
