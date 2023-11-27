@@ -31,8 +31,6 @@ nav:
     subnav:
       - title: Specificatie Klantinteracties
         path: /api_familie_klantinteracties/klantinteracties
-      - title: Oude ontwerpvarianten
-        path: /api_familie_varianten/varianten
   - title: Achtergrond documentatie
     subnav: 
       - title: Uitgangspunten
