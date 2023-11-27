@@ -28,7 +28,7 @@ n.b. Onderstaande cases moeten op enkele punten nog gecontroleerd worden ivm de 
 | :--- | :--- | 
 | [C1199](./artefacten/1199.md) | Klant mailt een vraag naar de gemeente die beantwoord kan worden door KCC. |
 | [C2138](./artefacten/2138.md) | Klant stuurt een brief naar de gemeente die beantwoord kan worden door KCC. |
-| C9853 | Klant appt een vraag naar de gemeente die beantwoord kan worden door KCC. |
+| [C9853](./artefacten/9853.md) | Klant appt een vraag naar de gemeente die beantwoord kan worden door KCC. |
 
 ## Meldingen openbare ruimte per telefoon
 
