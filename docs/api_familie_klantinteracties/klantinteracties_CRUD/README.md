@@ -1,4 +1,4 @@
-# API-specificatoes van de CRUD variant
+# API-specificaties van de CRUD variant
 
 ## Status: in ontwikkeling
 
