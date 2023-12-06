@@ -8,7 +8,7 @@ Op deze manier krijgen we de technische basis-functies in beeld en kunnen we eve
 
 ## Changelog
 
-Versie 0.0.2-oas3.1
+***Versie 0.0.2-oas3.1***
 
   - Bij de componenten `medewerker`, `organisatorischeEenheid` en `geautomatiseerdeActor` is een groeperende property togevoegd (actortype).
     - Ratio: Door deze toevoeging is op eenvoudige wijze onderscheid te maken tussen de properties van het supertype (`Actor`) en de properties die bij de subtypes horen van de polymorfe resource `Actor`
