@@ -8,7 +8,7 @@ info:
   title: "Klantinteracties CRUD"
   description: "Een API om een klantinteractiecomponent (KIC) te benaderen. <br/>\
     \ Deze API-specificatie is de crud variant."
-  version: 0.0.1-oas3.1
+  version: 0.0.2-oas3.1
   x-imvertor-generator-version: "2.0.0"
   x-yamlCompiler-stylesheets-version: "20230512"
   contact:
@@ -38,7 +38,7 @@ paths:
         schema:
           type: "boolean"
       - in: "query"
-        name: "actoridentifcator"
+        name: "actoridentificator"
         description: "Gegevens die een actor in een extern register uniek identificeren."
         required: false
         schema:
@@ -779,7 +779,7 @@ paths:
       tags:
       - "BetrokkenenBijKlantcontact"
     get:
-      operationId: "getetrokkenebijklantcontact"
+      operationId: "getbetrokkenenbijklantcontact"
       description: "De operatie waarmee gegevens van een betrokkeneBijKlantcontact\
         \ kunnen worden geregistreerd."
       parameters:
@@ -940,7 +940,7 @@ paths:
       description: "De operatie waarmee gegevens van bijlagen kunnen worden gezocht."
       parameters:
       - in: "query"
-        name: "objectidentificator"
+        name: "bijlageidentificator"
         description: "Gegevens die een inhoudsobject in een extern register uniek\
           \ identificeren."
         required: false
@@ -2173,7 +2173,7 @@ paths:
         \ gezocht."
       parameters:
       - in: "query"
-        name: "objectidentificator"
+        name: "onderwerpobjectidentificator"
         description: "Gegevens die een onderwerpobject in een extern register uniek\
           \ identificeren."
         required: false
@@ -3404,7 +3404,7 @@ components:
           $ref: "#/components/schemas/Naam-lang"
         indicatieActief:
           $ref: "#/components/schemas/IndicatieJaNee"
-        actoridentifcator:
+        actoridentificator:
           $ref: "#/components/schemas/Identificator"
         soortActor:
           $ref: "#/components/schemas/SoortActor"
@@ -3546,12 +3546,12 @@ components:
         \ van de email worden ook vastgelegd bij het klantcontact."
       required:
       - "id"
-      - "objectidentificator"
+      - "bijlageidentificator"
       - "wasBijlageVanKlantcontact"
       properties:
         id:
           $ref: "#/components/schemas/IdentificatiecodeReadOnly"
-        objectidentificator:
+        bijlageidentificator:
           $ref: "#/components/schemas/Identificator"
         wasBijlageVanKlantcontact:
           $ref: "#/components/schemas/Identificatiecode"
@@ -3572,10 +3572,13 @@ components:
         - "werkteVoorPartij"
         - "contactnaam"
         properties:
-          werkteVoorPartij:
-            $ref: "#/components/schemas/Identificatiecode"
-          contactnaam:
-            $ref: "#/components/schemas/Contactnaam"
+          partijtype: 
+            type: "object"
+            properties: 
+              werkteVoorPartij:
+                $ref: "#/components/schemas/Identificatiecode"
+              contactnaam:
+                $ref: "#/components/schemas/Contactnaam"
     DigitaalAdresHalCollectie:
       type: "object"
       properties:
@@ -3598,7 +3601,7 @@ components:
     DigitaalAdres:
       type: "object"
       description: "Niet aan een specifieke fysieke locatie verbonden contactgegevens\
-        \ van een persoon of organisatie.\n\nDigitaal adres duidt gegevens aan die\
+        \ van een persoon of organisatie.\n\nDigitaal adres dduidt gegevens aan die\
         \ beschrijven hoe een persoon of organisatie via een digitaal kanaal bereikt\
         \ kan worden. Voorbeelden hiervan zijn een telefoonnummer, een e-mailadres\
         \ of een gebruikersnaam op een sociaal medium. Adressen die gekoppeld kunnen\
@@ -3638,10 +3641,13 @@ components:
         required:
         - "functie"
         properties:
-          functie:
-            $ref: "#/components/schemas/Omschrijving-kort"
-          omschrijving:
-            $ref: "#/components/schemas/Omschrijving-lang"
+          actortype: 
+            type: "object"
+            properties: 
+              functie:
+                $ref: "#/components/schemas/Omschrijving-kort"
+              omschrijving:
+                $ref: "#/components/schemas/Omschrijving-lang"
     InterneTaakHalCollectie:
       type: "object"
       properties:
@@ -3775,12 +3781,15 @@ components:
         - "eMailadres"
         - "telefoonnummer"
         properties:
-          functie:
-            $ref: "#/components/schemas/Omschrijving-kort"
-          eMailadres:
-            $ref: "#/components/schemas/E-mailadres"
-          telefoonnummer:
-            $ref: "#/components/schemas/Telefoonnummer"
+          actortype: 
+            type: "object"
+            properties: 
+              functie:
+                $ref: "#/components/schemas/Omschrijving-kort"
+              eMailadres:
+                $ref: "#/components/schemas/E-mailadres"
+              telefoonnummer:
+                $ref: "#/components/schemas/Telefoonnummer"
     OnderwerpobjectHalCollectie:
       type: "object"
       properties:
@@ -3807,12 +3816,12 @@ components:
         \ uitputtende lijst."
       required:
       - "id"
-      - "objectidentificator"
+      - "onderwerpobjectidentificator"
       - "wasOnderwerpVanKlantcontact"
       properties:
         id:
           $ref: "#/components/schemas/IdentificatiecodeReadOnly"
-        objectidentificator:
+        onderwerpobjectidentificator:
           $ref: "#/components/schemas/Identificator"
         onderwerpWasKlantcontact:
           $ref: "#/components/schemas/Identificatiecode"
@@ -3837,8 +3846,11 @@ components:
           \ onder firma, maatschap of commanditaire vennootschap of andere organisatie\
           \ zonder rechtspersoonlijkheid."
         properties:
-          naam:
-            $ref: "#/components/schemas/Naam-lang"
+          partijtype: 
+            type: "object"
+            properties: 
+              naam:
+                $ref: "#/components/schemas/Naam-lang"
     OrganisatorischeEenheidHal:
       allOf:
       - $ref: "#/components/schemas/OrganisatorischeEenheid"
@@ -3854,12 +3866,15 @@ components:
           \ organisatie dat haar activiteiten uitvoert binnen een VESTIGING VAN ZAAKBEHANDELENDE\
           \ ORGANISATIE en die verantwoordelijk is voor de behandeling van zaken."
         properties:
-          omschrijving:
-            $ref: "#/components/schemas/Omschrijving-lang"
-          eMailadres:
-            $ref: "#/components/schemas/E-mailadres"
-          telefoonnummer:
-            $ref: "#/components/schemas/Telefoonnummer"
+          actortype: 
+            type: "object"
+            properties: 
+              omschrijving:
+                $ref: "#/components/schemas/Omschrijving-lang"
+              eMailadres:
+                $ref: "#/components/schemas/E-mailadres"
+              telefoonnummer:
+                $ref: "#/components/schemas/Telefoonnummer"
     PartijHalCollectie:
       type: "object"
       properties:
@@ -3965,8 +3980,11 @@ components:
           \ natuurlijk persoon zijn waarvan niet bekend is of die ingeschreven is\
           \ of niet."
         properties:
-          contactnaam:
-            $ref: "#/components/schemas/Contactnaam"
+          partijtype: 
+            type: "object"
+            properties: 
+              contactnaam:
+                $ref: "#/components/schemas/Contactnaam"
     VertegenwoordigingHalCollectie:
       type: "object"
       properties:
@@ -4202,8 +4220,6 @@ components:
         \ rol (kunnen) spelen."
       required:
       - "code"
-      - "locatie"
-      - "naam"
       properties:
         code:
           $ref: "#/components/schemas/Identificatiecode"
@@ -4241,8 +4257,6 @@ components:
         \ voor contact met de gemeente en vice versa."
       required:
       - "code"
-      - "indicatieActief"
-      - "naam"
       properties:
         code:
           $ref: "#/components/schemas/Identificatiecode"
@@ -4252,9 +4266,6 @@ components:
         \ en geldigheidsinformatie."
       required:
       - "landcode"
-      - "landnaam"
-      - "ingangsdatumLand"
-      - "einddatumLand"
       properties:
         landcode:
           $ref: "#/components/schemas/Identificatiecode"
@@ -4264,8 +4275,6 @@ components:
         \ kunnen gebruiken voor contact met de gemeente en vice versa."
       required:
       - "code"
-      - "indicatieActief"
-      - "naam"
       properties:
         code:
           $ref: "#/components/schemas/Identificatiecode"
@@ -4275,8 +4284,6 @@ components:
         \ relaties kunnen worden gelegd."
       required:
       - "code"
-      - "indicatieActief"
-      - "naam"
       properties:
         code:
           $ref: "#/components/schemas/Identificatiecode"
@@ -4380,7 +4387,7 @@ components:
         \ nummer voor gebruik tijdens interacties tussen mensen."
     IndicatieJaNee:
       type: "boolean"
-      description: "Indicatie voor een waarde `Ja` of een waarde `Nee`."
+      description: "Indicatie voor een waarde `Ja`(true) of een waarde `Nee`(false)."
     Naam-kort:
       type: "string"
       description: "Kort (80 karakters) tekstveld voor een naam."
@@ -4411,6 +4418,7 @@ components:
         \ maar in sommige gevallen de beginletter gecombineerd met de tweede letter\
         \ van een voornaam."
       maxLength: 10
+      minLength: 1
     Voorvoegsel:
       type: "string"
       description: "Eventueel voorvoegsel dat hoort bij een achternaam."
