@@ -3372,7 +3372,6 @@ paths:
           $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/responses/default"
       tags:
       - "Vertegenwoordigingen"
-
 components:
   schemas:
     ActorHalCollectie:
@@ -4350,6 +4349,7 @@ components:
       description: "Deel van een adres dat gewoonlijk op &#233;&#233;n (adres)regel\
         \ wordt geschreven."
       maxLength: 80
+      minLength: 1
     Datum:
       type: "string"
       description: "Aanduiding van datum volgens de NEN-ISO 8601:2019-standaard. Een\
@@ -4371,16 +4371,20 @@ components:
       description: "E-mail-adres, maximaal 254 karakters lang. (conform https://www.rfc-editor.org/errata/eid1690\
         \ ) Omvat minimaal een '@' en een '.'."
       maxLength: 254
+      minLength: 1
     Identificatiecode:
       type: "string"
       description: "Unieke technische identificerende code, primair bedoeld voor gebruik\
         \ bij interacties tussen IT-systemen."
       maxLength: 40
+      minlength: 1
     IdentificatiecodeReadOnly:
       type: "string"
-      description: ""
+      description: "Unieke technische identificerende code, primair bedoeld voor gebruik\
+        \ bij interacties tussen IT-systemen."
       readOnly: true
       maxLength: 40
+      minLength: 1
     IdentificerendNummer:
       type: "integer"
       description: "Leesbaar en mondeling of schriftelijk overdraagbaar uniek identificerend\
@@ -4392,26 +4396,32 @@ components:
       type: "string"
       description: "Kort (80 karakters) tekstveld voor een naam."
       maxLength: 80
+      minLength: 1
     Naam-lang:
       type: "string"
       description: "Lang (200 karakters) tekstveld voor een naam."
       maxLength: 200
+      minLength: 1
     Omschrijving-kort:
       type: "string"
       description: "Kort (80 karakters) tekstveld voor een omschrijving."
       maxLength: 40
+      minLength: 1
     Omschrijving-lang:
       type: "string"
       description: "Lang (200 karakters) tekstveld voor een omschrijving."
       maxLength: 200
+      minLength: 1
     Tekst:
       type: "string"
       description: "Vrij tekstveld voor lange (1000 karakters) teksten."
       maxLength: 1000
+      minLength: 1
     Telefoonnummer:
       type: "string"
       description: "Uniek nummer dat een aansluiting op het publieke telefoonnet identificeert."
       maxLength: 20
+      minLength: 1
     Voorletters:
       type: "string"
       description: "Afkorting van een voornaam of voornamen. Meestal de beginletter,\
@@ -4423,3 +4433,4 @@ components:
       type: "string"
       description: "Eventueel voorvoegsel dat hoort bij een achternaam."
       maxLength: 10
+      minLength: 1
