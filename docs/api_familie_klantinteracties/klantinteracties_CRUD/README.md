@@ -23,6 +23,7 @@ Op deze manier krijgen we de technische basis-functies in beeld en kunnen we eve
     - Dit betekent dat als een property met dit datatype in de requestbody of de responsebody is opgenomen, dan moet deze ook daadwerkelijk een waarde met een minimale lengte van 1 hebben.
     - Dit betekent ook dat als een property "required" is dat er dan verplicht ook een waarde moet worden toegekend aan die property. (Voor alle properties van een ander type dan "string" wordt dit afgedwongen door de type-declaratie.)
   - Verwijzingen naar de code van een referentielijst zijn nu opgenomen als properties in plaats van een geneste code in de property die conform de referentielijst is genoemd.
+    - Referentielijstcomponenten zijn verwijderd.
     - Naamgevingsconventie :  codeNaamReferentielijst
     - Voorbeeld oude situatie :
       ```
@@ -48,9 +49,9 @@ Op deze manier krijgen we de technische basis-functies in beeld en kunnen we eve
           $ref: "#/components/schemas/SoortObjectId"
           description: "Naam van de eigenschap die het object identificeert."
         ```
-      - Voorbeeld nieuwe situatie:
-      - ```
-        Identificator:
+    - Voorbeeld nieuwe situatie:
+    - ```
+      Identificator:
         type: "object"
         description: "Gegevens die een object in een extern register uniek identificeren."
         required:
@@ -64,12 +65,12 @@ Op deze manier krijgen we de technische basis-functies in beeld en kunnen we eve
             description: "Identificatie zpals die in een extern register is toegekend aan het betreffende object"
           codeObjecttype:
             $ref: "#/components/schemas/Identificatiecode"
-            description: "Code van het type object in de referentielijst Objecttype."
+            description: "Code van het type object (Referentielijst Objecttype)."
           codeRegister:
             $ref: "#/components/schemas/Identificatiecode"
-            description: "Code van het register in de referentielijst ExternRegister."
+            description: "Code van het register (Referentielijst ExternRegister)."
           codeSoortObjectId:
             $ref: "#/components/schemas/Identificatiecode"
-            description: "Code van het ssort objectId in de referentielijst soortObjectId."
-          ```
+            description: "Code van het soort objectId (Referentielijst soortObjectId)."
+        ```
         
