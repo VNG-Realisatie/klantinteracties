@@ -3611,10 +3611,10 @@ components:
       - "adres"
       - "omschrijving"
       properties:
-        soortDigitaalAdres:
-          $ref: "#/components/schemas/SoortDigitaalAdres"
+        codeSoortDigitaalAdres:
+          $ref: "#/components/schemas/Identificatiecode"
           description: "Typering van het digitale adres die aangeeft via welk(e)\
-              \ kanaal of kanalen met dit adres contact kan worden opgenomen."
+              \ kanaal of kanalen met dit adres contact kan worden opgenomen. (Referentielijst SoortDigitaalAdres)"
         id:
           $ref: "#/components/schemas/IdentificatiecodeReadOnly"
         adres:
@@ -3740,14 +3740,12 @@ components:
       - "indicatieContactGelukt"
       - "vertrouwelijk"
       properties:
-        kanaal:
-          allOf:
-          - $ref: "#/components/schemas/Kanaal"
-          - title: "kanaal"
-            description: "Communicatiekanaal dat bij het klantcontact werd gebruikt."
-        taal:
-          $ref: "#/components/schemas/Taal"
-          description: "Taal die bij het klantcontact werd gesproken of geschreven."
+        codeKanaal:
+          $ref: "#/components/schemas/Identificatiecode"
+          description: "Communicatiekanaal dat bij het klantcontact werd gebruikt. (Referentielijst Kanaal)"
+        codeTaal:
+          $ref: "#/components/schemas/Identificatiecode"
+          description: "Taal die bij het klantcontact werd gesproken of geschreven. (Referentielijst Taal) "
         id:
           $ref: "#/components/schemas/IdentificatiecodeReadOnly"
         nummer:
@@ -4178,8 +4176,8 @@ components:
           $ref: "#/components/schemas/Adresregel"
         adresregel3:
           $ref: "#/components/schemas/Adresregel"
-        land:
-          $ref: "#/components/schemas/Land"
+        codeLand:
+          $ref: "#/components/schemas/Identificatiecode"
           description: "Een code, opgenomen in Tabel 34 Landentabel, die een land\
               \ buiten Nederland aangeeft waar het adres gevonden kan worden."
         nummeraanduidingid:
@@ -4206,105 +4204,33 @@ components:
           $ref: "#/components/schemas/Adresregel"
         adresregel3:
           $ref: "#/components/schemas/Adresregel"
-        land:
-          $ref: "#/components/schemas/Land"
+        codeLand:
+          $ref: "#/components/schemas/Identificatiecode"
           description: "Een code, opgenomen in Tabel 34 Landentabel, die een land\
-              \ buiten Nederland aangeeft waar het adres gevonden kan worden."
+              \ buiten Nederland aangeeft waar het adres gevonden kan worden. (Referntielijst Land)"
         nummeraanduidingid:
           $ref: "#/components/schemas/Identificatiecode"
-    ExternRegister:
-      type: "object"
-      description: "Lijst van registers buiten het domein van klantinteracties waarin\
-        \ objecten zijn geregistreerd die binnen het domein van klantinteracties een\
-        \ rol (kunnen) spelen."
-      required:
-      - "code"
-      properties:
-        code:
-          $ref: "#/components/schemas/Identificatiecode"
-        locatie:
-          $ref: "#/components/schemas/Omschrijving-kort"
-          readOnly: true
-        naam:
-          $ref: "#/components/schemas/Naam-kort"
-          readOnly: true
     Identificator:
       type: "object"
       description: "Gegevens die een object in een extern register uniek identificeren."
       required:
       - "objectId"
-      - "objecttype"
-      - "register"
-      - "soortObjectId"
+      - "codeObjecttype"
+      - "codeRegister"
+      - "codeSoortObjectId"
       properties:
         objectId:
           $ref: "#/components/schemas/Identificatiecode"
-        objecttype:
-          $ref: "#/components/schemas/SoortObject"
-          description: "Type van het object."
-        register:
-          $ref: "#/components/schemas/ExternRegister"
-          description: "Binnen het landschap van registers unieke omschrijving van\
-              \ het register waarin het object is geregistreerd."
-        soortObjectId:
-          $ref: "#/components/schemas/SoortObjectId"
-          description: "Naam van de eigenschap die het object identificeert."
- 
-    Kanaal:
-      type: "object"
-      description: "Lijst van kanalen die personen en organisaties kunnen gebruiken\
-        \ voor contact met de gemeente en vice versa."
-      required:
-      - "code"
-      properties:
-        code:
+          description: "Identificatie zpals die in een extern register is toegekend aan het betreffende object"
+        codeObjecttype:
           $ref: "#/components/schemas/Identificatiecode"
-    Land:
-      type: "object"
-      description: "Lijst van alle huidige en voormalige landen met hun codes, namen\
-        \ en geldigheidsinformatie."
-      required:
-      - "landcode"
-      properties:
-        landcode:
+          description: "Code van het type object (Referentielijst Objecttype)."
+        codeRegister:
           $ref: "#/components/schemas/Identificatiecode"
-    SoortDigitaalAdres:
-      type: "object"
-      description: "Lijst van soorten digitale adressen die personen en organisaties\
-        \ kunnen gebruiken voor contact met de gemeente en vice versa."
-      required:
-      - "code"
-      properties:
-        code:
+          description: "Code van het register (Referentielijst ExternRegister)."
+        codeSoortObjectId:
           $ref: "#/components/schemas/Identificatiecode"
-    SoortObject:
-      type: "object"
-      description: "Lijst van typen objecten waarnaar vanuit het klantinteractiesregister\
-        \ relaties kunnen worden gelegd."
-      required:
-      - "code"
-      properties:
-        code:
-          $ref: "#/components/schemas/Identificatiecode"
-    SoortObjectId:
-      type: "object"
-      description: "Lijst van identificatiesystemen en de registers waarin volgens\
-        \ deze systemen te identificeren objecten gevonden kunnen worden."
-      required:
-      - "code"
-      - "indicatieActief"
-      - "naam"
-      properties:
-        code:
-          $ref: "#/components/schemas/Identificatiecode"
-    Taal:
-      type: "object"
-      description: "Lijst van talen die personen en organisaties kunnen gebruiken bij contact met de gemeente en vice versa."
-      required:
-      - "code"
-      properties:
-        code:
-          $ref: "#/components/schemas/Identificatiecode"
+          description: "Code van het soort objectId (Referentielijst soortObjectId)."
     IndicatieJaNeeOnbekend:
       type: "string"
       description: "Enumeratie met waarden 'ja', 'nee' en 'onbekend'."
