@@ -55,9 +55,9 @@ Op deze manier krijgen we de technische basis-functies in beeld en kunnen we eve
         description: "Gegevens die een object in een extern register uniek identificeren."
         required:
         - "objectId"
-        - "objecttype"
-        - "register"
-        - "soortObjectId"
+        - "codeObjecttype"
+        - "codeRegister"
+        - "codeSoortObjectId"
         properties:
           objectId:
             $ref: "#/components/schemas/Identificatiecode"
@@ -68,7 +68,7 @@ Op deze manier krijgen we de technische basis-functies in beeld en kunnen we eve
           codeRegister:
             $ref: "#/components/schemas/Identificatiecode"
             description: "Code van het register in de referentielijst ExternRegister."
-          soortObjectId:
+          codeSoortObjectId:
             $ref: "#/components/schemas/Identificatiecode"
             description: "Code van het ssort objectId in de referentielijst soortObjectId."
           ```
