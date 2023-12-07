@@ -33,3 +33,9 @@ date: 02-06-2022
 | [F5694 - Registreer contactgegevens bij interne taak](./artefacten/5694.md) | `interne taak` | `contactgegevens` | |
 | [F5241 - Markeer interne taak als gedaan](./artefacten/5241.md)  | `interne taak` | `interne taak - zaak` | Buiten familie ivm validatie foreign key? |
 | [F3839 - Vraag openstaande interne taken op](./artefacten/3839.md) | `interne taak` | `klantcontact` | |
+
+## PartijIdentificator
+
+| Code - Naam | Hoofdobject | Gerelateerde objecten | Opmerkingen |
+| :--- | :--- | :--- | :--- |
+| [F5817 - Zoek Partijidentificator](./artefacten/5817.md) | `Partijidentificator` | | |
