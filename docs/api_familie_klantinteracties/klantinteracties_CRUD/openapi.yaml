@@ -4207,7 +4207,7 @@ components:
         codeLand:
           $ref: "#/components/schemas/Identificatiecode"
           description: "Een code, opgenomen in Tabel 34 Landentabel, die een land\
-              \ buiten Nederland aangeeft waar het adres gevonden kan worden. (Referntielijst Land)"
+              \ buiten Nederland aangeeft waar het adres gevonden kan worden. (Referentielijst Land)"
         nummeraanduidingid:
           $ref: "#/components/schemas/Identificatiecode"
     Identificator:
