@@ -3600,7 +3600,7 @@ components:
     DigitaalAdres:
       type: "object"
       description: "Niet aan een specifieke fysieke locatie verbonden contactgegevens\
-        \ van een persoon of organisatie.\n\nDigitaal adres dduidt gegevens aan die\
+        \ van een persoon of organisatie.\n\nDigitaal adres duidt gegevens aan die\
         \ beschrijven hoe een persoon of organisatie via een digitaal kanaal bereikt\
         \ kan worden. Voorbeelden hiervan zijn een telefoonnummer, een e-mailadres\
         \ of een gebruikersnaam op een sociaal medium. Adressen die gekoppeld kunnen\
