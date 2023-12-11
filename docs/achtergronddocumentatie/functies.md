@@ -13,7 +13,7 @@ date: 02-06-2022
 | [F7927 - Zoek partij](./artefacten/7927.md) | `partij` | `digitaal adres`, `partij-identificator` | |
 | [F0138 - Vraag partij op](./artefacten/0138.md) | `partij` | `digitaal adres`, `Partij-identificator` |
 | [F7554 - Registreer partij](./artefacten/7554.md) | `partij` | `partij-identificator` |
-| [F2158 - Wijzig partij](./artefacten/2158.md) | `partij` | `digitaal adres` & `partijidentificator` |
+| [F2158 - Wijzig partij](./artefacten/2158.md) | `partij` |  |
 | [F6580 - Registreer contactgegevens bij partij](./artefacten/6580.md) | `partij` | `digitaal adres` |
 
 ## Klantcontact
