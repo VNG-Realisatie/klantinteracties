@@ -1,7 +1,7 @@
 ---
 layout: page-with-side-nav
 title: API ontwerpvarianten
-date: 10-11-2023
+date: 06-12-2023
 ---
 
 # Inleiding
@@ -27,6 +27,8 @@ De specificatie kan worden bekeken in [Swagger](./klantinteracties_beheer/swagge
 In samenwerking met een aantal koplopergemeenten is een eerste versie van een CRUD-Api-specificatie opgesteld. Deze versie is één (van de vele) stappen in het ontwikkelproces en kan dagelijks wijzigen.  
 
 De specificatie kan worden bekeken in [Swagger](./klantinteracties_CRUD/swagger-ui.md) of in [Redoc](./klantinteracties_CRUD/redoc.md).
+
+De changelog van deze API-Specificatie is te [hier](./klantinteracties_CRUD/README.md) te vinden.
 
 ## Referentielijsten API-specificatie
 
