@@ -54,7 +54,7 @@ n.b. Onderstaande cases moeten op enkele punten nog gecontroleerd worden ivm de 
 | Code | Omschrijving | 
 | :--- | :--- | 
 | C3546 | Klant komt langs bij de gemeente met een vraag die door de baliemedewerker beantwoord kan worden. |
-| [C5499](./artefacten/5499.md) | Klant mailt/appt/stuurt brief/komt langs met een vraag die niet door het KCC beantwoord kan worden. |
+| C5499 | Klant mailt/appt/stuurt brief/komt langs met een vraag die niet door het KCC beantwoord kan worden. |
 | C5419 | Vertegenwoordiger van klant komt langs bij de gemeente met een vraag die door de baliemedewerker beantwoord kan worden. |
 | C6193 | Case voor DSO verzoek. |
 | C3759 | Case met e-formulier. |
