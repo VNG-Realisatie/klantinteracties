@@ -19,7 +19,7 @@ Op deze manier krijgen we de technische basis-functies in beeld en kunnen we eve
   - de property "actoridentifcator" van de component `actor` is hernoemd naar "actoridentificator" (herstel tyepfout) (de bijbehorende query-parameter ook)
   - De omschrijving bij het datatype Boolean aangepast zodat duidelijk is dat waarmee true en false corresponderen.
   - Tikfout verbeterd in de operationid van de get ../betrokkenenbijklantcontact (getbetrokkenenbijklantcontact)
-  - De datatypen van het type "string" zonder format zijn voorzien van een minLengt: 1
+  - De datatypen van het type "string" zonder format zijn voorzien van een minLength: 1
     - Dit betekent dat als een property met dit datatype in de requestbody of de responsebody is opgenomen, dan moet deze ook daadwerkelijk een waarde met een minimale lengte van 1 hebben.
     - Dit betekent ook dat als een property "required" is dat er dan verplicht ook een waarde moet worden toegekend aan die property. (Voor alle properties van een ander type dan "string" wordt dit afgedwongen door de type-declaratie.)
   - Verwijzingen naar de code van een referentielijst zijn nu opgenomen als properties in plaats van een geneste code in de property die conform de referentielijst is genoemd.
