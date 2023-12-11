@@ -39,6 +39,10 @@ date: 02-10-2023
 - [B4237 - De 'klantcontacten zaken' relatie ligt binnen het klantcontactregister](./artefacten/4237.md)
 - [B2538 - Gedeeltelijke overlap tussen de Verzending (ZGW) en het Klantcontact](./artefacten/2538.md)
 
+## Implementatiekeuzes (en de gevolgen)
+
+- [V6577 - Wordt de identificerende property door de provider of door de consumer toegekend?](./artefacten/6577.md)
+
 ## Objecttype / Concepten
 
 ### Partij
