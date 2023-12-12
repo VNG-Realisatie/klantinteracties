@@ -14,11 +14,11 @@ date: 02-10-2023
 
 ### API-architectuur / ontwerp
 
-- [B7030 - We beschrijven een register API. Niet een Backend For Frontend (BFF) API.](./artefacten/7030.md)
+- [B7030 - We beschrijven een register API. Niet een Backend For Frontend (BFF) API](./artefacten/7030.md)
 - [V8786 - Beschrijven we saga's als onderdeel van de standaard?](./artefacten/8786.md)
 - [V1565 - Beschrijven we een registeroverstijgende API?](./artefacten/1565.md)
 - [B9866 - We voegen in API's geen mogelijkheid toe om extra gegevens uit te wisselen](./artefacten/9866.md)
-- [V5698 - In hoeverre gaan we gebruik maken van de HTTP-requests zols get, put, patchen post versus uitwerken van RPC calls met alleen een post.](./artefacten/5698.md)
+- [V5698 - In hoeverre gaan we gebruik maken van de HTTP-requests zols get, put, patchen post versus uitwerken van RPC calls met alleen een post](./artefacten/5698.md)
 
 ### Informatiemodellering algemeen / MIM
 
@@ -54,7 +54,7 @@ date: 02-10-2023
 - [B9045 - We introduceren een partij.nummer naast het BSN](./artefacten/9045.md)
 - [B4733 - Partij.nummer niet gebruiken als interne technische sleutel](./artefacten/4733.md)
 - [B0862 - Registratie van personen in verschillende rollen](./artefacten/0862.md)
-- [B4771 - We maken geen gebruik van de Core Person/Business Vocabulary voor eigenschappen van personen en organisaties en/of hun identificatoren.](./artefacten/4771.md)
+- [B4771 - We maken geen gebruik van de Core Person/Business Vocabulary voor eigenschappen van personen en organisaties en/of hun identificatoren](./artefacten/4771.md)
 - [B8841 - Adres worden vastgelegd middels een verwijzing naar de BAG](./artefacten/8841.md)
 - [B9491 - Personen hebben een voornaam en een achternaam](./artefacten/9491.md)
 - [B0606 - Interne notities worden alleen bij Partijen vastgelegd](./artefacten/0606.md)
@@ -63,7 +63,7 @@ date: 02-10-2023
 
 - [B5717 - Naamgeving Klantcontact](./artefacten/5717.md)
 - [B7682 - Afbakening van het concept klantcontact](./artefacten/7682.md)
-- [B0780 - Creatiedatum, mutatiedatum en indiendatum worden niet vastlegelegd.](./artefacten/0780.md)
+- [B0780 - Creatiedatum, mutatiedatum en indiendatum worden niet vastlegelegd](./artefacten/0780.md)
 - [V6898 - Wanneer - en met welke doelen - leggen we een klantcontact vast?](./artefacten/6898.md)
 
 ### Interne taak
@@ -87,11 +87,11 @@ date: 02-10-2023
 ### Zoeken van partijen
 
 - [V6881 - Criteria voor niet digitale authenticatie?](./artefacten/6881.md)
-- [V1767 - Welke identificatie gebruiken we voor het opvragen (raadplegen?) van een partij. ](./artefacten/1767.md)
+- [V1767 - Welke identificatie gebruiken we voor het opvragen (raadplegen?) van een partij](./artefacten/1767.md)
 
 ## Technisch uitwisselingsmodel
 
-- [B1304 - Resource Partij met contactpersoon, organisatie en persoon.](./artefacten/1304.md)
+- [B1304 - Resource Partij met contactpersoon, organisatie en persoon](./artefacten/1304.md)
 - [B7993 - Entiteit Actor en de subtypen worden polymorf vormgegeven](./artefacten/7993.md)
 - [B0399 - Relatie *had betrokken* tussen Klantcontact en Actor wordt een koppelresource](./artefacten/2703.md)
 - [B5096 - Koppelresources die in het UGM ontstaan hebben een 'betekenisloze' naam, samengesteld uit de namen van de aan elkaar te relateren resources](./artefacten/5096.md)
