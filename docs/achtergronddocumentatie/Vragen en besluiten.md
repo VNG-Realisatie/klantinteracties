@@ -87,7 +87,7 @@ date: 02-10-2023
 ### Zoeken van partijen
 
 - [V6881 - Criteria voor niet digitale authenticatie?](./artefacten/6881.md)
-- [V1767 - Welke identificatie gebruiken we voor het opvragen (raadplegen?) van een partij](./artefacten/1767.md)
+- [B1767 - We gebruiken de ID als identificatie voor het opvragen (raadplegen) van resources](./artefacten/1767.md)
 
 ## Technisch uitwisselingsmodel
 
