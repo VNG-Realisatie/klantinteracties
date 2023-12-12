@@ -18,7 +18,7 @@ date: 02-10-2023
 - [V8786 - Beschrijven we saga's als onderdeel van de standaard?](./artefacten/8786.md)
 - [V1565 - Beschrijven we een registeroverstijgende API?](./artefacten/1565.md)
 - [B9866 - We voegen in API's geen mogelijkheid toe om extra gegevens uit te wisselen](./artefacten/9866.md)
-- [V5698 - In hoeverre gaan we gebruik maken van de HTTP-requests zols get, put, patchen post versus uitwerken van RPC calls met alleen een post.](./artefacten/5198.md)
+- [V5698 - In hoeverre gaan we gebruik maken van de HTTP-requests zols get, put, patchen post versus uitwerken van RPC calls met alleen een post.](./artefacten/5698.md)
 
 ### Informatiemodellering algemeen / MIM
 
