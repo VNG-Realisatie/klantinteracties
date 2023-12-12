@@ -28,6 +28,7 @@ date: 02-10-2023
 - [B7271 - Naamgeving van historie attributen](./artefacten/7271.md)
 - [B0932 - MIM-'Keuzeconstructie' wordt niet toegepast voor XOR's](./artefacten/0932.md)
 - [B9876 - In SIM gegevensgroepen alleen als 'complex datatype', niet voor een herhalende groep](./artefacten/9876.md)
+- [B8694 - Opname historische datumkenmerken](./artefacten/8694.md)
 
 ## Scope
 
