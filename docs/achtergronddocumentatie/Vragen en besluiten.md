@@ -65,6 +65,7 @@ date: 02-10-2023
 - [B7682 - Afbakening van het concept klantcontact](./artefacten/7682.md)
 - [V0780 - Creatiedatum, een mutatiedatum en een indiendatum vastleggen bij klantcontact](./artefacten/0780.md)
 - [V6898 - Wanneer - en met welke doelen - leggen we een klantcontact vast?](./artefacten/6898.md)
+- [V8908 - Registreren van correspondentie als klantcontact: hoe mappen we klantinteractiesconcepten op 'verzending' bij documenten?](./artefacten/8908.md)
 
 ### Interne taak
 
