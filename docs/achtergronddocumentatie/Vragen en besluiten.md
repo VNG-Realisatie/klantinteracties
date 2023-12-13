@@ -70,7 +70,7 @@ date: 02-10-2023
 
 - [B8302 - Naamgeving Interne taak](./artefacten/8302.md)
 - [V1962 - Interne taak of 'Zaak light'?](./artefacten/1962.md)
-- [V0435 - Welke taakstatussen gebruiken we?](./artefacten/0435.md)
+- [B0435 - We gebruiken bij taken de statussen 'te verwerken' en 'verwerkt'](./artefacten/0435.md)
 
 ### Zaak
 
