@@ -6,6 +6,8 @@ Deze variant wordt verder uitgewerkt in samenwerking met enkele gemeenten.
 Uitgangspunten in deze variant is dat er een CRUD-API wordt uitgewerkt waar geen "convenience"- faciliteiten in opgenomen zijn.
 Op deze manier krijgen we de technische basis-functies in beeld en kunnen we eventueel in vervolgstappen kiezen op welke wijze we "convenience"-voorzieningengaan toevoegen om performance of developer-experience te optimaliseren. 
 
+De specificatie kan worden bekeken in [Swagger](./swagger-ui.md) of in [Redoc](./redoc.md).
+
 ## Changelog
 
 ***Versie 0.0.2-oas3.1***
