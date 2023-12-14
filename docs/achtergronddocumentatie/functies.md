@@ -39,6 +39,7 @@ date: 02-06-2022
 
 | Code - Naam | Hoofdobject | Gerelateerde objecten | Opmerkingen |
 | :--- | :--- | :--- | :--- |
+| [F1995 - Registreer Digitaal adres](./artefacten/1995.md) | `Digitaal adres` | | | 
 | [F6634 - Zoek Digitaal adres](./artefacten/6634.md) | `Digitaal adres` | | |
 
 ## PartijIdentificator
@@ -46,3 +47,15 @@ date: 02-06-2022
 | Code - Naam | Hoofdobject | Gerelateerde objecten | Opmerkingen |
 | :--- | :--- | :--- | :--- |
 | [F5817 - Zoek Partijidentificator](./artefacten/5817.md) | `Partijidentificator` | | |
+
+## Onderwerpobject
+
+| Code - Naam | Hoofdobject | Gerelateerde objecten | Opmerkingen |
+| :--- | :--- | :--- | :--- |
+| [F9322 - Registreer onderwerpobject](./artefacten/9322.md) | `Onderwerpobject` | | | 
+
+## Bijlage
+
+| Code - Naam | Hoofdobject | Gerelateerde objecten | Opmerkingen |
+| :--- | :--- | :--- | :--- |
+| [F1975 - Registreer bijlage](./artefacten/1975.md) | `Bijlage` | | | 
