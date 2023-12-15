@@ -8,6 +8,12 @@ Op deze manier krijgen we de technische basis-functies in beeld en kunnen we eve
 
 ## Changelog
 
+***Versie 0.0.3-oas3.1***
+
+  Mismnatch met het informatiemodel rechtgetrokken: 
+  - Bij het componenten `interneTaak` is de property *toegewezenOp* vervangen door de property *verwerktOp*. De property *verwerktOp*  is niet required waar *toegewezenOp* dat wel was.
+  - De query-parameter *toegewezenOp* vervangen door de query-parameter *verwerktOp* bij de endpoint *../internetaken*. 
+  
 ***Versie 0.0.2-oas3.1***
 
   - Bij de componenten `medewerker`, `organisatorischeEenheid` en `geautomatiseerdeActor` is een groeperende property toegevoegd (actortype).
