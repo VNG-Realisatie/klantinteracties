@@ -8,7 +8,7 @@ info:
   title: "Klantinteracties CRUD"
   description: "Een API om een klantinteractiecomponent (KIC) te benaderen. <br/>\
     \ Deze API-specificatie is de crud variant."
-  version: 0.0.2-oas3.1
+  version: 0.0.3-oas3.1
   x-imvertor-generator-version: "2.0.0"
   x-yamlCompiler-stylesheets-version: "20230512"
   contact:
@@ -1549,9 +1549,9 @@ paths:
         schema:
           $ref: "#/components/schemas/Taakstatus"
       - in: "query"
-        name: "toegewezenOp"
-        description: "Datum en tijdstip waarop de interne taak aan een actor werd\
-          \ toegewezen."
+        name: "verwerktOp"
+        description: "Datum en tijdstip waarop de interne taak door de actor werd\
+          \ verwerkt."
         required: false
         schema:
           type: "string"
@@ -3675,7 +3675,6 @@ components:
       - "nummer"
       - "gevraagdeHandeling"
       - "status"
-      - "toegewezenOp"
       - "aanleidinggevendKlantcontact"
       - "toegewezenAanActor"
       properties:
@@ -3689,7 +3688,7 @@ components:
           $ref: "#/components/schemas/Tekst"
         status:
           $ref: "#/components/schemas/Taakstatus"
-        toegewezenOp:
+        verwerktOp:
           $ref: "#/components/schemas/Datumtijd"
         aanleidinggevendKlantcontact:
           $ref: "#/components/schemas/Identificatiecode"
