@@ -3898,7 +3898,7 @@ components:
       - "voorkeursDigitaalAdres"
       properties:
         voorkeurstaal:
-          $ref: "#/components/schemas/Taal"
+          $ref: "#/components/schemas/Identificatiecode"
           description: "Taal waarin de partij bij voorkeur contact heeft met de gemeente."
         id:
           $ref: "#/components/schemas/IdentificatiecodeReadOnly"
