@@ -40,6 +40,14 @@ date: 02-06-2022
 | :--- | :--- | :--- | :--- |
 | [F5582 - Zoek actor](./artefacten/5582.md) | `actor` | | |
 
+## Betrokkene bij klantcontact
+
+| Code - Naam | Hoofdobject | Gerelateerde objecten | Opmerkingen |
+| :--- | :--- | :--- | :--- |
+| [F2599 - Registreer betrokkene bij klantcontact](./artefacten/2599.md) | `betrokkeneBijKlantcontact` | | |
+| [F4936 - Zoek betrokkene bij klantcontact](./artefacten/4936.md) | `betrokkeneBijKlantcontact` | | |
+
+
 ## Digitaal adres
 
 | Code - Naam | Hoofdobject | Gerelateerde objecten | Opmerkingen |
