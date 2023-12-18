@@ -21,8 +21,6 @@ date: 02-06-2022
 | Code - Naam | Hoofdobject | Gerelateerde objecten | Opmerkingen |
 | :--- | :--- | :--- | :--- |
 | [F2173 - Registreer klantcontact](./artefacten/2173.md) | `klantcontact` | `betrokkenebijklantcontact`, `actorklantcontact` | |
-| [F2130 - Koppel klantcontact aan interne taak](./artefacten/2130.md) | `klantcontact` - `interne taak` | | |
-| [F1888 - Koppel klantcontact aan zaak](./artefacten/1888.md) | `klantcontact` | | |
 | [F3896 - Zoek klantcontact](./artefacten/3896.md) | `klantcontact` | | |
 | [F8618 - Vraag klantcontact op](./artefacten/8618.md) | `klantcontact` | `betrokkenen`, `bijlage`, `interne taak` | |
 | [F2084 - Vraag overzicht van klantcontacten op](./artfacten/2084.md) | `klantcontact` | | |
