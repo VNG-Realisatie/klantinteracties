@@ -6,6 +6,7 @@ Deze variant wordt verder uitgewerkt in samenwerking met enkele gemeenten.
 Uitgangspunten in deze variant is dat er een CRUD-API wordt uitgewerkt waar geen "convenience"- faciliteiten in opgenomen zijn.
 Op deze manier krijgen we de technische basis-functies in beeld en kunnen we eventueel in vervolgstappen kiezen op welke wijze we "convenience"-voorzieningengaan toevoegen om performance of developer-experience te optimaliseren. 
 
+
 De specificatie kan worden bekeken in [Swagger](./swagger-ui.md) of in [Redoc](./redoc.md).
 
 ## Changelog
@@ -14,8 +15,11 @@ De specificatie kan worden bekeken in [Swagger](./swagger-ui.md) of in [Redoc](.
 
   Mismatch met het informatiemodel rechtgetrokken: 
   - Bij het componenten `interneTaak` is de property *toegewezenOp* vervangen door de property *verwerktOp*. De property *verwerktOp*  is niet required waar *toegewezenOp* dat wel was.
-  - De query-parameter *toegewezenOp* vervangen door de query-parameter *verwerktOp* bij de endpoint *../internetaken*. 
-
+  - De query-parameter *toegewezenOp* vervangen door de query-parameter *verwerktOp* bij de endpoint *../internetaken*.
+    
+  Foute verwijzing hersteld
+  - In de resource partij verwees de propery voorkeurstaal naar "#/components/schemas/Taal". Dat is nu aangepast naar "#/components/schemas/Identificatiecode".
+  
 ***Versie 0.0.2-oas3.1***
 
   - Bij de componenten `medewerker`, `organisatorischeEenheid` en `geautomatiseerdeActor` is een groeperende property toegevoegd (actortype).
