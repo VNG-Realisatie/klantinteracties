@@ -28,7 +28,7 @@ In samenwerking met een aantal koplopergemeenten is een eerste versie van een CR
 
 De specificatie kan worden bekeken in [Swagger](./klantinteracties_CRUD/swagger-ui.md) of in [Redoc](./klantinteracties_CRUD/redoc.md).
 
-De changelog van deze API-Specificatie is te [hier](./klantinteracties_CRUD/README.md) te vinden.
+De changelog van deze API-Specificatie is te [hier](./klantinteracties_CRUD/CRUD_Changelog.md) te vinden.
 
 ## Referentielijsten API-specificatie
 
