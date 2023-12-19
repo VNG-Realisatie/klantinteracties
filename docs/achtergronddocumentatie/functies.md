@@ -14,18 +14,14 @@ date: 02-06-2022
 | [F0138 - Vraag partij op](./artefacten/0138.md) | `partij` | `digitaal adres`, `Partij-identificator` |
 | [F7554 - Registreer partij](./artefacten/7554.md) | `partij` | `partij-identificator` |
 | [F2158 - Wijzig partij](./artefacten/2158.md) | `partij` |  |
-| [F6580 - Registreer contactgegevens bij partij](./artefacten/6580.md) | `partij` | `digitaal adres` |
 
 ## Klantcontact
 
 | Code - Naam | Hoofdobject | Gerelateerde objecten | Opmerkingen |
 | :--- | :--- | :--- | :--- |
 | [F2173 - Registreer klantcontact](./artefacten/2173.md) | `klantcontact` | `betrokkenebijklantcontact`, `actorklantcontact` | |
-| [F2130 - Koppel klantcontact aan interne taak](./artefacten/2130.md) | `klantcontact` - `interne taak` | | |
-| [F1888 - Koppel klantcontact aan zaak](./artefacten/1888.md) | `klantcontact` | | |
 | [F3896 - Zoek klantcontact](./artefacten/3896.md) | `klantcontact` | | |
 | [F8618 - Vraag klantcontact op](./artefacten/8618.md) | `klantcontact` | `betrokkenen`, `bijlage`, `interne taak` | |
-| [F2084 - Vraag overzicht van klantcontacten op](./artfacten/2084.md) | `klantcontact` | | |
 
 ## Interne taak
 
@@ -41,6 +37,14 @@ date: 02-06-2022
 | Code - Naam | Hoofdobject | Gerelateerde objecten | Opmerkingen |
 | :--- | :--- | :--- | :--- |
 | [F5582 - Zoek actor](./artefacten/5582.md) | `actor` | | |
+| [F6542 - Koppel actor aan klantcontact](./artefacten/5582.md) | `actorKlantcontact` | |
+
+## Betrokkene bij klantcontact
+
+| Code - Naam | Hoofdobject | Gerelateerde objecten | Opmerkingen |
+| :--- | :--- | :--- | :--- |
+| [F2599 - Registreer betrokkene bij klantcontact](./artefacten/2599.md) | `betrokkeneBijKlantcontact` | | |
+| [F4936 - Zoek betrokkene bij klantcontact](./artefacten/4936.md) | `betrokkeneBijKlantcontact` | | |
 
 ## Digitaal adres
 
