@@ -203,7 +203,7 @@ paths:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
             warning:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
-            content:
+          content:
             application/json:
               schema:
                 $ref: "#/components/schemas/ExternRegister"
@@ -364,7 +364,7 @@ paths:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/api_version"
             warning:
               $ref: "https://raw.githubusercontent.com/VNG-Realisatie/API-Kennisbank/master/common/common.yaml#/components/headers/warning"
-            content:
+          content:
             application/json:
               schema:
                 $ref: "#/components/schemas/Kanaal"
