@@ -43,11 +43,13 @@ n.b. Onderstaande cases moeten op enkele punten nog gecontroleerd worden ivm de 
 | :--- | :--- | 
 | [C9018](./artefacten/9018.md) | Klant belt KCC om een product aan te vragen. |
 
-## Routering
+## Afhandeling interne taken
 
 | Code | Omschrijving | 
 | :--- | :--- | 
 | [C6114](./artefacten/6114.md) | Verkeerde routering vanuit KCC. |
+| [C2716](./artefacten/2716.md) | Aanmaken zaak naar aanleiding van een interne taak. | 
+| [C9708](./artefacten/9708.md) | Medewerker beantwoordt een vraag naar aanleiding van een interne taak. |
 
 ## Kanalen
 
