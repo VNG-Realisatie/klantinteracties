@@ -1626,6 +1626,7 @@ components:
     Identificatiecode:
       type: "string"
       description: "Unieke technische identificerende code, primair bedoeld voor gebruik bij interacties tussen IT-systemen."
+      minLength: 1
       maxLength: 40
     IndicatieJaNee:
       type: "boolean"
