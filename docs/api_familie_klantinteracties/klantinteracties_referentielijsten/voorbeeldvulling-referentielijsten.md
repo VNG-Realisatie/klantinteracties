@@ -98,7 +98,7 @@ Met de referentielijst Soorten object wordt in kaart gebracht naar welk soort ob
 | :----------- | :----------- | :----------- |
 | 1  | Ingeschreven Natuurlijk Persoon | 1 |  | 
 | 2  | Ingeschreven Niet-Natuurlijk Persoon | 5 |
-| 3  | Naampersoon | 5 |
+| 3  | Informatieobject | 7 |
 | 4  | Vestiging | 5 | 
 | 5  | Kadastraal Onroerende Zaak | 2 | 
 | 6  | Persoon | 2 |
@@ -108,24 +108,22 @@ Met de referentielijst Soorten object wordt in kaart gebracht naar welk soort ob
 | 10 | Bezwaar | 4 | 
 | 11 | Biljet | 4 | 
 | 12 | Zaak | 6 | 
-| 13 | Betrokkene | 6 | 
-| 14 | Informatieobject | 7 |
+
+
 
 ## Soort object-ID
 
-| Code | Naam | ExternRegisterId |
+| Code | Naam | SoortObjectId |
 | :----------- | :----------- | :----------- |
 | 1  | BurgerServiceNummer (BSN) | 1 |  
 | 2  | Rechtspersonen en Samenwerkingsverbanden Identificatienummer (RSIN) | 2 |
-| 3  | Naampersoon | 5 |
-| 4  | Vestiging | 5 | 
-| 5  | Kadastraal Onroerende Zaak | 2 | 
-| 6  | Persoon | 2 |
-| 7  | Nummeraanduiding | 3 |
-| 8  | Pand | 3 |
-| 9  | WOZ-object | 4 |
-| 10 | Bezwaar | 4 | 
-| 11 | Biljet | 4 | 
-| 12 | Zaak | 6 | 
-| 13 | Betrokkene | 6 | 
-| 14 | Informatieobject | 7 |
+| 3  | Vestigingsnummer | 4 | 
+| 4  | Identificatie | 3 | 
+| 6  | Identificatie | 5 |
+| 7  | Identificatie | 6 |
+| 8  | Identificatie | 8 |
+| 9  | wozObjectnummer | 9 |
+| 10 | identificatie | 10 | 
+| 11 | identificatie | 11| 
+| 12 | Zaakidentificatie | 12 | 
+
