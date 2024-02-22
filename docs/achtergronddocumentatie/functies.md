@@ -29,8 +29,8 @@ date: 02-06-2022
 | :--- | :--- | :--- | :--- |
 | [F2120 - Registreer interne taak](./artefacten/2120.md) | `interne taak` | | |
 | [F5694 - Registreer contactgegevens bij interne taak](./artefacten/5694.md) | `interne taak` | `contactgegevens` | |
-| [F5241 - Markeer interne taak als gedaan](./artefacten/5241.md)  | `interne taak` | `interne taak - zaak` | Buiten familie ivm validatie foreign key? |
-| [F3839 - Vraag openstaande interne taken op](./artefacten/3839.md) | `interne taak` | `klantcontact` | |
+| [F5241 - Wijzig interne taak](./artefacten/5241.md)  | `interne taak` | | |
+| [F3839 - Zoek interne taken](./artefacten/3839.md) | `interne taak` | `klantcontact`, `actor` | |
 
 ## Actor 
 
