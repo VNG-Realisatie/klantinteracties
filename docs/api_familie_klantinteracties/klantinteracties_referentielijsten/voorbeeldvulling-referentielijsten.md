@@ -53,21 +53,17 @@ Voorstel voor vulling van de referentielijst "Soorten digitaal adres"
 
 ## Taal
 
-Er is een internationale Standaard beschikbaar de ISO 639:2023 standaard. Deze standaard heeft recentelijk de volgende lijst standaarden vervangen : 
-ISO 639-1:2002 - Codes for the representation of names of languages — Part 1: Alpha-2 code
-ISO 639-5:2008 - Codes for the representation of names of languages — Part 5: Alpha-3 code for language families and groups
-ISO 639-3:2007 - Codes for the representation of names of languages — Part 3: Alpha-3 code for comprehensive coverage of languages
-ISO 639-2:1998 - Codes for the representation of names of languages — Part 2: Alpha-3 code
-ISO 639-4:2010 - Codes for the representation of names of languages — Part 4: General principles of coding of the representation of names of languages and related entities, and application guidelines
+Voor de voorbeeldvulling van de talenlijst wordt een selectie de ISO 639-2 lijst gebruikt zoals die gepubliceerd is door de [Library of Congress](https://www.loc.gov/standards/iso639-2/php/code_list.php). Van deze lijst wordt de drie-letterige code toegepast als code in de referentielijst. Waar er voor een taal 2 codes zijn gedefinieerd wordt de (T)-variant gebruikt in de referentielijst. 
 
-Voor de talenlijst die hier benodigd is zou ISO 639-1:2002 waarschijnlijk afdoende zijn. 
-De ISO 639:2023 standaard zou aangeschaft moeten worden. Hoe gaan we hier mee om ? (https://standards.iteh.ai/catalog/standards/iso/ead9cc68-1fda-4225-add7-a24dabf3f742/iso-639-2023)
+Voor het samenstellen van de lijst worden de volgende criteria gehanteerd :
+- De door de overheid [erkende talen van Nederland](https://www.rijksoverheid.nl/onderwerpen/erkende-talen/vraag-en-antwoord/erkende-talen-nederland).
+- [De officiële talen van de Europese Unie](https://european-union.europa.eu/principles-countries-history/languages_nl)
+- De meest-gesproken talen in Nederland.
 
-Voorstel is om vooralsnog de ISO 639-1:2002 lijst te hanteren. Die is [hier](https://nl.wikipedia.org/wiki/Lijst_van_ISO_639-codes) op te halen. 
+Dat leidt tot de volgende voorbeeldvulling van de referentielijst
 
-Alleen die talen waar een waarde in de kolom "639-1" staat worden opgenomen. 
+| **Code** | **Naam** | **IndicatieActief** | 
 
-Als `code` wordt de twee-letterige code in de kolom "639-1"uit de Tabel op [Wikipedia, Lijst van ISO 639-codes]https://nl.wikipedia.org/wiki/Lijst_van_ISO_639-codes) overgenomen.
 
 Als `naam` wordt de "Taalnaam" overgenomen.
 
