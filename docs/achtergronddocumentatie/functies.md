@@ -70,3 +70,4 @@ date: 02-06-2022
 | Code - Naam | Hoofdobject | Gerelateerde objecten | Opmerkingen |
 | :--- | :--- | :--- | :--- |
 | [F1975 - Registreer bijlage](./artefacten/1975.md) | `Bijlage` | | | 
+| [F5492 - Zoek bijlage](./artefacten/5492.md) | `Bijlage` | | | 
