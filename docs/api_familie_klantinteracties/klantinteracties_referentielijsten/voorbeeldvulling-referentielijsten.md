@@ -128,11 +128,11 @@ Met de voorbeelvulling willen we ook voorbeelden geven van de samenhang tussen d
 
 | Code | Naam | Locatie | 
 | :----------- | :----------- | :----------- |
-| 1  | BasisRegistratie Personen |  | 
-| 2  | BasisRegistratie Kadaster |  |
+| 1  | Basisregistratie Personen |  | 
+| 2  | Basisregistratie Kadaster |  |
 | 3  | Basisregistratie Adressen en Gebouwen |  |
 | 4  | Basisregistratie Waardering Onroerende Zaken |  | 
-| 5  | HandelsRegister |  | 
+| 5  | Handelsregister |  | 
 | 6  | Zakenregister |  |
 | 7  | Documentenregister |  |
 | 8  | Overige Objecten Registratie |  |
@@ -147,30 +147,28 @@ Met de referentielijst Soorten object wordt in kaart gebracht naar welk soort ob
 | 2  | Ingeschreven Niet-Natuurlijk Persoon | 5 |
 | 3  | Informatieobject | 7 |
 | 4  | Vestiging | 5 | 
-| 5  | Kadastraal Onroerende Zaak | 2 | 
+| 5  | Onroerende zaak | 2 | 
 | 6  | Persoon | 2 |
 | 7  | Nummeraanduiding | 3 |
 | 8  | Pand | 3 |
-| 9  | WOZ-object | 4 |
+| 9  | WOZObject | 4 |
 | 10 | Bezwaar | 4 | 
 | 11 | Biljet | 4 | 
 | 12 | Zaak | 6 | 
-
-
 
 ## Soort object-ID
 
 | Code | Naam | SoortObjectId |
 | :----------- | :----------- | :----------- |
-| 1  | BurgerServiceNummer (BSN) | 1 |  
-| 2  | Rechtspersonen en Samenwerkingsverbanden Identificatienummer (RSIN) | 2 |
+| 1  | Burgerservicenummer | 1 |  
+| 2  | Rechtspersonen en Samenwerkingsverbanden Identificatienummer | 2 |
 | 3  | Vestigingsnummer | 4 | 
 | 4  | Identificatie | 3 | 
 | 6  | Identificatie | 5 |
 | 7  | Identificatie | 6 |
 | 8  | Identificatie | 8 |
-| 9  | wozObjectnummer | 9 |
-| 10 | identificatie | 10 | 
-| 11 | identificatie | 11| 
+| 9  | WozObjectnummer | 9 |
+| 10 | Identificatie | 10 | 
+| 11 | Identificatie | 11| 
 | 12 | Zaakidentificatie | 12 | 
 
