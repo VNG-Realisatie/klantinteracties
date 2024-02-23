@@ -19,7 +19,7 @@ Per referentielijst wordt aangegeven of, en welke (basis-)vulling er is gedefini
 
 ## Kanaal
 
-Vraag uitgezet bij Paul Jansen 
+Vraag uitgezet bij Paul Jansen / Vincent van Beek
 
 
 | Code | Naam | indicatieActief |
@@ -63,11 +63,62 @@ Voor het samenstellen van de lijst worden de volgende criteria gehanteerd :
 Dat leidt tot de volgende voorbeeldvulling van de referentielijst
 
 | **Code** | **Naam** | **IndicatieActief** | 
-
-
-Als `naam` wordt de "Taalnaam" overgenomen.
-
-IndicatieActief wordt standaard op "true" gezet.
+| ---- | ---- | ---- | 
+| ara  | Arabisch | true | 
+| aze  | Azerbeidzjaans | true | 
+| bel  | Belarussisch | true | 
+| ber  | Berber | true | 
+| bos  | Bosnisch | true | 
+| bul  | Bulgaars | true | 
+| ces  | Tsjechisch | true | 
+| cnr  | Montenegrijns | true | 
+| dan  | Deens | true | 
+| deu  | Duits | true | 
+| ell  | Grieks | true | 
+| eng  | Engels | true | 
+| est  | Estisch | true | 
+| fas  | Perzisch | true | 
+| fin  | Fins | true | 
+| fra  | Frans | true | 
+| fry  | Fries | true | 
+| gle  | Iers | true | 
+| hin  | Hindi | true | 
+| hrv  | Kroatisch | true | 
+| hun  | Hongaars | true | 
+| hye  | Armeens | true | 
+| isl  | IJslands | true | 
+| ita  | Italiaans | true | 
+| jav  | Javaans | true | 
+| lav  | Lets | true | 
+| lim  | Limburgs | true | 
+| lit  | Litouwen | true | 
+| kat  | Georgisch | true | 
+| kur  | Koerdisch | true | 
+| mlt  | Maltees | true | 
+| mkd  | Macedonisch | true | 
+| nds  | Nedersaksisch | true | 
+| nld  | Nederlands | true | 
+| nor  | Noors | true | 
+| pap  | Papiaments | true | 
+| pol  | Pools | true | 
+| por  | Portugees | true | 
+| rom  | Romani | true | 
+| ron  | Roemeens | true | 
+| rus  | Russisch | true | 
+| sgn  | Gebarentaal | true | 
+| slk  | Slowaaks | true | 
+| slv  | Sloveens | true | 
+| som  | Somalisch | true | 
+| spa  | Spaans | true | 
+| srn  | Sranan | true | 
+| srp  | Servisch | true | 
+| sqi  | Albanees | true | 
+| swe  | Zweeds | true | 
+| tur  | Turks | true | 
+| ukr  | Oekraïens | true | 
+| yue  | Kantonees  | true | 
+| yid  | Jiddisch | true | 
+| zho  | Mandarijn | true | 
 
 ## Extern register
 
