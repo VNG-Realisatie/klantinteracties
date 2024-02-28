@@ -50,6 +50,7 @@ date: 02-06-2022
 | [F2599 - Registreer betrokkene bij klantcontact](./artefacten/2599.md) | `betrokkeneBijKlantcontact` | | |
 | [F4936 - Zoek betrokkene bij klantcontact](./artefacten/4936.md) | `betrokkeneBijKlantcontact` | | |
 | [F5859 - Vraag betrokkene bij klantcontact op](./artefacten/5859.md) | `betrokkeneBijKlantcontact` | | |
+| [F5859 - Wijzig betrokkene bij klantcontact](./artefacten/3246.md) | `betrokkeneBijKlantcontact` | | |
 
 ## Digitaal adres
 
