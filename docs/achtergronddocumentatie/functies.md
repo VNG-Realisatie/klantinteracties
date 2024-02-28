@@ -29,15 +29,19 @@ date: 02-06-2022
 | :--- | :--- | :--- | :--- |
 | [F2120 - Registreer interne taak](./artefacten/2120.md) | `interne taak` | | |
 | [F5694 - Registreer contactgegevens bij interne taak](./artefacten/5694.md) | `interne taak` | `contactgegevens` | |
-| [F5241 - Wijzig interne taak](./artefacten/5241.md)  | `interne taak` | | |
-| [F3839 - Zoek interne taken](./artefacten/3839.md) | `interne taak` | `klantcontact`, `actor` | |
+| [F5241 - Markeer interne taak als gedaan](./artefacten/5241.md)  | `interne taak` | `interne taak - zaak` | Buiten familie ivm validatie foreign key? |
+| [F3839 - Vraag openstaande interne taken op](./artefacten/3839.md) | `interne taak` | `klantcontact` | |
+| [F2771 - Vraag interne taak op](./artefacten/2771.md) | `interne taak` | | |
 
 ## Actor 
 
 | Code - Naam | Hoofdobject | Gerelateerde objecten | Opmerkingen |
 | :--- | :--- | :--- | :--- |
+| [F5592 - Registreer actor](./artefacten/5592.md) | `actor` | | |
 | [F5582 - Zoek actor](./artefacten/5582.md) | `actor` | | |
 | [F6542 - Koppel actor aan klantcontact](./artefacten/5582.md) | `actorKlantcontact` | |
+| [F5002 - Vraag actor op](./artefacten/5002.md) | `actor` | | |
+
 
 ## Betrokkene bij klantcontact
 
@@ -45,6 +49,7 @@ date: 02-06-2022
 | :--- | :--- | :--- | :--- |
 | [F2599 - Registreer betrokkene bij klantcontact](./artefacten/2599.md) | `betrokkeneBijKlantcontact` | | |
 | [F4936 - Zoek betrokkene bij klantcontact](./artefacten/4936.md) | `betrokkeneBijKlantcontact` | | |
+| [F5859 - Vraag betrokkene bij klantcontact op](./artefacten/5859.md) | `betrokkeneBijKlantcontact` | | |
 
 ## Digitaal adres
 
@@ -70,4 +75,3 @@ date: 02-06-2022
 | Code - Naam | Hoofdobject | Gerelateerde objecten | Opmerkingen |
 | :--- | :--- | :--- | :--- |
 | [F1975 - Registreer bijlage](./artefacten/1975.md) | `Bijlage` | | | 
-| [F5492 - Zoek bijlage](./artefacten/5492.md) | `Bijlage` | | | 
