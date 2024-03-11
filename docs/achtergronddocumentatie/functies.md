@@ -52,6 +52,8 @@ date: 02-06-2022
 | :--- | :--- | :--- | :--- |
 | [F1995 - Registreer Digitaal adres](./artefacten/1995.md) | `Digitaal adres` | | | 
 | [F6634 - Zoek Digitaal adres](./artefacten/6634.md) | `Digitaal adres` | | |
+| [F2806 - Vraag digitaal adres op](./artefacten/2806.md) | `Digitaal adres` | | |
+| [F2946 - Wijzig digitaal adres](./artefacten/2946.md) | `Digitaal adres` | | |
 
 ## PartijIdentificator
 
