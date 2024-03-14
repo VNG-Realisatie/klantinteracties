@@ -59,7 +59,10 @@ date: 02-06-2022
 
 | Code - Naam | Hoofdobject | Gerelateerde objecten | Opmerkingen |
 | :--- | :--- | :--- | :--- |
-| [F5817 - Zoek Partijidentificator](./artefacten/5817.md) | `Partijidentificator` | | |
+| [F6257 - Registreer partijidentificator](./artefacten/6257.md) | `Partijidentificator` | | |
+| [F5817 - Zoek partijidentificator](./artefacten/5817.md) | `Partijidentificator` | | |
+| [F1582 - Vraag partijidentificator op](./artefacten/1582.md) | `Partijidentificator` | | |
+| [F8226 - Wijzig partijidentificator](./artefacten/1582.md) | `Partijidentificator` | | Een partijidentificator wordt in principe niet gewijzigd. Deze functie heeft al doel correcties door te kunnen voeren. |
 
 ## Onderwerpobject
 
