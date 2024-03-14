@@ -10,9 +10,9 @@ date: 02-06-2022
 
 | Code - Naam | Hoofdobject | Gerelateerde objecten | Opmerkingen |
 | :--- | :--- | :--- | :--- |
+| [F7554 - Registreer partij](./artefacten/7554.md) | `partij` | `partij-identificator` |
 | [F7927 - Zoek partij](./artefacten/7927.md) | `partij` | `digitaal adres`, `partij-identificator` | |
 | [F0138 - Vraag partij op](./artefacten/0138.md) | `partij` | `digitaal adres`, `Partij-identificator` |
-| [F7554 - Registreer partij](./artefacten/7554.md) | `partij` | `partij-identificator` |
 | [F2158 - Wijzig partij](./artefacten/2158.md) | `partij` |  |
 
 ## Klantcontact
@@ -69,6 +69,9 @@ date: 02-06-2022
 | Code - Naam | Hoofdobject | Gerelateerde objecten | Opmerkingen |
 | :--- | :--- | :--- | :--- |
 | [F9322 - Registreer onderwerpobject](./artefacten/9322.md) | `Onderwerpobject` | | | 
+| [F9829 - Zoek onderwerpobject](./artefacten/9829.md) | `Onderwerpobject` | | | 
+| [F6039 - Vraag onderwerpobject op](./artefacten/6039.md) | `Onderwerpobject` | | | 
+| [F5639 - Wijzig onderwerpobject](./artefacten/5639.md) | `Onderwerpobject` | | | 
 
 ## Bijlage
 
