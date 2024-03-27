@@ -28,7 +28,6 @@ date: 02-06-2022
 | Code - Naam | Hoofdresource | Gerelateerde resources | Opmerkingen |
 | :--- | :--- | :--- | :--- |
 | [F2120 - Registreer interne taak](./artefacten/2120.md) | `Interne taak` | | |
-| [F5694 - Registreer contactgegevens bij interne taak](./artefacten/5694.md) | `Interne taak` | `Contactgegevens` | |
 | [F5241 - Wijzig interne taak](./artefacten/5241.md)  | `Interne taak` | | |
 | [F3839 - Zoek interne taken](./artefacten/3839.md) | `Interne taak` | `Klantcontact`, `Actor` | |
 
