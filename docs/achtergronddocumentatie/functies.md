@@ -30,20 +30,25 @@ date: 02-06-2022
 | [F2120 - Registreer interne taak](./artefacten/2120.md) | `Interne taak` | | |
 | [F5241 - Wijzig interne taak](./artefacten/5241.md)  | `Interne taak` | | |
 | [F3839 - Zoek interne taken](./artefacten/3839.md) | `Interne taak` | `Klantcontact`, `Actor` | |
+| [F2771 - Vraag interne taak op](./artefacten/2771.md) | `interne taak` | | |
 
 ## Actor 
 
 | Code - Naam | Hoofdresource | Gerelateerde resources | Opmerkingen |
 | :--- | :--- | :--- | :--- |
-| [F5582 - Zoek actor](./artefacten/5582.md) | `Actor` | | |
-| [F6542 - Koppel actor aan klantcontact](./artefacten/5582.md) | `ActorKlantcontact` | |
+| [F5592 - Registreer actor](./artefacten/5592.md) | `actor` | | |
+| [F5582 - Zoek actor](./artefacten/5582.md) | `actor` | | |
+| [F6542 - Koppel actor aan klantcontact](./artefacten/5582.md) | `actorKlantcontact` | |
+| [F5002 - Vraag actor op](./artefacten/5002.md) | `actor` | | |
 
 ## Betrokkene bij klantcontact
 
 | Code - Naam | Hoofdresource | Gerelateerde resources | Opmerkingen |
 | :--- | :--- | :--- | :--- |
-| [F2599 - Registreer betrokkene bij klantcontact](./artefacten/2599.md) | `Betrokkene bij klantcontact` | | |
-| [F4936 - Zoek betrokkene bij klantcontact](./artefacten/4936.md) | `Betrokkene bij klantcontact` | | |
+| [F2599 - Registreer betrokkene bij klantcontact](./artefacten/2599.md) | `betrokkeneBijKlantcontact` | | |
+| [F4936 - Zoek betrokkene bij klantcontact](./artefacten/4936.md) | `betrokkeneBijKlantcontact` | | |
+| [F5859 - Vraag betrokkene bij klantcontact op](./artefacten/5859.md) | `betrokkeneBijKlantcontact` | | |
+| [F5859 - Wijzig betrokkene bij klantcontact](./artefacten/3246.md) | `betrokkeneBijKlantcontact` | | |
 
 ## Digitaal adres
 

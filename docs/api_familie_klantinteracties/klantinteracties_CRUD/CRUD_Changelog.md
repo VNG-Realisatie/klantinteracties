@@ -1,3 +1,9 @@
+---
+layout: page-with-side-nav
+title: Changelog CRUD-api specificaties
+date: 28-02-2024
+---
+
 # API-specificaties van de CRUD variant
 
 ## Status: in ontwikkeling
