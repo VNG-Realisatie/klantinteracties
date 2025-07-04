@@ -1,3 +1,8 @@
+| Eigenaar | Ingevuld door |
+| --- | --- |
+| Kennis centrum Architectuur | Ivo Hendriks |
+<hr/>
+
 # Klantinteracties
 
 ## Geen standaard
